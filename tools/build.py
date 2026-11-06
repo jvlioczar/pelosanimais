@@ -788,7 +788,7 @@ def pagina_biblioteca():
     """Livros e sites para aprender a argumentar pelos animais, um card por livro (dados em tools/biblioteca.py)."""
     tons = list(CORES.values())
     cards = ''
-    for i, b in enumerate(biblioteca.LIVROS):
+    for i, b in enumerate(sorted(biblioteca.LIVROS, key=lambda x: -x['ano'])):  # do mais novo para o mais antigo
         meta = ' · '.join(x for x in (b['a'], str(b['ano']), b['ed']) if x)
         st = f'<p class="bib-st">{e(b["st"])}</p>' if b['st'] else ''
         cards += (f'<article class="bib-card" style="--c:{tons[i % len(tons)]}" data-foco="{b["foco"]}" data-lingua="{b["lingua"]}">'
