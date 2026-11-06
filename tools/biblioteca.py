@@ -1,0 +1,43 @@
+"""Biblioteca: livros e sites para aprender a argumentar pelos animais. Ponto de partida: a lista da Vegpedia
+(https://vegpedia.com/2024/07/24/livros-e-sites-para-aprender-a-argumentar-a-favor-dos-animais), completada com livros
+focados em rebater argumentos antiveganos e especistas. Cada livro foi conferido em catálogo, editora ou resenha (2026-11-07)."""
+
+# foco: 'rebater' (respostas a objeções), 'etica' (fundamentos filosóficos), 'psico' (por que defendemos o hábito)
+FOCOS = {'rebater': 'Respostas a objeções', 'etica': 'Fundamentos éticos', 'psico': 'Psicologia do hábito'}
+
+LIVROS = [
+    dict(t='Uma breve introdução à ética animal', st='Desde as questões clássicas até o que vem sendo discutido atualmente', a='Luciano Carlos Cunha', ano=2021, ed='Appris', lingua='PT', foco='rebater',
+         d='Reúne os argumentos usados para defender o especismo e apresenta as objeções a cada um, para leigos e acadêmicos.', u='https://philarchive.org/rec/DOSUIA', ul='Resenha'),
+    dict(t='Uma Jornada pela Ética Animal', st='Coleção em 12 volumes', a='Luciano Carlos Cunha', ano=2025, ed='Acesso aberto', lingua='PT', foco='rebater',
+         d='A coleção mais completa em português: cada capítulo examina uma objeção, e o volume XII resume as respostas em quadros. Base do site Questão de Ética.', u='https://questaodeetica.biblioverse.org/', ul='Ler grátis'),
+    dict(t='Ética & Animais', st='Um guia de argumentação filosófica', a='Carlos Naconecy', ano=2006, ed='EDIPUCRS', lingua='PT', foco='etica',
+         d='Apresenta as principais teorias éticas aplicadas aos animais, de Singer e Regan à ética do cuidado, para quem quer argumentar com base filosófica.', u='https://www.goodreads.com/work/quotes/36529914', ul='Sobre o livro'),
+    dict(t='30 Non-Vegan Excuses & How to Respond to Them', st='30 desculpas de não veganos e como respondê-las', a='Ed Winters', ano=2020, ed='E-book gratuito', lingua='EN', foco='rebater',
+         d='Curto e direto: trinta desculpas comuns, cada uma com uma resposta. Circula também uma tradução em português.', u='https://www.all-creatures.org/articles2/act-earthling-ed.html', ul='Ler grátis'),
+    dict(t='How to Argue with a Meat Eater', st='And win every time', a='Ed Winters', ano=2023, ed='Ebury', lingua='EN', foco='rebater',
+         d='Passa pelas objeções mais comuns, de ética a saúde, nutrição e ambiente, com dicas para manter a calma na conversa.', u='https://www.penguin.co.nz/books/how-to-argue-with-a-meat-eater-and-win-every-time-9781529907001', ul='Editora'),
+    dict(t='This Is Vegan Propaganda', st='And other lies the meat industry tells you', a='Ed Winters', ano=2022, ed='Ebury', lingua='EN', foco='rebater',
+         d='Desmonta as histórias que a indústria conta sobre a criação de animais e mostra o que acontece de fato.', u='https://openlibrary.org/works/OL25324216W', ul='Catálogo'),
+    dict(t='Eat Like You Care', st='Em português: Coma com consciência', a='Gary L. Francione e Anna Charlton', ano=2013, ed='Exempla Press', lingua='EN', foco='rebater',
+         d='Examina a moralidade de comer animais e responde, uma a uma, às justificativas mais comuns.', u='https://openlibrary.org/works/OL27049208W', ul='Catálogo'),
+    dict(t='Introduction to Animal Rights', st='Your child or the dog?', a='Gary L. Francione', ano=2000, ed='Temple University Press', lingua='EN', foco='rebater',
+         d='Enfrenta o dilema da casa em chamas e mostra por que uma escolha numa emergência não justifica a exploração.', u='https://tupress.temple.edu/books/introduction-to-animal-rights', ul='Editora'),
+    dict(t='Making a Stand for Animals', st='', a='Oscar Horta', ano=2022, ed='Routledge', lingua='EN', foco='rebater',
+         d='Introdução clara à ética animal que responde às objeções ao fim do especismo, inclusive sobre os animais selvagens.', u='https://openlibrary.org/works/OL27090032W', ul='Catálogo'),
+    dict(t='Meat Logic', st='Why do we eat animals?', a='Charles Horn', ano=2014, ed='CreateSpace', lingua='EN', foco='rebater',
+         d='Avalia, uma a uma, as racionalizações para comer animais diante do fato de que não precisamos deles para viver bem.', u='https://all-creatures.org/book/r-meat-logic.html', ul='Resenha'),
+    dict(t='Por que amamos cachorros, comemos porcos e vestimos vacas', st='Uma introdução ao carnismo', a='Melanie Joy', ano=2010, ed='', lingua='PT', foco='psico',
+         d='Explica o carnismo, o sistema de crenças que nos faz amar uns animais e comer outros sem perceber a contradição.', u='https://www.goodreads.com/book/show/20656567', ul='Sobre o livro'),
+    dict(t='Libertação Animal', st='', a='Peter Singer', ano=1975, ed='', lingua='PT', foco='etica',
+         d='O livro que popularizou o termo "especismo" e o princípio da igual consideração de interesses.', u='https://en.wikipedia.org/wiki/Animal_Liberation_(book)', ul='Sobre o livro'),
+    dict(t='Veganismo', st='As muitas razões para uma vida mais ética', a='Robson Fernando de Souza', ano=2017, ed='Publicação independente', lingua='PT', foco='rebater',
+         d='Reúne em português os argumentos do movimento vegano, com as referências por trás de cada um.', u='https://openlibrary.org/works/OL29711903W', ul='Catálogo'),
+]
+
+SITES = [
+    ('Questão de Ética', 'As 248 objeções da coleção de Luciano Carlos Cunha, com respostas', 'https://questaodeetica.biblioverse.org/desbancando.html'),
+    ('Senciência', 'Textos sobre ética animal e especismo', 'https://senciencia.org/'),
+    ('Sua Falácia Vegana É', 'Falácias comuns contra o veganismo, em cartões', 'https://yourveganfallacyis.com/pt-br'),
+    ('Argumentos em defesa dos animais', 'Respostas organizadas por tema', 'https://www.alyssonaugusto.com.br/argumentos'),
+    ('Guia de falácias antiveganas', 'Do site Veganagente', 'https://veganagente.com.br/falacias-antiveganas/'),
+]

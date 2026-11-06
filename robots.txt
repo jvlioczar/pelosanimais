@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pelosanimais.biblioverse.org/sitemap.xml
