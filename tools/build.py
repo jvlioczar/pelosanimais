@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import alem
 import md2xml
 import biblioteca
+import politicas
 from ruins import RUINS, TIPOS
 from conexoes import DEPOIS, MOTIVOS
 
@@ -310,7 +311,7 @@ def por_plano(rs):
     cols = {}
     for r in rs: cols.setdefault(re.sub('<[^>]+>', '', r[0]), []).append(r)
     expl = {'Lógico': 'A forma é válida?', 'Epistemológico': 'A evidência sustenta?', 'Moral': 'O critério é coerente?'}
-    return '<div class="planos">' + ''.join(f'<div class="plano p-{slug(p)}"><h4>{e(p)}</h4><p class="ti2">{expl.get(p, "")}</p>' + ''.join(acordeao(r[1], r[2]) for r in ls) + '</div>' for p, ls in cols.items()) + '</div>'
+    return '<div class="planos">' + ''.join(f'<div class="plano p-{slug(p)}"><h4>{e(p)}</h4><p class="ti2">{expl.get(p, {"pre": "../"})}</p>' + ''.join(acordeao(r[1], r[2]) for r in ls) + '</div>' for p, ls in cols.items()) + '</div>'
 
 def cartoes_vies(rs):
     return '<div class="grade-v">' + ''.join(f'<div class="cartao vies"><h4>{r[0]}</h4><p>{r[1]}</p><p class="ev">{r[2]}</p></div>' for r in rs) + '</div>'
@@ -491,7 +492,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <footer class="rodape"><div class="wrap rodape-in">
 <div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
 <div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('familias.html', 'As 12 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
-<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('biblioteca.html', 'Biblioteca')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
+<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 </body></html>
@@ -603,6 +604,31 @@ def paginas_alem():
         pag = cabeca(f'<a href="../">Início</a> / <a href="../alem-do-veganismo.html">Além do veganismo</a> / {e(p["selo"])}', e(p['t']), e(p['res'])) + f'<div class="wrap lay"><nav class="indice" aria-label="Além do veganismo"><p class="ti">Nesta seção</p><div class="lado">{lado}</div></nav><article class="artigo">{texto_}{lista_fontes(p["fontes"])}</article></div>'
         page(f'alem/{p["s"]}.html', p['t'], p['res'], pag, 'alem-do-veganismo.html', 'Article', [('Além do veganismo', 'alem-do-veganismo.html')])
 
+def paginas_politicas():
+    """Objeções vindas de teorias éticas e políticas (dados em tools/politicas.py)."""
+    tons = list(CORES.values())
+    def nos(cods, pre='../'):
+        return ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="{pre}argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in cods))
+    cards = ''.join(f'<a class="cartao" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3><p class="falha">{e(t["principio"])}</p></a>' for i, t in enumerate(politicas.TEORIAS))
+    corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.') + f'''<section class="secao"><div class="wrap">
+<p class="estreito" style="margin:0 0 26px">{e(politicas.INTRO)}</p>
+<div class="grade">{cards}</div>
+<p class="fino" style="margin-top:26px">A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.</p>
+</div></section>'''
+    page('objecoes-politicas.html', 'Objeções políticas', 'Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', corpo, 'objecoes-politicas.html', 'CollectionPage')
+    T = politicas.TEORIAS
+    for i, t in enumerate(T):
+        cor = tons[i % len(tons)]
+        ant, prox = T[i - 1] if i else None, T[i + 1] if i + 1 < len(T) else None
+        pp = lambda x, r: f'<a href="{x["s"]}.html"><small>{r}</small>{e(x["t"])}</a>'
+        art = ('<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
+               f'<div class="troca"><div class="nao"><p class="ti">A melhor réplica</p><p>{liga(e(t["replica"]), {"pre": "../"})}</p></div><div class="sim"><p class="ti">A resposta</p><p>{liga(e(t["resposta"]), {"pre": "../"})}</p></div></div>'
+               f'<h2>Veja também</h2><div class="nos">{nos(t["liga"])}</div>' + lista_fontes(t['fontes']) +
+               '<nav class="pass" aria-label="Outras teorias">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próxima') if prox else '') + '</nav>')
+        pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas</a> / {e(t["t"])}</p>'
+               f'<div class="fala"><h1>"{e(t["frase"])}"</h1></div><div class="tese-c"><span>{e(t["t"])}: o princípio</span><p>{e(t["principio"])}</p></div></div></section><div class="wrap paineis">{art}</div>')
+        page(f'politicas/{t["s"]}.html', f'{t["t"]}: "{t["frase"]}"', f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', pag, 'objecoes-politicas.html', 'Article', [('Objeções políticas', 'objecoes-politicas.html')])
+
 def treino():
     cartas = [dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html', p=FAMILIAS[a['fam']]['parte'], cor=FAMILIAS[a['fam']]['cor'], fam=a['fam']) for a in ARGS.values()]
     cad = [dict(n=c['n'], cods=c['cods']) for c in CADEIAS]
@@ -623,7 +649,7 @@ def comece():
 <h2>O critério de fundo</h2><p>Se um ser é senciente, ou seja, pode ser prejudicado ou beneficiado pelo que lhe acontece, seus interesses contam moralmente. Uma justificativa para ignorar esses interesses só é válida se sobreviver a três testes: coerência lógica, suporte empírico e consistência quando aplicada a casos humanos equivalentes.</p>
 <h2>Cinco compromissos</h2><ol><li><strong>Honestidade intelectual:</strong> apresentar a versão mais forte de cada argumento, reconhecer o que ele acerta e não fazer afirmação empírica sem fonte.</li><li><strong>Rigor em três planos:</strong> lógico (o argumento é válido?), epistemológico (as premissas têm respaldo na evidência?) e moral (o critério é coerente e relevante?).</li><li><strong>Senciocentrismo:</strong> a senciência é o critério fundador da inclusão moral. Espécie, inteligência, utilidade ou afeto humano não são.</li><li><strong>Antiespecismo e justiça:</strong> interesses semelhantes merecem consideração semelhante, seja qual for a espécie de quem os tem.</li><li><strong>Parcimônia:</strong> preferir o critério mais simples que explica nossos juízos morais mais firmes, sem exceções criadas sob medida para proteger hábitos.</li></ol>
 <p>Derrubar espantalhos enfraqueceria o guia e faria dele aquilo que critica. Por isso a versão mais forte de cada argumento vem antes da resposta.</p>
-<h2>Como usar</h2><ul><li><strong>Para debater:</strong> localize a objeção pelo <a href="index.html#argumentos">código ou pela busca</a> e siga o <a href="mapa.html">mapa de conexões</a> para antecipar a próxima. A letra indica a família e o número, a posição dentro dela.</li><li><strong>Para reconhecer:</strong> o bloco "Como pode aparecer" mostra as outras formas em que o argumento costuma ser dito ou escrito.</li><li><strong>Para ensinar:</strong> use a resposta para crianças e a curta. As camadas técnicas ficam para quem quer se aprofundar.</li><li><strong>Para pesquisar:</strong> os índices de <a href="falacias.html">falácias</a> e <a href="vieses.html">vieses</a> permitem atravessar o catálogo por tipo de erro.</li></ul>
+<h2>Como usar</h2><ul><li><strong>Para debater:</strong> localize a objeção pelo <a href="index.html#argumentos">código ou pela busca</a> e siga o <a href="mapa.html">mapa de conexões</a> para antecipar a próxima. A letra indica a família e o número, a posição dentro dela.</li><li><strong>Para reconhecer:</strong> o bloco "Como pode aparecer" mostra as outras formas em que o argumento costuma ser dito ou escrito.</li><li><strong>Para ensinar:</strong> use a resposta para crianças e a curta. As camadas técnicas ficam para quem quer se aprofundar.</li><li><strong>Para debater com quem parte de uma teoria política:</strong> as <a href="objecoes-politicas.html">objeções políticas</a> mostram, teoria por teoria, por que excluir os animais contradiz o princípio de cada uma.</li><li><strong>Para pesquisar:</strong> os índices de <a href="falacias.html">falácias</a> e <a href="vieses.html">vieses</a> permitem atravessar o catálogo por tipo de erro.</li></ul>
 <h2>Argumentos diretos e indiretos</h2><p>Os argumentos <strong>diretos (DIR)</strong> contestam o núcleo moral: se os animais sentem, se o indivíduo animal conta e se usar ou matar esse indivíduo é errado. Os <strong>indiretos (IND)</strong> não enfrentam essa questão: alegam que a exploração é necessária, que o veganismo é inviável, prejudicial ou ineficaz, ou que quem o defende não merece crédito.</p><p>Mesmo que um argumento indireto fosse verdadeiro, ele justificaria apenas exceções, nunca a exploração em geral. Por isso a Parte DIR vem primeiro.</p><h3 id="indiretos">Por que os argumentos indiretos não bastam</h3>{IND_TEXTO}
 <h2>Os 11 blocos de um capítulo completo</h2><ol>{"".join(f"<li>{e(b)}</li>" for b in blocos)}</ol><p>Comece por <a href="argumentos/a10.html">A10, "São só animais"</a>, o capítulo-raiz: é onde a maioria das cadeias de objeções termina.</p>
 </div></section>'''
@@ -875,7 +901,7 @@ def completa_vieses():
 completa_vieses()
 
 # ---------- montagem ----------
-inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); treino()
+inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); treino()
 indice_erro('falacias.html', 'Falácias', 'Falácia', f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', FALACIAS, 'Em uma frase')
 indice_erro('vieses.html', 'Vieses', 'Viés', f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', VIESES, 'Mecanismo')
 for i, c in enumerate(ORDEM):
@@ -886,6 +912,7 @@ for i, c in enumerate(ORDEM):
     a = ARGS[c]; BUSCA.append(dict(t=f'{c}. {a["frase"]}', s=a['falha'], u=f'argumentos/{a["slug"]}.html', k=' '.join(a['formas']) + ' ' + FAMILIAS[a['fam']]['nome']))
 for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0]))
 for p in alem.PAGINAS: BUSCA.append(dict(t=p['t'], s='Além do veganismo: ' + p['res'], u=f'alem/{p["s"]}.html', k=''))
+for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política: ' + t['principio'], u=f'politicas/{t["s"]}.html', k='política teoria'))
 for f in FAMILIAS.values(): BUSCA.append(dict(t=f'Família {f["c"]}: {f["nome"]}', s=f['perg'], u=f'familias/{f["c"].lower()}.html', k=''))
 for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'falacias.html#{slug(i["n"])}', k=''))
 for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.html#{slug(i["n"])}', k=''))

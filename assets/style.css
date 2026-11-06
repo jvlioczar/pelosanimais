@@ -538,3 +538,5 @@ details.item summary:hover{background:#ffeb5b66}details.item[open]{background:#f
 
 /* menu com a Biblioteca: um pouco mais compacto para caber na pílula */
 .menu a{padding:7px 7px}
+
+.pol-q{margin:0 0 26px;padding-left:1.2em}.pol-q li{margin:0 0 .7em;font-size:1.04rem}

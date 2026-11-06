@@ -6,6 +6,8 @@ focados em rebater argumentos antiveganos e especistas. Cada livro foi conferido
 FOCOS = {'rebater': 'Respostas a objeções', 'etica': 'Fundamentos éticos', 'psico': 'Psicologia do hábito'}
 
 LIVROS = [
+    dict(t='An Introduction to Animals and Political Theory', st='', a='Alasdair Cochrane', ano=2010, ed='Palgrave Macmillan', lingua='EN', foco='rebater',
+         d='Examina como as grandes teorias políticas, como o liberalismo, o utilitarismo, o comunitarismo, o marxismo e o feminismo, tratam os animais, e mostra onde cada uma falha ao excluí-los.', u='https://doi.org/10.1057/9780230290594', ul='Editora'),
     dict(t='Uma breve introdução à ética animal', st='Desde as questões clássicas até o que vem sendo discutido atualmente', a='Luciano Carlos Cunha', ano=2021, ed='Appris', lingua='PT', foco='rebater',
          d='Reúne os argumentos usados para defender o especismo e apresenta as objeções a cada um, para leigos e acadêmicos.', u='https://philarchive.org/rec/DOSUIA', ul='Resenha'),
     dict(t='Uma Jornada pela Ética Animal', st='Coleção em 12 volumes', a='Luciano Carlos Cunha', ano=2025, ed='Acesso aberto', lingua='PT', foco='rebater',
