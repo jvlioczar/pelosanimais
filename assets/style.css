@@ -542,3 +542,4 @@ details.item summary:hover{background:#ffeb5b66}details.item[open]{background:#f
 .pol-q{margin:0 0 26px;padding-left:1.2em}.pol-q li{margin:0 0 .7em;font-size:1.04rem}
 .azul{background:#fbe3ee}
 .pol-c h3{font-size:1.05rem}
+.equilibrio{max-width:860px;margin:0 0 40px;background:#fff;border:1.5px solid var(--tinta2);box-shadow:5px 5px 0 var(--amarelo);border-radius:18px;padding:22px 26px}.equilibrio h2{margin:0 0 10px}.equilibrio h3{margin:20px 0 8px}.equilibrio ul{padding-left:1.2em}.equilibrio li{margin:0 0 .6em}

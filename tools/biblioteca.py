@@ -46,6 +46,7 @@ SITES = [
     ('Questão de Ética', 'As 248 objeções da coleção de Luciano Carlos Cunha, com respostas', 'https://questaodeetica.biblioverse.org/desbancando.html'),
     ('Senciência', 'Textos sobre ética animal e especismo', 'https://senciencia.org/'),
     ('Animal Ethics', 'Organização internacional com textos em português sobre especismo, senciência e animais selvagens', 'https://www.animal-ethics.org/pt/'),
+    ('Veganismos', 'Publicação no Medium sobre veganismo e ética animal', 'https://medium.com/veganismo-s'),
     ('Carnism Debunked', 'Em inglês: respostas aos argumentos usados para defender a exploração animal', 'https://www.carnismdebunked.com'),
     ('Sentience Institute', 'Em inglês: resumo das evidências sobre as perguntas fundamentais da defesa eficaz dos animais', 'https://www.sentienceinstitute.org/foundational-questions-summaries'),
     ('Center for Effective Vegan Advocacy', 'Em inglês: dicas rápidas de comunicação para conversar sobre veganismo no dia a dia', 'https://veganadvocacy.org/communication-hacks'),

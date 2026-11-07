@@ -1,7 +1,7 @@
 """Confere links internos, âncoras, SEO e referências proibidas. Uso: python tools/audit.py"""
 import collections, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-erros = 0; n = 0; titulos = collections.defaultdict(list); paginas = set()
+redir = set(); links = []; erros = 0; n = 0; titulos = collections.defaultdict(list); paginas = set()
 def falha(*m):
     global erros
     print(*m); erros += 1
@@ -9,7 +9,10 @@ for pasta, _, arqs in os.walk(ROOT):
     if os.path.basename(pasta) in ('tools', '.git'): continue
     for a in arqs:
         if not a.endswith('.html'): continue
-        n += 1; p = os.path.join(pasta, a); t = open(p, encoding='utf-8').read()
+        p = os.path.join(pasta, a); t = open(p, encoding='utf-8').read()
+        if 'http-equiv="refresh"' in t:
+            redir.add(os.path.normpath(p)); continue
+        n += 1
         rel = os.path.relpath(p, ROOT).replace(os.sep, '/'); paginas.add(rel)
         if 'assuperlistas' in t.lower(): falha('assuperlistas em', rel)
         if re.search(r'citad[oa]s? de mem|documento do projeto|autor-data', t, re.I): falha('nota de rascunho em', rel)
@@ -30,8 +33,11 @@ for pasta, _, arqs in os.walk(ROOT):
             arq, _, ancora = h.partition('#'); arq = arq.split('?')[0]
             alvo = os.path.normpath(os.path.join(pasta, arq)) if arq else p
             if a == '404.html': alvo = os.path.normpath(os.path.join(ROOT, arq)) if arq else p
+            links.append((rel, h, alvo))
             if not os.path.exists(alvo): falha('quebrado:', rel, '->', h)
             elif ancora and alvo.endswith('.html') and f'id="{ancora}"' not in open(alvo, encoding='utf-8').read(): falha('âncora:', rel, '->', h)
+for rel, h, alvo in links:
+    if alvo in redir: falha('link para endereço antigo:', rel, '->', h)
 for k, v in titulos.items():
     if len(v) > 1: falha('título repetido', k, v[:3])
 s = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()

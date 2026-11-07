@@ -136,6 +136,25 @@ ORDEM = sorted(ARGS, key=lambda c: (c[0], int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
 
+# Endereços legíveis: cada argumento e cada argumento ruim tem a URL da própria frase (melhor no Google).
+# Os endereços antigos por código (argumentos/a10.html, ruins/v29.html) viram redirecionamentos no fim do build.
+def _slug_frase(s, usados):
+    import unicodedata
+    base = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', s.lower()).encode('ascii', 'ignore').decode()).strip('-')
+    if len(base) > 70: base = base[:70].rsplit('-', 1)[0]
+    x, k = base, 2
+    while x in usados: x, k = f'{base}-{k}', k + 1
+    usados.add(x)
+    return x
+_usados = set()
+for _a in ARGS.values(): _a['slug'] = _slug_frase(_a['frase'], _usados)
+SLUG_ARG = {c.lower(): a['slug'] for c, a in ARGS.items()}
+_usados = set()
+SLUG_RUIM = {r['c'].lower(): _slug_frase(r['frase'], _usados) for r in RUINS}
+def nova_url(s):
+    s = re.sub(r'\bargumentos/([a-l]\d{1,2})\.html', lambda m: f'argumentos/{SLUG_ARG.get(m[1], m[1])}.html', s)
+    return re.sub(r'\bruins/(v\d{1,2})\.html', lambda m: f'ruins/{SLUG_RUIM.get(m[1], m[1])}.html', s)
+
 # Capítulos do site Questão de Ética (coleção de Luciano Carlos Cunha) que aprofundam cada argumento.
 QE_URL = 'https://questaodeetica.biblioverse.org/'
 from qe_caps import QE_CAPS
@@ -302,7 +321,7 @@ def rede(rs, c, ctx):
         for r in rs:
             if r[0] != dir_: continue
             cods = [x for x in codigos(re.sub('<[^>]+>', '', r[1])) if x in ARGS]
-            alvo = ''.join(f'<a class="no" style="--c:{FAMILIAS[x[0]]["cor"]}" href="{x.lower()}.html"><b>{x}</b> {e(ARGS[x]["frase"])}</a>' for x in cods)
+            alvo = ''.join(f'<a class="no" style="--c:{FAMILIAS[x[0]]["cor"]}" href="{ARGS[x]["slug"]}.html"><b>{x}</b> {e(ARGS[x]["frase"])}</a>' for x in cods)
             o += f'<div class="elo">{alvo}<small>{r[2]}</small></div>'
         return o
     return f'<div class="rede"><div><p class="ti">Costuma vir antes</p>{nos("Vem antes")}</div><div class="centro"><span>{c}</span><small>este argumento</small></div><div><p class="ti">Costuma vir depois</p>{nos("Vem depois")}</div></div>'
@@ -436,6 +455,7 @@ def dados(path, title, desc, url, tipo, trilha):
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': grafo}, ensure_ascii=False).replace('</', '<\\/') + '</script>'
 
 def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
+    path = nova_url(path)
     PAGINAS.append(path)
     erro = path == '404.html'
     home = path == 'index.html'
@@ -497,7 +517,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 </body></html>
 '''
-    doc = doc.replace('href="index.html"', 'href="./"').replace('href="../index.html"', 'href="../"')
+    doc = nova_url(doc).replace('href="index.html"', 'href="./"').replace('href="../index.html"', 'href="../"')
     alvo = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(alvo), exist_ok=True)
     open(alvo, 'w', encoding='utf-8', newline='\n').write(doc)
@@ -566,7 +586,7 @@ def inicio():
 <section class="bloco-cor verde" id="grupos"><div class="wrap"><div class="sec-cab centro-t"><h2>Duas perguntas, doze famílias</h2><p>Argumentos parecidos erram de modo parecido. Toda objeção tenta responder a uma destas duas perguntas.</p></div>
 <div class="arvore-g"><div class="galho"><p class="pergunta"><small>Argumentos diretos</small>Os animais contam?</p><div class="ramos">{"".join(ramo(f) for f in dir_)}</div></div><div class="galho"><p class="pergunta"><small>Argumentos indiretos</small>É necessário, viável, eficaz?</p><div class="ramos">{"".join(ramo(f) for f in ind)}</div><p class="ressalva">Mesmo quando têm uma parte verdadeira, justificam no máximo exceções. Muitos ativistas evitam usá-los para defender os animais: outros movimentos sociais não defendem humanos com argumentos de saúde ou de ambiente. <a href="comece-aqui.html#indiretos">Entenda</a></p></div></div>
 <div class="raizes-h"><p>Quase toda conversa termina em uma destas três raízes:</p><div>{"".join(f'<a href="argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in RAIZES)}</div><a class="mais" href="mapa.html">Ver o mapa de conexões →</a></div></div></section>
-<section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor.</p></div><div class="lista-riscada">{ruins}</div></div></section>
+<section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
 <section class="bloco-cor amarelo" id="alem"><div class="wrap alem-in"><div>{circulo()}</div><div><div class="sec-cab"><h2>Além do veganismo</h2><p>O critério da senciência não termina no prato. Clique em um círculo ou escolha um tema.</p></div><div class="lista-alem">{alemc}</div></div></div></section>
 <section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="treino.html">Treinar respostas</a></div></section>'''
     page('index.html', NOME, DESCRICAO, corpo)
@@ -580,17 +600,38 @@ def cartao_alem(p, pre=''):
 def lista_fontes(ls):
     return '<h2>Fontes e leituras</h2><div class="fontes"><ul>' + ''.join(f'<li><a href="{e(u)}" {EXT}>{e(t)}</a></li>' if u else f'<li>{e(t)}</li>' for t, u in ls) + '</ul></div>'
 
+EQUILIBRIO = """<section class="equilibrio" id="corrigir-sem-perder-o-foco" aria-labelledby="eq-t"><h2 id="eq-t">Corrigir sem perder o foco</h2>
+<p>Corrigir os próprios argumentos faz parte de qualquer movimento que leva a verdade a sério. Um argumento ruim dito por um vegano é desmontado na primeira conversa com alguém bem informado, e a derrota cai sobre a causa inteira. Por isso esta página existe.</p>
+<p>Mas a correção tem um custo. O tempo e a energia de quem defende os animais são limitados, e cada hora gasta em brigas entre veganos é uma hora a menos para explicar o especismo, responder às objeções de quem ainda come animais e produzir conteúdo de qualidade. É uma troca: quando a briga interna toma o lugar do trabalho para fora, a estratégia provavelmente está errada. O projeto <a href="https://infighting.org" target="_blank" rel="noopener">End Infighting</a> reúne as causas e os custos dessas brigas em movimentos sociais.</p>
+<h3>O limite não é bem definido</h3>
+<p>Corrigir veganos e responder a exploradores de animais não são duas tarefas separadas. Abandonar um argumento ruim é também preparar a próxima conversa com quem não é vegano. Alguns exemplos:</p>
+<ul>
+<li><strong>Correção que vale a pena:</strong> parar de dizer que {RUIM:Gorilas, touros e cavalos}. O argumento cai na primeira réplica e troca uma questão ética por uma de biologia mal contada.</li>
+<li><strong>Correção que protege pessoas:</strong> desmentir que {RUIM:Veganos não precisam suplementar B12}. Aqui o erro não só enfraquece o argumento, como põe em risco a saúde de quem acredita nele.</li>
+<li><strong>Briga que provavelmente não vale:</strong> semanas de discussão pública contra um ativista por uma frase imprecisa, enquanto ninguém responde bem à pergunta "de onde vem a proteína?", que quase todo vegano já ouviu.</li>
+<li><strong>Debate que pode se arrastar:</strong> a divergência sobre estratégias, como reformas de bem-estar ou abolição. É um debate legítimo, mas, se ocupa todo o espaço, os animais deixam de ser o centro da conversa.</li>
+</ul>
+<h3>Uma regra prática</h3>
+<p>Antes de corrigir alguém, vale perguntar: <em>essa correção vai melhorar a próxima conversa com quem ainda não é vegano?</em> Se sim, corrija o argumento, e não a pessoa, de preferência em particular ou com uma alternativa melhor pronta. Depois, volte ao trabalho que importa: explicar por que os animais contam.</p>
+</section>"""
+
+def marca_ruins(txt, pre='../'):
+    def f(m):
+        r = next(x for x in RUINS if x['frase'].startswith(m[1]))
+        return f'<a href="{pre}ruins/{r["c"].lower()}.html">"{e(r["frase"].rstrip("."))}"</a>'
+    return re.sub(r'\{RUIM:([^}]+)\}', f, txt)
+
 def paginas_ruins():
     grupos = ''
     for k, (nome, desc) in TIPOS.items():
         grupos += f'<h2 style="margin:0 0 6px">{e(nome)}</h2><p style="margin:0 0 14px">{e(desc)}</p><div class="grade" style="margin-bottom:34px">{"".join(cartao_ruim(r) for r in RUINS if r["tipo"] == k)}</div>'
-    corpo = cabeca('<a href="./">Início</a>', 'Argumentos ruins que veganos deveriam parar de usar, ou usar de forma melhor', 'Um argumento não fica bom porque defende a causa certa. O único que sobrevive ao escrutínio repetido é o que sempre foi verdadeiro: prejudicar seres sencientes sem necessidade é injusto.') + f'<section class="secao"><div class="wrap">{grupos}<p>Este grupo vem do livro <em>Veganismo Baseado em Evidências</em>. O critério para julgar cada tática é o do melhor cenário: qual abordagem, avaliada com honestidade sobre suas consequências, reduz mais sofrimento.</p></div></section>'
+    corpo = cabeca('<a href="./">Início</a>', 'Argumentos ruins que veganos deveriam parar de usar, ou usar de forma melhor', 'Um argumento não fica bom porque defende a causa certa. O único que sobrevive ao escrutínio repetido é o que sempre foi verdadeiro: prejudicar seres sencientes sem necessidade é injusto.') + f'<section class="secao"><div class="wrap">{marca_ruins(EQUILIBRIO, "")}{grupos}<p>Este grupo vem do livro <em>Veganismo Baseado em Evidências</em>. O critério para julgar cada tática é o do melhor cenário: qual abordagem, avaliada com honestidade sobre suas consequências, reduz mais sofrimento.</p></div></section>'
     page('argumentos-ruins.html', 'Argumentos ruins de veganos: pare de usar ou use melhor', 'Argumentos usados por veganos que não resistem a exame, de saúde e fome a gatos e psicopatia, e como dizer melhor o que cada um tenta dizer.', corpo, 'argumentos-ruins.html', 'CollectionPage')
     for i, r in enumerate(RUINS):
         nome, desc = TIPOS[r['tipo']]
         lig_ = ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="../argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in r['liga']))
         ant, prox = RUINS[i - 1] if i else None, RUINS[i + 1] if i + 1 < len(RUINS) else None
-        pp = lambda x, t: f'<a href="{x["c"].lower()}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
+        pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
         art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
         pag = f'<section class="cena" style="--c:#b8460f"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../argumentos-ruins.html">Argumentos ruins</a> / {e(nome)}</p><div class="fala"><span class="selo-c">{r["c"]}</span><h1>"{e(r["frase"])}"</h1></div><div class="tese-c"><span>{e(nome)}</span><p>{e(desc)}</p></div></div></section><div class="wrap paineis">{art}</div>'
         page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')])
@@ -923,7 +964,12 @@ for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.ht
 
 def escreve(rel, txt):
     open(os.path.join(ROOT, rel), 'w', encoding='utf-8', newline='\n').write(txt)
-escreve('assets/busca.json', json.dumps(BUSCA, ensure_ascii=False, separators=(',', ':')))
+escreve('assets/busca.json', nova_url(json.dumps(BUSCA, ensure_ascii=False, separators=(',', ':'))))
+def redireciona(pasta, velho, novo):
+    alvo = f'{SITE}/{pasta}/{novo}.html'
+    escreve(f'{pasta}/{velho}.html', f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>Página movida</title><meta name="robots" content="noindex"/><link rel="canonical" href="{alvo}"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">Esta página mudou de endereço.</a></p></body></html>\n')
+for velho, novo in SLUG_ARG.items(): redireciona('argumentos', velho, novo)
+for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
 import icones; icones.gera(len(ARGS))
 escreve('assets/icon.svg', LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n')
 escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
