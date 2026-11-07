@@ -7,6 +7,11 @@
 
   var hamb = $('.hamb'), menu = $('.menu');
   if (hamb) hamb.addEventListener('click', function () { menu.classList.toggle('aberto'); hamb.setAttribute('aria-expanded', menu.classList.contains('aberto')); });
+  // Grupos do menu: só um aberto por vez; fecham ao clicar fora ou com Esc.
+  var subs = document.querySelectorAll('.menu .sub');
+  subs.forEach(function (d) { d.addEventListener('toggle', function () { if (d.open) subs.forEach(function (o) { if (o !== d) o.open = false; }); }); });
+  document.addEventListener('click', function (ev) { subs.forEach(function (d) { if (d.open && !d.contains(ev.target)) d.open = false; }); });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') subs.forEach(function (d) { if (d.open) { d.open = false; d.querySelector('summary').focus(); } }); });
 
   /* busca */
   var ov = $('#busca'), q = $('#q'), res = $('#res'), dados = null, idx = -1;

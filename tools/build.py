@@ -8,6 +8,7 @@ import alem
 import md2xml
 import biblioteca
 import politicas
+import debate
 from ruins import RUINS, TIPOS
 from conexoes import DEPOIS, MOTIVOS
 
@@ -29,6 +30,7 @@ IND_AVISO = ('Este é um argumento indireto: discute saúde, ambiente, economia,
     'Aqui, os fatos servem para corrigir o que está errado; a justificativa moral vem do respeito aos animais.')
 import hashlib as _h
 VER_CSS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'style.css'), 'rb').read()).hexdigest()[:8]
+VER_DEB = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'debate.js'), 'rb').read()).hexdigest()[:8]
 VER_JS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'app.js'), 'rb').read()).hexdigest()[:8]
 IND_TEMA = {'G': 'saúde e nutrição', 'H': 'ambiente e agricultura', 'I': 'a utilidade de testes, roupas, lazer e companhia',
     'J': 'custo, praticidade e economia', 'K': 'eficácia e responsabilidade individual', 'L': 'quem defende o veganismo'}
@@ -441,7 +443,22 @@ def desc_seo(d):
 
 LOGO = '<svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 2h28a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H19l-8 6v-6H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z" fill="#0a3703"/><g fill="#ffeb5b"><ellipse cx="15.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(-10 15.500 11.500)"/><ellipse cx="24.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(10 24.500 11.500)"/><ellipse cx="20" cy="22" rx="8" ry="6.800"/></g><g fill="#0a3703"><circle cx="17" cy="21" r="1.100"/><circle cx="23" cy="21" r="1.100"/><circle cx="20" cy="24.200" r="1"/></g></svg>'
 TODOS = 'index.html#argumentos'
-MENU = [(TODOS, 'Argumentos'), ('familias.html', 'Famílias'), ('argumentos-ruins.html', 'Argumentos ruins'), ('alem-do-veganismo.html', 'Além do veganismo'), ('raciocinio.html', 'Raciocínio'), ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('biblioteca.html', 'Biblioteca')]
+# Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
+MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
+        ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
+        ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 12 famílias'),
+                        ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
+        ('biblioteca.html', 'Biblioteca')]
+def monta_menu(pre, atual):
+    h = ''
+    for u, t in MENU:
+        if isinstance(t, list):
+            dentro = any(x == atual for x, _ in t)
+            itens = ''.join(f'<a href="{pre}{x}"{" aria-current=page" if x == atual else ""}>{e(n)}</a>' for x, n in t)
+            h += f'<details class="sub"><summary{" class=aqui" if dentro else ""}>{e(u)}</summary><div class="sub-l">{itens}</div></details>'
+        else:
+            h += f'<a href="{pre}{u}"{" aria-current=page" if u == atual else ""}>{e(t)}</a>'
+    return h
 
 def dados(path, title, desc, url, tipo, trilha):
     org = {'@type': 'Organization', 'name': 'BiblioVerse', 'url': 'https://biblioverse.org'}
@@ -466,7 +483,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
     if len(full) > 60 and not home: full = title
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + dados(path, title, desc, url, tipo, trilha) + '\n'
     base = '<base href="/"/>\n' if erro else ''
-    menu = ''.join(f'<a href="{pre}{u}"{" aria-current=page" if u == atual else ""}>{e(t)}</a>' for u, t in MENU)
+    menu = monta_menu(pre, atual)
     l = lambda u, t: f'<li><a href="{pre}{u}">{e(t)}</a></li>'
     doc = f'''<!doctype html>
 <html lang="pt-BR">
@@ -499,7 +516,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <script src="https://biblioverse.org/superbar.js" async></script>
 </head>
 <body data-base="{pre}">
-<nav id="bvbar" class="bvbar" data-current="pelosanimais" data-offset="none" aria-label="BiblioVerse" style="position:relative;height:44px;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:44px;padding:0 14px;font-weight:700;text-decoration:none">BiblioVerse</a></nav>
+<nav id="bvbar" class="bvbar" data-current="pelosanimais" data-offset="none" aria-label="BiblioVerse" style="position:relative;height:36px;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:36px;padding:0 14px;font-weight:700;text-decoration:none">BiblioVerse</a></nav>
 <a class="skip" href="#main">Pular para o conteúdo</a>
 <header class="topo"><div class="wrap topo-in">
 <a class="marca" href="{pre}index.html">{LOGO}<span>Guia de Argumentação<br/>Pelos Animais</span></a>
@@ -511,7 +528,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <main id="main">{corpo}</main>
 <footer class="rodape"><div class="wrap rodape-in">
 <div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
-<div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('familias.html', 'As 12 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
+<div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 12 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
 <div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
@@ -588,7 +605,7 @@ def inicio():
 <div class="raizes-h"><p>Quase toda conversa termina em uma destas três raízes:</p><div>{"".join(f'<a href="argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in RAIZES)}</div><a class="mais" href="mapa.html">Ver o mapa de conexões →</a></div></div></section>
 <section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
 <section class="bloco-cor amarelo" id="alem"><div class="wrap alem-in"><div>{circulo()}</div><div><div class="sec-cab"><h2>Além do veganismo</h2><p>O critério da senciência não termina no prato. Clique em um círculo ou escolha um tema.</p></div><div class="lista-alem">{alemc}</div></div></div></section>
-<section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="treino.html">Treinar respostas</a></div></section>'''
+<section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="debate.html">Simular um debate</a> <a class="btn alt" href="treino.html">Treinar respostas</a></div></section>'''
     page('index.html', NOME, DESCRICAO, corpo)
 
 def cartao_ruim(r, pre=''):
@@ -673,6 +690,24 @@ def paginas_politicas():
         pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas</a> / {e(t["t"])}</p>'
                f'<div class="fala"><h1>"{e(t["frase"])}"</h1></div><div class="tese-c"><span>{e(t["t"])}: o princípio</span><p>{e(t["principio"])}</p></div></div></section><div class="wrap paineis">{art}</div>')
         page(f'politicas/{t["s"]}.html', f'{t["t"]}: "{t["frase"]}"', f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', pag, 'objecoes-politicas.html', 'Article', [('Objeções políticas', 'objecoes-politicas.html')])
+
+def pagina_debate():
+    """Debate simulado: dados em tools/debate.py, lógica em assets/debate.js. A conversa segue o grafo do raciocínio antivegano."""
+    G = grafo()
+    jogaveis = [c for c in ORDEM if c in debate.OP]
+    faltam = [c for c in COMUNS if c not in debate.OP]
+    assert not faltam, f'aberturas sem respostas no debate: {faltam}'
+    n = {}
+    for c in jogaveis:
+        o = debate.OP[c]
+        n[c] = dict(f=ARGS[c]['frase'], u=f'argumentos/{ARGS[c]["slug"]}.html', cor=FAMILIAS[ARGS[c]['fam']]['cor'],
+                    o={t: [o[t], o[t + 'e']] for t in ('f', 'm', 'r')}, p=[[x, m] for x, m in G.get(c, {}).items() if x in debate.OP])
+    js = json.dumps(dict(n=n, aberturas=COMUNS, pessoas=debate.PESSOAS), ensure_ascii=False).replace('</', '<\\/')
+    corpo = cabeca('<a href="./">Início</a>', 'Debate simulado', 'Alguém começa com um dos argumentos mais ouvidos. Você escolhe a resposta, e a conversa segue para onde esses debates costumam ir. No fim, veja como foi.') + f'''<section class="secao"><div class="wrap estreito">
+<div id="debate" class="debate"><noscript><p>O debate simulado precisa de JavaScript. Enquanto isso, use <a href="treino.html">Treinar respostas</a>.</p></noscript></div>
+<p class="fino" style="margin-top:26px">Cada rodada tem uma resposta forte, uma fraca (exagerada, enviesada ou que troca a questão ética por outra) e uma ruim. As respostas fortes resumem os capítulos do guia; as fracas e as ruins vêm, em boa parte, dos <a href="argumentos-ruins.html">argumentos que veganos deveriam parar de usar</a>. São {len(jogaveis)} argumentos jogáveis, ligados pelo <a href="raciocinio.html">raciocínio antivegano</a>.</p>
+</div></section><script type="application/json" id="deb-dados">{js}</script><script src="assets/debate.js?v={VER_DEB}" defer></script>'''
+    page('debate.html', 'Debate simulado', 'Jogo para treinar uma conversa com quem não é vegano: escolha a melhor resposta para cada argumento e veja como você se saiu no debate.', corpo, 'debate.html')
 
 def treino():
     cartas = [dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html', p=FAMILIAS[a['fam']]['parte'], cor=FAMILIAS[a['fam']]['cor'], fam=a['fam']) for a in ARGS.values()]
@@ -946,7 +981,7 @@ def completa_vieses():
 completa_vieses()
 
 # ---------- montagem ----------
-inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); treino()
+inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()
 indice_erro('falacias.html', 'Falácias', 'Falácia', f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', FALACIAS, 'Em uma frase')
 indice_erro('vieses.html', 'Vieses', 'Viés', f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', VIESES, 'Mecanismo')
 for i, c in enumerate(ORDEM):
@@ -976,5 +1011,5 @@ escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, sta
 escreve('robots.txt', f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
 urls = ''.join(f'<url><loc>{SITE}/{"" if p == "index.html" else p}</loc><lastmod>{ATUALIZADO}</lastmod></url>' for p in PAGINAS if p != '404.html')
 escreve('sitemap.xml', f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')
-escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n')
+escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Debate simulado]({SITE}/debate.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n')
 print(len(PAGINAS), 'páginas geradas')
