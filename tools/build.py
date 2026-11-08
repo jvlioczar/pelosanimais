@@ -13,9 +13,17 @@ from ruins import RUINS, TIPOS
 from conexoes import DEPOIS, MOTIVOS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = 'https://pelosanimais.biblioverse.org'
-NOME = 'Guia de Argumentação Pelos Animais'
-CURTO = 'Guia de Argumentação'
+# Versão em inglês: `python tools/build.py en` gera o site em ../fortheanimals (fortheanimals.biblioverse.org).
+# Os textos traduzidos ficam em tools/en/; o que ainda não foi traduzido aparece no relatório do fim do build.
+import en
+EN = 'en' in sys.argv[1:]
+OUT = os.path.join(os.path.dirname(ROOT), 'fortheanimals') if EN else ROOT
+SITE_PT, SITE_EN = 'https://pelosanimais.biblioverse.org', 'https://fortheanimals.biblioverse.org'
+SITE = SITE_EN if EN else SITE_PT
+EN_NO_AR = True  # vira True quando fortheanimals.biblioverse.org estiver publicado: só então o site em português mostra o botão EN e o hreflang
+BILINGUE = EN or EN_NO_AR
+NOME = en.NOME if EN else 'Guia de Argumentação Pelos Animais'
+CURTO = en.CURTO if EN else 'Guia de Argumentação'
 def _ultima_mudanca():
     """Data da última alteração no conteúdo (capítulos, catálogo, ferramentas, estilo), para o sitemap."""
     import datetime, glob as _g
@@ -65,6 +73,9 @@ IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é ce
     'Mostrar os fatos é sempre necessário; parar neles, nunca é suficiente.</p>')
 DESCRICAO = 'O guia de argumentação para defensores dos animais cataloga de forma sistemática todas as ideias usadas para explorar, causar danos, matar animais ou evitar ajudá-los, fornecendo uma explicação abrangente sobre todos os questionamentos e vieses das pessoas que se opõem ao veganismo e ao antiespecismo.'
 e = lambda s: html.escape(str(s), quote=True)
+def L(pt, en):
+    """Texto com variáveis nos dois idiomas; os textos fixos são traduzidos por tools/en/ui.py."""
+    return en if EN else pt
 PAGINAS = []
 BUSCA = []
 
@@ -149,10 +160,18 @@ def _slug_frase(s, usados):
     usados.add(x)
     return x
 _usados = set()
-for _a in ARGS.values(): _a['slug'] = _slug_frase(_a['frase'], _usados)
-SLUG_ARG = {c.lower(): a['slug'] for c, a in ARGS.items()}
+SLUG_ARG_PT = {c.lower(): _slug_frase(a['frase'], _usados) for c, a in ARGS.items()}
 _usados = set()
-SLUG_RUIM = {r['c'].lower(): _slug_frase(r['frase'], _usados) for r in RUINS}
+SLUG_RUIM_PT = {r['c'].lower(): _slug_frase(r['frase'], _usados) for r in RUINS}
+_usados = set()
+_sem_ap = lambda s: s.replace("'", '').replace('’', '')  # they're -> theyre, can't -> cant
+SLUG_ARG_EN = {c.lower(): _slug_frase(_sem_ap(en.ARGS[c][0]) if c in en.ARGS else c, _usados) for c in ARGS}
+_usados = set()
+SLUG_RUIM_EN = {r['c'].lower(): _slug_frase(_sem_ap(en.RUINS[r['frase']]['frase']) if r['frase'] in en.RUINS else r['c'], _usados) for r in RUINS}
+SLUG_ARG, SLUG_RUIM = (SLUG_ARG_EN, SLUG_RUIM_EN) if EN else (SLUG_ARG_PT, SLUG_RUIM_PT)
+for _a in ARGS.values(): _a['slug'] = SLUG_ARG[_a['c'].lower()]
+REV_ARG = {v: k for k, v in SLUG_ARG.items()}
+REV_RUIM = {v: k for k, v in SLUG_RUIM.items()}
 def nova_url(s):
     s = re.sub(r'\bargumentos/([a-l]\d{1,2})\.html', lambda m: f'argumentos/{SLUG_ARG.get(m[1], m[1])}.html', s)
     return re.sub(r'\bruins/(v\d{1,2})\.html', lambda m: f'ruins/{SLUG_RUIM.get(m[1], m[1])}.html', s)
@@ -179,7 +198,10 @@ QE = {
 ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
 def qe_bloco(c):
     if c not in QE: return ''
-    itens = ''.join(f'<li><a href="{QE_URL}{QE_CAPS[k][1]}" {EXT}>{e(QE_CAPS[k][0])}</a> <small>Vol. {ROMANOS[k[0] - 1]}, cap. {k[1]}</small></li>' for k in QE[c])
+    def item(k):
+        t, u = (en.qe(*k) if EN else None) or (QE_CAPS[k][0] + L('', ' (in Portuguese)'), QE_URL + QE_CAPS[k][1])
+        return f'<li><a href="{u}" {EXT}>{e(t)}</a> <small>Vol. {ROMANOS[k[0] - 1]}, cap. {k[1]}</small></li>'
+    itens = ''.join(item(k) for k in QE[c])
     return f'<div class="qe"><h2 id="aprofunde">Aprofunde no Questão de Ética</h2><p>Capítulos da coleção <em>Uma Jornada pela Ética Animal</em>, em acesso aberto, que discutem este argumento com mais detalhe:</p><ul>{itens}</ul></div>'
 CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C2', 'G1', 'G3', 'H1', 'H2', 'L5', 'K1', 'E1']),
                   ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'A16', 'A1', 'A11'])]
@@ -267,6 +289,12 @@ for arq in glob.glob(os.path.join(ROOT, 'data', 'capitulos', '*.xml')):
     c = os.path.basename(arq)[:-4]
     CAPS[c] = ET.parse(arq).getroot()
 assert set(CAPS) <= set(ARGS) | set(UNIDOS) and {f'A{i}' for i in range(1, 13)} <= set(CAPS)
+CAPS_PT = CAPS
+if EN:  # capítulos traduzidos (data/en/capitulos_md); os demais aparecem como verbete
+    CAPS = {}
+    md2xml.todos(os.path.join(ROOT, 'data', 'en'))
+    for arq in glob.glob(os.path.join(ROOT, 'data', 'en', 'capitulos', '*.xml')):
+        CAPS[os.path.basename(arq)[:-4]] = ET.parse(arq).getroot()
 
 def celulas(t, ctx):
     """Linhas de uma tabela como listas de HTML, sem o cabeçalho."""
@@ -303,19 +331,20 @@ def espelho():
     """As conexões dos capítulos acrescentados (NOVOS) aparecem também, invertidas, nos capítulos a que apontam."""
     if not _ESPELHO:
         for n, *_ in NOVOS:
-            for t in secao_cap(n, 6):
+            for t in secao_cap(n, 6, CAPS_PT):
                 if t.tag != 'table': continue
                 for r in t.findall('row')[1:]:
                     cels = [texto(x) for x in r.findall('cell')]
                     if len(cels) < 3: continue
                     volta = {'Vem antes': 'Vem depois', 'Vem depois': 'Vem antes'}.get(cels[0])
                     for x in codigos(cels[1]):
-                        if volta and x in ARGS: _ESPELHO.setdefault(x, []).append([volta, n, e(cels[2])])
+                        if volta and x in ARGS: _ESPELHO.setdefault(x, []).append([volta, n, e(en.motivo(cels[2]) if EN else cels[2])])
         _ESPELHO.setdefault('', [])
     return _ESPELHO
 
 def rede(rs, c, ctx):
     """Conexões: o que vem antes, este argumento, o que vem depois."""
+    rs = [[{'Comes before': 'Vem antes', 'Comes after': 'Vem depois'}.get(re.sub('<[^>]+>', '', r[0]), r[0])] + r[1:] for r in rs]
     ja = {x for r in rs for x in codigos(re.sub('<[^>]+>', '', r[1]))}
     rs = rs + [r for r in espelho().get(c, []) if r[1] not in ja]
     def nos(dir_):
@@ -331,7 +360,9 @@ def rede(rs, c, ctx):
 def por_plano(rs):
     cols = {}
     for r in rs: cols.setdefault(re.sub('<[^>]+>', '', r[0]), []).append(r)
-    expl = {'Lógico': 'A forma é válida?', 'Epistemológico': 'A evidência sustenta?', 'Moral': 'O critério é coerente?'}
+    expl = {'Lógico': 'A forma é válida?', 'Epistemológico': 'A evidência sustenta?', 'Moral': 'O critério é coerente?',
+            'Logical': 'Is the form valid?', 'Epistemological': 'Does the evidence support it?'}
+    if EN: expl['Moral'] = 'Is the criterion coherent?'
     return '<div class="planos">' + ''.join(f'<div class="plano p-{slug(p)}"><h4>{e(p)}</h4><p class="ti2">{expl.get(p, {"pre": "../"})}</p>' + ''.join(acordeao(r[1], r[2]) for r in ls) + '</div>' for p, ls in cols.items()) + '</div>'
 
 def cartoes_vies(rs):
@@ -356,11 +387,11 @@ def capitulo(c):
         if sec is None:
             if no.tag == 'paragraph':
                 t = texto(no)
-                if t == 'Índice': continue
-                if t.startswith('Tese:'):
-                    tese = junta_links(runs(no, ctx)).replace('<strong>Tese:</strong>', '').strip()
-                elif t.startswith('Família:'):
-                    m = re.sub(r'^<strong>Família:</strong>.*?<strong>Parte:</strong>\s*(DIR|IND)\s*(·\s*)?', '', junta_links(runs(no, ctx))).strip()
+                if t in ('Índice', 'Contents'): continue
+                if t.startswith(('Tese:', 'Thesis:')):
+                    tese = re.sub(r'<strong>(Tese|Thesis):</strong>', '', junta_links(runs(no, ctx))).strip()
+                elif t.startswith(('Família:', 'Family:')):
+                    m = re.sub(r'^<strong>(Família|Family):</strong>.*?<strong>(Parte|Part):</strong>\s*(DIR|IND)\s*(·\s*)?', '', junta_links(runs(no, ctx))).strip()
                     if m: notas.append(m)
                 else:
                     notas.append(junta_links(runs(no, ctx)))
@@ -373,12 +404,12 @@ def capitulo(c):
         if no.tag == 'list': b1 += silogismo(itens_lista(no, ctx))
         elif no.tag == 'paragraph':
             t = texto(no)
-            b1 += f'<div class="dita"><span>Como se diz</span><p>{separa(P(no))[1]}</p></div>' if t.startswith('Versão cotidiana') else f'<p>{P(no)}</p>'
+            b1 += f'<div class="dita"><span>Como se diz</span><p>{separa(P(no))[1]}</p></div>' if t.startswith(('Versão cotidiana', 'Everyday version')) else f'<p>{P(no)}</p>'
     b2 = next((baloes(celulas(no, ctx)) for no in secoes[2] if no.tag == 'table'), '')
     b3 = ''.join(f'<p>{P(no)}</p>' for no in secoes[3] if no.tag == 'paragraph')
     curta, retorno = '', ''
     for no in secoes[4]:
-        if texto(no).startswith('Pergunta de retorno'): retorno = separa(P(no))[1]
+        if texto(no).startswith(('Pergunta de retorno', 'Question to ask back')): retorno = separa(P(no))[1]
         else: curta += f'<p>{P(no)}</p>'
     # 5. resposta completa
     b5, atual = {}, None
@@ -398,7 +429,7 @@ def capitulo(c):
                 if k == 'e' and all(separa(i)[0] for i in its): o += ''.join(acordeao(separa(i)[0], f'<p>{separa(i)[1]}</p>') for i in its)
                 else: o += lista(no, ctx)
             elif no.tag == 'table': o += tabela(no, ctx)
-            elif no.tag == 'codeBlock': o += ARVORE[c]
+            elif no.tag == 'codeBlock': o += (en.ARVORE if EN else ARVORE)[c]
         return o
     rot = {'a': 'Diagnóstico', 'b': 'Onde quebra', 'c': 'Dados e fontes', 'd': 'A melhor réplica', 'e': 'Por que ela falha'}
     passos5 = ''.join(f'<li id="b5{k}"><span class="num">{k}</span><div><h3>{liga(e(re.sub(r"^\(.\)\s*", "", b5[k]["t"])), ctx)}</h3>{bloco5(k)}</div></li>' for k in b5)
@@ -471,22 +502,39 @@ def dados(path, title, desc, url, tipo, trilha):
         grafo = [site, pg, {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(mig)]}]
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': grafo}, ensure_ascii=False).replace('</', '<\\/') + '</script>'
 
+def chave(path):
+    """Identificador neutro de uma página, igual nos dois idiomas: pasta + código (argumentos e argumentos ruins) ou o caminho em português."""
+    m = re.match(r'(argumentos|ruins)/([^/]+)\.html$', path)
+    if m: return m[1], (REV_ARG if m[1] == 'argumentos' else REV_RUIM).get(m[2], m[2])
+    return '', path
+def url_lingua(k, lg):
+    pasta, x = k
+    if pasta: x = f'{pasta}/{(SLUG_ARG_EN if pasta == "argumentos" else SLUG_RUIM_EN)[x] if lg == "en" else (SLUG_ARG_PT if pasta == "argumentos" else SLUG_RUIM_PT)[x]}.html'
+    if lg == 'en': x = en.caminho(x)
+    return (SITE_EN if lg == 'en' else SITE_PT) + '/' + ('' if x == 'index.html' else x)
+
 def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
     path = nova_url(path)
+    k = chave(path)
+    if EN: path = en.caminho(path)
     PAGINAS.append(path)
     erro = path == '404.html'
     home = path == 'index.html'
     desc = desc_seo(desc)
     pre = '../' * path.count('/')
     url = SITE + '/' + ('' if home else path)
+    u_pt, u_en = url_lingua(k, 'pt'), url_lingua(k, 'en')
+    outra = u_pt if EN else u_en
+    alterna = '' if not BILINGUE else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     full = NOME if home else f'{title} | {NOME}'
     if len(full) > 60 and not home: full = title
-    indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + dados(path, title, desc, url, tipo, trilha) + '\n'
+    indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha) + '\n'
     base = '<base href="/"/>\n' if erro else ''
     menu = monta_menu(pre, atual)
     l = lambda u, t: f'<li><a href="{pre}{u}">{e(t)}</a></li>'
+    idioma = '' if erro or not BILINGUE else f'<a class="idioma" href="{outra}" hreflang="{"pt-BR" if EN else "en"}" lang="{"pt-BR" if EN else "en"}" title="{"Ler em português" if EN else "Read in English"}">{"PT" if EN else "EN"}</a>' + chr(10)
     doc = f'''<!doctype html>
-<html lang="pt-BR">
+<html lang="{"en" if EN else "pt-BR"}">
 <head>
 <meta charset="utf-8"/>
 {base}<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -497,11 +545,11 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <meta property="og:title" content="{e(full)}"/>
 <meta property="og:description" content="{e(desc)}"/>
 <meta property="og:url" content="{url}"/>
-<meta property="og:locale" content="pt_BR"/>
+<meta property="og:locale" content="{"en_US" if EN else "pt_BR"}"/>
 <meta property="og:image" content="{SITE}/assets/share.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="Guia de Argumentação Pelos Animais: toda objeção tem uma resposta."/>
+<meta property="og:image:alt" content="{e(NOME)}: {"every objection has an answer." if EN else "toda objeção tem uma resposta."}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{SITE}/assets/share.png"/>
 <meta name="theme-color" content="#0a3703"/>
@@ -516,13 +564,13 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <script src="https://biblioverse.org/superbar.js" async></script>
 </head>
 <body data-base="{pre}">
-<nav id="bvbar" class="bvbar" data-current="pelosanimais" data-offset="none" aria-label="BiblioVerse" style="position:relative;height:36px;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:36px;padding:0 14px;font-weight:700;text-decoration:none">BiblioVerse</a></nav>
+<nav id="bvbar" class="bvbar" data-current="{"fortheanimals" if EN else "pelosanimais"}" data-offset="none" aria-label="BiblioVerse" style="position:relative;height:36px;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:36px;padding:0 14px;font-weight:700;text-decoration:none">BiblioVerse</a></nav>
 <a class="skip" href="#main">Pular para o conteúdo</a>
 <header class="topo"><div class="wrap topo-in">
-<a class="marca" href="{pre}index.html">{LOGO}<span>Guia de Argumentação<br/>Pelos Animais</span></a>
+<a class="marca" href="{pre}index.html">{LOGO}<span>{en.MARCA if EN else "Guia de Argumentação<br/>Pelos Animais"}</span></a>
 <nav class="menu" aria-label="Principal">{menu}</nav>
 <button class="bbusca" type="button" aria-label="Buscar um argumento">🔍<span> Buscar</span> <kbd>Ctrl K</kbd></button>
-<button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+{idioma}<button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </div></header>
 <div id="busca" hidden><div class="bcx" role="dialog" aria-label="Buscar um argumento"><input id="q" type="search" placeholder="Digite a frase que você ouviu" autocomplete="off"/><div class="res" id="res"></div></div></div>
 <main id="main">{corpo}</main>
@@ -534,8 +582,9 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 </body></html>
 '''
-    doc = nova_url(doc).replace('href="index.html"', 'href="./"').replace('href="../index.html"', 'href="../"')
-    alvo = os.path.join(ROOT, path)
+    doc = en.traduz_html(doc, nova_url) if EN else nova_url(doc)  # em inglês, a tabela de interface vem antes de converter os links
+    doc = doc.replace('href="index.html"', 'href="./"').replace('href="../index.html"', 'href="../"')
+    alvo = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(alvo), exist_ok=True)
     open(alvo, 'w', encoding='utf-8', newline='\n').write(doc)
 
@@ -548,7 +597,7 @@ def cartao(a, pre=''):
     return f'<a class="cartao" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if a["c"] in CAPS else "ver"}" href="{pre}argumentos/{a["slug"]}.html"><span class="cod">{a["c"]}</span><h3>{e(a["frase"])}</h3><p class="falha">{e(a["falha"])}</p>{status(a["c"])}</a>'
 def pontos(f, pre=''):
     bol = ''.join(f'<i{" class=ok" if a["c"] in CAPS else ""}></i>' for a in f['args'])
-    return f'<a class="linha-f" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html" aria-label="{e(f["nome"])}: {f["n"]} argumentos" title="{e(f["nome"])}"><span>{f["c"]}</span><span class="pontos">{bol}</span></a>'
+    return f'<a class="linha-f" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html" aria-label="{e(f["nome"])}: {f["n"]} {L("argumentos", "arguments")}" title="{e(f["nome"])}"><span>{f["c"]}</span><span class="pontos">{bol}</span></a>'
 def elos(cods, fim=None, pre='', atual=None):
     h = ''.join(f'<li{" class=aqui" if c == atual else ""}><a href="{pre}argumentos/{c.lower()}.html" title="{e(ARGS[c]["frase"])}">{c}</a></li>' for c in cods)
     return f'<ol class="elos">{h}{fim or ""}</ol>'
@@ -594,9 +643,9 @@ def inicio():
 <div class="busca-h"><label class="so-leitor" for="hq">O que te disseram?</label><input id="hq" type="search" placeholder="O que te disseram? Ex.: de onde você tira proteína" autocomplete="off"/><div id="hres" class="hres" hidden></div></div>
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
-<a class="rolar" href="#argumentos">Role para ver os {len(ARGS)} argumentos ↓</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
+<a class="rolar" href="#argumentos">{L(f"Role para ver os {len(ARGS)} argumentos ↓", f"Scroll to see all {len(ARGS)} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
 <section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 12 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
-<div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} argumentos</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
+<div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
 <section class="bloco-cor azul" id="politicas"><div class="wrap"><div class="sec-cab centro-t"><h2>E se a pessoa parte de uma teoria política?</h2><p>Liberais, marxistas, anarquistas, utilitaristas, feministas: cada teoria tem um princípio, e nenhuma oferece, nos próprios termos, uma razão para deixar os animais de fora.</p></div>
 <div class="grade">{polc}</div><p class="centro-t" style="margin-top:22px"><a class="btn" href="objecoes-politicas.html">Ver todas as objeções políticas</a></p></div></section>
@@ -634,7 +683,7 @@ EQUILIBRIO = """<section class="equilibrio" id="corrigir-sem-perder-o-foco" aria
 
 def marca_ruins(txt, pre='../'):
     def f(m):
-        r = next(x for x in RUINS if x['frase'].startswith(m[1]))
+        r = next(x for x in RUINS if x.get('frase_pt', x['frase']).startswith(m[1]))  # marcadores usam a frase em português
         return f'<a href="{pre}ruins/{r["c"].lower()}.html">"{e(r["frase"].rstrip("."))}"</a>'
     return re.sub(r'\{RUIM:([^}]+)\}', f, txt)
 
@@ -643,7 +692,7 @@ def paginas_ruins():
     for k, (nome, desc) in TIPOS.items():
         grupos += f'<h2 style="margin:0 0 6px">{e(nome)}</h2><p style="margin:0 0 14px">{e(desc)}</p><div class="grade" style="margin-bottom:34px">{"".join(cartao_ruim(r) for r in RUINS if r["tipo"] == k)}</div>'
     corpo = cabeca('<a href="./">Início</a>', 'Argumentos ruins que veganos deveriam parar de usar, ou usar de forma melhor', 'Um argumento não fica bom porque defende a causa certa. O único que sobrevive ao escrutínio repetido é o que sempre foi verdadeiro: prejudicar seres sencientes sem necessidade é injusto.') + f'<section class="secao"><div class="wrap">{marca_ruins(EQUILIBRIO, "")}{grupos}<p>Este grupo vem do livro <em>Veganismo Baseado em Evidências</em>. O critério para julgar cada tática é o do melhor cenário: qual abordagem, avaliada com honestidade sobre suas consequências, reduz mais sofrimento.</p></div></section>'
-    page('argumentos-ruins.html', 'Argumentos ruins de veganos: pare de usar ou use melhor', 'Argumentos usados por veganos que não resistem a exame, de saúde e fome a gatos e psicopatia, e como dizer melhor o que cada um tenta dizer.', corpo, 'argumentos-ruins.html', 'CollectionPage')
+    page('argumentos-ruins.html', 'Argumentos ruins de veganos: pare de usar ou use melhor', L('Argumentos usados por veganos que não resistem a exame, de saúde e fome a gatos e psicopatia, e como dizer melhor o que cada um tenta dizer.', "Arguments vegans use that don't survive scrutiny, from health and hunger to cats and psychopathy, and how to say better what each one is trying to say."), corpo, 'argumentos-ruins.html', 'CollectionPage')
     for i, r in enumerate(RUINS):
         nome, desc = TIPOS[r['tipo']]
         lig_ = ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="../argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in r['liga']))
@@ -651,16 +700,16 @@ def paginas_ruins():
         pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
         art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
         pag = f'<section class="cena" style="--c:#b8460f"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../argumentos-ruins.html">Argumentos ruins</a> / {e(nome)}</p><div class="fala"><span class="selo-c">{r["c"]}</span><h1>"{e(r["frase"])}"</h1></div><div class="tese-c"><span>{e(nome)}</span><p>{e(desc)}</p></div></div></section><div class="wrap paineis">{art}</div>'
-        page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')])
+        page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', L(f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', f'Why to stop saying “{r["frase"].rstrip(".")}”, or how to say it better: {r["por"][0]}'), pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')])
 
 def paginas_alem():
     corpo = cabeca('<a href="./">Início</a>', 'Além do veganismo', 'O veganismo é uma consequência do antiespecismo e do senciocentrismo, não o limite deles.') + f'<section class="secao"><div class="wrap alem-in"><div>{circulo()}</div><div class="lista-alem">{"".join(cartao_alem(p) for p in alem.PAGINAS)}</div></div></section>'
-    page('alem-do-veganismo.html', 'Além do veganismo', 'Antiespecismo, senciocentrismo, estado da arte da ética animal, sofrimento de animais selvagens e a possibilidade de senciência em IA e extraterrestres.', corpo, 'alem-do-veganismo.html', 'CollectionPage')
+    page('alem-do-veganismo.html', 'Além do veganismo', L('Antiespecismo, senciocentrismo, estado da arte da ética animal, sofrimento de animais selvagens e a possibilidade de senciência em IA e extraterrestres.', 'Antispeciesism, sentientism, the state of the art in animal ethics, wild animal suffering and the possibility of sentience in AI and extraterrestrials.'), corpo, 'alem-do-veganismo.html', 'CollectionPage')
     for i, p in enumerate(alem.PAGINAS):
         lado = ''.join(f'<a href="{x["s"]}.html"{" aria-current=page" if x is p else ""}>{e(x["t"])}</a>' for x in alem.PAGINAS)
         # {RUIM:começo da frase} vira um link para a página de "Pare de dizer isso", cujo código é renumerado no build
         def ruim(m):
-            r = next(x for x in RUINS if x['frase'].startswith(m[1]))
+            r = next(x for x in RUINS if x.get('frase_pt', x['frase']).startswith(m[1]))  # marcadores usam a frase em português
             return f'<a href="../ruins/{r["c"].lower()}.html">{r["c"]}, "{e(r["frase"].rstrip("."))}"</a>'
         texto_ = re.sub(r'\{RUIM:([^}]+)\}', ruim, p['corpo'])
         pag = cabeca(f'<a href="../">Início</a> / <a href="../alem-do-veganismo.html">Além do veganismo</a> / {e(p["selo"])}', e(p['t']), e(p['res'])) + f'<div class="wrap lay"><nav class="indice" aria-label="Além do veganismo"><p class="ti">Nesta seção</p><div class="lado">{lado}</div></nav><article class="artigo">{texto_}{lista_fontes(p["fontes"])}</article></div>'
@@ -677,7 +726,7 @@ def paginas_politicas():
 <div class="grade">{cards}</div>
 <p class="fino" style="margin-top:26px">A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.</p>
 </div></section>'''
-    page('objecoes-politicas.html', 'Objeções políticas', 'Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', corpo, 'objecoes-politicas.html', 'CollectionPage')
+    page('objecoes-politicas.html', 'Objeções políticas', L('Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', 'Liberalism, Marxism, anarchism, utilitarianism, Rawls, Kant, feminism, anti-racism and other theories: why none offers, on its own terms, a reason to exclude animals.'), corpo, 'objecoes-politicas.html', 'CollectionPage')
     T = politicas.TEORIAS
     for i, t in enumerate(T):
         cor = tons[i % len(tons)]
@@ -689,7 +738,7 @@ def paginas_politicas():
                '<nav class="pass" aria-label="Outras teorias">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próxima') if prox else '') + '</nav>')
         pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas</a> / {e(t["t"])}</p>'
                f'<div class="fala"><h1>"{e(t["frase"])}"</h1></div><div class="tese-c"><span>{e(t["t"])}: o princípio</span><p>{e(t["principio"])}</p></div></div></section><div class="wrap paineis">{art}</div>')
-        page(f'politicas/{t["s"]}.html', f'{t["t"]}: "{t["frase"]}"', f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', pag, 'objecoes-politicas.html', 'Article', [('Objeções políticas', 'objecoes-politicas.html')])
+        page(f'politicas/{t["s"]}.html', f'{t["t"]}: "{t["frase"]}"', L(f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', f'{t["t"]}: why the objection "{t["frase"]}" contradicts the theory\'s own principle.'), pag, 'objecoes-politicas.html', 'Article', [('Objeções políticas', 'objecoes-politicas.html')])
 
 def pagina_debate():
     """Debate simulado: dados em tools/debate.py, lógica em assets/debate.js. A conversa segue o grafo do raciocínio antivegano."""
@@ -705,23 +754,23 @@ def pagina_debate():
     js = json.dumps(dict(n=n, aberturas=COMUNS, pessoas=debate.PESSOAS), ensure_ascii=False).replace('</', '<\\/')
     corpo = cabeca('<a href="./">Início</a>', 'Debate simulado', 'Alguém começa com um dos argumentos mais ouvidos. Você escolhe a resposta, e a conversa segue para onde esses debates costumam ir. No fim, veja como foi.') + f'''<section class="secao"><div class="wrap estreito">
 <div id="debate" class="debate"><noscript><p>O debate simulado precisa de JavaScript. Enquanto isso, use <a href="treino.html">Treinar respostas</a>.</p></noscript></div>
-<p class="fino" style="margin-top:26px">Cada rodada tem uma resposta forte, uma fraca (exagerada, enviesada ou que troca a questão ética por outra) e uma ruim. As respostas fortes resumem os capítulos do guia; as fracas e as ruins vêm, em boa parte, dos <a href="argumentos-ruins.html">argumentos que veganos deveriam parar de usar</a>. São {len(jogaveis)} argumentos jogáveis, ligados pelo <a href="raciocinio.html">raciocínio antivegano</a>.</p>
+<p class="fino" style="margin-top:26px">Cada rodada tem uma resposta forte, uma fraca (exagerada, enviesada ou que troca a questão ética por outra) e uma ruim. As respostas fortes resumem os capítulos do guia; as fracas e as ruins vêm, em boa parte, dos <a href="argumentos-ruins.html">argumentos que veganos deveriam parar de usar</a>. {L(f"São {len(jogaveis)} argumentos jogáveis, ligados pelo", f"There are {len(jogaveis)} playable arguments, linked by the")} <a href="raciocinio.html">{L("raciocínio antivegano", "anti-vegan line of reasoning")}</a>.</p>
 </div></section><script type="application/json" id="deb-dados">{js}</script><script src="assets/debate.js?v={VER_DEB}" defer></script>'''
-    page('debate.html', 'Debate simulado', 'Jogo para treinar uma conversa com quem não é vegano: escolha a melhor resposta para cada argumento e veja como você se saiu no debate.', corpo, 'debate.html')
+    page('debate.html', 'Debate simulado', L('Jogo para treinar uma conversa com quem não é vegano: escolha a melhor resposta para cada argumento e veja como você se saiu no debate.', "A game to practice a conversation with someone who isn't vegan: pick the best answer to each argument and see how you did in the debate."), corpo, 'debate.html')
 
 def treino():
     cartas = [dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html', p=FAMILIAS[a['fam']]['parte'], cor=FAMILIAS[a['fam']]['cor'], fam=a['fam']) for a in ARGS.values()]
     cad = [dict(n=c['n'], cods=c['cods']) for c in CADEIAS]
-    ops = ''.join(f'<option value="fam:{f["c"]}">Família {f["c"]}: {e(f["nome"])}</option>' for f in FAMILIAS.values())
-    opc = ''.join(f'<option value="cad:{i}">Conversa: {e(c["n"])}</option>' for i, c in enumerate(CADEIAS))
+    ops = ''.join(f'<option value="fam:{f["c"]}">{L("Família", "Family")} {f["c"]}: {e(f["nome"])}</option>' for f in FAMILIAS.values())
+    opc = ''.join(f'<option value="cad:{i}">{L("Conversa", "Conversation")}: {e(c["n"])}</option>' for i, c in enumerate(CADEIAS))
     dados_ = json.dumps(dict(cartas=cartas, cadeias=cad), ensure_ascii=False).replace('</', '<\\/')
     corpo = cabeca('<a href="./">Início</a>', 'Treinar respostas', 'Leia a objeção, pense no que diria e compare com a falha principal. Escolha uma família, ou siga uma conversa do jeito que ela costuma acontecer.') + f'''<section class="secao"><div class="wrap estreito"><div class="filtros"><label for="t-mod" class="so-leitor">O que treinar</label><select id="t-mod" class="sel"><option value="todos">Todos os argumentos, em ordem aleatória</option><optgroup label="Conversas típicas">{opc}</optgroup><optgroup label="Famílias">{ops}</optgroup></select></div>
 <div class="flash" id="flash" aria-live="polite"><p class="flash-m"><span id="t-cod"></span><span id="t-pos"></span></p><p class="flash-q" id="t-q"></p><div id="t-res" hidden><p class="ti">A falha principal</p><p id="t-r"></p><a id="t-l" href="#flash">Ver a resposta completa →</a></div></div>
 <div class="flash-b"><button class="btn" id="t-ver" type="button">Mostrar a resposta</button><button class="btn alt" id="t-sabia" type="button" hidden>Eu sabia</button><button class="btn alt" id="t-rever" type="button" hidden>Preciso rever</button></div><p id="t-placar" class="ev"></p></div></section><script type="application/json" id="t-dados">{dados_}</script>'''
-    page('treino.html', 'Treinar respostas', 'Treine respostas às objeções ao veganismo com cartões: leia o argumento, pense no que diria e compare com a falha principal.', corpo, 'treino.html', 'WebPage')
+    page('treino.html', 'Treinar respostas', L('Treine respostas às objeções ao veganismo com cartões: leia o argumento, pense no que diria e compare com a falha principal.', "Practice answers to objections to veganism with cards: read the argument, think about what you'd say and compare it with the main flaw."), corpo, 'treino.html', 'WebPage')
 
 def cartao_fam(f, pre=''):
-    return f'<a class="cartao" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html"><span class="cod">Família {f["c"]} · {f["n"]} argumentos</span><h3>{e(f["nome"])}</h3><p>{e(f["perg"])}</p></a>'
+    return f'<a class="cartao" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html"><span class="cod">{L("Família", "Family")} {f["c"]} · {f["n"]} {L("argumentos", "arguments")}</span><h3>{e(f["nome"])}</h3><p>{e(f["perg"])}</p></a>'
 
 def comece():
     blocos = ['Formulação: a frase do dia a dia e a versão mais forte, com premissas numeradas', 'Como pode aparecer: outras formas do mesmo argumento', 'Resposta para crianças: linguagem de 8 a 10 anos, sem culpa nem choque', 'Resposta curta: a falha central e uma pergunta de retorno', 'Resposta completa: validade, evidências, a melhor réplica e por que ela também falha', 'Conexões: o que costuma vir antes e depois', 'Erros de raciocínio: lógicos, epistemológicos e morais', 'Contradições: onde o argumento colide com outras crenças da própria pessoa', 'Vieses: os mecanismos psicológicos que o tornam convincente', 'Extrapolações: o que se seguiria se o princípio valesse para humanos', 'O que o argumento acerta: as concessões honestas']
@@ -733,23 +782,23 @@ def comece():
 <h2>Argumentos diretos e indiretos</h2><p>Os argumentos <strong>diretos (DIR)</strong> contestam o núcleo moral: se os animais sentem, se o indivíduo animal conta e se usar ou matar esse indivíduo é errado. Os <strong>indiretos (IND)</strong> não enfrentam essa questão: alegam que a exploração é necessária, que o veganismo é inviável, prejudicial ou ineficaz, ou que quem o defende não merece crédito.</p><p>Mesmo que um argumento indireto fosse verdadeiro, ele justificaria apenas exceções, nunca a exploração em geral. Por isso a Parte DIR vem primeiro.</p><h3 id="indiretos">Por que os argumentos indiretos não bastam</h3>{IND_TEXTO}
 <h2>Os 11 blocos de um capítulo completo</h2><ol>{"".join(f"<li>{e(b)}</li>" for b in blocos)}</ol><p>Comece por <a href="argumentos/a10.html">A10, "São só animais"</a>, o capítulo-raiz: é onde a maioria das cadeias de objeções termina.</p>
 </div></section>'''
-    page('comece-aqui.html', 'Comece aqui', 'Como usar o guia: o critério da senciência, os cinco compromissos, a diferença entre argumentos diretos e indiretos e os 11 blocos de cada capítulo.', corpo, 'comece-aqui.html')
+    page('comece-aqui.html', 'Comece aqui', L('Como usar o guia: o critério da senciência, os cinco compromissos, a diferença entre argumentos diretos e indiretos e os 11 blocos de cada capítulo.', 'How to use the guide: the sentience criterion, the five commitments, the difference between direct and indirect arguments and the 11 blocks of each chapter.'), corpo, 'comece-aqui.html')
 
 def familias():
-    corpo = cabeca('<a href="./">Início</a>', 'As 12 famílias', 'Argumentos parecidos erram de modo parecido. Cada família reúne objeções com a mesma pergunta de fundo e o mesmo tipo de erro dominante.') + '<section class="secao"><div class="wrap">' + ''.join(f'<h2 style="margin:0 0 14px">Parte {p}: argumentos {t}</h2>' + (f'<div class="aviso-ind largo"><span>Sobre os argumentos indiretos</span>{IND_TEXTO.replace(chr(34)+"argumentos/", chr(34)+"argumentos/")}</div>' if p == 'IND' else '') + f'<div class="grade" style="margin-bottom:34px">{"".join(cartao_fam(f) for f in FAMILIAS.values() if f["parte"] == p)}</div>' for p, t in (('DIR', 'diretos'), ('IND', 'indiretos'))) + '</div></section>'
-    page('familias.html', 'As 12 famílias', 'As doze famílias de argumentos contra o veganismo, de senciência e status moral a ataques aos veganos, com a pergunta de fundo de cada uma.', corpo, 'familias.html', 'CollectionPage')
+    corpo = cabeca('<a href="./">Início</a>', 'As 12 famílias', 'Argumentos parecidos erram de modo parecido. Cada família reúne objeções com a mesma pergunta de fundo e o mesmo tipo de erro dominante.') + '<section class="secao"><div class="wrap">' + ''.join(f'<h2 style="margin:0 0 14px">{L("Parte", "Part")} {p}: {L("argumentos " + t, t + " arguments")}</h2>' + (f'<div class="aviso-ind largo"><span>Sobre os argumentos indiretos</span>{IND_TEXTO.replace(chr(34)+"argumentos/", chr(34)+"argumentos/")}</div>' if p == 'IND' else '') + f'<div class="grade" style="margin-bottom:34px">{"".join(cartao_fam(f) for f in FAMILIAS.values() if f["parte"] == p)}</div>' for p, t in (('DIR', L('diretos', 'direct')), ('IND', L('indiretos', 'indirect')))) + '</div></section>'
+    page('familias.html', 'As 12 famílias', L('As doze famílias de argumentos contra o veganismo, de senciência e status moral a ataques aos veganos, com a pergunta de fundo de cada uma.', 'The twelve families of arguments against veganism, from sentience and moral status to attacks on vegans, with the underlying question of each.'), corpo, 'familias.html', 'CollectionPage')
     for c, f in FAMILIAS.items():
         extra = f'<p class="tese" style="--c:{f["cor"]}"><strong>Pergunta de fundo:</strong> {e(f["perg"])}<br/><strong>Erro dominante:</strong> {e(f["erro"])}</p>'
         if f['parte'] == 'IND': extra += aviso_ind(c, 'Família de argumentos indiretos')
-        corpo = cabeca('<a href="../">Início</a> / <a href="../familias.html">Famílias</a>', f'{c}. {e(f["nome"])}', f'{f["n"]} argumentos da Parte {f["parte"]}.', extra) + f'<section class="secao"><div class="wrap"><div class="grade">{"".join(cartao(a, "../") for a in f["args"])}</div></div></section>'
-        page(f'familias/{c.lower()}.html', f'Família {c}: {f["nome"]}', f'{f["n"]} argumentos sobre {f["nome"].lower()}. {f["perg"]} Erro dominante: {f["erro"]}.', corpo, 'familias.html', 'CollectionPage', [('Famílias', 'familias.html')])
+        corpo = cabeca('<a href="../">Início</a> / <a href="../familias.html">Famílias</a>', f'{c}. {e(f["nome"])}', L(f'{f["n"]} argumentos da Parte {f["parte"]}.', f'{f["n"]} arguments in Part {f["parte"]}.'), extra) + f'<section class="secao"><div class="wrap"><div class="grade">{"".join(cartao(a, "../") for a in f["args"])}</div></div></section>'
+        page(f'familias/{c.lower()}.html', f'Família {c}: {f["nome"]}', L(f'{f["n"]} argumentos sobre {f["nome"].lower()}. {f["perg"]} Erro dominante: {f["erro"]}.', f'{f["n"]} arguments about {f["nome"].lower()}. {f["perg"]} Dominant error: {f["erro"]}.'), corpo, 'familias.html', 'CollectionPage', [('Famílias', 'familias.html')])
 
 def indice_erro(path, titulo, cab, lede, itens, col):
     cards = ''
     for i in itens:
         cods = ''.join(f'<a href="argumentos/{c.lower()}.html" title="{e(ARGS[c]["frase"])}">{c}</a>' for c in i['cods'])
         cards += f'<div class="cartao erro" id="{slug(i["n"])}"><h3>{e(i["n"])}</h3><p>{e(i["d"])}</p><div class="elos soltos">{cods or e(i["aparece"])}</div></div>'
-    corpo = cabeca('<a href="./">Início</a>', titulo, lede) + f'<section class="secao"><div class="wrap"><div class="filtros"><input class="f-simples" type="search" placeholder="Filtrar {titulo.lower()}" aria-label="Filtrar {titulo.lower()}"/></div><div class="grade f-alvo">{cards}</div></div></section>'
+    corpo = cabeca('<a href="./">Início</a>', titulo, lede) + f'<section class="secao"><div class="wrap"><div class="filtros"><input class="f-simples" type="search" placeholder="{L("Filtrar", "Filter")} {titulo.lower()}" aria-label="{L("Filtrar", "Filter")} {titulo.lower()}"/></div><div class="grade f-alvo">{cards}</div></div></section>'
     page(path, titulo, lede, corpo, path, 'CollectionPage')
 
 def slug(s):
@@ -766,7 +815,7 @@ def mapa():
 <section class="secao areia"><div class="wrap estreito"><div class="sec-cab"><h2>As duas cadeias mais comuns</h2></div>{cads}</div></section>
 <section class="secao"><div class="wrap estreito"><div class="sec-cab"><h2>Cadeias típicas</h2><p>Passe o mouse sobre um código para ver a frase, ou clique para abrir a resposta.</p></div>{tipicas}</div></section>
 <section class="secao areia"><div class="wrap estreito artigo"><h2>Natural, normal, necessário e gostoso</h2><p>As famílias se encaixam nos "4Ns" de Piazza e colegas (2015), as quatro racionalizações mais comuns do consumo de carne: <strong>natural</strong> (<a href="familias/c.html">família C</a>), <strong>normal</strong> (<a href="familias/d.html">D</a> e <a href="familias/e.html">E</a>), <strong>necessário</strong> (<a href="familias/g.html">G</a>, <a href="familias/h.html">H</a> e <a href="familias/j.html">J</a>) e <strong>gostoso</strong> (<a href="argumentos/j11.html">J11</a>).</p></div></section>'''
-    page('mapa.html', 'Mapa de conexões', 'Como as objeções ao veganismo se encadeiam, as três raízes onde quase toda conversa termina e as sequências mais comuns de argumentos.', corpo, 'mapa.html')
+    page('mapa.html', 'Mapa de conexões', L('Como as objeções ao veganismo se encadeiam, as três raízes onde quase toda conversa termina e as sequências mais comuns de argumentos.', 'How objections to veganism chain together, the three roots where almost every conversation ends and the most common sequences of arguments.'), corpo, 'mapa.html')
 
 def cena(c, f, frase, abaixo):
     return f'<section class="cena" style="--c:{f["cor"]}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../familias/{f["c"].lower()}.html">{f["c"]}. {e(f["nome"])}</a> / Parte {f["parte"]}</p><div class="fala"><span class="selo-c">{c}</span><h1>"{e(frase)}"</h1></div>{abaixo}</div></section>'
@@ -774,7 +823,8 @@ def cena(c, f, frase, abaixo):
 def barra_leitura(c, title):
     """Barra de ações do capítulo (ouvir em pt-BR, como citar, imprimir ou PDF), como no Política Para Iniciantes. O JS está em assets/app.js."""
     ano, url = ATUALIZADO[:4], f'{SITE}/argumentos/{c.lower()}.html'
-    abnt = f'{NOME.upper()}. {e(title)}. BiblioVerse, {ano}. Disponível em: {url}. Acesso em: {{ACESSO}}.'
+    abnt = L(f'{NOME.upper()}. {e(title)}. BiblioVerse, {ano}. Disponível em: {url}. Acesso em: {{ACESSO}}.',
+             f'{NOME}. &quot;{e(title)}.&quot; <em>BiblioVerse</em>, {ano}, {url}. Accessed {{ACESSO}}.')  # em inglês, MLA no lugar da ABNT
     apa = f'{NOME}. ({ano}). <em>{e(title)}</em>. BiblioVerse. {url}'
     return (f'<div class="acoes-cap" data-abnt="{e(abnt)}" data-apa="{e(apa)}">'
             '<button type="button" data-acao="ouvir" aria-pressed="false"><span aria-hidden="true">▶</span> Ouvir</button>'
@@ -786,7 +836,7 @@ def pagina_capitulo(c, ant, prox):
     tese, notas, abas = capitulo(c)
     abaixo = f'<div class="tese-c"><span>A resposta em uma frase</span><p>{tese}</p></div>' + ''.join(f'<p class="notas">{n}</p>' for n in notas)
     if f['parte'] == 'IND': abaixo = aviso_ind(f['c'], 'Antes de responder: argumento indireto') + abaixo
-    abaixo += barra_leitura(c, f'{c}. "{a["frase"].rstrip(".")}"')
+    abaixo += barra_leitura(c, L(f'{c}. "{a["frase"].rstrip(".")}"', f"{c}. ‘{a['frase'].rstrip('.')}’"))
     tabs = ''.join(f'<button type="button" role="tab" id="tab-{i}" aria-controls="p-{i}" aria-selected="{"true" if not n else "false"}"><b>{e(t)}</b><small>{e(s)}</small></button>' for n, (i, t, s, _) in enumerate(abas))
     pans = ''.join(f'<div class="painel" role="tabpanel" id="p-{i}" aria-labelledby="tab-{i}">{h}</div>' for i, _, _, h in abas)
     pag = cena(c, f, a['frase'], abaixo) + f'<div class="abas-w"><div class="wrap"><div class="abas" role="tablist" aria-label="Partes do capítulo">{tabs}</div></div></div><div class="wrap paineis" style="--c:{f["cor"]}">{pans}{passos(ant, prox)}</div>'
@@ -807,14 +857,14 @@ def pagina_verbete(c, ant, prox):
         corpo += '<h2>Erros e vieses ligados</h2><div class="grade-v">' + ''.join(f'<a class="cartao vies" href="../{p}.html#{slug(x["n"])}"><span class="cod">{r}</span><h4>{e(x["n"])}</h4><p>{e(x["d"])}</p></a>' for ls, p, r in ((fal, 'falacias', 'Falácia'), (vie, 'vieses', 'Viés')) for x in ls) + '</div>'
     if cad:
         corpo += '<h2>Em que conversa aparece</h2>' + ''.join(f'<div class="cadeia"><h3>Cadeia {e(ca["n"].lower())}</h3>{elos(ca["cods"], pre="../", atual=c)}</div>' for ca in cad)
-    corpo += f'<p class="aviso">O capítulo completo deste argumento ainda está em preparação. Veja a <a href="../familias/{f["c"].lower()}.html">família {f["c"]}</a>: {e(f["perg"])}</p>'
+    corpo += f'<p class="aviso">O capítulo completo deste argumento ainda está em preparação. {L("Veja a", "See")} <a href="../familias/{f["c"].lower()}.html">{L("família", "family")} {f["c"]}</a>: {e(f["perg"])}</p>'
     pag = cena(c, f, a['frase'], abaixo) + f'<div class="wrap paineis" style="--c:{f["cor"]}">{corpo}{passos(ant, prox)}</div>'
-    page(f'argumentos/{a["slug"]}.html', f'{c}: {a["frase"]}', f'Como responder a "{a["frase"]}" {a["falha"]}.', pag, TODOS, 'WebPage', [('Argumentos', TODOS)])
+    page(f'argumentos/{a["slug"]}.html', f'{c}: {a["frase"]}', L(f'Como responder a "{a["frase"]}" {a["falha"]}.', f'How to answer "{a["frase"]}" {a["falha"]}.'), pag, TODOS, 'WebPage', [('Argumentos', TODOS)])
 
-def secao_cap(c, n):
+def secao_cap(c, n, fonte=None):
     """Nós de uma seção (número n) de um capítulo."""
     out, dentro = [], False
-    for no in CAPS[c]:
+    for no in (fonte or CAPS)[c]:
         if no.tag == 'paragraph' and no.get('heading') == '2':
             dentro = texto(no).startswith(f'{n}.')
             continue
@@ -826,8 +876,8 @@ def grafo():
     arestas = {}
     def liga_(a, b, porque):
         if a in ARGS and b in ARGS and a != b: arestas.setdefault(a, {}).setdefault(b, porque)
-    for c in CAPS:
-        for t in secao_cap(c, 6):
+    for c in CAPS_PT:
+        for t in secao_cap(c, 6, CAPS_PT):
             if t.tag != 'table': continue
             for r in t.findall('row')[1:]:
                 cels = [texto(x) for x in r.findall('cell')]
@@ -846,11 +896,14 @@ def grafo():
     for chave, porque in MOTIVOS.items():
         x, y = chave.split('>')
         if y in arestas.get(x, {}): arestas[x][y] = porque
+    if EN:
+        for vai in arestas.values():
+            for y in vai: vai[y] = en.motivo(vai[y])
     return arestas
 
 def curta(c):
     if c not in CAPS: return ARGS[c]['falha']
-    ps = [re.sub(r'\s+', ' ', texto(no)) for no in secao_cap(c, 4) if no.tag == 'paragraph' and not texto(no).startswith('Pergunta de retorno')]
+    ps = [re.sub(r'\s+', ' ', texto(no)) for no in secao_cap(c, 4) if no.tag == 'paragraph' and not texto(no).startswith(('Pergunta de retorno', 'Question to ask back'))]
     return ' '.join(ps)
 
 def raciocinio():
@@ -881,14 +934,17 @@ def raciocinio():
 <script type="application/json" id="rac-dados">{js}</script>
 <div class="sec-cab" style="margin-top:46px"><h2>Todas as conexões</h2><p>Cada argumento e os caminhos que a conversa costuma tomar depois que ele é respondido. As raízes A10, J11 e E12 são onde quase tudo termina; o <a href="mapa.html">mapa de conexões</a> mostra as cadeias completas.</p></div>
 <div class="rac-lista">{lista}</div></div></section>'''
-    page('raciocinio.html', 'O raciocínio antivegano', 'Para onde vai cada argumento antivegano depois de respondido: um guia interativo das conexões entre as objeções, até as três raízes onde quase toda conversa termina.', corpo, 'raciocinio.html')
+    page('raciocinio.html', 'O raciocínio antivegano', L('Para onde vai cada argumento antivegano depois de respondido: um guia interativo das conexões entre as objeções, até as três raízes onde quase toda conversa termina.', 'Where each anti-vegan argument goes once it is answered: an interactive guide to the connections between objections, down to the three roots where almost every conversation ends.'), corpo, 'raciocinio.html')
 
 def sobre():
-    corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>A abordagem</h2><p>O guia parte de uma posição centrada na senciência, mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio e busca uma fundamentação lógica e epistemológica forte, como se faz na filosofia analítica.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2><p>Os {len(ARGS)} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if len(set(CAPS) & set(ARGS)) >= len(ARGS) else f"{len(set(CAPS) & set(ARGS))} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo, baseados no livro <em>Veganismo Baseado em Evidências</em>.</p>
+    n_cap = len(set(CAPS) & set(ARGS))
+    CONTEM = L(f'<p>Os {len(ARGS)} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo, baseados no livro <em>Veganismo Baseado em Evidências</em>.</p>',
+               f'<p>All {len(ARGS)} arguments are catalogued, each with its common wordings and its main flaw. In this English edition, {"every argument has" if n_cap >= len(ARGS) else ("no argument has a full chapter yet; each has a summary page, and the" if not n_cap else f"{n_cap} have a full chapter so far; the others have a summary page, and the")} full chapters, with the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments, are being translated from the Portuguese edition. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism, based on the book <em>Veganismo Baseado em Evidências</em> (Evidence-Based Veganism, in Portuguese).</p>')
+    corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>A abordagem</h2><p>O guia parte de uma posição centrada na senciência, mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio e busca uma fundamentação lógica e epistemológica forte, como se faz na filosofia analítica.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2>{CONTEM}
 <h2>Sobre as fontes</h2><p>Afirmações empíricas precisam de fonte. Os links nas referências levam às fontes conferidas na redação. Quando uma tabela indica "fonte ainda não conferida", a referência existe, mas ainda não foi checada no original.</p>
 <h2>Sobre o tom</h2><p>O guia discute argumentos, não pessoas. Apresenta a versão mais forte de cada objeção e diz o que ela acerta, porque só assim a resposta vale alguma coisa. Quando compara a estrutura lógica de argumentos, não está equiparando vítimas nem sofrimentos históricos.</p>
 <h2>Privacidade</h2><p>Este site não pede cadastro e não usa cookies próprios. Ele carrega as fontes do Google Fonts e a barra de navegação da BiblioVerse.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div></section>'''
-    page('sobre.html', 'Sobre o guia', 'O que é o guia de argumentação para defensores dos animais, o que já está pronto, como as fontes são tratadas e qual é o tom adotado.', corpo, 'sobre.html')
+    page('sobre.html', 'Sobre o guia', L('O que é o guia de argumentação para defensores dos animais, o que já está pronto, como as fontes são tratadas e qual é o tom adotado.', 'What the argument guide for animal advocates is, what is ready, how sources are handled and what tone it takes.'), corpo, 'sobre.html')
 
 def pagina_biblioteca():
     """Livros e sites para aprender a argumentar pelos animais, um card por livro (dados em tools/biblioteca.py)."""
@@ -905,16 +961,16 @@ def pagina_biblioteca():
     chips += ''.join(f'<button class="chip" type="button" data-g="lingua" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{t}</button>' for v, t in (('', 'Qualquer idioma'), ('PT', 'Em português'), ('EN', 'Em inglês')))
     sites = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in biblioteca.SITES)
     corpo = cabeca('<a href="./">Início</a>', 'Biblioteca', 'Livros para aprender a argumentar pelos animais: respostas às objeções mais comuns, os fundamentos éticos e a psicologia que sustenta o hábito de comer animais.') + f'''<section class="secao"><div class="wrap">
-<div class="filtros bib-filtros">{chips}<span id="bib-n" aria-live="polite">{len(biblioteca.LIVROS)} livros</span></div>
+<div class="filtros bib-filtros">{chips}<span id="bib-n" aria-live="polite">{len(biblioteca.LIVROS)} {L("livros", "books")}</span></div>
 <div class="bib-grade">{cards}</div>
 <h2 style="margin-top:40px">Sites para consultar</h2><div class="bib-sites">{sites}</div>
 <p class="fino" style="margin-top:22px">A lista partiu da seleção da <a href="https://vegpedia.com/2024/07/24/livros-e-sites-para-aprender-a-argumentar-a-favor-dos-animais" {EXT}>Vegpedia</a> e foi completada com outros livros focados em rebater argumentos antiveganos e especistas. Cada título foi conferido em catálogo, editora ou resenha.</p>
 </div></section>'''
-    page('biblioteca.html', 'Biblioteca', 'Livros e sites para aprender a argumentar pelos animais e rebater argumentos antiveganos e especistas, em português e em inglês.', corpo, 'biblioteca.html', 'CollectionPage')
+    page('biblioteca.html', 'Biblioteca', L('Livros e sites para aprender a argumentar pelos animais e rebater argumentos antiveganos e especistas, em português e em inglês.', 'Books and websites for learning to argue for animals and answer anti-vegan and speciesist arguments, in English and Portuguese.'), corpo, 'biblioteca.html', 'CollectionPage')
 
 def nao_achou():
     corpo = cabeca('<a href="./">Início</a>', 'Página não encontrada', 'Tente a busca ou volte para a lista de argumentos.') + '<section class="secao"><div class="wrap"><a class="btn" href="index.html#argumentos">Ver os argumentos</a></div></section>'
-    page('404.html', 'Página não encontrada', 'A página que você procurou não existe. Use a busca ou volte para a lista de argumentos do guia.', corpo)
+    page('404.html', 'Página não encontrada', L('A página que você procurou não existe. Use a busca ou volte para a lista de argumentos do guia.', "The page you were looking for doesn't exist. Use the search or go back to the guide's list of arguments."), corpo)
 
 # ---------- índice de vieses completo ----------
 # Os 16 vieses do catálogo, mais os que os capítulos usam nas tabelas "Vieses". Cada entrada: nome, definição, outros nomes usados nos capítulos.
@@ -961,9 +1017,9 @@ ALIAS_CAT = {'Dissonância cognitiva (paradoxo da carne)': ['Paradoxo da carne',
 def completa_vieses():
     """Junta ao índice os vieses que aparecem nas tabelas dos capítulos, com os códigos de onde aparecem."""
     nomes_cap = {}
-    for c in CAPS:
+    for c in CAPS_PT:
         if c not in ARGS: continue
-        for t in secao_cap(c, 9):
+        for t in secao_cap(c, 9, CAPS_PT):
             if t.tag != 'table': continue
             for r in t.findall('row')[1:]:
                 cel = r.findall('cell')
@@ -979,11 +1035,12 @@ def completa_vieses():
         cods = [c for c in ORDEM if c in onde(n, *apelidos)]
         if cods: VIESES.append(dict(n=n, d=d, aparece='', cods=cods))
 completa_vieses()
+if EN: en.aplica(globals())
 
 # ---------- montagem ----------
 inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()
-indice_erro('falacias.html', 'Falácias', 'Falácia', f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', FALACIAS, 'Em uma frase')
-indice_erro('vieses.html', 'Vieses', 'Viés', f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', VIESES, 'Mecanismo')
+indice_erro('falacias.html', L('Falácias', 'Fallacies'), 'Falácia', L(f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', f'{len(FALACIAS)} logical errors that explain much of the catalogue. Click a code to see how the fallacy shows up in the argument.'), FALACIAS, 'Em uma frase')
+indice_erro('vieses.html', L('Vieses', 'Biases'), 'Viés', L(f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', f'{len(VIESES)} psychological mechanisms that make these arguments convincing, even when they do not hold up.'), VIESES, 'Mecanismo')
 for i, c in enumerate(ORDEM):
     ant = ORDEM[i - 1] if i else None
     prox = ORDEM[i + 1] if i + 1 < len(ORDEM) else None
@@ -998,18 +1055,27 @@ for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'fala
 for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.html#{slug(i["n"])}', k=''))
 
 def escreve(rel, txt):
-    open(os.path.join(ROOT, rel), 'w', encoding='utf-8', newline='\n').write(txt)
-escreve('assets/busca.json', nova_url(json.dumps(BUSCA, ensure_ascii=False, separators=(',', ':'))))
+    alvo = os.path.join(OUT, rel)
+    os.makedirs(os.path.dirname(alvo), exist_ok=True)
+    open(alvo, 'w', encoding='utf-8', newline='\n').write(txt)
+if EN: en.copia_assets(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
+_busca = nova_url(json.dumps(BUSCA, ensure_ascii=False, separators=(',', ':')))
+escreve('assets/busca.json', en.traduz_html(_busca) if EN else _busca)
 def redireciona(pasta, velho, novo):
     alvo = f'{SITE}/{pasta}/{novo}.html'
     escreve(f'{pasta}/{velho}.html', f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>Página movida</title><meta name="robots" content="noindex"/><link rel="canonical" href="{alvo}"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">Esta página mudou de endereço.</a></p></body></html>\n')
-for velho, novo in SLUG_ARG.items(): redireciona('argumentos', velho, novo)
-for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
-import icones; icones.gera(len(ARGS))
+if not EN:  # o site em inglês já nasce com os endereços legíveis
+    for velho, novo in SLUG_ARG.items(): redireciona('argumentos', velho, novo)
+    for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
+import icones; icones.gera(len(ARGS), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
 escreve('assets/icon.svg', LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n')
-escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
+escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='en' if EN else 'pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
 escreve('robots.txt', f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
 urls = ''.join(f'<url><loc>{SITE}/{"" if p == "index.html" else p}</loc><lastmod>{ATUALIZADO}</lastmod></url>' for p in PAGINAS if p != '404.html')
 escreve('sitemap.xml', f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')
-escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Debate simulado]({SITE}/debate.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n')
-print(len(PAGINAS), 'páginas geradas')
+if EN:
+    escreve('CNAME', 'fortheanimals.biblioverse.org\n'); escreve('.nojekyll', '')
+    escreve('llms.txt', en.llms(SITE, NOME, DESCRICAO))
+else: escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Debate simulado]({SITE}/debate.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n')
+print(len(PAGINAS), 'páginas geradas' if not EN else 'pages built in English')
+if EN: en.relatorio(OUT)

@@ -44,7 +44,13 @@ def fonte(nomes, tam):
     return ImageFont.load_default()
 
 
-def compartilhar(n_args):
+TXT = {
+    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção tem', 'uma resposta.', '{n} argumentos contra o veganismo, com a versão mais forte e a resposta', 'pelosanimais.biblioverse.org'),
+    'en': ('For the Animals', 'An Argument Guide', 'Every objection has', 'an answer.', '{n} arguments against veganism, in their strongest form, with the answer', 'fortheanimals.biblioverse.org'),
+}
+
+def compartilhar(n_args, lg='pt'):
+    m1, m2, t1, t2, sb, dom = TXT[lg]
     W, H = 1200 * 2, 630 * 2
     im = Image.new('RGB', (W, H), AZUL)
     d = ImageDraw.Draw(im)
@@ -53,26 +59,26 @@ def compartilhar(n_args):
     for y in range(330, H - 120, 76): d.line([150, y, W - 150, y], fill=(205, 225, 240), width=3)
     logo(im, 150, 140, 5.4)
     marca = fonte(['seguibl.ttf', 'segoeuib.ttf', 'arialbd.ttf'], 54)
-    d.text((390, 180), 'Guia de Argumentação', font=marca, fill=TINTA)
-    d.text((390, 248), 'Pelos Animais', font=marca, fill=TINTA)
+    d.text((390, 180), m1, font=marca, fill=TINTA)
+    d.text((390, 248), m2, font=marca, fill=TINTA)
     tit = fonte(['seguibl.ttf', 'georgiab.ttf', 'arialbd.ttf'], 150)
-    d.text((150, 470), 'Toda objeção tem', font=tit, fill=TINTA)
-    l2 = 'uma resposta.'
+    d.text((150, 470), t1, font=tit, fill=TINTA)
+    l2 = t2
     x0, y0, x1, y1 = d.textbbox((150, 660), l2, font=tit)
     d.rectangle([x0 - 16, y0 + 20, x1 + 16, y1 + 14], fill=AMARELO)
     d.text((150, 660), l2, font=tit, fill=TINTA)
     sub = fonte(['segoeuib.ttf', 'arialbd.ttf'], 50)
-    d.text((150, 920), f'{n_args} argumentos contra o veganismo, com a versão mais forte e a resposta', font=sub, fill=TINTA)
-    d.text((150, 1000), 'pelosanimais.biblioverse.org', font=fonte(['consolab.ttf', 'cour.ttf', 'arialbd.ttf'], 44), fill=(60, 90, 60))
+    d.text((150, 920), sb.format(n=n_args), font=sub, fill=TINTA)
+    d.text((150, 1000), dom, font=fonte(['consolab.ttf', 'cour.ttf', 'arialbd.ttf'], 44), fill=(60, 90, 60))
     return im.resize((1200, 630), Image.LANCZOS)
 
 
-def gera(n_args):
-    a = os.path.join(ROOT, 'assets')
+def gera(n_args, pasta=None, lg='pt'):
+    a = pasta or os.path.join(ROOT, 'assets')
     icone(192).save(os.path.join(a, 'icon-192.png'), optimize=True)
     icone(512).save(os.path.join(a, 'icon-512.png'), optimize=True)
     icone(180).save(os.path.join(a, 'apple-touch-icon.png'), optimize=True)
-    compartilhar(n_args).save(os.path.join(a, 'share.png'), optimize=True)
+    compartilhar(n_args, lg).save(os.path.join(a, 'share.png'), optimize=True)
 
 
 if __name__ == '__main__':

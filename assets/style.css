@@ -580,3 +580,5 @@ details.item summary:hover{background:#ffeb5b66}details.item[open]{background:#f
 .menu .sub-l a{border-radius:10px;padding:8px 10px}
 .menu a{padding:7px 10px}
 @media(max-width:1180px){.menu .sub>summary{padding:7px 10px}.menu .sub-l{position:static;min-width:0;border:0;box-shadow:none;padding:2px 0 6px 14px;background:none}}
+.idioma{align-self:center;font:700 .78rem var(--mono,monospace);letter-spacing:.04em;color:var(--tinta);text-decoration:none;border:1.5px solid var(--tinta);border-radius:99px;padding:5px 9px;margin-left:6px;background:var(--cartao)}
+.idioma:hover,.idioma:focus-visible{background:var(--amarelo)}

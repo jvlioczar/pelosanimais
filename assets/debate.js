@@ -20,7 +20,7 @@
     var x = sorteia(livres); vistos.push(x); grava(chave, vistos); return x;
   }
   function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
-  function minuscula(s) { return /^[A-ZÀ-Ý](?![A-ZÀ-Ý0-9])/.test(s) ? s.charAt(0).toLowerCase() + s.slice(1) : s; }
+  function minuscula(s) { if (/^I(?![a-z])/.test(s)) return s; return /^[A-ZÀ-Ý](?![A-ZÀ-Ý0-9])/.test(s) ? s.charAt(0).toLowerCase() + s.slice(1) : s; }
 
   var proximo = null, J;
 

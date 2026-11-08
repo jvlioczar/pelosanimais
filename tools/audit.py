@@ -1,6 +1,7 @@
 """Confere links internos, âncoras, SEO e referências proibidas. Uso: python tools/audit.py"""
-import collections, json, os, re, sys
+import collections, html, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if 'en' in sys.argv[1:]: ROOT = os.path.join(os.path.dirname(ROOT), 'fortheanimals')  # site em inglês
 redir = set(); links = []; erros = 0; n = 0; titulos = collections.defaultdict(list); paginas = set()
 def falha(*m):
     global erros
@@ -19,7 +20,7 @@ for pasta, _, arqs in os.walk(ROOT):
         if len(re.findall(r'<h1[\s>]', t)) != 1: falha('h1 em', rel)
         m = re.search(r'<title>(.*?)</title>', t); titulos[m.group(1) if m else ''].append(rel)
         d = re.search(r'name="description" content="(.*?)"', t)
-        if not d or len(d.group(1)) > 175: falha('descrição em', rel)
+        if not d or len(html.unescape(d.group(1))) > 175: falha('descrição em', rel)  # conta caracteres, não entidades
         ids = re.findall(r'\sid="([^"]+)"', re.sub(r'<svg\b.*?</svg>', '', t, flags=re.S))
         for i, c in collections.Counter(ids).items():
             if c > 1: falha('id repetido', i, 'em', rel)

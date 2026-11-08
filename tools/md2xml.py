@@ -31,6 +31,7 @@ def converte(md):
     while i < len(linhas):
         l = linhas[i].rstrip()
         if not l: i += 1; continue
+        if l == '[[ARVORE]]': o.append('<codeBlock/>'); i += 1; continue  # árvore de decisão (A1, A10)
         m = re.match(r'(#{1,3}) (.*)', l)
         if m: o.append(par(m[2], len(m[1]))); i += 1; continue
         if l.startswith('|'):
@@ -55,9 +56,11 @@ def converte(md):
         o.append(par(' '.join(txt)))
     return '<doc>' + ''.join(o) + '</doc>'
 
-def todos():
-    saida = os.path.join(ROOT, 'data', 'capitulos')
-    for f in glob.glob(os.path.join(ROOT, 'data', 'capitulos_md', '*.md')):
+def todos(base=None):
+    base = base or os.path.join(ROOT, 'data')
+    saida = os.path.join(base, 'capitulos')
+    os.makedirs(saida, exist_ok=True)
+    for f in glob.glob(os.path.join(base, 'capitulos_md', '*.md')):
         cod = os.path.basename(f)[:-3]
         open(os.path.join(saida, cod + '.xml'), 'w', encoding='utf-8').write(converte(open(f, encoding='utf-8').read()))
 
