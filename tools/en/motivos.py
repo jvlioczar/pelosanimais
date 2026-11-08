@@ -535,6 +535,15 @@ Do animal morto naturalmente passa-se ao do mercado | From the animal that died 
 A recusa é tratada como frescura ou desejo escondido | The refusal is treated as fussiness or hidden desire
 A recusa é tratada como pureza religiosa | The refusal is treated as religious purity
 Busca outro caso em que ninguém foi morto para ser comido | Looks for another case in which no one was killed to be eaten
+Da maioria que come passa-se à minoria que não come | From the majority who eat it to the minority who don't
+A desistência vira previsão de que o veganismo nunca crescerá | Giving up becomes a prediction that veganism will never grow
+A minoria vira utopia | The minority becomes a utopia
+Se nunca seremos maioria, o indivíduo não mudaria nada | If we'll never be the majority, the individual would change nothing
+A esperança passa da escolha individual para a tecnologia | Hope shifts from individual choice to technology
+Da acusação política passa-se ao ataque pessoal | From the political charge it moves to personal attack
+O incômodo vira diagnóstico | The annoyance becomes a diagnosis
+O ataque busca apoio em estudos sobre depressão | The attack seeks support in studies on depression
+O ataque busca apoio em transtornos alimentares | The attack seeks support in eating disorders
 '''
 
 MOTIVOS = {}

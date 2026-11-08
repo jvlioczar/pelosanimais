@@ -12,7 +12,7 @@ import os, re, shutil
 from .catalogo import ARGS, FAMILIAS, FALACIAS, VIESES, CADEIAS, CADEIAS_LONGAS
 from .ruins import RUINS, TIPOS
 from .motivos import MOTIVOS
-from .paginas import POLITICAS, POL_INTRO, ALEM, LIVROS, FOCOS, SITES, SITES_URL, TEXTOS, ARVORE
+from .paginas import POLITICAS, POL_INTRO, POL_ESPECTRO, ALEM, LIVROS, FOCOS, SITES, SITES_URL, TEXTOS, ARVORE
 from .debate import PESSOAS, OP
 from .ui import UI, JS
 
@@ -127,6 +127,7 @@ def aplica(g):
         r['lugar'] = r['lugar'].replace('{V12}', cod_pt.get('Ser vegano exige ser anticapitalista.', ''))
     pol = g['politicas']
     pol.INTRO = POL_INTRO or pol.INTRO
+    pol.ESPECTRO = POL_ESPECTRO
     for t in pol.TEORIAS:
         x = POLITICAS.get(t['s'])
         if not x: falta('política', t['s']); continue

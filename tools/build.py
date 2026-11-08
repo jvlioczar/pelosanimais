@@ -160,7 +160,7 @@ FAMILIAS_NOVAS = [
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
 for c, fs in FORMAS_EXTRA.items(): ARGS[c]['formas'] += fs
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
@@ -178,6 +178,8 @@ NOVOS = [
     ('E14', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
     ('J16', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
     ('J17', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
+    ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
+    ('L15', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
     ('L13', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
     # Família M: o critério da senciência aplicado a quem ninguém explora (animais selvagens), a novas mentes e ao futuro.
     ('M1', 'Os animais selvagens vivem livres e felizes', ['A natureza é um paraíso para os bichos', 'Bicho solto é bicho feliz'], 'Os adultos que vemos são exceção: na maioria das espécies, quase todos os filhotes morrem pouco depois de nascer, de fome, frio, doença ou predação'),
@@ -801,6 +803,14 @@ def paginas_alem():
         pag = cabeca(f'<a href="../">Início</a> / <a href="../alem-do-veganismo.html">Além do veganismo</a> / {e(p["selo"])}', e(p['t']), e(p['res'])) + f'<div class="wrap lay"><nav class="indice" aria-label="Além do veganismo"><p class="ti">Nesta seção</p><div class="lado">{lado}</div></nav><article class="artigo">{texto_}{lista_fontes(p["fontes"])}</article></div>'
         page(f'alem/{p["s"]}.html', p['t'], p['res'], pag, 'alem-do-veganismo.html', 'Article', [('Além do veganismo', 'alem-do-veganismo.html')])
 
+def espectro():
+    """Bloco "Da esquerda à direita" da página de objeções políticas: valores de cada lado que pedem considerar os animais."""
+    E_ = politicas.ESPECTRO
+    def tabela(lado, itens):
+        linhas = ''.join(f'<tr><td><strong>{e(v)}</strong></td><td>{e(d)} <a href="politicas/{s_}.html">{L("Ver a teoria", "See the theory")} →</a></td></tr>' for v, d, s_ in itens)
+        return f'<h3 style="margin:22px 0 10px">{e(lado)}</h3><div class="tabela"><table><tr><th scope="col">{L("Valor", "Value")}</th><th scope="col">{L("Por que leva a considerar os animais", "Why it leads to considering animals")}</th></tr>{linhas}</table></div>'
+    return f'<div class="estreito" style="margin-top:40px"><h2>{e(E_["titulo"])}</h2><p>{e(E_["intro"])}</p>' + ''.join(tabela(l, i) for l, i in E_['lados']) + f'<p style="margin-top:18px">{e(E_["fecho"])}</p></div>'
+
 def paginas_politicas():
     """Objeções vindas de teorias éticas e políticas (dados em tools/politicas.py)."""
     tons = list(CORES.values())
@@ -810,6 +820,7 @@ def paginas_politicas():
     corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.') + f'''<section class="secao"><div class="wrap">
 <p class="estreito" style="margin:0 0 26px">{e(politicas.INTRO)}</p>
 <div class="grade">{cards}</div>
+{espectro()}
 <p class="fino" style="margin-top:26px">A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.</p>
 </div></section>'''
     page('objecoes-politicas.html', 'Objeções políticas', L('Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', 'Liberalism, Marxism, anarchism, utilitarianism, Rawls, Kant, feminism, anti-racism and other theories: why none offers, on its own terms, a reason to exclude animals.'), corpo, 'objecoes-politicas.html', 'CollectionPage')

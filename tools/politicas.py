@@ -15,6 +15,28 @@ INTRO = ('Toda teoria ética ou política parte de um princípio: proteger a lib
          'feito antes dele. O ponto não é que todas as teorias digam a mesma coisa, mas que nenhuma delas oferece, nos próprios termos, uma razão para '
          'deixar de fora quem pode ser prejudicado.')
 
+# Da esquerda à direita: valores positivos de cada lado que, levados a sério, pedem considerar os animais.
+ESPECTRO = dict(
+    titulo='Da esquerda à direita',
+    intro='Não é preciso mudar de lado político para ser vegano. Basta levar a sério os valores que cada lado já defende. Os valores abaixo são os que costumam ser associados a cada campo, e nenhum deles é exclusivo de um lado só.',
+    lados=[
+        ('Se você se identifica com a esquerda', [
+            ('Igualdade', 'Pede que interesses semelhantes tenham peso semelhante. Excluir quem sente só pela espécie é criar uma desigualdade sem justificativa.', 'igualitarismo'),
+            ('Combate à exploração', 'A pecuária usa o corpo e a vida de quem não pode resistir nem negociar, em escala de bilhões por ano.', 'marxismo'),
+            ('Proteção dos vulneráveis', 'Os animais são o caso extremo de vulnerabilidade: não votam, não falam e não se organizam.', 'antidiscriminacao'),
+            ('Crítica à dominação', 'Se nenhuma hierarquia é natural só porque existe, a hierarquia entre espécies também precisa se justificar.', 'anarquismo'),
+        ]),
+        ('Se você se identifica com a direita', [
+            ('Liberdade individual', 'A liberdade de cada um termina onde começa o dano a outro. O animal é um indivíduo com interesses, e não pode consentir em ser usado.', 'liberalismo'),
+            ('Não agressão e propriedade legítima', 'Quem defende que ninguém pode ser agredido nem tomado como propriedade sem consentimento tem razões para estender isso a quem sente.', 'libertarianismo'),
+            ('Responsabilidade pessoal', 'O veganismo é uma escolha de consumo de cada um, que não depende do Estado: é a própria pessoa assumindo as consequências do que compra.', 'liberalismo'),
+            ('Tradição, família e caráter', 'Muitas tradições valorizam a compaixão com os animais, e o cuidado com quem depende de nós é uma virtude, não uma moda.', 'virtudes'),
+            ('Livre mercado e inovação', 'O mercado já oferece alternativas vegetais e investe em carne cultivada. Escolher essas opções é usar a liberdade de mercado a favor dos animais.', 'libertarianismo'),
+        ]),
+    ],
+    fecho='Os dois lados podem divergir sobre os meios, como leis, mercado ou mudança cultural, e as evidências ajudam a escolher o que funciona melhor. Mas, nos próprios termos de cada lado, não há boa razão para deixar os animais de fora.',
+)
+
 TEORIAS = [
  dict(s='liberalismo', t='Liberalismo', frase='A liberdade é um direito de indivíduos racionais; animais não são sujeitos de direitos liberais.',
   principio='Proteger os indivíduos contra danos causados por outros e garantir que cada um possa viver a própria vida. Para Mill, o único motivo legítimo para limitar a liberdade de alguém é evitar dano a outros.',

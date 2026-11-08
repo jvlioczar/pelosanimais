@@ -15,6 +15,27 @@ POL_INTRO = ('Every ethical or political theory starts from a principle: protect
              'but from a cut made before it. The point is not that every theory says the same thing, but that none of them offers, on its own terms, '
              'a reason to leave out those who can be harmed.')
 
+POL_ESPECTRO = dict(
+    titulo='From left to right',
+    intro="You don't need to change political sides to be vegan. You only need to take seriously the values each side already holds. The values below are the ones usually associated with each camp, and none of them belongs to one side alone.",
+    lados=[
+        ('If you identify with the left', [
+            ('Equality', 'It asks that similar interests get similar weight. Excluding those who feel just because of their species creates an unjustified inequality.', 'igualitarismo'),
+            ('Fighting exploitation', 'Animal farming uses the bodies and lives of those who can neither resist nor bargain, on a scale of billions a year.', 'marxismo'),
+            ('Protecting the vulnerable', "Animals are the extreme case of vulnerability: they don't vote, speak or organize.", 'antidiscriminacao'),
+            ('Critique of domination', "If no hierarchy is natural just because it exists, the hierarchy between species also has to justify itself.", 'anarquismo'),
+        ]),
+        ('If you identify with the right', [
+            ('Individual liberty', "One person's liberty ends where harm to another begins. An animal is an individual with interests, and cannot consent to being used.", 'liberalismo'),
+            ('Non-aggression and legitimate property', 'Whoever holds that no one may be attacked or taken as property without consent has reasons to extend this to those who feel.', 'libertarianismo'),
+            ('Personal responsibility', "Veganism is each person's consumer choice and doesn't depend on the state: it's the person taking responsibility for the consequences of what they buy.", 'liberalismo'),
+            ('Tradition, family and character', 'Many traditions value compassion toward animals, and caring for those who depend on us is a virtue, not a fad.', 'virtudes'),
+            ('Free markets and innovation', 'The market already offers plant-based alternatives and invests in cultivated meat. Choosing them is using market freedom in favor of animals.', 'libertarianismo'),
+        ]),
+    ],
+    fecho='The two sides may disagree about the means, such as laws, markets or cultural change, and evidence helps choose what works best. But on each side\'s own terms, there is no good reason to leave animals out.',
+)
+
 POLITICAS = {
  'liberalismo': dict(s='liberalism', t='Liberalism', frase="Freedom is a right of rational individuals; animals aren't subjects of liberal rights.",
   principio='Protect individuals against harm caused by others and ensure each can live their own life. For Mill, the only legitimate reason to limit someone\'s freedom is to prevent harm to others.',

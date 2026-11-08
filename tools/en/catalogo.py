@@ -125,7 +125,7 @@ ARGS = {
  'J4': ('Agriculture is the backbone of the economy.', ['Farming feeds the nation', 'The country lives off agribusiness', 'Veganism would wreck the economy'], 'Economic importance is not a moral justification; it ignores subsidies and external costs'),
  'J5': ('What would we do with the animals if everyone went vegan?', ['Release the cows into the streets?', "They'd have to kill them all at once"], 'A gradual change reduces births; the problem is created by breeding itself'),
  'J6': ('There are more important human problems.', ['With so many children going hungry...', 'Fight for people first'], "Priority fallacy: eating plants doesn't take time from any other cause"),
- 'J7': ('Veganism is a political ideology or a globalist agenda.', ["It's a leftist thing", 'They want us to eat bugs', 'They want to control what you eat'], "Guilt by association and conspiracy theory; it doesn't assess the argument"),
+ 'J7': ('Veganism is a political ideology or a globalist agenda.', ["It's a leftist thing", 'They want us to eat bugs', 'They want to control what you eat', "There's no such thing as a right-wing vegan"], "Guilt by association and conspiracy theory; it doesn't assess the argument"),
  'J9': ("It's hard; I don't have time.", ['I work all day', "I can't cook"], "Initial difficulty isn't impossibility; inconvenience doesn't justify harm"),
  'J10': ('Vegan food is bland.', ['Just salad?', 'Rabbit food', 'Am I supposed to eat grass?'], 'A generalization from unfamiliarity; most spices and many dishes are already plant-based'),
  'J11': ('Meat tastes good.', ['Bacon is too good', "I can't live without cheese", 'Steak is sacred'], 'Taste as a justification for killing: no other context accepts this'),
@@ -172,6 +172,8 @@ ARGS = {
  'M10': ('Using medicine and genetics to end suffering is playing God', ["That's eugenics", 'Suffering is part of the human and animal condition'], "We already use anaesthesia, vaccines and painkillers without calling it playing God; the issue is safety and consent, not the natural origin of pain"),
  'M11': ("Those not yet born don't matter", ['Future beings are just possibilities', 'Let the future sort itself out'], "Whoever is born will feel what we leave them: that's why burying toxic waste is wrong, even if the victims don't exist yet"),
  'M12': ("That's science fiction; we have real problems now", ['Risks of future suffering are paranoia', "Today's problems first"], 'An uncertain but immense risk can deserve attention, and much of what reduces future suffering, like widening the moral circle, also helps now'),
+ 'K10': ('Vegans will always be a minority', ['The world will never go vegan', "Why bother, if no one's going to change?"], "Being a minority doesn't make something wrong or useless: change begins with a few, each person reduces demand, and animal protection laws change without a vegan majority"),
+ 'L15': ('Vegans are crazy; they have mental problems', ['Vegans are all crazy', 'You have to be nuts to cry over a chicken'], "An attack on the person: the asker's health doesn't change the answer, the link with depression doesn't show cause, and using mental disorders as insults reinforces stigma"),
  'L13': ('Veganism is just a fad diet', ['Veganism is a trend', "It's just another diet; it'll pass"], 'Confuses an ethical position about not harming animals with a menu chosen for health or looks'),
 }
 
