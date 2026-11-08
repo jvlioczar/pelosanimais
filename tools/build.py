@@ -646,6 +646,26 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
     alvo = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(alvo), exist_ok=True)
     open(alvo, 'w', encoding='utf-8', newline='\n').write(doc)
+    if not erro: INDICE[path] = indexa_pagina(doc, path)
+
+# Busca no conteúdo: de cada página saem o título, a descrição e as palavras do texto principal (já traduzidas, no site em inglês).
+# Páginas que só reúnem as outras (início, mapa, raciocínio, treino, debate) ficam fora do conteúdo para não aparecerem em toda busca.
+INDICE = {}
+SEM_CONTEUDO = {'index.html', 'mapa.html', 'raciocinio.html', 'treino.html', 'debate.html', 'map.html', 'reasoning.html', 'practice.html'}
+def normaliza(s):
+    import unicodedata
+    return unicodedata.normalize('NFD', s.lower()).encode('ascii', 'ignore').decode()
+def indexa_pagina(doc, path):
+    ti = re.search(r'<title>(.*?)</title>', doc, re.S)
+    de = re.search(r'<meta name="description" content="([^"]*)"', doc)
+    titulo = html.unescape(ti[1]).split(' | ')[0] if ti else path
+    pal = ''
+    if path not in SEM_CONTEUDO:
+        m = re.search(r'<main id="main">(.*)</main>', doc, re.S)
+        corpo = re.sub(r'<(script|style)\b.*?</\1>', ' ', m[1] if m else '', flags=re.S)
+        texto = normaliza(html.unescape(re.sub(r'<[^>]+>', ' ', corpo)))
+        pal = ' '.join(sorted(set(re.findall(r'[a-z0-9]{3,}', texto))))  # cada palavra uma vez: o índice fica pequeno e a busca por trecho de palavra continua funcionando
+    return dict(t=titulo, d=html.unescape(de[1]) if de else '', c=pal)
 
 def cabeca(trilha, titulo, lede='', extra=''):
     return f'<section class="cabeca"><div class="wrap"><p class="trilha">{trilha}</p><h1>{titulo}</h1>' + (f'<p class="lede">{lede}</p>' if lede else '') + extra + '</div></section>'
@@ -1119,7 +1139,20 @@ def escreve(rel, txt):
     open(alvo, 'w', encoding='utf-8', newline='\n').write(txt)
 if EN: en.copia_assets(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
 _busca = nova_url(json.dumps(BUSCA, ensure_ascii=False, separators=(',', ':')))
-escreve('assets/busca.json', en.traduz_html(_busca) if EN else _busca)
+_busca = json.loads(en.traduz_html(_busca) if EN else _busca)
+# Cada item ganha a descrição (d) e as palavras do conteúdo (c) da página; páginas sem item próprio entram com título e descrição.
+# A ordem dos resultados é decidida em assets/app.js: título, subtítulo, descrição e, por fim, conteúdo.
+_cobertas = set()
+for _b in _busca:
+    _p, _ancora = (_b['u'].split('#') + [''])[:2]
+    _info = INDICE.get(_p)
+    if not _info: continue
+    _b['d'] = '' if _ancora else _info['d']
+    _b['c'] = '' if _ancora else _info['c']
+    if not _ancora: _cobertas.add(_p)
+for _p, _info in INDICE.items():
+    if _p not in _cobertas: _busca.append(dict(t=_info['t'], s=_info['d'], u=_p, k='', d='', c=_info['c']))
+escreve('assets/busca.json', json.dumps(_busca, ensure_ascii=False, separators=(',', ':')))
 def redireciona(pasta, velho, novo):
     alvo = f'{SITE}/{pasta}/{novo}.html'
     escreve(f'{pasta}/{velho}.html', f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>Página movida</title><meta name="robots" content="noindex"/><link rel="canonical" href="{alvo}"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">Esta página mudou de endereço.</a></p></body></html>\n')
