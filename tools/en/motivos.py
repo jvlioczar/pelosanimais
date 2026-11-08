@@ -509,6 +509,11 @@ A possibilidade de mentes artificiais é chamada de ficção | The possibility o
 A proposta tecnológica é ridicularizada | The technological proposal is ridiculed
 A prioridade do presente vira prioridade humana | The priority of the present becomes a human priority
 A escala do futuro parece tornar inútil qualquer ação | The scale of the future seems to make any action useless
+Respondida a dor, alega-se que o animal nem sabe que vai morrer | Once pain is answered, the claim is that the animal doesn't even know it will die
+Sem razão, não haveria noção de futuro | Without reason, there would be no sense of the future
+Quando o teste humano aparece, apela-se ao potencial | When the human test appears, potential is invoked
+A antecipação vira medida de quanto se sofre | Anticipation becomes the measure of how much one suffers
+A ignorância da morte vira parte da "morte boa" | Ignorance of death becomes part of the "good death"
 '''
 
 MOTIVOS = {}
