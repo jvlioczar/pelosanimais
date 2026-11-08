@@ -298,6 +298,7 @@ LIVROS = {
 }
 SITES = {
  'https://questaodeetica.biblioverse.org/desbancando.html': ('Questão de Ética', "The 248 objections from Luciano Carlos Cunha's collection, with answers, also in English"),
+ 'https://www.adaptt.org': ('ADAPTT', 'An archive of writing on veganism, ethics and animal liberation, with starter guides, lectures and ways to take action'),
  'https://senciencia.org/': ('Senciência', 'Texts on animal ethics and speciesism, in Portuguese'),
  'https://www.animal-ethics.org/pt/': ('Animal Ethics', 'International organization with texts on speciesism, sentience and wild animals'),
  'https://medium.com/veganismo-s': ('Veganismos', 'A Medium publication on veganism and animal ethics, in Portuguese'),

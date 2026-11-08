@@ -94,4 +94,5 @@ QE_CAPS = {
     (9, 1): ('Riscos futuros para os seres sencientes: uma introdução', 'v9/01-riscos-futuros-para-os-seres-sencientes-uma-introducao.html'),
     (9, 5): ('Devemos focar em prevenir riscos-s ou riscos-x?', 'v9/05-devemos-focar-em-prevenir-riscos-s-ou-riscos-x.html'),
     (9, 7): ('De que consiste o foco nos riscos-s?', 'v9/07-de-que-consiste-o-foco-nos-riscos-s.html'),
+    (7, 30): ('A questão do parasitismo', 'v7/30-a-questao-do-parasitismo.html'),
 }

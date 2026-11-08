@@ -160,7 +160,7 @@ FAMILIAS_NOVAS = [
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
 for c, fs in FORMAS_EXTRA.items(): ARGS[c]['formas'] += fs
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
@@ -171,6 +171,10 @@ NOVOS = [
     ('E13', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
     ('H14', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
     ('A25', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
+    ('F10', 'Você comeria um animal que morreu de causas naturais?', ['E se o boi morreu de velhice?', 'Então come o cachorro atropelado na rua também', 'Se não comeria, é frescura'], 'Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos'),
+    ('G18', 'Frugivorismo não é saudável, então o veganismo também não é', ['Quem só come fruta fica doente', 'Veganismo é comer fruta e salada'], 'Veganismo não é frugivorismo: a dieta só de frutas é arriscada, mas uma alimentação vegana variada e planejada, com B12, é considerada adequada'),
+    ('G19', 'Veganismo é transtorno alimentar disfarçado', ['Veganismo é anorexia com desculpa', 'Viu aquela vegana que morreu?', 'Ortorexia é a doença dos veganos'], 'A associação existe, mas o transtorno costuma vir antes da dieta; veganos da comunidade não têm mais sinais de transtorno, e a causa de uma tragédia é a doença'),
+    ('L14', 'Vegano é tudo hippie', ['Bicho-grilo, natureba, paz e amor', 'Vai abraçar uma árvore'], 'Estereótipo e ataque à pessoa: o sofrimento dos animais não depende do estilo de vida de quem o aponta'),
     ('E14', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
     ('J16', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
     ('J17', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
@@ -249,6 +253,7 @@ QE = {
     'C1': [(4, 5), (1, 8)], 'C2': [(4, 5)], 'C6': [(1, 8)], 'C7': [(1, 8)],
     'D1': [(1, 9)], 'D2': [(1, 9)], 'D4': [(1, 13), (1, 3)], 'D7': [(4, 17)], 'D10': [(1, 13)],
     'E1': [(4, 18)], 'E2': [(1, 15), (1, 11)], 'E10': [(1, 15)], 'E11': [(2, 7), (11, 6)], 'E13': [(2, 7), (11, 6)],
+    'F9': [(7, 30)],
     'F1': [(4, 8)], 'F2': [(4, 8), (2, 8)], 'F3': [(7, 1)], 'F7': [(2, 13)],
     'G1': [(4, 9)], 'G8': [(4, 9)], 'H2': [(4, 14)], 'H11': [(5, 8)], 'H13': [(5, 1)], 'H14': [(4, 19)],
     'I1': [(4, 20)], 'I2': [(4, 20)], 'I5': [(4, 19)],

@@ -514,6 +514,27 @@ Sem razão, não haveria noção de futuro | Without reason, there would be no s
 Quando o teste humano aparece, apela-se ao potencial | When the human test appears, potential is invoked
 A antecipação vira medida de quanto se sofre | Anticipation becomes the measure of how much one suffers
 A ignorância da morte vira parte da "morte boa" | Ignorance of death becomes part of the "good death"
+O parasitismo mostra que o problema vai além de casa | Parasitism shows the problem goes beyond the home
+O estereótipo se apoia na imagem da dieta extrema | The stereotype rests on the image of the extreme diet
+Da dieta só de frutas passa-se à proteína | From the all-fruit diet it moves to protein
+A suplementação vira objeção | Supplementation becomes the objection
+Um caso vira regra | One case becomes the rule
+A dieta extrema do outro lado aparece como solução | The extreme diet on the other side appears as the solution
+O estereótipo de fraqueza vira diagnóstico | The stereotype of weakness becomes a diagnosis
+A dieta restritiva vira modelo de todo veganismo | The restrictive diet becomes the model for all of veganism
+A ética é tratada como sintoma | The ethics is treated as a symptom
+A posição ética é reduzida a um problema psicológico | The ethical position is reduced to a psychological problem
+A utopia vira estereótipo de hippie | Utopia becomes the hippie stereotype
+Do estereótipo passa-se ao ataque pessoal | From the stereotype it moves to personal attack
+O grupo é tratado como seita | The group is treated as a cult
+O hippie vira radical | The hippie becomes a radical
+A imagem de contracultura serve para negar a base científica | The countercultural image is used to deny the scientific basis
+De outro caso sem demanda passa-se ao animal que morreu sozinho | From another case without demand it moves to the animal that died on its own
+Outro hipotético para testar o vegano | Another hypothetical to test the vegan
+Do animal morto naturalmente passa-se ao do mercado | From the animal that died naturally it moves to the one in the store
+A recusa é tratada como frescura ou desejo escondido | The refusal is treated as fussiness or hidden desire
+A recusa é tratada como pureza religiosa | The refusal is treated as religious purity
+Busca outro caso em que ninguém foi morto para ser comido | Looks for another case in which no one was killed to be eaten
 '''
 
 MOTIVOS = {}

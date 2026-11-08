@@ -53,6 +53,7 @@ SITES = [
     ('Essays on Reducing Suffering', 'Em inglês: ensaios sobre como reduzir o sofrimento, com foco em animais criados para consumo, animais selvagens e invertebrados', 'https://reducing-suffering.org/'),
     ('Center for Reducing Suffering', 'Em inglês: pesquisa sobre como reduzir o sofrimento intenso, levando em conta todos os seres sencientes', 'https://centerforreducingsuffering.org/'),
     ('HedWeb', 'Em inglês: textos sobre o uso da biotecnologia para abolir o sofrimento, inclusive o dos animais selvagens', 'https://www.hedweb.com/confile.htm'),
+    ('ADAPTT', 'Em inglês: acervo de textos sobre veganismo, ética e libertação animal, com guias para começar, palestras e formas de agir', 'https://www.adaptt.org'),
     ('End Infighting', 'Em inglês: causas e custos das brigas internas em movimentos sociais, e ferramentas para evitá-las', 'https://infighting.org'),
     ('Sua Falácia Vegana É', 'Falácias comuns contra o veganismo, em cartões', 'https://yourveganfallacyis.com/pt-br'),
     ('Argumentos em defesa dos animais', 'Respostas organizadas por tema', 'https://www.alyssonaugusto.com.br/argumentos'),
