@@ -141,7 +141,7 @@ ARGS = {
  'K7': ("I don't kill; I just eat.", ['I just buy it', "The butcher is the one who kills"], 'Outsourced morality: paying for the act is taking part in it'),
  'K9': ('Vegans should fight for laws, not diets.', ['Diet is individualism', 'Do politics instead of pestering people'], 'False dichotomy; personal consistency and political action complement each other'),
  'L1': ('Vegans are annoying and think they are better.', ["How do you know someone's vegan? They'll tell you", 'You think you are better than us'], "Ad hominem: the messenger's behavior doesn't change whether the message is valid"),
- 'L2': ('Veganism is a cult, a religion.', ['You preach like fanatics', "That's indoctrination"], 'A label used to avoid evaluating; veganism rests on public arguments'),
+ 'L2': ('Veganism is a cult, a religion.', ['You preach like fanatics', "That's indoctrination", 'Veganism is brainwashing'], 'A label used to avoid evaluating; veganism rests on public arguments'),
  'L3': ('Hitler was a vegetarian.', ['Hitler loved animals', 'The Nazis passed animal protection laws'], 'Reductio ad Hitlerum and guilt by association; historically doubtful'),
  'L4': ("You use a phone, so you're a hypocrite.", ['You drive a car', 'What about tires with animal fat?', 'Your phone has minerals mined by children'], "Tu quoque: someone's inconsistency doesn't make what they say false"),
  'L5': ("Veganism isn't 100% cruelty-free.", ['No vegan is 100% vegan', "So veganism doesn't exist"], "Nirvana fallacy: reducing harm doesn't require eliminating it entirely"),
@@ -175,6 +175,7 @@ ARGS = {
  'M12': ("That's science fiction; we have real problems now", ['Risks of future suffering are paranoia', "Today's problems first"], 'An uncertain but immense risk can deserve attention, and much of what reduces future suffering, like widening the moral circle, also helps now'),
  'K10': ('Vegans will always be a minority', ['The world will never go vegan', "Why bother, if no one's going to change?"], "Being a minority doesn't make something wrong or useless: change begins with a few, each person reduces demand, and animal protection laws change without a vegan majority"),
  'L15': ('Vegans are crazy; they have mental problems', ['Vegans are all crazy', 'You have to be nuts to cry over a chicken'], "An attack on the person: the asker's health doesn't change the answer, the link with depression doesn't show cause, and using mental disorders as insults reinforces stigma"),
+ 'L16': ('Raising vegan children is imposing an ideology', ['Imposing veganism on a child is brainwashing', 'Let them choose when they grow up'], "Every family passes values on to its children, and serving meat is also the parents' choice; what matters is caring for the child's health and explaining the reasons"),
  'L13': ('Veganism is just a fad diet', ['Veganism is a trend', "It's just another diet; it'll pass"], 'Confuses an ethical position about not harming animals with a menu chosen for health or looks'),
 }
 

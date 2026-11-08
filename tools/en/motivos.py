@@ -549,6 +549,11 @@ Outro cenário hipotético para testar o vegano | Another hypothetical scenario 
 Se plantas contam, pergunta-se onde fica a linha | If plants count, the question is where the line falls
 Toda dieta causa algum dano | Every diet causes some harm
 A impossibilidade de zerar o dano vira acusação | The impossibility of zero harm becomes an accusation
+A acusação de doutrinação passa para os filhos | The charge of indoctrination passes to the children
+A imposição é atribuída aos pais veganos | Imposition is attributed to vegan parents
+Da ideologia passa-se à saúde | From ideology it moves to health
+Só a posição minoritária é chamada de ideologia | Only the minority position is called ideology
+O padrão é tratado como neutro | The default is treated as neutral
 '''
 
 MOTIVOS = {}

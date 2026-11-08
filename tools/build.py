@@ -160,7 +160,7 @@ FAMILIAS_NOVAS = [
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
 for c, fs in FORMAS_EXTRA.items(): ARGS[c]['formas'] += fs
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
@@ -181,6 +181,7 @@ NOVOS = [
     ('J17', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
     ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
     ('L15', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
+    ('L16', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
     ('L13', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
     # Família M: o critério da senciência aplicado a quem ninguém explora (animais selvagens), a novas mentes e ao futuro.
     ('M1', 'Os animais selvagens vivem livres e felizes', ['A natureza é um paraíso para os bichos', 'Bicho solto é bicho feliz'], 'Os adultos que vemos são exceção: na maioria das espécies, quase todos os filhotes morrem pouco depois de nascer, de fome, frio, doença ou predação'),
