@@ -94,7 +94,7 @@ ARGS = {
  'G16': ('Vegans are weak, pale and depressed.', ['Every vegan looks sick', "They're missing meat in their heads"], 'A stereotype; the existing correlations have uncertain or reverse causation'),
  'G17': ('My doctor told me to eat meat.', ['My dietitian said I need it', 'No doctor recommends veganism'], 'An appeal to individual authority against institutional positions'),
  'H1': ("Vegans' soy is destroying the Amazon.", ['Tofu causes deforestation', 'You eat the soy that destroys forests'], 'Most soy becomes animal feed; pasture is the main driver of deforestation'),
- 'H2': ('Harvests kill animals; vegans kill too.', ['How many mice died for your salad?', 'Vegans have blood on their hands too'], 'Animal farming uses far more cropland (for feed) and land'),
+ 'H2': ('Harvests kill animals; vegans kill too.', ['How many mice died for your salad?', 'Vegans have blood on their hands too', 'Crop farming kills animals too'], 'Animal farming uses far more cropland (for feed) and land'),
  'H3': ('Regenerative grazing sequesters carbon.', ['Well-managed cattle restore the soil', 'Holistic grazing reverses desertification', 'Carbon-neutral beef'], 'Limited, temporary sequestration that cannot scale; it needs more land per calorie'),
  'H4': ("Cattle graze where crops can't grow.", ['Cattle turn grass into food', 'That land is only good for cattle'], 'Partly true, but that land could be rewilded and produces few calories'),
  'H5': ("Cow methane is biogenic; it doesn't count.", ['Methane disappears in 12 years', 'Cows have always burped'], 'Methane has a strong short-term effect; growing herds increase warming'),
@@ -148,10 +148,25 @@ ARGS = {
  'L6': ('Vegans care more about animals than people.', ['You cry for the cow but not for the homeless', 'Vegans hate people'], 'False dilemma and generalization; empathy is not a zero-sum resource'),
  'L7': ('Comparing animal farming to slavery or the Holocaust is offensive.', ['You trivialize the Holocaust', "That comparison is racist"], 'Distinguish structural analogy from moral equivalence; handle with care and sources'),
  'L8': ('If vegans eat fake meat, they want meat.', ['Why call it a burger?', 'A vegan sausage is a contradiction'], 'The problem was never the taste; it was the victim'),
- 'L9': ("I'll eat double to make up for you.", ["I'll eat some bacon in your honor", 'For every vegan, one more steak'], 'An emotional reaction (reactance), not an argument'),
+ 'L9': ("I'll eat double to make up for you.", ["I'll eat some bacon in your honor", 'For every vegan, one more steak', "For every vegan who doesn't eat meat, I'll eat double"], 'An emotional reaction (reactance), not an argument'),
  'L10': ('Most vegans give up.', ['Almost everyone goes back to eating meat', "Not even you can stick with it"], 'Difficulty sticking to it says nothing about whether it is right'),
  'L11': ('Vegan activists are radicals and extremists.', ['Eco-terrorists', 'Vegans break into farms'], 'Judging a cause by the methods of a minority'),
  'L12': ('Meat is for real men.', ['Real men eat meat', 'Salad is for women'], 'A gender stereotype; masculinity is neither a moral nor a nutritional criterion'),
+ 'E14': ("He eats meat, but he's a good person", ['I know great people who eat meat', "My grandma eats meat and she's the kindest person in the world", 'Are you calling everyone evil?'], 'Confuses judging the person with judging the act: good people also take part in injustices that custom accepts'),
+ 'J16': ('My food beats yours', ['My barbecue humiliates your salad', 'Real food is mine'], "A taunt, not an argument: the pleasure of taste doesn't weigh against someone's life, and much vegan food is the same food as always"),
+ 'J17': ("Look what you're missing", ['A barbecue photo in the comments of a vegan post', 'Mmm, steak. Jealous?'], "Showing the plate doesn't answer the question about who became the plate; temptation doesn't make the act just"),
+ 'M1': ('Wild animals live free and happy', ['Nature is paradise for animals', 'A free animal is a happy animal'], 'The adults we see are the exception: in most species, almost all young die shortly after birth, from hunger, cold, disease or predation'),
+ 'M2': ('Suffering and death are part of nature', ["Nature is cruel, that's how it is", 'Nature is neither good nor bad'], "Diseases are part of human life too, and that was never a reason not to treat them; the harm isn't smaller for the victim because no one is to blame"),
+ 'M3': ("We didn't cause it, so we have no duty to help", ['We have a duty not to harm, not to help', "Nature's problems aren't my problem"], 'Omission bias: no one would accept this reasoning about a drowning child or flood victims'),
+ 'M4': ("It's impossible to solve suffering in nature; it's too big and complex", ["There are trillions of animals, it's pointless", "We'll never end predation"], "Not being able to solve everything is no reason to do nothing: we already vaccinate foxes, rescue animals in disasters, and can research to do more"),
+ 'M5': ("Meddling with nature is wrong; we could make everything worse", ['Every human intervention goes wrong', 'Let nature take care of itself'], 'Risk calls for study and caution, as in medicine, not for omission: that is the proposal of welfare biology'),
+ 'M6': ('Who are we to interfere with nature?', ['Wild animals must be free', 'Helping is humanizing animals', "They'll become dependent"], 'We interfere all the time, with cities, farming and medicine; and no one calls helping an injured person arrogant'),
+ 'M7': ('A balanced nature is good for animals', ['Invasive species must be eliminated', 'Protecting the forest is protecting the animals'], 'Balance measures numbers, not wellbeing; and environmental programmes kill thousands of animals for goals we would never accept for humans'),
+ 'M8': ("Helping wild animals isn't veganism; it's a different cause", ['Veganism is just not exploiting', "First end animal farming, then we'll talk about wild animals"], "If sentience is what matters, suffering doesn't stop counting because we didn't cause it; and one cause doesn't stop us researching the other"),
+ 'M9': ('Machines will never feel; robots and AIs need no rights', ["It's just a program", "Computers don't suffer"], "If an artificial mind ever feels, its substrate matters no more than species does; and uncertainty calls for precaution before creating minds at scale"),
+ 'M10': ('Using medicine and genetics to end suffering is playing God', ["That's eugenics", 'Suffering is part of the human and animal condition'], "We already use anaesthesia, vaccines and painkillers without calling it playing God; the issue is safety and consent, not the natural origin of pain"),
+ 'M11': ("Those not yet born don't matter", ['Future beings are just possibilities', 'Let the future sort itself out'], "Whoever is born will feel what we leave them: that's why burying toxic waste is wrong, even if the victims don't exist yet"),
+ 'M12': ("That's science fiction; we have real problems now", ['Risks of future suffering are paranoia', "Today's problems first"], 'An uncertain but immense risk can deserve attention, and much of what reduces future suffering, like widening the moral circle, also helps now'),
  'L13': ('Veganism is just a fad diet', ['Veganism is a trend', "It's just another diet; it'll pass"], 'Confuses an ethical position about not harming animals with a menu chosen for health or looks'),
 }
 
@@ -168,6 +183,7 @@ FAMILIAS = {
  'J': ('Practicality, economy and society', 'Is it feasible and fair to ask this?', 'Moral (priority) and empirical'),
  'K': ('Effectiveness and individual responsibility', 'Does my choice change anything?', 'Logical and empirical (causation)'),
  'L': ('Attacks on veganism and vegans', 'Can the people saying this be trusted?', 'Logical (ad hominem, tu quoque)'),
+ 'M': ('Wild animals, new minds and the future', 'Should we help, not just stop harming?', 'Moral (omission bias, appeal to nature)'),
 }
 
 FALACIAS = {

@@ -81,7 +81,7 @@ def copia_assets(src, dst):
 def llms(site, nome, desc):
     ls = [('Start here', 'start-here.html'), ('All arguments', '#arguments'), ('Simulated debate', 'debate.html'), ('Practice answers', 'practice.html'),
           ('Stop saying this: weak vegan arguments and better ways to say them', 'stop-saying.html'), ('Political objections', 'political-objections.html'),
-          ('Beyond veganism', 'beyond-veganism.html'), ('The 12 families', 'families.html'), ('The anti-vegan line of reasoning', 'reasoning.html'),
+          ('Beyond veganism', 'beyond-veganism.html'), ('The 13 families', 'families.html'), ('The anti-vegan line of reasoning', 'reasoning.html'),
           ('Map of connections', 'map.html'), ('Fallacies', 'fallacies.html'), ('Biases', 'biases.html'), ('Library', 'library.html')]
     return f'# {nome}\n\n> {desc}\n\n## Main pages\n' + ''.join(f'- [{t}]({site}/{u})\n' for t, u in ls) + f'\nPortuguese version: {SITE_PT}/\n'
 

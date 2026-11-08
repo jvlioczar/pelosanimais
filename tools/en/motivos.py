@@ -445,6 +445,70 @@ Vou esperar a tecnologia | I'll wait for the technology
 É minha escolha | It's my choice
 É natural | It's natural
 Última fronteira do mesmo argumento | The last frontier of the same argument
+A sensação de ser julgado vira defesa do caráter | The feeling of being judged becomes a defense of character
+Se todo mundo faz, inclusive gente boa, não pode ser errado | If everyone does it, including good people, it can't be wrong
+A pessoa boa também diz que ama os animais | The good person also says they love animals
+A bondade geral vira licença para não mudar | General goodness becomes a license not to change
+O costume explica por que gente boa não vê o problema | Custom explains why good people don't see the problem
+A crítica ao sabor vira deboche | Criticism of flavor turns into mockery
+Sem a provocação, sobra o prazer como justificativa | Without the taunt, pleasure is left as the justification
+A provocação vira foto do prato | The taunt becomes a photo of the plate
+O deboche vira desafio | Mockery becomes a challenge
+Quem responde à provocação é acusado de chato | Whoever answers the taunt is accused of being annoying
+A provocação verbal vira foto | The verbal taunt becomes a photo
+O vegano estaria perdendo o sabor | The vegan would be missing the flavor
+Sem a foto, sobra o prazer como justificativa | Without the photo, pleasure is left as the justification
+Mostra-se o prato, mas não o abate | The plate is shown, but not the slaughter
+A provocação vira desafio | The taunt becomes a challenge
+A provocação abre a pergunta sobre a vida na natureza | The provocation opens the question about life in nature
+A mesma idealização, agora para os selvagens | The same idealization, now for wild animals
+Quando a idílica cai, o sofrimento é declarado natural | When the idyllic view falls, suffering is declared natural
+Admite-se o sofrimento, mas nega-se o dever | The suffering is admitted, but the duty denied
+A escala vira desculpa | The scale becomes an excuse
+O mesmo apelo, agora para não ajudar | The same appeal, now used not to help
+Da falta de culpado passa-se à falta de dever | From no culprit it moves to no duty
+Se é natural, mexer seria arriscado | If it's natural, meddling would be risky
+O apelo à natureza volta para o prato | The appeal to nature returns to the plate
+A mesma fuga pela distância entre o ato e o dano | The same escape through the distance between act and harm
+Admitido o dever, alega-se que é impossível cumpri-lo | Once the duty is admitted, it's claimed impossible to fulfil
+O dever de ajudar fica fora da pauta | The duty to help is left off the agenda
+O mesmo tipo de caso, usado no sentido contrário | The same kind of case, used in the opposite direction
+Quando se vê a escala, ela vira desculpa | When the scale is seen, it becomes an excuse
+Da impossibilidade passa-se ao risco | From impossibility it moves to risk
+A escala torna cada ação aparentemente inútil | The scale makes each action seem useless
+O problema é reduzido ao caso mais difícil | The problem is reduced to the hardest case
+Se é natural, mexer seria arriscado e errado | If it's natural, meddling would be risky and wrong
+Do risco passa-se à acusação de arrogância | From risk it moves to the charge of arrogance
+O equilíbrio vira a meta a proteger | Balance becomes the goal to protect
+O risco é ilustrado pelo caso mais extremo | The risk is illustrated with the most extreme case
+A liberdade é tomada como bem-estar | Freedom is taken as wellbeing
+O respeito à natureza vira respeito ao equilíbrio | Respect for nature becomes respect for balance
+A não interferência vira regra do ativismo | Non-interference becomes a rule of activism
+A acusação de imposição, agora em nome dos animais | The charge of imposition, now in the animals' name
+O valor passa do indivíduo para a espécie | Value moves from the individual to the species
+O equilíbrio é usado para justificar matar | Balance is used to justify killing
+A pauta ambiental é confundida com a dos animais | The environmental agenda is confused with the animals'
+A pauta é descartada como inviável | The cause is dismissed as unfeasible
+A preocupação estratégica volta, agora contra a própria ampliação | The strategic concern returns, now against widening the circle
+Sem o fundamento, o vegano fica sem resposta à provocação | Without the foundation, the vegan has no answer to the provocation
+A fronteira da espécie vira fronteira do material | The species boundary becomes a boundary of material
+A pergunta da fronteira chega às máquinas | The boundary question reaches machines
+A possibilidade é descartada como fantasia | The possibility is dismissed as fantasy
+Mentes futuras também não existem ainda | Future minds don't exist yet either
+O critério biológico volta, agora contra máquinas | The biological criterion returns, now against machines
+Do natural passa-se ao intocável | From the natural it moves to the untouchable
+O risco é estendido à biotecnologia | The risk is extended to biotechnology
+A proposta é descartada como fantasia | The proposal is dismissed as fantasy
+O apelo à natureza, agora contra mudar a biologia | The appeal to nature, now against changing biology
+A predação vira o caso que ridiculariza a proposta | Predation becomes the case that ridicules the proposal
+Os efeitos de hoje sobre o futuro parecem pequenos demais | Today's effects on the future seem too small
+O futuro é descartado como fantasia | The future is dismissed as fantasy
+O mesmo debate sobre quem vai ou não existir | The same debate about who will or won't exist
+O presente humano é colocado à frente de tudo | The human present is put ahead of everything
+A possibilidade de mentes artificiais é chamada de ficção | The possibility of artificial minds is called fiction
+A proposta tecnológica é ridicularizada | The technological proposal is ridiculed
+A prioridade do presente vira prioridade humana | The priority of the present becomes a human priority
+A escala do futuro parece tornar inútil qualquer ação | The scale of the future seems to make any action useless
 '''
 
 MOTIVOS = {}
