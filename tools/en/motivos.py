@@ -554,6 +554,44 @@ A imposição é atribuída aos pais veganos | Imposition is attributed to vegan
 Da ideologia passa-se à saúde | From ideology it moves to health
 Só a posição minoritária é chamada de ideologia | Only the minority position is called ideology
 O padrão é tratado como neutro | The default is treated as neutral
+A vontade de comer carne é lida como sinal do corpo | The craving for meat is read as a signal from the body
+A experiência pessoal vira afirmação sobre o corpo | Personal experience becomes a claim about the body
+O caso pessoal passa a ser contado como prova | The personal case starts being told as proof
+Do caso pessoal passa-se a uma generalização | The personal case turns into a generalization
+A desistência pessoal é somada às dos outros | One person's giving up is added to everyone else's
+A experiência vira autoridade | Experience becomes authority
+A falta de tempo é o motivo concreto da nova fase | Lack of time is the concrete reason for the new stage
+Admite-se que as razões continuam valendo | The person admits the reasons still hold
+Passa-se a fazer menos | The person starts doing less
+O veganismo é tratado como gosto pessoal | Veganism is treated as a personal taste
+A desistência vira admiração por quem continua | Giving up turns into admiration for those who carry on
+A comida é vista como o que une a família | Food is seen as what holds the family together
+O custo social passa da família para a vida em geral | The social cost spreads from the family to life in general
+A mesma dificuldade, fora de casa | The same difficulty, away from home
+A pressão da maioria vira argumento | The pressure of the majority becomes an argument
+Passa-se a abrir exceções | The person starts making exceptions
+A falta de tempo é o motivo de fundo | Lack of time is the underlying reason
+A dificuldade da viagem passa a valer para a vida social | The difficulty of travel is extended to social life
+A exceção vira regra | The exception becomes the rule
+A dificuldade prática é o motivo de fundo | Practical difficulty is the underlying reason
+A versão mais honesta da mesma ideia | The more honest version of the same idea
+Passa-se a fazer só uma parte | The person moves to doing only a part
+A própria dificuldade é usada como prova | The difficulty itself is used as proof
+A experiência de mal-estar vira autoridade | The experience of feeling unwell becomes authority
+As razões continuam, e a ação não | The reasons remain, and the action doesn't
+O domínio bíblico é lido como permissão | Biblical dominion is read as permission
+O exemplo religioso vira justificativa | The religious example becomes a justification
+A crítica à prática religiosa é vista como desrespeito | Criticism of the religious practice is seen as disrespect
+A questão é entregue à justiça divina | The question is handed over to divine justice
+A tradição é usada como justificativa | Tradition is used as a justification
+A questão é entregue à religião | The question is handed over to religion
+O erro é admitido, e a mudança é recusada | The wrong is admitted, and change is refused
+A justiça divina é usada para encerrar a conversa | Divine justice is used to end the conversation
+O dano ao animal é tratado como assunto pessoal | The harm to the animal is treated as a personal matter
+A tradição familiar está ligada ao sustento | Family tradition is tied to the livelihood
+Do caso pessoal passa-se ao emprego em geral | From the personal case to employment in general
+Do sustento da família passa-se à economia do país | From the family's livelihood to the country's economy
+O produtor defende que trata bem os seus animais | The producer argues that they treat their animals well
 '''
 
 MOTIVOS = {}

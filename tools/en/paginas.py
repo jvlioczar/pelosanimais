@@ -358,13 +358,14 @@ SITES_URL = {'https://questaodeetica.biblioverse.org/desbancando.html': QE_EN + 
 TEXTOS = {
  'DESCRICAO': 'The argument guide for animal advocates systematically catalogs every idea used to exploit, harm or kill animals or to avoid helping them, with a thorough explanation of the objections and biases of people who oppose veganism and antispeciesism.',
  'IND_TEMA': {'G': 'health and nutrition', 'H': 'the environment and agriculture', 'I': 'the usefulness of testing, clothing, entertainment and companion animals',
-              'J': 'cost, practicality and the economy', 'K': 'effectiveness and individual responsibility', 'L': 'who defends veganism'},
+              'J': 'cost, practicality and the economy', 'K': 'effectiveness and individual responsibility', 'L': 'who defends veganism', 'N': 'the experience of someone who tried to be vegan and gave up'},
  'IND_EXEMPLO': {
   'G': "If veganism were defended on health grounds, anyone who manages to be healthy eating animals, and many people do, would have no reason to change. And if an animal product turned out to be demonstrably healthier, the same argument would start defending exploitation. The eater's health says nothing about whether what is done to the animal is just.",
   'H': 'If veganism were defended on environmental grounds, low-impact exploitation would be acceptable, even if it killed more sentient beings. And it is already being promoted: insect farming, "sustainable" hunting, "sustainable" leather. It is possible to reduce environmental impact and increase exploitation at the same time.',
   'I': 'If the defense of animals depended on showing that testing, clothing or entertainment with animals are useless, one useful use would be enough to justify them. But usefulness does not settle the question: no benefit justifies using people who did not consent, and the same holds for animals.',
   'J': 'If veganism were defended for being cheap, practical or good for the economy, any situation in which exploitation were cheaper or created more jobs would justify it. No one accepts this reasoning when the victims are human: exploiting people was once profitable too.',
   'K': "If veganism were defended only by each person's impact, anyone who proved their purchase changes nothing would be let off. But no one accepts this for other harms: taking part in an injustice is still wrong even when each person's share is small.",
+  'N': "If veganism depended on being easy for everyone, one person's difficulty would be enough to make it stop counting. But someone's difficulty, which deserves to be heard and helped, doesn't change what happens to the animals: it calls for practical support, not a new moral conclusion.",
   'L': 'If the question depended on who defends animals, vegans being pleasant and consistent would make the argument valid, and being annoying and inconsistent would make it invalid. But the animals suffer just the same, whoever the messenger is.',
  },
  'IND_AVISO': ('This is an indirect argument: it discusses health, the environment, the economy, practicality or who defends veganism, not whether animals deserve respect. '

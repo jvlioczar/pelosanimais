@@ -62,13 +62,14 @@ if EN:  # no site em inglês os scripts passam pela tradução; a versão muda t
     VER_JS = _h.md5(bytes.fromhex(VER_JS) + _trad).hexdigest()[:8]
     VER_DEB = _h.md5(bytes.fromhex(VER_DEB) + _trad).hexdigest()[:8]
 IND_TEMA = {'G': 'saúde e nutrição', 'H': 'ambiente e agricultura', 'I': 'a utilidade de testes, roupas, lazer e companhia',
-    'J': 'custo, praticidade e economia', 'K': 'eficácia e responsabilidade individual', 'L': 'quem defende o veganismo'}
+    'J': 'custo, praticidade e economia', 'K': 'eficácia e responsabilidade individual', 'L': 'quem defende o veganismo', 'N': 'a experiência de quem tentou ser vegano e desistiu'}
 IND_EXEMPLO = {
     'G': 'Se o veganismo fosse defendido pela saúde, quem consegue ser saudável comendo animais, e muita gente consegue, não teria razão para mudar. E, se surgisse um produto animal comprovadamente mais saudável, o mesmo argumento passaria a defender a exploração. A saúde de quem come não diz se é justo o que se faz ao animal.',
     'H': 'Se o veganismo fosse defendido pelo ambiente, uma exploração de baixo impacto seria aceitável, mesmo que matasse mais seres sencientes. E ela já é promovida: criação de insetos, caça "sustentável", couro "sustentável". É possível reduzir o impacto ambiental e aumentar a exploração ao mesmo tempo.',
     'I': 'Se a defesa dos animais dependesse de mostrar que testes, roupas ou diversão com animais são inúteis, bastaria um uso útil para justificá-los. Mas a utilidade não decide a questão: nenhum benefício justifica usar pessoas que não consentiram, e o mesmo vale para os animais.',
     'J': 'Se o veganismo fosse defendido por ser barato, prático ou bom para a economia, bastaria uma situação em que a exploração fosse mais barata ou gerasse mais empregos para justificá-la. Ninguém aceita esse raciocínio quando as vítimas são humanas: explorar pessoas também já foi lucrativo.',
     'K': 'Se o veganismo fosse defendido só pelo impacto de cada pessoa, quem provasse que sua compra não muda nada estaria liberado. Mas ninguém aceita isso para outros danos: participar de uma injustiça continua errado mesmo quando a parte de cada um é pequena.',
+    'N': 'Se o veganismo dependesse de ser fácil para todos, bastaria alguém ter dificuldade para que ele deixasse de valer. Mas a dificuldade de uma pessoa, que merece ser ouvida e ajudada, não muda o que acontece com os animais: ela pede apoio prático, e não uma nova conclusão moral.',
     'L': 'Se a questão dependesse de quem defende os animais, bastaria os veganos serem simpáticos e coerentes para o argumento valer, ou chatos e incoerentes para deixar de valer. Mas os animais sofrem do mesmo jeito, seja quem for o mensageiro.',
 }
 def aviso_ind(fc, rot, pre='../'):
@@ -101,7 +102,7 @@ PAGINAS = []
 BUSCA = []
 
 # ---------- leitura do catálogo ----------
-CORES = {'A': '#b8460f', 'B': '#7b3fa0', 'C': '#2f7d12', 'D': '#1d63b8', 'E': '#b0306e', 'F': '#0b7268', 'G': '#8a6100', 'H': '#4a46c2', 'I': '#c22f2f', 'J': '#5e6c0e', 'K': '#0a6f8f', 'L': '#8a4d2c', 'M': '#46607a'}  # uma cor forte por família; a versão pastel sai do CSS (color-mix)
+CORES = {'A': '#b8460f', 'B': '#7b3fa0', 'C': '#2f7d12', 'D': '#1d63b8', 'E': '#b0306e', 'F': '#0b7268', 'G': '#8a6100', 'H': '#4a46c2', 'I': '#c22f2f', 'J': '#5e6c0e', 'K': '#0a6f8f', 'L': '#8a4d2c', 'M': '#46607a', 'N': '#7a4a6e'}  # uma cor forte por família; a versão pastel sai do CSS (color-mix)
 
 def texto(el): return ''.join(el.itertext()).strip()
 def linhas(tab): return [[texto(c) for c in r.findall('cell')] for r in tab.findall('row')]
@@ -118,7 +119,7 @@ UNIDOS = {
 def codigos(s):
     """'C1 a C11, G3' vira a lista de códigos, expandindo os intervalos e trocando os unidos pelo código que ficou."""
     out = []
-    for m in re.finditer(r'([A-M])(\d{1,2})(?: a \1(\d{1,2}))?', s):
+    for m in re.finditer(r'([A-N])(\d{1,2})(?: a \1(\d{1,2}))?', s):
         ini, fim = int(m[2]), int(m[3] or m[2])
         out += [f'{m[1]}{n}' for n in range(ini, fim + 1)]
     return list(dict.fromkeys(UNIDOS[c][0] if c in UNIDOS else c for c in out))
@@ -156,11 +157,12 @@ for velho, (novo, falha) in UNIDOS.items():
 # Famílias acrescentadas depois do doc original. M: o critério da senciência além da exploração (animais selvagens, novas mentes, futuro).
 FAMILIAS_NOVAS = [
     ('M', 'DIR', 'Animais selvagens, novas mentes e o futuro', 'Devemos ajudar, e não só deixar de prejudicar?', 'Moral (viés de omissão e apelo à natureza)'),
+    ('N', 'IND', 'Ex-veganos: por que desisti', 'Ter desistido muda o que é certo?', 'Lógico e moral (da experiência pessoal à conclusão moral)'),
 ]
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'J3': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
 for c, fs in FORMAS_EXTRA.items(): ARGS[c]['formas'] += fs
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
@@ -179,6 +181,15 @@ NOVOS = [
     ('E14', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
     ('J16', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
     ('J17', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
+    ('D11', 'Minha religião aprova o consumo de animais', ['Minha religião permite', 'Se Deus não quisesse, não teria feito os animais de carne', 'Veganismo vai contra a Bíblia'], 'Permitir não é obrigar, e as próprias tradições religiosas proíbem o sofrimento desnecessário, que a produção atual causa em massa'),
+    ('D12', 'Vou pagar pelos meus erros na próxima vida', ['Vou pagar na próxima encarnação', 'Isso é entre mim e o meu carma', 'Deus vai me julgar, não você'], 'A frase admite o erro e adia a conta, mas quem paga agora é o animal; as tradições do carma ensinam a não violência'),
+    ('J18', 'Eu vivo disso, é o sustento da minha família', ['Você vai pagar as minhas contas?', 'Meu pai e meu avô criaram gado'], 'A dependência econômica explica a dificuldade de mudar, mas não torna a atividade justa; a saída é uma transição planejada e com apoio'),
+    ('N1', 'Deixei de ser vegano porque comecei a me sentir mal', ['Meu corpo sente falta de carne, me sinto mal', 'Deixei de ser vegano por causa da energia', 'Voltei a comer carne e melhorei'], 'O mal-estar é real, mas raramente investigado: costuma vir de comer pouco, de falta de B12 ou de planejamento, e tem solução sem produtos animais'),
+    ('N2', 'Deixei de ser vegano porque estou em outro momento da vida', ['Era uma fase', 'Hoje tenho outras prioridades'], 'A fase da vida muda o que é fácil, e não o que acontece com os animais; uma fase difícil pede ajustes, e não desistir'),
+    ('N3', 'Ser vegano me limitava comer na casa dos meus familiares', ['Na casa da minha avó, não tinha o que comer', 'Minha mãe ficava magoada quando eu recusava a comida'], 'O custo social é real, mas tem saídas: conversar antes, levar um prato para dividir, comer o que já é vegano na mesa'),
+    ('N4', 'Ser vegano é difícil para quem viaja muito', ['Na estrada, não tem o que comer', 'Em viagem de trabalho, não dá para escolher'], 'A dificuldade de algumas refeições justifica, no máximo, uma exceção real, e não abandonar o veganismo em casa'),
+    ('N5', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
+    ('N6', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
     ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
     ('L15', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
     ('L16', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
@@ -228,7 +239,7 @@ for _a in ARGS.values(): _a['slug'] = SLUG_ARG[_a['c'].lower()]
 REV_ARG = {v: k for k, v in SLUG_ARG.items()}
 REV_RUIM = {v: k for k, v in SLUG_RUIM.items()}
 def nova_url(s):
-    s = re.sub(r'\bargumentos/([a-m]\d{1,2})\.html', lambda m: f'argumentos/{SLUG_ARG.get(m[1], m[1])}.html', s)
+    s = re.sub(r'\bargumentos/([a-n]\d{1,2})\.html', lambda m: f'argumentos/{SLUG_ARG.get(m[1], m[1])}.html', s)
     return re.sub(r'\bruins/(v\d{1,2})\.html', lambda m: f'ruins/{SLUG_RUIM.get(m[1], m[1])}.html', s)
 
 # Capítulos do site Questão de Ética (coleção de Luciano Carlos Cunha) que aprofundam cada argumento.
@@ -290,7 +301,7 @@ def limpa(s):
     if s[:1] == 'f' and s.startswith('fonte ainda'): s = 'F' + s[1:]
     return s
 
-COD_RE = re.compile(r'(?<![\w.-])([A-M]\d{1,2})(?![\w-])')
+COD_RE = re.compile(r'(?<![\w.-])([A-N]\d{1,2})(?![\w-])')
 def liga(s, ctx):
     def f(m):
         c = UNIDOS[m[1]][0] if m[1] in UNIDOS else m[1]
@@ -547,9 +558,9 @@ TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
 MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
         ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
-        ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 13 famílias'),
+        ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
                         ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
-        ('biblioteca.html', 'Biblioteca')]
+        ('biblioteca.html', 'Biblioteca'), ('sobre.html', L('Sobre', 'About'))]
 def monta_menu(pre, atual):
     h = ''
     for u, t in MENU:
@@ -647,7 +658,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <main id="main">{corpo}</main>
 <footer class="rodape"><div class="wrap rodape-in">
 <div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
-<div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 13 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
+<div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 14 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
 <div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
@@ -735,12 +746,12 @@ def inicio():
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
 <a class="rolar" href="#argumentos">{L(f"Role para ver os {len(ARGS)} argumentos ↓", f"Scroll to see all {len(ARGS)} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
-<section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 13 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
+<section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
 <div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
 <section class="bloco-cor azul" id="politicas"><div class="wrap"><div class="sec-cab centro-t"><h2>E se a pessoa parte de uma teoria política?</h2><p>Liberais, marxistas, anarquistas, utilitaristas, feministas: cada teoria tem um princípio, e nenhuma oferece, nos próprios termos, uma razão para deixar os animais de fora.</p></div>
 <div class="grade">{polc}</div><p class="centro-t" style="margin-top:22px"><a class="btn" href="objecoes-politicas.html">Ver todas as objeções políticas</a></p></div></section>
-<section class="bloco-cor verde" id="grupos"><div class="wrap"><div class="sec-cab centro-t"><h2>Duas perguntas, treze famílias</h2><p>Argumentos parecidos erram de modo parecido. Toda objeção tenta responder a uma destas duas perguntas.</p></div>
+<section class="bloco-cor verde" id="grupos"><div class="wrap"><div class="sec-cab centro-t"><h2>Duas perguntas, catorze famílias</h2><p>Argumentos parecidos erram de modo parecido. Toda objeção tenta responder a uma destas duas perguntas.</p></div>
 <div class="arvore-g"><div class="galho"><p class="pergunta"><small>Argumentos diretos</small>Os animais contam?</p><div class="ramos">{"".join(ramo(f) for f in dir_)}</div></div><div class="galho"><p class="pergunta"><small>Argumentos indiretos</small>É necessário, viável, eficaz?</p><div class="ramos">{"".join(ramo(f) for f in ind)}</div><p class="ressalva">Mesmo quando têm uma parte verdadeira, justificam no máximo exceções. Muitos ativistas evitam usá-los para defender os animais: outros movimentos sociais não defendem humanos com argumentos de saúde ou de ambiente. <a href="comece-aqui.html#indiretos">Entenda</a></p></div></div>
 <div class="raizes-h"><p>Quase toda conversa termina em uma destas três raízes:</p><div>{"".join(f'<a href="argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in RAIZES)}</div><a class="mais" href="mapa.html">Ver o mapa de conexões →</a></div></div></section>
 <section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
@@ -885,8 +896,8 @@ def comece():
     page('comece-aqui.html', 'Comece aqui', L('Como usar o guia: o critério da senciência, os cinco compromissos, a diferença entre argumentos diretos e indiretos e os 11 blocos de cada capítulo.', 'How to use the guide: the sentience criterion, the five commitments, the difference between direct and indirect arguments and the 11 blocks of each chapter.'), corpo, 'comece-aqui.html')
 
 def familias():
-    corpo = cabeca('<a href="./">Início</a>', 'As 13 famílias', 'Argumentos parecidos erram de modo parecido. Cada família reúne objeções com a mesma pergunta de fundo e o mesmo tipo de erro dominante.') + '<section class="secao"><div class="wrap">' + ''.join(f'<h2 style="margin:0 0 14px">{L("Parte", "Part")} {p}: {L("argumentos " + t, t + " arguments")}</h2>' + (f'<div class="aviso-ind largo"><span>Sobre os argumentos indiretos</span>{IND_TEXTO.replace(chr(34)+"argumentos/", chr(34)+"argumentos/")}</div>' if p == 'IND' else '') + f'<div class="grade" style="margin-bottom:34px">{"".join(cartao_fam(f) for f in FAMILIAS.values() if f["parte"] == p)}</div>' for p, t in (('DIR', L('diretos', 'direct')), ('IND', L('indiretos', 'indirect')))) + '</div></section>'
-    page('familias.html', 'As 13 famílias', L('As treze famílias de argumentos contra o veganismo e o antiespecismo, de senciência e status moral a animais selvagens e o futuro, com a pergunta de fundo de cada uma.', 'The thirteen families of arguments against veganism and antispeciesism, from sentience and moral status to wild animals and the future, with the underlying question of each.'), corpo, 'familias.html', 'CollectionPage')
+    corpo = cabeca('<a href="./">Início</a>', 'As 14 famílias', 'Argumentos parecidos erram de modo parecido. Cada família reúne objeções com a mesma pergunta de fundo e o mesmo tipo de erro dominante.') + '<section class="secao"><div class="wrap">' + ''.join(f'<h2 style="margin:0 0 14px">{L("Parte", "Part")} {p}: {L("argumentos " + t, t + " arguments")}</h2>' + (f'<div class="aviso-ind largo"><span>Sobre os argumentos indiretos</span>{IND_TEXTO.replace(chr(34)+"argumentos/", chr(34)+"argumentos/")}</div>' if p == 'IND' else '') + f'<div class="grade" style="margin-bottom:34px">{"".join(cartao_fam(f) for f in FAMILIAS.values() if f["parte"] == p)}</div>' for p, t in (('DIR', L('diretos', 'direct')), ('IND', L('indiretos', 'indirect')))) + '</div></section>'
+    page('familias.html', 'As 14 famílias', L('As catorze famílias de argumentos contra o veganismo e o antiespecismo, de senciência e status moral a animais selvagens, o futuro e os motivos de ex-veganos, com a pergunta de fundo de cada uma.', 'The fourteen families of arguments against veganism and antispeciesism, from sentience and moral status to wild animals, the future and ex-vegans\' reasons, with the underlying question of each.'), corpo, 'familias.html', 'CollectionPage')
     for c, f in FAMILIAS.items():
         extra = f'<p class="tese" style="--c:{f["cor"]}"><strong>Pergunta de fundo:</strong> {e(f["perg"])}<br/><strong>Erro dominante:</strong> {e(f["erro"])}</p>'
         if f['parte'] == 'IND': extra += aviso_ind(c, 'Família de argumentos indiretos')
@@ -909,7 +920,7 @@ def mapa():
     cads = ''.join(f'<div class="cadeia"><h3>{e(n)}</h3><p style="margin:0 0 .6rem;font-size:.95rem">{e(d)}</p>{elos(cs, "<li class=fim><a href=\"#raizes\">Raízes</a></li>")}</div>' for n, d, cs in CADEIAS_LONGAS)
     tipicas = ''
     for ca in CADEIAS:
-        rot =re.sub(r'\b([A-M]\d{1,2})\b', lambda m: lig(m[1]) if m[1] in ARGS else m[0], e(ca['fim']))
+        rot =re.sub(r'\b([A-N]\d{1,2})\b', lambda m: lig(m[1]) if m[1] in ARGS else m[0], e(ca['fim']))
         tipicas += f'<div class="cadeia"><h3>{e(ca["n"])}</h3>{elos(ca["cods"])}<p style="margin:.6rem 0 0;font-size:.95rem">Costuma terminar em: {rot}</p></div>'
     corpo = cabeca('<a href="./">Início</a>', 'Mapa de conexões', 'Quem perde um argumento indireto costuma recuar para um direto, e vice-versa. Conhecer a cadeia ajuda a antecipar a próxima objeção.') + f'''<section class="secao" id="raizes"><div class="wrap"><div class="sec-cab"><h2>As três raízes</h2><p>Quase toda cadeia de objeções, quando esgotada, termina em uma destas três. As demais funcionam como camadas de proteção: responda à camada, mas mire a raiz.</p></div><div class="raizes">{"".join(cartao(ARGS[c]) for c in RAIZES)}</div></div></section>
 <section class="secao areia"><div class="wrap estreito"><div class="sec-cab"><h2>As duas cadeias mais comuns</h2></div>{cads}</div></section>
@@ -1138,6 +1149,8 @@ def completa_vieses():
         if cods: VIESES.append(dict(n=n, d=d, aparece='', cods=cods))
 completa_vieses()
 if EN: en.aplica(globals())
+# Frases dos argumentos sem ponto final, para a lista ficar uniforme (reticências, ? e ! continuam)
+for _a in ARGS.values(): _a['frase'] = re.sub(r'(?<!\.)\.$', '', _a['frase'].strip())
 
 # ---------- montagem ----------
 inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()

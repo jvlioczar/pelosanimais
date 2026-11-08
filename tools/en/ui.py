@@ -19,7 +19,7 @@ UI = [
  ('Todos os argumentos', 'All arguments'),
  ('Treinar respostas', 'Practice answers'),
  ('Debate simulado', 'Simulated debate'),
- ('As 13 famílias', 'The 13 families'),
+ ('As 14 famílias', 'The 14 families'),
  ('Argumentos ruins de veganos: pare de usar ou use melhor', 'Weak vegan arguments: stop using them or use them better'),
  ('Argumentos ruins que veganos deveriam parar de usar, ou usar de forma melhor', 'Weak arguments vegans should stop using, or use better'),
  ('Argumentos ruins de veganos', 'Weak vegan arguments'),
@@ -51,7 +51,7 @@ UI = [
  ('Alguém disse:', 'Someone said:'),
  ('Ver a resposta completa →', 'See the full answer →'),
  ('Outra objeção ↻', 'Another objection ↻'),
- ('Um caderno com 13 divisórias. Toque em uma frase para ver a falha principal sem sair da página.', 'A notebook with 13 dividers. Tap a phrase to see the main flaw without leaving the page.'),
+ ('Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.', 'A notebook with 14 dividers. Tap a phrase to see the main flaw without leaving the page.'),
  ('Filtrar: leão, churrasco, B12', 'Filter: lion, barbecue, B12'),
  ('Filtrar argumentos', 'Filter arguments'),
  ('>Todos</button>', '>All</button>'),
@@ -63,7 +63,7 @@ UI = [
  ('E se a pessoa parte de uma teoria política?', 'What if the person starts from a political theory?'),
  ('Liberais, marxistas, anarquistas, utilitaristas, feministas: cada teoria tem um princípio, e nenhuma oferece, nos próprios termos, uma razão para deixar os animais de fora.', 'Liberals, Marxists, anarchists, utilitarians, feminists: each theory has a principle, and none offers, on its own terms, a reason to leave animals out.'),
  ('Ver todas as objeções políticas', 'See all political objections'),
- ('Duas perguntas, treze famílias', 'Two questions, thirteen families'),
+ ('Duas perguntas, catorze famílias', 'Two questions, fourteen families'),
  ('Argumentos parecidos erram de modo parecido. Toda objeção tenta responder a uma destas duas perguntas.', 'Similar arguments go wrong in similar ways. Every objection tries to answer one of these two questions.'),
  ('<small>Argumentos diretos</small>Os animais contam?', '<small>Direct arguments</small>Do animals count?'),
  ('<small>Argumentos indiretos</small>É necessário, viável, eficaz?', '<small>Indirect arguments</small>Is it necessary, feasible, effective?'),
@@ -267,7 +267,7 @@ UI = [
  ('"t":"Família ', '"t":"Family '),
  ('"k":"política teoria"', '"k":"politics theory"'),
  ('<span>A resposta em uma frase</span>', '<span>The answer in one sentence</span>'),
-] + [(f'Família {c}: ', f'Family {c}: ') for c in 'ABCDEFGHIJKLM']
+] + [(f'Família {c}: ', f'Family {c}: ') for c in 'ABCDEFGHIJKLMN']
 
 JS = [
  ("'Nada encontrado. Tente outra palavra da objeção.'", "'Nothing found. Try another word from the objection.'"),
