@@ -544,6 +544,11 @@ Da acusação política passa-se ao ataque pessoal | From the political charge i
 O incômodo vira diagnóstico | The annoyance becomes a diagnosis
 O ataque busca apoio em estudos sobre depressão | The attack seeks support in studies on depression
 O ataque busca apoio em transtornos alimentares | The attack seeks support in eating disorders
+Da afirmação passa-se à hipótese | From the claim it moves to the hypothesis
+Outro cenário hipotético para testar o vegano | Another hypothetical scenario to test the vegan
+Se plantas contam, pergunta-se onde fica a linha | If plants count, the question is where the line falls
+Toda dieta causa algum dano | Every diet causes some harm
+A impossibilidade de zerar o dano vira acusação | The impossibility of zero harm becomes an accusation
 '''
 
 MOTIVOS = {}
