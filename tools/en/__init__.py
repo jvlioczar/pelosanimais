@@ -73,7 +73,8 @@ def copia_assets(src, dst):
         if not os.path.isfile(a) or n in ('busca.json', 'share.png'): continue
         if n.endswith('.js'):
             t = open(a, encoding='utf-8').read()
-            for pt, en in _JS: t = t.replace(pt, en)
+            # Apostrophes between letters (today's, don't) become typographic: a straight ' would close the JS string it lands in.
+            for pt, en in _JS: t = t.replace(pt, re.sub(r"(?<=[A-Za-z])'(?=[A-Za-z])", '’', en))
             t = caminho(t)
             open(os.path.join(dst, n), 'w', encoding='utf-8', newline='\n').write(t)
         else: shutil.copyfile(a, os.path.join(dst, n))

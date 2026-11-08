@@ -57,6 +57,10 @@ import hashlib as _h
 VER_CSS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'style.css'), 'rb').read()).hexdigest()[:8]
 VER_DEB = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'debate.js'), 'rb').read()).hexdigest()[:8]
 VER_JS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'app.js'), 'rb').read()).hexdigest()[:8]
+if EN:  # no site em inglês os scripts passam pela tradução; a versão muda também quando ela muda, para o navegador baixar o arquivo novo
+    _trad = b''.join(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'en', n), 'rb').read() for n in ('ui.py', '__init__.py'))
+    VER_JS = _h.md5(bytes.fromhex(VER_JS) + _trad).hexdigest()[:8]
+    VER_DEB = _h.md5(bytes.fromhex(VER_DEB) + _trad).hexdigest()[:8]
 IND_TEMA = {'G': 'saúde e nutrição', 'H': 'ambiente e agricultura', 'I': 'a utilidade de testes, roupas, lazer e companhia',
     'J': 'custo, praticidade e economia', 'K': 'eficácia e responsabilidade individual', 'L': 'quem defende o veganismo'}
 IND_EXEMPLO = {
