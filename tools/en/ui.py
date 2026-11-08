@@ -216,7 +216,8 @@ UI = [
  ('>Qualquer idioma</button>', '>Any language</button>'),
  ('>Em português</button>', '>In Portuguese</button>'),
  ('>Em inglês</button>', '>In English</button>'),
- ('Sites para consultar', 'Websites to consult'),
+ ('Sites e projetos', 'Websites and projects'),
+ ('Organizações', 'Organizations'),
  ('A lista partiu da seleção da ', 'The list started from the selection by '),
  ('</a> e foi completada com outros livros focados em rebater argumentos antiveganos e especistas. Cada título foi conferido em catálogo, editora ou resenha.', '</a> (in Portuguese) and was completed with other books focused on answering anti-vegan and speciesist arguments. Each title was checked in a catalog, at the publisher or in a review.'),
  # ---------- 404 ----------

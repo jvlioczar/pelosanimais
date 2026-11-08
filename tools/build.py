@@ -1046,10 +1046,12 @@ def pagina_biblioteca():
     chips = ''.join(f'<button class="chip" type="button" data-g="foco" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{e(t)}</button>' for v, t in [('', 'Todos')] + list(biblioteca.FOCOS.items()))
     chips += ''.join(f'<button class="chip" type="button" data-g="lingua" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{t}</button>' for v, t in (('', 'Qualquer idioma'), ('PT', 'Em português'), ('EN', 'Em inglês')))
     sites = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in biblioteca.SITES)
+    orgs = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in biblioteca.ORGS)
     corpo = cabeca('<a href="./">Início</a>', 'Biblioteca', 'Livros para aprender a argumentar pelos animais: respostas às objeções mais comuns, os fundamentos éticos e a psicologia que sustenta o hábito de comer animais.') + f'''<section class="secao"><div class="wrap">
 <div class="filtros bib-filtros">{chips}<span id="bib-n" aria-live="polite">{len(biblioteca.LIVROS)} {L("livros", "books")}</span></div>
 <div class="bib-grade">{cards}</div>
-<h2 style="margin-top:40px">Sites para consultar</h2><div class="bib-sites">{sites}</div>
+<h2 style="margin-top:40px">Sites e projetos</h2><div class="bib-sites">{sites}</div>
+<h2 style="margin-top:40px">Organizações</h2><div class="bib-sites">{orgs}</div>
 <p class="fino" style="margin-top:22px">A lista partiu da seleção da <a href="https://vegpedia.com/2024/07/24/livros-e-sites-para-aprender-a-argumentar-a-favor-dos-animais" {EXT}>Vegpedia</a> e foi completada com outros livros focados em rebater argumentos antiveganos e especistas. Cada título foi conferido em catálogo, editora ou resenha.</p>
 </div></section>'''
     page('biblioteca.html', 'Biblioteca', L('Livros e sites para aprender a argumentar pelos animais e rebater argumentos antiveganos e especistas, em português e em inglês.', 'Books and websites for learning to argue for animals and answer anti-vegan and speciesist arguments, in English and Portuguese.'), corpo, 'biblioteca.html', 'CollectionPage')

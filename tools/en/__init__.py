@@ -148,6 +148,11 @@ def aplica(g):
         if u in SITES: novos.append((SITES[u][0], SITES[u][1], SITES_URL.get(u, u)))
         else: falta('site', n); novos.append((n, d, u))
     bib.SITES[:] = novos
+    novos = []
+    for n, d, u in bib.ORGS:
+        if u in SITES: novos.append((SITES[u][0], SITES[u][1], SITES_URL.get(u, u)))
+        else: falta('organização', n); novos.append((n, d, u))
+    bib.ORGS[:] = novos
     deb = g['debate']
     deb.PESSOAS[:] = PESSOAS or deb.PESSOAS
     for c in list(deb.OP):
