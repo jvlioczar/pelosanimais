@@ -41,6 +41,11 @@ SECOES_EN = {1: 'Sentience, Consciousness and Cognition', 2: 'Technical Fields R
     9: 'Animal-Derived Products', 10: 'Plant-Derived Products', 11: 'Reducing and Ending the Use of Animals', 12: 'Experiences (Welfare, Pain and Affective States)',
     13: 'Activism and the Movement', 14: 'Movement Strategy: Reformism, Abolitionism and Ethical Washing', 15: 'Diet and Vegetarianism: Variants',
     16: 'Intersectionality and Social Justice', 17: 'Applied Ethics, the Future and Technology'}
+LINKS_EN = {  # mesmas páginas, na versão em inglês
+    'https://www.animal-ethics.org/o-argumento-da-relevancia': 'https://www.animal-ethics.org/argument-relevance',
+    'https://www.animal-ethics.org/o-que-e-senciencia': 'https://www.animal-ethics.org/what-is-sentience',
+    'https://www.animal-ethics.org/declaracao-consciencia-cambridge': 'https://www.animal-ethics.org/cambridge-declaration-on-consciousness',
+}
 def traduz():
     """Troca termo, definição e comentário pelas versões em inglês (data/novos/glos_en_*.json, por posição na lista) e reordena."""
     import glob, unicodedata
@@ -51,5 +56,6 @@ def traduz():
         x = en.get(v['pt'])
         if not x or not x['def'].strip(): print('glossário sem tradução:', v['termo']); continue
         v['termo'], v['def'], v['com'] = x['termo'].strip(), x['def'].strip(), (x.get('com') or '').strip()
+        v['links'] = [LINKS_EN.get(x, x) for x in v['links']]
     VERBETES.sort(key=lambda v: unicodedata.normalize('NFD', v['termo'].lower()).encode('ascii', 'ignore').decode())
     SECOES[:] = [(n, SECOES_EN[n]) for n, _ in SECOES]

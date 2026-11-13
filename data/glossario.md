@@ -117,7 +117,7 @@
 
 **Argumento da relevância** — tese de que só características moralmente relevantes, como a capacidade de sofrer, justificam diferença de tratamento; a espécie, por si só, não é uma dessas características. *É um dos argumentos centrais usados para caracterizar o especismo como discriminação moralmente injustificada, análoga ao racismo e ao sexismo.*
 *Para entender mais:*
-- https://www.animal-ethics.org/o-que-e-senciencia
+- https://www.animal-ethics.org/o-argumento-da-relevancia
 
 **Argumento dos casos marginais** — tese de que critérios usados para excluir animais da consideração moral, como racionalidade ou linguagem, também excluiriam humanos com deficiências cognitivas severas, revelando uma inconsistência no especismo. *Por evidenciar essa inconsistência, é considerado por muitos filósofos um dos desafios mais difíceis de responder para quem defende critérios cognitivos como base da exclusão moral dos animais.*
 
