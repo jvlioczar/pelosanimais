@@ -92,8 +92,8 @@ OP = {
   fe='Separates how the animal dies from the fact that it dies, and adds that even the method is not what people imagine.',
   m='Humane slaughter only exists on paper. In practice, every animal is killed fully conscious, with no stunning at all, because the line moves too fast and nobody inspects it. The label is only there to reassure the consumer, and the industry knows it.',
   me='It\'s an exaggeration: stunning is the legal rule in many countries, even though it fails and has exceptions. Anyone who knows the subject takes the sentence apart and ignores the rest.',
-  r="Humane would be killing you the same way. Would you accept that? A blow to the head, a cut to the throat, and I promise it'll be quick and done with great respect. If the idea bothers you, maybe the problem was never the method, but you haven't wanted to see it yet.",
-  re='The comparison has a point, but said as a threat it sounds aggressive and pulls the focus away from the argument.'),
+  r="Humane would be killing you the same way. Would you accept that? A blow to the head, a cut to the throat, all quick and done with great respect. If the idea bothers you, maybe the problem was never the method, but you haven't wanted to see it yet.",
+  re='The comparison has a point, but said this way it sounds aggressive and pulls the focus away from the argument.'),
  'K1': dict(
   f="The slaughterhouse doesn't change production for one tray, but it does for many, and someone's purchase is always the one that triggers the next order. Since no one knows whether it'll be theirs, the average effect of each purchase is real. And when demand falls, production falls.",
   fe="Explains the expected-value reasoning without promising that each purchase saves a specific animal.",
@@ -127,8 +127,8 @@ OP = {
   fe='Explains why death is a harm even without pain, with a human case no one accepts.',
   m="That premise is false: there's no such thing as painless death. Every animal suffers at slaughter, smells the blood, hears the others screaming and panics before dying. If death really were painless, this would be a different conversation.",
   me='Shifts to pain, which is not always present to the same degree, and accepts the premise that, without pain, everything would be fine.',
-  r="So can I kill you in your sleep? You wouldn't feel a thing, you wouldn't even know, and by your logic nobody would have anything to complain about. Think carefully before you answer, because tonight you're going to sleep.",
-  re='The idea is right, but said as a threat it sounds hostile and the person reacts to the tone.'),
+  r="So can I kill you in your sleep? You wouldn't feel a thing, you wouldn't even know, and by your logic nobody would have anything to complain about. Think carefully before you answer: if painless killing of someone asleep is acceptable, nothing stops you from agreeing.",
+  re='The idea is right, but said in a provocative tone it sounds hostile and the person reacts to the tone.'),
  'B2': dict(
   f="A better life is better, no doubt. But the free-range animal is still killed young, and the male chicks are still discarded. And that meat is the exception: most farmed animals live in intensive systems.",
   fe='Acknowledges the improvement and shows what does not change: the death, and the fact that this meat is a minority.',

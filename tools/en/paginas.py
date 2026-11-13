@@ -199,7 +199,7 @@ POLITICAS = {
          ('Aph Ko and Syl Ko', 'American writers; in Aphro-ism (2017), they discuss racism and speciesism from Black thought'),
          ('A. Breeze Harper', 'American scholar; she edited Sistah Vegan (2010), with writing by Black vegan women'),
          ('Marjorie Spiegel', 'author of The Dreaded Comparison (1988), on the similarities between human slavery and animal exploitation'),
-         ('Angela Davis', 'American philosopher and activist; a vegan, she has said in public that the way we treat animals is part of the same logic she criticizes')],
+         ('Angela Davis', 'American philosopher and activist; a vegan, she has argued in lectures that animal rights and human rights are linked')],
   fontes=[COCHRANE, KYM, ('Beasts of Burden: Animal and Disability Liberation', 'https://openlibrary.org/works/OL20045362W')]),
  'esquerda-multiculturalismo': dict(s='progressive-left-and-multiculturalism', t='The progressive left and multiculturalism', frase='The animal cause is a white middle-class concern that ends up attacking the cultural practices of minorities.',
   principio='Defend vulnerable groups, fight domination and respect cultural diversity.',
@@ -262,7 +262,7 @@ POLITICAS = {
   resposta='That calculation applies to choosing the means, not to deciding who counts. A pragmatist can prefer gradual goals with proven results for animals, and many exist. What a pragmatist cannot do, without abandoning their own method, is ignore the consequences for those who feel. And not eating animals depends on neither votes nor public budgets (J6, K9).',
   mais=[('Not to be confused with pragmatic veganism', [
       'This page is about pragmatism as a general political and philosophical outlook. It is not the same as so-called pragmatic veganism, a current within the vegan movement that accepts the goal of ending animal exploitation and discusses which strategies get the most results, such as gradual reforms and corporate campaigns. One is an objection from outside; the other is an internal debate about means.',
-      'It is also worth being honest about history: classical pragmatism did not always favor animals. John Dewey, for example, defended animal experimentation in a 1926 text. The authors below show that the pragmatist method, carried further, asks for more than that.'])],
+      'Philosophical pragmatism does not, on its own, lead to a conclusion about animals: it is a method, and what it concludes depends on which consequences are counted. The authors below show what happens when the consequences for animals are counted.'])],
   nomes=[('Erin McKenna and Andrew Light', 'American philosophers; they edited Animal Pragmatism: Rethinking Human-Nonhuman Relationships (2004), which applies philosophical pragmatism to our relations with animals'),
          ('Henry Spira', 'activist (1927–1998); known for campaigns with concrete, achievable goals that ended specific animal tests; his story is told by Peter Singer in Ethics into Action (1998)')],
   fontes=[('Animal Pragmatism: Rethinking Human-Nonhuman Relationships', 'https://muse.jhu.edu/books/9780253110275'), ('Pragmatism, in the Stanford Encyclopedia of Philosophy', 'https://plato.stanford.edu/entries/pragmatism/'), COCHRANE]),

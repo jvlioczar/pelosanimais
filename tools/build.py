@@ -1,5 +1,5 @@
 """Gera o site a partir de data/catalogo.xml e data/capitulos/*.xml (exportados do doc original). Uso: python tools/build.py"""
-import glob, html, json, os, re
+import collections, glob, html, json, os, re
 import sys
 import xml.etree.ElementTree as ET
 
@@ -773,7 +773,7 @@ def inicio():
 <div class="busca-h"><label class="so-leitor" for="hq">O que te disseram?</label><input id="hq" type="search" placeholder="O que te disseram? Ex.: de onde você tira proteína" autocomplete="off"/><div id="hres" class="hres" hidden></div></div>
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
-<a class="rolar" href="#argumentos">{L(f"Role para ver os {len(ARGS)} argumentos ↓", f"Scroll to see all {len(ARGS)} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
+<a class="rolar" href="#argumentos">{L(f"Role para ver mais de {len(ARGS) // 100 * 100} argumentos ↓", f"Scroll to see more than {len(ARGS) // 100 * 100} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
 <section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
 <div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
@@ -1079,8 +1079,8 @@ def raciocinio():
 
 def sobre():
     n_cap = len(set(CAPS) & set(ARGS))
-    CONTEM = L(f'<p>Os {len(ARGS)} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo, baseados no livro <em>Veganismo Baseado em Evidências</em>.</p>',
-               f'<p>All {len(ARGS)} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism, based in part on the book <em>Veganismo Baseado em Evidências</em> (Evidence-Based Veganism, in Portuguese).</p>')
+    CONTEM = L(f'<p>Mais de {len(ARGS) // 100 * 100} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo, baseados no livro <em>Veganismo Baseado em Evidências</em>.</p>',
+               f'<p>More than {len(ARGS) // 100 * 100} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism, based in part on the book <em>Veganismo Baseado em Evidências</em> (Evidence-Based Veganism, in Portuguese).</p>')
     corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>O projeto</h2><p>O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 pelo ativista Julio Cesar Prava. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.</p><h2>A abordagem</h2><p>O guia segue a tradição da filosofia analítica e da epistemologia: busca clareza nos conceitos, argumentos válidos e premissas apoiadas em evidência. A ética que o orienta é baseada na senciência, o <a href="https://pt.wikipedia.org/wiki/Sencientismo" target="_blank" rel="noopener">sencientismo</a>: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie. O guia também mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2>{CONTEM}
 <h2>Sobre as fontes</h2><p>Afirmações empíricas precisam de fonte. Os links nas referências levam às fontes conferidas na redação. Quando uma tabela indica "fonte ainda não conferida", a referência existe, mas ainda não foi checada no original.</p>
 <h2>Sobre o tom</h2><p>O guia discute argumentos, não pessoas. Apresenta a versão mais forte de cada objeção e diz o que ela acerta, porque só assim a resposta vale alguma coisa. Quando compara a estrutura lógica de argumentos, não está equiparando vítimas nem sofrimentos históricos.</p>
@@ -1111,47 +1111,117 @@ def pagina_biblioteca():
 </div></section>'''
     page('biblioteca.html', 'Biblioteca', L('Livros e sites para aprender a argumentar pelos animais e rebater argumentos antiveganos e especistas, em português e em inglês.', 'Books and websites for learning to argue for animals and answer anti-vegan and speciesist arguments, in English and Portuguese.'), corpo, 'biblioteca.html', 'CollectionPage')
 
+GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas do guia que o aprofundam
+    'liberalismo': 'politicas/liberalismo.html', 'libertarianismo': 'politicas/libertarianismo.html', 'anarquismo': 'politicas/anarquismo.html', 'anarquismo verde': 'politicas/anarquismo.html',
+    'socialismo': 'politicas/marxismo.html', 'utilitarismo': 'politicas/utilitarismo.html', 'utilitarismo classico': 'politicas/utilitarismo.html', 'contratualismo': 'politicas/contratualismo.html',
+    'deontologia': 'politicas/deontologia.html', 'etica do cuidado': 'politicas/cuidado.html', 'etica das virtudes': 'politicas/virtudes.html', 'ecofeminismo': 'politicas/feminismo.html',
+    'veganismo feminista': 'politicas/feminismo.html', 'altruismo eficaz': 'politicas/altruismo-eficaz.html', 'ambientalismo (moral)': 'politicas/ambientalismo.html', 'ecologismo': 'politicas/ambientalismo.html',
+    'pragmatismo': 'politicas/pragmatismo.html', 'igualitarismo': 'politicas/igualitarismo.html', 'antiespecismo': 'alem/antiespecismo.html', 'especismo': 'alem/antiespecismo.html',
+    'sencientismo': 'alem/antiespecismo.html', 'antropocentrismo': 'alem/antiespecismo.html', 'biocentrismo': 'alem/antiespecismo.html', 'ecocentrismo': 'alem/antiespecismo.html',
+    'biologia do bem-estar': 'alem/animais-selvagens.html', 'senciencia em ia e sistemas digitais': 'alem/ia-e-robos.html', 'senciencia em robos': 'alem/ia-e-robos.html',
+    'senciencia em vida extraterrestre': 'alem/extraterrestres.html', 'abolicionismo': 'alem/correntes-do-veganismo.html', 'veganismo abolicionista': 'alem/correntes-do-veganismo.html',
+    'bem-estarismo': 'alem/correntes-do-veganismo.html', 'novo bem-estarismo (neo-welfarism)': 'alem/correntes-do-veganismo.html', 'veganismo pragmatico': 'alem/correntes-do-veganismo.html',
+    'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
+    'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
+}
+GLOS_GUIA_ROTULO = {'politicas': ('Objeção política', 'Political objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
+                    'falacias.html': ('Falácias', 'Fallacies')}
+
 def pagina_glossario():
-    """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py)."""
+    """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
+    Tem busca, filtro por tema, A–Z, remissivas entre verbetes, links para as páginas do guia que aprofundam o termo e DefinedTermSet para os buscadores."""
     import glossario, unicodedata
     if EN: glossario.traduz()
-    inicial = lambda t: unicodedata.normalize('NFD', t[0].upper()).encode('ascii', 'ignore').decode() or '#'
-    em = lambda s: re.sub(r'\*([^*]+)\*', r'<em></em>', e(s))
+    norm = lambda t: unicodedata.normalize('NFD', t.lower()).encode('ascii', 'ignore').decode()
+    inicial = lambda t: (unicodedata.normalize('NFD', t[0].upper()).encode('ascii', 'ignore').decode() or '#')
     secoes = dict(glossario.SECOES)
-    usados, itens, letras = set(), '', []
+    # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
+    vs = []
     for v in glossario.VERBETES:
+        outro = next((x for x in vs if x['pt'].lower() == v['pt'].lower()), None)
+        if outro:
+            outro['secs'].append(v['sec'])
+            if len(v['def']) > len(outro['def']): outro['def'], outro['com'], outro['links'] = v['def'], v['com'], v['links'] or outro['links']
+        else: vs.append(dict(v, secs=[v['sec']]))
+    usados = set()
+    for v in vs:
         sl = slug(v['termo']) or 'termo'
         while sl in usados: sl += '-2'
         usados.add(sl); v['slug'] = sl
+    # remissivas: termos citados nas definições viram links (até 4 por verbete, só a primeira ocorrência, termos de 6 letras ou mais)
+    alvos = sorted((v for v in vs if len(v['termo']) >= 6 and '(' not in v['termo'] and '/' not in v['termo']), key=lambda v: -len(v['termo']))
+    padrao = re.compile(r'(?<![\w-])(' + '|'.join(re.escape(v['termo']) for v in alvos) + r')(?![\w-])', re.I) if alvos else None
+    por_termo = {v['termo'].lower(): v for v in vs}
+    em = lambda t: re.sub(r'\*([^*]+)\*', r'<em>\1</em>', e(t))
+    def liga_termos(texto, proprio):
+        if not padrao: return em(texto)
+        out, pos, feitos, n = '', 0, set(), 0
+        for m in padrao.finditer(texto):
+            v = por_termo[m[1].lower()]
+            if v is proprio or v['slug'] in feitos or n >= 4: continue
+            out += em(texto[pos:m.start()]) + f'<a class="glos-ref" href="#{v["slug"]}">{e(m[1])}</a>'
+            pos = m.end(); feitos.add(v['slug']); n += 1
+        return out + em(texto[pos:])
+    # páginas do guia: mapa fixo (GLOS_GUIA) e, para vieses e falácias, correspondência pelo nome
+    ancoras_v = {slug(i['n']) for i in VIESES}; ancoras_f = {slug(i['n']) for i in FALACIAS}
+    def guia(v):
+        t = norm(v['pt']); os_ = []
+        alvo = GLOS_GUIA.get(t)
+        if alvo:
+            ch = alvo.split('/')[0] if '/' in alvo else alvo
+            rot = GLOS_GUIA_ROTULO.get(ch, ('No guia', 'In the guide'))[1 if EN else 0]
+            os_.append((rot, alvo))
+        base = re.sub(r'\s*\(.*?\)', '', v['pt']).strip()
+        for dic, pag, ancoras in ((en.VIESES, 'vieses', ancoras_v), (en.FALACIAS, 'falacias', ancoras_f)):
+            for nome, val in dic.items():
+                if norm(re.sub(r'\s*\(.*?\)', '', nome)) == norm(base):
+                    sl = slug(val[0] if EN else nome)
+                    if sl in ancoras: os_.append((L('Vieses', 'Biases') if pag == 'vieses' else L('Falácias', 'Fallacies'), f'{pag}.html#{sl}'))
+        return os_
+    itens, letras = '', []
+    for v in vs:
         l = inicial(v['termo'])
         if l not in letras:
             if letras: itens += '</div>'
-            letras.append(l); itens += f'<div class="glos-letra" id="letra-{l}"><h2>{l}</h2>'
+            letras.append(l); itens += f'<div class="glos-letra" id="letra-{l}"><h2>{l}<a class="glos-topo" href="#glos-az" title="{L("Voltar ao A–Z", "Back to A–Z")}">↑ A–Z</a></h2>'
         links = ''.join(f'<li><a href="{e(u)}" {EXT}>{e(re.sub(r"^https?://(www\.)?", "", u).split("/")[0])}</a></li>' for u in v['links'])
-        itens += (f'<article class="glos-item" id="{sl}" data-sec="{v["sec"]}"><h3><a href="#{sl}">{e(v["termo"])}</a></h3><p class="glos-def">{em(v["def"][:1].upper() + v["def"][1:])}</p>'
-                  + (f'<p class="glos-com">{em(v["com"])}</p>' if v['com'] else '') + (f'<ul class="glos-links">{links}</ul>' if links else '')
-                  + f'<p class="glos-sec">{e(secoes[v["sec"]])}</p></article>')
+        noguia = ''.join(f'<a class="glos-guia" href="{u}">{e(r)} →</a>' for r, u in guia(v))
+        temas = ' · '.join(e(secoes[x]) for x in v['secs'])
+        itens += (f'<article class="glos-item" id="{v["slug"]}" data-sec="{" ".join(str(x) for x in v["secs"])}"><h3><a href="#{v["slug"]}">{e(v["termo"])}</a></h3><p class="glos-def">{liga_termos(v["def"][:1].upper() + v["def"][1:], v)}</p>'
+                  + (f'<p class="glos-com">{liga_termos(v["com"], v)}</p>' if v['com'] else '') + (f'<ul class="glos-links">{links}</ul>' if links else '')
+                  + (f'<p class="glos-no-guia">{noguia}</p>' if noguia else '') + f'<p class="glos-sec">{temas}</p></article>')
     itens += '</div>'
-    ops = ''.join(f'<option value="{n}">{e(t)}</option>' for n, t in glossario.SECOES)
+    cont = collections.Counter(x for v in vs for x in v['secs'])
+    opt = lambda n, t: f'<option value="{n}">{e(t)} ({cont[n]})</option>'
+    ops = (f'<optgroup label="{L("Conceitos, teorias e práticas", "Concepts, theories and practices")}">' + ''.join(opt(n, t) for n, t in glossario.SECOES if n not in (9, 10)) + '</optgroup>'
+           + f'<optgroup label="{L("Ingredientes e produtos", "Ingredients and products")}">' + ''.join(opt(n, t) for n, t in glossario.SECOES if n in (9, 10)) + '</optgroup>')
     az = ''.join(f'<a href="#letra-{l}">{l}</a>' for l in letras)
-    corpo = cabeca('<a href="./">Início</a>', L('Glossário', 'Glossary'), L(f'{len(glossario.VERBETES)} termos da ética animal, do veganismo e do debate sobre a exploração dos animais, em ordem alfabética. Procure pelo termo ou filtre por tema.', f'{len(glossario.VERBETES)} terms from animal ethics, veganism and the debate on animal exploitation, in alphabetical order. Search for a term or filter by topic.')) + f'''<section class="secao"><div class="wrap estreito">
-<div class="filtros glos-filtros"><input id="gq" type="search" placeholder="{L("Procurar um termo ou uma ideia", "Search for a term or an idea")}" aria-label="{L("Procurar no glossário", "Search the glossary")}" autocomplete="off"/><label class="so-leitor" for="gs">{L("Tema", "Topic")}</label><select id="gs" class="sel"><option value="">{L("Todos os temas", "All topics")}</option>{ops}</select><span id="gn" aria-live="polite">{len(glossario.VERBETES)} {L("termos", "terms")}</span></div>
-<nav class="glos-az" aria-label="{L("Ir para a letra", "Jump to letter")}">{az}</nav>
+    ld = json.dumps({'@context': 'https://schema.org', '@type': 'DefinedTermSet', 'name': L('Glossário de ética animal e veganismo', 'Glossary of animal ethics and veganism'), 'inLanguage': 'en' if EN else 'pt-BR',
+                     'url': f'{SITE}/{"glossary" if EN else "glossario"}.html', 'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': v['termo'], 'url': f'{SITE}/{"glossary" if EN else "glossario"}.html#{v["slug"]}'} for v in vs]},
+                    ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    corpo = cabeca('<a href="./">Início</a>', L('Glossário', 'Glossary'), L(f'{len(vs)} termos da ética animal, do veganismo e do debate sobre a exploração dos animais, em ordem alfabética. Procure pelo termo ou filtre por tema.', f'{len(vs)} terms from animal ethics, veganism and the debate on animal exploitation, in alphabetical order. Search for a term or filter by topic.')) + f"""<section class="secao"><div class="wrap estreito">
+<div class="filtros glos-filtros"><input id="gq" type="search" placeholder="{L("Procurar um termo ou uma ideia", "Search for a term or an idea")}" aria-label="{L("Procurar no glossário", "Search the glossary")}" autocomplete="off"/><label class="so-leitor" for="gs">{L("Tema", "Topic")}</label><select id="gs" class="sel"><option value="">{L("Todos os temas", "All topics")}</option>{ops}</select><span id="gn" aria-live="polite">{len(vs)} {L("termos", "terms")}</span></div>
+<nav class="glos-az" id="glos-az" aria-label="{L("Ir para a letra", "Jump to letter")}">{az}</nav>
 <div id="glos">{itens}</div>
 <p id="gvazio" class="fino" hidden>{L("Nenhum termo encontrado. Tente outra palavra ou escolha 'Todos os temas'.", "No terms found. Try another word or choose 'All topics'.")}</p>
-<p class="fino" style="margin-top:26px">{L("Base: rascunho do Dicionário-Guia de Ética e Defesa Animal, da Vegpedia, revisto para este guia. As definições resumem o uso do termo, e o texto em itálico mostra o que ele significa para o debate sobre os animais. Falta algum termo? Avise e ele entra.", "Based on the draft Dictionary-Guide to Animal Ethics and Advocacy from Vegpedia, revised for this guide. The definitions summarize how the term is used, and the italic text shows what it means for the debate about animals. Missing a term? Let us know and it will be added.")}</p>
+<p class="fino" style="margin-top:26px">{L("Base: rascunho do Dicionário-Guia de Ética e Defesa Animal, da Vegpedia, revisto para este guia. As definições resumem o uso do termo, e o texto em itálico mostra o que ele significa para o debate sobre os animais. Termos citados em outras definições são links. Falta algum termo? Avise e ele entra.", "Based on the draft Dictionary-Guide to Animal Ethics and Advocacy from Vegpedia, revised for this guide. The definitions summarize how the term is used, and the italic text shows what it means for the debate about animals. Terms mentioned in other definitions are links. Missing a term? Let us know and it will be added.")}</p>
 </div></section>
+<script type="application/ld+json">{ld}</script>
 <script>(function(){{var q=document.getElementById("gq"),s=document.getElementById("gs"),n=document.getElementById("gn"),v=document.getElementById("gvazio");
 var itens=[].slice.call(document.querySelectorAll(".glos-item")),letras=[].slice.call(document.querySelectorAll(".glos-letra")),az=[].slice.call(document.querySelectorAll(".glos-az a"));
-function norm(t){{return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}}
+function norm(t){{return t.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"")}}
 var txt=itens.map(function(i){{return norm(i.textContent)}});
 function filtra(){{var t=norm(q.value.trim()),sec=s.value,c=0;
-itens.forEach(function(i,k){{var ok=(!sec||i.dataset.sec===sec)&&(!t||txt[k].indexOf(t)>-1);i.hidden=!ok;if(ok)c++}});
+itens.forEach(function(i,k){{var ok=(!sec||(" "+i.dataset.sec+" ").indexOf(" "+sec+" ")>-1)&&(!t||txt[k].indexOf(t)>-1);i.hidden=!ok;if(ok)c++}});
 letras.forEach(function(l,k){{var tem=!!l.querySelector(".glos-item:not([hidden])");l.hidden=!tem;az[k].classList.toggle("off",!tem)}});
 n.textContent=c+(c===1?" {L("termo", "term")}":" {L("termos", "terms")}");v.hidden=c>0}}
-q.addEventListener("input",filtra);s.addEventListener("change",filtra);}})();</script>'''
-    page('glossario.html', L('Glossário', 'Glossary'), L(f'Glossário com {len(glossario.VERBETES)} termos da ética animal, do veganismo e do antiespecismo, com busca e filtro por tema.', f'Glossary of {len(glossario.VERBETES)} terms from animal ethics, veganism and antispeciesism, with search and a topic filter.'), corpo, 'glossario.html', 'CollectionPage')
-    for v in glossario.VERBETES: BUSCA.append(dict(t=v['termo'], s=L('Glossário: ', 'Glossary: ') + v['def'][:150], u=f'glossario.html#{v["slug"]}', k=v['sec'] and secoes[v['sec']]))
+q.addEventListener("input",filtra);s.addEventListener("change",filtra);
+try{{var p=new URLSearchParams(location.search);if(p.get("q")){{q.value=p.get("q");filtra()}}}}catch(e){{}}
+function irPara(){{var id=location.hash.slice(1),el=id&&document.getElementById(id);if(el&&el.hidden){{q.value="";s.value="";filtra();el.scrollIntoView()}}}}
+window.addEventListener("hashchange",irPara);irPara();
+}})();</script>"""
+    page('glossario.html', L('Glossário', 'Glossary'), L(f'Glossário com {len(vs)} termos da ética animal, do veganismo e do antiespecismo, com busca e filtro por tema.', f'Glossary of {len(vs)} terms from animal ethics, veganism and antispeciesism, with search and a topic filter.'), corpo, 'glossario.html', 'CollectionPage')
+    for v in vs: BUSCA.append(dict(t=v['termo'], s=L('Glossário: ', 'Glossary: ') + v['def'][:150], u=f'glossario.html#{v["slug"]}', k=secoes[v['secs'][0]]))
 
 def nao_achou():
     corpo = cabeca('<a href="./">Início</a>', 'Página não encontrada', 'Tente a busca ou volte para a lista de argumentos.') + '<section class="secao"><div class="wrap"><a class="btn" href="index.html#argumentos">Ver os argumentos</a></div></section>'

@@ -34,7 +34,7 @@ VERBETES = [v for v in VERBETES if not v['dubio']]
 import json as _json
 VERBETES += [dict(v, dubio=False) for v in _json.load(open(os.path.join(ROOT, 'data', 'novos', 'glossario_extra.json'), encoding='utf-8'))]
 VERBETES.sort(key=lambda v: __import__('unicodedata').normalize('NFD', v['termo'].lower()).encode('ascii', 'ignore').decode())
-for _i, _v in enumerate(VERBETES): _v['i'] = _i
+for _i, _v in enumerate(VERBETES): _v['i'] = _i; _v['pt'] = _v['termo']
 
 SECOES_EN = {1: 'Sentience, Consciousness and Cognition', 2: 'Technical Fields Related to Animals', 3: 'Criteria and Moral Status', 4: 'Normative Ethical Theories',
     5: 'Currents of Animal Ethics', 6: 'Biases, Fallacies and Rhetoric', 7: 'Animal Law and Legislation', 8: 'Livestock, Exploitation and Related Practices',

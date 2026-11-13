@@ -94,8 +94,8 @@ OP = {
   fe='Separa a forma da morte do fato da morte, e acrescenta que nem a forma é como se imagina.',
   m='Abate humanitário só existe no papel. Na prática, todo animal é morto plenamente consciente, sem atordoamento nenhum, porque a linha de produção é rápida demais e ninguém fiscaliza. O selo serve só para tranquilizar o consumidor, e a indústria sabe disso.',
   me='É exagero: o atordoamento é a regra legal, embora falhe e tenha exceções. Quem conhece o assunto desmonta a frase e ignora o resto.',
-  r='Humanitário seria matar você do mesmo jeito, aceita? Uma pancada na cabeça, um corte no pescoço, e eu prometo que vai ser rápido e feito com muito respeito. Se a ideia te incomoda, talvez o problema nunca tenha sido o método, mas você ainda não quis ver.',
-  re='A comparação tem um ponto, mas dita como ameaça soa agressiva e tira o foco do argumento.'),
+  r='Humanitário seria matar você do mesmo jeito, aceita? Uma pancada na cabeça, um corte no pescoço, tudo rápido e feito com muito respeito. Se a ideia te incomoda, talvez o problema nunca tenha sido o método, mas você ainda não quis ver.',
+  re='A comparação tem um ponto, mas dita assim soa agressiva e tira o foco do argumento.'),
  'K1': dict(
   f='O frigorífico não muda a produção por uma bandeja, mas muda por muitas, e alguém sempre é a compra que dispara o próximo pedido. Como ninguém sabe se será a sua, o efeito médio de cada compra é real. E quando a demanda cai, a produção cai.',
   fe='Explica o raciocínio de expectativa sem prometer que cada compra salva um animal exato.',
@@ -129,8 +129,8 @@ OP = {
   fe='Explica por que a morte é dano mesmo sem dor, com um caso humano que ninguém aceita.',
   m='Essa premissa é falsa: não existe morte sem dor. Todo animal sofre no abate, sente o cheiro de sangue, ouve os outros gritando e entra em pânico antes de morrer. Se a morte fosse mesmo indolor, a conversa seria outra.',
   me='Desvia para a dor, que nem sempre está presente da mesma forma, e aceita a premissa de que, sem dor, estaria tudo bem.',
-  r='Então posso te matar dormindo? Você não ia sentir nada, não ia nem ficar sabendo, e pela sua lógica ninguém teria do que reclamar. Pensa bem antes de responder, porque hoje à noite você vai dormir.',
-  re='A ideia é a certa, mas dita como ameaça soa hostil e a pessoa reage ao tom.'),
+  r='Então posso te matar dormindo? Você não ia sentir nada, não ia nem ficar sabendo, e pela sua lógica ninguém teria do que reclamar. Pensa bem antes de responder: se matar quem dorme sem dor é aceitável, nada te impede de concordar.',
+  re='A ideia é a certa, mas dita com um tom provocativo soa hostil e a pessoa reage ao tom.'),
  'B2': dict(
   f='Uma vida melhor é melhor, sem dúvida. Mas o animal caipira continua sendo morto jovem, e os pintinhos machos continuam descartados. E essa carne é exceção: a maior parte dos animais de criação vive em sistemas intensivos.',
   fe='Reconhece a melhora e mostra o que não muda: a morte, e o fato de que essa carne é minoria.',

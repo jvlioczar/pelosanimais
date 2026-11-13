@@ -45,8 +45,8 @@ def fonte(nomes, tam):
 
 
 TXT = {
-    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção tem', 'uma resposta.', '{n} argumentos contra o veganismo, com a versão mais forte e a resposta', 'pelosanimais.biblioverse.org'),
-    'en': ('For the Animals', 'An Argument Guide', 'Every objection has', 'an answer.', '{n} arguments against veganism, in their strongest form, with the answer', 'fortheanimals.biblioverse.org'),
+    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção tem', 'uma resposta.', 'Mais de {n} argumentos contra o veganismo, com a versão mais forte e a resposta', 'pelosanimais.biblioverse.org'),
+    'en': ('For the Animals', 'An Argument Guide', 'Every objection has', 'an answer.', 'More than {n} arguments against veganism, in their strongest form, with the answer', 'fortheanimals.biblioverse.org'),
 }
 
 def compartilhar(n_args, lg='pt'):
@@ -68,7 +68,7 @@ def compartilhar(n_args, lg='pt'):
     d.rectangle([x0 - 16, y0 + 20, x1 + 16, y1 + 14], fill=AMARELO)
     d.text((150, 660), l2, font=tit, fill=TINTA)
     sub = fonte(['segoeuib.ttf', 'arialbd.ttf'], 50)
-    d.text((150, 920), sb.format(n=n_args), font=sub, fill=TINTA)
+    d.text((150, 920), sb.format(n=n_args // 100 * 100), font=sub, fill=TINTA)
     d.text((150, 1000), dom, font=fonte(['consolab.ttf', 'cour.ttf', 'arialbd.ttf'], 44), fill=(60, 90, 60))
     return im.resize((1200, 630), Image.LANCZOS)
 
