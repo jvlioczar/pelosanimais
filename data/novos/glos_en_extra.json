@@ -10,5 +10,137 @@
   "termo": "Personal choice",
   "def": "The argument that a choice that concerns only the person making it should not be criticized or banned.",
   "com": "Veganism answers that eating animals affects a third party, the animal, so it stops being only a personal choice. The guide addresses the argument in chapter E1."
+ },
+ {
+  "pt": "Agricultura",
+  "termo": "Agriculture",
+  "def": "The cultivation of plants, such as grains, legumes, fruit and fibers, for human food, animal feed or other uses.",
+  "com": "Veganism does not oppose agriculture, but the exploitation of animals. Part of agriculture serves to feed animals raised for consumption, and crop production also has impacts that deserve attention."
+ },
+ {
+  "pt": "Agropecuária",
+  "termo": "Agropecuária (agriculture and livestock)",
+  "def": "The combination of crop farming and livestock farming, that is, growing plants and raising animals.",
+  "com": "The term joins two distinct activities, and veganism treats each differently: it opposes raising and using animals, but not growing plants."
+ },
+ {
+  "pt": "Ambientalismo político",
+  "termo": "Political environmentalism",
+  "def": "A social and political movement that defends the protection of the environment, through laws, campaigns, parties and organizations.",
+  "com": "It can have an anthropocentric, holistic or sentientist basis, depending on what it considers valuable in itself. See Environmentalism (moral)."
+ },
+ {
+  "pt": "Ambientalismo holista",
+  "termo": "Holistic environmentalism",
+  "def": "An environmentalist view that gives moral value to the whole, such as ecosystems, species and the biotic community, and not to each individual.",
+  "com": "Being consistent, it may accept sacrificing individuals, including humans, for the sake of the whole, a consequence Tom Regan called \"environmental fascism\". Its names include Aldo Leopold and J. Baird Callicott. It is close to ecocentrism."
+ },
+ {
+  "pt": "Ambientalismo antropocêntrico",
+  "termo": "Anthropocentric environmentalism",
+  "def": "An environmentalist view that protects the environment because it matters to human beings, which gives it instrumental value.",
+  "com": "It already recognizes that individuals matter, people, so it has to explain why it would leave out the other animals who also feel."
+ },
+ {
+  "pt": "Ambientalismo sencientista",
+  "termo": "Sentientist environmentalism",
+  "def": "A view that protects the environment because of the sentient beings who depend on it, human or not.",
+  "com": "It keeps the individual at the center: when an environmental goal conflicts with the interests of beings who feel, what weighs is what happens to those who feel. The chapter on the divergence over ends in the Questão de Ética collection discusses the difference between animal defense and environmentalism that values species and ecosystems."
+ },
+ {
+  "pt": "Pet",
+  "termo": "Pet",
+  "def": "The same as a companion domestic animal, such as dogs and cats.",
+  "com": "In Brazil the English word is widely used, including in shops and services. Some people prefer \"companion animal\" and \"guardian\" to \"pet\" and \"owner\", to mark that the animal is an individual and not property."
+ },
+ {
+  "pt": "Tronco de contenção",
+  "termo": "Restraint chute (tronco de contenção)",
+  "def": "A structure, usually of metal, used in livestock farming to immobilize the animal, mainly cattle, during procedures such as vaccination, exams, treatments and insemination.",
+  "com": "Activists call the structure used to immobilize females for forced insemination a \"rape rack\". See Brete."
+ },
+ {
+  "pt": "Brete",
+  "termo": "Brete (handling chute)",
+  "def": "A narrow, fenced corridor through which animals pass in single file, in livestock farming, to the restraint chute, the scale or loading.",
+  "com": "Producers use \"brete\" and \"tronco de contenção\" for the set of handling structures. Activists call the restraint structure used in forced insemination a \"rape rack\"."
+ },
+ {
+  "pt": "Senciocentrismo",
+  "termo": "Sentiocentrism",
+  "def": "The same as sentientism.",
+  "com": "On this site the preferred term is sentientism. See Sentientism."
+ },
+ {
+  "pt": "Veganarquismo",
+  "termo": "Veganarchism",
+  "def": "A current that joins veganism with anarchism and sees animal exploitation as a form of domination to be abolished along with the others.",
+  "com": "The term was coined by Brian A. Dominick in 1995, in the text \"Animal Liberation and Social Revolution\"."
+ },
+ {
+  "pt": "Veganismo liberal",
+  "termo": "Liberal veganism",
+  "def": "A current that argues for ending animal exploitation within liberal democracy and the market economy, through rights, laws, consumer choices and innovation.",
+  "com": "It is not an established label. Authors such as Alasdair Cochrane, Martha Nussbaum, Sue Donaldson and Will Kymlicka defend animals from liberal theory."
+ },
+ {
+  "pt": "Veganismo anticapacitista",
+  "termo": "Anti-ableist veganism",
+  "def": "A current that links animal liberation to that of people with disabilities and criticizes the use of cognitive ability as a measure of worth.",
+  "com": "Sunaura Taylor, in Beasts of Burden (2017), is a reference."
+ },
+ {
+  "pt": "Veganismo tecnológico",
+  "termo": "Technological veganism",
+  "def": "A position that sees technology, such as plant-based meat, cultivated meat and precision fermentation, as the fastest route to ending large-scale animal exploitation.",
+  "com": "It is not an established label: the name describes a position that exists. Jacy Reese Anthis, in The End of Animal Farming (2018), and the Good Food Institute are examples."
+ },
+ {
+  "pt": "Veganismo racionalista (ou baseado em evidências)",
+  "termo": "Rationalist (or evidence-based) veganism",
+  "def": "An approach that chooses foundations and strategies by reason and by the best available evidence on what most reduces suffering and exploitation, with a willingness to revise positions.",
+  "com": "It is not an established label. It works as a meta-strategy: it does not pick a side in advance, but a way of deciding. It is the approach of this guide."
+ },
+ {
+  "pt": "Veganismo religioso",
+  "termo": "Religious veganism",
+  "def": "Veganism or vegetarianism motivated by a religious tradition that asks for compassion and nonviolence toward animals, such as ahimsa in Jainism, Hinduism and Buddhism.",
+  "com": "It includes Christian, Jewish and Muslim groups that argue for care for animals. It is veganism in the strict sense only when the reason includes animals and the refusal to exploit them."
+ },
+ {
+  "pt": "Tu quoque",
+  "termo": "Tu quoque",
+  "def": "A fallacy that tries to dismiss an argument by pointing out an inconsistency in whoever makes it, instead of examining the argument.",
+  "com": "It is common in charges of hypocrisy against vegans: even if the charge is true, it does not change what happens to animals."
+ },
+ {
+  "pt": "Steelman (versão mais forte)",
+  "termo": "Steelman",
+  "def": "Presenting the strongest and most honest version of an argument before answering it, the opposite of the straw man.",
+  "com": "It is the guide's method: each chapter presents the strongest version of the objection, shows what it gets right and only then where it fails."
+ },
+ {
+  "pt": "Teste humano",
+  "termo": "Human test",
+  "def": "A method of applying the same scenario or reasoning to human beings to see whether the answer would be accepted; if it would not, the reasoning may reveal speciesism.",
+  "com": "It compares the structure of arguments, not the victims, and is used in every chapter of the guide."
+ },
+ {
+  "pt": "Argumento indireto",
+  "termo": "Indirect argument",
+  "def": "An argument that discusses health, the environment, the economy, practicality or who defends veganism, rather than whether animals deserve respect.",
+  "com": "It helps correct facts but does not settle the moral question on its own, and the answer to it is indirect too. Often it supports, at most, vegetarianism, eating less or environmentalism."
+ },
+ {
+  "pt": "Argumento direto",
+  "termo": "Direct argument",
+  "def": "An argument that challenges the moral core: whether animals feel, whether the individual animal counts and whether using or killing it is wrong.",
+  "com": "It is the ground on which the ethical question about animals is decided."
+ },
+ {
+  "pt": "Faixa de bem-estar",
+  "termo": "Welfare range",
+  "def": "An estimate of how well or badly a being's life can go, from the worst to the best possible experience, compared with that of other beings.",
+  "com": "It is not a moral weight by itself, and the estimates for insects and other invertebrates are provisional. The Moral Weight Project, from Rethink Priorities, is the reference."
  }
 ]

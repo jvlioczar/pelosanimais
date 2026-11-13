@@ -1,6 +1,6 @@
 {
  "args": {
-  "N7": {
+  "M6": {
    "falha_pt": "Confunde o princípio com o grupo: dá para deixar pessoas hostis sem deixar de poupar os animais",
    "en": {
     "frase": "Vegans are annoying and bossy; I don't want to be part of that group",
@@ -12,7 +12,7 @@
     "falha": "Confuses the principle with the group: you can leave hostile people without ceasing to spare animals"
    }
   },
-  "N8": {
+  "M7": {
    "falha_pt": "Confunde o rótulo com a prática: o nome é opcional, e o que alcança os animais é o que se faz",
    "en": {
     "frase": "I don't want to be labeled; the label brings pressure",
@@ -24,7 +24,7 @@
     "falha": "Confuses the label with the practice: the name is optional, and what reaches the animals is what one does"
    }
   },
-  "N9": {
+  "M8": {
    "falha_pt": "Falsa dicotomia entre pureza total e abandono: o veganismo pede o possível e praticável, e não perfeição",
    "en": {
     "frase": "It became an obsession; I lived with guilt",
@@ -36,7 +36,7 @@
     "falha": "False dichotomy between total purity and giving up: veganism asks for what is possible and practicable, not perfection"
    }
   },
-  "N10": {
+  "M9": {
    "falha_pt": "Mudar de ideia sobre a saúde não responde à razão pelos animais, que pode ter existido e perdido força, ou nunca ter sido examinada",
    "en": {
     "frase": "I was vegan for my health, and I changed my mind",

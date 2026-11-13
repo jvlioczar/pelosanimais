@@ -9,8 +9,8 @@
 {
 "i": 1,
 "termo": "Slaughter",
-"def": "The process of killing animals for consumption, a central focus of debates about suffering and the harm of death.",
-"com": "",
+"def": "The killing of animals, carried out for consumption and also in other contexts, such as culling herds or for sanitary or population control.",
+"com": "The term is also used, euphemistically, for the killing of people in wars and massacres, as if it were justifiable. In every case, the central focus of the debates is the suffering and the harm of death.",
 "pt": "Abate"
 },
 {
@@ -107,8 +107,8 @@
 {
 "i": 15,
 "termo": "Agribusiness",
-"def": "The economic sector that covers the large-scale production, processing and marketing of agricultural and livestock products, including industrial animal farming.",
-"com": "",
+"def": "The set of economic activities tied to large-scale agriculture and livestock farming, from production to processing and marketing.",
+"com": "It brings together distinct activities: veganism opposes livestock farming and fishing, which are part of agribusiness, but not agriculture, which is also part of it.",
 "pt": "Agronegócio"
 },
 {
@@ -142,14 +142,14 @@
 {
 "i": 20,
 "termo": "Effective altruism",
-"def": "A movement that seeks to maximize the positive impact of actions and resources, including animal welfare as a priority area.",
-"com": "",
+"def": "A movement that seeks to maximize the positive impact of actions and resources, including animal welfare as an important cause.",
+"com": "Its criteria of scale, neglectedness and tractability tend to favor the animal cause.",
 "pt": "Altruísmo eficaz"
 },
 {
 "i": 21,
 "termo": "Environmentalism (moral)",
-"def": "A current that discusses moral obligations toward the environment, sometimes converging with and sometimes conflicting with animal ethics.",
+"def": "A view that discusses moral obligations toward the environment, sometimes converging with and sometimes conflicting with animal ethics. Environmentalism can be a moral view or a political movement (see Political environmentalism).",
 "com": "It can diverge from a sentientist ethics when it prioritizes the balance of ecosystems or species over the welfare of specific sentient individuals, as in population management policies for wildlife.",
 "pt": "Ambientalismo (moral)"
 },

@@ -239,7 +239,7 @@
 
 ## 5. Correntes da Ética Animal
 
-**Ambientalismo (moral)** — corrente que discute obrigações morais para com o meio ambiente, às vezes convergente e às vezes conflitante com a ética animal. *Pode divergir de uma ética sencientista quando prioriza o equilíbrio de ecossistemas ou de espécies em detrimento do bem-estar de indivíduos sencientes específicos, como em políticas de manejo populacional de fauna selvagem.*
+**Ambientalismo (moral)** — visão que discute obrigações morais para com o meio ambiente, às vezes convergente e às vezes conflitante com a ética animal. O ambientalismo pode ser uma visão moral ou um movimento político (ver Ambientalismo político). *Pode divergir de uma ética sencientista quando prioriza o equilíbrio de ecossistemas ou de espécies em detrimento do bem-estar de indivíduos sencientes específicos, como em políticas de manejo populacional de fauna selvagem.*
 
 **Anarquismo verde** — corrente política que combina crítica anarquista ao Estado e ao capitalismo com preocupações ecológicas e, por vezes, de libertação animal, rejeitando hierarquias entre espécies e formas de dominação. *Ao situar o especismo entre as formas de dominação a serem superadas, aproxima-se de correntes antiespecistas mais radicais do movimento de libertação animal.*
 
@@ -301,7 +301,7 @@
 
 **Reacionarismo** — postura de oposição a mudanças sociais, buscando retorno a normas ou práticas anteriores. *Aplicado à questão animal, frequentemente se apoia em apelos à tradição e à naturalidade, ambos considerados falácias quando usados isoladamente como justificativa moral.*
 
-**Sencientismo** — posição que toma a senciência, e não a espécie, como critério de inclusão moral. *É o critério adotado, de forma explícita ou implícita, na maior parte das observações críticas presentes neste dicionário.*
+**Sencientismo** — posição que toma a senciência, e não a espécie, como critério de inclusão moral; também chamado de senciocentrismo. *É o critério adotado, de forma explícita ou implícita, na maior parte das observações críticas presentes neste dicionário.*
 
 **Senciocracia** — proposta de organização política e social orientada pelos interesses de todos os seres sencientes. *Representa a aplicação institucional e política mais ampla do sencientismo, propondo estender a representação e a participação política — hoje restritas a humanos — a todos os seres capazes de ter interesses.*
 
@@ -393,7 +393,7 @@
 
 ## 8. Pecuária, Exploração e Práticas Relacionadas a Animais
 
-**Abate** — processo de matança de animais para consumo, foco central de debates sobre sofrimento e dano da morte.
+**Abate** — matança de animais, praticada para consumo e também em outros contextos, como descarte de rebanhos, controle sanitário ou populacional. *O termo também é usado, de forma eufemística, para a morte de pessoas em guerras e massacres, como se fosse algo justificável. Em qualquer dos casos, o foco central dos debates é o sofrimento e o dano da morte.*
 
 **Abate humanitário** — método de abate que busca minimizar o sofrimento do animal, geralmente por meio de insensibilização prévia; termo contestado por abolicionistas, que o consideram um oxímoro.
 
@@ -403,7 +403,7 @@
 
 **Adoção** — ato de assumir a guarda responsável e permanente de um animal, geralmente resgatado ou abandonado, em vez de comprá-lo.
 
-**Agronegócio** — setor econômico que engloba a produção, processamento e comercialização de produtos agropecuários em larga escala, incluindo a pecuária industrial.
+**Agronegócio** — conjunto de atividades econômicas ligadas à agricultura e à pecuária em larga escala, da produção ao processamento e à comercialização. *Reúne atividades distintas: o veganismo se opõe à pecuária e à pesca, que fazem parte do agronegócio, mas não à agricultura, que também faz parte dele.*
 
 **Alça de flanco (flank strap)** — tira apertada em volta do abdômen de cavalos ou touros em rodeios para induzir comportamento de corcoveio, causando desconforto.
 
@@ -551,7 +551,7 @@
 
 **Mulesing** — remoção cirúrgica de pele ao redor da cauda de ovelhas (geralmente sem anestesia) para prevenir infestação por larvas, prática comum na produção de lã.
 
-**Pecuária** — criação e uso de animais para fins econômicos, principalmente alimentares.
+**Pecuária** — criação e uso de animais para fins econômicos, principalmente alimentares. *É uma parte da agropecuária, junto com a agricultura. O veganismo se opõe à pecuária, e não à agricultura.*
 
 **Pecuária extensiva** — criação em grandes áreas, com menor densidade de animais.
 
@@ -575,7 +575,7 @@
 
 **Piscicultura** — criação de peixes em cativeiro para fins comerciais.
 
-**Plataforma de estupro (rape rack)** — estrutura de contenção usada para imobilizar fêmeas durante a monta forçada ou inseminação artificial.
+**Plataforma de estupro (rape rack)** — nome dado por ativistas à estrutura de contenção usada para imobilizar fêmeas durante a monta forçada ou a inseminação artificial. *O setor pecuário e os veterinários chamam estruturas desse tipo de tronco de contenção ou brete (ver esses verbetes).*
 
 **Pragas** — categoria social/legal que rebaixa o status moral de certos animais (ratos, pombos, insetos) por conflito com interesses humanos.
 
@@ -979,7 +979,7 @@
 
 ## 17. Ética Aplicada, Futuro e Tecnologia
 
-**Altruísmo eficaz** — movimento que busca maximizar o impacto positivo das ações e recursos, incluindo a causa animal como área prioritária.
+**Altruísmo eficaz** — movimento que busca maximizar o impacto positivo das ações e recursos, incluindo a causa animal como uma causa importante. *Seus critérios de escala, negligência e tratabilidade costumam favorecer a causa animal.*
 
 **Longoprazismo** — corrente filosófica que prioriza o bem-estar de seres (humanos e não-humanos) em escalas de tempo muito longas.
 

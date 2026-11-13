@@ -124,5 +124,159 @@
   "def": "argumento de que uma escolha que só diz respeito a quem a faz não deve ser criticada nem proibida.",
   "com": "O veganismo responde que comer animais afeta um terceiro, o animal, e que por isso deixa de ser só uma escolha pessoal. O guia trata do argumento no capítulo E1.",
   "links": []
+ },
+ {
+  "termo": "Agricultura",
+  "sec": 5,
+  "def": "cultivo de plantas, como cereais, legumes, frutas e fibras, para alimentação humana, ração ou outros usos.",
+  "com": "O veganismo não se opõe à agricultura, e sim à exploração de animais. Parte da agricultura serve à ração de animais criados para consumo, e a produção vegetal também tem impactos que merecem atenção.",
+  "links": []
+ },
+ {
+  "termo": "Agropecuária",
+  "sec": 8,
+  "def": "conjunto formado pela agricultura e pela pecuária, ou seja, pelo cultivo de plantas e pela criação de animais.",
+  "com": "O termo junta duas atividades distintas, e o veganismo trata cada uma de modo diferente: se opõe à criação e ao uso de animais, mas não ao cultivo de plantas.",
+  "links": []
+ },
+ {
+  "termo": "Ambientalismo político",
+  "sec": 13,
+  "def": "movimento social e político que defende a proteção do meio ambiente, por meio de leis, campanhas, partidos e organizações.",
+  "com": "Pode ter base antropocêntrica, holista ou sencientista, conforme o que considera valioso em si. Ver Ambientalismo moral.",
+  "links": []
+ },
+ {
+  "termo": "Ambientalismo holista",
+  "sec": 5,
+  "def": "visão ambientalista que atribui valor moral ao conjunto, como ecossistemas, espécies e a comunidade biótica, e não a cada indivíduo.",
+  "com": "Sendo coerente, pode aceitar sacrificar indivíduos, inclusive humanos, em nome do todo, consequência que Tom Regan chamou de \"fascismo ambiental\". Entre seus nomes estão Aldo Leopold e J. Baird Callicott. Aproxima-se do ecocentrismo.",
+  "links": []
+ },
+ {
+  "termo": "Ambientalismo antropocêntrico",
+  "sec": 5,
+  "def": "visão ambientalista que protege o meio ambiente por ele ser importante para os seres humanos, o que dá a ele um valor instrumental.",
+  "com": "Já reconhece que indivíduos importam, as pessoas, e por isso precisa explicar por que deixaria de fora os outros animais que também sentem.",
+  "links": []
+ },
+ {
+  "termo": "Ambientalismo sencientista",
+  "sec": 5,
+  "def": "visão que protege o meio ambiente por causa dos seres sencientes que dependem dele, humanos ou não.",
+  "com": "Mantém o indivíduo no centro: quando uma meta ambiental entra em conflito com os interesses de seres que sentem, pesa o que acontece com quem sente. O capítulo \"A divergência é quanto aos fins\" da coleção Questão de Ética discute a diferença entre a defesa animal e o ambientalismo que valoriza espécies e ecossistemas.",
+  "links": []
+ },
+ {
+  "termo": "Pet",
+  "sec": 3,
+  "def": "o mesmo que animal doméstico de companhia, como cães e gatos; do inglês \"pet\".",
+  "com": "No Brasil, o termo é muito usado, inclusive em lojas e serviços. Algumas pessoas preferem \"animal de companhia\" e \"tutor\" no lugar de \"pet\" e \"dono\", para marcar que o animal é um indivíduo e não uma propriedade.",
+  "links": []
+ },
+ {
+  "termo": "Tronco de contenção",
+  "sec": 8,
+  "def": "estrutura, em geral de metal, usada na pecuária para imobilizar o animal, principalmente bovinos, durante procedimentos como vacinação, exames, tratamentos e inseminação.",
+  "com": "Ativistas chamam a estrutura usada para imobilizar fêmeas na inseminação forçada de \"plataforma de estupro\" (rape rack). Ver Brete.",
+  "links": []
+ },
+ {
+  "termo": "Brete",
+  "sec": 8,
+  "def": "corredor estreito, cercado, por onde os animais passam em fila, na pecuária, até o tronco de contenção, a balança ou o embarque.",
+  "com": "Os produtores usam \"brete\" e \"tronco de contenção\" para o conjunto de estruturas de manejo. Ativistas chamam a estrutura de contenção usada na inseminação forçada de \"plataforma de estupro\" (rape rack).",
+  "links": []
+ },
+ {
+  "termo": "Senciocentrismo",
+  "sec": 5,
+  "def": "o mesmo que sencientismo.",
+  "com": "No site, o termo prioritário é sencientismo. Ver Sencientismo.",
+  "links": []
+ },
+ {
+  "termo": "Veganarquismo",
+  "sec": 5,
+  "def": "corrente que une o veganismo ao anarquismo e entende a exploração animal como uma forma de dominação a ser abolida junto com as outras.",
+  "com": "O termo foi criado por Brian A. Dominick em 1995, no texto \"Libertação Animal e Revolução Social\".",
+  "links": []
+ },
+ {
+  "termo": "Veganismo liberal",
+  "sec": 5,
+  "def": "corrente que defende o fim da exploração animal dentro da democracia liberal e da economia de mercado, por direitos, leis, escolhas de consumo e inovação.",
+  "com": "Não é um rótulo consagrado. Autores como Alasdair Cochrane, Martha Nussbaum, Sue Donaldson e Will Kymlicka fazem a defesa dos animais a partir da teoria liberal.",
+  "links": []
+ },
+ {
+  "termo": "Veganismo anticapacitista",
+  "sec": 5,
+  "def": "corrente que liga a libertação animal à das pessoas com deficiência e critica o uso da capacidade cognitiva como medida de valor.",
+  "com": "Sunaura Taylor, em Beasts of Burden (2017), é uma referência.",
+  "links": []
+ },
+ {
+  "termo": "Veganismo tecnológico",
+  "sec": 5,
+  "def": "posição que vê a tecnologia, como carnes vegetais, carne cultivada e fermentação de precisão, como o caminho mais rápido para acabar com a exploração animal em larga escala.",
+  "com": "Não é um rótulo consagrado: o nome descreve uma posição que existe. Jacy Reese Anthis, em The End of Animal Farming (2018), e o Good Food Institute são exemplos.",
+  "links": []
+ },
+ {
+  "termo": "Veganismo racionalista (ou baseado em evidências)",
+  "sec": 5,
+  "def": "abordagem que escolhe fundamentos e estratégias pela razão e pela melhor evidência disponível sobre o que reduz mais sofrimento e exploração, com disposição para rever posições.",
+  "com": "Não é um rótulo consagrado. Funciona como metaestratégia: não escolhe um lado de antemão, e sim um modo de decidir. É a abordagem deste guia.",
+  "links": []
+ },
+ {
+  "termo": "Veganismo religioso",
+  "sec": 5,
+  "def": "veganismo ou vegetarianismo motivado por uma tradição religiosa que pede compaixão e não violência com os animais, como a ahimsa no jainismo, no hinduísmo e no budismo.",
+  "com": "Inclui grupos cristãos, judeus e muçulmanos que defendem o cuidado com os animais. Só se configura veganismo no sentido estrito quando a razão inclui os animais e a recusa de explorá-los.",
+  "links": []
+ },
+ {
+  "termo": "Tu quoque",
+  "sec": 6,
+  "def": "falácia que tenta descartar um argumento apontando uma incoerência de quem o defende, em vez de examinar o argumento.",
+  "com": "É comum em acusações de hipocrisia a veganos: mesmo que a acusação seja verdadeira, não muda o que acontece com os animais.",
+  "links": []
+ },
+ {
+  "termo": "Steelman (versão mais forte)",
+  "sec": 6,
+  "def": "apresentar a versão mais forte e mais honesta de um argumento antes de respondê-lo, o contrário do espantalho.",
+  "com": "É o método do guia: cada capítulo apresenta a versão mais forte da objeção, mostra o que ela acerta e só depois onde falha.",
+  "links": []
+ },
+ {
+  "termo": "Teste humano",
+  "sec": 6,
+  "def": "método de aplicar o mesmo cenário ou raciocínio a seres humanos para ver se a resposta seria aceita; se não for, o raciocínio pode revelar especismo.",
+  "com": "Compara a estrutura dos argumentos, e não as vítimas, e é usado em cada capítulo do guia.",
+  "links": []
+ },
+ {
+  "termo": "Argumento indireto",
+  "sec": 6,
+  "def": "argumento que discute saúde, ambiente, economia, praticidade ou quem defende o veganismo, e não se os animais merecem respeito.",
+  "com": "Ajuda a corrigir fatos, mas não justifica sozinho a questão moral, e a resposta a ele também é indireta. Muitas vezes sustenta, no máximo, vegetarianismo, redução do consumo ou ambientalismo.",
+  "links": []
+ },
+ {
+  "termo": "Argumento direto",
+  "sec": 6,
+  "def": "argumento que contesta o núcleo moral: se os animais sentem, se o indivíduo animal conta e se usá-lo ou matá-lo é errado.",
+  "com": "É o terreno em que se decide a questão ética sobre os animais.",
+  "links": []
+ },
+ {
+  "termo": "Faixa de bem-estar",
+  "sec": 12,
+  "def": "estimativa do quanto a vida de um ser pode ir bem ou mal, da pior à melhor experiência possível, comparada à de outros seres.",
+  "com": "Não é um peso moral por si só, e as estimativas para insetos e outros invertebrados são provisórias. O projeto Moral Weight, do Rethink Priorities, é a referência.",
+  "links": []
  }
 ]
