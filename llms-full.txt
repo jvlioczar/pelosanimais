@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 214 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 217 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -285,6 +285,9 @@ Devemos ajudar, e não só deixar de prejudicar?
 - [N14. Sencientistas querem acabar com as florestas](https://pelosanimais.biblioverse.org/argumentos/sencientistas-querem-acabar-com-as-florestas.html): Espantalho: as propostas reais são pesquisa, ajuda pontual e cautela, e reconhecer que há sofrimento num lugar não é propor destruí-lo
 - [N15. Sencientistas dão o mesmo peso a insetos, invertebrados e mamíferos](https://pelosanimais.biblioverse.org/argumentos/sencientistas-dao-o-mesmo-peso-a-insetos-invertebrados-e-mamiferos.html): Confunde igual consideração com igual peso: interesses semelhantes pesam o mesmo, e o peso de cada ser depende do quanto ele pode sentir, que é incerto, mas não é zero
 - [N16. Sencientistas defendem o parasitismo](https://pelosanimais.biblioverse.org/argumentos/sencientistas-defendem-o-parasitismo.html): Contagem incompleta: sem tratamento muitos parasitas morrem com o hospedeiro, a morte só é dano para quem sente e teria uma vida boa, e prevenir não é matar
+- [N17. Temos que nos preocupar com os humanos do futuro, não com os animais](https://pelosanimais.biblioverse.org/argumentos/temos-que-nos-preocupar-com-os-humanos-do-futuro-nao-com-os-animais.html): Já aceitou a parte difícil, que seres futuros contam; falta dizer por que, chegado o futuro, só os humanos de lá contariam, e a maioria de quem vai sentir não será humana
+- [N18. Não há como traçar estratégias de longo prazo, pois não podemos prever um futuro distante](https://pelosanimais.biblioverse.org/argumentos/nao-ha-como-tracar-estrategias-de-longo-prazo-pois-nao-podemos-prever.html): Vale contra planos que dependem de acertar um cenário, não contra ações que valem em quase todos; e a incerteza corta dos dois lados
+- [N19. O futuro com certeza será melhor, não precisamos nos preocupar tanto](https://pelosanimais.biblioverse.org/argumentos/o-futuro-com-certeza-sera-melhor-nao-precisamos-nos-preocupar-tanto.html): O progresso moral não é automático: cada avanço teve quem o fizesse; e com os animais a tendência recente é contrária, porque o poder cresceu sem que a consideração acompanhasse
 
 ## Pare de dizer isso
 
@@ -384,4 +387,5 @@ Devemos ajudar, e não só deixar de prejudicar?
 - [Senciência em extraterrestres, plantas e outras formas de vida](https://pelosanimais.biblioverse.org/alem/extraterrestres.html): Não há evidência de vida fora da Terra, muito menos senciente, nem evidência robusta de que plantas ou fungos sintam. As duas perguntas testam se o nosso critério é mesmo um critério, e o que faríamos se a evidência mudasse.
 - [O que sustenta a ética animal, e o que a enfraquece](https://pelosanimais.biblioverse.org/alem/fundamentos.html): Razão crítica, relevância, imparcialidade e senciência sustentam o veganismo e a ética animal. Parcialidade, relativismo, tribalismo, capacitismo, a sacralização de abstrações e a vontade fraca os enfraquecem.
 - [Comedimento com os argumentos indiretos](https://pelosanimais.biblioverse.org/alem/argumentos-diretos.html): Assim como veganos devem ter cuidado ao criticar outros veganos, quem usa argumentos de saúde e ambiente deve ter cuidado para não fortalecer o antropocentrismo e o ambientalismo, que trabalham contra os animais.
+- [O mínimo comum: o ponto de convergência](https://pelosanimais.biblioverse.org/alem/minimo-comum.html): Quem discorda da conclusão inteira quase sempre pode aceitar uma parte dela. Mostrar essa parte não é abrir mão do que se defende: é não exigir que a pessoa mude de visão de mundo antes de dar o primeiro passo.
 - [As correntes do movimento vegano](https://pelosanimais.biblioverse.org/alem/correntes-do-veganismo.html): Todos os veganos querem o fim da exploração animal. As correntes divergem sobre por que, com quem e como chegar lá. Um mapa dos fins, dos meios e dos principais debates.
