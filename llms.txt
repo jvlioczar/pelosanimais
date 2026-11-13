@@ -2,16 +2,40 @@
 
 > O guia de argumentação para defensores dos animais cataloga de forma sistemática todas as ideias usadas para explorar, causar danos, matar animais ou evitar ajudá-los, fornecendo uma explicação abrangente sobre todos os questionamentos e vieses das pessoas que se opõem ao veganismo e ao antiespecismo.
 
-## Principais
-- [Comece aqui](https://pelosanimais.biblioverse.org/comece-aqui.html)
-- [Todos os argumentos](https://pelosanimais.biblioverse.org/#argumentos)
-- [Treinar respostas](https://pelosanimais.biblioverse.org/treino.html)
-- [Debate simulado](https://pelosanimais.biblioverse.org/debate.html)
-- [Argumentos ruins de veganos: pare de usar ou use melhor](https://pelosanimais.biblioverse.org/argumentos-ruins.html)
-- [Além do veganismo](https://pelosanimais.biblioverse.org/alem-do-veganismo.html)
-- [Famílias](https://pelosanimais.biblioverse.org/familias.html)
-- [O raciocínio antivegano](https://pelosanimais.biblioverse.org/raciocinio.html)
-- [Mapa de conexões](https://pelosanimais.biblioverse.org/mapa.html)
-- [Falácias](https://pelosanimais.biblioverse.org/falacias.html)
-- [Vieses](https://pelosanimais.biblioverse.org/vieses.html)
-- [Glossário](https://pelosanimais.biblioverse.org/glossario.html)
+Site de acesso livre, sem cadastro. Cada argumento tem uma página com a versão mais forte da objeção, o que ela acerta, onde falha, uma resposta curta e as fontes.
+
+## Como usar
+
+- [Comece aqui](https://pelosanimais.biblioverse.org/comece-aqui.html): o critério da senciência, os compromissos do guia e a diferença entre argumentos diretos e indiretos
+- [Sobre o guia](https://pelosanimais.biblioverse.org/sobre.html): o que é o projeto, como as fontes são tratadas e qual é o tom
+
+## Argumentos
+
+- [Todos os argumentos](https://pelosanimais.biblioverse.org/#argumentos): os 213 argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um
+- [As famílias](https://pelosanimais.biblioverse.org/familias.html): os argumentos agrupados pela pergunta de fundo e pelo erro dominante
+- [O raciocínio antivegano](https://pelosanimais.biblioverse.org/raciocinio.html): para onde a conversa vai depois que cada objeção é respondida
+- [Mapa de conexões](https://pelosanimais.biblioverse.org/mapa.html): as cadeias de objeções e as três raízes onde quase toda conversa termina
+- [Objeções políticas](https://pelosanimais.biblioverse.org/objecoes-politicas.html): o que cada teoria ética ou política diz para excluir os animais, e por que isso contradiz o próprio princípio
+
+## Erros e vocabulário
+
+- [Falácias](https://pelosanimais.biblioverse.org/falacias.html): os erros de lógica que explicam boa parte do catálogo
+- [Vieses](https://pelosanimais.biblioverse.org/vieses.html): os mecanismos psicológicos que tornam esses argumentos convincentes
+- [Glossário](https://pelosanimais.biblioverse.org/glossario.html): os termos da ética animal, do veganismo e do debate sobre a exploração dos animais
+
+## Para o próprio movimento
+
+- [Pare de dizer isso](https://pelosanimais.biblioverse.org/argumentos-ruins.html): 64 argumentos usados por veganos que não resistem a exame, e como dizer melhor
+- [Além do veganismo](https://pelosanimais.biblioverse.org/alem-do-veganismo.html): antiespecismo e sencientismo, animais selvagens, mentes digitais e as correntes do movimento
+
+## Praticar
+
+- [Debate simulado](https://pelosanimais.biblioverse.org/debate.html): escolha a melhor resposta e veja para onde a conversa vai
+- [Treinar respostas](https://pelosanimais.biblioverse.org/treino.html): cartões com a objeção de um lado e a falha principal do outro
+- [Biblioteca](https://pelosanimais.biblioverse.org/biblioteca.html): livros e sites para aprender a argumentar pelos animais
+
+## Lista completa
+
+- [Todos os argumentos, com a falha de cada um](https://pelosanimais.biblioverse.org/llms-full.txt)
+
+Versão em inglês: https://fortheanimals.biblioverse.org/
