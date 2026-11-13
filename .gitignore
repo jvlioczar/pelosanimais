@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+data/_novos/
+data/glossario_docx.txt
+data/novos/glos_in_*.json

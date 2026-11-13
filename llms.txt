@@ -14,3 +14,4 @@
 - [Mapa de conexões](https://pelosanimais.biblioverse.org/mapa.html)
 - [Falácias](https://pelosanimais.biblioverse.org/falacias.html)
 - [Vieses](https://pelosanimais.biblioverse.org/vieses.html)
+- [Glossário](https://pelosanimais.biblioverse.org/glossario.html)

@@ -1,0 +1,288 @@
+{
+ "livros": [
+  {
+   "t": "Dicionário Vegano Comentado",
+   "st": "Entendendo o veganismo através de conceitos",
+   "a": "Krystal Castor",
+   "ano": 2026,
+   "ed": "Publicação independente",
+   "lingua": "PT",
+   "foco": "etica",
+   "d": "Dicionário com 58 conceitos centrais do veganismo. Cada verbete traz o contexto histórico, as controvérsias teóricas e uma análise de como a linguagem molda o debate, ligando o veganismo à ética animal e ao Direito Animal.",
+   "u": "https://www.krystalcastor.com/dicionario",
+   "ul": "Sobre o livro",
+   "en": {
+    "st": "Annotated Vegan Dictionary: understanding veganism through concepts",
+    "ed": "Self-published",
+    "d": "A dictionary of 58 core concepts of veganism, in Portuguese. Each entry gives the historical context, the theoretical controversies and an analysis of how language shapes the debate, linking veganism to animal ethics and animal law.",
+    "ul": "About the book"
+   }
+  },
+  {
+   "t": "Somos inteligentes o bastante para saber quão inteligentes são os animais?",
+   "st": "Edição brasileira de Are We Smart Enough to Know How Smart Animals Are?",
+   "a": "Frans de Waal",
+   "ano": 2016,
+   "ed": "Zahar, 2022 no Brasil",
+   "lingua": "PT",
+   "foco": "etica",
+   "d": "Livro sobre cognição animal, não sobre ética: o primatólogo reúne pesquisas que mostram que usar ferramentas, planejar o futuro e reconhecer a si mesmo não são capacidades só humanas, com exemplos de polvos, elefantes, papagaios e grandes primatas. Explica também por que a ciência subestimou por tanto tempo a mente dos animais.",
+   "u": "https://www.companhiadasletras.com.br/livro/9786559790371/somos-inteligentes-o-bastante-para-saber-quao-inteligentes-sao-os-animais",
+   "ul": "Editora",
+   "en": {
+    "st": "Portuguese edition of Are We Smart Enough to Know How Smart Animals Are?",
+    "ed": "Zahar; Brazilian edition 2022 (original: W. W. Norton, 2016)",
+    "d": "A book on animal cognition, not on ethics: the primatologist gathers research showing that using tools, planning for the future and recognizing oneself are not uniquely human abilities, with examples from octopuses, elephants, parrots and great apes. It also explains why science underestimated animal minds for so long.",
+    "ul": "Publisher"
+   }
+  },
+  {
+   "t": "Created from Animals",
+   "st": "The Moral Implications of Darwinism",
+   "a": "James Rachels",
+   "ano": 1990,
+   "ed": "Oxford University Press",
+   "lingua": "EN",
+   "foco": "etica",
+   "d": "Defende que a teoria da evolução enfraquece a ideia de que os humanos têm um status moral especial. Propõe tratar cada indivíduo conforme suas próprias características, e não conforme a espécie a que pertence.",
+   "u": "https://openlibrary.org/works/OL1883655W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "The Moral Implications of Darwinism",
+    "d": "Argues that the theory of evolution undermines the idea that humans have a special moral status. Proposes treating each individual according to its own characteristics, not according to the species it belongs to.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "A Bibliography on Animal Rights and Related Matters",
+   "st": "",
+   "a": "Charles R. Magel",
+   "ano": 1981,
+   "ed": "University Press of America",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Bibliografia de 602 páginas que reúne o que havia sido escrito até então sobre direitos dos animais e temas ligados. Obra de consulta para quem pesquisa a história do debate.",
+   "u": "https://openlibrary.org/works/OL4633340W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "d": "A 602-page bibliography gathering what had been written up to then on animal rights and related subjects. A reference work for those researching the history of the debate.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Keyguide to Information Sources in Animal Rights",
+   "st": "",
+   "a": "Charles R. Magel",
+   "ano": 1989,
+   "ed": "Mansell; McFarland",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Guia de fontes de informação sobre direitos dos animais, com bibliografia e diretório de organizações. Cobre temas como experimentação animal, bem-estar animal e vegetarianismo.",
+   "u": "https://openlibrary.org/works/OL4633341W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "d": "A guide to information sources on animal rights, with a bibliography and a directory of organizations. Covers subjects such as animal experimentation, animal welfare and vegetarianism.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Encyclopedia of Animal Rights and Animal Welfare",
+   "st": "",
+   "a": "Marc Bekoff e Carron A. Meaney (orgs.)",
+   "ano": 1998,
+   "ed": "Greenwood Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Enciclopédia com verbetes sobre as questões, as controvérsias, as figuras históricas e as correntes de pensamento ligadas aos direitos e ao bem-estar dos animais, com um diretório de organizações. Prefácio de Jane Goodall.",
+   "u": "https://openlibrary.org/works/OL16102554W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "a": "Marc Bekoff and Carron A. Meaney (eds.)",
+    "d": "An encyclopedia with entries on the issues, controversies, historical figures and schools of thought connected to animal rights and animal welfare, with a directory of organizations. Foreword by Jane Goodall.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Animal Rights: Political and Social Change in Britain since 1800",
+   "st": "",
+   "a": "Hilda Kean",
+   "ano": 1998,
+   "ed": "Reaktion Books",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "História da defesa dos animais na Grã-Bretanha desde 1800, das primeiras campanhas contra a crueldade com bois e cavalos às preocupações com cães na guerra e animais em laboratórios. Mostra a ligação desses movimentos com campanhas de feministas, radicais e socialistas.",
+   "u": "https://reaktionbooks.co.uk/work/animal-rights",
+   "ul": "Editora",
+   "en": {
+    "st": "",
+    "d": "A history of animal advocacy in Britain since 1800, from the first campaigns against cruelty to cattle and horses to concerns about dogs in war and animals in laboratories. Shows how these movements were tied to campaigns led by feminists, radicals and socialists.",
+    "ul": "Publisher"
+   }
+  },
+  {
+   "t": "Animal Rights: History and Scope of a Radical Social Movement",
+   "st": "",
+   "a": "Harold D. Guither",
+   "ano": 1998,
+   "ed": "Southern Illinois University Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Panorama do movimento pelos direitos dos animais e de seus críticos, com os objetivos e os métodos de cada lado. O autor, professor de política agrícola, adota uma posição moderada.",
+   "u": "https://openlibrary.org/works/OL2684993W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "d": "An overview of the animal rights movement and its critics, with the goals and methods of each side. The author, a professor of agricultural policy, takes a moderate stance.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Ethical Vegetarianism",
+   "st": "From Pythagoras to Peter Singer",
+   "a": "Kerry S. Walters e Lisa Portmess (orgs.)",
+   "ano": 1999,
+   "ed": "State University of New York Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Antologia de textos originais sobre o vegetarianismo como compromisso moral, da Antiguidade ao século XX. Inclui Pitágoras, Sêneca, Porfírio, Tolstói, Gandhi, Schweitzer, Tom Regan, Peter Singer e Carol Adams.",
+   "u": "https://sunypress.edu/Books/E/Ethical-Vegetarianism",
+   "ul": "Editora",
+   "en": {
+    "st": "From Pythagoras to Peter Singer",
+    "a": "Kerry S. Walters and Lisa Portmess (eds.)",
+    "d": "An anthology of primary texts on vegetarianism as a moral commitment, from antiquity to the twentieth century. Includes Pythagoras, Seneca, Porphyry, Tolstoy, Gandhi, Schweitzer, Tom Regan, Peter Singer and Carol Adams.",
+    "ul": "Publisher"
+   }
+  },
+  {
+   "t": "Animal Rights: A Subject Guide, Bibliography, and Internet Companion",
+   "st": "",
+   "a": "John M. Kistler",
+   "ano": 2000,
+   "ed": "Greenwood Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Guia para estudantes com cerca de 900 obras comentadas sobre direitos dos animais, organizadas em seis capítulos e com pontos de vista variados. Prefácio de Marc Bekoff.",
+   "u": "https://openlibrary.org/works/OL5827429W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "d": "A guide for students with about 900 annotated works on animal rights, arranged in six chapters and presenting varied viewpoints. Foreword by Marc Bekoff.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Animal Rights: A Historical Anthology",
+   "st": "",
+   "a": "Andrew Linzey e Paul Barry Clarke (orgs.)",
+   "ano": 2004,
+   "ed": "Columbia University Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Reúne textos da Grécia antiga até hoje para mostrar como o pensamento moral sobre os animais se desenvolveu. Trata dos nossos deveres para com os animais e da questão de saber se eles têm direitos.",
+   "u": "https://cup.columbia.edu/book/animal-rights/9780231134217",
+   "ul": "Editora",
+   "en": {
+    "st": "",
+    "a": "Andrew Linzey and Paul Barry Clarke (eds.)",
+    "d": "Gathers writings from ancient Greece to the present to show how moral thinking about animals has developed. Addresses our duties toward animals and the question of whether they have rights.",
+    "ul": "Publisher"
+   }
+  },
+  {
+   "t": "Sins of the Flesh",
+   "st": "A History of Ethical Vegetarian Thought",
+   "a": "Rod Preece",
+   "ano": 2008,
+   "ed": "UBC Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "História do vegetarianismo como questão moral, das primeiras sociedades humanas até hoje. Passa pela Grécia e por Roma antigas, pelo ressurgimento por volta de 1800 e pelo novo impulso a partir dos anos 1960.",
+   "u": "https://www.ubcpress.ca/sins-of-the-flesh",
+   "ul": "Editora",
+   "en": {
+    "st": "A History of Ethical Vegetarian Thought",
+    "d": "A history of vegetarianism as a moral question, from early human societies to the present. Goes through ancient Greece and Rome, the revival around 1800 and the renewed movement since the 1960s.",
+    "ul": "Publisher"
+   }
+  },
+  {
+   "t": "Women and the Animal Rights Movement",
+   "st": "",
+   "a": "Emily Gaarder",
+   "ano": 2011,
+   "ed": "Rutgers University Press",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Estudo sobre o papel do gênero no ativismo pelos animais, movimento em que as mulheres são grande maioria, feito com entrevistas e observação de organizações, conferências e protestos. Contesta o estereótipo da ativista sentimental e defende ligar a causa animal a outras lutas por justiça.",
+   "u": "https://muse.jhu.edu/book/2220",
+   "ul": "Sobre o livro",
+   "en": {
+    "st": "",
+    "d": "A study of the role of gender in animal activism, a movement in which women are the large majority, based on interviews and observation of organizations, conferences and protests. Challenges the stereotype of the sentimental activist and argues for linking the animal cause to other struggles for justice.",
+    "ul": "About the book"
+   }
+  },
+  {
+   "t": "A History of the Animal Rights Movement",
+   "st": "",
+   "a": "Amanda D. West",
+   "ano": 2016,
+   "ed": "Publicação independente (CreateSpace)",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Coletânea de artigos da autora e ativista sobre a história do movimento pelos direitos dos animais.",
+   "u": "https://openlibrary.org/works/OL40162716W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "",
+    "ed": "Self-published (CreateSpace)",
+    "d": "A collection of articles by the author and activist on the history of the animal rights movement.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Vegetarianism and Veganism",
+   "st": "A Reference Handbook",
+   "a": "David E. Newton",
+   "ano": 2019,
+   "ed": "ABC-CLIO",
+   "lingua": "EN",
+   "foco": "historia",
+   "d": "Manual de referência que percorre a história das dietas sem carne, da pré-história até hoje, incluindo as posições das religiões, o crescimento das instituições vegetarianas e veganas e as controvérsias atuais. Traz cronologia, glossário, documentos e bibliografia comentada.",
+   "u": "https://openlibrary.org/works/OL22062664W",
+   "ul": "Catálogo",
+   "en": {
+    "st": "A Reference Handbook",
+    "d": "A reference handbook that goes through the history of meat-free diets, from prehistory to the present, including religious positions, the growth of vegetarian and vegan institutions and current controversies. Includes a chronology, a glossary, documents and an annotated bibliography.",
+    "ul": "Catalog"
+   }
+  },
+  {
+   "t": "Veganismo Baseado em Evidências",
+   "st": "",
+   "a": "Julio Cesar Prava",
+   "ano": 2026,
+   "ed": "",
+   "lingua": "PT",
+   "foco": "rebater",
+   "d": "Defende um veganismo apoiado em razão e evidência: examina os fundamentos da ética animal, os argumentos que veganos deveriam abandonar e o que vai além do veganismo. Parte do conteúdo deste guia vem dele.",
+   "u": "",
+   "ul": "",
+   "en": {
+    "st": "Evidence-Based Veganism, in Portuguese",
+    "d": "Makes the case for a veganism grounded in reason and evidence: it examines the foundations of animal ethics, the arguments vegans should drop and what goes beyond veganism. Part of this guide draws on it.",
+    "ul": ""
+   }
+  }
+ ],
+ "nao_confirmados": [
+  {
+   "t": "Veganismo Baseado em Evidências (Julio Cesar Prava)",
+   "motivo": "Nenhum registro encontrado em buscas na web (título exato, com e sem o nome do autor), na página de livros e na busca interna da Vegpedia, nem em resultados de Clube de Autores, Amazon ou UICLAP. O Google Books estava bloqueado (HTTP 429) e não pôde ser consultado. Julio Cesar Prava aparece apenas como curador da Vegpedia e autor no Medium. Precisa de link, ano e sinopse fornecidos pelo dono do site."
+  }
+ ]
+}

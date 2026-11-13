@@ -1,0 +1,560 @@
+[
+{
+"i": 0,
+"termo": "3Rs",
+"def": "The principle of Replacement, Reduction and Refinement in animal experimentation.",
+"com": ""
+},
+{
+"i": 1,
+"termo": "Slaughter",
+"def": "The process of killing animals for consumption, a central focus of debates about suffering and the harm of death.",
+"com": ""
+},
+{
+"i": 2,
+"termo": "Humane slaughter",
+"def": "A method of slaughter that seeks to minimize the animal's suffering, usually by prior stunning; the term is contested by abolitionists, who regard it as an oxymoron.",
+"com": ""
+},
+{
+"i": 3,
+"termo": "Premature slaughter",
+"def": "The killing of an animal before it reaches maturity or full productive age, common in some production chains (e.g. male calves in the dairy industry).",
+"com": ""
+},
+{
+"i": 4,
+"termo": "Abolitionism",
+"def": "A current that rejects gradual reforms and defends the complete end of the use of animals as property.",
+"com": ""
+},
+{
+"i": 5,
+"termo": "Action",
+"def": "Any deliberate conduct of a moral agent, evaluated ethically by its consequences, intentions or conformity to rules.",
+"com": "Under the equal consideration of interests, actions that cause avoidable suffering to sentient beings are subject to the same moral scrutiny applied to actions that affect humans."
+},
+{
+"i": 6,
+"termo": "Direct action",
+"def": "Direct intervention against animal exploitation, sometimes outside the law (e.g. rescues, sabotage).",
+"com": ""
+},
+{
+"i": 7,
+"termo": "Animal training",
+"def": "The process of training an animal to perform specific behaviors through conditioning; coercive methods are debated ethically.",
+"com": ""
+},
+{
+"i": 8,
+"termo": "Adoption",
+"def": "The act of taking on the responsible, permanent care of an animal, usually a rescued or abandoned one, instead of buying it.",
+"com": ""
+},
+{
+"i": 9,
+"termo": "Animal advocacy",
+"def": "Legal and political work aimed at defending the interests and rights of animals before courts, legislators and public bodies.",
+"com": "Part of this advocacy seeks not only to improve conditions of exploitation, but to recognize animals as subjects of rights of their own, and not merely as objects of indirect protection."
+},
+{
+"i": 10,
+"termo": "Afro-veganism (or Black veganism)",
+"def": "A strand that centers Black experiences and racial critique within the vegan movement, questioning its predominantly white history.",
+"com": ""
+},
+{
+"i": 11,
+"termo": "Agar",
+"def": "A plant-based gelatin extracted from red algae, used as a thickener and a substitute for animal gelatin.",
+"com": ""
+},
+{
+"i": 12,
+"termo": "Agave",
+"def": "A succulent plant whose nectar is used as a plant-based sweetener alternative to honey.",
+"com": ""
+},
+{
+"i": 13,
+"termo": "Moral agent",
+"def": "A being capable of acting morally and of being held responsible for its choices (usually adult humans).",
+"com": "Restricting moral agency to humans does not imply that only humans deserve moral consideration: agency and moral patient status are distinct categories. Animals do not need to be agents for their interests to be taken into account."
+},
+{
+"i": 14,
+"termo": "Cellular agriculture",
+"def": "The production of biological tissues (including \"meat\") from cell culture, without raising and slaughtering animals.",
+"com": ""
+},
+{
+"i": 15,
+"termo": "Agribusiness",
+"def": "The economic sector that covers the large-scale production, processing and marketing of agricultural and livestock products, including industrial animal farming.",
+"com": ""
+},
+{
+"i": 16,
+"termo": "Flank strap",
+"def": "A tight strap placed around the abdomen of horses or bulls in rodeos to induce bucking, causing discomfort.",
+"com": ""
+},
+{
+"i": 17,
+"termo": "Seaweed (kombu, nori)",
+"def": "A marine plant used in cooking, especially in Asian cuisine, and also a source of iodine and other nutrients.",
+"com": ""
+},
+{
+"i": 18,
+"termo": "Alienation",
+"def": "A state of psychological or social distance from the real consequences of one's own actions.",
+"com": "In the consumption of animal products, this alienation is made easier by the physical and informational distance between the consumer and the production process: the less visible the suffering, the easier it is to sustain practices that, if confronted directly, would be morally rejected."
+},
+{
+"i": 19,
+"termo": "Healthy eating",
+"def": "A dietary pattern oriented toward promoting physical health, whose content varies with cultural and scientific context; it does not always coincide with ethical vegan choices.",
+"com": ""
+},
+{
+"i": 20,
+"termo": "Effective altruism",
+"def": "A movement that seeks to maximize the positive impact of actions and resources, including animal welfare as a priority area.",
+"com": ""
+},
+{
+"i": 21,
+"termo": "Environmentalism (moral)",
+"def": "A current that discusses moral obligations toward the environment, sometimes converging with and sometimes conflicting with animal ethics.",
+"com": "It can diverge from a sentientist ethics when it prioritizes the balance of ecosystems or species over the welfare of specific sentient individuals, as in population management policies for wildlife."
+},
+{
+"i": 22,
+"termo": "Dehorning",
+"def": "The removal or prevention of horn growth in cattle, usually by cauterization, in most cases without anesthesia.",
+"com": ""
+},
+{
+"i": 23,
+"termo": "Analogy",
+"def": "An argumentative resource that compares distinct situations because they share relevant characteristics.",
+"com": "Comparisons between animal exploitation and human oppressions, such as slavery, are used by antispeciesists to highlight common structures of domination, but they are also criticized for potentially minimizing the specificity and gravity of the historical human suffering involved."
+},
+{
+"i": 24,
+"termo": "Anarchism",
+"def": "A political current that rejects hierarchies and unjustified forms of domination, including the State, and proposes organizing society through voluntary association and self-management.",
+"com": "Part of anarchism includes animals: Élisée Reclus defended vegetarianism, and veganarchism, a term coined by Brian A. Dominick (1995), unites veganism and anarchism."
+},
+{
+"i": 25,
+"termo": "Green anarchism",
+"def": "A political current that combines the anarchist critique of the State and capitalism with ecological concerns and, at times, animal liberation, rejecting hierarchies between species and forms of domination.",
+"com": "By placing speciesism among the forms of domination to be overcome, it comes close to the more radical antispeciesist currents of the animal liberation movement."
+},
+{
+"i": 26,
+"termo": "Anesthesia",
+"def": "A medical procedure to suppress the sensation of pain during interventions; its use (or absence) in livestock procedures is a central topic in welfare debates.",
+"com": ""
+},
+{
+"i": 27,
+"termo": "Animals as persons",
+"def": "A legal and philosophical proposal to recognize certain animals as nonhuman persons, subjects of basic rights, and not mere objects.",
+"com": "Restricting this proposal only to species with high cognitive complexity is criticized by sentientists, who argue that the capacity to suffer, not intelligence, should be the relevant criterion for recognizing basic rights."
+},
+{
+"i": 28,
+"termo": "Animals as property",
+"def": "The predominant legal status of animals in most legal systems, which classifies them as movable goods that can be possessed, bought and sold.",
+"com": "It is the central target of the abolitionist critique, which argues that, as long as animals are legally property, their fundamental interests can always be legally subordinated to the economic interests of their owners."
+},
+{
+"i": 29,
+"termo": "Synanthropic animals",
+"def": "Species that have adapted to live in urban environments or near humans (rats, pigeons, cockroaches), often treated as pests.",
+"com": ""
+},
+{
+"i": 30,
+"termo": "Animal",
+"def": "A multicellular living being of the kingdom Animalia, capable of movement and, in most cases, possessing a nervous system; a biological term that includes humans, although it is popularly used to refer only to nonhumans.",
+"com": "This everyday separation between \"humans\" and \"animals\" reinforces, in common language, a moral hierarchy between species that biology itself does not support."
+},
+{
+"i": 31,
+"termo": "Downed animal",
+"def": "An animal that cannot stand up or move because of illness, exhaustion or injury, usually during transport or confinement; a situation associated with serious welfare violations.",
+"com": ""
+},
+{
+"i": 32,
+"termo": "Companion animal",
+"def": "An animal kept for emotional and social reasons, with no productive purpose (dogs, cats and other pets).",
+"com": ""
+},
+{
+"i": 33,
+"termo": "Meat animal",
+"def": "An animal raised specifically for slaughter and meat consumption.",
+"com": ""
+},
+{
+"i": 34,
+"termo": "Farmed animal",
+"def": "An animal raised to generate products (meat, milk, eggs, wool) for human consumption or trade.",
+"com": ""
+},
+{
+"i": 35,
+"termo": "Domestic animal",
+"def": "A species selected and bred over generations under human control, genetically adapted to living with humans or to production (as opposed to a wild animal).",
+"com": ""
+},
+{
+"i": 36,
+"termo": "Nonhuman animal",
+"def": "An expression used to refer to any animal that is not of the human species.",
+"com": "Its use is a deliberate antispeciesist choice of language: by reminding us that the human being is also an animal, it avoids reinforcing the implicit opposition between \"human\" and \"animal\" and the moral exclusion that this opposition naturalizes."
+},
+{
+"i": 37,
+"termo": "Animalism (in the sense of animal advocacy)",
+"def": "A generic term for the set of ideas, movements and practices aimed at defending animals, ranging from welfarism to abolitionism.",
+"com": "Because it covers positions as different as welfarism and abolitionism, the term is criticized by stricter antispeciesists for blurring relevant strategic and ethical differences between these currents."
+},
+{
+"i": 38,
+"termo": "Antienvironmentalism",
+"def": "Organized opposition to environmental protection policies and movements, often in the name of economic growth, which includes denying or downplaying problems such as climate change.",
+"com": "Not every criticism of an environmental measure is antienvironmentalism: someone starting from sentientism, for example, questions measures that harm animals without denying environmental problems."
+},
+{
+"i": 39,
+"termo": "Antispeciesism",
+"def": "A position and movement that actively opposes speciesism, defending the equal consideration of interests across species.",
+"com": "Not every antispeciesist necessarily defends the end of all use of animals, a position more associated with abolitionism; in the strict sense, antispeciesism is the rejection of moral discrimination based on species."
+},
+{
+"i": 40,
+"termo": "Anti-veganism",
+"def": "A set of positions, discourses or movements that oppose veganism as a philosophy or practice, whether out of ethical, cultural or nutritional skepticism.",
+"com": "Anti-vegan arguments based on nutrition have been increasingly challenged by position statements from nutrition bodies that recognize the adequacy of well-planned vegetarian and vegan diets (see Nutrition, section 2)."
+},
+{
+"i": 41,
+"termo": "Anthropocentrism",
+"def": "The view that places the human being as the center and measure of moral value.",
+"com": "It is the worldview that antispeciesism and sentientism most directly contest, because it assigns moral value on the basis of species, and not of the capacity to suffer."
+},
+{
+"i": 42,
+"termo": "Moral anthropocentrism",
+"def": "The view that only human interests have moral value of their own, and that everything else matters insofar as it serves humans or affects them.",
+"com": "It underpins arguments such as \"they're just animals.\" Sentientism rejects it for treating species, and not the capacity to feel, as the criterion."
+},
+{
+"i": 43,
+"termo": "Anthropomorphism",
+"def": "The attribution of human characteristics, emotions or intentions to nonhuman animals; it can be a useful tool of empathy or a source of interpretive error, depending on the scientific context.",
+"com": "Categorically rejecting any attribution of mental states to animals, out of fear of anthropomorphism, can fall into the opposite bias: systematically underestimating the mental life of other species."
+},
+{
+"i": 44,
+"termo": "Apathy",
+"def": "Emotional or motivational indifference in the face of another's suffering.",
+"com": "In relation to animals, it tends to work as a psychological mechanism that sustains exploitative practices despite the intellectual recognition that they cause suffering."
+},
+{
+"i": 45,
+"termo": "Beekeeping",
+"def": "The keeping of bees to produce honey, wax, propolis and other products, with its own debates about insect sentience and the impact of commercial production.",
+"com": ""
+},
+{
+"i": 46,
+"termo": "Aquafaba",
+"def": "The liquid left from cooking chickpeas or other legumes, used as a vegan substitute for egg white because of its foaming properties.",
+"com": ""
+},
+{
+"i": 47,
+"termo": "Aquaculture",
+"def": "The farming of aquatic animals in captivity, with its own welfare issues that are little regulated.",
+"com": ""
+},
+{
+"i": 48,
+"termo": "Arbitrariness",
+"def": "The absence of a consistent rational justification for a distinction or decision.",
+"com": "It is identified as the central feature of speciesism: species, taken alone, is not a morally relevant criterion for justifying a difference in treatment."
+},
+{
+"i": 49,
+"termo": "Nose ring",
+"def": "A metal device inserted into the nose of some animals (such as cattle) to make them easier to restrain and lead.",
+"com": ""
+},
+{
+"i": 50,
+"termo": "Argument",
+"def": "A structured set of premises that support a conclusion.",
+"com": "The strength of an argument about the moral status of animals should be assessed by its logical validity and the evidence that supports it, and not by the familiarity or comfort its conclusion provides."
+},
+{
+"i": 51,
+"termo": "Argument from relevance",
+"def": "The thesis that only morally relevant characteristics, such as the capacity to suffer, justify a difference in treatment; species, in itself, is not one of those characteristics.",
+"com": "It is one of the central arguments used to characterize speciesism as morally unjustified discrimination, analogous to racism and sexism."
+},
+{
+"i": 52,
+"termo": "Argument from marginal cases",
+"def": "The thesis that criteria used to exclude animals from moral consideration, such as rationality or language, would also exclude humans with severe cognitive disabilities, revealing an inconsistency in speciesism.",
+"com": "Because it exposes this inconsistency, many philosophers consider it one of the hardest challenges to answer for those who defend cognitive criteria as the basis for the moral exclusion of animals."
+},
+{
+"i": 53,
+"termo": "Harness",
+"def": "Equipment buckled onto an animal's body for traction, riding or restraint.",
+"com": ""
+},
+{
+"i": 54,
+"termo": "Rice",
+"def": "A widely cultivated staple cereal, the basis of diets in many cultures and an ingredient in plant-based drinks (rice milk).",
+"com": ""
+},
+{
+"i": 55,
+"termo": "Artivism",
+"def": "The use of art as a tool for activism and awareness-raising.",
+"com": ""
+},
+{
+"i": 56,
+"termo": "Activism",
+"def": "Organized action in defense of a cause, here the animal cause.",
+"com": ""
+},
+{
+"i": 57,
+"termo": "Culinary activism",
+"def": "The use of vegan cooking (tastings, food events) as a tool for awareness-raising and conversion to veganism.",
+"com": ""
+},
+{
+"i": 58,
+"termo": "Street activism",
+"def": "A direct, public approach (leafleting, demonstrations, exhibitions).",
+"com": ""
+},
+{
+"i": 59,
+"termo": "Digital activism",
+"def": "The use of social media and the internet for mobilization and awareness-raising.",
+"com": ""
+},
+{
+"i": 60,
+"termo": "Institutional activism",
+"def": "Work through public policy, lobbying and strategic litigation.",
+"com": ""
+},
+{
+"i": 61,
+"termo": "Self-criticism",
+"def": "The capacity to examine and question one's own beliefs and practices.",
+"com": "It is especially relevant for recognizing inconsistencies between declared values, such as rejecting cruelty, and everyday consumption behavior."
+},
+{
+"i": 62,
+"termo": "Self-defense",
+"def": "The right or justification of an agent to react to a threat in order to protect their integrity.",
+"com": "Self-defense arguments rarely apply to the routine killing of animals for consumption, since they presuppose a real and proportionate threat, which is absent in most of these practices."
+},
+{
+"i": 63,
+"termo": "Autonomy",
+"def": "The capacity of an agent to govern themselves and make their own decisions.",
+"com": "Although often used to deny moral status to animals because of their supposed lack of rational autonomy, this requirement is contested by antispeciesists, who point out that autonomy is not a prerequisite for having interests that deserve consideration: human babies and people with certain severe cognitive disabilities also lack it."
+},
+{
+"i": 64,
+"termo": "Poultry farming",
+"def": "The raising of birds (mainly chickens) for meat and egg production.",
+"com": ""
+},
+{
+"i": 65,
+"termo": "Bacon",
+"def": "A cut of cured and smoked pork, traditionally taken from the pig's belly.",
+"com": ""
+},
+{
+"i": 66,
+"termo": "Banderillas",
+"def": "Barbed sticks stuck into the bull during a bullfight to provoke and weaken it, causing wounds and intense suffering.",
+"com": ""
+},
+{
+"i": 67,
+"termo": "Common good",
+"def": "The set of conditions that benefit the collectivity.",
+"com": "The systematic exclusion of animals' interests from the definition of what counts as the \"common good\" is identified by antispeciesists as an arbitrary limitation of this concept to a single species."
+},
+{
+"i": 68,
+"termo": "Animal welfare",
+"def": "A scientific and ethical field that assesses and seeks to improve the living conditions of animals under human care.",
+"com": ""
+},
+{
+"i": 69,
+"termo": "Welfarism",
+"def": "A position that accepts the use of animals as long as high welfare standards are met, often set against abolitionism in the movement's strategic debate.",
+"com": ""
+},
+{
+"i": 70,
+"termo": "Biocentrism",
+"def": "The view that extends moral value to all life, sentient or not.",
+"com": "It diverges from sentientism by also including organisms without the capacity to feel, such as plants, in the sphere of direct moral consideration, a relevant point of disagreement between the two currents."
+},
+{
+"i": 71,
+"termo": "Bioethics",
+"def": "A branch of applied ethics that investigates moral questions related to the life sciences and health, including animal research, biotechnology and medicine.",
+"com": "Traditionally centered on human dilemmas, bioethics has been pressed by sentientist currents to fully incorporate the interests of nonhuman animals as moral subjects, and not only as means to human ends."
+},
+{
+"i": 72,
+"termo": "Biology",
+"def": "The science that studies living beings, their structure, functioning, origin and evolution; the empirical basis for understanding the physiology, behavior and capacities of animals.",
+"com": "It is from biological evidence, and not from intuitions or cultural traditions, that criteria such as the presence of sentience are usually assessed."
+},
+{
+"i": 73,
+"termo": "Animal welfare science",
+"def": "An applied subfield of biology that investigates physiological and behavioral indicators to measure animal welfare.",
+"com": "Its indicators are often used to justify reforms within systems of exploitation, which creates tension between welfarists, who seek to optimize them, and abolitionists, who question the legitimacy of using the animal at all."
+},
+{
+"i": 74,
+"termo": "Banana biomass",
+"def": "A purée made from cooked green banana, used as a thickener and as a substitute for fat and egg in vegan recipes.",
+"com": ""
+},
+{
+"i": 75,
+"termo": "Boycott",
+"def": "The deliberate refusal to consume products or support companies as a form of ethical, economic or political pressure.",
+"com": ""
+},
+{
+"i": 76,
+"termo": "Boycott and ethical consumption",
+"def": "A strategy of economic pressure through consumption choices.",
+"com": ""
+},
+{
+"i": 77,
+"termo": "Muzzle",
+"def": "A device that wraps an animal's snout to restrict its ability to bite or open its mouth.",
+"com": ""
+},
+{
+"i": 78,
+"termo": "Burdizzo",
+"def": "An instrument used for bloodless castration of males, by crushing the spermatic cord without an incision.",
+"com": ""
+},
+{
+"i": 79,
+"termo": "Halter",
+"def": "A restraint placed on an animal's head (usually a horse) to guide or tie it.",
+"com": ""
+},
+{
+"i": 80,
+"termo": "Hunting",
+"def": "The killing of wild animals, for subsistence, population control or sport.",
+"com": ""
+},
+{
+"i": 81,
+"termo": "Sport hunting",
+"def": "A form of hunting for leisure or trophies, with no subsistence purpose.",
+"com": ""
+},
+{
+"i": 82,
+"termo": "Corn coffee",
+"def": "A drink made from roasted and ground corn, used as a substitute for regular coffee.",
+"com": ""
+},
+{
+"i": 83,
+"termo": "Gestation crate",
+"def": "A narrow individual cage used to confine sows during pregnancy, preventing basic movements such as turning around.",
+"com": ""
+},
+{
+"i": 84,
+"termo": "Veal crate",
+"def": "A narrow compartment used to confine calves destined for veal production, restricting their movement to keep the meat tender.",
+"com": ""
+},
+{
+"i": 85,
+"termo": "Cannibalism (in confinement)",
+"def": "An abnormal behavior in which confined animals (such as pigs or birds) bite or peck one another because of stress, boredom or behavioral frustration.",
+"com": ""
+},
+{
+"i": 86,
+"termo": "Live cargo",
+"def": "A term from the transport sector that designates live animals carried as merchandise.",
+"com": ""
+},
+{
+"i": 87,
+"termo": "Cochineal carmine",
+"def": "A natural red dye extracted from dried females of the cochineal insect, used in foods and cosmetics.",
+"com": ""
+},
+{
+"i": 88,
+"termo": "Meat",
+"def": "The muscle tissue and other organs of animals used as food.",
+"com": ""
+},
+{
+"i": 89,
+"termo": "Cultivated meat",
+"def": "A food product derived from cellular agriculture, presented as an alternative to traditional animal farming.",
+"com": ""
+},
+{
+"i": 90,
+"termo": "Jackfruit meat",
+"def": "A dish prepared with shredded green jackfruit, whose fibrous texture resembles shredded meat, popular in vegan cooking.",
+"com": ""
+},
+{
+"i": 91,
+"termo": "Soy meat",
+"def": "A textured product based on soy protein, used as a substitute for ground or shredded meat.",
+"com": ""
+},
+{
+"i": 92,
+"termo": "Veal",
+"def": "Meat from calves slaughtered while still young, usually raised in extreme confinement.",
+"com": ""
+}
+]

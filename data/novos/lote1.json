@@ -1,0 +1,95 @@
+{
+  "args": {
+    "L17": {
+      "falha_pt": "Tu quoque: ter um viés não autoriza prejudicar ninguém, pede correção; e especismo é desconsideração injustificada de interesses, e não qualquer preferência",
+      "en": {
+        "frase": "Vegans are speciesists too",
+        "formas": [
+          "You prefer dogs to cockroaches too",
+          "Vegans feel superior to other animals too",
+          "You decide for the animals; that's thinking you're superior too"
+        ],
+        "falha": "Tu quoque: having a bias doesn't license harming anyone, it calls for correction; and speciesism is the unjustified disregard of interests, not any preference"
+      }
+    },
+    "L18": {
+      "falha_pt": "A questão não é empatia: ela é limitada e enviesada, e onde falha usamos razão e princípios, como fazemos com humanos distantes",
+      "en": {
+        "frase": "You don't feel empathy for every animal in the world either",
+        "formas": [
+          "You cry over a pig but not over a mosquito",
+          "Nobody can feel sorry for billions"
+        ],
+        "falha": "The question isn't empathy: it is limited and biased, and where it fails we use reason and principles, as we do with distant humans"
+      }
+    },
+    "L19": {
+      "falha_pt": "Tu quoque e ataque ao mensageiro: a falha de um vegano em outra causa não muda o que acontece com os animais, e o mesmo raciocínio derrubaria qualquer causa",
+      "en": {
+        "frase": "There are sexist, racist and transphobic vegans",
+        "formas": [
+          "You don't follow every cause in your personal life",
+          "You defend animals and mistreat people",
+          "A vegan who votes for so-and-so has no standing to talk"
+        ],
+        "falha": "Tu quoque and an attack on the messenger: a vegan's failing in another cause doesn't change what happens to animals, and the same reasoning would bring down any cause"
+      }
+    },
+    "L20": {
+      "falha_pt": "Generaliza dos erros de alguns filmes para tudo: as imagens mostram práticas padrão e legais, e a conclusão moral não depende de nenhum filme",
+      "en": {
+        "frase": "Vegan documentaries are manipulated",
+        "formas": [
+          "Vegan media is exaggerated",
+          "That's propaganda with sad music",
+          "That documentary has already been debunked"
+        ],
+        "falha": "Generalizes from some films' errors to everything: the footage shows standard, legal practices, and the moral conclusion doesn't depend on any film"
+      }
+    },
+    "L21": {
+      "falha_pt": "Ataque ao mensageiro: a hostilidade de alguns veganos é um erro, mas a crítica é à produção de leite e ovos, e não às pessoas",
+      "en": {
+        "frase": "Vegans treat vegetarians as enemies",
+        "formas": [
+          "To a vegan, a vegetarian is worse than a meat eater",
+          "Not even people who cut down escape the policing",
+          "You fight each other more than you fight the industry"
+        ],
+        "falha": "An attack on the messenger: some vegans' hostility is a mistake, but the criticism is of milk and egg production, not of people"
+      }
+    }
+  },
+  "motivos": {
+    "A acusação de superioridade passa das pessoas para os animais": "The charge of superiority moves from people to animals",
+    "O tratamento desigual entre espécies vira acusação de especismo": "Unequal treatment of species becomes a charge of speciesism",
+    "Depois de discutir o conceito de especismo, ele é devolvido a quem o usa": "After the concept of speciesism is debated, it's turned back on those who use it",
+    "Do viés no tratamento passa-se ao viés no sentimento": "From bias in treatment the talk moves to bias in feeling",
+    "A preferência por alguns animais leva à pergunta sobre o limite": "The preference for some animals leads to the question of the limit",
+    "Se o vegano também falha, conclui-se que nada vale": "If the vegan fails too, the conclusion is that nothing counts",
+    "Da preferência no tratamento passa-se à preferência no sentimento": "From preference in treatment the talk moves to preference in feeling",
+    "A cobrança sobre a empatia do vegano muda de alvo": "The demand about the vegan's empathy changes target",
+    "A conversa passa a ser sobre sentimentos, e não sobre atos": "The conversation becomes about feelings, not acts",
+    "O mosquito do exemplo vira o caso concreto": "The mosquito in the example becomes the concrete case",
+    "Se a empatia não traça a linha, pergunta-se o que traça": "If empathy doesn't draw the line, the question is what does",
+    "A escala que entorpece vira razão para não agir": "The scale that numbs becomes a reason not to act",
+    "A busca de incoerência sai do consumo e vai para as outras causas": "The hunt for inconsistency moves from consumption to other causes",
+    "A suspeita de desprezo por pessoas ganha exemplos concretos": "The suspicion of contempt for people gains concrete examples",
+    "O veganismo é lido como pauta de um campo político, e o voto do vegano vira argumento": "Veganism is read as one political camp's agenda, and the vegan's vote becomes an argument",
+    "O caso extremo do mesmo raciocínio: um defensor ruim contaminaria a causa": "The extreme case of the same reasoning: a bad defender would taint the cause",
+    "Das falhas dos veganos passa-se à prioridade das causas humanas": "From vegans' failings the talk moves to the priority of human causes",
+    "A acusação geral de preconceito ganha um caso específico": "The general charge of prejudice gains a specific case",
+    "A dúvida sobre os vídeos de investigação se estende aos filmes inteiros": "The doubt about investigation videos spreads to whole films",
+    "Quem não quer ver encontra uma razão para não precisar ver": "Those who don't want to watch find a reason not to have to",
+    "Quem vê o veganismo como doutrinação lê os filmes como propaganda": "Those who see veganism as indoctrination read the films as propaganda",
+    "Dos erros dos filmes conclui-se que tudo é opinião": "From the films' errors the conclusion is that it's all opinion",
+    "Se as imagens são exagero, o padrão real estaria garantido pela lei": "If the footage is exaggeration, the real standard would be guaranteed by law",
+    "Quem mudou por promessas de saúde de um filme pode voltar atrás quando elas falham": "Someone who changed because of a film's health promises may go back when they fail",
+    "A crítica ao leite e aos ovos é ouvida como ataque a quem os consome": "The criticism of milk and eggs is heard as an attack on those who consume them",
+    "A chatice atribuída aos veganos é agora dirigida aos aliados": "The annoyingness attributed to vegans is now aimed at allies",
+    "Quem reduz se sente cobrado e reage": "People who cut down feel reproached and react",
+    "Da queixa pessoal passa-se à tese geral sobre estratégia": "From the personal complaint the talk moves to the general thesis about strategy",
+    "A hostilidade vira acusação de monopólio da causa": "The hostility becomes a charge of monopolizing the cause",
+    "A falta de acolhimento é ligada à desistência": "The lack of welcome is linked to giving up"
+  }
+}

@@ -81,3 +81,8 @@ ORGS = [
     ('Wild Animal Initiative', 'Em inglês: pesquisa sobre o bem-estar de animais selvagens', 'https://www.wildanimalinitiative.org'),
 ]
 
+# Livros acrescentados em 2026-11-13 (data/novos/biblioteca.json): clássicos de ética, cognição animal e história da defesa dos animais
+import json as _json, os as _os
+_N = _json.load(open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), 'data', 'novos', 'biblioteca.json'), encoding='utf-8'))
+FOCOS['historia'] = 'História da defesa dos animais'
+LIVROS += [{k: v for k, v in l.items() if k != 'en'} for l in _N['livros']]

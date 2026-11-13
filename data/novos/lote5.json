@@ -1,0 +1,79 @@
+{
+  "args": {
+    "N7": {
+      "falha_pt": "Confunde o princípio com o grupo: dá para deixar pessoas hostis sem deixar de poupar os animais",
+      "en": {
+        "frase": "Vegans are annoying and bossy; I don't want to be part of that group",
+        "formas": [
+          "I left because of the vegans themselves",
+          "The movement is toxic; I got tired of the policing",
+          "I don't want to be mistaken for those people"
+        ],
+        "falha": "Confuses the principle with the group: you can leave hostile people without ceasing to spare animals"
+      }
+    },
+    "N8": {
+      "falha_pt": "Confunde o rótulo com a prática: o nome é opcional, e o que alcança os animais é o que se faz",
+      "en": {
+        "frase": "I don't want to be labeled; the label brings pressure",
+        "formas": [
+          "I don't want to be labeled as anything",
+          "When I said I was vegan, everyone watched me",
+          "I'd rather eat without giving it a name"
+        ],
+        "falha": "Confuses the label with the practice: the name is optional, and what reaches the animals is what one does"
+      }
+    },
+    "N9": {
+      "falha_pt": "Falsa dicotomia entre pureza total e abandono: o veganismo pede o possível e praticável, e não perfeição",
+      "en": {
+        "frase": "It became an obsession; I lived with guilt",
+        "formas": [
+          "I read every label and it was never enough",
+          "Veganism wrecked my mental health",
+          "I got tired of carrying the weight of the world"
+        ],
+        "falha": "False dichotomy between total purity and giving up: veganism asks for what is possible and practicable, not perfection"
+      }
+    },
+    "N10": {
+      "falha_pt": "Quem seguia uma dieta por saúde não seguia o veganismo, e a razão dos animais nunca foi examinada",
+      "en": {
+        "frase": "I was vegan for my health, and I changed my mind",
+        "formas": [
+          "I went vegan because of a health documentary and later saw it wasn't quite like that",
+          "It was for the environment, but now I buy local meat",
+          "It was never about the animals"
+        ],
+        "falha": "Someone following a diet for health was not following veganism, and the reason concerning animals was never examined"
+      }
+    }
+  },
+  "motivos": {
+    "A crítica feita de fora passa a ser repetida por quem estava dentro": "The criticism made from outside is now repeated by someone who was inside",
+    "Os métodos de alguns ativistas viram motivo para sair": "The methods of some activists become a reason to leave",
+    "A cobrança entre os próprios defensores dos animais afasta gente": "Pressure among animal advocates themselves drives people away",
+    "Depois do grupo, rejeita-se também o nome": "After the group, the name is rejected too",
+    "A própria saída é apresentada como exemplo": "The person's own exit is offered as an example",
+    "Ter conhecido o grupo por dentro vira autoridade": "Having known the group from the inside becomes authority",
+    "Quem rejeita o grupo passa a rejeitar o nome do grupo": "Whoever rejects the group comes to reject the group's name",
+    "O estereótipo torna o rótulo pesado de carregar": "The stereotype makes the label heavy to carry",
+    "A cobrança de coerência total recai sobre quem se rotula": "The demand for total consistency falls on whoever wears the label",
+    "Sem o nome, pode sobrar a convicção sem a prática": "Without the name, the conviction may remain without the practice",
+    "Largar o nome vira largar parte da prática": "Dropping the name turns into dropping part of the practice",
+    "A vigilância dos outros pode virar vigilância de si mesmo": "Being watched by others can turn into watching oneself",
+    "A busca do 100% nasce da cobrança de pureza": "The pursuit of 100% is born of the demand for purity",
+    "A vigilância dos outros vira vigilância de si mesmo": "Being watched by others turns into watching oneself",
+    "A ideia de pureza passa a ser vivida como regra": "The idea of purity comes to be lived as a rule",
+    "O sofrimento pessoal vira diagnóstico do veganismo inteiro": "Personal suffering becomes a diagnosis of veganism as a whole",
+    "O relato é usado para patologizar quem continua": "The account is used to pathologize those who carry on",
+    "A recusa da perfeição vira recusa de qualquer esforço": "Refusing perfection turns into refusing any effort",
+    "Quem entrou por moda ou saúde trata o veganismo como dieta": "Someone who came in through fashion or health treats veganism as a diet",
+    "Uma nova dieta promete mais saúde que a anterior": "A new diet promises more health than the previous one",
+    "A razão ambiental é trocada por outra solução": "The environmental reason is swapped for another solution",
+    "A decepção com promessas exageradas derruba a dieta": "Disappointment with exaggerated promises brings the diet down",
+    "A experiência de uma dieta vira autoridade sobre o veganismo": "The experience of a diet becomes authority on veganism",
+    "A desistência entra na estatística como se fosse de veganos éticos": "The dropout enters the statistics as if it were an ethical vegan's",
+    "O relato passa a circular como prova contra a dieta": "The account starts circulating as proof against the diet"
+  }
+}

@@ -21,6 +21,14 @@ CURTO = 'For the Animals'
 MARCA = 'For the Animals<br/>An Argument Guide'
 SITE_PT = 'https://pelosanimais.biblioverse.org'
 
+import novos as _novos_lotes  # argumentos acrescentados em 2026-11-13
+ARGS.update(_novos_lotes.EN); MOTIVOS.update(_novos_lotes.MOTIVOS)
+
+_EXTRA_EN = {'A13': ["We're all naturally biased: we protect our family, our species, our nation, and veganism is an illusion"], 'E2': ['We have to respect different views'], 'A19': ['Vegans treat animals like humans'],
+    'D3': ['Vegans want to impose veganism on Indigenous peoples'], 'C3': ['Our bodies are designed to eat meat'], 'J2': ["Veganism is classist and elitist, it isn't accessible to poorer people"],
+    'M12': ['Sentientists discuss impossible or very distant scenarios'], 'M10': ['Sentientists want to play God'], 'L6': ['Vegans prefer animals to people']}
+for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
+
 FALTAM = {}
 def falta(tipo, chave):
     FALTAM.setdefault(tipo, []).append(chave)
@@ -29,7 +37,7 @@ def falta(tipo, chave):
 PASTAS = {'argumentos': 'arguments', 'ruins': 'stop-saying', 'familias': 'families', 'politicas': 'political', 'alem': 'beyond'}
 PAGS = {'comece-aqui': 'start-here', 'argumentos-ruins': 'stop-saying', 'alem-do-veganismo': 'beyond-veganism',
         'objecoes-politicas': 'political-objections', 'raciocinio': 'reasoning', 'mapa': 'map', 'falacias': 'fallacies',
-        'vieses': 'biases', 'biblioteca': 'library', 'sobre': 'about', 'treino': 'practice', 'familias': 'families', 'debate': 'debate'}
+        'vieses': 'biases', 'biblioteca': 'library', 'sobre': 'about', 'glossario': 'glossary', 'treino': 'practice', 'familias': 'families', 'debate': 'debate'}
 SUB = {'politicas': {k: v['s'] for k, v in POLITICAS.items()}, 'alem': {k: v['s'] for k, v in ALEM.items()}}
 
 _PASTA_RE = re.compile(r'(?<![\w-])(argumentos|ruins|familias|politicas|alem)/([\w-]+)\.html')
@@ -83,7 +91,7 @@ def llms(site, nome, desc):
     ls = [('Start here', 'start-here.html'), ('All arguments', '#arguments'), ('Simulated debate', 'debate.html'), ('Practice answers', 'practice.html'),
           ('Stop saying this: weak vegan arguments and better ways to say them', 'stop-saying.html'), ('Political objections', 'political-objections.html'),
           ('Beyond veganism', 'beyond-veganism.html'), ('The 14 families', 'families.html'), ('The anti-vegan line of reasoning', 'reasoning.html'),
-          ('Map of connections', 'map.html'), ('Fallacies', 'fallacies.html'), ('Biases', 'biases.html'), ('Library', 'library.html')]
+          ('Map of connections', 'map.html'), ('Fallacies', 'fallacies.html'), ('Biases', 'biases.html'), ('Glossary', 'glossary.html'), ('Library', 'library.html')]
     return f'# {nome}\n\n> {desc}\n\n## Main pages\n' + ''.join(f'- [{t}]({site}/{u})\n' for t, u in ls) + f'\nPortuguese version: {SITE_PT}/\n'
 
 # ---------- Questão de Ética in English ----------
@@ -131,7 +139,7 @@ def aplica(g):
     for t in pol.TEORIAS:
         x = POLITICAS.get(t['s'])
         if not x: falta('política', t['s']); continue
-        for campo in ('t', 'frase', 'principio', 'quebra', 'replica', 'resposta', 'fontes'):
+        for campo in ('t', 'frase', 'principio', 'quebra', 'replica', 'resposta', 'fontes', 'mais', 'nomes'):
             if campo in x: t[campo] = x[campo]
     for p in g['alem'].PAGINAS:
         x = ALEM.get(p['s'])

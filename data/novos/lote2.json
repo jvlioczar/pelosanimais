@@ -1,0 +1,94 @@
+{
+  "args": {
+    "L22": {
+      "falha_pt": "Generaliza a partir de alguns veganos e confunde criticar uma incoerência com desprezar pessoas; quem resgata animais já aceita que eles importam",
+      "en": {
+        "frase": "Vegans think they're the only ones who really defend animals",
+        "formas": [
+          "You look down on people who rescue dogs and cats",
+          "To you, a rescuer who eats meat is worth nothing",
+          "So only vegans love animals?"
+        ],
+        "falha": "Generalizes from some vegans and confuses criticizing an inconsistency with despising people; those who rescue animals already accept that animals matter"
+      }
+    },
+    "L23": {
+      "falha_pt": "Tu quoque e generalização: o veganismo não tem posição sobre o aborto, os dois casos têm estruturas diferentes e a incoerência de alguém não justificaria explorar animais",
+      "en": {
+        "frase": "Vegans defend animals, but they support abortion",
+        "formas": [
+          "They cry over a chick and support killing babies",
+          "If life matters, why not the life of the fetus?",
+          "If you're against abortion, you should be vegan"
+        ],
+        "falha": "Tu quoque and generalization: veganism has no position on abortion, the two cases have different structures, and someone's inconsistency wouldn't justify exploiting animals"
+      }
+    },
+    "L24": {
+      "falha_pt": "Generaliza a crítica seletiva de alguns: o critério coerente critica toda morte evitável de animais, começa pela indústria e não escolhe um povo como alvo",
+      "en": {
+        "frase": "Vegans are racist, because they criticize Afro-Brazilian religions",
+        "formas": [
+          "They only pick on Candomblé",
+          "Attacking religious sacrifice is religious racism"
+        ],
+        "falha": "Generalizes the selective criticism of some: the consistent criterion criticizes every avoidable killing of animals, starts with the industry and doesn't pick a people as its target"
+      }
+    },
+    "L25": {
+      "falha_pt": "Generalização falsa: há veganos em todas as religiões, tradições inteiras ensinam a não ferir os animais e o veganismo é compatível com a fé e com a ausência de fé",
+      "en": {
+        "frase": "Vegans are against religion",
+        "formas": [
+          "Vegans are atheists",
+          "Vegans don't like Christians or Jesus",
+          "Vegans don't like Muslims",
+          "Veganism wants to take the place of religion"
+        ],
+        "falha": "False generalization: there are vegans in every religion, whole traditions teach not harming animals, and veganism is compatible with faith and with the absence of faith"
+      }
+    },
+    "L26": {
+      "falha_pt": "Rótulo no lugar de refutação: o veganismo trata de um dano a terceiros, e não da pureza de quem come, e toda moral contraria impulsos naturais",
+      "en": {
+        "frase": "Veganism is moral puritanism",
+        "formas": [
+          "Vegans want to purify the world",
+          "It's a morality against human nature",
+          "It's for people who need to feel morally superior"
+        ],
+        "falha": "A label in place of a rebuttal: veganism is about harm to third parties, not the purity of the eater, and every morality goes against natural impulses"
+      }
+    }
+  },
+  "motivos": {
+    "Quem ama os animais se sente acusado de não amar": "Someone who loves animals feels accused of not loving them",
+    "A sensação de julgamento vira queixa de arrogância": "The feeling of being judged turns into a complaint about arrogance",
+    "A defesa passa a ser o caráter de quem resgata": "The defense shifts to the rescuer's character",
+    "A mesma queixa, feita por outros aliados próximos": "The same complaint, made by other close allies",
+    "Cães e gatos seriam os animais que nos cabe proteger": "Dogs and cats would be the animals it falls to us to protect",
+    "A suposta indiferença aos humanos ganha um exemplo": "The supposed indifference to humans gets an example",
+    "A busca por incoerência muda de terreno": "The hunt for inconsistency moves to new ground",
+    "O valor do feto é defendido pelo potencial": "The value of the fetus is defended through potential",
+    "O veganismo é colado a um pacote político": "Veganism gets glued to a political package",
+    "Outra cobrança de coerência em temas alheios aos animais": "Another demand for consistency on issues unrelated to animals",
+    "A crítica a uma prática é lida como ataque à cultura": "Criticism of a practice is read as an attack on the culture",
+    "O movimento já foi acusado de insensibilidade racial": "The movement has already been accused of racial insensitivity",
+    "A prática religiosa é posta fora do alcance da crítica": "Religious practice is placed beyond the reach of criticism",
+    "Busca outro grupo cuja prática pareça intocável": "Looks for another group whose practice seems untouchable",
+    "A acusação se estende ao caráter dos veganos": "The accusation extends to the character of vegans",
+    "Da religião afro-brasileira passa-se a todas as religiões": "From Afro-Brazilian religion it moves on to all religions",
+    "Quem questiona o domínio parece questionar Deus": "Whoever questions dominion seems to question God",
+    "A crítica ao consumo é ouvida como crítica à fé": "Criticism of consumption is heard as criticism of the faith",
+    "Se é uma religião, seria uma religião rival": "If it's a religion, it would be a rival religion",
+    "A defesa passa ao exemplo das figuras sagradas": "The defense moves to the example of sacred figures",
+    "A mesma acusação, aplicada a uma religião perseguida": "The same accusation, applied to a persecuted religion",
+    "O veganismo vira parte de um projeto contra os valores tradicionais": "Veganism becomes part of a project against traditional values",
+    "A queixa de arrogância ganha um nome filosófico": "The complaint about arrogance gets a philosophical name",
+    "A seita teria a sua moral de pureza": "The cult would have its morality of purity",
+    "Recusar o natural seria negar a condição humana": "Refusing what is natural would be denying the human condition",
+    "Contra o puritano, a virtude estaria no meio-termo": "Against the puritan, virtue would lie in the middle",
+    "O puritano vira fanático": "The puritan becomes a fanatic",
+    "A pureza seria só uma marca de consumo": "Purity would be just a consumer brand"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "args": {
+    "J19": {
+      "falha_pt": "Trata o agro como um bloco único: o veganismo se opõe à criação e à morte de animais, e não à agricultura, de onde vem a comida vegana",
+      "en": {
+        "frase": "Vegans are against farmers",
+        "formas": [
+          "You want to put farmers out of business",
+          "Without farmers, you wouldn't even have your salad",
+          "Vegans bite the hand that feeds them"
+        ],
+        "falha": "Treats farming as a single block: veganism opposes breeding and killing animals, not crop growing, which is where vegan food comes from"
+      }
+    },
+    "J20": {
+      "falha_pt": "Pertencer não exige comer o mesmo prato, e o desconforto social de quem recusa não se compara ao custo para o animal",
+      "en": {
+        "frase": "I don't want to feel left out; eating together is how you belong",
+        "formas": [
+          "I feel socially out of place",
+          "I want to belong, and eating is one of the things the group does",
+          "I don't want to be the odd one out at the table"
+        ],
+        "falha": "Belonging doesn't require eating the same dish, and the social discomfort of refusing doesn't compare with the cost to the animal"
+      }
+    },
+    "J21": {
+      "falha_pt": "Falácia genética: uma posição moral não fica falsa porque alguém lucra com ela, e o negócio de explorar animais é muito maior",
+      "en": {
+        "frase": "Veganism has become big business",
+        "formas": [
+          "It's just marketing to sell expensive products",
+          "Veganism is a market niche for people with money",
+          "The same meat companies sell the vegan burger"
+        ],
+        "falha": "Genetic fallacy: a moral position doesn't become false because someone profits from it, and the business of exploiting animals is far bigger"
+      }
+    },
+    "J22": {
+      "falha_pt": "O dado da FAO fala de 20% da proteína animal, e não das necessidades de proteína, e a dependência de alguns não justifica o consumo de quem tem escolha",
+      "en": {
+        "frase": "Billions of people depend on fish for protein",
+        "formas": [
+          "3.2 billion people get 20% of their protein from fish",
+          "The least we can do is guarantee a quick, painless slaughter",
+          "A message for oversensitive vegans"
+        ],
+        "falha": "The FAO figure refers to 20% of animal protein, not of protein needs, and the dependence of some doesn't justify consumption by those who have a choice"
+      }
+    },
+    "M13": {
+      "falha_pt": "Espécies e biodiversidade não sentem: o sencientista apoia a preservação quando ela é boa para os indivíduos e só a questiona quando os prejudica",
+      "en": {
+        "frase": "Sentientists are against preserving species and biodiversity",
+        "formas": [
+          "Sentientists want to reduce biodiversity",
+          "Sentientists are in favor of biodiversity loss",
+          "You don't care whether a species goes extinct"
+        ],
+        "falha": "Species and biodiversity don't feel: the sentientist supports preservation when it is good for individuals and questions it only when it harms them"
+      }
+    },
+    "M14": {
+      "falha_pt": "Espantalho: as propostas reais são pesquisa, ajuda pontual e cautela, e reconhecer que há sofrimento num lugar não é propor destruí-lo",
+      "en": {
+        "frase": "Sentientists want to get rid of forests",
+        "formas": [
+          "You want to pave over nature to end suffering",
+          "The only way to end predation is to destroy ecosystems",
+          "That's ecocide with good intentions"
+        ],
+        "falha": "Straw man: the real proposals are research, targeted help and caution, and recognizing that there is suffering in a place isn't proposing to destroy it"
+      }
+    }
+  },
+  "motivos": {
+    "Da importância econômica passa-se à acusação de que o vegano é inimigo do setor": "From economic importance the talk moves to the charge that vegans are the sector's enemy",
+    "A preocupação com os empregos vira \"vocês são contra quem produz\"": "Concern about jobs becomes \"you're against the people who produce\"",
+    "A crítica à pecuária é tratada como agenda contra o agro": "Criticism of animal farming is treated as an agenda against agriculture",
+    "Tenta-se mostrar que a comida vegana vem do agro que desmata": "An attempt to show that vegan food comes from the farming that deforests",
+    "A lavoura é apresentada como tão danosa quanto a criação": "Crops are presented as being as harmful as animal farming",
+    "O debate sobre o setor vira defesa do próprio sustento": "The debate about the sector becomes a defense of one's own livelihood",
+    "Da dificuldade prática passa-se ao medo de ficar de fora do grupo": "From practical difficulty the talk moves to the fear of being left out of the group",
+    "A refeição é vista como o laço que une o grupo": "The meal is seen as the bond that holds the group together",
+    "Se todos comem, quem recusa vira o diferente": "If everyone eats it, whoever refuses becomes the odd one out",
+    "O medo da exclusão vira motivo de desistência": "Fear of exclusion becomes a reason for giving up",
+    "O custo social é apresentado como incapacidade pessoal": "The social cost is presented as personal inability",
+    "O desconforto de destoar vira crítica a quem destoa": "The discomfort of standing out becomes criticism of those who stand out",
+    "O receio passa do grupo para o rótulo": "The worry moves from the group to the label",
+    "Do preço dos produtos passa-se à ideia de que tudo é um negócio": "From the price of the products the talk moves to the idea that it's all a business",
+    "A moda é explicada como estratégia de mercado": "The fad is explained as a market strategy",
+    "O público de maior renda é tomado como prova de que é nicho": "The higher-income public is taken as proof that it's a niche",
+    "Se até o veganismo dá lucro, nenhum consumo seria ético": "If even veganism makes a profit, no consumption would be ethical",
+    "Os produtos que imitam carne viram o alvo": "The products that imitate meat become the target",
+    "A crítica ao mercado vira crítica à saúde dos produtos": "Criticism of the market becomes criticism of the products' healthiness",
+    "A crítica ao negócio costuma vir junto com a crítica ao moralismo": "Criticism of the business often comes together with criticism of moralism",
+    "A necessidade de proteína é apresentada em escala mundial": "The need for protein is presented on a world scale",
+    "A defesa da pesca passa da sustentabilidade para a dependência": "The defense of fishing moves from sustainability to dependence",
+    "Quando se admite que o peixe sente, resta dizer que a pesca é necessária": "Once it's admitted that fish feel, what's left is to say fishing is necessary",
+    "O abate rápido é oferecido como tudo o que se deve aos peixes": "Quick slaughter is offered as all that is owed to fish",
+    "As comunidades que dependem da pesca viram o exemplo central": "Communities that depend on fishing become the central example",
+    "Da proteína passa-se ao modo de vida de quem pesca": "From protein the talk moves to the way of life of those who fish",
+    "\"Sensíveis demais\" vira acusação de projetar sentimentos": "\"Oversensitive\" becomes a charge of projecting feelings",
+    "Quem separa equilíbrio de bem-estar é acusado de ser contra a conservação": "Whoever separates balance from wellbeing is accused of being against conservation",
+    "Se o indivíduo vem primeiro, conclui-se que a espécie não importa nada": "If the individual comes first, the conclusion drawn is that the species doesn't matter at all",
+    "A pauta dos animais selvagens é vista como rival da pauta ambiental": "The wild animal cause is seen as a rival of the environmental cause",
+    "A acusação cresce: de indiferentes à biodiversidade a destruidores da natureza": "The charge grows: from indifferent to biodiversity to destroyers of nature",
+    "A conservação é usada para justificar matar indivíduos": "Conservation is used to justify killing individuals",
+    "A preservação da espécie é usada para justificar o cativeiro": "Preserving the species is used to justify captivity",
+    "De indiferentes à biodiversidade passa-se a destruidores da natureza": "From indifferent to biodiversity the charge moves to destroyers of nature",
+    "Quem não aceita o sofrimento natural é acusado de rejeitar a própria natureza": "Whoever doesn't accept natural suffering is accused of rejecting nature itself",
+    "A provocação sobre os predadores é levada até a destruição dos ecossistemas": "The provocation about predators is pushed all the way to destroying ecosystems",
+    "Do cenário extremo volta-se ao risco de qualquer intervenção": "From the extreme scenario the talk returns to the risk of any intervention",
+    "Descartada a caricatura, diz-se que nada pode ser feito": "With the caricature set aside, the claim is that nothing can be done",
+    "A crítica passa a ser a arrogância de intervir": "The criticism becomes the arrogance of intervening",
+    "As propostas reais são tratadas como fantasia": "The real proposals are treated as fantasy"
+  }
+}

@@ -49,6 +49,7 @@ def _data_fonte(k):
     return datetime.date.fromtimestamp(max(os.path.getmtime(a) for a in arqs)).isoformat() if arqs else ATUALIZADO
 LASTMOD, ALTERNA = {}, {}
 EXT = 'target="_blank" rel="noopener"'
+PT_ONLY = set()  # páginas ainda sem versão em inglês: sem botão EN, sem hreflang e fora do site em inglês (nenhuma por enquanto)
 IND_AVISO = ('Este é um argumento indireto: discute saúde, ambiente, economia, praticidade ou quem defende o veganismo, e não se os animais merecem respeito. '
     'Muitos ativistas contestam o uso desse tipo de argumento na defesa dos animais, porque ele escapa do que importa. '
     'Outros movimentos sociais não fazem isso: ninguém defende os direitos de pessoas discriminadas dizendo que tratá-las com justiça faz bem ao meio ambiente. '
@@ -73,18 +74,36 @@ IND_EXEMPLO = {
     'L': 'Se a questão dependesse de quem defende os animais, bastaria os veganos serem simpáticos e coerentes para o argumento valer, ou chatos e incoerentes para deixar de valer. Mas os animais sofrem do mesmo jeito, seja quem for o mensageiro.',
 }
 def aviso_ind(fc, rot, pre='../'):
+    """Aviso no alto de cada capítulo e de cada família da Parte IND. O exemplo muda com a família (IND_EXEMPLO)."""
+    fund = f'{pre}alem/fundamentos.html'
     return (f'<aside class="aviso-ind"><span>{rot}</span>'
-        f'<p>Este argumento discute {IND_TEMA[fc]}, e não se os animais merecem respeito. Muitos ativistas contestam esse tipo de argumento na defesa dos animais, porque ele escapa do que importa: '
-        'ninguém defende os direitos de pessoas discriminadas dizendo que tratá-las com justiça faz bem ao meio ambiente.</p>'
-        f'<p><strong>Por que não é bom usá-lo, ou por que sempre complementá-lo com um argumento ético:</strong> {IND_EXEMPLO[fc]}</p>'
-        '<p>Usados para justificar a exploração, argumentos como este costumam errar duas vezes. Erram nos fatos, que muitas vezes chegam distorcidos. '
-        'E erram na moral, porque saltam do que <em>é</em> para o que <em>deve ser</em>: mesmo um benefício real não mostraria que é justo fazer alguém sofrer e morrer para obtê-lo.</p>'
-        f'<p>Por isso, mostre os fatos e corrija o que estiver errado, mas volte sempre ao que importa: o respeito aos animais e a justiça para com eles. <a href="{pre}comece-aqui.html#indiretos">Entenda por quê</a></p></aside>')
+        + L(f'<p><strong>Este é um argumento indireto, e a resposta a ele também é indireta.</strong> Ele discute {IND_TEMA[fc]}, e não se os animais merecem respeito. '
+            f'A questão de fundo da defesa dos animais corre em paralelo a esta: é a senciência, a capacidade que os animais têm de ser prejudicados e beneficiados (<a href="{fund}">veja o que sustenta a ética animal</a>).</p>'
+            '<p>Muitos ativistas contestam o uso desse tipo de argumento na defesa dos animais, porque ele escapa do que importa. Outros movimentos não se defendem assim: '
+            'ninguém sustenta o antirracismo dizendo que ele faz bem ao meio ambiente, à saúde dos brancos ou à economia. O dano causado às vítimas já é a razão.</p>',
+            f'<p><strong>This is an indirect argument, and the answer to it is indirect too.</strong> It is about {IND_TEMA[fc]}, not about whether animals deserve respect. '
+            f'The underlying question in the defense of animals runs in parallel to this one: it is sentience, the capacity animals have to be harmed and benefited (<a href="{fund}">see what supports animal ethics</a>).</p>'
+            '<p>Many activists question using this kind of argument to defend animals, because it sidesteps what matters. Other movements are not defended this way: '
+            'no one makes the case for anti-racism by saying it is good for the environment, for the health of white people or for the economy. The harm done to the victims is already the reason.</p>')
+        + f'<p><strong>Por que não é bom usá-lo, ou por que sempre complementá-lo com um argumento ético:</strong> {IND_EXEMPLO[fc]}</p>'
+        + L('<p>Argumentos indiretos também não levam, sozinhos, ao veganismo. Muitas vezes sustentam, no máximo, o vegetarianismo, a redução do consumo ou o ambientalismo, '
+            'que aceitam os usos de animais considerados saudáveis, baratos ou de baixo impacto.</p>'
+            '<p>Por isso, discuta os fatos como fatos: corrija o que estiver errado e reconheça o que for verdade. Mas não trate a resposta como fundamento moral, '
+            'porque do que <em>é</em> não se chega, sozinho, ao que <em>deve ser</em>: mesmo um benefício real não mostraria que é justo fazer alguém sofrer e morrer para obtê-lo. '
+            'Para responder de verdade, mostre que o debate moral é outro: o especismo e o que acontece com os animais como indivíduos. ',
+            '<p>Indirect arguments also do not lead to veganism on their own. Often they support, at most, vegetarianism, eating less or environmentalism, '
+            'which accept the uses of animals seen as healthy, cheap or low-impact.</p>'
+            '<p>So discuss the facts as facts: correct what is wrong and acknowledge what is true. But do not treat the answer as a moral foundation, '
+            'because what <em>is</em> does not, on its own, get you to what <em>ought to be</em>: even a real benefit would not show it is just to make someone suffer and die to obtain it. '
+            'To really answer, show that the moral debate is a different one: speciesism and what happens to animals as individuals. ')
+        + f'<a href="{pre}comece-aqui.html#indiretos">Entenda por quê</a></p></aside>')
 IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é certo explorar os animais. Discutem saúde, ambiente, economia, praticidade ou a credibilidade de quem defende o veganismo. '
     'Muitos ativistas e filósofos dos direitos animais contestam o uso desse tipo de argumento na defesa dos animais, porque ele escapa do que é importante: o respeito aos próprios animais.</p>'
-    '<p>Outros movimentos sociais não se apoiam em argumentos indiretos para defender humanos. Quem luta pelos direitos de minorias e de pessoas prejudicadas não precisa provar que tratá-las com justiça é bom para o meio ambiente, para a saúde ou para a economia: '
-    'o fato de serem prejudicadas já basta como razão. Mesmo assim, o veganismo é muitas vezes defendido com argumentos de saúde ou de ambiente, '
+    '<p>Outros movimentos sociais não se apoiam em argumentos indiretos para defender humanos. Ninguém sustenta o antirracismo dizendo que ele faz bem ao meio ambiente, à saúde dos brancos ou à economia, '
+    'e quem luta pelos direitos de minorias e de pessoas prejudicadas não precisa provar nada disso: o fato de serem prejudicadas já basta como razão. Mesmo assim, o veganismo é muitas vezes defendido com argumentos de saúde ou de ambiente, '
     'como se o fim da exploração animal não fosse razão suficiente por si.</p>'
+    '<p>O argumento indireto corre em paralelo à questão de fundo, que é a senciência: a capacidade dos animais de serem prejudicados e beneficiados (<a href="alem/fundamentos.html">veja o que sustenta a ética animal</a>). '
+    'Por isso ele também não leva, sozinho, ao veganismo. Muitas vezes sustenta, no máximo, o vegetarianismo, a redução do consumo ou o ambientalismo, que aceitam os usos de animais considerados saudáveis, baratos ou de baixo impacto.</p>'
     '<p>Os argumentos indiretos são úteis no plano dos fatos: mostram que uma objeção prática é falsa, que a vida vegana é saudável e possível, que a pecuária causa danos. '
     'Mas não justificam, sozinhos, a moralidade de respeitar os animais. E podem até puxar para o lado oposto: couro "sustentável", caça "sustentável", carne orgânica, criação de insetos e '
     'animais geneticamente modificados são defendidos em nome do ambiente e mantêm ou aumentam a exploração (<a href="argumentos/h13.html">H13</a>). '
@@ -156,14 +175,16 @@ for velho, (novo, falha) in UNIDOS.items():
     FAMILIAS[v['fam']]['n'] -= 1
 # Famílias acrescentadas depois do doc original. M: o critério da senciência além da exploração (animais selvagens, novas mentes, futuro).
 FAMILIAS_NOVAS = [
-    ('M', 'DIR', 'Animais selvagens, novas mentes e o futuro', 'Devemos ajudar, e não só deixar de prejudicar?', 'Moral (viés de omissão e apelo à natureza)'),
     ('N', 'IND', 'Ex-veganos: por que desisti', 'Ter desistido muda o que é certo?', 'Lógico e moral (da experiência pessoal à conclusão moral)'),
+    ('M', 'DIR', 'Animais selvagens, novas mentes e o futuro', 'Devemos ajudar, e não só deixar de prejudicar?', 'Moral (viés de omissão e apelo à natureza)'),
 ]
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'J3': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
-for c, fs in FORMAS_EXTRA.items(): ARGS[c]['formas'] += fs
+FORMAS_EXTRA = {'A13': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E2': ['Temos que respeitar as diferentes visões'], 'A19': ['Veganos tratam animais como humanos'], 'D3': ['Veganos querem impor o veganismo aos indígenas'], 'C3': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'M12': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'M10': ['Sencientistas querem brincar de Deus'], 'L6': ['Veganos preferem animais a pessoas'], 'J3': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+_feitas = set()
+for c, fs in FORMAS_EXTRA.items():
+    if c in ARGS: ARGS[c]['formas'] += fs; _feitas.add(c)
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
     ('A21', 'Eu respeito os animais, mas os humanos vêm primeiro', ['Humanos têm dignidade, animais não', 'A vida humana vale mais', 'Animais importam, mas menos'], 'Um status especial que ninguém explica e que não passaria no véu da ignorância: o peso deve depender do tamanho do dano, não da espécie'),
@@ -188,7 +209,7 @@ NOVOS = [
     ('N2', 'Deixei de ser vegano porque estou em outro momento da vida', ['Era uma fase', 'Hoje tenho outras prioridades'], 'A fase da vida muda o que é fácil, e não o que acontece com os animais; uma fase difícil pede ajustes, e não desistir'),
     ('N3', 'Ser vegano me limitava comer na casa dos meus familiares', ['Na casa da minha avó, não tinha o que comer', 'Minha mãe ficava magoada quando eu recusava a comida'], 'O custo social é real, mas tem saídas: conversar antes, levar um prato para dividir, comer o que já é vegano na mesa'),
     ('N4', 'Ser vegano é difícil para quem viaja muito', ['Na estrada, não tem o que comer', 'Em viagem de trabalho, não dá para escolher'], 'A dificuldade de algumas refeições justifica, no máximo, uma exceção real, e não abandonar o veganismo em casa'),
-    ('N5', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
+    ('E15', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
     ('N6', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
     ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
     ('L15', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
@@ -208,10 +229,15 @@ NOVOS = [
     ('M11', 'Quem ainda não nasceu não importa', ['Seres futuros são só possibilidades', 'O futuro que se resolva'], 'Quem nascer vai sentir o que deixarmos: é por isso que enterrar lixo tóxico é errado, mesmo que as vítimas ainda não existam'),
     ('M12', 'Isso é ficção científica, temos problemas reais agora', ['Riscos de sofrimento futuro são paranoia', 'Primeiro os problemas de hoje'], 'Um risco incerto mas imenso pode merecer atenção, e muito do que reduz sofrimento futuro, como ampliar o círculo moral, também ajuda agora'),
 ]
+import novos as _novos_lotes  # lotes de 2026-11-13: dados em data/novos/*.json
+NOVOS += _novos_lotes.PT
 for c, frase, formas, falha in NOVOS:
     d = dict(c=c, frase=frase, formas=formas, falha=falha, fam=c[0], slug=c.lower())
     ARGS[c] = d; FAMILIAS[c[0]]['args'].append(d); FAMILIAS[c[0]]['n'] += 1
-ORDEM = sorted(ARGS, key=lambda c: (c[0], int(c[1:])))
+_FAM_ORD = list(FAMILIAS)  # a ordem das famílias no site: N (ex-veganos) vem antes de M (animais selvagens e futuro)
+for c, fs in FORMAS_EXTRA.items():  # formas de argumentos acrescentados depois (família M, N, lotes novos)
+    if c not in _feitas: ARGS[c]['formas'] += fs
+ORDEM = sorted(ARGS, key=lambda c: (_FAM_ORD.index(c[0]), int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
 
@@ -292,6 +318,7 @@ RAIZES = ['A10', 'J11', 'E12']
 def limpa(s):
     """Tira do texto público as notas de rascunho do doc original."""
     s = re.sub(r'Formato autor-data provisório[^.]*\.\s*', '', s)
+    s = re.sub(r'Provisional author-date format[^.]*\.\s*', '', s)
     s = s.replace('Os links indicam as fontes conferidas na redação deste capítulo.', 'Os links levam às fontes conferidas na redação deste capítulo.')
     s = re.sub(r'\b[Cc]itad[oa]s? de memória(, sem consulta à fonte)?', 'fonte ainda não conferida', s)
     s = s.replace(' (Documento do projeto.)', '').replace('. (Documento do projeto.)', '.')
@@ -558,13 +585,14 @@ TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
 MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
         ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
-        ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
+        ('Aprofundar', [('glossario.html', 'Glossário'), ('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
                         ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
         ('biblioteca.html', 'Biblioteca'), ('sobre.html', L('Sobre', 'About'))]
 def monta_menu(pre, atual):
     h = ''
     for u, t in MENU:
         if isinstance(t, list):
+            t = [x for x in t if not (EN and x[0] in PT_ONLY)]
             dentro = any(x == atual for x, _ in t)
             itens = ''.join(f'<a href="{pre}{x}"{" aria-current=page" if x == atual else ""}>{e(n)}</a>' for x, n in t)
             h += f'<details class="sub"><summary{" class=aqui" if dentro else ""}>{e(u)}</summary><div class="sub-l">{itens}</div></details>'
@@ -607,14 +635,14 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
     u_pt, u_en = url_lingua(k, 'pt'), url_lingua(k, 'en')
     outra = u_pt if EN else u_en
     LASTMOD[path], ALTERNA[path] = _data_fonte(k), (u_pt, u_en)
-    alterna = '' if not BILINGUE else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
+    alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     full = NOME if home else f'{title} | {NOME}'
     if len(full) > 60 and not home: full = title
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha) + '\n'
     base = '<base href="/"/>\n' if erro else ''
     menu = monta_menu(pre, atual)
     l = lambda u, t: f'<li><a href="{pre}{u}">{e(t)}</a></li>'
-    idioma = '' if erro or not BILINGUE else f'<a class="idioma" href="{outra}" hreflang="{"pt-BR" if EN else "en"}" lang="{"pt-BR" if EN else "en"}" title="{"Ler em português" if EN else "Read in English"}">{"PT" if EN else "EN"}</a>' + chr(10)
+    idioma = '' if erro or not BILINGUE or path in PT_ONLY else f'<a class="idioma" href="{outra}" hreflang="{"pt-BR" if EN else "en"}" lang="{"pt-BR" if EN else "en"}" title="{"Ler em português" if EN else "Read in English"}">{"PT" if EN else "EN"}</a>' + chr(10)
     doc = f'''<!doctype html>
 <html lang="{"en" if EN else "pt-BR"}">
 <head>
@@ -659,7 +687,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=()):
 <footer class="rodape"><div class="wrap rodape-in">
 <div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
 <div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 14 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
-<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
+<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('glossario.html', 'Glossário')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 </body></html>
@@ -845,6 +873,8 @@ def paginas_politicas():
         pp = lambda x, r: f'<a href="{x["s"]}.html"><small>{r}</small>{e(x["t"])}</a>'
         art = ('<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
                f'<div class="troca"><div class="nao"><p class="ti">A melhor réplica</p><p>{liga(e(t["replica"]), {"pre": "../"})}</p></div><div class="sim"><p class="ti">A resposta</p><p>{liga(e(t["resposta"]), {"pre": "../"})}</p></div></div>'
+               + ''.join(f'<h2>{e(ti)}</h2>' + ''.join(f'<p>{liga(e(x), {"pre": "../"})}</p>' for x in ps) for ti, ps in t.get('mais', []))
+               + (f'<h2>{L("Quem defende os animais a partir desta teoria", "Who defends animals from within this theory")}</h2><p>{L("Autores, ativistas e grupos que partem desta teoria e mostram por que ela precisa incluir os animais e os demais seres sencientes.", "Authors, activists and groups who start from this theory and show why it has to include animals and other sentient beings.")}</p><ul class="pol-q">' + ''.join(f'<li><strong>{e(n)}:</strong> {e(d)}</li>' for n, d in t['nomes']) + '</ul>' if t.get('nomes') else '') +
                f'<h2>Veja também</h2><div class="nos">{nos(t["liga"])}</div>' + lista_fontes(t['fontes']) +
                '<nav class="pass" aria-label="Outras teorias">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próxima') if prox else '') + '</nav>')
         pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas</a> / {e(t["t"])}</p>'
@@ -1061,17 +1091,17 @@ def pagina_biblioteca():
     """Livros e sites para aprender a argumentar pelos animais, um card por livro (dados em tools/biblioteca.py)."""
     tons = list(CORES.values())
     cards = ''
-    for i, b in enumerate(sorted(biblioteca.LIVROS, key=lambda x: -x['ano'])):  # do mais novo para o mais antigo
+    for i, b in enumerate(sorted(biblioteca.LIVROS, key=lambda x: x['t'].casefold())):  # ordem alfabética
         meta = ' · '.join(x for x in (b['a'], str(b['ano']), b['ed']) if x)
         st = f'<p class="bib-st">{e(b["st"])}</p>' if b['st'] else ''
         cards += (f'<article class="bib-card" style="--c:{tons[i % len(tons)]}" data-foco="{b["foco"]}" data-lingua="{b["lingua"]}">'
                   f'<div class="bib-capa"><span class="bib-lingua">{b["lingua"]}</span><h3>{e(b["t"])}</h3>{st}</div>'
                   f'<div class="bib-corpo"><p class="bib-meta">{e(meta)}</p><p class="bib-foco">{e(biblioteca.FOCOS[b["foco"]])}</p><p>{e(b["d"])}</p>'
-                  f'<a class="btn peq" href="{e(b["u"])}" {EXT}>{e(b["ul"])} ↗</a></div></article>')
+                  + (f'<a class="btn peq" href="{e(b["u"])}" {EXT}>{e(b["ul"])} ↗</a>' if b['u'] else '<span class="selo">Link em breve</span>') + '</div></article>')
     chips = ''.join(f'<button class="chip" type="button" data-g="foco" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{e(t)}</button>' for v, t in [('', 'Todos')] + list(biblioteca.FOCOS.items()))
     chips += ''.join(f'<button class="chip" type="button" data-g="lingua" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{t}</button>' for v, t in (('', 'Qualquer idioma'), ('PT', 'Em português'), ('EN', 'Em inglês')))
-    sites = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in biblioteca.SITES)
-    orgs = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in biblioteca.ORGS)
+    sites = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in sorted(biblioteca.SITES, key=lambda x: x[0].casefold()))
+    orgs = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in sorted(biblioteca.ORGS, key=lambda x: x[0].casefold()))
     corpo = cabeca('<a href="./">Início</a>', 'Biblioteca', 'Livros para aprender a argumentar pelos animais: respostas às objeções mais comuns, os fundamentos éticos e a psicologia que sustenta o hábito de comer animais.') + f'''<section class="secao"><div class="wrap">
 <div class="filtros bib-filtros">{chips}<span id="bib-n" aria-live="polite">{len(biblioteca.LIVROS)} {L("livros", "books")}</span></div>
 <div class="bib-grade">{cards}</div>
@@ -1080,6 +1110,48 @@ def pagina_biblioteca():
 <p class="fino" style="margin-top:22px">A lista partiu da seleção da <a href="https://vegpedia.com/2024/07/24/livros-e-sites-para-aprender-a-argumentar-a-favor-dos-animais" {EXT}>Vegpedia</a> e foi completada com outros livros focados em rebater argumentos antiveganos e especistas. Cada título foi conferido em catálogo, editora ou resenha.</p>
 </div></section>'''
     page('biblioteca.html', 'Biblioteca', L('Livros e sites para aprender a argumentar pelos animais e rebater argumentos antiveganos e especistas, em português e em inglês.', 'Books and websites for learning to argue for animals and answer anti-vegan and speciesist arguments, in English and Portuguese.'), corpo, 'biblioteca.html', 'CollectionPage')
+
+def pagina_glossario():
+    """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py)."""
+    import glossario, unicodedata
+    if EN: glossario.traduz()
+    inicial = lambda t: unicodedata.normalize('NFD', t[0].upper()).encode('ascii', 'ignore').decode() or '#'
+    em = lambda s: re.sub(r'\*([^*]+)\*', r'<em></em>', e(s))
+    secoes = dict(glossario.SECOES)
+    usados, itens, letras = set(), '', []
+    for v in glossario.VERBETES:
+        sl = slug(v['termo']) or 'termo'
+        while sl in usados: sl += '-2'
+        usados.add(sl); v['slug'] = sl
+        l = inicial(v['termo'])
+        if l not in letras:
+            if letras: itens += '</div>'
+            letras.append(l); itens += f'<div class="glos-letra" id="letra-{l}"><h2>{l}</h2>'
+        links = ''.join(f'<li><a href="{e(u)}" {EXT}>{e(re.sub(r"^https?://(www\.)?", "", u).split("/")[0])}</a></li>' for u in v['links'])
+        itens += (f'<article class="glos-item" id="{sl}" data-sec="{v["sec"]}"><h3><a href="#{sl}">{e(v["termo"])}</a></h3><p class="glos-def">{em(v["def"][:1].upper() + v["def"][1:])}</p>'
+                  + (f'<p class="glos-com">{em(v["com"])}</p>' if v['com'] else '') + (f'<ul class="glos-links">{links}</ul>' if links else '')
+                  + f'<p class="glos-sec">{e(secoes[v["sec"]])}</p></article>')
+    itens += '</div>'
+    ops = ''.join(f'<option value="{n}">{e(t)}</option>' for n, t in glossario.SECOES)
+    az = ''.join(f'<a href="#letra-{l}">{l}</a>' for l in letras)
+    corpo = cabeca('<a href="./">Início</a>', L('Glossário', 'Glossary'), L(f'{len(glossario.VERBETES)} termos da ética animal, do veganismo e do debate sobre a exploração dos animais, em ordem alfabética. Procure pelo termo ou filtre por tema.', f'{len(glossario.VERBETES)} terms from animal ethics, veganism and the debate on animal exploitation, in alphabetical order. Search for a term or filter by topic.')) + f'''<section class="secao"><div class="wrap estreito">
+<div class="filtros glos-filtros"><input id="gq" type="search" placeholder="{L("Procurar um termo ou uma ideia", "Search for a term or an idea")}" aria-label="{L("Procurar no glossário", "Search the glossary")}" autocomplete="off"/><label class="so-leitor" for="gs">{L("Tema", "Topic")}</label><select id="gs" class="sel"><option value="">{L("Todos os temas", "All topics")}</option>{ops}</select><span id="gn" aria-live="polite">{len(glossario.VERBETES)} {L("termos", "terms")}</span></div>
+<nav class="glos-az" aria-label="{L("Ir para a letra", "Jump to letter")}">{az}</nav>
+<div id="glos">{itens}</div>
+<p id="gvazio" class="fino" hidden>{L("Nenhum termo encontrado. Tente outra palavra ou escolha 'Todos os temas'.", "No terms found. Try another word or choose 'All topics'.")}</p>
+<p class="fino" style="margin-top:26px">{L("Base: rascunho do Dicionário-Guia de Ética e Defesa Animal, da Vegpedia, revisto para este guia. As definições resumem o uso do termo, e o texto em itálico mostra o que ele significa para o debate sobre os animais. Falta algum termo? Avise e ele entra.", "Based on the draft Dictionary-Guide to Animal Ethics and Advocacy from Vegpedia, revised for this guide. The definitions summarize how the term is used, and the italic text shows what it means for the debate about animals. Missing a term? Let us know and it will be added.")}</p>
+</div></section>
+<script>(function(){{var q=document.getElementById("gq"),s=document.getElementById("gs"),n=document.getElementById("gn"),v=document.getElementById("gvazio");
+var itens=[].slice.call(document.querySelectorAll(".glos-item")),letras=[].slice.call(document.querySelectorAll(".glos-letra")),az=[].slice.call(document.querySelectorAll(".glos-az a"));
+function norm(t){{return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}}
+var txt=itens.map(function(i){{return norm(i.textContent)}});
+function filtra(){{var t=norm(q.value.trim()),sec=s.value,c=0;
+itens.forEach(function(i,k){{var ok=(!sec||i.dataset.sec===sec)&&(!t||txt[k].indexOf(t)>-1);i.hidden=!ok;if(ok)c++}});
+letras.forEach(function(l,k){{var tem=!!l.querySelector(".glos-item:not([hidden])");l.hidden=!tem;az[k].classList.toggle("off",!tem)}});
+n.textContent=c+(c===1?" {L("termo", "term")}":" {L("termos", "terms")}");v.hidden=c>0}}
+q.addEventListener("input",filtra);s.addEventListener("change",filtra);}})();</script>'''
+    page('glossario.html', L('Glossário', 'Glossary'), L(f'Glossário com {len(glossario.VERBETES)} termos da ética animal, do veganismo e do antiespecismo, com busca e filtro por tema.', f'Glossary of {len(glossario.VERBETES)} terms from animal ethics, veganism and antispeciesism, with search and a topic filter.'), corpo, 'glossario.html', 'CollectionPage')
+    for v in glossario.VERBETES: BUSCA.append(dict(t=v['termo'], s=L('Glossário: ', 'Glossary: ') + v['def'][:150], u=f'glossario.html#{v["slug"]}', k=v['sec'] and secoes[v['sec']]))
 
 def nao_achou():
     corpo = cabeca('<a href="./">Início</a>', 'Página não encontrada', 'Tente a busca ou volte para a lista de argumentos.') + '<section class="secao"><div class="wrap"><a class="btn" href="index.html#argumentos">Ver os argumentos</a></div></section>'
@@ -1122,6 +1194,25 @@ VIESES_EXTRA = [
     ('Efeito nocebo', 'A expectativa de que algo fará mal produz sintomas reais.', []),
     ('Viés de saliência', 'Dar peso ao que chama atenção, como a distância percorrida, e não ao que mais pesa.', []),
     ('Viés do meio-termo', 'Achar que a posição do meio é sempre a mais sensata.', []),
+    ('Lacuna de empatia', 'Sentir menos empatia por um animal quanto mais distante ele é de nós na evolução.', []),
+    ('Tamanhismo', 'Dar menos importância a um animal por ele ser pequeno.', []),
+    ('Inteligentismo', 'Dar menos importância a um animal por ele ser considerado pouco inteligente.', []),
+    ('Substratismo', 'Dar menos importância a um ser por causa do material de que ele é feito, como no caso de seres não orgânicos.', ['Carbonismo']),
+    ('Viés de proporção', 'Julgar uma ajuda pela fração do problema que ela resolve, e não pelo número de indivíduos ajudados.', []),
+    ('Hipótese do mundo justo', 'Acreditar que o mundo é justo e que, por isso, quem sofre recebe o que lhe cabe.', []),
+    ('Negligência da probabilidade', 'Decidir sob incerteza sem pesar a probabilidade, tratando um risco como certo ou como inexistente.', []),
+    ('Efeito de ambiguidade', 'Evitar opções cuja chance de dar certo é desconhecida, mesmo quando podem ser as melhores.', ['Aversão à ambiguidade']),
+    ('Viés de avaliabilidade', 'Dar mais peso ao que é fácil de medir do que ao que mais importa.', ['Viés de avaliação']),
+    ('Negligência da duração', 'Avaliar uma experiência pelos momentos marcantes e pelo fim, sem contar quanto tempo ela durou.', []),
+    ('Viés pró-inovação', 'Superestimar o que uma inovação vai resolver e não ver seus limites.', []),
+    ('Digitalização de crenças', 'Tratar uma probabilidade como se fosse zero ou um, em vez de levar a incerteza em conta.', []),
+    ('Perseverança da crença', 'Manter uma crença mesmo depois de conhecer evidências contra ela.', ['Viés do conservadorismo', 'Conservadorismo das crenças', 'Reflexo de Semmelweis']),
+    ('Efeito de influência contínua', 'Uma informação já corrigida continua a influenciar o que a pessoa pensa.', []),
+    ('Viés de soma zero', 'Ver uma situação como disputa em que o ganho de um é a perda de outro, mesmo quando não é.', []),
+    ('Cascata de disponibilidade', 'Uma ideia ganha crédito por ser muito repetida em público, e quanto mais crédito ganha, mais é repetida.', []),
+    ('Correlação ilusória', 'Ver ligação entre duas coisas que só aconteceram juntas.', []),
+    ('Efeito de enquadramento', 'A mesma informação leva a julgamentos diferentes conforme o modo como é apresentada.', []),
+    ('Ilusão de profundidade explicativa', 'Achar que se entende como algo funciona bem melhor do que de fato se entende.', []),
 ]
 ALIAS_CAT = {'Dissonância cognitiva (paradoxo da carne)': ['Paradoxo da carne', 'Dissonância cognitiva'], 'Viés de grupo (ingroup)': ['Viés de grupo', 'Identidade de grupo'],
              'Viés de otimismo e excepcionalismo': ['Viés de otimismo'], 'Heurística do afeto': ['Heurística afetiva'], 'Reatância psicológica': [], 'Viés do status quo': ['Viés de status quo'],
@@ -1153,7 +1244,7 @@ if EN: en.aplica(globals())
 for _a in ARGS.values(): _a['frase'] = re.sub(r'(?<!\.)\.$', '', _a['frase'].strip())
 
 # ---------- montagem ----------
-inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()
+inicio(); comece(); familias(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); pagina_glossario(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()
 indice_erro('falacias.html', L('Falácias', 'Fallacies'), 'Falácia', L(f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', f'{len(FALACIAS)} logical errors that explain much of the catalogue. Click a code to see how the fallacy shows up in the argument.'), FALACIAS, 'Em uma frase')
 indice_erro('vieses.html', L('Vieses', 'Biases'), 'Viés', L(f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', f'{len(VIESES)} psychological mechanisms that make these arguments convincing, even when they do not hold up.'), VIESES, 'Mecanismo')
 for i, c in enumerate(ORDEM):
@@ -1201,7 +1292,7 @@ escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, sta
 escreve('robots.txt', f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
 def _alt(p):
     """Versões do mesmo conteúdo nos dois idiomas, também no sitemap (além do hreflang no head de cada página)."""
-    if not BILINGUE: return ''
+    if not BILINGUE or p in PT_ONLY: return ''
     u_pt, u_en = ALTERNA[p]
     return f'<xhtml:link rel="alternate" hreflang="pt-BR" href="{u_pt}"/><xhtml:link rel="alternate" hreflang="en" href="{u_en}"/><xhtml:link rel="alternate" hreflang="x-default" href="{u_pt}"/>'
 urls = ''.join(f'\n<url><loc>{SITE}/{"" if p == "index.html" else p}</loc><lastmod>{LASTMOD.get(p, ATUALIZADO)}</lastmod>{_alt(p)}</url>' for p in PAGINAS if p != '404.html')
@@ -1209,6 +1300,6 @@ escreve('sitemap.xml', f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="
 if EN:
     escreve('CNAME', 'fortheanimals.biblioverse.org\n'); escreve('.nojekyll', '')
     escreve('llms.txt', en.llms(SITE, NOME, DESCRICAO))
-else: escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Debate simulado]({SITE}/debate.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n')
+else: escreve('llms.txt', f'# {NOME}\n\n> {DESCRICAO}\n\n## Principais\n- [Comece aqui]({SITE}/comece-aqui.html)\n- [Todos os argumentos]({SITE}/#argumentos)\n- [Treinar respostas]({SITE}/treino.html)\n- [Debate simulado]({SITE}/debate.html)\n- [Argumentos ruins de veganos: pare de usar ou use melhor]({SITE}/argumentos-ruins.html)\n- [Além do veganismo]({SITE}/alem-do-veganismo.html)\n- [Famílias]({SITE}/familias.html)\n- [O raciocínio antivegano]({SITE}/raciocinio.html)\n- [Mapa de conexões]({SITE}/mapa.html)\n- [Falácias]({SITE}/falacias.html)\n- [Vieses]({SITE}/vieses.html)\n- [Glossário]({SITE}/glossario.html)\n')
 print(len(PAGINAS), 'páginas geradas' if not EN else 'pages built in English')
 if EN: en.relatorio(OUT)

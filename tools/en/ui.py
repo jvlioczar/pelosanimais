@@ -3,6 +3,8 @@ Hrefs inside the Portuguese side are written as in build.py (Portuguese paths, a
 JS adds pairs found only in assets/*.js. Longer strings are applied first."""
 
 UI = [
+ ('>Glossário</a>', '>Glossary</a>'),
+ ('Link em breve', 'Link coming soon'),
  # ---------- chrome ----------
  ('Pular para o conteúdo', 'Skip to content'),
  ('aria-label="Principal"', 'aria-label="Main"'),

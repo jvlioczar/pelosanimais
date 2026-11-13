@@ -1,0 +1,93 @@
+{
+  "args": {
+    "C12": {
+      "falha_pt": "Falácia do nirvana e apelo à natureza: de \"não dá para zerar o dano\" não se segue \"tanto faz quanto dano causo\", e \"consciente\" descreve quem mata, não o que acontece com quem morre",
+      "en": {
+        "frase": "We are animals and part of the ecosystem; no one lives without impact",
+        "formas": [
+          "Thinking we're outside the cycle is an illusion",
+          "What matters is taking part in the cycle consciously",
+          "Every living thing feeds on another"
+        ],
+        "falha": "Nirvana fallacy and appeal to nature: \"harm can't be brought to zero\" doesn't mean \"it makes no difference how much harm I cause\", and \"conscious\" describes the one who kills, not what happens to the one who dies"
+      }
+    },
+    "D13": {
+      "falha_pt": "Confunde honrar as pessoas com repetir o que fizeram: cada geração revê práticas das anteriores, e julgar uma prática não é condenar quem a seguiu",
+      "en": {
+        "frase": "I don't want to dishonor my parents and my ancestors",
+        "formas": [
+          "I have to respect my ancestors",
+          "Turning down my mother's food is disrespectful",
+          "My family has always lived this way; who am I to say they were wrong?"
+        ],
+        "falha": "Confuses honoring people with repeating what they did: every generation revises earlier practices, and judging a practice is not condemning those who followed it"
+      }
+    },
+    "E16": {
+      "falha_pt": "Apelo à autoridade e, em segunda mão, à maioria: a IA repete os textos com que foi treinada e é ajustada para não tomar partido; abster-se não é concluir que não é errado",
+      "en": {
+        "frase": "AIs say that not being vegan isn't wrong",
+        "formas": [
+          "I asked ChatGPT and it said eating meat is a personal choice",
+          "Even artificial intelligence disagrees with you",
+          "AI is neutral, and it doesn't tell anyone to go vegan"
+        ],
+        "falha": "Appeal to authority and, at second hand, to the majority: AI repeats the texts it was trained on and is tuned not to take sides; abstaining is not concluding that it isn't wrong"
+      }
+    },
+    "H15": {
+      "falha_pt": "Falsa dicotomia: dá para escolher plantas e cuidar de como são cultivadas; o tipo de alimento pesa mais que o modo de produção, e nada disso responde ao que acontece com o animal",
+      "en": {
+        "frase": "What matters is how food is grown, not whether it comes from animals",
+        "formas": [
+          "The focus should be the farming system, not the diet",
+          "What counts is the soil and the model of agriculture you fund",
+          "I'd rather have meat from a good farmer than soy from a monoculture"
+        ],
+        "falha": "False dichotomy: you can choose plants and care about how they are grown; the type of food weighs more than the production method, and none of it answers what happens to the animal"
+      }
+    },
+    "H16": {
+      "falha_pt": "A maior parte da soja e boa parte dos grãos alimentam animais de criação; comer plantas reduz a área agrícola, e comparar a pior lavoura com a melhor pecuária é injusto",
+      "en": {
+        "frase": "Plant monoculture destroys as much as industrial animal farming",
+        "formas": [
+          "It's regenerative, local systems, with animals, that look after the land",
+          "Food sovereignty calls for animals integrated into the crops",
+          "A vegan world would be a soy desert"
+        ],
+        "falha": "Most soy and much of the grain feed farmed animals; eating plants reduces agricultural land, and comparing the worst cropland with the best animal farming is unfair"
+      }
+    }
+  },
+  "motivos": {
+    "O ciclo ganha uma versão ecológica: participar dele com consciência": "The cycle gets an ecological version: taking part in it consciously",
+    "Do natural passa-se a \"somos parte do ecossistema\"": "From natural the talk moves to \"we are part of the ecosystem\"",
+    "Se a lavoura também mata, ninguém estaria isento": "If crops kill too, no one would be exempt",
+    "Do impacto inevitável conclui-se que o veganismo não se sustenta": "From unavoidable impact it is concluded that veganism doesn't hold up",
+    "A forma consciente de participar vira o modo de produção": "The conscious way of taking part becomes the production method",
+    "O impacto das lavouras é usado para igualar tudo": "The impact of crops is used to make everything equal",
+    "A tradição ganha rosto: pais e avós": "Tradition gets a face: parents and grandparents",
+    "O afeto da mesa vira dever de lealdade": "The warmth of the table becomes a duty of loyalty",
+    "Defende-se a bondade de quem criou a pessoa": "The goodness of those who raised the person is defended",
+    "O medo de desonrar vira motivo para desistir": "The fear of dishonoring becomes a reason to give up",
+    "Da honra passa-se ao medo de ficar de fora": "From honor the talk moves to the fear of being left out",
+    "A opinião da maioria volta, agora na voz de uma máquina": "Majority opinion returns, now in a machine's voice",
+    "Troca-se a autoridade dos pensadores pela da IA": "The authority of thinkers is swapped for that of AI",
+    "Busca-se um juiz neutro para decidir a questão": "A neutral judge is sought to settle the question",
+    "Se nem a IA decide, o debate estaria empatado": "If not even AI decides, the debate would be a tie",
+    "A neutralidade da IA é lida como prova de que não há resposta": "The AI's neutrality is read as proof that there is no answer",
+    "Da promessa do carbono passa-se ao solo e ao sistema": "From the carbon promise the talk moves to the soil and the system",
+    "O rótulo do produto vira o modelo de agricultura": "The product label becomes the model of agriculture",
+    "A participação consciente no ciclo vira critério de compra": "Conscious participation in the cycle becomes a buying criterion",
+    "A lavoura vegetal passa a ser apontada como o verdadeiro problema": "Plant crops are now pointed to as the real problem",
+    "A culpa fica com o sistema industrial, e não com o prato": "The blame goes to the industrial system, not the plate",
+    "A sustentabilidade vira a única pergunta": "Sustainability becomes the only question",
+    "Depois de trocar a pergunta, compara-se a pior lavoura com a melhor pecuária": "After swapping the question, the worst cropland is compared with the best animal farming",
+    "A soja é atribuída a quem come plantas": "Soy is attributed to those who eat plants",
+    "O sistema com animais é apresentado como solução para o clima": "The system with animals is presented as a climate solution",
+    "Defende-se o animal como uso da terra que a lavoura não aproveita": "The animal is defended as a use for land that crops can't use",
+    "O animal integrado seria indispensável para adubar": "The integrated animal would be indispensable for fertilizing"
+  }
+}
