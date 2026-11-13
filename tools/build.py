@@ -58,10 +58,12 @@ import hashlib as _h
 VER_CSS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'style.css'), 'rb').read()).hexdigest()[:8]
 VER_DEB = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'debate.js'), 'rb').read()).hexdigest()[:8]
 VER_JS = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'app.js'), 'rb').read()).hexdigest()[:8]
+VER_TR = _h.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'trecho.js'), 'rb').read()).hexdigest()[:8]
 if EN:  # no site em inglês os scripts passam pela tradução; a versão muda também quando ela muda, para o navegador baixar o arquivo novo
     _trad = b''.join(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'en', n), 'rb').read() for n in ('ui.py', '__init__.py'))
     VER_JS = _h.md5(bytes.fromhex(VER_JS) + _trad).hexdigest()[:8]
     VER_DEB = _h.md5(bytes.fromhex(VER_DEB) + _trad).hexdigest()[:8]
+    VER_TR = _h.md5(bytes.fromhex(VER_TR) + _trad).hexdigest()[:8]
 IND_TEMA = {'G': 'saúde e nutrição', 'H': 'ambiente e agricultura', 'I': 'a utilidade de testes, roupas, lazer e companhia',
     'J': 'custo, praticidade e economia', 'K': 'eficácia e responsabilidade individual', 'L': 'quem defende o veganismo', 'M': 'a experiência de quem tentou ser vegano e desistiu'}
 IND_EXEMPLO = {
@@ -695,6 +697,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('glossario.html', 'Glossário')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
+<script src="{pre}assets/trecho.js?v={VER_TR}" defer></script>
 </body></html>
 '''
     doc = en.traduz_html(doc, nova_url) if EN else nova_url(doc)  # em inglês, a tabela de interface vem antes de converter os links
