@@ -417,7 +417,7 @@ ALEM = {
 <tr><td><strong>Relevance</strong></td><td>A criterion can only decide who is harmed if it's related to the capacity to be harmed. Species, colour or intelligence aren't</td><td><a href="../argumentos/a1.html">A1</a>, <a href="../argumentos/a10.html">A10</a></td></tr>
 <tr><td><strong>Impartiality</strong></td><td>Judging as if we didn't know which position we'd be born into: the veil of ignorance</td><td><a href="../argumentos/a21.html">A21</a></td></tr>
 <tr><td><strong>Universality</strong></td><td>A moral rule applies to all like cases, not only to those that suit us</td><td><a href="../argumentos/a13.html">A13</a>, <a href="../argumentos/a24.html">A24</a></td></tr>
-<tr><td><strong>Sentience and interests</strong></td><td>Whoever can have good or bad experiences has interests that count, wherever the harm comes from</td><td><a href="../argumentos/a5.html">A5</a>, <a href="../familias/m.html">family M</a></td></tr>
+<tr><td><strong>Sentience and interests</strong></td><td>Whoever can have good or bad experiences has interests that count, wherever the harm comes from</td><td><a href="../argumentos/a5.html">A5</a>, <a href="../familias/n.html">family N</a></td></tr>
 <tr><td><strong>The moral circle and progress</strong></td><td>Moral history is, to a large extent, the inclusion of those who were once excluded</td><td><a href="../argumentos/a9.html">A9</a></td></tr>
 <tr><td><strong>Justice</strong></td><td>Not imposing serious harm on others to obtain small benefits</td><td><a href="../argumentos/j11.html">J11</a></td></tr>
 <tr><td><strong>The common good</strong></td><td>Thinking about everyone affected, including those who don't vote, can't speak and aren't born yet</td><td><a href="../argumentos/n11.html">N11</a></td></tr></table></div>
@@ -527,6 +527,7 @@ SITES = {
  'https://senciencia.org/': ('Senciência', 'Texts on animal ethics and speciesism, in Portuguese'),
  'https://www.animal-ethics.org/pt/': ('Animal Ethics', 'International organization with texts on speciesism, sentience and wild animals'),
  'https://medium.com/veganismo-s': ('Veganismos', 'A Medium publication on veganism and animal ethics, in Portuguese'),
+ 'https://www.itsjamiescorner.com/why-vegan/mythbusting': ("Jamie's Corner: MythBusting", '16 common myths and objections to veganism, each with an answer, from an educator and activist'),
  'https://www.carnismdebunked.com': ('Carnism Debunked', 'Answers to the arguments used to defend animal exploitation'),
  'https://www.sentienceinstitute.org/foundational-questions-summaries': ('Sentience Institute', 'A summary of the evidence on the foundational questions of effective animal advocacy'),
  'https://veganadvocacy.org/communication-hacks': ('Center for Effective Vegan Advocacy', 'Training for advocates, with communication tips for talking about veganism'),

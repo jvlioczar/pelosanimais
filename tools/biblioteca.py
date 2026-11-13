@@ -49,6 +49,7 @@ SITES = [
     ('Argumentos em defesa dos animais', 'Respostas organizadas por tema', 'https://www.alyssonaugusto.com.br/argumentos'),
     ('Guia de falácias antiveganas', 'Do site Veganagente', 'https://veganagente.com.br/falacias-antiveganas/'),
     ('Sua Falácia Vegana É', 'Falácias comuns contra o veganismo, em cartões', 'https://yourveganfallacyis.com/pt-br'),
+    ("Jamie's Corner: MythBusting", 'Em inglês: 16 mitos e objeções comuns ao veganismo, cada um com uma resposta, por um educador e ativista', 'https://www.itsjamiescorner.com/why-vegan/mythbusting'),
     ('Carnism Debunked', 'Em inglês: respostas aos argumentos usados para defender a exploração animal', 'https://www.carnismdebunked.com'),
     ('ADAPTT', 'Em inglês: acervo de textos sobre veganismo, ética e libertação animal, com guias para começar, palestras e formas de agir', 'https://www.adaptt.org'),
     ('Sentientism', 'Em inglês: visão de mundo comprometida com evidência, razão e compaixão por todos os seres sencientes, com comunidade e entrevistas', 'https://www.sentientism.info'),
