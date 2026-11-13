@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 213 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 214 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -31,6 +31,7 @@ Os animais contam moralmente?
 - [A23. A moral existe para nos proteger uns dos outros](https://pelosanimais.biblioverse.org/argumentos/a-moral-existe-para-nos-proteger-uns-dos-outros.html): Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática
 - [A24. Espécie é biologia, raça é construção social](https://pelosanimais.biblioverse.org/argumentos/especie-e-biologia-raca-e-construcao-social.html): Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém
 - [A25. Os animais não sabem que vão morrer, então não tem problema matá-los](https://pelosanimais.biblioverse.org/argumentos/os-animais-nao-sabem-que-vao-morrer-entao-nao-tem-problema-mata-los.html): O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo
+- [A26. Existem diferentes graus de consciência, os animais menos conscientes importam menos](https://pelosanimais.biblioverse.org/argumentos/existem-diferentes-graus-de-consciencia-os-animais-menos-conscientes.html): Mentes diferem em perfil, não em posição numa régua única; o critério, aplicado a humanos, rebaixaria bebês e pessoas com deficiência cognitiva; e um peso menor continua pesando mais que o sabor de um prato
 
 ## B. Dano, morte e bem-estar (Parte DIR)
 

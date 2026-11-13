@@ -195,6 +195,7 @@ NOVOS = [
     ('A24', 'Espécie é biologia, raça é construção social', ['Especismo não é como racismo', 'Raça não existe, espécie existe'], 'Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém'),
     ('E13', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
     ('H14', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
+    ('A26', 'Existem diferentes graus de consciência, os animais menos conscientes importam menos', ['Uma minhoca não é um cachorro', 'Nem todo animal é igual, tem bicho e bicho', 'Quanto mais simples o cérebro, menos importa', 'Consciência é uma escala, e a gente está no topo dela'], 'Mentes diferem em perfil, não em posição numa régua única; o critério, aplicado a humanos, rebaixaria bebês e pessoas com deficiência cognitiva; e um peso menor continua pesando mais que o sabor de um prato'),
     ('A25', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
     ('F11', 'E se descobrirem que as plantas sentem?', ['Aí vocês vão comer o quê, pedra?', 'Se tudo sente, por que não comer carne?'], 'Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente'),
     ('F10', 'Você comeria um animal que morreu de causas naturais?', ['E se o boi morreu de velhice?', 'Então come o cachorro atropelado na rua também', 'Se não comeria, é frescura'], 'Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos'),
@@ -317,6 +318,10 @@ def qe_bloco(c):
 CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C2', 'G1', 'G3', 'H1', 'H2', 'L5', 'K1', 'E1']),
                   ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'A16', 'A1', 'A11'])]
 RAIZES = ['A10', 'J11', 'E12']
+# A imagem de compartilhamento muda com o desenho e com o número de argumentos. As redes
+# guardam a imagem pelo endereço, então ele precisa mudar junto, ou elas mostram a antiga.
+VER_IMG = _h.md5(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icones.py'), 'rb').read()
+                 + str(len(ARGS)).encode()).hexdigest()[:8]
 
 # ---------- leitura dos capítulos ----------
 def limpa(s):
@@ -663,12 +668,12 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <meta property="og:description" content="{e(desc)}"/>
 <meta property="og:url" content="{url}"/>
 <meta property="og:locale" content="{"en_US" if EN else "pt_BR"}"/>
-<meta property="og:image" content="{SITE}/assets/share.png"/>
+<meta property="og:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:alt" content="{e(NOME)}: {"every objection has an answer." if EN else "toda objeção tem uma resposta."}"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="{SITE}/assets/share.png"/>
+<meta name="twitter:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta name="theme-color" content="#0a3703"/>
 <link rel="icon" href="{pre}assets/icon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="{pre}assets/apple-touch-icon.png"/>
