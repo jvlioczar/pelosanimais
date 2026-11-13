@@ -1124,7 +1124,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
 }
-GLOS_GUIA_ROTULO = {'politicas': ('Objeção política', 'Political objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
+GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política', 'Political objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
                     'falacias.html': ('Falácias', 'Fallacies')}
 
 def pagina_glossario():
@@ -1135,6 +1135,7 @@ def pagina_glossario():
     norm = lambda t: unicodedata.normalize('NFD', t.lower()).encode('ascii', 'ignore').decode()
     inicial = lambda t: (unicodedata.normalize('NFD', t[0].upper()).encode('ascii', 'ignore').decode() or '#')
     secoes = dict(glossario.SECOES)
+    GLOS_GUIA['escolha pessoal'] = f'argumentos/{SLUG_ARG["e1"]}.html'
     # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
     vs = []
     for v in glossario.VERBETES:

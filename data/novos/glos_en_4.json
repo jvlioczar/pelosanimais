@@ -1,95 +1,653 @@
 [
-{"i": 279, "termo": "Total liberation", "def": "A perspective that unites animal liberation with other social liberation struggles (racial, gender, class) under a single political horizon.", "com": "It reflects the view that speciesism shares structural roots with other forms of oppression, and that fighting them in isolation would be strategically and ethically insufficient."},
-{"i": 280, "termo": "Language", "def": "A system of symbolic communication used to represent and convey meaning.", "com": "Its historical use as a criterion for the moral exclusion of nonhuman animals is criticised by sentientist currents, for which the absence of complex verbal language is irrelevant given the proven capacity to suffer."},
-{"i": 281, "termo": "Animal language", "def": "Forms of communication used by nonhuman animals, such as vocalisations, gestures and chemical signals, studied to understand the cognition of different species.", "com": "Findings in this area have progressively narrowed the gap that was once assumed to exist between human communication and that of other species."},
-{"i": 282, "termo": "Free thought", "def": "An intellectual stance that values forming opinions independently, based on reason and evidence rather than authority or tradition.", "com": "It is often invoked by antispeciesists to justify revising culturally inherited speciesist beliefs without relying on religious authority, tradition or social consensus."},
-{"i": 283, "termo": "Logic", "def": "The branch of philosophy that studies the principles of valid reasoning; a tool used to identify fallacies and inconsistencies in arguments about the use of animals.", "com": "Applied rigorously, logic shows that many common justifications for using animals (appeals to tradition, to nature or to taste) do not withstand the test of argumentative coherence."},
-{"i": 284, "termo": "Longtermism", "def": "A philosophical current that prioritises the well-being of beings (human and nonhuman) over very long time scales.", "com": ""},
-{"i": 285, "termo": "Macrobiotics", "def": "A diet system of Japanese origin based on energetic balance (yin/yang), prioritising whole grains and vegetables, with variations in whether animal products are included.", "com": ""},
-{"i": 286, "termo": "Butter", "def": "A dairy fat obtained by churning cream.", "com": ""},
-{"i": 287, "termo": "Marking", "def": "The identification of animals by hot-iron branding, ear tags or other means, usually without anaesthesia.", "com": ""},
-{"i": 288, "termo": "Margarine", "def": "A fat for consumption that is generally of plant origin, although older versions used animal fat; today mostly vegan, but not necessarily.", "com": ""},
-{"i": 289, "termo": "Slaughterhouse", "def": "A facility where animals are slaughtered for consumption.", "com": ""},
-{"i": 290, "termo": "Maximin", "def": "A decision principle that prescribes choosing the course of action in which the well-being of the worst-off is as high as possible, regardless of the total or average sum of well-being.", "com": "In contexts of animal exploitation, this principle would favour prioritising the reduction of suffering of the worst-off individuals (often animals in extreme confinement), even when this does not maximise aggregate well-being."},
-{"i": 291, "termo": "Utility maximisation", "def": "The central principle of utilitarianism, according to which the right action is the one that produces the greatest possible balance of well-being over suffering.", "com": "Applied consistently, this principle requires counting the suffering and well-being of all sentient beings affected by an action, not only humans."},
-{"i": 292, "termo": "Expected value maximisation", "def": "A decision principle under uncertainty that weighs possible outcomes by their probability.", "com": "In contexts of uncertainty about the sentience of a given species, this principle can justify moral caution: even a moderate probability of sentience is enough to recommend avoiding harm to it."},
-{"i": 293, "termo": "Honey", "def": "A sugary substance produced by bees from flower nectar; strict veganism rejects its consumption because it involves the exploitation of insects.", "com": ""},
-{"i": 294, "termo": "Replacement methods", "def": "Alternative techniques to animal experimentation (cell cultures, computer models) developed under the principle of the 3Rs.", "com": ""},
-{"i": 295, "termo": "Activism (militancy)", "def": "Active and organised engagement in defence of a political or social cause, including the animal cause.", "com": ""},
-{"i": 296, "termo": "Minority", "def": "A group that, for numerical or power-related reasons, has less social influence; a concept used by analogy to discuss the political position of animals as a group without its own representation.", "com": ""},
-{"i": 297, "termo": "Riding", "def": "The use of an animal (usually a horse) to be ridden by humans.", "com": ""},
-{"i": 298, "termo": "Motivation", "def": "An internal factor, psychological, ethical or biological, that drives an agent to act in a certain way.", "com": "In the case of adopting veganism, the literature on behaviour change suggests that ethical motivations, centred on the interests of animals, tend to be more stable over time than motivations centred exclusively on health or appearance."},
-{"i": 299, "termo": "Social movement", "def": "Organised collective action sustained over time, aimed at promoting or resisting social change; a category that includes the animal advocacy movement.", "com": ""},
-{"i": 300, "termo": "Vegan movement", "def": "The set of individuals, groups and organisations that promote veganism as a philosophy and social practice.", "com": ""},
-{"i": 301, "termo": "Paradigm shift", "def": "A profound transformation in how a society or field of knowledge understands a given subject, such as the growing acceptance of animal sentience.", "com": ""},
-{"i": 302, "termo": "Mulesing", "def": "The surgical removal of skin around the tail of sheep (usually without anaesthesia) to prevent infestation by fly larvae, a common practice in wool production.", "com": ""},
-{"i": 303, "termo": "Nonviolence", "def": "An ethical and political principle of rejecting violence as a means of action, historically associated with traditions such as Jainism and Hinduism (ahimsa) and with pacifist social movements, including strands of animal activism.", "com": "Extending this principle to animals implies recognising that causing them avoidable harm, and not only humans, is morally equivalent to an act of violence."},
-{"i": 304, "termo": "Need", "def": "An essential biological or psychological requirement for a being's well-being, the deprivation of which causes suffering (e.g. the need for socialisation, movement or the expression of natural behaviours).", "com": ""},
-{"i": 305, "termo": "Nociception", "def": "An automatic physiological response to harmful stimuli, distinct from conscious pain; a point of debate in species such as fish and invertebrates.", "com": "Sentientist currents hold that, where there is uncertainty about whether nociception is accompanied by conscious experience in a given species, the benefit of the doubt should favour the animal rather than the practice that exploits it."},
-{"i": 306, "termo": "Neo-welfarism", "def": "A term coined by the jurist Gary Francione for organisations that claim animal rights as their goal but advocate welfare reforms as a step.", "com": "It is used critically by abolitionists. Pragmatists reject the label and say the reforms are steps towards ending exploitation."},
-{"i": 307, "termo": "Nutrition", "def": "The science that studies the processes by which organisms obtain and use food; central to discussions about the viability of plant-based diets.", "com": "Nutrition bodies have progressively recognised that well-planned vegetarian and vegan diets can be nutritionally adequate at all stages of life, which weakens the nutritional argument traditionally used against veganism."},
-{"i": 308, "termo": "Nutrology", "def": "A medical specialty (recognised in Brazil) dedicated to the diagnosis and treatment of nutritional issues in humans, relevant to debates about health on vegan diets.", "com": "(see the note under Nutrition)"},
-{"i": 309, "termo": "Moral objectivism", "def": "The position that there are moral truths that are valid independently of opinion or culture.", "com": "If objective moral truths exist, and if the capacity to suffer is morally relevant, it follows that excluding animals from moral consideration would be objectively unjustified, and not a mere matter of cultural preference."},
-{"i": 310, "termo": "Omission", "def": "Failing to act when action would be possible; discussed in terms of moral responsibility for harms not prevented.", "com": "In the case of wild animals, more radical sentientist currents argue that omission in the face of avoidable suffering in nature may also be morally questionable, one of the most controversial topics in contemporary animal ethics."},
-{"i": 311, "termo": "Omnivorism", "def": "A diet that includes both plant-based and animal-based foods.", "com": ""},
-{"i": 312, "termo": "Oppression", "def": "The systematic exercise of power that subordinates and harms a group.", "com": "Its application, by analogy, to the treatment of animals within social and economic structures is central to the currents that describe speciesism as a form of structural oppression, comparable, with due differences taken into account, to other forms of domination."},
-{"i": 313, "termo": "Lacto-ovo vegetarianism", "def": "A vegetarian diet that includes eggs and dairy but excludes meat.", "com": ""},
-{"i": 314, "termo": "Ovo-vegetarianism", "def": "A vegetarian diet that includes eggs but excludes dairy and meat.", "com": ""},
-{"i": 315, "termo": "Oxymoron", "def": "A figure of speech that combines contradictory terms.", "com": "Expressions such as \"humane slaughter\" or \"happy meat\" are described this way by antispeciesists, who consider it incompatible to cause the death of a being that wants to live with any notion of genuine humaneness or happiness for that being."},
-{"i": 316, "termo": "Moral patient", "def": "A being that can be morally affected, benefited or harmed, even without being a moral agent.", "com": "Nonhuman animals fall into this category: even though they cannot be held responsible for their actions, they have interests whose violation or promotion is morally relevant."},
-{"i": 317, "termo": "Children's palate", "def": "The set of food preferences formed in childhood, relevant to discussions about food education and the transition to plant-based diets.", "com": ""},
-{"i": 318, "termo": "Livestock farming", "def": "The raising and use of animals for economic purposes, mainly for food.", "com": ""},
-{"i": 319, "termo": "Extensive livestock farming", "def": "Raising animals over large areas, at lower animal density.", "com": ""},
-{"i": 320, "termo": "Family livestock farming", "def": "A small-scale model, usually for subsistence or the local market.", "com": ""},
-{"i": 321, "termo": "Industrial livestock farming", "def": "An industrial-scale model, oriented towards maximum productivity and lowest cost.", "com": ""},
-{"i": 322, "termo": "Intensive livestock farming", "def": "Raising animals at high density with heavy use of inputs and technology.", "com": ""},
-{"i": 323, "termo": "Sustainable livestock farming", "def": "A model of animal farming that seeks to reduce environmental impacts and increase resource efficiency, without necessarily changing the paradigm of using animals as a resource.", "com": ""},
-{"i": 324, "termo": "Pedigree", "def": "A genealogical record that documents an animal's lineage, used for selective breeding.", "com": ""},
-{"i": 325, "termo": "Fur and leather", "def": "Industries producing animal fur and leather, with specific debates about suffering and synthetic alternatives.", "com": ""},
-{"i": 326, "termo": "Critical thinking", "def": "The ability to analyse, question and evaluate arguments and beliefs in a rational and independent way.", "com": "Its consistent application is often cited as what makes it possible to identify logical inconsistencies in common justifications for speciesism, such as the appeal to tradition or to personal convenience."},
-{"i": 327, "termo": "Personality", "def": "In animal ethics and law, the set of psychological characteristics (temperament, preferences, behaviour) that distinguish one individual from another; also used in the legal debate on personhood and legal personality.", "com": "Recognising legal personality for nonhuman animals is defended by antispeciesist jurists as a way of breaking with the status of mere property to which they are reduced in most legal systems."},
-{"i": 328, "termo": "Animal legal personhood", "def": "A debate about recognising animals as subjects of rights, and not merely property. It is defended by antispeciesist jurists as a necessary paradigm shift to break with the historical reduction of animals to the status of property.", "com": ""},
-{"i": 329, "termo": "Fishing", "def": "The capture of aquatic animals, with a growing debate about fish sentience.", "com": ""},
-{"i": 330, "termo": "Industrial fishing", "def": "Large-scale fishing, associated with overexploitation and mass suffering.", "com": ""},
-{"i": 331, "termo": "Pescatarianism", "def": "A vegetarian-style diet that includes fish and seafood but excludes the meat of other animals.", "com": ""},
-{"i": 332, "termo": "Pet shop", "def": "A commercial establishment that sells companion animals and related products.", "com": ""},
-{"i": 333, "termo": "Fish farming (pisciculture)", "def": "The raising of fish in captivity for commercial purposes.", "com": ""},
-{"i": 334, "termo": "Plant-based", "def": "A term for a diet of plant origin, distinct from veganism in that it does not necessarily cover ethics or other uses of animals.", "com": ""},
-{"i": 335, "termo": "Rape rack", "def": "A restraint structure used to immobilise females during forced mating or artificial insemination.", "com": ""},
-{"i": 336, "termo": "Moral pluralism", "def": "The position that several ethical theories capture partial truths, with none of them being sufficient on its own.", "com": "A pluralist can recognise, for example, both the relevance of the total sum of well-being and the importance of prioritising the worst-off, without committing exclusively to a single theory."},
-{"i": 337, "termo": "Future nonhuman populations", "def": "The extension of moral concern to future generations of animals, at the intersection of animal ethics and longtermism.", "com": ""},
-{"i": 338, "termo": "Posthumanism", "def": "A philosophical current that questions anthropocentrism and the centrality of the human as the measure of all things, opening space to reconsider the moral status of animals and other entities.", "com": "By destabilising the privileged position of the human in the hierarchy of value, it creates relevant philosophical bridges with antispeciesism, although not every posthumanist strand treats animal ethics as a central priority."},
-{"i": 339, "termo": "Pests", "def": "A social and legal category that lowers the moral status of certain animals (rats, pigeons, insects) because of conflict with human interests.", "com": ""},
-{"i": 340, "termo": "Pragmatism", "def": "In this context, an approach that prioritises practical and effective results over doctrinal purity in animal advocacy strategies.", "com": "It is often invoked by reformist and welfarist currents as a strategic justification, and questioned by abolitionists, who see a risk that the pursuit of immediate results legitimises continued forms of exploitation."},
-{"i": 341, "termo": "Pleasure", "def": "A pleasant subjective experience; the counterpart of pain in hedonic assessments of well-being.", "com": ""},
-{"i": 342, "termo": "Prescriptivity", "def": "The property of moral judgements of not only describing but also guiding and requiring a certain action from those who accept them.", "com": "Recognising animal suffering as morally relevant implies, under this property of moral judgements, a duty to act, and not only an intellectual acknowledgement."},
-{"i": 343, "termo": "Prioritarianism", "def": "A variant that attributes greater value to improvements in the well-being of the worst-off, without requiring strict equality between individuals.", "com": "By giving extra weight to the suffering of those who are worse off, prioritarianism tends to prioritise interventions that relieve the most intense forms of animal exploitation, even when they do not produce the greatest possible aggregate gain."},
-{"i": 344, "termo": "Progressivism", "def": "A political and social stance in favour of change and reform, associated with greater openness to expanding rights and moral consideration to new groups.", "com": "The inclusion of animals in the progressive agenda is, however, still less consensual than that of other historically marginalised groups, which reflects the persistence of speciesism even in politically progressive sectors."},
-{"i": 345, "termo": "Moral progress", "def": "The idea that humanity can expand and refine its ethical judgements over time, as in the historical widening of the moral circle.", "com": "For antispeciesism, overcoming speciesism represents the next frontier of this progress, historically comparable to the abolition of slavery and the winning of civil rights."},
-{"i": 346, "termo": "Social progress", "def": "A change in the norms and institutions of a society towards greater justice and collective well-being.", "com": "The growing social acceptance of veganism and animal protection is often interpreted, by advocates of the cause, as part of this process."},
-{"i": 347, "termo": "Propolis", "def": "A resinous substance produced by bees, used for medicinal and cosmetic purposes.", "com": ""},
-{"i": 348, "termo": "Proselytism", "def": "The act of actively trying to convince other people to adopt a belief or practice, such as veganism; a term sometimes used pejoratively to criticise approaches seen as aggressive.", "com": "Activists argue that seeking to persuade others is a natural and legitimate consequence of recognising an ongoing injustice, as happened in other historical social movements."},
-{"i": 349, "termo": "Animal protein", "def": "Protein derived from animal tissues or secretions, distinct from plant protein in amino acid composition.", "com": ""},
-{"i": 350, "termo": "Soy protein", "def": "Protein extracted from the soybean, the basis of various meat substitutes.", "com": ""},
-{"i": 351, "termo": "Soy protein isolate", "def": "A highly concentrated and purified form of soy protein, used industrially in vegan products.", "com": ""},
-{"i": 352, "termo": "Plant protein", "def": "Protein derived from plant sources (legumes, cereals, seeds), a nutritional alternative to animal protein.", "com": ""},
-{"i": 353, "termo": "Textured vegetable protein", "def": "Soy protein (or another legume) processed to obtain a fibrous, meat-like texture.", "com": ""},
-{"i": 354, "termo": "Protest", "def": "A collective public demonstration of disagreement, used as a tool of animal activism to press for change.", "com": ""},
-{"i": 355, "termo": "Proto-vegetarianism", "def": "A term used for primitive or partial forms of vegetarianism, generally motivated by practical or cultural reasons more than ethical ones.", "com": ""},
-{"i": 356, "termo": "Pseudo-veganism", "def": "The use of vegan labelling or discourse without consistent ethical commitment, generally for commercial or marketing purposes.", "com": ""},
-{"i": 357, "termo": "Pseudoscience", "def": "A set of claims presented as scientific without following the scientific method.", "com": "Both unfounded claims against the nutritional viability of veganism and exaggerated claims about its benefits can qualify as pseudoscience when not backed by robust evidence."},
-{"i": 358, "termo": "Cheese", "def": "A dairy product obtained by coagulating milk, traditionally using rennet of animal origin.", "com": ""},
-{"i": 359, "termo": "Vegan cheese", "def": "A substitute for traditional cheese made from nuts, soy or starches, without the use of animal milk.", "com": ""},
-{"i": 360, "termo": "Feed", "def": "Industrially manufactured food formulated for farm or companion animals.", "com": ""},
-{"i": 361, "termo": "Vegan pet food", "def": "Feed formulated without ingredients of animal origin, generally intended for dogs and cats.", "com": ""},
-{"i": 362, "termo": "Rationality", "def": "The capacity to reason logically.", "com": "Its historical use as a criterion for the moral exclusion of animals is challenged by the argument from marginal cases: humans without full rational capacity, such as babies or people with certain disabilities, are still recognised as deserving moral consideration, which shows that rationality is not in fact the criterion actually applied."},
-{"i": 363, "termo": "Radicalism", "def": "A stance that advocates deep and structural change, rejecting partial or incremental solutions.", "com": "In the animal movement, it is associated above all with abolitionism, which rejects gradual reforms as ends in themselves, advocating the complete end of the use of animals as property."},
-{"i": 364, "termo": "Reactionism", "def": "A stance of opposition to social change, seeking a return to earlier norms or practices.", "com": "Applied to the animal question, it often relies on appeals to tradition and naturalness, both considered fallacies when used alone as a moral justification."},
-{"i": 365, "termo": "Reducetarianism", "def": "The practice of reducing (without necessarily eliminating) the consumption of animal-derived products.", "com": ""},
-{"i": 366, "termo": "Incremental reforms", "def": "Gradual and partial changes in the conditions of animal exploitation, promoted by reformist currents as a step towards (or a substitute for) deeper change.", "com": ""},
-{"i": 367, "termo": "Reformism", "def": "A current that accepts gradual improvements in the conditions of exploitation as a valid (or necessary) path to abolition. (See also Humane washing and Vegan washing, section 6.)", "com": ""},
-{"i": 368, "termo": "Cultural relativism", "def": "The application of moral relativism to specific cultural practices.", "com": "Used as an argument against outside criticism of practices such as bullfighting or rituals involving animals, it is rejected by universalist currents of animal ethics, which consider the capacity to suffer a biological fact rather than a cultural construction open to relativisation."},
-{"i": 369, "termo": "Moral relativism", "def": "The position that moral values depend on cultural or individual context.", "com": "Taken to its ultimate consequences, moral relativism would make it impossible to criticise practices of animal cruelty universally, even when widely recognised as avoidable, a limit pointed out by objectivist currents of animal ethics."},
-{"i": 370, "termo": "Ear cropping", "def": "The surgical amputation of part of an animal's ears (common in some dog breeds) for aesthetic reasons.", "com": ""},
-{"i": 371, "termo": "Rennet", "def": "An enzyme extracted from the stomach of calves, used in traditional cheese production to coagulate milk.", "com": ""}
+{
+"i": 279,
+"termo": "Total liberation",
+"def": "A perspective that unites animal liberation with other social liberation struggles (racial, gender, class) under a single political horizon.",
+"com": "It reflects the view that speciesism shares structural roots with other forms of oppression, and that fighting them in isolation would be strategically and ethically insufficient.",
+"pt": "Libertação total"
+},
+{
+"i": 280,
+"termo": "Language",
+"def": "A system of symbolic communication used to represent and convey meaning.",
+"com": "Its historical use as a criterion for the moral exclusion of nonhuman animals is criticised by sentientist currents, for which the absence of complex verbal language is irrelevant given the proven capacity to suffer.",
+"pt": "Linguagem"
+},
+{
+"i": 281,
+"termo": "Animal language",
+"def": "Forms of communication used by nonhuman animals, such as vocalisations, gestures and chemical signals, studied to understand the cognition of different species.",
+"com": "Findings in this area have progressively narrowed the gap that was once assumed to exist between human communication and that of other species.",
+"pt": "Linguagem animal"
+},
+{
+"i": 282,
+"termo": "Free thought",
+"def": "An intellectual stance that values forming opinions independently, based on reason and evidence rather than authority or tradition.",
+"com": "It is often invoked by antispeciesists to justify revising culturally inherited speciesist beliefs without relying on religious authority, tradition or social consensus.",
+"pt": "Livre pensamento"
+},
+{
+"i": 283,
+"termo": "Logic",
+"def": "The branch of philosophy that studies the principles of valid reasoning; a tool used to identify fallacies and inconsistencies in arguments about the use of animals.",
+"com": "Applied rigorously, logic shows that many common justifications for using animals (appeals to tradition, to nature or to taste) do not withstand the test of argumentative coherence.",
+"pt": "Lógica"
+},
+{
+"i": 284,
+"termo": "Longtermism",
+"def": "A philosophical current that prioritises the well-being of beings (human and nonhuman) over very long time scales.",
+"com": "",
+"pt": "Longoprazismo"
+},
+{
+"i": 285,
+"termo": "Macrobiotics",
+"def": "A diet system of Japanese origin based on energetic balance (yin/yang), prioritising whole grains and vegetables, with variations in whether animal products are included.",
+"com": "",
+"pt": "Macrobiótica"
+},
+{
+"i": 286,
+"termo": "Butter",
+"def": "A dairy fat obtained by churning cream.",
+"com": "",
+"pt": "Manteiga"
+},
+{
+"i": 287,
+"termo": "Marking",
+"def": "The identification of animals by hot-iron branding, ear tags or other means, usually without anaesthesia.",
+"com": "",
+"pt": "Marcação"
+},
+{
+"i": 288,
+"termo": "Margarine",
+"def": "A fat for consumption that is generally of plant origin, although older versions used animal fat; today mostly vegan, but not necessarily.",
+"com": "",
+"pt": "Margarina"
+},
+{
+"i": 289,
+"termo": "Slaughterhouse",
+"def": "A facility where animals are slaughtered for consumption.",
+"com": "",
+"pt": "Matadouro"
+},
+{
+"i": 290,
+"termo": "Maximin",
+"def": "A decision principle that prescribes choosing the course of action in which the well-being of the worst-off is as high as possible, regardless of the total or average sum of well-being.",
+"com": "In contexts of animal exploitation, this principle would favour prioritising the reduction of suffering of the worst-off individuals (often animals in extreme confinement), even when this does not maximise aggregate well-being.",
+"pt": "Maximin"
+},
+{
+"i": 291,
+"termo": "Utility maximisation",
+"def": "The central principle of utilitarianism, according to which the right action is the one that produces the greatest possible balance of well-being over suffering.",
+"com": "Applied consistently, this principle requires counting the suffering and well-being of all sentient beings affected by an action, not only humans.",
+"pt": "Maximização da utilidade"
+},
+{
+"i": 292,
+"termo": "Expected value maximisation",
+"def": "A decision principle under uncertainty that weighs possible outcomes by their probability.",
+"com": "In contexts of uncertainty about the sentience of a given species, this principle can justify moral caution: even a moderate probability of sentience is enough to recommend avoiding harm to it.",
+"pt": "Maximização do valor esperado"
+},
+{
+"i": 293,
+"termo": "Honey",
+"def": "A sugary substance produced by bees from flower nectar; strict veganism rejects its consumption because it involves the exploitation of insects.",
+"com": "",
+"pt": "Mel"
+},
+{
+"i": 294,
+"termo": "Replacement methods",
+"def": "Alternative techniques to animal experimentation (cell cultures, computer models) developed under the principle of the 3Rs.",
+"com": "",
+"pt": "Métodos substitutivos"
+},
+{
+"i": 295,
+"termo": "Activism (militancy)",
+"def": "Active and organised engagement in defence of a political or social cause, including the animal cause.",
+"com": "",
+"pt": "Militância"
+},
+{
+"i": 296,
+"termo": "Minority",
+"def": "A group that, for numerical or power-related reasons, has less social influence; a concept used by analogy to discuss the political position of animals as a group without its own representation.",
+"com": "",
+"pt": "Minoria"
+},
+{
+"i": 297,
+"termo": "Riding",
+"def": "The use of an animal (usually a horse) to be ridden by humans.",
+"com": "",
+"pt": "Montaria"
+},
+{
+"i": 298,
+"termo": "Motivation",
+"def": "An internal factor, psychological, ethical or biological, that drives an agent to act in a certain way.",
+"com": "In the case of adopting veganism, the literature on behaviour change suggests that ethical motivations, centred on the interests of animals, tend to be more stable over time than motivations centred exclusively on health or appearance.",
+"pt": "Motivação"
+},
+{
+"i": 299,
+"termo": "Social movement",
+"def": "Organised collective action sustained over time, aimed at promoting or resisting social change; a category that includes the animal advocacy movement.",
+"com": "",
+"pt": "Movimento social"
+},
+{
+"i": 300,
+"termo": "Vegan movement",
+"def": "The set of individuals, groups and organisations that promote veganism as a philosophy and social practice.",
+"com": "",
+"pt": "Movimento vegano"
+},
+{
+"i": 301,
+"termo": "Paradigm shift",
+"def": "A profound transformation in how a society or field of knowledge understands a given subject, such as the growing acceptance of animal sentience.",
+"com": "",
+"pt": "Mudança de paradigma"
+},
+{
+"i": 302,
+"termo": "Mulesing",
+"def": "The surgical removal of skin around the tail of sheep (usually without anaesthesia) to prevent infestation by fly larvae, a common practice in wool production.",
+"com": "",
+"pt": "Mulesing"
+},
+{
+"i": 303,
+"termo": "Nonviolence",
+"def": "An ethical and political principle of rejecting violence as a means of action, historically associated with traditions such as Jainism and Hinduism (ahimsa) and with pacifist social movements, including strands of animal activism.",
+"com": "Extending this principle to animals implies recognising that causing them avoidable harm, and not only humans, is morally equivalent to an act of violence.",
+"pt": "Não-violência"
+},
+{
+"i": 304,
+"termo": "Need",
+"def": "An essential biological or psychological requirement for a being's well-being, the deprivation of which causes suffering (e.g. the need for socialisation, movement or the expression of natural behaviours).",
+"com": "",
+"pt": "Necessidade"
+},
+{
+"i": 305,
+"termo": "Nociception",
+"def": "An automatic physiological response to harmful stimuli, distinct from conscious pain; a point of debate in species such as fish and invertebrates.",
+"com": "Sentientist currents hold that, where there is uncertainty about whether nociception is accompanied by conscious experience in a given species, the benefit of the doubt should favour the animal rather than the practice that exploits it.",
+"pt": "Nocicepção"
+},
+{
+"i": 306,
+"termo": "Neo-welfarism",
+"def": "A term coined by the jurist Gary Francione for organisations that claim animal rights as their goal but advocate welfare reforms as a step.",
+"com": "It is used critically by abolitionists. Pragmatists reject the label and say the reforms are steps towards ending exploitation.",
+"pt": "Novo bem-estarismo (neo-welfarism)"
+},
+{
+"i": 307,
+"termo": "Nutrition",
+"def": "The science that studies the processes by which organisms obtain and use food; central to discussions about the viability of plant-based diets.",
+"com": "Nutrition bodies have progressively recognised that well-planned vegetarian and vegan diets can be nutritionally adequate at all stages of life, which weakens the nutritional argument traditionally used against veganism.",
+"pt": "Nutrição"
+},
+{
+"i": 308,
+"termo": "Nutrology",
+"def": "A medical specialty (recognised in Brazil) dedicated to the diagnosis and treatment of nutritional issues in humans, relevant to debates about health on vegan diets.",
+"com": "(see the note under Nutrition)",
+"pt": "Nutrologia"
+},
+{
+"i": 309,
+"termo": "Moral objectivism",
+"def": "The position that there are moral truths that are valid independently of opinion or culture.",
+"com": "If objective moral truths exist, and if the capacity to suffer is morally relevant, it follows that excluding animals from moral consideration would be objectively unjustified, and not a mere matter of cultural preference.",
+"pt": "Objetivismo moral"
+},
+{
+"i": 310,
+"termo": "Omission",
+"def": "Failing to act when action would be possible; discussed in terms of moral responsibility for harms not prevented.",
+"com": "In the case of wild animals, more radical sentientist currents argue that omission in the face of avoidable suffering in nature may also be morally questionable, one of the most controversial topics in contemporary animal ethics.",
+"pt": "Omissão"
+},
+{
+"i": 311,
+"termo": "Omnivorism",
+"def": "A diet that includes both plant-based and animal-based foods.",
+"com": "",
+"pt": "Onivorismo"
+},
+{
+"i": 312,
+"termo": "Oppression",
+"def": "The systematic exercise of power that subordinates and harms a group.",
+"com": "Its application, by analogy, to the treatment of animals within social and economic structures is central to the currents that describe speciesism as a form of structural oppression, comparable, with due differences taken into account, to other forms of domination.",
+"pt": "Opressão"
+},
+{
+"i": 313,
+"termo": "Lacto-ovo vegetarianism",
+"def": "A vegetarian diet that includes eggs and dairy but excludes meat.",
+"com": "",
+"pt": "Ovolactovegetarianismo"
+},
+{
+"i": 314,
+"termo": "Ovo-vegetarianism",
+"def": "A vegetarian diet that includes eggs but excludes dairy and meat.",
+"com": "",
+"pt": "Ovovegetarianismo"
+},
+{
+"i": 315,
+"termo": "Oxymoron",
+"def": "A figure of speech that combines contradictory terms.",
+"com": "Expressions such as \"humane slaughter\" or \"happy meat\" are described this way by antispeciesists, who consider it incompatible to cause the death of a being that wants to live with any notion of genuine humaneness or happiness for that being.",
+"pt": "Oxímoro"
+},
+{
+"i": 316,
+"termo": "Moral patient",
+"def": "A being that can be morally affected, benefited or harmed, even without being a moral agent.",
+"com": "Nonhuman animals fall into this category: even though they cannot be held responsible for their actions, they have interests whose violation or promotion is morally relevant.",
+"pt": "Paciente moral"
+},
+{
+"i": 317,
+"termo": "Children's palate",
+"def": "The set of food preferences formed in childhood, relevant to discussions about food education and the transition to plant-based diets.",
+"com": "",
+"pt": "Paladar infantil"
+},
+{
+"i": 318,
+"termo": "Livestock farming",
+"def": "The raising and use of animals for economic purposes, mainly for food.",
+"com": "",
+"pt": "Pecuária"
+},
+{
+"i": 319,
+"termo": "Extensive livestock farming",
+"def": "Raising animals over large areas, at lower animal density.",
+"com": "",
+"pt": "Pecuária extensiva"
+},
+{
+"i": 320,
+"termo": "Family livestock farming",
+"def": "A small-scale model, usually for subsistence or the local market.",
+"com": "",
+"pt": "Pecuária familiar"
+},
+{
+"i": 321,
+"termo": "Industrial livestock farming",
+"def": "An industrial-scale model, oriented towards maximum productivity and lowest cost.",
+"com": "",
+"pt": "Pecuária industrial"
+},
+{
+"i": 322,
+"termo": "Intensive livestock farming",
+"def": "Raising animals at high density with heavy use of inputs and technology.",
+"com": "",
+"pt": "Pecuária intensiva"
+},
+{
+"i": 323,
+"termo": "Sustainable livestock farming",
+"def": "A model of animal farming that seeks to reduce environmental impacts and increase resource efficiency, without necessarily changing the paradigm of using animals as a resource.",
+"com": "",
+"pt": "Pecuária sustentável"
+},
+{
+"i": 324,
+"termo": "Pedigree",
+"def": "A genealogical record that documents an animal's lineage, used for selective breeding.",
+"com": "",
+"pt": "Pedigree"
+},
+{
+"i": 325,
+"termo": "Fur and leather",
+"def": "Industries producing animal fur and leather, with specific debates about suffering and synthetic alternatives.",
+"com": "",
+"pt": "Peleteria e couro"
+},
+{
+"i": 326,
+"termo": "Critical thinking",
+"def": "The ability to analyse, question and evaluate arguments and beliefs in a rational and independent way.",
+"com": "Its consistent application is often cited as what makes it possible to identify logical inconsistencies in common justifications for speciesism, such as the appeal to tradition or to personal convenience.",
+"pt": "Pensamento crítico"
+},
+{
+"i": 327,
+"termo": "Personality",
+"def": "In animal ethics and law, the set of psychological characteristics (temperament, preferences, behaviour) that distinguish one individual from another; also used in the legal debate on personhood and legal personality.",
+"com": "Recognising legal personality for nonhuman animals is defended by antispeciesist jurists as a way of breaking with the status of mere property to which they are reduced in most legal systems.",
+"pt": "Personalidade"
+},
+{
+"i": 328,
+"termo": "Animal legal personhood",
+"def": "A debate about recognising animals as subjects of rights, and not merely property. It is defended by antispeciesist jurists as a necessary paradigm shift to break with the historical reduction of animals to the status of property.",
+"com": "",
+"pt": "Personalidade jurídica animal"
+},
+{
+"i": 329,
+"termo": "Fishing",
+"def": "The capture of aquatic animals, with a growing debate about fish sentience.",
+"com": "",
+"pt": "Pesca"
+},
+{
+"i": 330,
+"termo": "Industrial fishing",
+"def": "Large-scale fishing, associated with overexploitation and mass suffering.",
+"com": "",
+"pt": "Pesca industrial"
+},
+{
+"i": 331,
+"termo": "Pescatarianism",
+"def": "A vegetarian-style diet that includes fish and seafood but excludes the meat of other animals.",
+"com": "",
+"pt": "Pescatarianismo"
+},
+{
+"i": 332,
+"termo": "Pet shop",
+"def": "A commercial establishment that sells companion animals and related products.",
+"com": "",
+"pt": "Pet shop"
+},
+{
+"i": 333,
+"termo": "Fish farming (pisciculture)",
+"def": "The raising of fish in captivity for commercial purposes.",
+"com": "",
+"pt": "Piscicultura"
+},
+{
+"i": 334,
+"termo": "Plant-based",
+"def": "A term for a diet of plant origin, distinct from veganism in that it does not necessarily cover ethics or other uses of animals.",
+"com": "",
+"pt": "Plant-based"
+},
+{
+"i": 335,
+"termo": "Rape rack",
+"def": "A restraint structure used to immobilise females during forced mating or artificial insemination.",
+"com": "",
+"pt": "Plataforma de estupro (rape rack)"
+},
+{
+"i": 336,
+"termo": "Moral pluralism",
+"def": "The position that several ethical theories capture partial truths, with none of them being sufficient on its own.",
+"com": "A pluralist can recognise, for example, both the relevance of the total sum of well-being and the importance of prioritising the worst-off, without committing exclusively to a single theory.",
+"pt": "Pluralismo moral"
+},
+{
+"i": 337,
+"termo": "Future nonhuman populations",
+"def": "The extension of moral concern to future generations of animals, at the intersection of animal ethics and longtermism.",
+"com": "",
+"pt": "Populações futuras não-humanas"
+},
+{
+"i": 338,
+"termo": "Posthumanism",
+"def": "A philosophical current that questions anthropocentrism and the centrality of the human as the measure of all things, opening space to reconsider the moral status of animals and other entities.",
+"com": "By destabilising the privileged position of the human in the hierarchy of value, it creates relevant philosophical bridges with antispeciesism, although not every posthumanist strand treats animal ethics as a central priority.",
+"pt": "Pós-humanismo"
+},
+{
+"i": 339,
+"termo": "Pests",
+"def": "A social and legal category that lowers the moral status of certain animals (rats, pigeons, insects) because of conflict with human interests.",
+"com": "",
+"pt": "Pragas"
+},
+{
+"i": 340,
+"termo": "Pragmatism",
+"def": "In this context, an approach that prioritises practical and effective results over doctrinal purity in animal advocacy strategies.",
+"com": "It is often invoked by reformist and welfarist currents as a strategic justification, and questioned by abolitionists, who see a risk that the pursuit of immediate results legitimises continued forms of exploitation.",
+"pt": "Pragmatismo"
+},
+{
+"i": 341,
+"termo": "Pleasure",
+"def": "A pleasant subjective experience; the counterpart of pain in hedonic assessments of well-being.",
+"com": "",
+"pt": "Prazer"
+},
+{
+"i": 342,
+"termo": "Prescriptivity",
+"def": "The property of moral judgements of not only describing but also guiding and requiring a certain action from those who accept them.",
+"com": "Recognising animal suffering as morally relevant implies, under this property of moral judgements, a duty to act, and not only an intellectual acknowledgement.",
+"pt": "Prescritividade"
+},
+{
+"i": 343,
+"termo": "Prioritarianism",
+"def": "A variant that attributes greater value to improvements in the well-being of the worst-off, without requiring strict equality between individuals.",
+"com": "By giving extra weight to the suffering of those who are worse off, prioritarianism tends to prioritise interventions that relieve the most intense forms of animal exploitation, even when they do not produce the greatest possible aggregate gain.",
+"pt": "Prioritarismo"
+},
+{
+"i": 344,
+"termo": "Progressivism",
+"def": "A political and social stance in favour of change and reform, associated with greater openness to expanding rights and moral consideration to new groups.",
+"com": "The inclusion of animals in the progressive agenda is, however, still less consensual than that of other historically marginalised groups, which reflects the persistence of speciesism even in politically progressive sectors.",
+"pt": "Progressismo"
+},
+{
+"i": 345,
+"termo": "Moral progress",
+"def": "The idea that humanity can expand and refine its ethical judgements over time, as in the historical widening of the moral circle.",
+"com": "For antispeciesism, overcoming speciesism represents the next frontier of this progress, historically comparable to the abolition of slavery and the winning of civil rights.",
+"pt": "Progresso moral"
+},
+{
+"i": 346,
+"termo": "Social progress",
+"def": "A change in the norms and institutions of a society towards greater justice and collective well-being.",
+"com": "The growing social acceptance of veganism and animal protection is often interpreted, by advocates of the cause, as part of this process.",
+"pt": "Progresso social"
+},
+{
+"i": 347,
+"termo": "Propolis",
+"def": "A resinous substance produced by bees, used for medicinal and cosmetic purposes.",
+"com": "",
+"pt": "Própolis"
+},
+{
+"i": 348,
+"termo": "Proselytism",
+"def": "The act of actively trying to convince other people to adopt a belief or practice, such as veganism; a term sometimes used pejoratively to criticise approaches seen as aggressive.",
+"com": "Activists argue that seeking to persuade others is a natural and legitimate consequence of recognising an ongoing injustice, as happened in other historical social movements.",
+"pt": "Proselitismo"
+},
+{
+"i": 349,
+"termo": "Animal protein",
+"def": "Protein derived from animal tissues or secretions, distinct from plant protein in amino acid composition.",
+"com": "",
+"pt": "Proteína animal"
+},
+{
+"i": 350,
+"termo": "Soy protein",
+"def": "Protein extracted from the soybean, the basis of various meat substitutes.",
+"com": "",
+"pt": "Proteína de soja"
+},
+{
+"i": 351,
+"termo": "Soy protein isolate",
+"def": "A highly concentrated and purified form of soy protein, used industrially in vegan products.",
+"com": "",
+"pt": "Proteína isolada de soja"
+},
+{
+"i": 352,
+"termo": "Plant protein",
+"def": "Protein derived from plant sources (legumes, cereals, seeds), a nutritional alternative to animal protein.",
+"com": "",
+"pt": "Proteína vegetal"
+},
+{
+"i": 353,
+"termo": "Textured vegetable protein",
+"def": "Soy protein (or another legume) processed to obtain a fibrous, meat-like texture.",
+"com": "",
+"pt": "Proteína vegetal texturizada"
+},
+{
+"i": 354,
+"termo": "Protest",
+"def": "A collective public demonstration of disagreement, used as a tool of animal activism to press for change.",
+"com": "",
+"pt": "Protesto"
+},
+{
+"i": 355,
+"termo": "Proto-vegetarianism",
+"def": "A term used for primitive or partial forms of vegetarianism, generally motivated by practical or cultural reasons more than ethical ones.",
+"com": "",
+"pt": "Protovegetarianismo"
+},
+{
+"i": 356,
+"termo": "Pseudo-veganism",
+"def": "The use of vegan labelling or discourse without consistent ethical commitment, generally for commercial or marketing purposes.",
+"com": "",
+"pt": "Pseudo-veganismo"
+},
+{
+"i": 357,
+"termo": "Pseudoscience",
+"def": "A set of claims presented as scientific without following the scientific method.",
+"com": "Both unfounded claims against the nutritional viability of veganism and exaggerated claims about its benefits can qualify as pseudoscience when not backed by robust evidence.",
+"pt": "Pseudociência"
+},
+{
+"i": 358,
+"termo": "Cheese",
+"def": "A dairy product obtained by coagulating milk, traditionally using rennet of animal origin.",
+"com": "",
+"pt": "Queijo"
+},
+{
+"i": 359,
+"termo": "Vegan cheese",
+"def": "A substitute for traditional cheese made from nuts, soy or starches, without the use of animal milk.",
+"com": "",
+"pt": "Queijo vegetal"
+},
+{
+"i": 360,
+"termo": "Feed",
+"def": "Industrially manufactured food formulated for farm or companion animals.",
+"com": "",
+"pt": "Ração"
+},
+{
+"i": 361,
+"termo": "Vegan pet food",
+"def": "Feed formulated without ingredients of animal origin, generally intended for dogs and cats.",
+"com": "",
+"pt": "Ração vegana"
+},
+{
+"i": 362,
+"termo": "Rationality",
+"def": "The capacity to reason logically.",
+"com": "Its historical use as a criterion for the moral exclusion of animals is challenged by the argument from marginal cases: humans without full rational capacity, such as babies or people with certain disabilities, are still recognised as deserving moral consideration, which shows that rationality is not in fact the criterion actually applied.",
+"pt": "Racionalidade"
+},
+{
+"i": 363,
+"termo": "Radicalism",
+"def": "A stance that advocates deep and structural change, rejecting partial or incremental solutions.",
+"com": "In the animal movement, it is associated above all with abolitionism, which rejects gradual reforms as ends in themselves, advocating the complete end of the use of animals as property.",
+"pt": "Radicalismo"
+},
+{
+"i": 364,
+"termo": "Reactionism",
+"def": "A stance of opposition to social change, seeking a return to earlier norms or practices.",
+"com": "Applied to the animal question, it often relies on appeals to tradition and naturalness, both considered fallacies when used alone as a moral justification.",
+"pt": "Reacionarismo"
+},
+{
+"i": 365,
+"termo": "Reducetarianism",
+"def": "The practice of reducing (without necessarily eliminating) the consumption of animal-derived products.",
+"com": "",
+"pt": "Reducetarianismo"
+},
+{
+"i": 366,
+"termo": "Incremental reforms",
+"def": "Gradual and partial changes in the conditions of animal exploitation, promoted by reformist currents as a step towards (or a substitute for) deeper change.",
+"com": "",
+"pt": "Reformas incrementais"
+},
+{
+"i": 367,
+"termo": "Reformism",
+"def": "A current that accepts gradual improvements in the conditions of exploitation as a valid (or necessary) path to abolition. (See also Humane washing and Vegan washing, section 6.)",
+"com": "",
+"pt": "Reformismo"
+},
+{
+"i": 368,
+"termo": "Cultural relativism",
+"def": "The application of moral relativism to specific cultural practices.",
+"com": "Used as an argument against outside criticism of practices such as bullfighting or rituals involving animals, it is rejected by universalist currents of animal ethics, which consider the capacity to suffer a biological fact rather than a cultural construction open to relativisation.",
+"pt": "Relativismo cultural"
+},
+{
+"i": 369,
+"termo": "Moral relativism",
+"def": "The position that moral values depend on cultural or individual context.",
+"com": "Taken to its ultimate consequences, moral relativism would make it impossible to criticise practices of animal cruelty universally, even when widely recognised as avoidable, a limit pointed out by objectivist currents of animal ethics.",
+"pt": "Relativismo moral"
+},
+{
+"i": 370,
+"termo": "Ear cropping",
+"def": "The surgical amputation of part of an animal's ears (common in some dog breeds) for aesthetic reasons.",
+"com": "",
+"pt": "Remoção de orelha (ear cropping)"
+},
+{
+"i": 371,
+"termo": "Rennet",
+"def": "An enzyme extracted from the stomach of calves, used in traditional cheese production to coagulate milk.",
+"com": "",
+"pt": "Rennet"
+}
 ]

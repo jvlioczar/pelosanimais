@@ -46,9 +46,9 @@ def traduz():
     import glob, unicodedata
     en = {}
     for f in glob.glob(os.path.join(ROOT, 'data', 'novos', 'glos_en_*.json')):
-        for x in _json.load(open(f, encoding='utf-8')): en[x['i']] = x
-    for i, v in enumerate(VERBETES):
-        x = en.get(i)
+        for x in _json.load(open(f, encoding='utf-8')): en[x['pt']] = x
+    for v in VERBETES:
+        x = en.get(v['pt'])
         if not x or not x['def'].strip(): print('glossário sem tradução:', v['termo']); continue
         v['termo'], v['def'], v['com'] = x['termo'].strip(), x['def'].strip(), (x.get('com') or '').strip()
     VERBETES.sort(key=lambda v: unicodedata.normalize('NFD', v['termo'].lower()).encode('ascii', 'ignore').decode())
