@@ -278,6 +278,7 @@ VIESES = {
  'Neofobia alimentar': ('Food neophobia', 'Distrusting unfamiliar foods.'),
  'Efeito nocebo': ('Nocebo effect', 'Expecting something to do harm produces real symptoms.'),
  'Viés de saliência': ('Salience bias', 'Giving weight to what grabs attention, like the distance traveled, rather than to what matters most.'),
+ 'Viés de intenção': ('Intention bias', 'Reacting more strongly to harm when someone caused it on purpose than to equal harm from causes with no one to blame.'),
  'Viés do meio-termo': ('Middle-ground bias', 'Thinking the middle position is always the most sensible.'),
  'Lacuna de empatia': ('Empathy gap', 'Feeling less empathy for an animal the more evolutionarily distant it is from us.'),
  'Tamanhismo': ('Sizeism', 'Giving an animal less importance because it is small.'),
