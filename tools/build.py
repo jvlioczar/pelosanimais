@@ -284,6 +284,8 @@ QE = {
     'M10': [(7, 28), (7, 31)],
     'M11': [(9, 2), (9, 3)],
     'M12': [(9, 1), (9, 5), (9, 7)],
+    'M15': [(4, 19), (2, 13)],
+    'M16': [(7, 30), (7, 26)],
     'A1': [(1, 4)], 'A2': [(1, 14)], 'A3': [(1, 4)], 'A4': [(1, 3)], 'A5': [(2, 3), (2, 4)], 'A6': [(2, 4), (2, 13), (6, 8)],
     'A7': [(1, 10)], 'A8': [(1, 4)], 'A9': [(1, 10), (1, 11)], 'A10': [(1, 2), (2, 2)], 'A11': [(1, 6), (2, 2)], 'A12': [(1, 5)],
     'A13': [(1, 8)], 'A14': [(4, 4), (6, 21)], 'A15': [(6, 6), (2, 13)], 'A16': [(3, 1), (3, 2), (3, 4), (3, 10), (3, 13)],
@@ -1205,7 +1207,7 @@ def pagina_glossario():
 <nav class="glos-az" id="glos-az" aria-label="{L("Ir para a letra", "Jump to letter")}">{az}</nav>
 <div id="glos">{itens}</div>
 <p id="gvazio" class="fino" hidden>{L("Nenhum termo encontrado. Tente outra palavra ou escolha 'Todos os temas'.", "No terms found. Try another word or choose 'All topics'.")}</p>
-<p class="fino" style="margin-top:26px">{L("Base: rascunho do Dicionário-Guia de Ética e Defesa Animal, da Vegpedia, revisto para este guia. As definições resumem o uso do termo, e o texto em itálico mostra o que ele significa para o debate sobre os animais. Termos citados em outras definições são links. Falta algum termo? Avise e ele entra.", "Based on the draft Dictionary-Guide to Animal Ethics and Advocacy from Vegpedia, revised for this guide. The definitions summarize how the term is used, and the italic text shows what it means for the debate about animals. Terms mentioned in other definitions are links. Missing a term? Let us know and it will be added.")}</p>
+
 </div></section>
 <script type="application/ld+json">{ld}</script>
 <script>(function(){{var q=document.getElementById("gq"),s=document.getElementById("gs"),n=document.getElementById("gn"),v=document.getElementById("gvazio");

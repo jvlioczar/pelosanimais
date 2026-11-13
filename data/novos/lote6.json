@@ -1,0 +1,41 @@
+{
+ "args": {
+  "M15": {
+   "falha_pt": "Confunde igual consideração com igual peso: interesses semelhantes pesam o mesmo, e o peso de cada ser depende do quanto ele pode sentir, que é incerto, mas não é zero",
+   "en": {
+    "frase": "Sentientists give the same weight to insects, invertebrates and mammals",
+    "formas": [
+     "So for you an ant is worth the same as a person?",
+     "You think a cockroach is worth the same as your child?",
+     "If everything matters equally, nothing matters"
+    ],
+    "falha": "Confuses equal consideration with equal weight: similar interests weigh the same, and each being's weight depends on how much it can feel, which is uncertain but not zero"
+   }
+  },
+  "M16": {
+   "falha_pt": "Contagem incompleta: sem tratamento muitos parasitas morrem com o hospedeiro, a morte só é dano para quem sente e teria uma vida boa, e prevenir não é matar",
+   "en": {
+    "frase": "Sentientists defend parasitism",
+    "formas": [
+     "So I can't take the tick off my dog?",
+     "For a sentientist, killing a thousand worms to save one animal is a crime",
+     "The parasite is an animal too, or do you pick who deserves it?"
+    ],
+    "falha": "Incomplete count: without treatment many parasites die with the host, death is only a harm to those who feel and would have a good life, and preventing is not killing"
+   }
+  }
+ },
+ "motivos": {
+  "Da pergunta sobre o limite passa-se à acusação de igualar tudo": "From the question about the limit one moves to the charge of equating everything",
+  "Diante da evidência, a objeção deixa de negar e passa a ridicularizar": "Faced with the evidence, the objection stops denying and starts ridiculing",
+  "A defesa dos insetos como alimento leva à pergunta sobre o seu peso moral": "Defending insects as food leads to the question of their moral weight",
+  "O peso menor dos insetos é estendido a todos os animais": "The lower weight of insects is extended to all animals",
+  "Quem pesa indivíduos é acusado de desprezar o conjunto": "Whoever weighs individuals is accused of despising the whole",
+  "O peso dado a seres pequenos é levado a casos como o dos parasitas": "The weight given to small beings is taken to cases like parasites",
+  "A pergunta sobre pragas e parasitas passa a ser sobre o que sencientistas deveriam defender": "The question about pests and parasites becomes one about what sentientists should defend",
+  "O peso dado a seres pequenos é levado ao caso dos parasitas": "The weight given to small beings is taken to the case of parasites",
+  "O parasitismo é usado como exemplo de que a natureza é complexa demais": "Parasitism is used as an example that nature is too complex",
+  "A dificuldade do caso vira argumento contra qualquer intervenção": "The difficulty of the case becomes an argument against any intervention",
+  "Os cenários extremos são tratados como distração": "The extreme scenarios are treated as a distraction"
+ }
+}

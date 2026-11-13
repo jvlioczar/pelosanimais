@@ -1,0 +1,23 @@
+{
+ "args": {
+  "L27": {
+   "falha_pt": "Ataque à pessoa e apelo ao ridículo: estranheza não é erro, e o teste justo é aplicar o mesmo cenário a humanos e examinar a premissa",
+   "en": {
+    "frase": "Sentientists are even crazier than vegans",
+    "formas": [
+     "Vegans were already hard to put up with, now there are sentientists",
+     "A sentientist is a vegan who lost their mind",
+     "This is veganism taken to delirium"
+    ],
+    "falha": "Attack on the person and appeal to ridicule: strangeness is not error, and the fair test is to apply the same scenario to humans and examine the premise"
+   }
+  }
+ },
+ "motivos": {
+  "O rótulo aplicado aos veganos é estendido a quem vai além": "The label applied to vegans is extended to those who go further",
+  "A estranheza da posição sobre os insetos vira acusação": "The strangeness of the position on insects becomes an accusation",
+  "A caricatura do sencientista vira prova de exagero": "The caricature of the sentientist becomes proof of excess",
+  "O exagero atribuído a uns prejudicaria a causa": "The excess attributed to some would harm the cause",
+  "O radicalismo é atribuído ao movimento inteiro": "Radicalism is attributed to the whole movement"
+ }
+}
