@@ -50,6 +50,23 @@ def _data_fonte(k):
     arqs = [a for a in arqs if os.path.exists(a)]
     return datetime.date.fromtimestamp(max(os.path.getmtime(a) for a in arqs)).isoformat() if arqs else ATUALIZADO
 LASTMOD, ALTERNA = {}, {}
+def _publicacoes():
+    """Data em que cada página de argumento foi publicada pela primeira vez: o primeiro commit que criou o arquivo
+    no repositório do site (pelosanimais ou fortheanimals). Página ainda não publicada usa a data de hoje."""
+    import subprocess
+    pasta = 'arguments' if EN else 'argumentos'
+    try:
+        saida = subprocess.run(['git', '-C', OUT, 'log', '--diff-filter=A', '--name-only', '--format=@%ad', '--date=short', '--', pasta],
+                               capture_output=True, text=True, encoding='utf-8', timeout=60).stdout
+    except Exception:
+        return {}
+    pub, data = {}, None
+    for ln in saida.splitlines():
+        if ln.startswith('@'): data = ln[1:]
+        elif ln.strip() and data: pub[ln.strip()] = data  # o log vem do mais novo ao mais antigo: fica a data mais antiga
+    return pub
+PUBLICADO = _publicacoes()
+HOJE = __import__('datetime').date.today().isoformat()
 EXT = 'target="_blank" rel="noopener"'
 PT_ONLY = set()  # páginas ainda sem versão em inglês: sem botão EN, sem hreflang e fora do site em inglês (nenhuma por enquanto)
 IND_AVISO = ('Este é um argumento indireto: discute saúde, ambiente, economia, praticidade ou quem defende o veganismo, e não se os animais merecem respeito. '
@@ -690,9 +707,9 @@ def dados(path, title, desc, url, tipo, trilha, pergunta=None):
     site = {'@type': 'WebSite', '@id': SITE + '/#site', 'name': NOME, 'url': SITE + '/', 'inLanguage': LANG, 'publisher': org}
     if path == 'index.html': grafo = [site]
     else:
-        # dateModified: a mesma data da fonte usada no lastmod do sitemap; datePublished: o lançamento de cada edição
+        # dateModified: a mesma data da fonte usada no lastmod do sitemap; datePublished: a primeira publicação da página
         pg = {'@type': tipo, 'name': title, 'description': desc, 'url': url, 'inLanguage': LANG, 'isPartOf': {'@id': SITE + '/#site'}, 'dateModified': LASTMOD.get(path, ATUALIZADO)}
-        if tipo == 'Article': pg.update(headline=title[:110], datePublished=L('2026-11-07', '2026-11-08'), image=f'{SITE}/assets/share.png?v={VER_IMG}', author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html'}, publisher=org, mainEntityOfPage=url)
+        if tipo == 'Article': pg.update(headline=title[:110], datePublished=PUBLICADO.get(path, HOJE), image=f'{SITE}/assets/share.png?v={VER_IMG}', author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html'}, publisher=org, mainEntityOfPage=url)
         mig = [('Início', SITE + '/')] + [(n, f'{SITE}/{u.replace("index.html", "")}') for n, u in trilha] + [(title, url)]
         if pergunta:
             pg['mainEntity'] = {'@type': 'Question', 'name': html.unescape(pergunta[0]), 'acceptedAnswer': {'@type': 'Answer', 'text': html.unescape(pergunta[1])}}
@@ -722,7 +739,8 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
     url = SITE + '/' + ('' if home else path)
     u_pt, u_en = url_lingua(k, 'pt'), url_lingua(k, 'en')
     outra = u_pt if EN else u_en
-    LASTMOD[path], ALTERNA[path] = _data_fonte(k), (u_pt, u_en)
+    # a alteração nunca é anterior à publicação (vale para capítulos escritos antes e publicados depois)
+    LASTMOD[path], ALTERNA[path] = max(_data_fonte(k), PUBLICADO.get(path, HOJE) if path.startswith(('argumentos/', 'arguments/')) else ''), (u_pt, u_en)
     alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     # o título da página inicial diz o que as pessoas buscam, e não só o nome
     full = L('Guia de Argumentação Pelos Animais: respostas a +250 argumentos contra o veganismo', 'For the Animals: answers to 250+ arguments against veganism') if home else f'{title} | {NOME}'
