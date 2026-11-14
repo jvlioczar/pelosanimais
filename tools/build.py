@@ -613,7 +613,7 @@ def desc_seo(d):
 LOGO = '<svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 2h28a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H19l-8 6v-6H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z" fill="#0a3703"/><g fill="#ffeb5b"><ellipse cx="15.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(-10 15.500 11.500)"/><ellipse cx="24.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(10 24.500 11.500)"/><ellipse cx="20" cy="22" rx="8" ry="6.800"/></g><g fill="#0a3703"><circle cx="17" cy="21" r="1.100"/><circle cx="23" cy="21" r="1.100"/><circle cx="20" cy="24.200" r="1"/></g></svg>'
 TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
-MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas e éticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
+MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
         ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
         ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
                         ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
