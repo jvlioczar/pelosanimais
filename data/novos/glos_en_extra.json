@@ -154,5 +154,29 @@
   "termo": "Absent referent",
   "def": "A concept from the author Carol J. Adams: the animal who became food is made absent from the plate, by words and packaging that hide that there was a living individual and a death.",
   "com": "Words like \"steak\" and \"chicken\" separate the food from the animal. Rebuilding the link between what we eat and who was killed is a common awareness strategy. See The Sexual Politics of Meat (1990)."
+ },
+ {
+  "pt": "Carbonismo",
+  "termo": "Carbonism",
+  "def": "a form of substratism that gives less weight to the good of a sentient being because its body is not organic, carbon-based.",
+  "com": "It stands to substratism as anthropocentrism stands to speciesism: the particular case that privileges one's own group. If what matters is the capacity to be harmed or benefited, the material the body is made of decides nothing. See Substratism, Speciesism and Sentience in AI and digital systems."
+ },
+ {
+  "pt": "Substratismo",
+  "termo": "Substratism",
+  "def": "giving different weight to the good of a sentient being according to the substrate its body is made of, biological or digital, for example.",
+  "com": "The parallel is direct: just as speciesism uses species as the criterion, and species says nothing about the capacity to suffer, substratism uses the material of the body, which says nothing either. The legitimate question is a different, empirical one: is that being sentient? See Carbonism, Speciesism and Sentience in robots."
+ },
+ {
+  "pt": "Viés temporal",
+  "termo": "Temporal bias",
+  "def": "the tendency to give more weight to what is near in time, treating future suffering as less important merely for being future; the position that adopts it as a principle is called temporalism.",
+  "com": "The parallel is with distance in space: someone's pain ten thousand kilometres away is no smaller for it. Parfit distinguished discounting for uncertainty, which is legitimate, from pure discounting, merely for being later. See Impartiality, Temporal impartiality and Longtermism."
+ },
+ {
+  "pt": "Imparcialidade temporal",
+  "termo": "Temporal impartiality",
+  "def": "unbiased consideration of those affected by our decisions, whatever time they exist in.",
+  "com": "It is impartiality applied to time, as spatial impartiality is applied to distance. Accepting it while excluding future animals adds two kinds of neglect together: temporal bias and speciesism. See Temporal bias and Longtermism."
  }
 ]
