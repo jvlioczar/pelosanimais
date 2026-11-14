@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 257 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 260 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -68,6 +68,7 @@ O natural é justificado?
 - [C10. Animais de criação existem para isso](https://pelosanimais.biblioverse.org/argumentos/animais-de-criacao-existem-para-isso.html): Teleologia imposta: a finalidade é atribuída por quem lucra
 - [C11. Vacas precisam ser ordenhadas](https://pelosanimais.biblioverse.org/argumentos/vacas-precisam-ser-ordenhadas.html): Só porque foram emprenhadas e selecionadas para superprodução
 - [C12. Se não comermos, os animais vão dominar o planeta](https://pelosanimais.biblioverse.org/argumentos/se-nao-comermos-os-animais-vao-dominar-o-planeta.html): Inverte a causalidade: existem em excesso porque são criados
+- [C13. Eu honro os animais que como](https://pelosanimais.biblioverse.org/argumentos/eu-honro-os-animais-que-como.html): A gratidão está em quem come e não muda nada para quem é comido; honrar um animal é respeitar o seu interesse em viver
 
 ## D. Tradição, cultura e religião (Parte DIR)
 
@@ -210,6 +211,8 @@ E fora do prato?
 - [I30. O passarinho nasceu na gaiola, solto ele não sobrevive](https://pelosanimais.biblioverse.org/argumentos/o-passarinho-nasceu-na-gaiola-solto-ele-nao-sobrevive.html): Isso pede cuidar bem da ave que já existe, e não comprar ou criar outras para viver presas; o mercado alimenta o tráfico
 - [I31. Ter pet também é exploração, e seu gato come carne](https://pelosanimais.biblioverse.org/argumentos/ter-pet-tambem-e-exploracao-e-seu-gato-come-carne.html): Adotar e cuidar difere de criar para usar; gatos precisam de nutrientes, não de carne, e nada disso autoriza comer animais
 - [I32. A coleira de choque é só um estímulo, não machuca o cachorro](https://pelosanimais.biblioverse.org/argumentos/a-coleira-de-choque-e-so-um-estimulo-nao-machuca-o-cachorro.html): Ela funciona porque incomoda, não trata a causa do latido, e o treino com recompensa funciona tão bem ou melhor
+- [I33. O carmim é um corante natural, melhor que os artificiais](https://pelosanimais.biblioverse.org/argumentos/o-carmim-e-um-corante-natural-melhor-que-os-artificiais.html): Natural não quer dizer sem vítimas: são cerca de 70 mil cochonilhas mortas por meio quilo de corante, e há vermelhos naturais de beterraba, páprica e frutas
+- [I34. Eu só uso produtos cruelty free](https://pelosanimais.biblioverse.org/argumentos/eu-so-uso-produtos-cruelty-free.html): O selo costuma tratar só de testes: o produto pode conter carmim, lanolina, cera de abelha, colágeno e outros ingredientes de animais explorados e mortos
 
 ## J. Praticidade, economia e sociedade (Parte IND)
 
