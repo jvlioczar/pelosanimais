@@ -907,7 +907,7 @@
 
 **Fast food** — categoria de alimentação de preparo e consumo rápidos, geralmente industrializada e padronizada.
 
-**Flexitarianismo** — dieta predominantemente vegetariana com consumo ocasional e reduzido de carne.
+**Flexitarianismo** — alimentação predominantemente vegetariana, com consumo ocasional e reduzido de carne. *O termo se espalhou nos anos 2000 e é usado por quem quer comer menos carne sem abrir mão dela por completo. Comer menos carne reduz o número de animais mortos, e por isso é um passo bem-vindo; mas, para cada animal que continua sendo morto, a pergunta moral é a mesma. Veja Reducetarianismo.*
 
 **Freeganismo** — prática de recuperar e consumir alimentos descartados (ainda próprios para consumo) como forma de reduzir desperdício e resistir ao consumismo, frequentemente associada a valores veganos.
 
@@ -921,19 +921,19 @@
 
 **Junk food** — alimentos industrializados de baixo valor nutricional e alta densidade calórica.
 
-**Lactovegetarianismo** — dieta vegetariana que inclui laticínios, mas exclui ovos e carne.
+**Lactovegetarianismo** — vegetarianismo que inclui leite e derivados, mas exclui ovos e todas as carnes. *É a forma tradicional de vegetarianismo na Índia, ligada ao hinduísmo e ao jainismo. Na produção comercial, a vaca precisa parir para dar leite, os bezerros são separados das mães, e os machos costumam ir para o abate. Veja Ovolactovegetarianismo.*
 
 **Macrobiótica** — sistema alimentar de origem japonesa, baseado na ideia de equilíbrio entre yin e yang, que prioriza grãos integrais, leguminosas e vegetais; quem o segue é chamado de macrobiótico. *Foi popularizado no Ocidente no século XX por George Ohsawa e Michio Kushi. Muitas versões são quase vegetais, mas incluem peixe, por isso a macrobiótica não é o mesmo que veganismo. Versões muito restritivas, sobretudo em crianças, foram associadas a deficiências nutricionais, como de vitamina B12 e de vitamina D.*
 
-**Onivorismo** — dieta que inclui tanto alimentos de origem vegetal quanto animal.
+**Onivorismo** — alimentação que inclui alimentos de origem vegetal e animal; em biologia, característica de animais como humanos, porcos, ursos e ratos. *Ser biologicamente onívoro significa poder digerir os dois tipos de alimento, e não precisar comer animais: uma alimentação vegetal bem planejada supre as necessidades humanas. Concluir que devemos comer animais porque podemos é a falácia naturalista. Veja Herbivorismo, Carnivorismo e Dieta vegana.*
 
-**Ovolactovegetarianismo** — dieta vegetariana que inclui ovos e laticínios, mas exclui carne.
+**Ovolactovegetarianismo** — vegetarianismo que inclui ovos e laticínios, mas exclui todas as carnes, inclusive peixes e frutos do mar. *É a forma mais comum de vegetarianismo no Ocidente. Ovos e leite não exigem matar o animal na hora do consumo, mas as indústrias que os produzem matam: na produção de ovos, bilhões de pintinhos machos são mortos ao nascer, e galinhas e vacas são abatidas quando a produção cai; na de leite, os bezerros são separados das mães. Veja Ovovegetarianismo e Lactovegetarianismo.*
 
-**Ovovegetarianismo** — dieta vegetariana que inclui ovos, mas exclui laticínios e carne.
+**Ovovegetarianismo** — vegetarianismo que inclui ovos, mas exclui laticínios e todas as carnes. *Às vezes é adotado por intolerância à lactose ou por objeção à indústria do leite. A produção comercial de ovos, porém, também envolve a morte dos pintinhos machos e o abate das galinhas quando a postura cai. Veja Ovolactovegetarianismo.*
 
 **Paladar infantil** — conjunto de preferências alimentares formadas na infância, relevante para discussões sobre educação alimentar e transição para dietas vegetais.
 
-**Pescatarianismo** — dieta vegetariana que inclui peixes e frutos do mar, mas exclui carnes de outros animais.
+**Pescatarianismo** — alimentação que exclui as carnes de animais terrestres, mas inclui peixes e frutos do mar. *Não é uma forma de vegetarianismo, embora às vezes seja chamada assim. Peixes são sencientes, e a pesca mata mais animais que qualquer outra atividade humana: estimativas da fishcount falam em mais de um trilhão de peixes selvagens capturados por ano. Veja Vegetarianismo.*
 
 **Plant-based** — termo que designa dieta de origem vegetal, distinto de veganismo por não abranger necessariamente ética ou outros usos de animais.
 
@@ -941,7 +941,7 @@
 
 **Pseudo-veganismo** — uso da rotulagem ou discurso vegano sem compromisso ético consistente, geralmente com fins comerciais ou de marketing.
 
-**Reducetarianismo** — prática de reduzir (sem necessariamente eliminar) o consumo de produtos de origem animal.
+**Reducetarianismo** — compromisso de reduzir, sem necessariamente eliminar, o consumo de carne, leite, ovos e outros produtos de origem animal. *O termo foi criado por Brian Kateman, fundador da Reducetarian Foundation, nos Estados Unidos. A ideia é que muitas pessoas reduzindo têm um efeito grande, e que reduzir é mais fácil de começar que eliminar. Do ponto de vista dos animais, cada redução conta; do ponto de vista ético, reduzir é um caminho, e não um ponto de chegada. Veja Flexitarianismo e Veganismo.*
 
 **Segurança alimentar** — garantia de acesso regular e permanente a alimentos de qualidade suficiente para uma vida saudável, tema conectado à justiça alimentar.
 
@@ -959,7 +959,7 @@
 
 **Veganismo pragmático** — vertente focada em resultados e redução de dano, priorizando adesão em massa sobre pureza ideológica.
 
-**Vegetarianismo** — termo lato sensu que se refere à exclusão de carne da dieta, sem necessariamente excluir todos os produtos de origem animal.
+**Vegetarianismo** — alimentação que exclui carnes de qualquer animal, inclusive peixes e frutos do mar, mas pode incluir outros produtos de origem animal, como leite, ovos e mel. *O termo se popularizou com a fundação da Vegetarian Society, na Inglaterra, em 1847. Muita gente acha que vegetarianos comem peixe, mas não comem. Alguns produtos escondem ingredientes de animais mortos, como a gelatina e o coalho de certos queijos. As vertentes mais comuns são o ovolactovegetarianismo, o lactovegetarianismo e o ovovegetarianismo; a versão sem nenhum produto animal é o vegetarianismo estrito. Veja Veganismo.*
 
 **Vegetarianismo estrito** — termo usado no Brasil como sinônimo de dieta 100% vegetal (exclui carne, laticínios, ovos e mel), distinto do veganismo como filosofia mais ampla que também abrange vestuário, entretenimento e outros usos de animais.
 

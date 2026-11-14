@@ -13,7 +13,7 @@ FORMAS_PT = {
  'L22': ['Só implicam com o candomblé', 'Atacar o sacrifício religioso é racismo religioso'],
  'L23': ['Veganos são ateus', 'Veganos não gostam de cristãos nem de Jesus', 'Veganos não gostam de muçulmanos', 'Veganismo quer tomar o lugar da religião'],
  'L8': ['Veganos querem purificar o mundo', 'É uma moral contra a natureza humana', 'É coisa de quem precisa se sentir moralmente superior'],
- 'C7': ['Achar que estamos fora do ciclo é ilusão', 'O que importa é participar do ciclo de forma consciente', 'Todo ser vivo se alimenta de outro'],
+ 'C7': ['Achar que estamos fora do ciclo é ilusão', 'O que importa é participar do ciclo de forma consciente', 'Todo ser vivo se alimenta de outro', 'Fazemos parte de uma rede ecológica', 'Tudo está conectado na teia da vida'],
  'D5': ['Tenho que respeitar meus ancestrais', 'Recusar a comida da minha mãe é desrespeito', 'Minha família sempre viveu assim, quem sou eu para dizer que estavam errados?'],
  'E8': ['Perguntei ao ChatGPT e ele disse que comer carne é uma escolha pessoal', 'Até a inteligência artificial discorda de vocês', 'A IA é neutra, e ela não manda ninguém virar vegano'],
  'H13': ['O foco deve ser o sistema agrícola, e não a dieta', 'O que conta é o solo e o modelo de agricultura que você financia', 'Prefiro carne de um bom produtor a soja de monocultura'],

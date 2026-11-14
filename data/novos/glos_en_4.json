@@ -226,8 +226,8 @@
 {
 "i": 311,
 "termo": "Omnivorism",
-"def": "A diet that includes both plant-based and animal-based foods.",
-"com": "",
+"def": "A diet that includes both plant and animal foods; in biology, a trait of animals such as humans, pigs, bears and rats.",
+"com": "Being biologically omnivorous means being able to digest both kinds of food, not needing to eat animals: a well-planned plant-based diet meets human needs. Concluding that we should eat animals because we can is the naturalistic fallacy. See Herbivory, Carnivorism and Vegan diet.",
 "pt": "Onivorismo"
 },
 {
@@ -240,15 +240,15 @@
 {
 "i": 313,
 "termo": "Lacto-ovo vegetarianism",
-"def": "A vegetarian diet that includes eggs and dairy but excludes meat.",
-"com": "",
+"def": "Vegetarianism that includes eggs and dairy but excludes all meat, including fish and seafood.",
+"com": "It is the most common form of vegetarianism in the West. Eggs and milk don't require killing the animal at the time of consumption, but the industries that produce them do kill: in egg production, billions of male chicks are killed at birth, and hens and cows are slaughtered when production falls; in dairy, calves are separated from their mothers. See Ovo-vegetarianism and Lacto-vegetarianism.",
 "pt": "Ovolactovegetarianismo"
 },
 {
 "i": 314,
 "termo": "Ovo-vegetarianism",
-"def": "A vegetarian diet that includes eggs but excludes dairy and meat.",
-"com": "",
+"def": "Vegetarianism that includes eggs but excludes dairy and all meat.",
+"com": "It is sometimes adopted because of lactose intolerance or objection to the dairy industry. Commercial egg production, however, also involves killing male chicks and slaughtering hens when laying declines. See Lacto-ovo vegetarianism.",
 "pt": "Ovovegetarianismo"
 },
 {
@@ -366,8 +366,8 @@
 {
 "i": 331,
 "termo": "Pescatarianism",
-"def": "A vegetarian-style diet that includes fish and seafood but excludes the meat of other animals.",
-"com": "",
+"def": "A diet that excludes the meat of land animals but includes fish and seafood.",
+"com": "It isn't a form of vegetarianism, though it is sometimes called one. Fish are sentient, and fishing kills more animals than any other human activity: fishcount estimates put the number of wild fish caught each year at over a trillion. See Vegetarianism.",
 "pt": "Pescatarianismo"
 },
 {
@@ -604,8 +604,8 @@
 {
 "i": 365,
 "termo": "Reducetarianism",
-"def": "The practice of reducing (without necessarily eliminating) the consumption of animal-derived products.",
-"com": "",
+"def": "A commitment to reduce, without necessarily eliminating, the consumption of meat, dairy, eggs and other animal products.",
+"com": "The term was coined by Brian Kateman, founder of the Reducetarian Foundation in the United States. The idea is that many people reducing has a large effect, and that reducing is easier to start than eliminating. From the animals' point of view, every reduction counts; ethically, reducing is a path, not a destination. See Flexitarianism and Veganism.",
 "pt": "Reducetarianismo"
 },
 {
