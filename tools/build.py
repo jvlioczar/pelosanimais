@@ -136,7 +136,7 @@ IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é ce
     'uma alimentação vegetal bem planejada supre as necessidades e causa menos dano ambiental. No moral, porque dá um salto do que <em>é</em> para o que <em>deve ser</em>, '
     'a passagem que os filósofos chamam de falácia do é-deve: mesmo que comer animais trouxesse algum benefício, isso não mostraria que é justo fazê-los sofrer e morrer para obtê-lo. '
     'Mostrar os fatos é sempre necessário; parar neles, nunca é suficiente.</p>')
-DESCRICAO = 'Um guia para pessoas que querem conversar melhor e pensar com mais clareza sobre veganismo e ética animal. Ele cataloga de forma sistemática todas as ideias usadas para explorar, causar danos ou matar animais e outros seres sencientes, ou para evitar ajudá-los, e leva a sério e explica a fundo os questionamentos e vieses das pessoas que se opõem ao antiespecismo.'
+DESCRICAO = 'Um guia para pessoas que querem conversar melhor e pensar com mais clareza sobre os animais, o veganismo e a ética animal. Ele cataloga de forma sistemática todas as ideias usadas para explorar, causar danos ou matar seres sencientes, ou para evitar ajudá-los, e leva a sério e explica a fundo os questionamentos e vieses das pessoas que se opõem ao antiespecismo.'
 e = lambda s: html.escape(str(s), quote=True)
 def L(pt, en):
     """Texto com variáveis nos dois idiomas; os textos fixos são traduzidos por tools/en/ui.py."""
