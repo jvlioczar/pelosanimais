@@ -331,7 +331,7 @@
 
 **Falácia naturalista** — erro de inferir que algo é moralmente correto só por ser "natural". *Amplamente usada para justificar o consumo de carne, essa falácia ignora que diversas práticas consideradas "naturais" — como a violência entre humanos — não são, por isso, consideradas moralmente aceitáveis.*
 
-**Falácias** — erros de raciocínio comuns em debates sobre o uso de animais. *Apelos à tradição, à natureza ou ao número de pessoas que praticam determinado hábito são formas recorrentes de falácia usadas para evitar o exame direto do sofrimento causado a animais.*
+**Falácias** — erros de raciocínio que fazem um argumento parecer convincente sem que a conclusão se siga das premissas; no singular, falácia. *Algumas falácias são formais, erros na estrutura lógica; outras são informais, como o apelo à tradição, o apelo à natureza, o apelo à maioria e o espantalho, que distorce a posição do outro. Reconhecer uma falácia não prova que a conclusão é falsa, só que aquele argumento não a sustenta. O guia tem uma página com as falácias mais comuns sobre os animais. Veja Argumento e Viés.*
 
 **Human first** — expressão usada para designar posições que priorizam sistematicamente interesses humanos sobre os de outras espécies, mesmo em casos de conflito menor. *Do ponto de vista da igual consideração de interesses, priorizar automaticamente interesses humanos triviais sobre interesses vitais de animais — como não sofrer ou não morrer — é considerado uma manifestação direta de especismo.*
 
@@ -803,7 +803,7 @@
 
 **Bem-estar animal** — campo científico e ético que avalia e busca melhorar as condições de vida de animais sob cuidado humano.
 
-**Dor** — experiência sensorial e emocional desagradável associada a dano real ou potencial; conceito central para determinar senciência.
+**Dor** — experiência sensorial e emocional desagradável associada a um dano real ou potencial aos tecidos, ou semelhante à associada a esse dano. É a definição adotada em 2020 pela Associação Internacional para o Estudo da Dor (IASP). *A dor é uma experiência, e não apenas um reflexo: por isso se distingue da nocicepção. Há evidências fortes de dor em mamíferos e aves, e evidências crescentes em peixes, polvos e lulas, caranguejos e lagostas; com base numa revisão dessas evidências, o Reino Unido incluiu polvos, lulas, caranguejos e lagostas na sua lei de senciência animal de 2022. Veja Nocicepção, Sofrimento e Senciência.*
 
 **Estereotipia** — comportamento repetitivo e sem função aparente, indicador de sofrimento psicológico ou frustração em animais mantidos em condições inadequadas *(ver também comportamento estereotipado, seção 8)*.
 
@@ -817,11 +817,11 @@
 
 **Integridade psicológica** — preservação da saúde mental e emocional de um indivíduo, incluindo ausência de estresse crônico, medo ou frustração comportamental prolongada.
 
-**Necessidade** — exigência biológica ou psicológica essencial para o bem-estar de um ser, cuja privação causa sofrimento (ex.: necessidade de socialização, movimento ou expressão de comportamentos naturais).
+**Necessidade** — aquilo de que um ser precisa para viver bem; em ética, o critério que separa o dano inevitável do evitável. *Em biologia, as necessidades de um animal incluem alimento, abrigo, movimento, convívio e a expressão de comportamentos naturais, e a privação delas causa sofrimento. Em ética, quase todas as pessoas e muitas leis aceitam que causar sofrimento desnecessário é errado; a discussão está em o que conta como necessário. Para a maioria das pessoas com acesso a alimentos variados, comer animais não é necessário para ter saúde, segundo entidades de nutrição como a Academia de Nutrição e Dietética dos Estados Unidos. Veja o argumento "Comer animais é necessário para sobreviver".*
 
 **Prazer** — experiência subjetiva agradável; contraparte da dor nas avaliações hedônicas de bem-estar.
 
-**Sofrimento** — experiência negativa central na maioria das justificativas para consideração moral.
+**Sofrimento** — estado negativo vivido por um ser senciente, que pode incluir dor, medo, estresse, frustração, fome, tédio ou isolamento, sobretudo quando é intenso ou prolongado. *Sofrimento é mais amplo que dor física: um animal confinado sem poder se mover, separado da mãe ou impedido de comportamentos naturais pode sofrer sem estar ferido. Por isso a pergunta moral não é só "dói?", mas "como é a vida desse animal?". Veja Dor, Bem-estar animal e Senciência.*
 
 **Sofrimento de causas naturais** — dor e morte que ocorrem sem intervenção humana (doença, predação, desastres).
 

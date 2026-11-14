@@ -1294,9 +1294,10 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'bem-estarismo': 'alem/correntes-do-veganismo.html', 'novo bem-estarismo (neo-welfarism)': 'alem/correntes-do-veganismo.html', 'veganismo pragmatico': 'alem/correntes-do-veganismo.html',
     'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
+    'falacias': 'falacias.html', 'vies': 'vieses.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
-                    'falacias.html': ('Falácias', 'Fallacies')}
+                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases')}
 
 def pagina_glossario():
     """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
@@ -1312,6 +1313,9 @@ def pagina_glossario():
     GLOS_GUIA['herbivorismo'] = f'argumentos/{SLUG_ARG["c2"]}.html'
     GLOS_GUIA['onivorismo'] = f'argumentos/{SLUG_ARG["c2"]}.html'
     GLOS_GUIA['insetivorismo'] = f'argumentos/{SLUG_ARG["h17"]}.html'
+    GLOS_GUIA['necessidade'] = f'argumentos/{SLUG_ARG["g1"]}.html'
+    GLOS_GUIA['dor'] = f'argumentos/{SLUG_ARG["a1"]}.html'
+    GLOS_GUIA['nocicepcao'] = f'argumentos/{SLUG_ARG["a2"]}.html'
     # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
     vs = []
     for v in glossario.VERBETES:
