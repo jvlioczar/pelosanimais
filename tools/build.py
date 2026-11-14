@@ -1114,13 +1114,16 @@ def raciocinio():
         itens = ''.join(f'<li><a href="argumentos/{b.lower()}.html"><b>{b}</b> {e(ARGS[b]["frase"])}</a><small>{e(m)}</small></li>' for b, m in vai.items())
         lista += f'<div class="rac-item" style="--c:{FAMILIAS[c[0]]["cor"]}"><h3><a href="argumentos/{c.lower()}.html"><span class="cod">{c}</span> {e(ARGS[c]["frase"])}</a></h3><ul>{itens}</ul></div>'
     n_ar = sum(len(v) for v in G.values())
-    corpo = cabeca('<a href="./">Início</a>', 'O raciocínio antivegano', 'Quando uma objeção é respondida, raramente a conversa termina: ela pula para outra. Escolha um argumento, veja a resposta e siga para onde o debate costuma ir depois, até chegar a uma das raízes.') + f'''<section class="secao"><div class="wrap">
+    corpo = cabeca('<a href="./">Início</a>', 'O raciocínio antivegano', 'Quando uma objeção é respondida, raramente a conversa termina: ela pula para outra, e nem sempre a mesma. Escolha um argumento e veja a árvore de caminhos que o debate costuma tomar depois, ramo por ramo, até chegar a uma das raízes.') + f'''<section class="secao"><div class="wrap">
 <div class="rac-topo"><p class="rac-num"><b>{len(nos)}</b> argumentos conectados por <b>{n_ar}</b> caminhos, a partir das cadeias do catálogo, das conexões de cada capítulo e de um mapeamento editorial deste guia.</p>
 <div class="filtros"><label class="so-leitor" for="rac-sel">Começar por</label><select id="rac-sel" class="sel"><option value="">Escolha o argumento que você ouviu…</option>{opcoes}</select></div>
 <p class="ti">Ou comece por uma abertura comum</p><div class="filtros rac-ini">{chips}</div></div>
-<div id="rac" class="rac" hidden><ol class="rac-trilha" id="rac-trilha" aria-label="Caminho percorrido"></ol>
+<div id="rac" class="rac" hidden><div class="rac-esq"><p class="ti">A árvore da conversa</p><p class="rac-dica">Depois de cada objeção podem vir várias. Toque em <b>+</b> para abrir os caminhos de um ramo e no argumento para ver a resposta.</p>
+<div class="rac-bot"><button type="button" class="btn alt peq" id="rac-mais">Abrir mais um nível</button><button type="button" class="btn alt peq" id="rac-menos">Recolher</button></div>
+<div class="rac-arv" id="rac-arvore"></div></div>
+<div class="rac-dir"><ol class="rac-trilha" id="rac-trilha" aria-label="Caminho percorrido"></ol>
 <div class="rac-cartao" id="rac-atual"></div>
-<div class="rac-bot"><button type="button" class="btn alt peq" id="rac-volta">← Voltar um passo</button><button type="button" class="btn alt peq" id="rac-zera">Recomeçar</button></div></div>
+<div class="rac-bot"><button type="button" class="btn alt peq" id="rac-volta">← Voltar um passo</button><button type="button" class="btn alt peq" id="rac-zera">Recomeçar</button></div></div></div>
 <script type="application/json" id="rac-dados">{js}</script>
 <div class="sec-cab" style="margin-top:46px"><h2>Todas as conexões</h2><p>Cada argumento e os caminhos que a conversa costuma tomar depois que ele é respondido. As raízes A8, J5 e E15 são onde quase tudo termina; o <a href="mapa.html">mapa de conexões</a> mostra as cadeias completas.</p></div>
 <div class="rac-lista">{lista}</div></div></section>'''

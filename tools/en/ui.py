@@ -168,7 +168,11 @@ UI = [
  ('<h2>Natural, normal, necessário e gostoso</h2><p>As famílias se encaixam nos "4Ns" de Piazza e colegas (2015), as quatro racionalizações mais comuns do consumo de carne: <strong>natural</strong> (<a href="familias/c.html">família C</a>), <strong>normal</strong> (<a href="familias/d.html">D</a> e <a href="familias/e.html">E</a>), <strong>necessário</strong> (<a href="familias/g.html">G</a>, <a href="familias/h.html">H</a> e <a href="familias/j.html">J</a>) e <strong>gostoso</strong> (<a href="argumentos/j5.html">J5</a>).</p>',
   '<h2>Natural, normal, necessary and nice</h2><p>The families fit the "4Ns" of Piazza and colleagues (2015), the four most common rationalizations for eating meat: <strong>natural</strong> (<a href="familias/c.html">family C</a>), <strong>normal</strong> (<a href="familias/d.html">D</a> and <a href="familias/e.html">E</a>), <strong>necessary</strong> (<a href="familias/g.html">G</a>, <a href="familias/h.html">H</a> and <a href="familias/j.html">J</a>) and <strong>nice</strong> (<a href="argumentos/j5.html">J5</a>).</p>'),
  # ---------- reasoning ----------
- ('Quando uma objeção é respondida, raramente a conversa termina: ela pula para outra. Escolha um argumento, veja a resposta e siga para onde o debate costuma ir depois, até chegar a uma das raízes.', 'When an objection is answered, the conversation rarely ends: it jumps to another. Choose an argument, see the answer and follow where the debate usually goes next, until you reach one of the roots.'),
+ ('Quando uma objeção é respondida, raramente a conversa termina: ela pula para outra, e nem sempre a mesma. Escolha um argumento e veja a árvore de caminhos que o debate costuma tomar depois, ramo por ramo, até chegar a uma das raízes.', 'When an objection is answered, the conversation rarely ends: it jumps to another, and not always the same one. Choose an argument and see the tree of paths the debate usually takes next, branch by branch, until you reach one of the roots.'),
+ ('<p class="ti">A árvore da conversa</p>', '<p class="ti">The conversation tree</p>'),
+ ('Depois de cada objeção podem vir várias. Toque em <b>+</b> para abrir os caminhos de um ramo e no argumento para ver a resposta.', 'Each objection can lead to several others. Tap <b>+</b> to open a branch’s paths, and tap the argument to see the answer.'),
+ ('>Abrir mais um nível</button>', '>Open one more level</button>'),
+ ('>Recolher</button>', '>Collapse</button>'),
  ('</b> argumentos conectados por <b>', '</b> arguments connected by <b>'),
  ('</b> caminhos, a partir das cadeias do catálogo, das conexões de cada capítulo e de um mapeamento editorial deste guia.', '</b> paths, drawn from the catalogue chains, the connections in each chapter and an editorial mapping by this guide.'),
  ('>Começar por</label>', '>Start from</label>'),
@@ -272,6 +276,12 @@ UI = [
 ] + [(f'Família {c}: ', f'Family {c}: ') for c in 'ABCDEFGHIJKLMN']
 
 JS = [
+ ("n.cap ? 'Resposta curta' : 'Falha principal'", "n.cap ? 'Short answer' : 'Main flaw'"),
+ ("el('span', 'selo', 'raiz')", "el('span', 'selo', 'root')"),
+ ("el('small', '', 'Raiz')", "el('small', '', 'Root')"),
+ ("'Recolher' : 'Abrir') + ' ' + fs.length + ' caminhos de '", "'Collapse' : 'Open') + ' ' + fs.length + ' paths from '"),
+ ("'↺ já apareceu neste ramo'", "'↺ already came up in this branch'"),
+ ("el('small', 'rac-ciclo', 'raiz')", "el('small', 'rac-ciclo', 'root')"),
  # compartilhar trecho (assets/trecho.js)
  ("'Ações para o trecho selecionado'", "'Actions for the selected passage'"),
  ("'Compartilhar trecho'", "'Share passage'"),
