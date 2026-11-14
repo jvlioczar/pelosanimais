@@ -254,6 +254,14 @@ RUINS = {
    lugar='Aim your indignation at the practice and at those who organize it and profit from it, and treat each person as someone who can change, as you did. Firm with the argument, respectful with the person.',
    nota='Feeling anger at an injustice is human. What is at issue here is what you do with it: hating people helps no animal.'),
 
+ 'Se os humanos desaparecessem, o planeta e os animais ficariam melhores.': dict(frase='If humans disappeared, the planet and the animals would be better off.',
+   por=["It's false. Without humans, animal exploitation would end, but the suffering of animals in the wild would go on: hunger, cold, disease, parasites and predation affect enormous numbers of animals, and in most species almost all young die shortly after birth. Given the number of animals involved, this is probably the greatest suffering there is, and it could even get worse in some scenarios.",
+        'Only humans have moral agency, that is, only they can recognize the suffering of other beings and choose to act to reduce it. Without humans, there would be no one left who could help an injured animal, vaccinate wild populations or research ways to reduce suffering in nature. Oral rabies vaccination of foxes, for example, eliminated the disease from much of Western Europe.',
+        'Animal exploitation can end without humans disappearing: it depends on human choices, and it can end through a collective change in those choices.',
+        "The phrase is also misanthropic, and it pushes away exactly the people who would need to change. It reinforces the accusation that vegans care more about animals than about people (L20)."],
+   lugar="Say that the problem is human practices, not the existence of humans. In any scenario, the best path is for humans to include animals in their moral consideration: to end exploitation and, in the future, to help animals in the wild too.",
+   nota="This doesn't mean humans don't cause enormous harm to animals and the environment. It means the solution lies in changing what humans do, because only they can change."),
+
  'Todo vegano precisa ser amigável com os não veganos, ou não convencemos ninguém.': dict(frase="Every vegan has to be friendly with non-vegans, or we won't convince anyone.",
    por=["There is a lot of truth here: hostile conversations tend to produce defensiveness and rejection, and someone who feels attacked stops listening. Treating the person with respect helps.",
         "But \"it only works if it's friendly\" is an exaggeration. A very friendly approach risks being dismissed or ridiculed in some contexts, and the person may not grasp the seriousness of what is being discussed. Being friendly doesn't mean agreeing with everything, nor failing to say clearly what happens to the animals.",

@@ -225,6 +225,39 @@ for c, p, nome, perg, erro in FAMILIAS_NOVAS:
 FAMILIAS['I']['nome'] = 'Outros usos: testes, vestuário, lazer, trabalho e companhia'
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
 FORMAS_EXTRA = {'C1': ['Temos dentes caninos, então fomos feitos para comer carne', 'Se não fosse para comer carne, não teríamos caninos', 'O ser humano é carnívoro por natureza'], 'I10': ['A seda é um tecido natural e nobre, melhor que o sintético', 'Para fazer seda, ninguém mata nada'], 'I2': ['Veganos não deveriam tomar vacinas ou remédios', 'Vacina tem ovo, então vegano não pode tomar', 'O soro antiofídico vem de cavalos, então vegano não pode usar'], 'I9': ['Lã é natural, o sintético é plástico'], 'I11': ['Comprar mel ajuda a salvar as abelhas', 'Mel é saudável e natural, não tem nada de errado'], 'F9': ['Você comeria o ovo de uma galinha criada em casa, que é um pet?', 'E se a galinha for meu pet?'], 'B4': ['Com gaiolas maiores, o problema está resolvido', 'Se as gaiolas forem maiores, tudo bem', 'Galinhas livres de gaiola estão bem'], 'I12': ['Os recintos hoje são maiores, os animais estão bem'], 'A12': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E3': ['Temos que respeitar as diferentes visões'], 'A7': ['Veganos tratam animais como humanos'], 'D7': ['Veganos querem impor o veganismo aos indígenas'], 'C2': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'N17': ['Temos que priorizar quem está no presente', 'Primeiro quem já existe'], 'N21': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'N8': ['Sencientistas querem brincar de Deus'], 'L20': ['Veganos preferem animais a pessoas'], 'J11': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L7': ['Veganismo é lavagem cerebral'], 'J18': ['Não existe vegano de direita'], 'F11': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F5': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L30': ['Para cada vegano que não comer, eu vou comer o dobro']}
+# Mais formas, levantadas em listas de mitos antiveganos (2026-11-15)
+for _c, _fs in {
+    'A1': ['Não dá para saber o que se passa na cabeça de um bicho'], 'A4': ['Pior é a planta, que nem pode fugir', 'Se defendem a vida, por que matam planta?', 'Planta se defende, então quer viver'],
+    'A7': ['Isso é só pena de bicho fofinho', 'Veganismo é mais emoção que razão'], 'A9': ['Animais são menos evoluídos que nós'], 'A20': ['Para o boi tanto faz estar vivo ou morto'],
+    'A21': ['Abate não é assassinato'], 'A22': ['A vaca te mataria se tivesse chance'], 'A23': ['Ética é coisa de humano, não de bicho'],
+    'B1': ['Quase todo matadouro é limpo e sem dor'], 'B3': ['O bicho vive melhor na fazenda que solto'], 'B8': ['Na fazenda o bicho é tratado como rei'],
+    'C1': ['Ser vegetariano vai contra a nossa biologia'], 'C2': ['A gente nem digere celulose'], 'C4': ['Sem carne, a evolução teria parado', 'Comer carne é o auge da evolução'],
+    'C9': ['Se não matarmos, morremos'], 'C10': ['Esses bichos nasceram para morrer mesmo'], 'C12': ['Vai sobrar boi solto pela natureza'], 'C13': ['Temos muito respeito pelos animais de criação'],
+    'D10': ['Os animais existem para nos servir'], 'D12': ['Não é o que entra pela boca que contamina o homem'],
+    'E1': ['Comer carne não faz mal a ninguém'], 'E3': ['É só mais uma ética entre muitas'], 'E4': ['Comida é comida, não tem nada a ver com ética'], 'E9': ['Um pouquinho de ovo no bolo não faz mal'],
+    'G4': ['Vegano vive à base de suplemento', 'B12 só existe na carne'], 'G6': ['Sem leite, vegano vai quebrar os ossos'], 'G10': ['Saiu na notícia: bebê de veganos morreu desnutrido'],
+    'G12': ['Vegano é tudo magrelo, não consegue engordar'], 'G16': ['O homem das cavernas comia carne'], 'G18': ['Sem soja e carne falsa, vegano não se nutre'],
+    'H6': ['Arroto de vaca não esquenta o planeta', 'Se o boi polui, é só comer o boi'], 'H14': ['Com boa gestão, a pecuária fica sustentável', 'A pecuária moderna é mais eficiente, emite menos por quilo'],
+    'H18': ['Se ninguém pescar, o mar fica lotado de peixe'], 'I1': ['A pecuária e os testes trouxeram progresso, não dá para abolir'],
+    'J1': ['Vegano tem que comprar tudo em loja natural'], 'J4': ['Vegano não pode ir a churrasco'], 'J6': ['Comida vegana é tudo coisa gringa', 'Vegano não pode comer nem um docinho'],
+    'J18': ['Isso é lobby de quem ganha com o fim da pecuária'], 'J20': ['O ser humano é cruel por natureza, nunca vai mudar'], 'K1': ['Uma andorinha só não faz verão'],
+    'L2': ['Veganismo é coisa de desocupado'], 'L11': ['Vegano gasta água no banho e nem recicla'], 'L12': ['Até a água que você bebe mata peixe'], 'L24': ['Isso é moda dos hippies dos anos 60'],
+}.items(): FORMAS_EXTRA.setdefault(_c, []).extend(_fs)
+# Falácias acrescentadas depois do doc original (nome, descrição curta, códigos onde aparecem)
+FALACIAS += [dict(n=n, d=d, aparece=ap, cods=codigos(ap)) for n, d, ap in (
+    ('Espantalho', 'Distorcer a posição do outro para refutá-la com facilidade', 'A7, N11, N12, N13, L8'),
+    ('Apelo ao ridículo', 'Zombar da ideia em vez de responder a ela', 'L2, L3, L4, L30, L31'),
+    ('Apelo à ignorância', '"Ninguém provou que não, então é verdade"', 'A1, A2, A4, F7'),
+    ('Falsa causa (post hoc)', '"Aconteceu depois, então foi por causa disso"', 'D4, G13, G14, M1'),
+    ('Ladeira escorregadia', '"Se aceitar isso, vai acabar em algo extremo"', 'C12, E2, N11'),
+    ('Apelo à legalidade', '"É permitido por lei, então é certo"', 'B10, B11, D9, D13'),
+    ('Bulverismo', 'Explicar o motivo de alguém pensar algo em vez de mostrar onde ele erra', 'L3, L7, L8'),
+    ('Falácia da falácia', '"Esse argumento é ruim, então a conclusão é falsa"', 'L25, L26'),
+    ('Equívoco', 'Usar a mesma palavra em dois sentidos diferentes', 'A4, A21, C1, E4'),
+    ('Generalização precipitada', 'Tirar uma regra sobre todos a partir de poucos casos', 'L1, L2, L5, L18'),
+    ('Apelo ao medo', 'Assustar com consequências exageradas no lugar de dar evidências', 'G5, G9, G10'),
+    ('Eufemismo', 'Trocar o nome para que o dano pareça menor', 'B1, B2, I17, I32'),
+)]
 _feitas = set()
 for c, fs in FORMAS_EXTRA.items():
     if c in ARGS: ARGS[c]['formas'] += fs; _feitas.add(c)
@@ -312,6 +345,10 @@ NOVOS = [
     ('I32', 'A coleira de choque é só um estímulo, não machuca o cachorro', ['É só uma vibração, não machuca', 'Era isso ou os vizinhos iam reclamar', 'É uma ferramenta de comunicação'], 'Ela funciona porque incomoda, não trata a causa do latido, e o treino com recompensa funciona tão bem ou melhor'),
     ('I33', 'O carmim é um corante natural, melhor que os artificiais', ['É corante natural, melhor que artificial', 'É só um inseto, ninguém liga', 'Corante de cochonilha não faz mal a ninguém'], 'Natural não quer dizer sem vítimas: são cerca de 70 mil cochonilhas mortas por meio quilo de corante, e há vermelhos naturais de beterraba, páprica e frutas'),
     ('I34', 'Eu só uso produtos cruelty free', ['Tem o coelhinho, então está tudo certo', 'Só compro produtos não testados em animais', 'Minha maquiagem é livre de crueldade'], 'O selo costuma tratar só de testes: o produto pode conter carmim, lanolina, cera de abelha, colágeno e outros ingredientes de animais explorados e mortos'),
+    ('B17', 'É uma troca justa: a gente cuida e alimenta, e eles dão a carne', ['A gente cuida, eles dão a carne', 'Lá fora eles seriam comidos por outro bicho', 'Existe um pacto entre o criador e o animal'], 'Uma troca exige que os dois lados possam recusar; quem protege é quem mata, e o preço é a vida do animal'),
+    ('H20', 'Se todo mundo virar vegano, vai ter que desmatar para plantar', ['Não ia ter terra para plantar tanta comida', 'Vão derrubar a floresta para plantar soja para os veganos'], 'É o contrário: os produtos animais ocupam 83% das terras agrícolas e dão 18% das calorias, e uma dieta vegetal reduziria a área em cerca de 76%'),
+    ('I35', 'Dar comida vegana para cachorro e gato é maus-tratos', ['Cachorro é carnívoro, não pode ser vegano', 'Impor o seu veganismo ao bicho é maus-tratos'], 'Cães são onívoros e podem ter dieta vegana completa com acompanhamento; para gatos a cautela é justificada, e nada disso muda o prato humano'),
+    ('J21', 'Festa só com comida vegana exclui quem come carne', ['Festa sem carne não é festa', 'Merenda vegana é imposição às crianças', 'Segunda sem carne é autoritarismo'], 'Quem come carne pode comer comida vegana, e o vegano não pode comer carne: o cardápio vegano é o único que todos podem comer'),
     ('C13', 'Eu honro os animais que como', ['Agradeço ao animal antes de comer', 'Como com consciência e sem desperdício', 'O animal se oferece, e eu honro esse sacrifício'], 'A gratidão está em quem come e não muda nada para quem é comido; honrar um animal é respeitar o seu interesse em viver'),
     ('D13', 'O sacrifício de animais em rituais religiosos é liberdade de culto', ['É a minha religião, você tem que respeitar', 'O animal é comido depois, não é desperdício', 'O STF já decidiu que é constitucional', 'Proibir o sacrifício é racismo religioso'], 'A liberdade de culto responde se o Estado pode proibir o rito, e não se matar o animal é justo; essa pergunta vale igualmente para o rito e para o matadouro, e criticar só as religiões afro-brasileiras é incoerente'),
     ('F6', 'Matar insetos nos protege', ['Pernilongo eu mato mesmo, é questão de saúde', 'Escorpião dentro de casa tem que matar', 'Inseto é praga, tem que dedetizar tudo'], 'O perigo vem de poucas espécies, e a melhor proteção costuma ser prevenir: o Ministério da Saúde não recomenda veneno contra escorpiões, e o método Wolbachia reduziu a dengue sem matar mosquitos'),
@@ -1057,7 +1094,7 @@ EXPLORACAO = [
     ('Pesca e caça', 'Fishing and hunting', 'Pescar e soltar, pescar para comer, caça de troféu e caça de controle.', 'Catch and release, fishing for food, trophy hunting and population-control hunting.',
      ['I23', 'I24', 'I25', 'H18']),
     ('Trabalho', 'Work', 'Carroças e charretes, cães-guia, de assistência, policiais e farejadores.', 'Carts and carriages, guide, assistance, police and detection dogs.', ['I26', 'I27', 'I28']),
-    ('Companhia', 'Companionship', 'Criação de raça, aves em gaiola, pets exóticos e coleiras de choque.', 'Pedigree breeding, caged birds, exotic pets and shock collars.', ['I29', 'I30', 'I31', 'I32']),
+    ('Companhia', 'Companionship', 'Criação de raça, aves em gaiola, pets exóticos, coleiras de choque e a ração de cães e gatos.', 'Pedigree breeding, caged birds, exotic pets, shock collars and feeding dogs and cats.', ['I29', 'I30', 'I31', 'I32', 'I35']),
     ('Rituais religiosos', 'Religious rituals', 'Sacrifício de animais em cultos.', 'Animal sacrifice in worship.', ['D13']),
     ('Controle de pragas', 'Pest control', 'Insetos, escorpiões e outros animais pequenos mortos em casa.', 'Insects, scorpions and other small animals killed at home.', ['F5', 'F6']),
     ('Defendidas pelo ambientalismo', 'Defended by environmentalism', 'Práticas apresentadas como sustentáveis: pecuária regenerativa, carne local, pesca sustentável, insetos, couro, canguru e o "boi bombeiro".', 'Practices presented as sustainable: regenerative grazing, local meat, sustainable fishing, insects, leather, kangaroo and "firefighter cattle".',

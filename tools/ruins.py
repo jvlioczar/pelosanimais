@@ -250,6 +250,14 @@ RUINS = [
          lugar='Dirija a indignação à prática e a quem a organiza e lucra com ela, e trate cada pessoa como alguém que pode mudar, como você mudou. Firmeza com o argumento, respeito com a pessoa.',
          liga=['L20', 'L1', 'K8', 'E13'],
          nota='Sentir raiva diante de uma injustiça é humano. O que está em questão aqui é o que se faz com ela: o ódio a pessoas não ajuda nenhum animal.'),
+    dict(c='V70', tipo='impreciso', frase='Se os humanos desaparecessem, o planeta e os animais ficariam melhores.',
+         por=['É falso. Sem os humanos, a exploração animal acabaria, mas o sofrimento dos animais na natureza continuaria: fome, frio, doenças, parasitas e predação atingem um número enorme de animais, e na maioria das espécies quase todos os filhotes morrem pouco depois de nascer. Pelo número de animais envolvidos, esse é provavelmente o maior sofrimento que existe, e ele pode até piorar em alguns cenários.',
+              'Só os humanos têm agência moral, ou seja, só eles podem reconhecer o sofrimento de outros seres e escolher agir para reduzi-lo. Sem humanos, não sobraria ninguém capaz de ajudar um animal ferido, vacinar populações selvagens ou pesquisar formas de reduzir o sofrimento na natureza. A vacinação oral contra a raiva de raposas, por exemplo, eliminou a doença em boa parte da Europa Ocidental.',
+              'A exploração animal pode acabar sem que os humanos desapareçam: ela depende de escolhas humanas, e pode terminar com uma mudança coletiva dessas escolhas.',
+              'A frase também é misantrópica, e afasta justamente as pessoas que precisariam mudar. Ela reforça a acusação de que veganos se importam mais com animais do que com pessoas (L20).'],
+         lugar='Diga que o problema são as práticas humanas, e não a existência dos humanos. Em qualquer cenário, o melhor caminho é que os humanos incluam os animais na sua consideração moral: para acabar com a exploração e, no futuro, para ajudar também os animais na natureza.',
+         liga=['N2', 'N1', 'N7', 'L20'],
+         nota='Isso não quer dizer que os humanos não causem danos enormes aos animais e ao ambiente. Quer dizer que a solução está em mudar o que os humanos fazem, porque só eles podem mudar.'),
 
     dict(c='V63', tipo='impreciso', frase='Todo vegano precisa ser amigável com os não veganos, ou não convencemos ninguém.',
          por=['Há muita verdade aqui: conversas hostis costumam gerar defesa e rejeição, e quem se sente atacado deixa de escutar. Tratar a pessoa com respeito ajuda.',
@@ -281,7 +289,7 @@ ORIGEM = ['Veganismo Baseado em Evidências, capítulo 10: Argumentos ruins para
 
 # Argumentos do mesmo grupo ficam juntos e numerados em sequência.
 # Dentro de cada grupo, a ordem vai do mais comum ao mais específico, com assuntos vizinhos juntos (2026-11-14).
-ORDEM_V = ['V1', 'V2', 'V3', 'V4', 'V62', 'V15', 'V16', 'V63', 'V64', 'V30', 'V44', 'V49', 'V43', 'V46', 'V51', 'V52', 'V6', 'V20', 'V5', 'V47', 'V7', 'V8', 'V9', 'V10', 'V17', 'V32', 'V18', 'V37', 'V61', 'V21', 'V50', 'V31', 'V24', 'V25', 'V34', 'V33', 'V35', 'V36', 'V42', 'V14', 'V22', 'V45', 'V48', 'V55', 'V38', 'V39', 'V40', 'V53', 'V23', 'V11', 'V26', 'V58', 'V59', 'V56', 'V57', 'V67', 'V68', 'V69', 'V54', 'V29', 'V65', 'V28', 'V66', 'V27', 'V12', 'V60', 'V13']
+ORDEM_V = ['V1', 'V2', 'V3', 'V4', 'V62', 'V70','V15', 'V16', 'V63', 'V64', 'V30', 'V44', 'V49', 'V43', 'V46', 'V51', 'V52', 'V6', 'V20', 'V5', 'V47', 'V7', 'V8', 'V9', 'V10', 'V17', 'V32', 'V18', 'V37', 'V61', 'V21', 'V50', 'V31', 'V24', 'V25', 'V34', 'V33', 'V35', 'V36', 'V42', 'V14', 'V22', 'V45', 'V48', 'V55', 'V38', 'V39', 'V40', 'V53', 'V23', 'V11', 'V26', 'V58', 'V59', 'V56', 'V57', 'V67', 'V68', 'V69', 'V54', 'V29', 'V65', 'V28', 'V66', 'V27', 'V12', 'V60', 'V13']
 RUINS.sort(key=lambda r: (list(TIPOS).index(r['tipo']), ORDEM_V.index(r['c'])))
 _novo = {r['c']: f'V{i}' for i, r in enumerate(RUINS, 1)}
 for r in RUINS:

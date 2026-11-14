@@ -29,6 +29,23 @@ _EXTRA_EN = {'A12': ["We're all naturally biased: we protect our family, our spe
     'C1': ['We have canine teeth, so we were made to eat meat', "If we weren't meant to eat meat, we wouldn't have canines", 'Humans are carnivores by nature'],
     'I10': ['Silk is a natural, noble fabric, better than synthetics', 'Nobody kills anything to make silk'], 'I11': ["Honey is healthy and natural; there's nothing wrong with it"],
     'N21': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L20': ['Vegans prefer animals to people']}
+for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-15)
+    'A1': ["You can't know what goes on in an animal's head"], 'A4': ["Plants have it worse, they can't even run away", 'If you defend life, why do you kill plants?', 'Plants defend themselves, so they want to live'],
+    'A7': ["It's just pity for cute animals", 'Veganism is more emotion than reason'], 'A9': ['Animals are less evolved than us'], 'A20': ["For a cow, being alive or dead makes no difference"],
+    'A21': ["Slaughter isn't murder"], 'A22': ['A cow would kill you if it had the chance'], 'A23': ['Ethics is for humans, not animals'],
+    'B1': ['Almost every slaughterhouse is clean and painless'], 'B3': ['Animals live better on the farm than in the wild'], 'B8': ['On the farm the animals are treated like royalty'],
+    'C1': ['Being vegetarian goes against our biology'], 'C2': ["We can't even digest cellulose"], 'C4': ['Without meat, evolution would have stopped', 'Eating meat is the peak of evolution'],
+    'C9': ["If we don't kill, we die"], 'C10': ['These animals were born to die anyway'], 'C12': ['There will be cattle running loose all over nature'], 'C13': ['We have great respect for farm animals'],
+    'D10': ['Animals exist to serve us'], 'D12': ["It's not what goes into the mouth that defiles a person"],
+    'E1': ["Eating meat doesn't hurt anyone"], 'E3': ["It's just one ethics among many"], 'E4': ['Food is food; it has nothing to do with ethics'], 'E9': ["A little egg in a cake doesn't hurt"],
+    'G4': ['Vegans live on supplements', 'B12 only exists in meat'], 'G6': ["Without milk, vegans' bones will break"], 'G10': ['It was in the news: a vegan couple\'s baby died of malnutrition'],
+    'G12': ["Vegans are all skinny and can't gain weight"], 'G16': ['Cavemen ate meat'], 'G18': ["Without soy and fake meat, vegans can't get enough nutrients"],
+    'H6': ["Cow burps don't warm the planet", 'If cattle pollute, just eat the cattle'], 'H14': ['With good management, livestock farming becomes sustainable', 'Modern livestock farming is more efficient and emits less per kilo'],
+    'H18': ["If nobody fishes, the sea will be overrun with fish"], 'I1': ["Livestock and animal testing brought progress; we can't abolish them"],
+    'J1': ['Vegans have to buy everything at health-food stores'], 'J4': ["Vegans can't go to barbecues"], 'J6': ['Vegan food is all foreign stuff', "Vegans can't even have a little treat"],
+    'J18': ["It's lobbying by people who profit from ending livestock farming"], 'J20': ['Humans are cruel by nature; that will never change'], 'K1': ['One swallow does not make a summer'],
+    'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L24': ["It's a 1960s hippie fad"],
+}.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
 
 FALTAM = {}
