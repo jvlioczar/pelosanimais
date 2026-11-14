@@ -468,14 +468,15 @@ def espelho():
     """As conexões dos capítulos acrescentados (NOVOS) aparecem também, invertidas, nos capítulos a que apontam."""
     if not _ESPELHO:
         for n, *_ in NOVOS:
-            for t in secao_cap(n, 6, CAPS_PT):
+            ja_en = EN and n in CAPS  # capítulo traduzido: o motivo já vem em inglês
+            for t in secao_cap(n, 6, CAPS if ja_en else CAPS_PT):
                 if t.tag != 'table': continue
                 for r in t.findall('row')[1:]:
                     cels = [texto(x) for x in r.findall('cell')]
                     if len(cels) < 3: continue
-                    volta = {'Vem antes': 'Vem depois', 'Vem depois': 'Vem antes'}.get(cels[0])
+                    volta = {'Vem antes': 'Vem depois', 'Vem depois': 'Vem antes', 'Comes before': 'Vem depois', 'Comes after': 'Vem antes'}.get(cels[0])
                     for x in codigos(cels[1]):
-                        if volta and x in ARGS: _ESPELHO.setdefault(x, []).append([volta, n, e(en.motivo(cels[2]) if EN else cels[2])])
+                        if volta and x in ARGS: _ESPELHO.setdefault(x, []).append([volta, n, e(en.motivo(cels[2]) if EN and not ja_en else cels[2])])
         _ESPELHO.setdefault('', [])
     return _ESPELHO
 
@@ -614,9 +615,9 @@ TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
 MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
         ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
-        ('Aprofundar', [('glossario.html', 'Glossário'), ('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
+        ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
                         ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
-        ('biblioteca.html', 'Biblioteca'), ('sobre.html', L('Sobre', 'About'))]
+        ('glossario.html', 'Glossário'), ('biblioteca.html', 'Biblioteca'), ('sobre.html', L('Sobre', 'About'))]
 def monta_menu(pre, atual):
     h = ''
     for u, t in MENU:
@@ -925,7 +926,10 @@ def pagina_debate():
         o = debate.OP[c]
         n[c] = dict(f=ARGS[c]['frase'], u=f'argumentos/{ARGS[c]["slug"]}.html', cor=FAMILIAS[ARGS[c]['fam']]['cor'],
                     o={t: [o[t], o[t + 'e']] for t in ('f', 'm', 'r')}, p=[[x, m] for x, m in G.get(c, {}).items() if x in debate.OP])
-    js = json.dumps(dict(n=n, aberturas=COMUNS, pessoas=debate.PESSOAS), ensure_ascii=False).replace('</', '<\\/')
+    # quem nenhuma conexão alcança também abre conversas, para que todo argumento jogável apareça
+    chegam = {x for v in n.values() for x, _ in v['p']}
+    aberturas = COMUNS + [c for c in jogaveis if c not in chegam and c not in COMUNS]
+    js = json.dumps(dict(n=n, aberturas=aberturas, pessoas=debate.PESSOAS), ensure_ascii=False).replace('</', '<\\/')
     corpo = cabeca('<a href="./">Início</a>', 'Debate simulado', 'Alguém começa com um dos argumentos mais ouvidos. Você escolhe a resposta, e a conversa segue para onde esses debates costumam ir. No fim, veja como foi.') + f'''<section class="secao"><div class="wrap estreito">
 <div id="debate" class="debate"><noscript><p>O debate simulado precisa de JavaScript. Enquanto isso, use <a href="treino.html">Treinar respostas</a>.</p></noscript></div>
 <p class="fino" style="margin-top:26px">Cada rodada tem uma resposta forte, uma fraca (exagerada, enviesada ou que troca a questão ética por outra) e uma ruim. As respostas fortes resumem os capítulos do guia; as fracas e as ruins vêm, em boa parte, dos <a href="argumentos-ruins.html">argumentos que veganos deveriam parar de usar</a>. {L(f"São {len(jogaveis)} argumentos jogáveis, ligados pelo", f"There are {len(jogaveis)} playable arguments, linked by the")} <a href="raciocinio.html">{L("raciocínio antivegano", "anti-vegan line of reasoning")}</a>.</p>
@@ -1072,8 +1076,19 @@ def grafo():
         x, y = chave.split('>')
         if y in arestas.get(x, {}): arestas[x][y] = porque
     if EN:
-        for vai in arestas.values():
-            for y in vai: vai[y] = en.motivo(vai[y])
+        # motivo sem tradução na tabela: usa o do capítulo traduzido, quando ele tem a mesma ligação
+        ja = {}
+        for c in CAPS:
+            for t in secao_cap(c, 6, CAPS):
+                if t.tag != 'table': continue
+                for r in t.findall('row')[1:]:
+                    cels = [texto(x) for x in r.findall('cell')]
+                    if len(cels) < 3: continue
+                    for x in codigos(cels[1]):
+                        if cels[0].startswith('Comes after'): ja.setdefault((c, x), cels[2])
+                        elif cels[0].startswith('Comes before'): ja.setdefault((x, c), cels[2])
+        for a, vai in arestas.items():
+            for y in vai: vai[y] = en.MOTIVOS.get(vai[y]) or ja.get((a, y)) or en.motivo(vai[y])
     return arestas
 
 def curta(c):
