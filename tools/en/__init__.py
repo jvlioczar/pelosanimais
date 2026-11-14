@@ -12,7 +12,7 @@ import os, re, shutil
 from .catalogo import ARGS, FAMILIAS, FALACIAS, VIESES, CADEIAS, CADEIAS_LONGAS
 from .ruins import RUINS, TIPOS
 from .motivos import MOTIVOS
-from .paginas import POLITICAS, POL_INTRO, POL_ESPECTRO, ALEM, LIVROS, FOCOS, SITES, SITES_URL, TEXTOS, ARVORE
+from .paginas import POLITICAS, POL_CURTAS, POL_INTRO, POL_ESPECTRO, ALEM, LIVROS, FOCOS, SITES, SITES_URL, TEXTOS, ARVORE
 from .debate import PESSOAS, OP
 from .ui import UI, JS
 
@@ -141,6 +141,8 @@ def aplica(g):
         if not x: falta('política', t['s']); continue
         for campo in ('t', 'frase', 'principio', 'quebra', 'replica', 'resposta', 'fontes', 'mais', 'nomes'):
             if campo in x: t[campo] = x[campo]
+        if t['s'] in POL_CURTAS: t['curta'], t['pergunta'] = POL_CURTAS[t['s']]
+        else: falta('política curta', t['s'])
     for p in g['alem'].PAGINAS:
         x = ALEM.get(p['s'])
         if not x: falta('além', p['s']); continue

@@ -863,6 +863,11 @@ def paginas_ruins():
         ant, prox = RUINS[i - 1] if i else None, RUINS[i + 1] if i + 1 < len(RUINS) else None
         pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
         art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
+        ops = [['por', L('Por que é ruim', 'Why it is weak'), L('Por que é ruim', 'Why it is weak'), ' '.join(r['por'])]]
+        if len(r['por']) > 1: ops.append(['frase', L('Em uma frase', 'In one sentence'), L('Por que é ruim, em uma frase', 'Why it is weak, in one sentence'), r['por'][0]])
+        cartao_ = dict(ops=ops, cab=L('Pare de dizer', 'Stop saying'), caixa=[L('Diga melhor', 'Say it better'), r['lugar']], inclui=L('Incluir “como dizer melhor”', 'Include “how to say it better”'),
+                       dica=L('O argumento, por que é ruim e como dizer melhor numa imagem para as redes.', 'The argument, why it is weak and how to say it better in one image for social media.'))
+        art += '<script type="application/json" id="resp-dados">' + json.dumps(cartao_, ensure_ascii=False).replace('</', '<\\/') + '</script>'
         pag = f'<section class="cena" style="--c:#b8460f"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../argumentos-ruins.html">Argumentos ruins</a> / {e(nome)}</p><div class="fala"><span class="selo-c">{r["c"]}</span><h1>"{e(r["frase"])}"</h1></div><div class="tese-c"><span>{e(nome)}</span><p>{e(desc)}</p></div></div></section><div class="wrap paineis">{art}</div>'
         page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', L(f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', f'Why to stop saying “{r["frase"].rstrip(".")}”, or how to say it better: {r["por"][0]}'), pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')], (L(f'Por que parar de dizer "{r["frase"].rstrip(".")}"?', f'Why stop saying "{r["frase"].rstrip(".")}"?'), r['por'][0] + ' ' + L('Diga melhor: ', 'Say it better: ') + r['lugar']))
 
@@ -905,7 +910,9 @@ def paginas_politicas():
         cor = tons[i % len(tons)]
         ant, prox = T[i - 1] if i else None, T[i + 1] if i + 1 < len(T) else None
         pp = lambda x, r: f'<a href="{x["s"]}.html"><small>{r}</small>{e(x["t"])}</a>'
-        art = ('<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
+        art = (f'<h2>Resposta curta</h2><div class="bloco curta" id="curta-txt"><p>{e(t["curta"])}</p></div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p>'
+               f'<div class="retorno"><span>Devolva com uma pergunta</span><p>{e(t["pergunta"])}</p></div>'
+               '<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
                f'<div class="troca"><div class="nao"><p class="ti">A melhor réplica</p><p>{liga(e(t["replica"]), {"pre": "../"})}</p></div><div class="sim"><p class="ti">A resposta</p><p>{liga(e(t["resposta"]), {"pre": "../"})}</p></div></div>'
                + ''.join(f'<h2>{e(ti)}</h2>' + ''.join(f'<p>{liga(e(x), {"pre": "../"})}</p>' for x in ps) for ti, ps in t.get('mais', []))
                + (f'<h2>{L("Quem defende os animais a partir desta teoria", "Who defends animals from within this theory")}</h2><p>{L("Autores, ativistas e grupos que partem desta teoria e mostram por que ela precisa incluir os animais e os demais seres sencientes.", "Authors, activists and groups who start from this theory and show why it has to include animals and other sentient beings.")}</p><ul class="pol-q">' + ''.join(f'<li><strong>{e(n)}:</strong> {e(d)}</li>' for n, d in t['nomes']) + '</ul>' if t.get('nomes') else '') +
@@ -1012,7 +1019,7 @@ def barra_leitura(c, title):
 def pagina_capitulo(c, ant, prox):
     a = ARGS[c]; f = FAMILIAS[a['fam']]
     tese, notas, abas, curta_html = capitulo(c)
-    abaixo = f'<div class="tese-c"><span>A resposta em uma frase</span><p>{tese}</p></div>' + ''.join(f'<p class="notas">{n}</p>' for n in notas)
+    abaixo = f'<div class="tese-c" data-frase><span>A resposta em uma frase</span><p>{tese}</p></div>' + ''.join(f'<p class="notas">{n}</p>' for n in notas)
     if f['parte'] == 'IND': abaixo = aviso_ind(f['c'], 'Antes de responder: argumento indireto') + abaixo
     abaixo += barra_leitura(c, L(f'{c}. "{a["frase"].rstrip(".")}"', f"{c}. ‘{a['frase'].rstrip('.')}’"))
     tabs = ''.join(f'<button type="button" role="tab" id="tab-{i}" aria-controls="p-{i}" aria-selected="{"true" if not n else "false"}"><b>{e(t)}</b><small>{e(s)}</small></button>' for n, (i, t, s, _) in enumerate(abas))
