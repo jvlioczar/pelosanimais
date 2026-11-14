@@ -1,6 +1,6 @@
 {
  "args": {
-  "N15": {
+  "N13": {
    "falha_pt": "Confunde igual consideração com igual peso: interesses semelhantes pesam o mesmo, e o peso de cada ser depende do quanto ele pode sentir, que é incerto, mas não é zero",
    "en": {
     "frase": "Sentientists give the same weight to insects, invertebrates and mammals",
@@ -12,7 +12,7 @@
     "falha": "Confuses equal consideration with equal weight: similar interests weigh the same, and each being's weight depends on how much it can feel, which is uncertain but not zero"
    }
   },
-  "N16": {
+  "N12": {
    "falha_pt": "Contagem incompleta: sem tratamento muitos parasitas morrem com o hospedeiro, a morte só é dano para quem sente e teria uma vida boa, e prevenir não é matar",
    "en": {
     "frase": "Sentientists defend parasitism",
