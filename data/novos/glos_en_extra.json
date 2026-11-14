@@ -232,5 +232,41 @@
   "termo": "Bias",
   "def": "A systematic tendency of thought that distorts judgment in a predictable way, usually without the person noticing.",
   "com": "Biases aren't stupidity or bad faith: everyone has them, because the brain uses shortcuts. Some come up a lot in conversations about animals, such as confirmation bias, status quo bias and the cognitive dissonance of the meat paradox, which leads people to think the animals we eat feel less. Knowing your own biases helps you talk more honestly. The guide has a page with the most common biases about animals. See Fallacies and Cognitive dissonance."
+ },
+ {
+  "pt": "Misantropia",
+  "termo": "Misanthropy",
+  "def": "Aversion to, distrust of or contempt for humanity in general.",
+  "com": "It can appear in people who live with the injustice done to animals and conclude that humans are the problem. But misanthropy pushes away exactly the people who would need to change, and forgets that only humans have moral agency: only they can recognize the suffering of other beings and act to reduce it. The guide covers this in \"Stop saying\", under \"If humans disappeared, the planet and the animals would be better off\". See Activist burnout."
+ },
+ {
+  "pt": "Vistopia (vystopia)",
+  "termo": "Vystopia",
+  "def": "The existential anguish of being vegan in a world that normalizes animal exploitation: constant awareness of that exploitation, isolation and frustration at seeing that most people don't notice it.",
+  "com": "The term was coined by the Australian psychologist Clare Mann in her book *Vystopia: The Anguish of Being Vegan in a Non-Vegan World* (2018). It is not a clinical diagnosis: the author describes it as an understandable response to what one knows about animals. The prevalence figures in circulation come from the author's own surveys. See Activist burnout and Vicarious trauma."
+ },
+ {
+  "pt": "Burnout ativista",
+  "termo": "Activist burnout",
+  "def": "Physical, emotional and mental exhaustion in people devoted to a cause, leading to loss of energy, cynicism and often to leaving activism.",
+  "com": "A study of social justice and human rights activists (Chen and Gorski, 2015) pointed to common causes such as neglecting self-care, the emotional weight of the cause and conflict among activists. In animal advocacy, frequent exposure to images of suffering and the feeling that change is slow add to this. The World Health Organization treats burnout as a work-related phenomenon, not as a disease. Looking after yourself is part of sustaining activism over the long term. See Activist fatigue, Vicarious trauma and Learned helplessness."
+ },
+ {
+  "pt": "Fadiga do ativismo",
+  "termo": "Activist fatigue",
+  "def": "Accumulated tiredness in people who take part in campaigns, debates and actions for a long time, with falling motivation and energy.",
+  "com": "It is milder and more common than burnout, but can lead to it without rest. A related concept is compassion fatigue, described among professionals who care for people in distress: the capacity to care diminishes after long exposure to others' pain. Breaks, support from others and realistic goals help prevent it. See Activist burnout."
+ },
+ {
+  "pt": "Trauma vicário (estresse traumático secundário)",
+  "termo": "Vicarious trauma (secondary traumatic stress)",
+  "def": "Psychological distress in people who are repeatedly exposed to other people's trauma, even without having lived through it directly.",
+  "com": "The concepts were first described among therapists and emergency workers: vicarious trauma by McCann and Pearlman (1990), secondary traumatic stress by Charles Figley. In animal advocacy, it mainly affects people who investigate or frequently watch footage of slaughter and abuse, and those who work in rescues and sanctuaries. It can bring intrusive thoughts, insomnia, irritability and avoidance. Limiting exposure and seeking support, including professional help, helps. See Activist burnout and Vystopia."
+ },
+ {
+  "pt": "Desamparo aprendido",
+  "termo": "Learned helplessness",
+  "def": "A state in which a person stops trying to change a situation because they have come to believe that nothing they do will make a difference.",
+  "com": "The concept comes from experiments by Martin Seligman and Steven Maier in the 1960s with dogs given electric shocks, an example of the very animal suffering the guide discusses. In 2016, the same authors revised the theory: passivity in the face of pain would be the default response, and what is learned is the perception of control. In activism, it shows up as the feeling that exploitation is too big to change. Seeing concrete results, even small ones, helps get out of it. See Activist burnout and the argument \"One person doesn't make a difference\"."
  }
 ]

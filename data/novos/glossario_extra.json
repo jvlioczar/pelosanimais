@@ -395,5 +395,51 @@
   "def": "tendência sistemática de pensamento que desvia o julgamento de forma previsível, em geral sem que a pessoa perceba.",
   "com": "Vieses não são burrice nem má-fé: todo mundo os tem, porque o cérebro usa atalhos. Alguns aparecem muito nas conversas sobre animais, como o viés de confirmação, o status quo e a dissonância cognitiva do paradoxo da carne, que leva a pensar que os animais que comemos sentem menos. Conhecer os próprios vieses ajuda a conversar com mais honestidade. O guia tem uma página com os vieses mais comuns sobre os animais. Veja Falácias e Dissonância cognitiva.",
   "links": []
+ },
+ {
+  "termo": "Misantropia",
+  "sec": 13,
+  "def": "aversão, desconfiança ou desprezo pela humanidade em geral.",
+  "com": "Pode aparecer em quem convive com a injustiça contra os animais e conclui que o problema são os humanos. Mas a misantropia afasta justamente as pessoas que precisariam mudar, e esquece que só os humanos têm agência moral: só eles podem reconhecer o sofrimento de outros seres e agir para reduzi-lo. O guia trata disso no \"Pare de dizer\", em \"Se os humanos desaparecessem, o planeta e os animais ficariam melhores\". Veja Burnout ativista.",
+  "links": []
+ },
+ {
+  "termo": "Vistopia (vystopia)",
+  "sec": 13,
+  "def": "angústia existencial de quem é vegano num mundo que normaliza a exploração animal: a consciência constante dessa exploração, o isolamento e a frustração de ver que a maioria não a percebe.",
+  "com": "O termo foi criado pela psicóloga australiana Clare Mann, no livro *Vystopia: The Anguish of Being Vegan in a Non-Vegan World* (2018). Não é um diagnóstico clínico: a autora a descreve como uma reação compreensível ao que se sabe sobre os animais. Os números de prevalência que circulam vêm de pesquisas da própria autora. Veja Burnout ativista e Trauma vicário.",
+  "links": []
+ },
+ {
+  "termo": "Burnout ativista",
+  "sec": 13,
+  "def": "esgotamento físico, emocional e mental de quem se dedica a uma causa, que leva à perda de energia, ao cinismo e, muitas vezes, ao abandono do ativismo.",
+  "com": "Um estudo com ativistas de justiça social e direitos humanos (Chen e Gorski, 2015) apontou como causas comuns o abandono do autocuidado, a carga emocional da causa e os conflitos internos entre ativistas. No ativismo pelos animais, somam-se a exposição frequente a imagens de sofrimento e a sensação de que a mudança é lenta. A Organização Mundial da Saúde trata o burnout como fenômeno ligado ao trabalho, e não como doença. Cuidar de si é parte de manter o ativismo por muito tempo. Veja Fadiga do ativismo, Trauma vicário e Desamparo aprendido.",
+  "links": [
+   "https://doi.org/10.1093/jhuman/huv011"
+  ]
+ },
+ {
+  "termo": "Fadiga do ativismo",
+  "sec": 13,
+  "def": "cansaço acumulado de quem participa de campanhas, debates e ações por muito tempo, com queda de motivação e de disposição.",
+  "com": "É mais leve e mais comum que o burnout, mas pode levar a ele se não houver descanso. Um conceito próximo é a fadiga por compaixão, descrita entre profissionais que cuidam de pessoas em sofrimento: a capacidade de se importar diminui depois de exposição longa à dor dos outros. Pausas, apoio de outras pessoas e metas realistas ajudam a preveni-la. Veja Burnout ativista.",
+  "links": []
+ },
+ {
+  "termo": "Trauma vicário (estresse traumático secundário)",
+  "sec": 13,
+  "def": "sofrimento psicológico de quem é exposto, de forma repetida, ao trauma de outros, mesmo sem tê-lo vivido diretamente.",
+  "com": "Os conceitos foram descritos primeiro entre terapeutas e profissionais de emergência: trauma vicário por McCann e Pearlman (1990), estresse traumático secundário por Charles Figley. No ativismo pelos animais, atinge sobretudo quem investiga ou assiste com frequência a imagens de abate e maus-tratos, e quem trabalha em resgates e santuários. Pode trazer pensamentos intrusivos, insônia, irritabilidade e evitação. Dosar a exposição e buscar apoio, inclusive profissional, ajuda. Veja Burnout ativista e Vistopia.",
+  "links": []
+ },
+ {
+  "termo": "Desamparo aprendido",
+  "sec": 13,
+  "def": "estado em que a pessoa deixa de tentar mudar uma situação porque passou a acreditar que nada do que fizer vai fazer diferença.",
+  "com": "O conceito vem de experimentos de Martin Seligman e Steven Maier com cães que recebiam choques, nos anos 1960, um exemplo do próprio sofrimento animal que o guia discute. Em 2016, os mesmos autores revisaram a teoria: a passividade diante da dor seria a reação padrão, e o que se aprende é a percepção de controle. No ativismo, aparece como a sensação de que a exploração é grande demais para mudar. Ver resultados concretos, ainda que pequenos, ajuda a sair dele. Veja Burnout ativista e o argumento \"Um indivíduo não faz diferença\".",
+  "links": [
+   "https://doi.org/10.1037/rev0000033"
+  ]
  }
 ]

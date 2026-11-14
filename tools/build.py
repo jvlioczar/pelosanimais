@@ -1334,7 +1334,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'falacias': 'falacias.html', 'vies': 'vieses.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
-                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases')}
+                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying')}
 
 def pagina_glossario():
     """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
@@ -1353,6 +1353,10 @@ def pagina_glossario():
     GLOS_GUIA['necessidade'] = f'argumentos/{SLUG_ARG["g1"]}.html'
     GLOS_GUIA['dor'] = f'argumentos/{SLUG_ARG["a1"]}.html'
     GLOS_GUIA['nocicepcao'] = f'argumentos/{SLUG_ARG["a2"]}.html'
+    GLOS_GUIA['desamparo aprendido'] = f'argumentos/{SLUG_ARG["k1"]}.html'
+    GLOS_GUIA['burnout ativista'] = f'argumentos/{SLUG_ARG["m8"]}.html'
+    _v = next(x['c'] for x in RUINS if x.get('frase_pt', x['frase']).startswith('Se os humanos desaparecessem'))
+    GLOS_GUIA['misantropia'] = f'ruins/{SLUG_RUIM[_v.lower()]}.html'
     # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
     vs = []
     for v in glossario.VERBETES:
