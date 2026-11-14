@@ -47,8 +47,8 @@ UI = [
  ('Início', 'Home'),
  ('"name": "Argumentos"', '"name": "Arguments"'),
  # ---------- home ----------
- ('Da próxima vez que ouvir um argumento contra o veganismo, lembre:', 'Next time you hear an argument against veganism, remember:'),
- ('Toda objeção tem <mark>uma resposta</mark>.', 'Every objection has <mark>an answer</mark>.'),
+ ('Para pensar com cuidado sobre os argumentos contra o veganismo:', 'For thinking carefully about the arguments against veganism:'),
+ ('Toda objeção merece <mark>uma boa resposta</mark>.', 'Every objection deserves <mark>a good answer</mark>.'),
  ('O que te disseram? Ex.: de onde você tira proteína', 'What did they tell you? E.g. where do you get your protein'),
  ('O que te disseram?', 'What did they tell you?'),
  ('Os mais ouvidos', 'Most often heard'),

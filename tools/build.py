@@ -117,7 +117,7 @@ IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é ce
     'uma alimentação vegetal bem planejada supre as necessidades e causa menos dano ambiental. No moral, porque dá um salto do que <em>é</em> para o que <em>deve ser</em>, '
     'a passagem que os filósofos chamam de falácia do é-deve: mesmo que comer animais trouxesse algum benefício, isso não mostraria que é justo fazê-los sofrer e morrer para obtê-lo. '
     'Mostrar os fatos é sempre necessário; parar neles, nunca é suficiente.</p>')
-DESCRICAO = 'O guia de argumentação para defensores dos animais cataloga de forma sistemática todas as ideias usadas para explorar, causar danos, matar animais ou evitar ajudá-los, fornecendo uma explicação abrangente sobre todos os questionamentos e vieses das pessoas que se opõem ao veganismo e ao antiespecismo.'
+DESCRICAO = '+250 argumentos contra o veganismo e o antiespecismo, cada um na sua versão mais forte, com o que ele acerta, onde falha e como responder. Um guia para pensar com cuidado, conversar melhor e defender os animais.'
 e = lambda s: html.escape(str(s), quote=True)
 def L(pt, en):
     """Texto com variáveis nos dois idiomas; os textos fixos são traduzidos por tools/en/ui.py."""
@@ -727,7 +727,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <meta property="og:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="{e(NOME)}: {"every objection has an answer." if EN else "toda objeção tem uma resposta."}"/>
+<meta property="og:image:alt" content="{e(NOME)}: {"every objection deserves a good answer." if EN else "toda objeção merece uma boa resposta."}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta name="theme-color" content="#0a3703"/>
@@ -838,11 +838,11 @@ def inicio():
     alemc = ''.join(cartao_alem(p) for p in alem.PAGINAS)
     tons = list(CORES.values())
     polc = ''.join(f'<a class="cartao pol-c" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3></a>' for i, t in enumerate(politicas.TEORIAS))
-    corpo = f'''<section class="capa"><div class="wrap capa-in"><p class="etiqueta"><span>Da próxima vez que ouvir um argumento contra o veganismo, lembre:</span></p><h1>Toda objeção tem <mark>uma resposta</mark>.</h1><p class="lede">{e(DESCRICAO)}</p>
+    corpo = f'''<section class="capa"><div class="wrap capa-in"><p class="etiqueta"><span>Para pensar com cuidado sobre os argumentos contra o veganismo:</span></p><h1>Toda objeção merece <mark>uma boa resposta</mark>.</h1><p class="lede">{e(DESCRICAO)}</p>
 <div class="busca-h"><label class="so-leitor" for="hq">O que te disseram?</label><input id="hq" type="search" placeholder="O que te disseram? Ex.: de onde você tira proteína" autocomplete="off"/><div id="hres" class="hres" hidden></div></div>
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
-<a class="rolar" href="#argumentos">{L(f"Role para ver mais de {len(ARGS) // 100 * 100} argumentos ↓", f"Scroll to see more than {len(ARGS) // 100 * 100} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
+<a class="rolar" href="#argumentos">{L(f"Role para ver mais de {len(ARGS) // 50 * 50} argumentos ↓", f"Scroll to see more than {len(ARGS) // 50 * 50} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
 <section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
 <div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
@@ -854,7 +854,7 @@ def inicio():
 <section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
 <section class="bloco-cor amarelo" id="alem"><div class="wrap alem-in"><div>{circulo()}</div><div><div class="sec-cab"><h2>Além do veganismo</h2><p>O critério da senciência não termina no prato. Clique em um círculo ou escolha um tema.</p></div><div class="lista-alem">{alemc}</div></div></div></section>
 <section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="debate.html">Simular um debate</a> <a class="btn alt" href="treino.html">Treinar respostas</a></div></section>'''
-    page('index.html', NOME, DESCRICAO, corpo)
+    page('index.html', NOME, L('Toda objeção merece uma boa resposta. +250 argumentos contra o veganismo, na versão mais forte, com o que acertam, onde falham e como responder.', 'Every objection deserves a good answer. 250+ arguments against veganism, in their strongest form: what they get right, where they fail, how to answer.'), corpo)
 
 def cartao_ruim(r, pre=''):
     return f'<a class="cartao" style="--c:#b8460f" href="{pre}ruins/{r["c"].lower()}.html"><span class="cod">{r["c"]} · {e(TIPOS[r["tipo"]][0])}</span><h3>"{e(r["frase"])}"</h3><p class="falha">{e(r["por"][0])}</p></a>'
@@ -1208,8 +1208,8 @@ def raciocinio():
 
 def sobre():
     n_cap = len(set(CAPS) & set(ARGS))
-    CONTEM = L(f'<p>Mais de {len(ARGS) // 100 * 100} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
-               f'<p>More than {len(ARGS) // 100 * 100} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
+    CONTEM = L(f'<p>Mais de {len(ARGS) // 50 * 50} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
+               f'<p>More than {len(ARGS) // 50 * 50} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
     corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>O projeto</h2><p>O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 pelo ativista Julio Cesar Prava. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.</p><h2>A abordagem</h2><p>O guia segue a tradição da filosofia analítica e da epistemologia: busca clareza nos conceitos, argumentos válidos e premissas apoiadas em evidência. A ética que o orienta é baseada na senciência, o <a href="https://pt.wikipedia.org/wiki/Sencientismo" target="_blank" rel="noopener">sencientismo</a>: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie. O guia também mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2>{CONTEM}
 <h2>Sobre as fontes</h2><p>Afirmações empíricas precisam de fonte. Os links nas referências levam às fontes conferidas na redação. Quando uma tabela indica "fonte ainda não conferida", a referência existe, mas ainda não foi checada no original.</p>
 <h2>Sobre o tom</h2><p>O guia discute argumentos, não pessoas. Apresenta a versão mais forte de cada objeção e diz o que ela acerta, porque só assim a resposta vale alguma coisa. Quando compara a estrutura lógica de argumentos, não está equiparando vítimas nem sofrimentos históricos.</p>
@@ -1496,7 +1496,7 @@ def llms_txt():
             (L('Biblioteca', 'Library'), 'biblioteca.html', L('livros e sites para aprender a argumentar pelos animais', 'books and websites for learning to argue for animals')),
         ]),
     ]
-    txt = f'# {NOME}\n\n> {DESCRICAO}\n\n'
+    txt = f'# {NOME}\n\n> {L("Toda objeção merece uma boa resposta. ", "Every objection deserves a good answer. ")}{DESCRICAO}\n\n'
     txt += L('Site de acesso livre, sem cadastro. Cada argumento tem uma página com a versão mais forte da objeção, o que ela acerta, onde falha, uma resposta curta e as fontes.\n\n',
              'A free, open site, with no sign-up. Each argument has a page with the strongest version of the objection, what it gets right, where it fails, a short answer and the sources.\n\n')
     for titulo, itens in secoes:
