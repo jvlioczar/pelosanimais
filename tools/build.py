@@ -39,7 +39,9 @@ def _data_fonte(k):
     pasta, x = k
     if pasta == 'argumentos':
         c = x.upper()
-        arqs = [os.path.join(r, 'data', 'capitulos_md', c + '.md'), os.path.join(r, 'data', 'capitulos', c + '.xml')]
+        md = os.path.join(r, 'data', 'capitulos_md', c + '.md')
+        # o XML é gerado a partir do Markdown; quando há Markdown, só ele conta como fonte
+        arqs = [md] if os.path.exists(md) else [os.path.join(r, 'data', 'capitulos', c + '.xml')]
         if EN: arqs.append(os.path.join(r, 'data', 'en', 'capitulos_md', c + '.md'))
     else:
         fonte = {'ruins': 'ruins.py', 'alem': 'alem.py', 'politicas': 'politicas.py'}.get((pasta or x).split('/')[0])
@@ -722,7 +724,8 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
     outra = u_pt if EN else u_en
     LASTMOD[path], ALTERNA[path] = _data_fonte(k), (u_pt, u_en)
     alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
-    full = NOME if home else f'{title} | {NOME}'
+    # o título da página inicial diz o que as pessoas buscam, e não só o nome
+    full = L('Guia de Argumentação Pelos Animais: respostas a +250 argumentos contra o veganismo', 'For the Animals: answers to 250+ arguments against veganism') if home else f'{title} | {NOME}'
     if len(full) > 60 and not home: full = title
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha, pergunta) + '\n'
     base = '<base href="/"/>\n' if erro else ''
@@ -1115,7 +1118,7 @@ def pagina_capitulo(c, ant, prox):
     pans = ''.join(f'<div class="painel" role="tabpanel" id="p-{i}" aria-labelledby="tab-{i}">{h}</div>' for i, _, _, h in abas)
     pag = cena(c, f, a['frase'], abaixo) + f'<div class="abas-w"><div class="wrap"><div class="abas" role="tablist" aria-label="Partes do capítulo">{tabs}</div></div></div><div class="wrap paineis" style="--c:{f["cor"]}">{pans}{passos(ant, prox)}</div>'
     resposta = html.unescape(re.sub(r'\s+', ' ', re.sub('<[^>]+>', ' ', curta_html))).strip() or html.unescape(re.sub('<[^>]+>', '', tese))
-    page(f'argumentos/{a["slug"]}.html', f'{c}: {a["frase"]}', re.sub('<[^>]+>', '', tese), pag, TODOS, 'Article', [('Argumentos', TODOS)], (a['frase'], resposta[:1200]))
+    page(f'argumentos/{a["slug"]}.html', a['frase'], re.sub('<[^>]+>', '', tese), pag, TODOS, 'Article', [('Argumentos', TODOS)], (a['frase'], resposta[:1200]))
 
 def passos(ant, prox):
     p = lambda c, r: f'<a href="{ARGS[c]["slug"]}.html"><small>{r}</small>{c}. {e(ARGS[c]["frase"])}</a>'
@@ -1134,7 +1137,7 @@ def pagina_verbete(c, ant, prox):
         corpo += '<h2>Em que conversa aparece</h2>' + ''.join(f'<div class="cadeia"><h3>Cadeia {e(ca["n"].lower())}</h3>{elos(ca["cods"], pre="../", atual=c)}</div>' for ca in cad)
     corpo += f'<p class="aviso">O capítulo completo deste argumento ainda está em preparação. {L("Veja a", "See")} <a href="../familias/{f["c"].lower()}.html">{L("família", "family")} {f["c"]}</a>: {e(f["perg"])}</p>'
     pag = cena(c, f, a['frase'], abaixo) + f'<div class="wrap paineis" style="--c:{f["cor"]}">{corpo}{passos(ant, prox)}</div>'
-    page(f'argumentos/{a["slug"]}.html', f'{c}: {a["frase"]}', L(f'Como responder a "{a["frase"]}" {a["falha"]}.', f'How to answer "{a["frase"]}" {a["falha"]}.'), pag, TODOS, 'WebPage', [('Argumentos', TODOS)], (a['frase'], a['falha']))
+    page(f'argumentos/{a["slug"]}.html', a['frase'], L(f'Como responder a "{a["frase"]}" {a["falha"]}.', f'How to answer "{a["frase"]}" {a["falha"]}.'), pag, TODOS, 'WebPage', [('Argumentos', TODOS)], (a['frase'], a['falha']))
 
 def secao_cap(c, n, fonte=None):
     """Nós de uma seção (número n) de um capítulo."""

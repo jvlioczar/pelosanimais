@@ -62,7 +62,10 @@ def todos(base=None):
     os.makedirs(saida, exist_ok=True)
     for f in glob.glob(os.path.join(base, 'capitulos_md', '*.md')):
         cod = os.path.basename(f)[:-3]
-        open(os.path.join(saida, cod + '.xml'), 'w', encoding='utf-8').write(converte(open(f, encoding='utf-8').read()))
+        destino, novo = os.path.join(saida, cod + '.xml'), converte(open(f, encoding='utf-8').read())
+        # só grava quando muda: assim a data do arquivo (usada no lastmod do sitemap) é a da última alteração real
+        if os.path.exists(destino) and open(destino, encoding='utf-8').read() == novo: continue
+        open(destino, 'w', encoding='utf-8').write(novo)
 
 if __name__ == '__main__':
     todos()
