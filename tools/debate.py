@@ -367,21 +367,21 @@ OP.update({
   me='Usa afirmações nojentas e imprecisas que este guia pede para não usar.',
   r='Claro que não matam, você só não quer saber o que acontece com os pintinhos e os bezerros. É conveniente fechar os olhos, né? Isso tem nome, e não é bonito. Mas você prefere não saber, que é mais confortável.',
   re='Acusa de má-fé em vez de informar.'),
- 'B6': dict(
+ 'B7': dict(
   f='Dar a vida não dá direito de tirá-la: pais dão a vida aos filhos e não ganham direito sobre ela. Quem não existe não perde nada por não existir; quem existe perde tudo quando é morto. A frase só justifica criar outros para matar.',
   fe='Usa a analogia com os pais e mostra quem perde de verdade.',
   m='Melhor que não existissem mesmo, porque a vida deles é só sofrimento do começo ao fim. Seria melhor que todas essas espécies de criação simplesmente desaparecessem do planeta. A extinção seria o melhor para eles, e é isso que o veganismo quer.',
   me='Desvia para a extinção de espécies em vez de responder ao argumento.',
   r='Então vamos criar crianças para vender, já que pelo menos elas existiram. Viu como seu argumento é absurdo? Pense antes de repetir o que ouviu por aí. Esse argumento é dos mais fracos que existem.',
   re='O paralelo pode ser válido, mas o tom é de humilhação.'),
- 'B8': dict(
+ 'B9': dict(
   f='Muitos zootecnistas cuidam bem, dentro do objetivo da profissão, que é criar animais para uso humano. Por isso um frango "bem cuidado" é abatido com cerca de seis semanas. Saber criar animais não é saber se é justo criá-los para matar.',
   fe='Reconhece o trabalho técnico e separa competência de autoridade moral.',
   m='Zootecnistas são treinados para explorar animais e não ligam para eles. A profissão inteira existe para maximizar o lucro em cima do sofrimento, e todo zootecnista sabe disso. Não dá para confiar no que eles dizem sobre bem-estar.',
   me='Generaliza e ofende profissionais que, muitas vezes, se importam de verdade.',
   r='Então pergunta para o zootecnista se ele deixaria a filha morar num galpão daqueles. Quem defende isso só pode estar sendo pago para dizer o que diz. Ninguém cuida bem de quem vai matar com seis semanas, isso é piada.',
   re='Acusa de corrupção sem nenhuma base.'),
- 'B10': dict(
+ 'B15': dict(
   f='Parte do que aparece é abuso, e parte é exatamente o que as regras permitem: celas de gestação, castração sem anestesia, descarte de pintinhos. Isso não é exceção, é o padrão legal. E, quando há abuso, foram esses vídeos que o revelaram.',
   fe='Separa abuso de prática legal e mostra o papel das imagens.',
   m='Todos os animais são mortos conscientes, sem atordoamento, e os vídeos mostram exatamente o que acontece em cem por cento das fazendas. Não existe nenhuma exceção. Quem duvida é só ir a qualquer fazenda e ver com os próprios olhos.',
@@ -465,21 +465,21 @@ OP.update({
   me='Cria uma regra de pureza que o veganismo não tem.',
   r='O porco que virou bacon estava te atacando? Você estava se defendendo dele? Não, né? Então não compara as coisas. Que comparação mais forçada. Você mesmo não acredita nela. Ninguém cai nessa, nem você.',
   re='A ideia é boa, mas o tom é de deboche.'),
- 'F6': dict(
+ 'F7': dict(
   f='Você pode ter razão sobre ostras e mexilhões: o sistema nervoso deles é muito simples. Mas, ao dizer isso, você aceita que o que importa é se o animal sente. E esse critério condena comer peixes, polvos, galinhas e porcos, que sentem.',
   fe='Concede o ponto e mostra que o critério se volta contra o resto do prato.',
   m='Ostras e mexilhões sentem dor como qualquer outro animal, isso está provado. Por isso nenhum vegano deveria aceitar sequer essa discussão. Todo animal sente igual, do mexilhão ao chimpanzé, e duvidar disso já é especismo.',
   me='Afirma uma certeza que a ciência não tem, um erro que este guia pede para evitar.',
   r='Lá vem a ostra como salvação do churrasco. Ninguém come só ostra, isso é desculpa para justificar todo o resto. Daqui a pouco você vai dizer que é vegano porque come ostra no domingo.',
   re='Ridiculariza a pergunta sem usar o ponto forte dela.'),
- 'F7': dict(
+ 'F8': dict(
   f='Hoje não há evidência de que plantas sintam. Mas, se um dia descobrissem, ainda seria melhor comer plantas, porque os animais criados para comida comem muito mais plantas do que nós comeríamos diretamente.',
   fe='Mostra que, mesmo aceitando a hipótese, a conclusão favorece comer plantas.',
   m='Plantas nunca vão sentir nada, isso é impossível pela biologia, e quem pergunta isso está só tentando mudar de assunto. É uma pergunta sem sentido, de quem procura qualquer brecha para não mudar nada.',
   me='Afirma uma impossibilidade e acusa de má-fé.',
   r='Aí você come pedra. Ou para de comer. Pergunta hipotética de quem não quer pensar no que acontece hoje, agora, com animais que sentem de verdade. Isso é só jeito de fugir do assunto.',
   re='Sarcasmo que ignora a resposta forte e simples.'),
- 'F11': dict(
+ 'F12': dict(
   f='Recusar por princípio é coerente. Aceitar também pode ser, se o dinheiro salvar muito mais vítimas. A mesma pergunta vale para qualquer causa: "você torturaria alguém por um milhão?". Ninguém usa a resposta para provar que a causa é falsa.',
   fe='Mostra que as duas respostas são coerentes e que o teste não prova o que pretende.',
   m='Nunca, por nenhum dinheiro do mundo. Quem aceitaria não é vegano de verdade, e eu jamais trairia meus valores por dinheiro, nem para ajudar ninguém. Dinheiro sujo nunca ajuda causa nenhuma, mesmo que salve muitos animais.',
@@ -521,7 +521,7 @@ OP.update({
   me='Faz uma afirmação falsa e generalizada.',
   r='Engraçado como quem come picanha vira ambientalista na hora de criticar o tofu. Desinforme-se menos e leia alguma coisa antes de falar. Esse argumento só serve para tirar a culpa de quem come carne.',
   re='Ataque pessoal sem os dados que resolveriam a questão.'),
- 'H11': dict(
+ 'H12': dict(
   f='Orgânico e local ajudam em alguns pontos, mas não mudam o essencial: carne emite muito e usa muita terra. Pelos dados de Poore e Nemecek, mesmo a carne bovina mais eficiente emite mais de dez vezes o que emite a ervilha de maior impacto.',
   fe='Reconhece o mérito e mostra a proporção que decide.',
   m='Carne local e orgânica polui ainda mais que a industrial, e é a pior opção de todas para o planeta. Comprar do pequeno produtor é o que mais destrói o meio ambiente. O certo é ninguém comprar nada que venha de pequeno produtor de carne, nunca.',
@@ -535,7 +535,7 @@ OP.update({
   me='Afirma algo falso que este guia pede para não usar.',
   r='Então se oferece você para os testes, já que acha tão importante. Fácil defender quando quem sofre é outro. Ou então para de tomar remédio, já que acha tão justo. Duvido que você faça isso. Coragem para mudar você não tem.',
   re='Provocação no lugar de argumento.'),
- 'I8': dict(
+ 'I16': dict(
   f='Ser tradição não coloca uma prática acima das leis contra a crueldade. A Inglaterra proibiu a caça com cães e animais selvagens em circos, e o STF proibiu a farra do boi e a rinha de galo. As festas podem manter a música e a comida, sem o sofrimento.',
   fe='Mostra que tradições cruéis já foram proibidas e que a cultura pode continuar.',
   m='Isso não é cultura nenhuma, é barbárie. Quem participa dessas coisas é sádico e merece ser preso, e quem defende está do lado da tortura. Não tem nada para discutir com quem acha isso aceitável, nem para entender.',

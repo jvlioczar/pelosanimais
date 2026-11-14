@@ -365,21 +365,21 @@ OP.update({
   me='Uses gross, inaccurate claims this guide asks you not to use.',
   r="Of course they don't kill, you just don't want to know what happens to the chicks and calves. Convenient to close your eyes, isn't it? There's a name for that, and it isn't pretty. But you'd rather not know, it's more comfortable.",
   re='Accuses of bad faith instead of informing.'),
- 'B6': dict(
+ 'B7': dict(
   f="Giving life doesn't give the right to take it: parents give their children life and gain no right over it. Someone who doesn't exist loses nothing by not existing; someone who exists loses everything when killed. The line only justifies breeding others to kill.",
   fe='Uses the parent analogy and shows who actually loses.',
   m="Better they didn't exist, because their lives are suffering from start to finish. It would be better if all these farmed species simply disappeared from the planet. Extinction would be best for them, and that's what veganism wants.",
   me='Turns to the extinction of species instead of answering the argument.',
   r="Then let's breed children to sell, since at least they got to exist. See how absurd your argument is? Think before repeating what you heard somewhere. That argument is one of the weakest there is.",
   re='The parallel may be valid, but the tone humiliates.'),
- 'B8': dict(
+ 'B9': dict(
   f='Many animal scientists do take good care, within the goal of their profession, which is raising animals for human use. That is why a "well cared for" chicken is slaughtered at about six weeks. Knowing how to raise animals isn\'t knowing whether it\'s fair to raise them to kill.',
   fe='Acknowledges the technical work and separates competence from moral authority.',
   m="Animal scientists are trained to exploit animals and don't care about them. The whole profession exists to maximize profit from suffering, and every one of them knows it. You can't trust what they say about welfare.",
   me='Generalizes and insults professionals who often genuinely care.',
   r="Then ask the animal scientist if they'd let their daughter live in one of those sheds. Anyone who defends this must be paid to say it. Nobody takes good care of someone they'll kill at six weeks, that's a joke.",
   re='Accuses of corruption without any basis.'),
- 'B10': dict(
+ 'B15': dict(
   f="Some of what's shown is abuse, and some is exactly what the rules allow: gestation crates, castration without anesthesia, culling of chicks. That's not the exception, it's the legal standard. And where there is abuse, those videos are what exposed it.",
   fe='Separates abuse from legal practice and shows the role of the footage.',
   m="Every animal is killed conscious, without stunning, and the videos show exactly what happens on one hundred percent of farms. There are no exceptions at all. Anyone who doubts it can go to any farm and see for themselves.",
@@ -463,21 +463,21 @@ OP.update({
   me='Creates a purity rule veganism doesn\'t have.',
   r="Was the pig that became bacon attacking you? Were you defending yourself from it? No? Then don't compare the two. What a forced comparison. You don't even believe it yourself. Nobody falls for that, not even you.",
   re='The idea is good, but the tone mocks.'),
- 'F6': dict(
+ 'F7': dict(
   f="You may be right about oysters and mussels: their nervous system is very simple. But in saying so, you accept that what matters is whether the animal feels. And that criterion condemns eating fish, octopuses, chickens and pigs, who do feel.",
   fe='Grants the point and shows the criterion turns against the rest of the plate.',
   m="Oysters and mussels feel pain like any other animal, it's been proven. That's why no vegan should even accept this discussion. Every animal feels the same, from a mussel to a chimpanzee, and doubting it is already speciesism.",
   me="States a certainty science doesn't have, a mistake this guide asks you to avoid.",
   r="Here comes the oyster to rescue the barbecue. Nobody eats only oysters, it's an excuse to justify everything else. Next you'll tell me you're vegan because you eat oysters on Sundays.",
   re='Ridicules the question without using its strong point.'),
- 'F7': dict(
+ 'F8': dict(
   f="Today there's no evidence that plants feel. But if one day we found out, eating plants would still be better, because animals raised for food eat far more plants than we would eat directly.",
   fe='Shows that even granting the hypothesis, the conclusion favors eating plants.',
   m="Plants will never feel anything, it's biologically impossible, and anyone asking is just trying to change the subject. It's a meaningless question from someone looking for any loophole not to change anything.",
   me='Asserts an impossibility and accuses of bad faith.',
   r="Then you eat rocks. Or stop eating. A hypothetical question from someone who doesn't want to think about what happens today, right now, to animals who really feel. It's just a way of dodging the subject.",
   re='Sarcasm that ignores the strong, simple answer.'),
- 'F11': dict(
+ 'F12': dict(
   f='Refusing on principle is consistent. Accepting can be too, if the money saves many more victims. The same question works for any cause: "would you torture someone for a million?". Nobody uses the answer to prove the cause is false.',
   fe='Shows both answers are consistent and the test doesn\'t prove what it claims.',
   m="Never, for no amount of money in the world. Anyone who'd accept isn't really vegan, and I'd never betray my values for money, not even to help anyone. Dirty money never helps any cause, even if it saves many animals.",
@@ -519,7 +519,7 @@ OP.update({
   me='Makes a false, sweeping claim.',
   r="Funny how people who eat steak turn environmentalist when it's time to criticize tofu. Get less misinformed and read something before you talk. That argument only serves to let meat eaters off the hook.",
   re='Personal attack without the data that would settle it.'),
- 'H11': dict(
+ 'H12': dict(
   f='Organic and local help on some points, but they don\'t change the essentials: meat emits a lot and uses a lot of land. In Poore and Nemecek\'s data, even the most efficient beef emits more than ten times what the highest-impact peas emit.',
   fe='Acknowledges the merit and shows the proportion that decides it.',
   m="Local, organic meat pollutes even more than industrial meat, and it's the worst option of all for the planet. Buying from small farmers is what destroys the environment most. Nobody should ever buy from small meat producers.",
@@ -533,7 +533,7 @@ OP.update({
   me='States something false this guide asks you not to use.',
   r="Then volunteer for the tests yourself, since you think they're so important. Easy to defend when someone else suffers. Or stop taking medicine, since you think it's so fair. I doubt you would. You don't have the courage to change.",
   re='A taunt instead of an argument.'),
- 'I8': dict(
+ 'I16': dict(
   f="Being tradition doesn't put a practice above the laws against cruelty. England banned hunting with dogs and wild animals in circuses, and Brazil's Supreme Court banned the farra do boi and cockfighting. Festivals can keep the music and food without the suffering.",
   fe='Shows cruel traditions have been banned and that culture can go on.',
   m="That's not culture at all, it's barbarism. People who take part in it are sadists and should be jailed, and whoever defends it is on the side of torture. There's nothing to discuss with people who find this acceptable.",

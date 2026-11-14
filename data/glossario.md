@@ -305,7 +305,7 @@
 
 **Senciocracia** — proposta de organização política e social orientada pelos interesses de todos os seres sencientes. *Representa a aplicação institucional e política mais ampla do sencientismo, propondo estender a representação e a participação política — hoje restritas a humanos — a todos os seres capazes de ter interesses.*
 
-**Straight edge** — subcultura originada no punk hardcore caracterizada pela abstinência de álcool, drogas e, em muitos casos, produtos de origem animal, frequentemente associada ao veganismo ético. *Essa convergência ilustra como a recusa consciente de determinados consumos pode se tornar, para alguns adeptos, uma extensão política e ética mais ampla, incluindo a rejeição à exploração animal.*
+**Straight edge** — subcultura surgida no punk hardcore dos Estados Unidos no início dos anos 1980, cujos adeptos se abstêm de álcool, tabaco e outras drogas; a vertente vegan straight edge, que se espalhou nos anos 1990, acrescenta a recusa de produtos de origem animal. *O nome vem da música "Straight Edge", da banda Minor Threat (1981). Nem todo straight edge é vegano, e o veganismo não exige abstinência de álcool: as duas escolhas se encontraram numa parte da cena hardcore, que ajudou a divulgar o veganismo entre jovens.*
 
 **Xenoespecismo** — discriminação moral entre diferentes espécies não-humanas, privilegiando algumas (ex.: cães, golfinhos) em detrimento de outras (ex.: insetos, peixes) sem justificativa moralmente relevante. *É apontado por sencientistas como uma forma de especismo "de segundo grau": mesmo entre quem já rejeita a superioridade humana, preferências estéticas ou de semelhança acabam recriando hierarquias moralmente arbitrárias entre espécies não-humanas.*
 
@@ -889,7 +889,7 @@
 
 **Alimentação saudável** — padrão alimentar orientado a promover saúde física, cujo conteúdo varia conforme contexto cultural e científico; nem sempre coincide com escolhas éticas veganas.
 
-**Carnivorismo** — dieta baseada predominante ou exclusivamente em produtos de origem animal.
+**Carnivorismo** — em biologia, alimentação baseada sobretudo em carne, característica de animais como os felinos; aplicado a humanos, dieta baseada predominante ou exclusivamente em produtos de origem animal. *Não confundir com carnismo, o sistema de crenças que normaliza comer certos animais e não outros. Veja Dieta carnívora.*
 
 **Consumo** — ato de adquirir e utilizar bens e serviços; em ética animal, discutido quanto ao seu papel na perpetuação (ou redução) da exploração animal.
 
@@ -915,7 +915,7 @@
 
 **Health food** — categoria de produtos alimentícios comercializados com apelo à saúde, nem sempre coincidente com critérios éticos ou nutricionais rigorosos.
 
-**Herbivorismo** — termo biológico para dieta baseada exclusivamente em vegetais, aplicado tanto a animais quanto, por extensão, a humanos.
+**Herbivorismo** — em biologia, alimentação baseada em plantas, característica de animais como bois, cavalos e coelhos. *Às vezes o termo é usado para dietas humanas sem produtos de origem animal, mas os humanos são biologicamente onívoros: podem viver bem só com plantas por escolha, e não por serem herbívoros. Dizer que "o ser humano é herbívoro" é uma afirmação falsa que enfraquece a defesa dos animais; o argumento ético não depende dela. Veja Onivorismo e Dieta vegana.*
 
 **Intolerância alimentar** — reação adversa do organismo a determinado alimento, distinta de alergia, relevante para adaptações de dietas vegetarianas e veganas.
 
@@ -923,7 +923,7 @@
 
 **Lactovegetarianismo** — dieta vegetariana que inclui laticínios, mas exclui ovos e carne.
 
-**Macrobiótica** — sistema alimentar de origem japonesa baseado em equilíbrio energético (yin/yang), priorizando grãos integrais e vegetais, com variações quanto à inclusão de produtos animais.
+**Macrobiótica** — sistema alimentar de origem japonesa, baseado na ideia de equilíbrio entre yin e yang, que prioriza grãos integrais, leguminosas e vegetais; quem o segue é chamado de macrobiótico. *Foi popularizado no Ocidente no século XX por George Ohsawa e Michio Kushi. Muitas versões são quase vegetais, mas incluem peixe, por isso a macrobiótica não é o mesmo que veganismo. Versões muito restritivas, sobretudo em crianças, foram associadas a deficiências nutricionais, como de vitamina B12 e de vitamina D.*
 
 **Onivorismo** — dieta que inclui tanto alimentos de origem vegetal quanto animal.
 
@@ -987,7 +987,7 @@
 
 **Riscos-s** — riscos de sofrimento em escala astronômica ("s-risks"), conceito ligado à preocupação com sofrimento futuro massivo, inclusive de animais.
 
-**Riscos-x** — riscos existenciais, capazes de extinguir a vida senciente ou seu potencial futuro.
+**Riscos-x** — riscos existenciais, capazes de extinguir a vida humana e a vida senciente ou seu potencial futuro.
 
 ---
 

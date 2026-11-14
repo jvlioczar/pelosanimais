@@ -333,5 +333,37 @@
   "links": [
    "https://senciencia.org/2024/04/22/imparcialidade-temporal-o-que-e-e-por-que-e-importante"
   ]
+ },
+ {
+  "termo": "Dieta vegana",
+  "sec": 15,
+  "def": "alimentação sem nenhum produto de origem animal: sem carnes, peixes, frutos do mar, leite e derivados, ovos e mel. É a parte alimentar do veganismo, que recusa a exploração animal também no vestuário, no entretenimento e em outros usos.",
+  "com": "Bem planejada, é considerada adequada em todas as fases da vida por entidades como a Academia de Nutrição e Dietética dos Estados Unidos, com suplementação de vitamina B12. Quem segue a dieta por saúde, sem a motivação ética, costuma usar o termo plant-based. Veja Veganismo e Plant-based.",
+  "links": [
+   "https://doi.org/10.1016/j.jand.2016.09.025"
+  ]
+ },
+ {
+  "termo": "Dieta carnívora",
+  "sec": 15,
+  "def": "dieta da moda que exclui todos ou quase todos os alimentos vegetais e se baseia em carnes, ovos e, às vezes, laticínios.",
+  "com": "É divulgada nas redes sociais com relatos de melhora de saúde, mas não há estudos de longo prazo sobre sua segurança. A principal pesquisa, de 2021, ouviu 2.029 adeptos on-line, com dados relatados por eles mesmos, e os autores pediram cautela; muitos participantes tinham colesterol LDL elevado. A dieta exclui fibras e vários nutrientes de vegetais. Não confundir com carnismo. Veja Carnivorismo.",
+  "links": [
+   "https://doi.org/10.1093/cdn/nzab133"
+  ]
+ },
+ {
+  "termo": "Predação",
+  "sec": 12,
+  "def": "relação ecológica em que um animal, o predador, mata e come outro, a presa.",
+  "com": "É uma das principais causas de sofrimento e morte de animais na natureza. Reconhecer isso não implica defender matar predadores, o que faria crescer as populações de presas e aumentaria a fome e a doença; a discussão sobre reduzir o sofrimento causado pela predação é sobre o futuro distante e pede pesquisa antes de qualquer intervenção. Veja Sofrimento dos animais selvagens e Parasitismo.",
+  "links": []
+ },
+ {
+  "termo": "Parasitismo",
+  "sec": 12,
+  "def": "relação ecológica em que um organismo, o parasita, vive dentro ou sobre outro, o hospedeiro, e se alimenta dele, causando-lhe dano, em geral sem matá-lo de imediato.",
+  "com": "É uma das formas mais comuns de vida na natureza e uma causa enorme de sofrimento: vermes, carrapatos e larvas de vespas parasitoides, que comem o hospedeiro vivo por dentro, afetam a maioria dos animais selvagens. Reconhecer esse sofrimento não é defender o parasitismo nem propor erradicá-lo agora; é perguntar como ajudar onde já é possível, como no tratamento de animais feridos ou doentes. Veja Predação e Sofrimento dos animais selvagens.",
+  "links": []
  }
 ]

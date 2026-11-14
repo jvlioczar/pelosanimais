@@ -30,6 +30,7 @@ UI = [
  ('Mapa de conexões', 'Map of connections'),
  ('Além do veganismo', 'Beyond veganism'),
  ('Objeções políticas e éticas', 'Political and ethical objections'),
+ ('Tipos de exploração', 'Types of exploitation'),
  ('Objeções políticas', 'Political objections'),
  ('Sobre o guia', 'About the guide'),
  ('Pare de dizer isso, ou diga melhor', 'Stop saying this, or say it better'),
