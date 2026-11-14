@@ -849,7 +849,7 @@ def item_arg(a):
     ok = a['c'] in CAPS
     formas = ''.join(f'<li>"{e(x)}"</li>' for x in a['formas'])
     bot = 'Abrir o capítulo completo' if ok else 'Abrir o verbete'
-    return f'<details class="item" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if ok else "ver"}" data-u="argumentos/{a["slug"]}.html"><summary><span class="cod">{a["c"]}</span><b>{e(a["frase"])}</b>{"<i class=ok title=Capítulo&nbsp;completo></i>" if ok else ""}</summary><div class="abre"><p class="falha-i"><strong>Falha principal:</strong> {e(a["falha"])}</p><ul class="formas">{formas}</ul><a class="btn peq" href="argumentos/{a["slug"]}.html">{bot} →</a></div></details>'
+    return f'<details class="item" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if ok else "ver"}" data-u="argumentos/{a["slug"]}.html"><summary><span class="cod">{a["c"]}</span><b>{e(a["frase"])}</b></summary><div class="abre"><p class="falha-i"><strong>Falha principal:</strong> {e(a["falha"])}</p><ul class="formas">{formas}</ul><a class="btn peq" href="argumentos/{a["slug"]}.html">{bot} →</a></div></details>'
 
 def circulo(pre=''):
     aneis = [(250, 'Extraterrestres', 'alem/extraterrestres.html', '#e6f4fd', True), (205, 'IA e robôs', 'alem/ia-e-robos.html', '#bfe0f7', True), (160, 'Animais selvagens', 'alem/animais-selvagens.html', '#d8eebd', False), (115, 'Animais explorados', 'argumentos/a8.html', '#ffeb5b', False)]
