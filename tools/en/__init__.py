@@ -26,7 +26,7 @@ ARGS.update(_novos_lotes.EN); MOTIVOS.update(_novos_lotes.MOTIVOS)
 
 _EXTRA_EN = {'A12': ["We're all naturally biased: we protect our family, our species, our nation, and veganism is an illusion"], 'E3': ['We have to respect different views'], 'A7': ['Vegans treat animals like humans'],
     'D7': ['Vegans want to impose veganism on Indigenous peoples'], 'C2': ['Our bodies are designed to eat meat'], 'J2': ["Veganism is classist and elitist, it isn't accessible to poorer people"],
-    'N20': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L18': ['Vegans prefer animals to people']}
+    'N20': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L20': ['Vegans prefer animals to people']}
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
 
 FALTAM = {}

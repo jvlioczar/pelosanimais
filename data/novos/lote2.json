@@ -1,6 +1,6 @@
 {
   "args": {
-    "L26": {
+    "L29": {
       "falha_pt": "Generaliza a partir de alguns veganos e confunde criticar uma incoerência com desprezar pessoas; quem resgata animais já aceita que eles importam",
       "en": {
         "frase": "Vegans think they're the only ones who really defend animals",
@@ -12,7 +12,7 @@
         "falha": "Generalizes from some vegans and confuses criticizing an inconsistency with despising people; those who rescue animals already accept that animals matter"
       }
     },
-    "L17": {
+    "L19": {
       "falha_pt": "Tu quoque e generalização: o veganismo não tem posição sobre o aborto, os dois casos têm estruturas diferentes e a incoerência de alguém não justificaria explorar animais",
       "en": {
         "frase": "Vegans defend animals, but they support abortion",
@@ -24,7 +24,7 @@
         "falha": "Tu quoque and generalization: veganism has no position on abortion, the two cases have different structures, and someone's inconsistency wouldn't justify exploiting animals"
       }
     },
-    "L20": {
+    "L22": {
       "falha_pt": "Generaliza a crítica seletiva de alguns: o critério coerente critica toda morte evitável de animais, começa pela indústria e não escolhe um povo como alvo",
       "en": {
         "frase": "Vegans are racist, because they criticize Afro-Brazilian religions",
@@ -35,7 +35,7 @@
         "falha": "Generalizes the selective criticism of some: the consistent criterion criticizes every avoidable killing of animals, starts with the industry and doesn't pick a people as its target"
       }
     },
-    "L21": {
+    "L23": {
       "falha_pt": "Generalização falsa: há veganos em todas as religiões, tradições inteiras ensinam a não ferir os animais e o veganismo é compatível com a fé e com a ausência de fé",
       "en": {
         "frase": "Vegans are against religion",
