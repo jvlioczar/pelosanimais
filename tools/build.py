@@ -200,6 +200,7 @@ NOVOS = [
     ('A11', 'Espécie é biologia, raça é construção social', ['Especismo não é como racismo', 'Raça não existe, espécie existe'], 'Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém'),
     ('E7', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
     ('H15', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
+    ('K7', 'Veganos não deveriam entrar na política, porque a política é suja', ['Política é suja, vegano vai se corromper', 'Quem entra lá vira igual aos outros', 'Causa animal não deve se misturar com partido'], 'Ficar de fora não deixa as decisões limpas, deixa-as para quem já está lá; as conquistas para os animais vieram da política, e o risco de corrupção pede cuidado, não ausência'),
     ('L14', 'Veganos não deveriam assistir a filmes nem jogar jogos violentos', ['Você joga jogo de matar bicho e se diz vegano?', 'Se fosse coerente, vegano não via filme de terror', 'Pode matar animal no videogame, mas não pode comer?'], 'Representar a violência não é praticá-la, e a ficção não tem vítimas; quando um animal foi ferido de verdade na filmagem, a crítica é legítima, e evitar a obra é coerente'),
     ('L13', 'Veganos não deveriam usar inteligência artificial', ['Vegano que usa IA não pode falar de meio ambiente', 'Cada pergunta ao ChatGPT gasta uma garrafa de água', 'Inteligência artificial não é natural, logo veganos deviam ser contra'], 'O veganismo não promete impacto zero, e sim não explorar animais; o custo da IA é real, mas a alimentação pesa muito mais, e "não é natural" não decide nada'),
     ('L25', 'Veganos apoiam pseudociências', ['Vegano acredita em qualquer coisa', 'Veganismo é a porta de entrada para a pseudociência', 'Daqui a pouco vão dizer que vacina faz mal'], 'Há veganos que espalham pseudociência, mas a defesa dos animais se apoia na senciência e no consenso nutricional; julgar uma ideia pelos piores defensores derrubaria qualquer causa'),
@@ -231,7 +232,7 @@ NOVOS = [
     ('M4', 'Ser vegano é difícil para quem viaja muito', ['Na estrada, não tem o que comer', 'Em viagem de trabalho, não dá para escolher'], 'A dificuldade de algumas refeições justifica, no máximo, uma exceção real, e não abandonar o veganismo em casa'),
     ('E14', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
     ('M10', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
-    ('K8', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
+    ('K9', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
     ('L3', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
     ('L10', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
     ('L24', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
@@ -324,7 +325,7 @@ QE = {
     'G2': [(4, 9)], 'G10': [(4, 9)], 'H2': [(4, 14)], 'H16': [(5, 8)], 'H13': [(5, 1)], 'H15': [(4, 19)],
     'I1': [(4, 20)], 'I2': [(4, 20)], 'I5': [(4, 19)],
     'J1': [(4, 10)], 'J2': [(4, 10)], 'J11': [(4, 12)], 'J9': [(4, 12)], 'J19': [(4, 11)], 'J16': [(4, 16)],
-    'K1': [(4, 13)], 'K9': [(8, 12)], 'K6': [(8, 11)], 'L20': [(4, 16)], 'L24': [(4, 3)],
+    'K1': [(4, 13)], 'K10': [(8, 12)], 'K6': [(8, 11)], 'L20': [(4, 16)], 'L24': [(4, 3)],
 }
 ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
 def qe_bloco(c):

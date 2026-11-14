@@ -70,9 +70,9 @@ DEPOIS = {
     'J18': [('L7', 'Veganismo é seita'), ('E2', 'Querem proibir a carne')],
     'J7': [('E10', 'Faço o que posso'), ('E15', 'Sei que é errado, mas não vou parar')],
     'J13': [('D1', 'Sempre fizemos isso'), ('J11', 'Os empregos dependem disso')],
-    'J20': [('K1', 'Uma pessoa não faz diferença'), ('K9', 'Vou esperar a tecnologia')],
-    'K9': [('K1', 'Até lá, uma pessoa não faz diferença'), ('J7', 'Enquanto isso, como menos')],
-    'K7': [('L5', 'Ativistas seriam radicais'), ('L1', 'Veganos são chatos')],
+    'J20': [('K1', 'Uma pessoa não faz diferença'), ('K10', 'Vou esperar a tecnologia')],
+    'K10': [('K1', 'Até lá, uma pessoa não faz diferença'), ('J7', 'Enquanto isso, como menos')],
+    'K8': [('L5', 'Ativistas seriam radicais'), ('L1', 'Veganos são chatos')],
     'K3': [('K2', 'O animal já está morto'), ('K4', 'A culpa é da indústria')],
     'K6': [('E2', 'Mas o Estado não pode proibir'), ('K90', 'A responsabilidade seria do sistema')],
     'L9': [('L7', 'Veganismo é seita'), ('L5', 'Ativistas são extremistas')],
@@ -80,7 +80,7 @@ DEPOIS = {
     'L21': [('L20', 'Veganos ligariam mais para animais do que para humanos'), ('A8', 'São só animais')],
     'L17': [('J5', 'Se querem o sabor, carne é gostosa'), ('L11', 'Acusa de incoerência')],
     'L27': [('G14', 'O corpo não se adaptaria'), ('J20', 'Um mundo vegano é utópico')],
-    'L5': [('K7', 'O radicalismo afastaria as pessoas'), ('L9', 'Associa o veganismo a figuras odiadas')],
+    'L5': [('K8', 'O radicalismo afastaria as pessoas'), ('L9', 'Associa o veganismo a figuras odiadas')],
     'L6': [('C1', 'É natural'), ('L30', 'Vou comer o dobro')],
 }
 
