@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 219 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 220 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -140,6 +140,7 @@ Precisamos de produtos animais?
 - [G17. Meu médico mandou comer carne](https://pelosanimais.biblioverse.org/argumentos/meu-medico-mandou-comer-carne.html): Apelo à autoridade individual contra posições institucionais
 - [G18. Frugivorismo não é saudável, então o veganismo também não é](https://pelosanimais.biblioverse.org/argumentos/frugivorismo-nao-e-saudavel-entao-o-veganismo-tambem-nao-e.html): Veganismo não é frugivorismo: a dieta só de frutas é arriscada, mas uma alimentação vegana variada e planejada, com B12, é considerada adequada
 - [G19. Veganismo é transtorno alimentar disfarçado](https://pelosanimais.biblioverse.org/argumentos/veganismo-e-transtorno-alimentar-disfarcado.html): A associação existe, mas o transtorno costuma vir antes da dieta; veganos da comunidade não têm mais sinais de transtorno, e a causa de uma tragédia é a doença
+- [G20. Comer animais é necessário para sobreviver](https://pelosanimais.biblioverse.org/argumentos/comer-animais-e-necessario-para-sobreviver.html): Necessário para quem? Onde a alternativa existe, é escolha, e a definição de veganismo já fala em fazer o possível e praticável; e o argumento concede o princípio que o derruba, porque sem necessidade não há justificativa
 
 ## H. Ambiente, ecologia e agricultura (Parte IND)
 
