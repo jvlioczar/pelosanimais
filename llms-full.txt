@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 222 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 223 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -117,6 +117,7 @@ E na ilha deserta?
 - [F8. E os ovos da minha galinha resgatada?](https://pelosanimais.biblioverse.org/argumentos/e-os-ovos-da-minha-galinha-resgatada.html): Caso raro e discutível, sem ligação com a indústria; não legitima a compra
 - [F9. Você comeria um animal que morreu de causas naturais?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-um-animal-que-morreu-de-causas-naturais.html): Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos
 - [F10. E a carne que vai para o lixo?](https://pelosanimais.biblioverse.org/argumentos/e-a-carne-que-vai-para-o-lixo.html): Consumo sem demanda é caso distinto; ainda reforça ver animais como comida
+- [F11. Você comeria animais se alguém te pagasse bem?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-animais-se-alguem-te-pagasse-bem.html): O mesmo dilema vale para qualquer causa humana e nunca prova que ela é falsa; recusar por princípio é coerente, e aceitar para salvar muito mais vítimas também é
 
 ## G. Saúde e nutrição (Parte IND)
 
