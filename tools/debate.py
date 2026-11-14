@@ -19,14 +19,14 @@ PESSOAS = [
 ]
 
 OP = {
- 'A14': dict(
+ 'A4': dict(
   f='Plantas reagem ao ambiente, mas não têm neurônios nem nada que faça esse papel, e não há evidência de que sintam. E, se sentissem, comer plantas diretamente as pouparia: boa parte das lavouras vira ração para animais.',
   fe='Separa reagir de sentir e mostra que, mesmo aceitando a premissa, a conclusão favorece comer plantas.',
   m='A ciência já provou que plantas não sentem absolutamente nada: sem cérebro não existe nenhum tipo de experiência, e esse assunto está encerrado há décadas entre os biólogos. Comparar uma alface com um porco não faz sentido nenhum.',
   me='Aponta na direção certa, mas "provado" e "encerrado" são fortes demais, e não responde ao que importa: mesmo se sentissem, comer animais mataria mais plantas.',
   r='Entendo a preocupação, mas então você deveria comer pedra, já que para você tudo sente. Engraçado como quem nunca ligou para um pé de alface vira defensor das plantas bem na hora em que o assunto é o bife no prato.',
   re='Sarcasmo e acusação de má-fé encerram a conversa e não explicam nada. A pessoa sai achando que você não tinha resposta.'),
- 'G1': dict(
+ 'G2': dict(
   f='Precisamos de proteína, e não de proteína animal. Feijão, lentilha, soja, grão-de-bico e grãos fornecem todos os aminoácidos, comendo de forma variada e em quantidade suficiente. Entidades de nutrição como a dos EUA e o Conselho Federal de Nutricionistas reconhecem dietas veganas bem planejadas.',
   fe='Corrige a confusão entre nutriente e origem, dá exemplos concretos e diz quem sustenta a afirmação.',
   m='Basta olhar para a natureza: gorilas, touros, cavalos e elefantes estão entre os animais mais fortes do planeta e comem só plantas a vida inteira. Se eles constroem toneladas de músculo sem nenhuma proteína animal, é evidente que o nosso corpo também consegue tirar das plantas tudo de que precisa.',
@@ -40,14 +40,14 @@ OP = {
   me='Disputa o fato errado, e a afirmação é falsa: humanos ancestrais comiam carne. Mesmo se fosse verdade, aceitaria que o natural decide o que é certo.',
   r='Natural também é morrer de infecção aos trinta anos, então seja coerente e pare de tomar remédio, de usar óculos e de ir ao dentista. Mas claro que você não vai parar: o natural só interessa ao hipócrita quando serve para defender o churrasco.',
   re='A ideia de fundo é boa, mas o ataque pessoal faz a pessoa se defender em vez de pensar.'),
- 'J11': dict(
+ 'J5': dict(
   f='Para quem gosta, é gostosa mesmo. A pergunta é se esse prazer justifica a vida de alguém. Ninguém defenderia comer cachorro porque é saboroso. E o sabor vem muito do tempero e do preparo, que dá para usar com plantas.',
   fe='Concede o que é verdade, coloca o peso dos dois lados e testa o princípio com um caso que a pessoa rejeita.',
   m='É verdade que muita gente gosta, mas hoje isso deixou de ser problema: a carne vegetal ficou igualzinha à de verdade, em sabor, textura e suculência. Em teste cego ninguém consegue notar a diferença, então você não perde nada ao trocar.',
   me='Muita gente nota a diferença, e a promessa quebrada vira argumento contra você. E troca a questão ética por uma de paladar.',
   r='Carne, na verdade, não tem gosto de nada: todo o sabor vem do sal, do alho e da fumaça do carvão. Experimente comer um bife cozido só na água e sem tempero e veja se alguém aguenta. Quem diz que gosta de carne gosta é de tempero e não percebe.',
   re='É falso: a carne tem sabor próprio, e quem come sabe disso. Negar o óbvio custa credibilidade.'),
- 'C3': dict(
+ 'C2': dict(
   f='Somos onívoros, e é justamente por isso que podemos escolher: vivemos bem com plantas. Poder comer não é precisar, e a anatomia não dá ordens morais.',
   fe='Aceita o fato biológico e mostra que ele não leva à conclusão.',
   m='Na verdade, somos herbívoros por natureza: nossos caninos são minúsculos, o intestino é longo e não temos garras. O corpo humano não foi feito para comer carne.',
@@ -61,7 +61,7 @@ OP = {
   me='Soa como pureza e é difícil de acreditar. Além disso, aceita discutir a ilha, que não tem nada a ver com o prato de hoje.',
   r='Essa pergunta é idiota: ninguém vive numa ilha deserta, e você sabe disso. Quem precisa inventar um cenário de filme para defender o que come é porque já ficou sem argumento na vida real. Nem vale a pena responder.',
   re='A pergunta é comum e merece resposta. Chamar de idiota e se recusar a responder faz parecer que você fugiu dela.'),
- 'C2': dict(
+ 'C5': dict(
   f='O leão não tem escolha: é carnívoro obrigatório e não delibera. Nós podemos viver bem sem comer animais e entendemos o que fazemos. Por isso não julgamos o leão, e por isso podemos ser julgados.',
   fe='Mostra a diferença moral relevante entre o leão e nós: escolha e compreensão.',
   m='Se o leão é o seu exemplo, lembre que leões matam os filhotes de outros machos e tomam as fêmeas à força. Você vai copiar isso também? Quem usa a natureza como guia precisa aceitar o pacote inteiro, e não só o cardápio.',
@@ -103,112 +103,112 @@ OP = {
   me='Esses números circulam muito, mas variam com a dieta e a forma de calcular, e uma bandeja a menos não é exatamente um animal a menos. A precisão é falsa.',
   r='Se todo mundo pensasse assim, o mundo estaria perdido: ninguém votaria, ninguém economizaria água, ninguém faria nada. Que egoísmo. Esse raciocínio é típico de quem só se mexe quando tem certeza de que vai receber o crédito pelo resultado.',
   re='O apelo é moralista e não responde à dúvida real sobre o efeito de uma compra.'),
- 'A1': dict(
+ 'A15': dict(
   f='A questão não é se um ser pode raciocinar, mas se pode sofrer. A dor de um porco não dói menos porque ele não resolve equações. Se a razão fosse o critério, bebês e pessoas com deficiência intelectual profunda poderiam ser usados, e ninguém aceita isso.',
   fe='Troca o critério errado pelo relevante e mostra que o critério da razão excluiria humanos que todos protegemos.',
   m='A ciência já mostrou que os animais são tão inteligentes quanto nós. Porcos são mais espertos que crianças de três anos, polvos resolvem quebra-cabeças e corvos usam ferramentas. Se eles raciocinam como a gente, a diferença que você aponta simplesmente não existe.',
   me='Há comparações em tarefas específicas, mas generalizar exagera. E aceita a ideia de que a inteligência decide quem conta.',
   r='Racional você também não está sendo, e mesmo assim ninguém te põe no prato. Quem se orgulha tanto da própria razão deveria começar a usá-la, em vez de repetir a primeira frase que ouviu por aí só para justificar o almoço de hoje.',
   re='Ataque pessoal: mesmo com a semente de um argumento, a pessoa só ouve a ofensa.'),
- 'A10': dict(
+ 'A8': dict(
   f='Essa frase não dá uma razão, só repete o grupo a que o animal pertence. Se há uma característica que importa, qual é? Cada uma que se aponta falta em algum humano que continuamos protegendo. Se a resposta é "só por ser de outra espécie", é preconceito, e não argumento.',
   fe='Pede o critério e mostra que nenhum separa todos os humanos de todos os animais.',
   m='Nós também somos animais: a biologia classifica o ser humano como primata, e compartilhamos a maior parte do DNA com os outros mamíferos. Então dizer "são só animais" não faz sentido nenhum, porque a frase vale igualmente para você, para mim e para todo mundo aqui.',
   me='É verdade em biologia, mas não responde: a pessoa só vai dizer "sim, mas humanos são diferentes". O ponto é pedir qual diferença importa.',
   r='Isso é a mesma coisa que o nazismo dizia: escolher um grupo, declarar que ele vale menos e fazer o que quiser com ele. Os matadouros são os campos de concentração de hoje, e quem compra carne está fazendo o papel de quem via a fumaça e preferia não perguntar.',
   re='Comparações com o Holocausto ofendem e desviam a conversa para a comparação, e não para os animais.'),
- 'A15': dict(
+ 'A3': dict(
   f='Não saber onde fica exatamente a linha não apaga as diferenças claras: não sabemos o dia exato em que alguém fica idoso, e um bebê não é idoso. Vacas, porcos e galinhas estão claramente do lado de quem sente. Nos casos duvidosos, como insetos, o sensato é a cautela.',
   fe='Responde à falácia do contínuo e admite as dúvidas reais sem deixá-las anular os casos claros.',
   m='A linha é simples e é a mesma para todos: tudo que tem olhos sente. Se um ser consegue olhar para você, existe alguém ali dentro, e isso vale para a vaca, o peixe e a mosca. Bactérias e plantas não têm olhos, então ficam de fora, e o problema está resolvido.',
   me='Inventa um critério arbitrário que não tem relação com sentir, e fica fácil de derrubar.',
   r='Bactéria? Sério? Você está de brincadeira. Passa a vida comendo vaca, porco e galinha sem nunca perguntar nada e agora ficou preocupado com micróbio. Quando alguém precisa descer até a bactéria para ter razão, é porque a conversa séria já acabou faz tempo.',
   re='Zomba da pergunta em vez de explicar onde a dúvida é real e onde não é.'),
- 'A16': dict(
+ 'B2': dict(
   f='A morte faz mal porque tira tudo o que a pessoa ainda viveria. Por isso matar alguém dormindo, sem dor, é gravíssimo. Animais também têm um futuro de experiências boas, e os de criação são mortos muito jovens.',
   fe='Explica por que a morte é dano mesmo sem dor, com um caso humano que ninguém aceita.',
   m='Essa premissa é falsa: não existe morte sem dor. Todo animal sofre no abate, sente o cheiro de sangue, ouve os outros gritando e entra em pânico antes de morrer. Se a morte fosse mesmo indolor, a conversa seria outra.',
   me='Desvia para a dor, que nem sempre está presente da mesma forma, e aceita a premissa de que, sem dor, estaria tudo bem.',
   r='Então posso te matar dormindo? Você não ia sentir nada, não ia nem ficar sabendo, e pela sua lógica ninguém teria do que reclamar. Pensa bem antes de responder: se matar quem dorme sem dor é aceitável, nada te impede de concordar.',
   re='A ideia é a certa, mas dita com um tom provocativo soa hostil e a pessoa reage ao tom.'),
- 'B2': dict(
+ 'B4': dict(
   f='Uma vida melhor é melhor, sem dúvida. Mas o animal caipira continua sendo morto jovem, e os pintinhos machos continuam descartados. E essa carne é exceção: a maior parte dos animais de criação vive em sistemas intensivos.',
   fe='Reconhece a melhora e mostra o que não muda: a morte, e o fato de que essa carne é minoria.',
   m='É verdade que o rótulo é bonito, mas caipira é tudo mentira. É só marketing: a galinha "feliz" da embalagem vive no mesmo galpão lotado que as outras, e todos sofrem exatamente igual. A única diferença entre os sistemas é o preço.',
   me='Rótulos exageram, mas dizer que não há diferença nenhuma é falso, e quem já viu uma criação melhor deixa de te ouvir.',
   r='Feliz até a hora de levar a facada, né? Deve ser um consolo enorme para o bicho saber que ciscou no quintal antes. Mas, se pagar mais caro ajuda você a dormir tranquilo, continue acreditando na galinha sorridente da embalagem.',
   re='O sarcasmo tem um ponto, mas sozinho soa como provocação, sem explicar o argumento.'),
- 'B4': dict(
+ 'K4': dict(
   f='A indústria é responsável, e mudar leis e subsídios importa. Mas ela produz porque alguém compra. Dá para fazer as duas coisas: cobrar o sistema e mudar o próprio consumo.',
   fe='Concorda com a parte certa e mostra que ela não dispensa a escolha individual.',
   m='A indústria só produz o que pedem. A culpa é toda de quem compra: o consumidor é que manda, e as empresas apenas obedecem. Leis e subsídios não mudam nada enquanto houver gente pagando.',
   me='Tão unilateral quanto a objeção: ignora o peso real de subsídios, publicidade e leis.',
   r='Isso é desculpa de quem não quer largar o bife. É cômodo culpar a indústria: assim você posa de crítico do sistema e continua na fila do açougue com a consciência tranquila.',
   re='Ataca a motivação em vez de responder ao argumento.'),
- 'B5': dict(
+ 'B3': dict(
   f='Uma vida boa não dá o direito de tirá-la; quanto melhor a vida, maior a perda. E a alternativa ao abatedouro não é a onça, é não ser criado para morrer. Ninguém aceitaria essa frase para um cão.',
   fe='Mostra que a vida boa aumenta a perda e testa o princípio com um caso que a pessoa rejeita.',
   m='Nenhum animal de criação tem vida boa: são todos torturados do nascimento à morte, sem exceção. Essa história de bicho bem tratado no sítio é só propaganda, e quem acredita nisso nunca viu uma criação de perto.',
   me='Generaliza: há criações piores e melhores. A pessoa pensa no sítio que conhece e descarta tudo o que você disser.',
   r='Vida boa até ser assassinado. Lindo. Com essa lógica, dá para criar qualquer um com carinho e depois cobrar a conta com uma faca. O animal deve ser muito grato, e pena que ninguém perguntou a opinião dele antes do jantar.',
   re='Ironia que não explica e soa como desprezo.'),
- 'C5': dict(
+ 'C4': dict(
   f='Mesmo que a carne tenha ajudado nossos ancestrais, isso não diz o que fazer hoje: eles também viveram sem medicina. E a própria tese está em debate, com o cozimento e outros alimentos também apontados como importantes.',
   fe='Separa o passado da escolha moral presente e mostra que a premissa é discutida.',
   m='Isso é um mito que já foi derrubado: a carne nunca teve papel nenhum na evolução humana. O cérebro cresceu por causa das raízes cozidas e das frutas, e os cientistas sérios abandonaram a hipótese da carne faz muito tempo.',
   me='Vai além da evidência: o papel exato é debatido, mas "nenhum papel" é afirmação forte demais.',
   r='Evoluir? Olha a pessoa falando. Se a carne tivesse feito tanto bem assim ao cérebro, você teria um argumento melhor do que esse. Pelo jeito, a evolução parou em alguns de nós bem na frente da churrasqueira.',
   re='Ataque pessoal sem argumento.'),
- 'C11': dict(
+ 'C3': dict(
   f='Vontade não é necessidade. Muito do gosto pela carne é aprendido desde a infância e reforçado por sal, gordura e tempero. E desejos não justificam causar dano: temos muitas vontades que não seguimos quando prejudicam alguém.',
   fe='Separa vontade de justificativa e explica de onde vem parte do desejo.',
   m='Essa vontade não é natural, é vício. A carne age no cérebro como uma droga, com substâncias que causam dependência igual à do cigarro, e por isso é tão difícil largar. O que você sente é abstinência, e ela passa em poucas semanas.',
   me='Comparar com droga exagera e não tem base sólida; soa como acusação.',
   r='Vontade natural de comer cadáver? Que nojo. Gente normal vê um bicho morto na estrada e desvia o olhar, mas você fica com água na boca. Se isso é natural para você, eu prefiro nem saber o que mais dá vontade.',
   re='Nojo não é argumento, e a pessoa se sente julgada.'),
- 'D2': dict(
+ 'D6': dict(
   f='Respeitar uma cultura não é aceitar tudo nela. Você provavelmente critica a farra do boi ou a rinha de galo, e o STF proibiu as duas por crueldade. E a crítica vale principalmente para a nossa própria cultura.',
   fe='Mostra que a pessoa já julga práticas culturais e que a crítica não é dirigida a outros povos.',
   m='Essa cultura nem é nossa: comer carne todo dia é coisa de colonizador, trazida junto com o gado e as cercas. Os povos originários viviam em harmonia com os animais, e defender a carne hoje é defender a herança da colonização.',
   me='Generalização histórica que não se sustenta: muitas culturas comem animais. E troca a questão moral por uma disputa política.',
   r='Escravidão também era cultural, e sempre teve quem pedisse respeito por ela. Você está usando o mesmo argumento dos donos de engenho, e daqui a cem anos vão olhar para você do mesmo jeito que hoje olhamos para eles.',
   re='O ponto lógico tem algo, mas dito assim compara a pessoa a escravocratas, e ela só ouve isso.'),
- 'D3': dict(
+ 'D7': dict(
   f='O veganismo pede evitar a exploração "na medida do possível e praticável". Um povo isolado que depende da caça está numa situação diferente de quem compra no supermercado. Usar quem não tem escolha para justificar quem tem não funciona.',
   fe='Lembra a definição do veganismo e separa necessidade de escolha.',
   m='A ética vale para todos. Indígenas também deveriam ser veganos, sem exceção: matar um animal é errado na cidade ou na floresta, e cultura não muda isso. Se abrirmos exceção para um povo, todo mundo vai querer a sua, e o princípio deixa de existir.',
   me='Ignora condições reais de vida e contradiz a própria definição do veganismo, e ainda soa como imposição a povos vulneráveis.',
   r='Você não é indígena, para de usar eles de desculpa. Aposto que nunca se preocupou com esses povos na vida, e eles só aparecem na sua boca quando o assunto é o seu prato. O mais perto que você chega da caça é a fila do açougue.',
   re='O ponto tem algo, mas o tom agressivo encerra a conversa.'),
- 'D8': dict(
+ 'D3': dict(
   f='O que une a família é a reunião, e não o animal. As conversas e a mesa cheia continuam com outra comida, e tradições mudam o tempo todo. Hoje há pratos que todo mundo pode comer junto.',
   fe='Separa o valor real, a reunião, do que é substituível.',
   m='Sejamos sinceros: churrasco de família é só desculpa para encher a cara e falar mal de quem não foi. Ninguém está ali pelo afeto, e a união que você descreve existe mais nas fotos do que na vida real.',
   me='Desqualifica a experiência da pessoa e de quem ela ama. Ela vai defender a família, e não pensar nos animais.',
   r='Família que se une em volta de um cadáver não é família, é cúmplice. Se o amor de vocês depende de um animal morto no meio da mesa, vale perguntar que tipo de laço é esse e o que ele diz sobre vocês.',
   re='Ofensivo e falso. A pessoa vai se sentir atacada junto com os seus.'),
- 'E2': dict(
+ 'E3': dict(
   f='Quase ninguém acredita que a moral é relativa: você não acharia que um assalto é errado só na opinião de quem foi assaltado. Há diferença entre gosto e dano: preferir sorvete de chocolate é gosto; fazer alguém sofrer não é.',
   fe='Mostra que a pessoa não aplica o relativismo em outros casos e separa gosto de dano.',
   m='Não é questão de opinião: a ciência prova que é errado comer animais. Os estudos mostram que eles sentem dor e têm consciência, então a conclusão moral já está demonstrada. Discordar disso hoje é como discordar de que a Terra é redonda.',
   me='A ciência mostra que os animais sentem, mas a conclusão moral exige um passo ético. Confundir os dois facilita a réplica.',
   r='Então tudo pode, até o que fizerem com você. Se cada um decide o que é certo, não reclame quando alguém decidir que é certo levar a sua carteira ou coisa pior. Vamos ver quanto tempo dura esse relativismo quando a vítima for você.',
   re='Vira ameaça implícita e não explica o problema do relativismo.'),
- 'E4': dict(
+ 'E2': dict(
   f='Ninguém aqui falou em prender quem come carne: a pergunta é se é certo, e não se deve ser proibido. Muitas coisas erradas não são crime. E o Estado já regula o que comemos e proíbe maus-tratos.',
   fe='Devolve a conversa à pergunta moral e mostra que a lei já protege animais.',
   m='Deveria ser proibido mesmo, e vai ser. O Estado já proíbe muita coisa que faz mal aos outros, e a carne é só a próxima da lista. Em algumas décadas, comer animais vai ser crime, e é melhor ir se acostumando com a ideia.',
   me='Confirma o medo da pessoa e troca a conversa sobre o que é certo por uma sobre proibição, que ela vai rejeitar.',
   r='O Estado proíbe muita coisa que você faria, ainda bem. Quem reclama tanto de regra geralmente é quem mais precisa dela, e eu imagino o que você andaria fazendo por aí se ninguém estivesse olhando.',
   re='Insinuação pessoal que não responde a nada.'),
- 'E6': dict(
+ 'E10': dict(
   f='Ninguém precisa ser perfeito, e o veganismo não pede isso. Mas "faço o que posso" vale se a pessoa estiver fazendo o que pode, e trocar o que se come costuma ser uma das mudanças mais fáceis e com mais impacto.',
   fe='Concorda com o princípio e mostra que ele pede justamente a mudança que está ao alcance.',
   m='Fazer o que pode não basta. Se você não é vegano, não está fazendo nada: reduzir, comprar caipira ou tirar a carne na segunda-feira são só formas de aliviar a consciência. Para os animais, ou você parou de vez ou continua do mesmo lado.',
   me='Tudo ou nada desanima e é falso: quem reduz já causa menos dano.',
   r='Faz o que pode, só não para de matar. Engraçado como o "possível" de vocês sempre termina um pouco antes do prato. No fundo, você faz o que é cômodo, chama isso de esforço e ainda espera um parabéns.',
   re='Acusação direta que deixa a pessoa na defensiva.'),
- 'E12': dict(
+ 'E15': dict(
   f='Obrigado pela honestidade: você já concorda com o mais importante. A distância entre saber e fazer é humana, mas não precisa ser permanente. Dá para começar por uma refeição ou um dia por semana. O que mais dificulta para você?',
   fe='Reconhece a concessão, não humilha e oferece um próximo passo concreto.',
   m='Então você é hipócrita, e digo isso sem ofensa: é só a descrição exata de quem sabe que algo é errado e continua fazendo. Reconhecer não muda nada para os animais. Enquanto você não parar, a sua honestidade vale tanto quanto um pedido de desculpas vazio.',
@@ -229,42 +229,42 @@ OP = {
   me='Uma intervenção dessas poderia causar mais sofrimento, e a frase soa absurda. O tema exige cautela.',
   r='Leões não são problema meu. O que acontece na savana é assunto da natureza, e eu só me preocupo com o sofrimento que tem a ver comigo. Aliás, essa pergunta é só uma tentativa de mudar de assunto, e eu não vou cair nessa.',
   re='Contradiz a própria preocupação com o sofrimento e dá razão à acusação de incoerência.'),
- 'G2': dict(
+ 'G3': dict(
   f='Os alimentos vegetais têm todos os aminoácidos essenciais, em proporções diferentes. Ao longo do dia eles se completam, sem precisar combinar na mesma refeição. Arroz com feijão já é uma combinação excelente.',
   fe='Corrige o mito com um exemplo do dia a dia.',
   m='Na verdade, a proteína vegetal é até melhor que a animal: o corpo absorve com mais facilidade, ela não sobrecarrega os rins e vem sem gordura. Qualquer alimento vegetal sozinho já entrega mais do que a carne.',
   me='Não há base para "melhor" em geral: o perfil e a absorção variam. Exagerar dá munição a quem conhece nutrição.',
   r='Proteína é tudo igual, e essa conversa de "completa" e "incompleta" é invenção da indústria da carne para vender bife. Os nutricionistas repetem porque foram formados com material pago pelos frigoríficos.',
   re='Há diferenças reais de perfil e digestibilidade. Teoria de conspiração tira a credibilidade.'),
- 'G3': dict(
+ 'G4': dict(
   f='A B12 é produzida por bactérias, e não por animais. Porcos e frangos de criação recebem B12 na ração, e o gado muitas vezes recebe cobalto. Quem come carne também depende de suplementação, só que indireta. E usamos sal iodado e vacinas sem problema.',
   fe='Explica a origem da B12 e mostra que a suplementação já está na cadeia da carne.',
   m='Toda a B12 da carne vem de suplemento. Nenhum animal produz essa vitamina, e todos, do frango ao boi, recebem injeções ou ração enriquecida. Quem come carne está só tomando o mesmo comprimido que eu tomo, depois de ele ter passado por um animal.',
   me='Exagero: nos ruminantes as bactérias do rúmen produzem B12. A frase é desmentida com facilidade.',
   r='Veganos nem precisam de B12, isso é balela da indústria farmacêutica para vender comprimido. Quem come vegetais frescos e pega sol tem tudo de que o corpo precisa, e essa deficiência só aparece em quem se alimenta mal de qualquer jeito.',
   re='Falso e perigoso: quem não consome produtos animais precisa de uma fonte confiável de B12.'),
- 'G9': dict(
+ 'G11': dict(
   f='O que importa para o músculo é a quantidade de proteína e de energia. Um estudo de 2021 com a mesma ingestão de proteína não encontrou diferença em massa nem força entre veganos e onívoros. Há atletas de elite veganos em várias modalidades.',
   fe='Usa evidência específica e exemplos sem exagerar.',
   m='Dá, e dá até melhor: atletas veganos têm desempenho muito superior, e o documentário mostrou isso com clareza. Eles se recuperam mais rápido, têm mais resistência e mais força, e é por isso que os grandes campeões estão largando a carne.',
   me='Documentários vendem conclusões que os estudos não sustentam. "Muito superior" é exagero.',
   r='Atleta que come carne usa bomba, então tanto faz. Aqueles corpos de academia que você admira não vieram do frango com batata-doce, vieram da farmácia. Compare vegano com gente que treina limpo e depois a gente conversa.',
   re='Acusação sem base que não responde à pergunta.'),
- 'G16': dict(
+ 'G12': dict(
   f='É um estereótipo: há veganos de todos os tipos, inclusive atletas de elite. Sobre depressão, os estudos são em sua maioria transversais e não mostram o que causa o quê. Deficiências que afetam o humor são evitáveis com planejamento.',
   fe='Desfaz o estereótipo e trata com honestidade a evidência sobre depressão.',
   m='É o contrário: veganos são mais saudáveis e mais felizes, e isso está provado. As pesquisas mostram menos depressão, mais energia e mais disposição em quem tira os produtos animais do prato. A carne é que deixa as pessoas doentes e desanimadas.',
   me='Inverte o estereótipo com outra afirmação que a evidência não sustenta.',
   r='Pálido é quem vive de churrasco e cerveja. Olha em volta na próxima festa de família: barriga, pressão alta, remédio para colesterol. Se alguém aqui tem cara de doente, com certeza não é a pessoa que come salada.',
   re='Responde estereótipo com estereótipo e ofende.'),
- 'H4': dict(
+ 'H9': dict(
   f='É verdade que parte das pastagens não serve para lavoura. Mas essa terra produz pouca comida: a pecuária usa cerca de 80% da área agrícola e fornece cerca de 17% das calorias. Essas terras podem voltar a ser vegetação nativa.',
   fe='Concede a parte verdadeira e mostra a proporção entre terra usada e comida produzida.',
   m='Esse argumento não se sustenta, porque todo pasto é desmatamento da Amazônia. Não existe pastagem "natural" no Brasil: onde hoje tem boi, antes tinha floresta. Cada bife que você come é um pedaço de mata que foi derrubado.',
   me='Generalização falsa: há pastagens antigas e em outros biomas. O exagero desvia o foco.',
   r='O boi destrói tudo onde pisa, isso é fato: acaba com o solo, com a água e com o clima. Qualquer pessoa informada sabe disso, e quem defende pasto ou não leu nada sobre o assunto ou tem parente fazendeiro.',
   re='Afirmação vaga e exagerada, fácil de rebater, com um ataque à pessoa no fim, e ainda troca a questão moral pela ambiental.'),
- 'J12': dict(
+ 'J7': dict(
   f='Comer menos carne é bom e merece reconhecimento: menos animais morrem. Mas, se matar sem necessidade é errado, fazer menos vezes é menos errado, e não certo. A redução é um ótimo caminho, desde que não vire ponto de chegada.',
   fe='Valoriza o passo e mostra que ele não responde à pergunta moral.',
   m='Pouca carne ainda é carne, e não muda nada. Para o animal que morreu, tanto faz se você come todo dia ou só no domingo. Reduzir é só um jeito de se sentir bem sem mudar de verdade, e eu não vejo motivo para elogiar isso.',
@@ -278,14 +278,14 @@ OP = {
   me='Não é bem assim: esse animal morreu antes da compra. A frase é fácil de rebater e esconde o argumento certo, o da reposição.',
   r='Então come também o cachorro atropelado na rua. Ele já está morto mesmo, e pela sua lógica seria um desperdício deixar ali. Ou a regra do "já morreu" só vale quando o bicho é gostoso?',
   re='Provocação que não toca no ponto do mercado: a compra encomenda o próximo animal.'),
- 'K4': dict(
+ 'K5': dict(
   f='É verdade que quase todo produto tem algum dano na cadeia. Mas isso não torna todas as escolhas iguais: entre feijão e carne, a diferença de dano é enorme. Não existir consumo perfeito não significa que não exista consumo melhor.',
   fe='Concede a verdade parcial e mostra que ela não anula as diferenças.',
   m='É verdade que tudo no capitalismo explora alguém, e é justamente por isso que o veganismo é coerente: ele é anticapitalista por natureza. Quem é vegano de verdade luta contra o sistema inteiro, e não dá para defender os animais sem combater o mercado.',
   me='O veganismo não depende de uma posição econômica, e a frase afasta quem pensa diferente sem responder à objeção.',
   r='Então para de usar celular, de vestir roupa e de andar de carro, já que tudo explora alguém. Você está falando comigo de um aparelho feito sei lá em que condições e quer dar lição sobre consumo. Resolva isso primeiro e depois critique os outros.',
   re='Tu quoque: devolve a acusação em vez de responder.'),
- 'L5': dict(
+ 'L12': dict(
   f='O veganismo nunca prometeu pureza: fala em evitar a exploração "na medida do possível e praticável". Reduzir muito o dano é diferente de não reduzir nada, e comer plantas causa muito menos mortes, inclusive na colheita.',
   fe='Corrige a expectativa de pureza e mostra que reduzir dano já é o ponto.',
   m='É, sim, 100% livre de crueldade. Nenhum animal sofre nem morre para um vegano comer, se vestir ou se divertir, e é exatamente isso que a palavra significa. Quem diz o contrário está repetindo boatos espalhados para desacreditar o movimento.',

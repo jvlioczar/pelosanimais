@@ -78,7 +78,10 @@ IND_EXEMPLO = {
 def aviso_ind(fc, rot, pre='../'):
     """Aviso no alto de cada capítulo e de cada família da Parte IND. O exemplo muda com a família (IND_EXEMPLO)."""
     fund = f'{pre}alem/fundamentos.html'
-    return (f'<aside class="aviso-ind"><span>{rot}</span>'
+    return (f'<aside class="aviso-ind"><details><summary><span>{rot}</span>'
+        + L('<b>A resposta a este argumento é indireta.</b> <i>Toque para ver por que ela não basta, e como usá-la melhor.</i>',
+            '<b>The answer to this argument is indirect.</b> <i>Tap to see why it isn\'t enough, and how to use it better.</i>')
+        + '</summary>'
         + L(f'<p><strong>Este é um argumento indireto, e a resposta a ele também é indireta.</strong> Ele discute {IND_TEMA[fc]}, e não se os animais merecem respeito. '
             f'A questão de fundo da defesa dos animais corre em paralelo a esta: é a senciência, a capacidade que os animais têm de ser prejudicados e beneficiados (<a href="{fund}">veja o que sustenta a ética animal</a>).</p>'
             '<p>Muitos ativistas contestam o uso desse tipo de argumento na defesa dos animais, porque ele escapa do que importa. Outros movimentos não se defendem assim: '
@@ -98,7 +101,7 @@ def aviso_ind(fc, rot, pre='../'):
             '<p>So discuss the facts as facts: correct what is wrong and acknowledge what is true. But do not treat the answer as a moral foundation, '
             'because what <em>is</em> does not, on its own, get you to what <em>ought to be</em>: even a real benefit would not show it is just to make someone suffer and die to obtain it. '
             'To really answer, show that the moral debate is a different one: speciesism and what happens to animals as individuals. ')
-        + f'<a href="{pre}comece-aqui.html#indiretos">Entenda por quê</a></p></aside>')
+        + f'<a href="{pre}comece-aqui.html#indiretos">Entenda por quê</a></p></details></aside>')
 IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é certo explorar os animais. Discutem saúde, ambiente, economia, praticidade ou a credibilidade de quem defende o veganismo. '
     'Muitos ativistas e filósofos dos direitos animais contestam o uso desse tipo de argumento na defesa dos animais, porque ele escapa do que é importante: o respeito aos próprios animais.</p>'
     '<p>Outros movimentos sociais não se apoiam em argumentos indiretos para defender humanos. Ninguém sustenta o antirracismo dizendo que ele faz bem ao meio ambiente, à saúde dos brancos ou à economia, '
@@ -129,12 +132,12 @@ def texto(el): return ''.join(el.itertext()).strip()
 def linhas(tab): return [[texto(c) for c in r.findall('cell')] for r in tab.findall('row')]
 # Argumentos iguais vivem na mesma página: código absorvido -> (código que fica, falha que junta os dois).
 UNIDOS = {
-    'B3': ('B2', 'Ainda são mortos jovens; rótulos têm pouca relação com a prática, e mudar a escala não muda a natureza do ato'),
-    'K3': ('B4', 'A indústria existe para atender o consumo: sistema e consumidor se sustentam mutuamente'),
-    'F5': ('D3', 'Usa quem não tem alternativa para justificar quem tem; o veganismo já inclui "na medida do possível e praticável"'),
-    'E3': ('E2', 'Autorrefutante e aplicado seletivamente; confunde gosto com afirmação sobre dano a terceiros'),
-    'J8': ('J2', 'Barreira real para alguns, que não se aplica a quem faz a objeção; e muitas culturas têm tradições vegetarianas antigas'),
-    'K8': ('K1', 'Raciocínio de expectativa: a elasticidade é menor que 1, mas positiva, e menos compra gera menos produção'),
+    'B90': ('B4', 'Ainda são mortos jovens; rótulos têm pouca relação com a prática, e mudar a escala não muda a natureza do ato'),
+    'K90': ('K4', 'A indústria existe para atender o consumo: sistema e consumidor se sustentam mutuamente'),
+    'F90': ('D7', 'Usa quem não tem alternativa para justificar quem tem; o veganismo já inclui "na medida do possível e praticável"'),
+    'E90': ('E3', 'Autorrefutante e aplicado seletivamente; confunde gosto com afirmação sobre dano a terceiros'),
+    'J90': ('J2', 'Barreira real para alguns, que não se aplica a quem faz a objeção; e muitas culturas têm tradições vegetarianas antigas'),
+    'K91': ('K1', 'Raciocínio de expectativa: a elasticidade é menor que 1, mas positiva, e menos compra gera menos produção'),
 }
 
 def codigos(s):
@@ -168,7 +171,9 @@ for no in cat:
             VIESES = [dict(n=l[0], d=l[1], aparece=l[2], cods=codigos(l[2])) for l in ls[1:]]
         elif cab[0] == 'Cadeia':
             CADEIAS = [dict(n=l[0], cods=codigos(l[1]), fim=l[2]) for l in ls[1:]]
-assert len(ARGS) == 150 and all(len(f['args']) == f['n'] for f in FAMILIAS.values())
+assert len(ARGS) == 150
+# A reorganização de 2026-11-14 mudou argumentos de família; a contagem passa a vir dos próprios argumentos.
+for f in FAMILIAS.values(): f['n'] = len(f['args'])
 for velho, (novo, falha) in UNIDOS.items():
     v, n = ARGS.pop(velho), ARGS[novo]
     n['formas'] += [v['frase']] + v['formas']
@@ -183,47 +188,49 @@ FAMILIAS_NOVAS = [
 for c, p, nome, perg, erro in FAMILIAS_NOVAS:
     FAMILIAS[c] = dict(c=c, parte=p, nome=nome, perg=perg, n=0, erro=erro, args=[], cor=CORES[c])
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'A13': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E2': ['Temos que respeitar as diferentes visões'], 'A19': ['Veganos tratam animais como humanos'], 'D3': ['Veganos querem impor o veganismo aos indígenas'], 'C3': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'N16': ['Temos que priorizar quem está no presente', 'Primeiro quem já existe'], 'N20': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'N8': ['Sencientistas querem brincar de Deus'], 'L6': ['Veganos preferem animais a pessoas'], 'J3': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L2': ['Veganismo é lavagem cerebral'], 'J7': ['Não existe vegano de direita'], 'F8': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F9': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L9': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'A12': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E3': ['Temos que respeitar as diferentes visões'], 'A7': ['Veganos tratam animais como humanos'], 'D7': ['Veganos querem impor o veganismo aos indígenas'], 'C2': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'N16': ['Temos que priorizar quem está no presente', 'Primeiro quem já existe'], 'N20': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'N8': ['Sencientistas querem brincar de Deus'], 'L18': ['Veganos preferem animais a pessoas'], 'J11': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L7': ['Veganismo é lavagem cerebral'], 'J18': ['Não existe vegano de direita'], 'F10': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F5': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L27': ['Para cada vegano que não comer, eu vou comer o dobro']}
 _feitas = set()
 for c, fs in FORMAS_EXTRA.items():
     if c in ARGS: ARGS[c]['formas'] += fs; _feitas.add(c)
 # Argumentos acrescentados depois do doc original, a partir das objeções da coleção Uma Jornada pela Ética Animal (site Questão de Ética).
 NOVOS = [
-    ('A21', 'Eu respeito os animais, mas os humanos vêm primeiro', ['Humanos têm dignidade, animais não', 'A vida humana vale mais', 'Animais importam, mas menos'], 'Um status especial que ninguém explica e que não passaria no véu da ignorância: o peso deve depender do tamanho do dano, não da espécie'),
-    ('A22', 'Humanos sofrem mais que os animais', ['Humanos sofrem mais porque entendem o que acontece', 'O sofrimento humano é mais profundo'], 'Sofrer mais em alguns casos não autoriza desconsiderar quem sofre menos; e menos cognição muitas vezes significa mais sofrimento e mais vulnerabilidade'),
-    ('A23', 'A moral existe para nos proteger uns dos outros', ['A ética foi inventada para autoproteção', 'Animais não podem nos ameaçar, então não entram no acordo'], 'Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática'),
-    ('A24', 'Espécie é biologia, raça é construção social', ['Especismo não é como racismo', 'Raça não existe, espécie existe'], 'Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém'),
-    ('E13', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
-    ('H14', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
-    ('G20', 'Comer animais é necessário para sobreviver', ['A gente precisa comer carne para viver', 'Sem proteína animal o corpo não aguenta', 'E os povos do Ártico? Lá não tem alface', 'O ser humano é onívoro, isso é biologia'], 'Necessário para quem? Onde a alternativa existe, é escolha, e a definição de veganismo já fala em fazer o possível e praticável; e o argumento concede o princípio que o derruba, porque sem necessidade não há justificativa'),
-    ('J23', 'Tem gente morrendo na guerra e vocês se preocupam com animais', ['Tem criança morrendo e você posta foto de cachorro', 'Numa hora dessas, falar de animal é falta de respeito', 'Primeiro as pessoas, depois os bichos', 'Vocês só se comovem quando a vítima tem quatro patas'], 'Os animais são vítimas da mesma guerra; o custo de ajudá-los é muito menor do que a frase supõe, e existir um custo não decide nada, já que isso vale para todo uso de recurso'),
+    ('A13', 'Eu respeito os animais, mas os humanos vêm primeiro', ['Humanos têm dignidade, animais não', 'A vida humana vale mais', 'Animais importam, mas menos'], 'Um status especial que ninguém explica e que não passaria no véu da ignorância: o peso deve depender do tamanho do dano, não da espécie'),
+    ('A6', 'Humanos sofrem mais que os animais', ['Humanos sofrem mais porque entendem o que acontece', 'O sofrimento humano é mais profundo'], 'Sofrer mais em alguns casos não autoriza desconsiderar quem sofre menos; e menos cognição muitas vezes significa mais sofrimento e mais vulnerabilidade'),
+    ('A24', 'A moral existe para nos proteger uns dos outros', ['A ética foi inventada para autoproteção', 'Animais não podem nos ameaçar, então não entram no acordo'], 'Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática'),
+    ('A11', 'Espécie é biologia, raça é construção social', ['Especismo não é como racismo', 'Raça não existe, espécie existe'], 'Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém'),
+    ('E7', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
+    ('H15', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
+    ('B8', 'Zootecnistas cuidam bem dos animais', ['Você acha que sabe mais que um zootecnista?', 'Tem profissional cuidando disso, não é qualquer um', 'Fiz zootecnia, e os animais são muito bem tratados'], 'Cuidam bem dentro do objetivo da profissão, que é a produção; competência técnica não responde se é justo criar animais para matar'),
+    ('B11', 'Você não vive na fazenda para saber a verdade', ['Você nunca viu um boi de perto', 'Gente da cidade acha que leite vem da caixinha', 'Vem trabalhar uma semana na roça e depois me fala'], 'O que se critica está nos manuais e normas da própria produção; e atacar quem fala não mostra que o que é dito está errado'),
+    ('G1', 'Comer animais é necessário para sobreviver', ['A gente precisa comer carne para viver', 'Sem proteína animal o corpo não aguenta', 'E os povos do Ártico? Lá não tem alface', 'O ser humano é onívoro, isso é biologia'], 'Necessário para quem? Onde a alternativa existe, é escolha, e a definição de veganismo já fala em fazer o possível e praticável; e o argumento concede o princípio que o derruba, porque sem necessidade não há justificativa'),
+    ('J17', 'Tem gente morrendo na guerra e vocês se preocupam com animais', ['Tem criança morrendo e você posta foto de cachorro', 'Numa hora dessas, falar de animal é falta de respeito', 'Primeiro as pessoas, depois os bichos', 'Vocês só se comovem quando a vítima tem quatro patas'], 'Os animais são vítimas da mesma guerra; o custo de ajudá-los é muito menor do que a frase supõe, e existir um custo não decide nada, já que isso vale para todo uso de recurso'),
     ('N12', 'Sencientistas querem acabar com os predadores', ['Vocês querem matar os leões', 'Querem um mundo sem predador, isso é loucura', 'Vão dar ração vegana para a onça?', 'E quem vai controlar a população dos herbívoros depois?'], 'Matar predadores é o que a posição rejeita, e pelo motivo ecológico da própria objeção; o que existe é pesquisa de longo prazo sobre reduzir a predação sem causar dano'),
     ('N17', 'Temos que nos preocupar com os humanos do futuro, não com os animais', ['Penso no mundo que vou deixar para os meus netos', 'Futuro é dos nossos filhos, não das galinhas', 'Sustentabilidade é sobre as próximas gerações'], 'Já aceitou a parte difícil, que seres futuros contam; falta dizer por que, chegado o futuro, só os humanos de lá contariam, e a maioria de quem vai sentir não será humana'),
     ('N18', 'Não há como traçar estratégias de longo prazo, pois não podemos prever um futuro distante', ['Ninguém sabe como vai ser daqui a cem anos', 'Isso é chute com cara de plano', 'Vamos resolver o que está na nossa frente'], 'Vale contra planos que dependem de acertar um cenário, não contra ações que valem em quase todos; e a incerteza corta dos dois lados'),
     ('N19', 'O futuro com certeza será melhor, não precisamos nos preocupar tanto', ['A humanidade sempre evoluiu', 'Daqui a cem anos ninguém mais vai comer animais', 'A carne cultivada resolve isso', 'Vocês são pessimistas, o mundo nunca esteve tão bom'], 'O progresso moral não é automático: cada avanço teve quem o fizesse; e com os animais a tendência recente é contrária, porque o poder cresceu sem que a consideração acompanhasse'),
-    ('A26', 'Existem diferentes graus de consciência, os animais menos conscientes importam menos', ['Uma minhoca não é um cachorro', 'Nem todo animal é igual, tem bicho e bicho', 'Quanto mais simples o cérebro, menos importa', 'Consciência é uma escala, e a gente está no topo dela'], 'Mentes diferem em perfil, não em posição numa régua única; o critério, aplicado a humanos, rebaixaria bebês e pessoas com deficiência cognitiva; e um peso menor continua pesando mais que o sabor de um prato'),
-    ('A25', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
-    ('F11', 'E se descobrirem que as plantas sentem?', ['Aí vocês vão comer o quê, pedra?', 'Se tudo sente, por que não comer carne?'], 'Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente'),
-    ('F10', 'Você comeria um animal que morreu de causas naturais?', ['E se o boi morreu de velhice?', 'Então come o cachorro atropelado na rua também', 'Se não comeria, é frescura'], 'Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos'),
-    ('G18', 'Frugivorismo não é saudável, então o veganismo também não é', ['Quem só come fruta fica doente', 'Veganismo é comer fruta e salada'], 'Veganismo não é frugivorismo: a dieta só de frutas é arriscada, mas uma alimentação vegana variada e planejada, com B12, é considerada adequada'),
-    ('G19', 'Veganismo é transtorno alimentar disfarçado', ['Veganismo é anorexia com desculpa', 'Viu aquela vegana que morreu?', 'Ortorexia é a doença dos veganos'], 'A associação existe, mas o transtorno costuma vir antes da dieta; veganos da comunidade não têm mais sinais de transtorno, e a causa de uma tragédia é a doença'),
-    ('L14', 'Vegano é tudo hippie', ['Bicho-grilo, natureba, paz e amor', 'Vai abraçar uma árvore'], 'Estereótipo e ataque à pessoa: o sofrimento dos animais não depende do estilo de vida de quem o aponta'),
-    ('E14', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
-    ('J16', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
-    ('J17', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
-    ('D11', 'Minha religião aprova o consumo de animais', ['Minha religião permite', 'Se Deus não quisesse, não teria feito os animais de carne', 'Veganismo vai contra a Bíblia'], 'Permitir não é obrigar, e as próprias tradições religiosas proíbem o sofrimento desnecessário, que a produção atual causa em massa'),
-    ('D12', 'Vou pagar pelos meus erros na próxima vida', ['Vou pagar na próxima encarnação', 'Isso é entre mim e o meu carma', 'Deus vai me julgar, não você'], 'A frase admite o erro e adia a conta, mas quem paga agora é o animal; as tradições do carma ensinam a não violência'),
-    ('J18', 'Eu vivo disso, é o sustento da minha família', ['Você vai pagar as minhas contas?', 'Meu pai e meu avô criaram gado'], 'A dependência econômica explica a dificuldade de mudar, mas não torna a atividade justa; a saída é uma transição planejada e com apoio'),
+    ('A5', 'Existem diferentes graus de consciência, os animais menos conscientes importam menos', ['Uma minhoca não é um cachorro', 'Nem todo animal é igual, tem bicho e bicho', 'Quanto mais simples o cérebro, menos importa', 'Consciência é uma escala, e a gente está no topo dela'], 'Mentes diferem em perfil, não em posição numa régua única; o critério, aplicado a humanos, rebaixaria bebês e pessoas com deficiência cognitiva; e um peso menor continua pesando mais que o sabor de um prato'),
+    ('A20', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
+    ('F7', 'E se descobrirem que as plantas sentem?', ['Aí vocês vão comer o quê, pedra?', 'Se tudo sente, por que não comer carne?'], 'Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente'),
+    ('F9', 'Você comeria um animal que morreu de causas naturais?', ['E se o boi morreu de velhice?', 'Então come o cachorro atropelado na rua também', 'Se não comeria, é frescura'], 'Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos'),
+    ('G19', 'Frugivorismo não é saudável, então o veganismo também não é', ['Quem só come fruta fica doente', 'Veganismo é comer fruta e salada'], 'Veganismo não é frugivorismo: a dieta só de frutas é arriscada, mas uma alimentação vegana variada e planejada, com B12, é considerada adequada'),
+    ('G20', 'Veganismo é transtorno alimentar disfarçado', ['Veganismo é anorexia com desculpa', 'Viu aquela vegana que morreu?', 'Ortorexia é a doença dos veganos'], 'A associação existe, mas o transtorno costuma vir antes da dieta; veganos da comunidade não têm mais sinais de transtorno, e a causa de uma tragédia é a doença'),
+    ('L2', 'Vegano é tudo hippie', ['Bicho-grilo, natureba, paz e amor', 'Vai abraçar uma árvore'], 'Estereótipo e ataque à pessoa: o sofrimento dos animais não depende do estilo de vida de quem o aponta'),
+    ('E13', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
+    ('L28', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
+    ('L29', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
+    ('D12', 'Minha religião aprova o consumo de animais', ['Minha religião permite', 'Se Deus não quisesse, não teria feito os animais de carne', 'Veganismo vai contra a Bíblia'], 'Permitir não é obrigar, e as próprias tradições religiosas proíbem o sofrimento desnecessário, que a produção atual causa em massa'),
+    ('D13', 'Vou pagar pelos meus erros na próxima vida', ['Vou pagar na próxima encarnação', 'Isso é entre mim e o meu carma', 'Deus vai me julgar, não você'], 'A frase admite o erro e adia a conta, mas quem paga agora é o animal; as tradições do carma ensinam a não violência'),
+    ('J12', 'Eu vivo disso, é o sustento da minha família', ['Você vai pagar as minhas contas?', 'Meu pai e meu avô criaram gado'], 'A dependência econômica explica a dificuldade de mudar, mas não torna a atividade justa; a saída é uma transição planejada e com apoio'),
     ('M1', 'Deixei de ser vegano porque comecei a me sentir mal', ['Meu corpo sente falta de carne, me sinto mal', 'Deixei de ser vegano por causa da energia', 'Voltei a comer carne e melhorei'], 'O mal-estar é real, mas raramente investigado: costuma vir de comer pouco, de falta de B12 ou de planejamento, e tem solução sem produtos animais'),
-    ('M2', 'Deixei de ser vegano porque estou em outro momento da vida', ['Era uma fase', 'Hoje tenho outras prioridades'], 'A fase da vida muda o que é fácil, e não o que acontece com os animais; uma fase difícil pede ajustes, e não desistir'),
+    ('M5', 'Deixei de ser vegano porque estou em outro momento da vida', ['Era uma fase', 'Hoje tenho outras prioridades'], 'A fase da vida muda o que é fácil, e não o que acontece com os animais; uma fase difícil pede ajustes, e não desistir'),
     ('M3', 'Ser vegano me limitava comer na casa dos meus familiares', ['Na casa da minha avó, não tinha o que comer', 'Minha mãe ficava magoada quando eu recusava a comida'], 'O custo social é real, mas tem saídas: conversar antes, levar um prato para dividir, comer o que já é vegano na mesa'),
     ('M4', 'Ser vegano é difícil para quem viaja muito', ['Na estrada, não tem o que comer', 'Em viagem de trabalho, não dá para escolher'], 'A dificuldade de algumas refeições justifica, no máximo, uma exceção real, e não abandonar o veganismo em casa'),
-    ('E15', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
-    ('M5', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
-    ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
-    ('L15', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
-    ('L16', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
-    ('L13', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
+    ('E14', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
+    ('M10', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
+    ('K8', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
+    ('L3', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
+    ('L10', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
+    ('L22', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
     # Família M: o critério da senciência aplicado a quem ninguém explora (animais selvagens), a novas mentes e ao futuro.
     ('N1', 'Os animais selvagens vivem livres e felizes', ['A natureza é um paraíso para os bichos', 'Bicho solto é bicho feliz'], 'Os adultos que vemos são exceção: na maioria das espécies, quase todos os filhotes morrem pouco depois de nascer, de fome, frio, doença ou predação'),
     ('N2', 'Sofrimento e morte fazem parte da natureza', ['A natureza é cruel mesmo, faz parte', 'A natureza não é boa nem má'], 'Doenças também fazem parte da vida humana, e nunca foi motivo para não tratá-las; o dano não fica menor para a vítima porque ninguém teve culpa'),
@@ -246,12 +253,14 @@ for c, frase, formas, falha in NOVOS:
 _FAM_ORD = list(FAMILIAS)  # a ordem das famílias no site: N (ex-veganos) vem antes de M (animais selvagens e futuro)
 for c, fs in FORMAS_EXTRA.items():  # formas de argumentos acrescentados depois (família M, N, lotes novos)
     if c not in _feitas: ARGS[c]['formas'] += fs
+# B12 não pode ser código de argumento: o texto cita a vitamina B12 o tempo todo, e o build ligaria cada menção.
+assert 'B12' not in ARGS, 'B12 colide com a vitamina B12; use outro número'
 ORDEM = sorted(ARGS, key=lambda c: (_FAM_ORD.index(c[0]), int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
 
 # Endereços legíveis: cada argumento e cada argumento ruim tem a URL da própria frase (melhor no Google).
-# Os endereços antigos por código (argumentos/a10.html, ruins/v29.html) viram redirecionamentos no fim do build.
+# Os endereços antigos por código (argumentos/a8.html, ruins/v29.html) viram redirecionamentos no fim do build.
 def _slug_frase(s, usados):
     import unicodedata
     base = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', s.lower()).encode('ascii', 'ignore').decode()).strip('-')
@@ -295,23 +304,23 @@ QE = {
     'N20': [(9, 1), (9, 5), (9, 7)],
     'N14': [(4, 19), (2, 13)],
     'N13': [(7, 30), (7, 26)],
-    'A1': [(1, 4)], 'A2': [(1, 14)], 'A3': [(1, 4)], 'A4': [(1, 3)], 'A5': [(2, 3), (2, 4)], 'A6': [(2, 4), (2, 13), (6, 8)],
-    'A7': [(1, 10)], 'A8': [(1, 4)], 'A9': [(1, 10), (1, 11)], 'A10': [(1, 2), (2, 2)], 'A11': [(1, 6), (2, 2)], 'A12': [(1, 5)],
-    'A13': [(1, 8)], 'A14': [(4, 4), (6, 21)], 'A15': [(6, 6), (2, 13)], 'A16': [(3, 1), (3, 2), (3, 4), (3, 10), (3, 13)],
-    'A17': [(4, 17)], 'A18': [(6, 13), (5, 10)], 'A19': [(6, 2)], 'A20': [(1, 14), (6, 16)],
-    'A25': [(3, 10), (3, 1), (3, 4)],
-    'A21': [(1, 14), (1, 1)], 'A22': [(2, 9)], 'A23': [(1, 12)], 'A24': [(1, 7)],
-    'B1': [(4, 1), (4, 2)], 'B2': [(4, 1)], 'B5': [(4, 6)], 'B6': [(3, 8), (4, 7)], 'B8': [(4, 17), (8, 11)],
-    'C1': [(4, 5), (1, 8)], 'C2': [(4, 5)], 'C6': [(1, 8)], 'C7': [(1, 8)],
-    'D1': [(1, 9)], 'D2': [(1, 9)], 'D4': [(1, 13), (1, 3)], 'D7': [(4, 17)], 'D10': [(1, 13)],
-    'E1': [(4, 18)], 'E2': [(1, 15), (1, 11)], 'E10': [(1, 15)], 'E11': [(2, 7), (11, 6)], 'E13': [(2, 7), (11, 6)],
-    'F9': [(7, 30)],
-    'F11': [(6, 21), (4, 4)],
-    'F1': [(4, 8)], 'F2': [(4, 8), (2, 8)], 'F3': [(7, 1)], 'F7': [(2, 13)],
-    'G1': [(4, 9)], 'G8': [(4, 9)], 'H2': [(4, 14)], 'H11': [(5, 8)], 'H13': [(5, 1)], 'H14': [(4, 19)],
+    'A15': [(1, 4)], 'A9': [(1, 14)], 'A16': [(1, 4)], 'A17': [(1, 3)], 'A1': [(2, 3), (2, 4)], 'A2': [(2, 4), (2, 13), (6, 8)],
+    'A22': [(1, 10)], 'A21': [(1, 4)], 'A23': [(1, 10), (1, 11)], 'A8': [(1, 2), (2, 2)], 'A18': [(1, 6), (2, 2)], 'A19': [(1, 5)],
+    'A12': [(1, 8)], 'A4': [(4, 4), (6, 21)], 'A3': [(6, 6), (2, 13)], 'B2': [(3, 1), (3, 2), (3, 4), (3, 10), (3, 13)],
+    'A25': [(4, 17)], 'A10': [(6, 13), (5, 10)], 'A7': [(6, 2)], 'A14': [(1, 14), (6, 16)],
+    'A20': [(3, 10), (3, 1), (3, 4)],
+    'A13': [(1, 14), (1, 1)], 'A6': [(2, 9)], 'A24': [(1, 12)], 'A11': [(1, 7)],
+    'B1': [(4, 1), (4, 2)], 'B4': [(4, 1)], 'B3': [(4, 6)], 'B6': [(3, 8), (4, 7)], 'B9': [(4, 17), (8, 11)],
+    'C1': [(4, 5), (1, 8)], 'C5': [(4, 5)], 'C9': [(1, 8)], 'C6': [(1, 8)],
+    'D1': [(1, 9)], 'D6': [(1, 9)], 'D10': [(1, 13), (1, 3)], 'D9': [(4, 17)], 'D8': [(1, 13)],
+    'E1': [(4, 18)], 'E3': [(1, 15), (1, 11)], 'E5': [(1, 15)], 'E6': [(2, 7), (11, 6)], 'E7': [(2, 7), (11, 6)],
+    'F5': [(7, 30)],
+    'F7': [(6, 21), (4, 4)],
+    'F1': [(4, 8)], 'F2': [(4, 8), (2, 8)], 'F3': [(7, 1)], 'F6': [(2, 13)],
+    'G2': [(4, 9)], 'G10': [(4, 9)], 'H2': [(4, 14)], 'H16': [(5, 8)], 'H13': [(5, 1)], 'H15': [(4, 19)],
     'I1': [(4, 20)], 'I2': [(4, 20)], 'I5': [(4, 19)],
-    'J1': [(4, 10)], 'J2': [(4, 10)], 'J3': [(4, 12)], 'J4': [(4, 12)], 'J5': [(4, 11)], 'J6': [(4, 16)],
-    'K1': [(4, 13)], 'K5': [(8, 12)], 'K9': [(8, 11)], 'L6': [(4, 16)], 'L13': [(4, 3)],
+    'J1': [(4, 10)], 'J2': [(4, 10)], 'J11': [(4, 12)], 'J9': [(4, 12)], 'J19': [(4, 11)], 'J16': [(4, 16)],
+    'K1': [(4, 13)], 'K9': [(8, 12)], 'K6': [(8, 11)], 'L18': [(4, 16)], 'L22': [(4, 3)],
 }
 ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
 def qe_bloco(c):
@@ -321,9 +330,9 @@ def qe_bloco(c):
         return f'<li><a href="{u}" {EXT}>{e(t)}</a> <small>Vol. {ROMANOS[k[0] - 1]}, cap. {k[1]}</small></li>'
     itens = ''.join(item(k) for k in QE[c])
     return f'<div class="qe"><h2 id="aprofunde">Aprofunde no Questão de Ética</h2><p>Capítulos da coleção <em>Uma Jornada pela Ética Animal</em>, em acesso aberto, que discutem este argumento com mais detalhe:</p><ul>{itens}</ul></div>'
-CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C2', 'G1', 'G3', 'H1', 'H2', 'L5', 'K1', 'E1']),
-                  ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'A16', 'A1', 'A11'])]
-RAIZES = ['A10', 'J11', 'E12']
+CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C5', 'G2', 'G4', 'H1', 'H2', 'L12', 'K1', 'E1']),
+                  ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'B2', 'A15', 'A18'])]
+RAIZES = ['A8', 'J5', 'E15']
 # A imagem de compartilhamento muda com o desenho e com o número de argumentos. As redes
 # guardam a imagem pelo endereço, então ele precisa mudar junto, ou elas mostram a antiga.
 VER_IMG = _h.md5(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icones.py'), 'rb').read()
@@ -402,8 +411,8 @@ def lista(l, ctx, refs=False):
     return f'<{tag}>' + ''.join(itens) + f'</{tag}>'
 
 ARVORE = {
-    'A1': '''<div class="arvore"><p class="q">Racional em qual sentido?</p><ul><li><span class="r">Forte: raciocínio abstrato</span>P2 fica verdadeira, <span class="f">mas P1 exclui bebês e pessoas com deficiência intelectual profunda</span></li><li><span class="r">Fraco: aprender, inferir, resolver problemas</span>P1 passa a incluir esses humanos, <span class="f">mas P2 fica falsa para muitos animais</span></li></ul></div>''',
-    'A10': '''<div class="arvore"><p class="q">Existe uma característica C?</p><ul><li><span class="r">Não, é só a espécie</span><span class="f">Especismo nu: preconceito sem critério</span></li><li><span class="r">Sim, C é um traço específico</span>Todo humano tem C?<ul><li><span class="r">Não</span><span class="f">Sobreposição de espécies: exclui humanos protegidos</span></li><li><span class="r">Sim</span>C é relevante para dor e morte?<ul><li><span class="r">Não</span><span class="f">Critério irrelevante, como saber álgebra</span></li><li><span class="r">Sim</span><span class="f">Então o critério é a senciência, que os animais têm</span></li></ul></li></ul></li></ul></div>''',
+    'A15': '''<div class="arvore"><p class="q">Racional em qual sentido?</p><ul><li><span class="r">Forte: raciocínio abstrato</span>P2 fica verdadeira, <span class="f">mas P1 exclui bebês e pessoas com deficiência intelectual profunda</span></li><li><span class="r">Fraco: aprender, inferir, resolver problemas</span>P1 passa a incluir esses humanos, <span class="f">mas P2 fica falsa para muitos animais</span></li></ul></div>''',
+    'A8': '''<div class="arvore"><p class="q">Existe uma característica C?</p><ul><li><span class="r">Não, é só a espécie</span><span class="f">Especismo nu: preconceito sem critério</span></li><li><span class="r">Sim, C é um traço específico</span>Todo humano tem C?<ul><li><span class="r">Não</span><span class="f">Sobreposição de espécies: exclui humanos protegidos</span></li><li><span class="r">Sim</span>C é relevante para dor e morte?<ul><li><span class="r">Não</span><span class="f">Critério irrelevante, como saber álgebra</span></li><li><span class="r">Sim</span><span class="f">Então o critério é a senciência, que os animais têm</span></li></ul></li></ul></li></ul></div>''',
 }
 
 CAPS = {}
@@ -763,7 +772,7 @@ def item_arg(a):
     return f'<details class="item" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if ok else "ver"}" data-u="argumentos/{a["slug"]}.html"><summary><span class="cod">{a["c"]}</span><b>{e(a["frase"])}</b>{"<i class=ok title=Capítulo&nbsp;completo></i>" if ok else ""}</summary><div class="abre"><p class="falha-i"><strong>Falha principal:</strong> {e(a["falha"])}</p><ul class="formas">{formas}</ul><a class="btn peq" href="argumentos/{a["slug"]}.html">{bot} →</a></div></details>'
 
 def circulo(pre=''):
-    aneis = [(250, 'Extraterrestres', 'alem/extraterrestres.html', '#e6f4fd', True), (205, 'IA e robôs', 'alem/ia-e-robos.html', '#bfe0f7', True), (160, 'Animais selvagens', 'alem/animais-selvagens.html', '#d8eebd', False), (115, 'Animais explorados', 'argumentos/a10.html', '#ffeb5b', False)]
+    aneis = [(250, 'Extraterrestres', 'alem/extraterrestres.html', '#e6f4fd', True), (205, 'IA e robôs', 'alem/ia-e-robos.html', '#bfe0f7', True), (160, 'Animais selvagens', 'alem/animais-selvagens.html', '#d8eebd', False), (115, 'Animais explorados', 'argumentos/a8.html', '#ffeb5b', False)]
     o = ''
     for r, t, u, cor, poss in aneis:
         o += f'<a href="{pre}{u}" class="anel"><circle cx="260" cy="260" r="{r}" fill="{cor}" stroke="#0a3703" stroke-width="2"{" stroke-dasharray=\"8 7\"" if poss else ""}/><text x="260" y="{260 - r + (21 if poss else 27)}" text-anchor="middle" fill="#0a3703">{t}{f"<tspan x=\"260\" dy=\"15\" class=\"poss\">possibilidade</tspan>" if poss else ""}</text></a>'
@@ -773,14 +782,14 @@ def ramo(f):
     return f'<a class="ramo" style="--c:{f["cor"]}" href="#fam-{f["c"].lower()}"><span class="letra">{f["c"]}</span><b>{e(f["nome"])}</b><small>{e(f["perg"])}</small></a>'
 
 # Os argumentos mais ouvidos no dia a dia (seleção editorial, guiada pelos "4Ns" de Piazza e colegas, 2015).
-COMUNS = ['A14', 'G1', 'C1', 'J11', 'C3', 'F1', 'C2', 'H2', 'D1', 'E1', 'B1', 'K1']
+COMUNS = ['A4', 'G2', 'C1', 'J5', 'C2', 'F1', 'C5', 'H2', 'D1', 'E1', 'B1', 'K1']
 
 def inicio():
     dir_, ind = [f for f in FAMILIAS.values() if f['parte'] == 'DIR'], [f for f in FAMILIAS.values() if f['parte'] == 'IND']
     chips = lambda g, ops: ''.join(f'<button class="chip" type="button" data-g="{g}" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{e(t)}</button>' for v, t in ops)
     folhas = ''.join(f'<section class="grupo-f" id="fam-{f["c"].lower()}" style="--c:{f["cor"]}"><a class="aba-f" href="#fam-{f["c"].lower()}" aria-hidden="true" tabindex="-1">{f["c"]}</a><div class="folha"><h3><span class="letra">{f["c"]}</span><a href="familias/{f["c"].lower()}.html">{e(f["nome"])}</a> <small>{e(f["perg"])}</small></h3><div class="itens">{"".join(item_arg(a) for a in f["args"])}</div></div></section>' for f in FAMILIAS.values())
     guias = ''.join(f'<a href="#fam-{f["c"].lower()}" style="--c:{f["cor"]}" title="{e(f["nome"])}">{f["c"]}</a>' for f in FAMILIAS.values())
-    exemplos = [ARGS[c] for c in ('A14', 'G1', 'C2', 'J11', 'H1', 'A10', 'L4', 'F1', 'B1', 'D8', 'E1', 'K1')]
+    exemplos = [ARGS[c] for c in ('A4', 'G2', 'C5', 'J5', 'H1', 'A8', 'L11', 'F1', 'B1', 'D3', 'E1', 'K1')]
     ex_json = json.dumps([dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html') for a in exemplos], ensure_ascii=False).replace('</', '<\\/')
     ini = exemplos[0]
     comuns = ''.join(f'<a class="comum" style="--c:{FAMILIAS[ARGS[c]["fam"]]["cor"]}" href="argumentos/{c.lower()}.html"><span class="cod">{c}</span><b>{e(ARGS[c]["frase"])}</b></a>' for c in COMUNS)
@@ -847,7 +856,7 @@ def paginas_ruins():
         lig_ = ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="../argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in r['liga']))
         ant, prox = RUINS[i - 1] if i else None, RUINS[i + 1] if i + 1 < len(RUINS) else None
         pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
-        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
+        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
         pag = f'<section class="cena" style="--c:#b8460f"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../argumentos-ruins.html">Argumentos ruins</a> / {e(nome)}</p><div class="fala"><span class="selo-c">{r["c"]}</span><h1>"{e(r["frase"])}"</h1></div><div class="tese-c"><span>{e(nome)}</span><p>{e(desc)}</p></div></div></section><div class="wrap paineis">{art}</div>'
         page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', L(f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', f'Why to stop saying “{r["frase"].rstrip(".")}”, or how to say it better: {r["por"][0]}'), pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')], (L(f'Por que parar de dizer "{r["frase"].rstrip(".")}"?', f'Why stop saying "{r["frase"].rstrip(".")}"?'), r['por'][0] + ' ' + L('Diga melhor: ', 'Say it better: ') + r['lugar']))
 
@@ -940,7 +949,7 @@ def comece():
 <p>Derrubar espantalhos enfraqueceria o guia e faria dele aquilo que critica. Por isso a versão mais forte de cada argumento vem antes da resposta.</p>
 <h2>Como usar</h2><ul><li><strong>Para debater:</strong> localize a objeção pelo <a href="index.html#argumentos">código ou pela busca</a> e siga o <a href="mapa.html">mapa de conexões</a> para antecipar a próxima. A letra indica a família e o número, a posição dentro dela.</li><li><strong>Para reconhecer:</strong> o bloco "Como pode aparecer" mostra as outras formas em que o argumento costuma ser dito ou escrito.</li><li><strong>Para ensinar:</strong> use a resposta para crianças e a curta. As camadas técnicas ficam para quem quer se aprofundar.</li><li><strong>Para debater com quem parte de uma teoria política:</strong> as <a href="objecoes-politicas.html">objeções políticas</a> mostram, teoria por teoria, por que excluir os animais contradiz o princípio de cada uma.</li><li><strong>Para pesquisar:</strong> os índices de <a href="falacias.html">falácias</a> e <a href="vieses.html">vieses</a> permitem atravessar o catálogo por tipo de erro.</li></ul>
 <h2>Argumentos diretos e indiretos</h2><p>Os argumentos <strong>diretos (DIR)</strong> contestam o núcleo moral: se os animais sentem, se o indivíduo animal conta e se usar ou matar esse indivíduo é errado. Os <strong>indiretos (IND)</strong> não enfrentam essa questão: alegam que a exploração é necessária, que o veganismo é inviável, prejudicial ou ineficaz, ou que quem o defende não merece crédito.</p><p>Mesmo que um argumento indireto fosse verdadeiro, ele justificaria apenas exceções, nunca a exploração em geral. Por isso a Parte DIR vem primeiro.</p><h3 id="indiretos">Por que os argumentos indiretos não bastam</h3>{IND_TEXTO}
-<h2>Os 11 blocos de um capítulo completo</h2><ol>{"".join(f"<li>{e(b)}</li>" for b in blocos)}</ol><p>Comece por <a href="argumentos/a10.html">A10, "São só animais"</a>, o capítulo-raiz: é onde a maioria das cadeias de objeções termina.</p>
+<h2>Os 11 blocos de um capítulo completo</h2><ol>{"".join(f"<li>{e(b)}</li>" for b in blocos)}</ol><p>Comece por <a href="argumentos/a8.html">A8, "São só animais"</a>, o capítulo-raiz: é onde a maioria das cadeias de objeções termina.</p>
 </div></section>'''
     page('comece-aqui.html', 'Comece aqui', L('Como usar o guia: o critério da senciência, os cinco compromissos, a diferença entre argumentos diretos e indiretos e os 11 blocos de cada capítulo.', 'How to use the guide: the sentience criterion, the five commitments, the difference between direct and indirect arguments and the 11 blocks of each chapter.'), corpo, 'comece-aqui.html')
 
@@ -974,7 +983,7 @@ def mapa():
     corpo = cabeca('<a href="./">Início</a>', 'Mapa de conexões', 'Quem perde um argumento indireto costuma recuar para um direto, e vice-versa. Conhecer a cadeia ajuda a antecipar a próxima objeção.') + f'''<section class="secao" id="raizes"><div class="wrap"><div class="sec-cab"><h2>As três raízes</h2><p>Quase toda cadeia de objeções, quando esgotada, termina em uma destas três. As demais funcionam como camadas de proteção: responda à camada, mas mire a raiz.</p></div><div class="raizes">{"".join(cartao(ARGS[c]) for c in RAIZES)}</div></div></section>
 <section class="secao areia"><div class="wrap estreito"><div class="sec-cab"><h2>As duas cadeias mais comuns</h2></div>{cads}</div></section>
 <section class="secao"><div class="wrap estreito"><div class="sec-cab"><h2>Cadeias típicas</h2><p>Passe o mouse sobre um código para ver a frase, ou clique para abrir a resposta.</p></div>{tipicas}</div></section>
-<section class="secao areia"><div class="wrap estreito artigo"><h2>Natural, normal, necessário e gostoso</h2><p>As famílias se encaixam nos "4Ns" de Piazza e colegas (2015), as quatro racionalizações mais comuns do consumo de carne: <strong>natural</strong> (<a href="familias/c.html">família C</a>), <strong>normal</strong> (<a href="familias/d.html">D</a> e <a href="familias/e.html">E</a>), <strong>necessário</strong> (<a href="familias/g.html">G</a>, <a href="familias/h.html">H</a> e <a href="familias/j.html">J</a>) e <strong>gostoso</strong> (<a href="argumentos/j11.html">J11</a>).</p></div></section>'''
+<section class="secao areia"><div class="wrap estreito artigo"><h2>Natural, normal, necessário e gostoso</h2><p>As famílias se encaixam nos "4Ns" de Piazza e colegas (2015), as quatro racionalizações mais comuns do consumo de carne: <strong>natural</strong> (<a href="familias/c.html">família C</a>), <strong>normal</strong> (<a href="familias/d.html">D</a> e <a href="familias/e.html">E</a>), <strong>necessário</strong> (<a href="familias/g.html">G</a>, <a href="familias/h.html">H</a> e <a href="familias/j.html">J</a>) e <strong>gostoso</strong> (<a href="argumentos/j5.html">J5</a>).</p></div></section>'''
     page('mapa.html', 'Mapa de conexões', L('Como as objeções ao veganismo se encadeiam, as três raízes onde quase toda conversa termina e as sequências mais comuns de argumentos.', 'How objections to veganism chain together, the three roots where almost every conversation ends and the most common sequences of arguments.'), corpo, 'mapa.html')
 
 def cena(c, f, frase, abaixo):
@@ -1052,7 +1061,7 @@ def grafo():
     for a, vai in DEPOIS.items():
         for b, porque in vai: liga_(a, UNIDOS[b][0] if b in UNIDOS else b, porque)
     for n, _, cs in CADEIAS_LONGAS:
-        cs = cs + ['A10'] if cs[-1] != 'A10' else cs
+        cs = cs + ['A8'] if cs[-1] != 'A8' else cs
         for a, b in zip(cs, cs[1:]): liga_(a, b, n)
     for chave, porque in MOTIVOS.items():
         x, y = chave.split('>')
@@ -1074,7 +1083,7 @@ def raciocinio():
         for b in bs: entra[b] = entra.get(b, 0) + 1
     nos = sorted(set(G) | set(entra), key=ORDEM.index)
     dados_ = {c: dict(f=ARGS[c]['frase'], r=curta(c), u=f'argumentos/{ARGS[c]["slug"]}.html', cor=FAMILIAS[ARGS[c]['fam']]['cor'], cap=c in CAPS, raiz=c in RAIZES, p=[[b, m] for b, m in G.get(c, {}).items()]) for c in nos}
-    inicios = [c for c in ('C1', 'G1', 'B1', 'A1', 'H1', 'K1', 'D1', 'L1', 'F1', 'J9', 'E1') if c in dados_]
+    inicios = [c for c in ('C1', 'G2', 'B1', 'A15', 'H1', 'K1', 'D1', 'L1', 'F1', 'J3', 'E1') if c in dados_]
     js = json.dumps(dict(n=dados_, raizes=RAIZES), ensure_ascii=False).replace('</', '<\\/')
     opcoes = ''.join(f'<option value="{c}">{c}. {e(ARGS[c]["frase"])}</option>' for c in nos)
     chips = ''.join(f'<button type="button" class="chip" data-ini="{c}" style="--c:{FAMILIAS[c[0]]["cor"]}">{c}. {e(ARGS[c]["frase"])}</button>' for c in inicios)
@@ -1093,7 +1102,7 @@ def raciocinio():
 <div class="rac-cartao" id="rac-atual"></div>
 <div class="rac-bot"><button type="button" class="btn alt peq" id="rac-volta">← Voltar um passo</button><button type="button" class="btn alt peq" id="rac-zera">Recomeçar</button></div></div>
 <script type="application/json" id="rac-dados">{js}</script>
-<div class="sec-cab" style="margin-top:46px"><h2>Todas as conexões</h2><p>Cada argumento e os caminhos que a conversa costuma tomar depois que ele é respondido. As raízes A10, J11 e E12 são onde quase tudo termina; o <a href="mapa.html">mapa de conexões</a> mostra as cadeias completas.</p></div>
+<div class="sec-cab" style="margin-top:46px"><h2>Todas as conexões</h2><p>Cada argumento e os caminhos que a conversa costuma tomar depois que ele é respondido. As raízes A8, J5 e E15 são onde quase tudo termina; o <a href="mapa.html">mapa de conexões</a> mostra as cadeias completas.</p></div>
 <div class="rac-lista">{lista}</div></div></section>'''
     page('raciocinio.html', 'O raciocínio antivegano', L('Para onde vai cada argumento antivegano depois de respondido: um guia interativo das conexões entre as objeções, até as três raízes onde quase toda conversa termina.', 'Where each anti-vegan argument goes once it is answered: an interactive guide to the connections between objections, down to the three roots where almost every conversation ends.'), corpo, 'raciocinio.html')
 
@@ -1345,7 +1354,7 @@ for i, c in enumerate(ORDEM):
     if c in CAPS: pagina_capitulo(c, ant, prox)
     else: pagina_verbete(c, ant, prox)
     a = ARGS[c]; BUSCA.append(dict(t=f'{c}. {a["frase"]}', s=a['falha'], u=f'argumentos/{a["slug"]}.html', k=' '.join(a['formas']) + ' ' + FAMILIAS[a['fam']]['nome']))
-for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0]))
+for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0] + ' ' + ' '.join(r.get('formas', []))))
 for p in alem.PAGINAS: BUSCA.append(dict(t=p['t'], s='Além do veganismo: ' + p['res'], u=f'alem/{p["s"]}.html', k=''))
 for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política: ' + t['principio'], u=f'politicas/{t["s"]}.html', k='política teoria'))
 for f in FAMILIAS.values(): BUSCA.append(dict(t=f'Família {f["c"]}: {f["nome"]}', s=f['perg'], u=f'familias/{f["c"].lower()}.html', k=''))

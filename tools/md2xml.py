@@ -31,7 +31,7 @@ def converte(md):
     while i < len(linhas):
         l = linhas[i].rstrip()
         if not l: i += 1; continue
-        if l == '[[ARVORE]]': o.append('<codeBlock/>'); i += 1; continue  # árvore de decisão (A1, A10)
+        if l == '[[ARVORE]]': o.append('<codeBlock/>'); i += 1; continue  # árvore de decisão (A15, A8)
         m = re.match(r'(#{1,3}) (.*)', l)
         if m: o.append(par(m[2], len(m[1]))); i += 1; continue
         if l.startswith('|'):

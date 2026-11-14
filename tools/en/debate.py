@@ -17,14 +17,14 @@ PESSOAS = [
 ]
 
 OP = {
- 'A14': dict(
+ 'A4': dict(
   f="Plants respond to their environment, but they have no neurons or anything doing that job, and there's no evidence they feel. And if they did, eating plants directly would spare them: much of the world's cropland grows feed for animals.",
   fe='Separates responding from feeling and shows that, even granting the premise, the conclusion favors eating plants.',
   m="Science has already proven that plants feel absolutely nothing: without a brain there's no experience of any kind, and biologists settled this decades ago. Comparing a lettuce to a pig makes no sense at all.",
   me='It points the right way, but "proven" and "settled" are too strong, and it misses what matters: even if they did feel, eating animals would kill more plants.',
   r='I get the concern, but then you should go eat rocks, since apparently everything feels. Funny how people who never cared about a lettuce become defenders of plants the moment the subject is the steak on their plate.',
   re='Sarcasm and an accusation of bad faith end the conversation and explain nothing. The person walks away thinking you had no answer.'),
- 'G1': dict(
+ 'G2': dict(
   f="We need protein, not animal protein. Beans, lentils, soy, chickpeas and grains provide all the amino acids, if you eat a varied diet and enough of it. Nutrition bodies like the US Academy of Nutrition and Dietetics and the British Dietetic Association accept well-planned vegan diets.",
   fe='Corrects the confusion between nutrient and source, gives concrete examples and says who backs the claim.',
   m='Just look at nature: gorillas, bulls, horses and elephants are among the strongest animals on the planet, and they eat nothing but plants their whole lives. If they build tons of muscle with no animal protein, our bodies can obviously get everything they need from plants too.',
@@ -38,14 +38,14 @@ OP = {
   me='Disputes the wrong fact, and the claim is false: early humans ate meat. Even if it were true, it would accept that what is natural decides what is right.',
   r="Dying of an infection at thirty is natural too, so be consistent and stop taking medicine, wearing glasses and going to the dentist. But of course you won't: a hypocrite only cares about what's natural when it defends the barbecue.",
   re='The underlying idea is good, but the personal attack makes the person defend themselves instead of thinking.'),
- 'J11': dict(
+ 'J5': dict(
   f="For people who like it, it does taste good. The question is whether that pleasure justifies someone's life. No one would defend eating dogs because they're tasty. And much of the flavor comes from seasoning and cooking, which work on plants too.",
   fe='Concedes what is true, puts the weight on both sides and tests the principle with a case the person rejects.',
   m="It's true that many people like it, but that's no longer a problem: plant-based meat is now exactly the same as the real thing in flavor, texture and juiciness. In a blind test nobody can tell the difference, so you lose nothing by switching.",
   me='Many people do notice, and the broken promise becomes an argument against you. It also swaps the ethical question for one about taste.',
   r="Meat actually tastes of nothing: all the flavor comes from the salt, the garlic and the smoke. Try eating a steak boiled in plain water with no seasoning and see who can stand it. People who say they like meat really like seasoning and don't realize it.",
   re="It's false: meat has its own flavor, and meat eaters know it. Denying the obvious costs credibility."),
- 'C3': dict(
+ 'C2': dict(
   f="We're omnivores, and that's exactly why we can choose: we live well on plants. Being able to eat something isn't needing to, and anatomy gives no moral orders.",
   fe='Accepts the biological fact and shows it does not lead to the conclusion.',
   m="Actually, we're herbivores by nature: our canines are tiny, our intestines are long and we have no claws. The human body simply wasn't made to eat meat.",
@@ -59,7 +59,7 @@ OP = {
   me="It sounds like purity and is hard to believe. It also accepts discussing the island, which has nothing to do with today's plate.",
   r="That's a stupid question: nobody lives on a desert island, and you know it. Anyone who has to invent a movie plot to defend what they eat has already run out of arguments in real life. It isn't even worth answering.",
   re='The question is common and deserves an answer. Calling it stupid and refusing to answer makes it look like you dodged it.'),
- 'C2': dict(
+ 'C5': dict(
   f="The lion has no choice: it's an obligate carnivore and doesn't deliberate. We can live well without eating animals and we understand what we do. That's why we don't judge the lion, and why we can be judged.",
   fe='Shows the morally relevant difference between the lion and us: choice and understanding.',
   m='If the lion is your example, remember that lions also kill the cubs of other males and take the females by force. Will you copy that too? Anyone who uses nature as a guide has to accept the whole package, not just the menu.',
@@ -101,112 +101,112 @@ OP = {
   me='These figures circulate widely, but they vary with diet and method, and one tray less is not exactly one animal less. The precision is false.',
   r="If everyone thought like that, the world would be doomed: nobody would vote, nobody would save water, nobody would do anything. How selfish. That reasoning is typical of people who only lift a finger when they're sure they'll get the credit for the result.",
   re="A moralizing appeal that doesn't address the real doubt about the effect of one purchase."),
- 'A1': dict(
+ 'A15': dict(
   f="The question isn't whether a being can reason, but whether it can suffer. A pig's pain doesn't hurt less because it can't solve equations. If reason were the criterion, babies and people with profound intellectual disabilities could be used, and no one accepts that.",
   fe='Replaces the wrong criterion with the relevant one and shows the reason criterion would exclude humans we all protect.',
   m="Science has already shown that animals are as intelligent as we are. Pigs are smarter than three-year-olds, octopuses solve puzzles and crows use tools. If they reason the way we do, the difference you're pointing to simply doesn't exist.",
   me='There are comparisons on specific tasks, but generalizing overstates them. And it accepts the idea that intelligence decides who counts.',
   r="You're not being very rational yourself, and nobody puts you on a plate for it. Someone so proud of their own reason should start using it, instead of repeating the first sentence they heard somewhere just to justify today's lunch.",
   re='A personal attack: even with the seed of an argument in it, the person only hears the insult.'),
- 'A10': dict(
+ 'A8': dict(
   f="That sentence gives no reason; it just repeats which group the animal belongs to. If some trait matters, which one? Every trait people point to is missing in some human we still protect. If the answer is \"just being another species\", that's prejudice, not an argument.",
   fe='Asks for the criterion and shows that none separates all humans from all animals.',
   m="We're animals too: biology classifies humans as primates, and we share most of our DNA with other mammals. So saying \"they're just animals\" makes no sense at all, because the sentence applies equally to you, to me and to everyone here.",
   me="True in biology, but it doesn't answer: the person will just say \"yes, but humans are different\". The point is to ask which difference matters.",
   r="That's exactly what the Nazis said: pick a group, declare it worth less and do whatever you want with it. Slaughterhouses are today's concentration camps, and people who buy meat are playing the part of those who saw the smoke and preferred not to ask.",
   re='Holocaust comparisons offend and steer the conversation toward the comparison, not the animals.'),
- 'A15': dict(
+ 'A3': dict(
   f="Not knowing exactly where the line is doesn't erase clear differences: we don't know the exact day someone becomes elderly, and a baby still isn't elderly. Cows, pigs and chickens are clearly on the side of those who feel. In doubtful cases, like insects, the sensible course is caution.",
   fe='Answers the continuum fallacy and admits the real doubts without letting them erase the clear cases.',
   m="The line is simple and it's the same for everyone: anything with eyes can feel. If a being can look at you, there's someone in there, and that goes for the cow, the fish and the fly. Bacteria and plants have no eyes, so they're out, and the problem is solved.",
   me="Invents an arbitrary criterion that has nothing to do with feeling, and it's easy to knock down.",
   r="Bacteria? Seriously? You must be joking. You've spent your life eating cows, pigs and chickens without asking a single question, and now you're worried about microbes. When someone has to go down to bacteria to be right, the serious conversation ended long ago.",
   re="Mocks the question instead of explaining where the doubt is real and where it isn't."),
- 'A16': dict(
+ 'B2': dict(
   f="Death is a harm because it takes away everything the person would still have lived. That's why killing someone in their sleep, painlessly, is extremely serious. Animals also have a future of good experiences, and farmed animals are killed very young.",
   fe='Explains why death is a harm even without pain, with a human case no one accepts.',
   m="That premise is false: there's no such thing as painless death. Every animal suffers at slaughter, smells the blood, hears the others screaming and panics before dying. If death really were painless, this would be a different conversation.",
   me='Shifts to pain, which is not always present to the same degree, and accepts the premise that, without pain, everything would be fine.',
   r="So can I kill you in your sleep? You wouldn't feel a thing, you wouldn't even know, and by your logic nobody would have anything to complain about. Think carefully before you answer: if painless killing of someone asleep is acceptable, nothing stops you from agreeing.",
   re='The idea is right, but said in a provocative tone it sounds hostile and the person reacts to the tone.'),
- 'B2': dict(
+ 'B4': dict(
   f="A better life is better, no doubt. But the free-range animal is still killed young, and the male chicks are still discarded. And that meat is the exception: most farmed animals live in intensive systems.",
   fe='Acknowledges the improvement and shows what does not change: the death, and the fact that this meat is a minority.',
   m="It's true that the label looks nice, but free-range is all a lie, just marketing: the \"happy\" hen on the carton lives in the same crowded shed as the others, and they all suffer the same. The only difference is the price.",
   me='Labels exaggerate, but saying there is no difference at all is false, and anyone who has seen a better farm stops listening.',
   r='Happy right up until the knife, right? It must be a huge comfort to the animal to know it got to scratch around the yard first. But if paying more helps you sleep at night, go on believing in the smiling hen on the carton.',
   re='The sarcasm has a point, but on its own it sounds like a taunt, without explaining the argument.'),
- 'B4': dict(
+ 'K4': dict(
   f="The industry is responsible, and changing laws and subsidies matters. But it produces because people buy. You can do both: push for system change and change what you buy.",
   fe='Agrees with the right part and shows it does not replace individual choice.',
   m="The industry only makes what people ask for. It's all the buyer's fault: the consumer is in charge, and companies simply obey. Laws and subsidies change nothing as long as people keep paying.",
   me='As one-sided as the objection: it ignores the real weight of subsidies, advertising and laws.',
   r="That's an excuse from someone who doesn't want to give up steak. Blaming the industry is easy: you get to pose as a critic of the system and stay in line at the butcher's with a clear conscience.",
   re='Attacks the motive instead of answering the argument.'),
- 'B5': dict(
+ 'B3': dict(
   f="A good life doesn't give the right to take it; the better the life, the greater the loss. And the alternative to the slaughterhouse isn't a wolf, it's not being bred to die. No one would accept that sentence about a dog.",
   fe='Shows that a good life increases the loss and tests the principle with a case the person rejects.',
   m='No farmed animal has a good life: they are all tortured from birth to death, without exception. That story about well-treated animals on the family farm is just advertising, and anyone who believes it has never seen a farm up close.',
   me='Overgeneralizes: some farms are worse than others. The person thinks of the farm they know and dismisses everything you say.',
   r='A good life until they were murdered. Lovely. By that logic you can raise anyone with affection and then collect the bill with a knife. The animal must be so grateful; too bad nobody asked its opinion before dinner.',
   re='Irony that explains nothing and sounds contemptuous.'),
- 'C5': dict(
+ 'C4': dict(
   f="Even if meat helped our ancestors, that doesn't tell us what to do today: they also lived without medicine. And the claim itself is debated, with cooking and other foods also seen as important.",
   fe='Separates the past from the present moral choice and shows the premise is disputed.',
   m="That's a myth that has already been debunked: meat played no role at all in human evolution. The brain grew thanks to cooked roots and fruit, and serious scientists dropped the meat hypothesis a long time ago.",
   me='Goes beyond the evidence: its exact role is debated, but "no role" is too strong a claim.',
   r="Evolve? Look who's talking. If meat had done the brain that much good, you'd have a better argument than this one. It looks like evolution stopped for some of us right in front of the grill.",
   re='A personal attack with no argument.'),
- 'C11': dict(
+ 'C3': dict(
   f="Wanting isn't needing. Much of the taste for meat is learned from childhood and reinforced by salt, fat and seasoning. And desires don't justify causing harm: we have many cravings we don't follow when they hurt someone.",
   fe='Separates desire from justification and explains where part of the craving comes from.',
   m="That craving isn't natural; it's an addiction. Meat acts on the brain like a drug, with substances that cause dependence just like cigarettes, which is why it's so hard to quit. What you're feeling is withdrawal, and it passes in a few weeks.",
   me='Comparing it to a drug overstates things and has no solid basis; it sounds like an accusation.',
   r="A natural craving for corpses? Gross. Normal people see a dead animal on the road and look away, but your mouth waters. If that's natural for you, I'd rather not know what else you crave.",
   re="Disgust isn't an argument, and the person feels judged."),
- 'D2': dict(
+ 'D6': dict(
   f="Respecting a culture isn't accepting everything in it. You probably criticize bullfighting or cockfighting, and many places have banned them for cruelty. And the criticism applies mainly to our own culture.",
   fe='Shows the person already judges cultural practices and that the criticism is not aimed at other peoples.',
   m="This culture isn't even ours: eating meat every day is a colonizer thing, brought over with the cattle and the fences. Indigenous peoples lived in harmony with animals, and defending meat today is defending the legacy of colonization.",
   me="A historical generalization that doesn't hold up: many cultures eat animals. It also swaps the moral question for a political dispute.",
   r="Slavery was cultural too, and there were always people asking for it to be respected. You're using the same argument the plantation owners used, and a hundred years from now people will look at you the way we look at them today.",
   re='The logical point has something to it, but said like that it compares the person to slaveholders, and that is all they hear.'),
- 'D3': dict(
+ 'D7': dict(
   f='Veganism asks us to avoid exploitation "as far as is possible and practicable". An isolated people who depend on hunting are in a different situation from someone shopping at a supermarket. Using those with no choice to justify those who have one doesn\'t work.',
   fe="Recalls veganism's definition and separates necessity from choice.",
   m="Ethics applies to everyone. Indigenous peoples should be vegan too, no exceptions: killing an animal is wrong in the city or in the forest, and culture doesn't change that. If we make an exception for one people, everyone will want their own, and the principle disappears.",
   me="Ignores real living conditions, contradicts veganism's own definition and sounds like an imposition on vulnerable peoples.",
   r="You're not Indigenous; stop using them as an excuse. I bet you've never cared about those peoples in your life, and they only come up when the subject is your plate. The closest you get to hunting is the line at the butcher's.",
   re='The point has something to it, but the aggressive tone ends the conversation.'),
- 'D8': dict(
+ 'D3': dict(
   f="What brings the family together is the gathering, not the animal. The conversation and the full table carry on with other food, and traditions change all the time. These days there are dishes everyone can share.",
   fe='Separates the real value, the gathering, from what can be replaced.',
   m="Let's be honest: family barbecues are just an excuse to get drunk and gossip about whoever didn't come. Nobody is there for the affection, and the togetherness you describe exists more in the photos than in real life.",
   me='Dismisses the experience of the person and their loved ones. They will defend their family instead of thinking about the animals.',
   r="A family that gathers around a corpse isn't a family; it's a group of accomplices. If your love depends on a dead animal in the middle of the table, maybe it's worth asking what kind of bond that is and what it says about you.",
   re='Offensive and false. The person will feel attacked along with their loved ones.'),
- 'E2': dict(
+ 'E3': dict(
   f="Almost no one really believes morality is relative: you wouldn't think a mugging is wrong only in the victim's opinion. There's a difference between taste and harm: preferring chocolate ice cream is taste; making someone suffer isn't.",
   fe='Shows the person does not apply relativism to other cases and separates taste from harm.',
   m="It isn't a matter of opinion: science proves it's wrong to eat animals. Studies show they feel pain and are conscious, so the moral conclusion has already been demonstrated. Disagreeing with that today is like disagreeing that the Earth is round.",
   me='Science shows that animals feel, but the moral conclusion takes an ethical step. Confusing the two makes the reply easy.',
   r="Then anything goes, even what people might do to you. If everyone decides what's right, don't complain when someone decides it's right to take your wallet, or worse. Let's see how long that relativism lasts when you're the victim.",
   re="It becomes an implied threat and doesn't explain the problem with relativism."),
- 'E4': dict(
+ 'E2': dict(
   f="No one here talked about arresting meat eaters: the question is whether it's right, not whether it should be banned. Many wrong things aren't crimes. And the state already regulates what we eat and bans animal cruelty.",
   fe='Brings the conversation back to the moral question and shows the law already protects animals.',
   m="It should be banned, and it will be. The state already bans plenty of things that harm others, and meat is just next on the list. In a few decades eating animals will be a crime, and you'd better start getting used to the idea.",
   me="Confirms the person's fear and swaps a conversation about what is right for one about bans, which they will reject.",
   r="The state bans plenty of things you'd do, thank goodness. The people who complain most about rules are usually the ones who need them most, and I can imagine what you'd get up to if nobody were watching.",
   re="A personal insinuation that answers nothing."),
- 'E6': dict(
+ 'E10': dict(
   f="Nobody needs to be perfect, and veganism doesn't ask for that. But \"I do what I can\" holds if you're actually doing what you can, and changing what you eat is usually one of the easiest changes with the most impact.",
   fe='Agrees with the principle and shows it calls for exactly the change within reach.',
   m="Doing what you can isn't enough. If you're not vegan, you're doing nothing: cutting back, buying free-range or skipping meat on Mondays only ease your conscience. For the animals, either you've quit for good or you're still on the same side.",
   me='All-or-nothing discourages people and is false: those who cut back already cause less harm.',
   r="Do what you can, just don't stop killing. Funny how your \"possible\" always ends just short of the plate. Deep down you do what's comfortable, call it effort and still expect a pat on the back.",
   re='A direct accusation that puts the person on the defensive.'),
- 'E12': dict(
+ 'E15': dict(
   f="Thanks for being honest: you already agree on the most important part. The gap between knowing and doing is human, but it doesn't have to be permanent. You can start with one meal or one day a week. What makes it hardest for you?",
   fe="Acknowledges the concession, doesn't humiliate and offers a concrete next step.",
   m="Then you're a hypocrite, and I mean no offense: it's simply the accurate word for someone who knows something is wrong and keeps doing it. Admitting it changes nothing for the animals. Until you stop, your honesty is worth about as much as an empty apology.",
@@ -227,42 +227,42 @@ OP = {
   me='Such an intervention could cause more suffering, and the sentence sounds absurd. The topic calls for caution.',
   r="Lions aren't my problem. What happens on the savanna is nature's business, and I only care about suffering that has something to do with me. Besides, that question is just an attempt to change the subject, and I won't fall for it.",
   re='Contradicts the very concern with suffering and proves the accusation of inconsistency right.'),
- 'G2': dict(
+ 'G3': dict(
   f="Plant foods have all the essential amino acids, in different proportions. Over the day they complement each other, with no need to combine them in the same meal. Rice and beans are already an excellent combination.",
   fe='Corrects the myth with an everyday example.',
   m="Actually, plant protein is even better than animal protein: the body absorbs it more easily, it doesn't strain the kidneys and it comes without fat. Any single plant food already delivers more than meat does.",
   me='There is no basis for "better" in general: profile and absorption vary. Overstating it gives ammunition to people who know nutrition.',
   r='Protein is all the same, and that talk of "complete" and "incomplete" is a meat industry invention to sell steak. Dietitians repeat it because they were trained on materials paid for by meatpackers.',
   re='There are real differences in profile and digestibility. A conspiracy theory destroys credibility.'),
- 'G3': dict(
+ 'G4': dict(
   f="B12 is made by bacteria, not by animals. Farmed pigs and chickens get B12 in their feed, and cattle often get cobalt. Meat eaters depend on supplementation too, just indirectly. And we use iodized salt and vaccines without a second thought.",
   fe='Explains where B12 comes from and shows supplementation is already part of the meat supply chain.',
   m='All the B12 in meat comes from supplements. No animal makes this vitamin, and all of them, from chickens to cattle, get injections or fortified feed. Meat eaters are just taking the same pill I take, after it has passed through an animal.',
   me="An exaggeration: in ruminants, the bacteria in the rumen produce B12. The claim is easily refuted.",
   r="Vegans don't even need B12; it's a pharmaceutical industry scam to sell pills. Anyone who eats fresh vegetables and gets some sun has everything the body needs, and that deficiency only shows up in people who eat badly anyway.",
   re='False and dangerous: anyone who doesn\'t eat animal products needs a reliable source of B12.'),
- 'G9': dict(
+ 'G11': dict(
   f="What matters for muscle is the amount of protein and energy. A 2021 study with equal protein intake found no difference in muscle mass or strength between vegans and omnivores. There are elite vegan athletes in many sports.",
   fe='Uses specific evidence and examples without overstating.',
   m='You can, and even better: vegan athletes perform far better, and the documentary showed it clearly. They recover faster and have more stamina and more strength, which is why the great champions are giving up meat.',
   me='Documentaries sell conclusions the studies don\'t support. "Far better" is an exaggeration.',
   r="Athletes who eat meat are on steroids anyway. Those gym bodies you admire didn't come from chicken and sweet potato; they came from the pharmacy. Compare vegans with people who train clean and then we can talk.",
   re='An unfounded accusation that doesn\'t answer the question.'),
- 'G16': dict(
+ 'G12': dict(
   f="It's a stereotype: there are all kinds of vegans, including elite athletes. On depression, the studies are mostly cross-sectional and don't show what causes what. Deficiencies that affect mood can be prevented with planning.",
   fe='Undoes the stereotype and treats the evidence on depression honestly.',
   m="It's the opposite: vegans are healthier and happier, and it's been proven. Research shows less depression, more energy and more drive in people who take animal products off their plate. Meat is what leaves people sick and listless.",
   me='Flips the stereotype with another claim the evidence does not support.',
   r="The pale ones are people who live on barbecue and beer. Look around at the next family party: bellies, high blood pressure, cholesterol pills. If anyone here looks sick, it certainly isn't the person eating salad.",
   re='Answers a stereotype with a stereotype and gives offense.'),
- 'H4': dict(
+ 'H9': dict(
   f="It's true that some pasture can't grow crops. But that land produces little food: livestock uses about 80% of agricultural land and provides about 17% of calories. That land could return to native vegetation.",
   fe='Concedes the true part and shows the ratio between land used and food produced.',
   m="That doesn't hold up, because all pasture is cleared rainforest. There's no such thing as \"natural\" grazing land: wherever there are cattle today, there used to be forest. Every steak you eat is a piece of woodland that was cut down.",
   me='A false generalization: there are old pastures and pastures in other ecosystems. The exaggeration shifts the focus.',
   r="Cattle destroy everything they touch; that's a fact: they wreck the soil, the water and the climate. Any informed person knows it, and whoever defends pasture either hasn't read anything on the subject or has a rancher in the family.",
   re='A vague, exaggerated claim that is easy to rebut, with a personal jab at the end, and it also swaps the moral question for an environmental one.'),
- 'J12': dict(
+ 'J7': dict(
   f="Eating less meat is good and deserves credit: fewer animals die. But if killing without need is wrong, doing it less often is less wrong, not right. Cutting back is a great path, as long as it doesn't become the destination.",
   fe='Values the step and shows it does not answer the moral question.',
   m='A little meat is still meat, and it changes nothing. To the animal that died, it makes no difference whether you eat it every day or only on Sundays. Cutting back is just a way to feel good without really changing, and I see no reason to praise it.',
@@ -276,14 +276,14 @@ OP = {
   me="Not quite: that animal died before the purchase. The claim is easy to rebut and hides the right argument, the one about restocking.",
   r="Then go eat roadkill too. It's already dead, and by your logic it would be a waste to leave it there. Or does the \"already dead\" rule only apply when the animal is tasty?",
   re="A taunt that doesn't touch the point about the market: the purchase orders the next animal."),
- 'K4': dict(
+ 'K5': dict(
   f="It's true that almost every product involves some harm in its supply chain. But that doesn't make all choices equal: between beans and meat, the difference in harm is huge. No consumption being perfect doesn't mean none is better.",
   fe='Concedes the partial truth and shows it does not erase the differences.',
   m="It's true that everything under capitalism exploits someone, and that's exactly why veganism is consistent: it's anti-capitalist by nature. Real vegans fight the whole system, and you can't defend animals without fighting the market.",
   me="Veganism doesn't depend on an economic position, and the sentence alienates people who think differently without answering the objection.",
   r="Then stop using your phone, wearing clothes and driving a car, since everything exploits someone. You're talking to me on a device made in who knows what conditions and you want to lecture about consumption. Sort that out first, then criticize others.",
   re='Tu quoque: throws the accusation back instead of answering.'),
- 'L5': dict(
+ 'L12': dict(
   f='Veganism never promised purity: it speaks of avoiding exploitation "as far as is possible and practicable". Greatly reducing harm is different from reducing nothing, and eating plants causes far fewer deaths, including in harvests.',
   fe='Corrects the expectation of purity and shows that reducing harm is the point.',
   m="Yes it is; 100% cruelty-free. No animal suffers or dies for a vegan to eat, dress or have fun, and that's exactly what the word means. Anyone who says otherwise is repeating rumors spread to discredit the movement.",

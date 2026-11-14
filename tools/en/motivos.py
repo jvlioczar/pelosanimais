@@ -2,7 +2,7 @@
 
 _PARES = '''
 O afeto pelos animais vira admiração por quem age | Affection for animals turns into admiration for those who act
-"Peixe nem grita" é a versão aquática de A3 | "Fish don't even scream" is the underwater version of A3
+"Peixe nem grita" é a versão aquática de A16 | "Fish don't even scream" is the underwater version of A16
 A acusação de colonialismo vira acusação política | The charge of colonialism becomes a political charge
 A autoridade vira tradição | Authority turns into tradition
 A busca de uma proteína alternativa | The search for an alternative protein

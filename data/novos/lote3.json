@@ -1,6 +1,6 @@
 {
   "args": {
-    "C12": {
+    "C7": {
       "falha_pt": "Falácia do nirvana e apelo à natureza: de \"não dá para zerar o dano\" não se segue \"tanto faz quanto dano causo\", e \"consciente\" descreve quem mata, não o que acontece com quem morre",
       "en": {
         "frase": "We are animals and part of the ecosystem; no one lives without impact",
@@ -12,7 +12,7 @@
         "falha": "Nirvana fallacy and appeal to nature: \"harm can't be brought to zero\" doesn't mean \"it makes no difference how much harm I cause\", and \"conscious\" describes the one who kills, not what happens to the one who dies"
       }
     },
-    "D13": {
+    "D5": {
       "falha_pt": "Confunde honrar as pessoas com repetir o que fizeram: cada geração revê práticas das anteriores, e julgar uma prática não é condenar quem a seguiu",
       "en": {
         "frase": "I don't want to dishonor my parents and my ancestors",
@@ -24,7 +24,7 @@
         "falha": "Confuses honoring people with repeating what they did: every generation revises earlier practices, and judging a practice is not condemning those who followed it"
       }
     },
-    "E16": {
+    "E8": {
       "falha_pt": "Apelo à autoridade e, em segunda mão, à maioria: a IA repete os textos com que foi treinada e é ajustada para não tomar partido; abster-se não é concluir que não é errado",
       "en": {
         "frase": "AIs say that not being vegan isn't wrong",
@@ -36,7 +36,7 @@
         "falha": "Appeal to authority and, at second hand, to the majority: AI repeats the texts it was trained on and is tuned not to take sides; abstaining is not concluding that it isn't wrong"
       }
     },
-    "H15": {
+    "H12": {
       "falha_pt": "Falsa dicotomia: dá para escolher plantas e cuidar de como são cultivadas; o tipo de alimento pesa mais que o modo de produção, e nada disso responde ao que acontece com o animal",
       "en": {
         "frase": "What matters is how food is grown, not whether it comes from animals",
@@ -48,7 +48,7 @@
         "falha": "False dichotomy: you can choose plants and care about how they are grown; the type of food weighs more than the production method, and none of it answers what happens to the animal"
       }
     },
-    "H16": {
+    "H3": {
       "falha_pt": "A maior parte da soja e boa parte dos grãos alimentam animais de criação; comer plantas reduz a área agrícola, e comparar a pior lavoura com a melhor pecuária é injusto",
       "en": {
         "frase": "Plant monoculture destroys as much as industrial animal farming",

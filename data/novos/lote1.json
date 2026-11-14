@@ -1,6 +1,6 @@
 {
   "args": {
-    "L17": {
+    "L13": {
       "falha_pt": "Tu quoque: ter um viés não autoriza prejudicar ninguém, pede correção; e especismo é desconsideração injustificada de interesses, e não qualquer preferência",
       "en": {
         "frase": "Vegans are speciesists too",
@@ -12,7 +12,7 @@
         "falha": "Tu quoque: having a bias doesn't license harming anyone, it calls for correction; and speciesism is the unjustified disregard of interests, not any preference"
       }
     },
-    "L18": {
+    "L14": {
       "falha_pt": "A questão não é empatia: ela é limitada e enviesada, e onde falha usamos razão e princípios, como fazemos com humanos distantes",
       "en": {
         "frase": "You don't feel empathy for every animal in the world either",
@@ -23,7 +23,7 @@
         "falha": "The question isn't empathy: it is limited and biased, and where it fails we use reason and principles, as we do with distant humans"
       }
     },
-    "L19": {
+    "L16": {
       "falha_pt": "Tu quoque e ataque ao mensageiro: a falha de um vegano em outra causa não muda o que acontece com os animais, e o mesmo raciocínio derrubaria qualquer causa",
       "en": {
         "frase": "There are sexist, racist and transphobic vegans",
@@ -35,7 +35,7 @@
         "falha": "Tu quoque and an attack on the messenger: a vegan's failing in another cause doesn't change what happens to animals, and the same reasoning would bring down any cause"
       }
     },
-    "L20": {
+    "L24": {
       "falha_pt": "Generaliza dos erros de alguns filmes para tudo: as imagens mostram práticas padrão e legais, e a conclusão moral não depende de nenhum filme",
       "en": {
         "frase": "Vegan documentaries are manipulated",
@@ -47,7 +47,7 @@
         "falha": "Generalizes from some films' errors to everything: the footage shows standard, legal practices, and the moral conclusion doesn't depend on any film"
       }
     },
-    "L21": {
+    "L25": {
       "falha_pt": "Ataque ao mensageiro: a hostilidade de alguns veganos é um erro, mas a crítica é à produção de leite e ovos, e não às pessoas",
       "en": {
         "frase": "Vegans treat vegetarians as enemies",

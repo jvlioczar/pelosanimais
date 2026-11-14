@@ -293,7 +293,7 @@
         });
         atual.appendChild(g);
       } else {
-        atual.appendChild(el('p', 'rac-fim', n.raiz ? 'Esta é uma das raízes: o ponto onde a conversa costuma terminar. Daqui, quase sempre só resta a franqueza ou o fim da conversa.' : 'Ainda não há caminhos catalogados a partir deste argumento. Quando uma objeção se esgota, a conversa costuma voltar a uma das raízes: A10, J11 ou E12.'));
+        atual.appendChild(el('p', 'rac-fim', n.raiz ? 'Esta é uma das raízes: o ponto onde a conversa costuma terminar. Daqui, quase sempre só resta a franqueza ou o fim da conversa.' : 'Ainda não há caminhos catalogados a partir deste argumento. Quando uma objeção se esgota, a conversa costuma voltar a uma das raízes: A8, J5 ou E15.'));
         if (!n.raiz) {
           var gr = el('div', 'rac-opc');
           RD.raizes.forEach(function (rz) {

@@ -1,6 +1,6 @@
 {
   "args": {
-    "J19": {
+    "J10": {
       "falha_pt": "Trata o agro como um bloco único: o veganismo se opõe à criação e à morte de animais, e não à agricultura, de onde vem a comida vegana",
       "en": {
         "frase": "Vegans are against farmers",
@@ -12,7 +12,7 @@
         "falha": "Treats farming as a single block: veganism opposes breeding and killing animals, not crop growing, which is where vegan food comes from"
       }
     },
-    "J20": {
+    "J8": {
       "falha_pt": "Pertencer não exige comer o mesmo prato, e o desconforto social de quem recusa não se compara ao custo para o animal",
       "en": {
         "frase": "I don't want to feel left out; eating together is how you belong",
@@ -24,7 +24,7 @@
         "falha": "Belonging doesn't require eating the same dish, and the social discomfort of refusing doesn't compare with the cost to the animal"
       }
     },
-    "J21": {
+    "J15": {
       "falha_pt": "Falácia genética: uma posição moral não fica falsa porque alguém lucra com ela, e o negócio de explorar animais é muito maior",
       "en": {
         "frase": "Veganism has become big business",
@@ -36,7 +36,7 @@
         "falha": "Genetic fallacy: a moral position doesn't become false because someone profits from it, and the business of exploiting animals is far bigger"
       }
     },
-    "J22": {
+    "J14": {
       "falha_pt": "O dado da FAO fala de 20% da proteína animal, e não das necessidades de proteína, e a dependência de alguns não justifica o consumo de quem tem escolha",
       "en": {
         "frase": "Billions of people depend on fish for protein",
