@@ -68,6 +68,8 @@ def traduz_html(doc, links=None):
     for pt, en in _UI: doc = doc.replace(pt, en)
     if links: doc = links(doc)
     doc = caminho(doc)
+    # the catalogue section is #arguments in English (links to the Portuguese site stay protected above)
+    doc = doc.replace('#argumentos"', '#arguments"').replace('id="argumentos"', 'id="arguments"')
     return re.sub(r'\0(\d+)\0', lambda m: guardados[int(m[1])], doc)
 
 def motivo(s):

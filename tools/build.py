@@ -613,7 +613,7 @@ def desc_seo(d):
 LOGO = '<svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 2h28a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H19l-8 6v-6H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z" fill="#0a3703"/><g fill="#ffeb5b"><ellipse cx="15.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(-10 15.500 11.500)"/><ellipse cx="24.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(10 24.500 11.500)"/><ellipse cx="20" cy="22" rx="8" ry="6.800"/></g><g fill="#0a3703"><circle cx="17" cy="21" r="1.100"/><circle cx="23" cy="21" r="1.100"/><circle cx="20" cy="24.200" r="1"/></g></svg>'
 TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
-MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
+MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas e éticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
         ('Praticar', [('debate.html', 'Debate simulado'), ('treino.html', 'Treinar respostas')]),
         ('Aprofundar', [('raciocinio.html', 'O raciocínio antivegano'), ('mapa.html', 'Mapa de conexões'), ('familias.html', 'As 14 famílias'),
                         ('falacias.html', 'Falácias'), ('vieses.html', 'Vieses'), ('alem-do-veganismo.html', 'Além do veganismo')]),
@@ -636,8 +636,9 @@ def dados(path, title, desc, url, tipo, trilha, pergunta=None):
     site = {'@type': 'WebSite', '@id': SITE + '/#site', 'name': NOME, 'url': SITE + '/', 'inLanguage': LANG, 'publisher': org}
     if path == 'index.html': grafo = [site]
     else:
-        pg = {'@type': tipo, 'name': title, 'description': desc, 'url': url, 'inLanguage': LANG, 'isPartOf': {'@id': SITE + '/#site'}, 'dateModified': ATUALIZADO}
-        if tipo == 'Article': pg.update(headline=title[:110], datePublished=ATUALIZADO, author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html'}, publisher=org, mainEntityOfPage=url)
+        # dateModified: a mesma data da fonte usada no lastmod do sitemap; datePublished: o lançamento de cada edição
+        pg = {'@type': tipo, 'name': title, 'description': desc, 'url': url, 'inLanguage': LANG, 'isPartOf': {'@id': SITE + '/#site'}, 'dateModified': LASTMOD.get(path, ATUALIZADO)}
+        if tipo == 'Article': pg.update(headline=title[:110], datePublished=L('2026-11-07', '2026-11-08'), image=f'{SITE}/assets/share.png?v={VER_IMG}', author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html'}, publisher=org, mainEntityOfPage=url)
         mig = [('Início', SITE + '/')] + [(n, f'{SITE}/{u.replace("index.html", "")}') for n, u in trilha] + [(title, url)]
         if pergunta:
             pg['mainEntity'] = {'@type': 'Question', 'name': html.unescape(pergunta[0]), 'acceptedAnswer': {'@type': 'Answer', 'text': html.unescape(pergunta[1])}}
@@ -720,7 +721,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <footer class="rodape"><div class="wrap rodape-in">
 <div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
 <div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 14 famílias')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
-<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas')}{l('biblioteca.html', 'Biblioteca')}{l('glossario.html', 'Glossário')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
+<div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas e éticas')}{l('biblioteca.html', 'Biblioteca')}{l('glossario.html', 'Glossário')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 <script src="{pre}assets/trecho.js?v={VER_TR}" defer></script>
@@ -811,8 +812,8 @@ def inicio():
 <section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
 <div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
-<section class="bloco-cor azul" id="politicas"><div class="wrap"><div class="sec-cab centro-t"><h2>E se a pessoa parte de uma teoria política?</h2><p>Liberais, marxistas, anarquistas, utilitaristas, feministas: cada teoria tem um princípio, e nenhuma oferece, nos próprios termos, uma razão para deixar os animais de fora.</p></div>
-<div class="grade">{polc}</div><p class="centro-t" style="margin-top:22px"><a class="btn" href="objecoes-politicas.html">Ver todas as objeções políticas</a></p></div></section>
+<section class="bloco-cor azul" id="politicas"><div class="wrap"><div class="sec-cab centro-t"><h2>E se a pessoa parte de uma teoria política ou ética?</h2><p>Liberais, conservadores, marxistas, utilitaristas, feministas, religiosos, estoicos: cada teoria tem um princípio, e nenhuma oferece, nos próprios termos, uma razão para deixar os animais de fora.</p></div>
+<div class="grade">{polc}</div><p class="centro-t" style="margin-top:22px"><a class="btn" href="objecoes-politicas.html">Ver todas as objeções políticas e éticas</a></p></div></section>
 <section class="bloco-cor verde" id="grupos"><div class="wrap"><div class="sec-cab centro-t"><h2>Duas perguntas, catorze famílias</h2><p>Argumentos parecidos erram de modo parecido. Toda objeção tenta responder a uma destas duas perguntas.</p></div>
 <div class="arvore-g"><div class="galho"><p class="pergunta"><small>Argumentos diretos</small>Os animais contam?</p><div class="ramos">{"".join(ramo(f) for f in dir_)}</div></div><div class="galho"><p class="pergunta"><small>Argumentos indiretos</small>É necessário, viável, eficaz?</p><div class="ramos">{"".join(ramo(f) for f in ind)}</div><p class="ressalva">Mesmo quando têm uma parte verdadeira, justificam no máximo exceções. Muitos ativistas evitam usá-los para defender os animais: outros movimentos sociais não defendem humanos com argumentos de saúde ou de ambiente. <a href="comece-aqui.html#indiretos">Entenda</a></p></div></div>
 <div class="raizes-h"><p>Quase toda conversa termina em uma destas três raízes:</p><div>{"".join(f'<a href="argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in RAIZES)}</div><a class="mais" href="mapa.html">Ver o mapa de conexões →</a></div></div></section>
@@ -898,13 +899,13 @@ def paginas_politicas():
     def nos(cods, pre='../'):
         return ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="{pre}argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in cods))
     cards = ''.join(f'<a class="cartao" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3><p class="falha">{e(t["principio"])}</p></a>' for i, t in enumerate(politicas.TEORIAS))
-    corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.') + f'''<section class="secao"><div class="wrap">
+    corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas e éticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.') + f'''<section class="secao"><div class="wrap">
 <p class="estreito" style="margin:0 0 26px">{e(politicas.INTRO)}</p>
 <h2 class="so-leitor">{L("As teorias", "The theories")}</h2><div class="grade">{cards}</div>
 {espectro()}
 <p class="fino" style="margin-top:26px">A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.</p>
 </div></section>'''
-    page('objecoes-politicas.html', 'Objeções políticas', L('Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', 'Liberalism, Marxism, anarchism, utilitarianism, Rawls, Kant, feminism, anti-racism and other theories: why none offers, on its own terms, a reason to exclude animals.'), corpo, 'objecoes-politicas.html', 'CollectionPage')
+    page('objecoes-politicas.html', 'Objeções políticas e éticas', L('Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', 'Liberalism, Marxism, anarchism, utilitarianism, Rawls, Kant, feminism, anti-racism and other theories: why none offers, on its own terms, a reason to exclude animals.'), corpo, 'objecoes-politicas.html', 'CollectionPage')
     T = politicas.TEORIAS
     for i, t in enumerate(T):
         cor = tons[i % len(tons)]
@@ -918,9 +919,9 @@ def paginas_politicas():
                + (f'<h2>{L("Quem defende os animais a partir desta teoria", "Who defends animals from within this theory")}</h2><p>{L("Autores, ativistas e grupos que partem desta teoria e mostram por que ela precisa incluir os animais e os demais seres sencientes.", "Authors, activists and groups who start from this theory and show why it has to include animals and other sentient beings.")}</p><ul class="pol-q">' + ''.join(f'<li><strong>{e(n)}:</strong> {e(d)}</li>' for n, d in t['nomes']) + '</ul>' if t.get('nomes') else '') +
                f'<h2>Veja também</h2><div class="nos">{nos(t["liga"])}</div>' + lista_fontes(t['fontes']) +
                '<nav class="pass" aria-label="Outras teorias">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próxima') if prox else '') + '</nav>')
-        pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas</a> / {e(t["t"])}</p>'
+        pag = (f'<section class="cena" style="--c:{cor}"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../objecoes-politicas.html">Objeções políticas e éticas</a> / {e(t["t"])}</p>'
                f'<div class="fala"><h1>"{e(t["frase"])}"</h1></div><div class="tese-c"><span>{e(t["t"])}: o princípio</span><p>{e(t["principio"])}</p></div></div></section><div class="wrap paineis">{art}</div>')
-        page(f'politicas/{t["s"]}.html', L(f'{t["t"]} e a questão animal', f'{t["t"]} and the animal question'), L(f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', f'{t["t"]}: why the objection "{t["frase"]}" contradicts the theory\'s own principle.'), pag, 'objecoes-politicas.html', 'Article', [('Objeções políticas', 'objecoes-politicas.html')], (t['frase'], t['resposta']))
+        page(f'politicas/{t["s"]}.html', L(f'{t["t"]} e a questão animal', f'{t["t"]} and the animal question'), L(f'{t["t"]}: por que a objeção "{t["frase"]}" contradiz o princípio da própria teoria.', f'{t["t"]}: why the objection "{t["frase"]}" contradicts the theory\'s own principle.'), pag, 'objecoes-politicas.html', 'Article', [("Objeções políticas e éticas", "objecoes-politicas.html")], (t['frase'], t['resposta']))
 
 def pagina_debate():
     """Debate simulado: dados em tools/debate.py, lógica em assets/debate.js. A conversa segue o grafo do raciocínio antivegano."""
@@ -1183,7 +1184,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
 }
-GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política', 'Political objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
+GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
                     'falacias.html': ('Falácias', 'Fallacies')}
 
 def pagina_glossario():
@@ -1386,7 +1387,7 @@ for i, c in enumerate(ORDEM):
     a = ARGS[c]; BUSCA.append(dict(t=f'{c}. {a["frase"]}', s=a['falha'], u=f'argumentos/{a["slug"]}.html', k=' '.join(a['formas']) + ' ' + FAMILIAS[a['fam']]['nome']))
 for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0] + ' ' + ' '.join(r.get('formas', []))))
 for p in alem.PAGINAS: BUSCA.append(dict(t=p['t'], s='Além do veganismo: ' + p['res'], u=f'alem/{p["s"]}.html', k=''))
-for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política: ' + t['principio'], u=f'politicas/{t["s"]}.html', k='política teoria'))
+for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política ou ética: ' + t['principio'], u=f'politicas/{t["s"]}.html', k="política ética teoria"))
 for f in FAMILIAS.values(): BUSCA.append(dict(t=f'Família {f["c"]}: {f["nome"]}', s=f['perg'], u=f'familias/{f["c"].lower()}.html', k=''))
 for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'falacias.html#{slug(i["n"])}', k=''))
 for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.html#{slug(i["n"])}', k=''))
@@ -1401,11 +1402,11 @@ def llms_txt():
             (L('Sobre o guia', 'About the guide'), 'sobre.html', L('o que é o projeto, como as fontes são tratadas e qual é o tom', 'what the project is, how sources are handled and what tone it takes')),
         ]),
         (L('Argumentos', 'Arguments'), [
-            (L('Todos os argumentos', 'All arguments'), '#argumentos' if not EN else '#arguments', L(f'os {len(ARGS)} argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um', f'the {len(ARGS)} arguments used against veganism and antispeciesism, each with its main flaw')),
+            (L('Todos os argumentos', 'All arguments'), L('#argumentos', '#arguments'), L(f'os {len(ARGS)} argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um', f'the {len(ARGS)} arguments used against veganism and antispeciesism, each with its main flaw')),
             (L('As famílias', 'The families'), 'familias.html', L('os argumentos agrupados pela pergunta de fundo e pelo erro dominante', 'the arguments grouped by their underlying question and dominant error')),
             (L('O raciocínio antivegano', 'The anti-vegan line of reasoning'), 'raciocinio.html', L('para onde a conversa vai depois que cada objeção é respondida', 'where the conversation goes after each objection is answered')),
             (L('Mapa de conexões', 'Map of connections'), 'mapa.html', L('as cadeias de objeções e as três raízes onde quase toda conversa termina', 'the chains of objections and the three roots where almost every conversation ends')),
-            (L('Objeções políticas', 'Political objections'), 'objecoes-politicas.html', L('o que cada teoria ética ou política diz para excluir os animais, e por que isso contradiz o próprio princípio', 'what each ethical or political theory says to exclude animals, and why that contradicts its own principle')),
+            (L('Objeções políticas e éticas', 'Political and ethical objections'), 'objecoes-politicas.html', L('o que cada teoria ética ou política diz para excluir os animais, e por que isso contradiz o próprio princípio', 'what each ethical or political theory says to exclude animals, and why that contradicts its own principle')),
         ]),
         (L('Erros e vocabulário', 'Errors and vocabulary'), [
             (L('Falácias', 'Fallacies'), 'falacias.html', L('os erros de lógica que explicam boa parte do catálogo', 'the logical errors that explain much of the catalogue')),
@@ -1444,7 +1445,7 @@ def llms_txt():
     full += L('## Pare de dizer isso\n\n', '## Stop saying this\n\n')
     for r in RUINS:
         full += f'- [{r["c"]}. {r["frase"]}]({u("ruins/" + SLUG_RUIM[r["c"].lower()] + ".html")}): {r["por"][0]}\n'
-    full += L('\n## Objeções políticas\n\n', '\n## Political objections\n\n')
+    full += L('\n## Objeções políticas e éticas\n\n', '\n## Political and ethical objections\n\n')
     for t in politicas.TEORIAS:
         full += f'- [{t["t"]}]({u("politicas/" + t["s"] + ".html")}): {t["frase"]} {t["principio"]}\n'
     full += L('\n## Além do veganismo\n\n', '\n## Beyond veganism\n\n')
