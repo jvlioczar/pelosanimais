@@ -535,7 +535,7 @@ OP.update({
   me='Afirma algo falso que este guia pede para não usar.',
   r='Então se oferece você para os testes, já que acha tão importante. Fácil defender quando quem sofre é outro. Ou então para de tomar remédio, já que acha tão justo. Duvido que você faça isso. Coragem para mudar você não tem.',
   re='Provocação no lugar de argumento.'),
- 'I16': dict(
+ 'I17': dict(
   f='Ser tradição não coloca uma prática acima das leis contra a crueldade. A Inglaterra proibiu a caça com cães e animais selvagens em circos, e o STF proibiu a farra do boi e a rinha de galo. As festas podem manter a música e a comida, sem o sofrimento.',
   fe='Mostra que tradições cruéis já foram proibidas e que a cultura pode continuar.',
   m='Isso não é cultura nenhuma, é barbárie. Quem participa dessas coisas é sádico e merece ser preso, e quem defende está do lado da tortura. Não tem nada para discutir com quem acha isso aceitável, nem para entender.',
@@ -605,14 +605,14 @@ OP.update({
   me='Promete uma pureza impossível, que a acusação vai derrubar.',
   r='E você usa celular e come carne, então é hipócrita duas vezes. Vamos começar pelo seu prato? Ou começamos pelo seu carro, pela sua roupa e pela sua conta de luz? Escolhe. Hipocrisia por hipocrisia, a sua é maior.',
   re='Tu quoque devolvido, sem explicar nada.'),
- 'L21': dict(
+ 'L22': dict(
   f='Essas comparações podem ferir, e é justo pedir cuidado ou evitá-las. Apontar semelhanças de mecanismo, como tratar seres sencientes como coisas, não é dizer que as vítimas valem o mesmo. E a defesa dos animais não depende dessas analogias.',
   fe='Respeita a sensibilidade e mostra que a causa não depende da comparação.',
   m='A pecuária é pior que o Holocausto, porque mata muito mais. Os números falam por si, e quem se ofende é porque não quer encarar a verdade. Não dá para suavizar a verdade para agradar ninguém.',
   me='Faz a comparação de forma insensível, que afasta e machuca.',
   r='Ofensivo é o que acontece com os animais, e não a minha comparação. Se você se ofende mais com palavras do que com mortes, o problema é seu. Os animais não ligam para o seu desconforto, ligam para o que fazem com eles.',
   re='Desconsidera a dor real que essas comparações podem causar.'),
- 'L30': dict(
+ 'L31': dict(
   f='Isso não é um argumento, é uma provocação. Quando nos sentimos pressionados, tendemos a fazer o contrário. Mas quem paga a "compensação" não sou eu, são os animais. Quando quiser conversar sobre eles de verdade, estou aqui.',
   fe='Não entra na provocação e deixa a porta aberta.',
   m='Pode comer o dobro, não faz diferença. Cada vegano já salva 200 animais por ano, então mesmo que você coma mais eu continuo salvando muito mais do que você mata. Não adianta tentar me provocar, o saldo continua positivo para os animais.',

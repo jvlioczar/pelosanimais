@@ -28,7 +28,7 @@ _EXTRA_EN = {'A12': ["We're all naturally biased: we protect our family, our spe
     'D7': ['Vegans want to impose veganism on Indigenous peoples'], 'C2': ['Our bodies are designed to eat meat'], 'J2': ["Veganism is classist and elitist, it isn't accessible to poorer people"],
     'C1': ['We have canine teeth, so we were made to eat meat', "If we weren't meant to eat meat, we wouldn't have canines", 'Humans are carnivores by nature'],
     'I10': ['Silk is a natural, noble fabric, better than synthetics', 'Nobody kills anything to make silk'], 'I11': ["Honey is healthy and natural; there's nothing wrong with it"],
-    'N21': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L20': ['Vegans prefer animals to people']}
+    'N21': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L21': ['Vegans prefer animals to people']}
 for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-15)
     'A1': ["You can't know what goes on in an animal's head", "An animal is a machine; it feels nothing", 'Animals are like robots; they just react', 'I can only be sure that I feel'], 'A4': ["Plants have it worse, they can't even run away", 'If you defend life, why do you kill plants?', 'Plants defend themselves, so they want to live'],
     'A7': ["It's just pity for cute animals", 'Veganism is more emotion than reason'], 'A9': ['Animals are less evolved than us'], 'A20': ["For a cow, being alive or dead makes no difference"],
@@ -44,7 +44,7 @@ for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-1
     'H18': ["If nobody fishes, the sea will be overrun with fish"], 'I1': ["Livestock and animal testing brought progress; we can't abolish them"],
     'J1': ['Vegans have to buy everything at health-food stores'], 'J4': ["Vegans can't go to barbecues"], 'J6': ['Vegan food is all foreign stuff', "Vegans can't even have a little treat"],
     'J18': ["It's lobbying by people who profit from ending livestock farming"], 'J20': ['Humans are cruel by nature; that will never change'], 'K1': ['One swallow does not make a summer'],
-    'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L24': ["It's a 1960s hippie fad"],
+    'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L25': ["It's a 1960s hippie fad"],
 }.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
 

@@ -533,7 +533,7 @@ OP.update({
   me='States something false this guide asks you not to use.',
   r="Then volunteer for the tests yourself, since you think they're so important. Easy to defend when someone else suffers. Or stop taking medicine, since you think it's so fair. I doubt you would. You don't have the courage to change.",
   re='A taunt instead of an argument.'),
- 'I16': dict(
+ 'I17': dict(
   f="Being tradition doesn't put a practice above the laws against cruelty. England banned hunting with dogs and wild animals in circuses, and Brazil's Supreme Court banned the farra do boi and cockfighting. Festivals can keep the music and food without the suffering.",
   fe='Shows cruel traditions have been banned and that culture can go on.',
   m="That's not culture at all, it's barbarism. People who take part in it are sadists and should be jailed, and whoever defends it is on the side of torture. There's nothing to discuss with people who find this acceptable.",
@@ -603,14 +603,14 @@ OP.update({
   me='Promises an impossible purity the accusation will knock down.',
   r="And you use a phone and eat meat, so you're a hypocrite twice over. Shall we start with your plate? Or with your car, your clothes and your electricity bill? Pick one. Hypocrisy for hypocrisy, yours is bigger.",
   re='Tu quoque thrown back, explaining nothing.'),
- 'L21': dict(
+ 'L22': dict(
   f="Those comparisons can hurt, and it's fair to ask for care or avoid them. Pointing out similar mechanisms, like treating sentient beings as things, isn't saying the victims are worth the same. And the case for animals doesn't depend on those analogies.",
   fe="Respects the sensitivity and shows the cause doesn't depend on the comparison.",
   m="Animal farming is worse than the Holocaust, because it kills far more. The numbers speak for themselves, and anyone offended just won't face the truth. You can't soften the truth to please anyone.",
   me='Makes the comparison insensitively, which pushes away and hurts.',
   r="What's offensive is what happens to animals, not my comparison. If words offend you more than deaths, that's your problem. Animals don't care about your discomfort, they care about what's done to them.",
   re='Disregards the real pain those comparisons can cause.'),
- 'L30': dict(
+ 'L31': dict(
   f="That's not an argument, it's a provocation. When we feel pressured, we tend to do the opposite. But the one who pays the \"compensation\" isn't me, it's the animals. Whenever you want to really talk about them, I'm here.",
   fe="Doesn't take the bait and leaves the door open.",
   m="Eat double, it makes no difference. Every vegan already saves 200 animals a year, so even if you eat more I still save far more than you kill. Trying to provoke me won't work, the balance is still positive for the animals.",
