@@ -469,7 +469,7 @@
 
 **Cocho** — recipiente usado para fornecer alimento ou água a animais de criação.
 
-**Comoditização (ou comodificação)** — processo de transformar um ser vivo em mercadoria, tratado por seu valor de troca e não por seu valor intrínseco.
+**Comoditização (ou comodificação)** — processo de transformar um ser senciente em mercadoria, tratado por seu valor de troca e não por seu valor intrínseco.
 
 **Comportamento estereotipado** — padrão de comportamento repetitivo, invariável e sem função aparente, indicador de sofrimento psicológico em animais confinados.
 
@@ -871,7 +871,7 @@
 
 ## 14. Estratégia do Movimento: Reformismo, Abolicionismo e Lavagem Ética
 
-**Abolicionismo** — corrente que rejeita reformas graduais e defende o fim total do uso de animais como propriedade.
+**Abolicionismo** — movimento pela abolição de uma instituição considerada injusta; no sentido histórico, o movimento pelo fim da escravidão de pessoas, sobretudo de pessoas negras, nos séculos XVIII e XIX; na ética animal, a corrente que defende o fim do uso de animais como propriedade, em vez de reformas que apenas regulam esse uso. *O sentido original é o da luta contra a escravidão. Na Grã-Bretanha, ativistas como Olaudah Equiano, que tinha sido escravizado, e William Wilberforce ajudaram a acabar com o tráfico de escravizados em 1807 e com a escravidão na maior parte do império em 1833; nos Estados Unidos, Frederick Douglass e Harriet Tubman estão entre os nomes mais conhecidos, e a escravidão foi abolida em 1865. No Brasil, o movimento abolicionista reuniu nomes como Luiz Gama, que tinha sido escravizado e, como advogado, ajudou a libertar centenas de pessoas, André Rebouças, José do Patrocínio e Joaquim Nabuco, e levou à Lei Áurea, de 13 de maio de 1888, que fez do Brasil o último país das Américas a abolir a escravidão. Muitos abolicionistas, em especial os negros, também combatiam o racismo, e por isso o abolicionismo é visto como parte da história da luta antirracista; mas nem todos o faziam, e o fim da escravidão não veio com reparação nem integração, o que ajuda a explicar desigualdades que continuam. Hoje a palavra também nomeia o abolicionismo penal, que defende substituir as prisões por outras respostas. Na ética animal, o termo foi adotado de propósito, sobretudo pelo jurista Gary Francione a partir dos anos 1990, para defender o fim do status de propriedade dos animais e criticar o bem-estarismo. Essa analogia com a escravidão humana é controversa, e usá-la pede respeito pela origem da palavra. Veja Veganismo abolicionista, Escravidão animal, Bem-estarismo e Reformismo.*
 
 **Bem-estarismo** — posição que aceita o uso de animais desde que com padrões elevados de bem-estar — frequentemente contraposta ao abolicionismo no debate estratégico do movimento.
 
