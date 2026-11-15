@@ -604,8 +604,8 @@
 {
 "i": 458,
 "termo": "Zoonosis",
-"def": "A disease transmissible between animals and humans, a topic relevant to debates on industrial livestock farming and public health.",
-"com": "Most emerging infectious diseases in humans originate in animals. Intensive farming, with thousands of genetically similar animals kept close together, favors the spread and mutation of viruses, such as avian and swine flu; the trade in and hunting of wild animals and deforestation also increase contact between species. The use of antibiotics in livestock farming makes the problem worse by favoring resistant bacteria. See Industrial livestock farming, Antimicrobial resistance and Animal trafficking.",
+"def": "An infectious disease that passes from other animals to humans, or the other way round.",
+"com": "Most infectious diseases that emerge in humans originate in animals: a study published in *Nature* in 2008 found that 60% of emerging disease events between 1940 and 2004 were zoonoses, and that 72% of these came from wildlife, such as HIV and Ebola. Intensive farming, with thousands of genetically similar animals kept close together, favours the circulation and mutation of viruses, such as those of bird flu and swine flu; the wildlife trade, hunting and deforestation also increase contact between species. See Pandemic, Antimicrobial resistance, Industrial livestock farming and Animal trafficking.",
 "pt": "Zoonose"
 },
 {

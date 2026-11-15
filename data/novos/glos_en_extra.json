@@ -483,7 +483,7 @@
   "pt": "Resistência antimicrobiana",
   "termo": "Antimicrobial resistance",
   "def": "The ability of bacteria and other microorganisms to survive drugs that used to kill them, which makes infections harder to treat.",
-  "com": "One of the causes is the mass use of antibiotics in animal farming, often to prevent diseases favored by confinement or to speed up growth. Estimates published in the journal *Science* in 2019 indicate that about three quarters of the antimicrobials sold worldwide are used in farmed animals. The World Health Organization considers resistance one of the greatest threats to global health, and the European Union banned the use of antibiotics as growth promoters in 2006. It is a public health argument that adds to the ethical one. See Industrial livestock farming, Factory farm and Zoonosis."
+  "com": "One of the causes is the mass use of antibiotics in animal farming, often to prevent diseases favored by confinement or to speed up growth. Estimates published in the journal *Science* in 2019 indicate that about three quarters of the antimicrobials sold worldwide are used in farmed animals. The World Health Organization considers resistance one of the greatest threats to global health, and the European Union banned the use of antibiotics as growth promoters in 2006. It is a public health argument that adds to the ethical one. The main driver of resistance in human infections, however, is use in medicine itself, and no one knows precisely how much comes from animals. See Superbug, Industrial livestock farming, Factory farm and Zoonosis."
  },
  {
   "pt": "Pesque e solte",
@@ -1006,5 +1006,17 @@
   "termo": "Extremism",
   "def": "A position at the far end of a spectrum; in political use, ideologies or actions that reject democratic rules, pluralism and the rights of others, often accepting intimidation or violence.",
   "com": "What counts as extreme depends on what a society considers normal, and that reference point shifts over time. In a society shaped by moral anthropocentrism, speciesism and carnism, someone who simply stops eating and using animals is called an extremist, while breeding and killing more than 80 billion land animals a year, most of them confined, seems moderate only because it is common. The label describes distance from custom, not the seriousness of what is advocated: refusing to take part in a harm is a more restrained position than inflicting it. Martin Luther King, in his *Letter from Birmingham Jail* (1963), answered the label by saying the question was not whether to be an extremist, but for what cause. Two cautions: there have indeed been violent actions in the name of animals, which this guide rejects, but they don't represent the vast majority of vegans; and turning the label around, calling meat eaters extremists, also shuts the conversation down. See Radicalism, Carnism, Moral anthropocentrism and Speciesism."
+ },
+ {
+  "pt": "Pandemia",
+  "termo": "Pandemic",
+  "def": "An epidemic that spreads across several countries or continents and affects a large number of people, such as the 1918 flu, the HIV pandemic and COVID-19.",
+  "com": "Most recent pandemics began with viruses from animals. According to the UN biodiversity panel (IPBES), in 2020, the main risk factors for new pandemics are land-use change, the expansion and intensification of agriculture and livestock farming, and the trade and consumption of wild animals. Animal farming plays a real part in this, as shown by the 2009 flu pandemic, which originated in pigs. But most zoonoses come from wild animals, and the origin of COVID-19 is still debated. That's why the guide recommends not saying that \"going vegan prevents pandemics\", but that eating fewer animals reduces one of the risk factors. See Zoonosis, Antimicrobial resistance and Industrial livestock farming."
+ },
+ {
+  "pt": "Superbactéria",
+  "termo": "Superbug",
+  "def": "A bacterium resistant to several antibiotics, sometimes to almost all those available, which makes the infections it causes hard or impossible to treat.",
+  "com": "The name is popular, not technical: specialists speak of multidrug-resistant bacteria. They emerge and spread through excessive or inappropriate antibiotic use, in human medicine and in animal farming, where drugs are often given to healthy animals. One example is the mcr-1 gene, which confers resistance to colistin, a last-resort antibiotic, identified in 2015 in pigs and chickens in China. See Antimicrobial resistance, Zoonosis and Industrial livestock farming."
  }
 ]

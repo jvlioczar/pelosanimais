@@ -691,7 +691,7 @@
   "termo": "Resistência antimicrobiana",
   "sec": 8,
   "def": "capacidade de bactérias e outros micro-organismos de sobreviver a medicamentos que antes os matavam, o que torna infecções mais difíceis de tratar.",
-  "com": "Uma das causas é o uso em massa de antibióticos na criação de animais, muitas vezes para prevenir doenças favorecidas pelo confinamento ou para acelerar o crescimento. Estimativas publicadas na revista *Science* em 2019 indicam que cerca de três quartos dos antimicrobianos vendidos no mundo são usados em animais de criação. A Organização Mundial da Saúde considera a resistência uma das maiores ameaças à saúde global, e a União Europeia proibiu o uso de antibióticos como promotores de crescimento em 2006. É um argumento de saúde pública que se soma ao argumento ético. Veja Pecuária industrial, Fazenda industrial e Zoonose.",
+  "com": "Uma das causas é o uso em massa de antibióticos na criação de animais, muitas vezes para prevenir doenças favorecidas pelo confinamento ou para acelerar o crescimento. Estimativas publicadas na revista *Science* em 2019 indicam que cerca de três quartos dos antimicrobianos vendidos no mundo são usados em animais de criação. A Organização Mundial da Saúde considera a resistência uma das maiores ameaças à saúde global, e a União Europeia proibiu o uso de antibióticos como promotores de crescimento em 2006. O principal motor da resistência nas infecções humanas, porém, é o uso na própria medicina, e não se sabe com precisão quanto vem dos animais. É um argumento de saúde pública que se soma ao argumento ético, sem substituí-lo. Veja Superbactéria, Pecuária industrial, Fazenda industrial e Zoonose.",
   "links": []
  },
  {
@@ -1303,6 +1303,20 @@
   "sec": 6,
   "def": "posição situada no extremo de um espectro; no uso político, ideologias ou ações que rejeitam as regras democráticas, o pluralismo e os direitos dos outros, muitas vezes aceitando a intimidação ou a violência.",
   "com": "O que conta como extremo depende do que uma sociedade considera normal, e esse ponto de referência muda com o tempo. Numa sociedade marcada pelo antropocentrismo moral, pelo especismo e pelo carnismo, quem simplesmente deixa de comer e usar animais é chamado de extremista, enquanto criar e matar mais de 80 bilhões de animais terrestres por ano, a maioria confinada, parece moderado só porque é comum. O rótulo descreve a distância em relação ao costume, e não a gravidade do que se defende: recusar-se a participar de um dano é uma posição mais contida do que praticá-lo. Martin Luther King, na *Carta da prisão de Birmingham* (1963), respondeu ao rótulo dizendo que a questão não era ser ou não extremista, mas por qual causa. Dois cuidados: houve, sim, ações violentas em nome dos animais, que este guia rejeita, mas elas não representam a grande maioria dos veganos; e devolver o rótulo, chamando quem come carne de extremista, também fecha a conversa. Veja Radicalismo, Carnismo, Antropocentrismo moral e Especismo.",
+  "links": []
+ },
+ {
+  "termo": "Pandemia",
+  "sec": 17,
+  "def": "epidemia que se espalha por vários países ou continentes e atinge um grande número de pessoas, como a gripe de 1918, a pandemia de HIV e a covid-19.",
+  "com": "A maioria das pandemias recentes começou com vírus vindos de animais. Segundo o painel de biodiversidade da ONU (IPBES), em 2020, os principais fatores de risco para novas pandemias são a mudança no uso da terra, a expansão e a intensificação da agropecuária e o comércio e o consumo de animais silvestres. A criação de animais tem um papel real nisso, como mostrou a pandemia de gripe de 2009, que teve origem em porcos. Mas a maior parte das zoonoses vem de animais silvestres, e a origem da covid-19 ainda é debatida. Por isso o guia recomenda não dizer que \"ser vegano evita pandemias\", e sim que comer menos animais reduz um dos fatores de risco. Veja Zoonose, Resistência antimicrobiana e Pecuária industrial.",
+  "links": []
+ },
+ {
+  "termo": "Superbactéria",
+  "sec": 8,
+  "def": "bactéria resistente a vários antibióticos, às vezes a quase todos os disponíveis, o que torna as infecções que ela causa difíceis ou impossíveis de tratar.",
+  "com": "O nome é popular, e não técnico: os especialistas falam em bactérias multirresistentes. Elas surgem e se espalham pelo uso excessivo ou inadequado de antibióticos, na medicina humana e na criação de animais, onde os remédios são dados muitas vezes a animais saudáveis. Um exemplo é o gene mcr-1, que dá resistência à colistina, um antibiótico de último recurso, identificado em 2015 em porcos e frangos na China. Veja Resistência antimicrobiana, Zoonose e Pecuária industrial.",
   "links": []
  }
 ]
