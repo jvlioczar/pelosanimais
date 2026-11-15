@@ -365,6 +365,7 @@ VIESES = {
 }
 
 CADEIAS = {
+ 'Consumo consciente': ('Conscious consumption', 'A8 ("they\'re just animals") and J5 ("meat tastes good")'),
  'Naturalista': ('Naturalist', 'G2 ("but it\'s necessary")'),
  'Nutricional': ('Nutritional', 'E1 ("my body, my choice")'),
  'Bem-estar': ('Welfare', 'A15 and A18'),

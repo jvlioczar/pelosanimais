@@ -45,9 +45,34 @@ def fonte(nomes, tam):
 
 
 TXT = {
-    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'uma boa resposta.', '+{n} argumentos contra o veganismo, na versão mais forte, com boas respostas', 'pelosanimais.biblioverse.org'),
-    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'a good answer.', '{n}+ arguments against veganism, in their strongest form, with good answers', 'fortheanimals.biblioverse.org'),
+    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'uma boa resposta.', 'Confira mais de {n} argumentos contra o veganismo e o antiespecismo, tratados de forma honesta', 'pelosanimais.biblioverse.org'),
+    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'a good answer.', 'Explore more than {n} arguments against veganism and antispeciesism, treated honestly', 'fortheanimals.biblioverse.org'),
 }
+
+# As mesmas fontes do site (Google Fonts, licença OFL), guardadas em tools/fontes
+FONTES = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fontes')
+def fonte_site(arq, tam, peso):
+    p = os.path.join(FONTES, arq)
+    if not os.path.exists(p): return fonte(['segoeuib.ttf', 'arialbd.ttf'], tam)
+    f = ImageFont.truetype(p, tam)
+    try: f.set_variation_by_name(peso)
+    except Exception: pass
+    return f
+TITULO, TEXTO, MONO = 'mozillaheadline/MozillaHeadline[wdth,wght].ttf', 'inter/Inter[opsz,wght].ttf', 'jetbrainsmono/JetBrainsMono[wght].ttf'
+
+def quebra(d, texto, fnt, larg):
+    """Quebra o texto em linhas que caibam na largura. Em duas linhas, equilibra os tamanhos para não deixar uma palavra sozinha."""
+    ps = texto.split()
+    if d.textlength(texto, font=fnt) > larg:
+        pares = [(' '.join(ps[:i]), ' '.join(ps[i:])) for i in range(1, len(ps))]
+        cabem = [p for p in pares if max(d.textlength(x, font=fnt) for x in p) <= larg]
+        if cabem: return list(min(cabem, key=lambda p: max(d.textlength(x, font=fnt) for x in p)))
+    linhas, atual = [], ''
+    for p in texto.split():
+        t = (atual + ' ' + p).strip()
+        if d.textlength(t, font=fnt) <= larg: atual = t
+        else: linhas.append(atual); atual = p
+    return linhas + [atual]
 
 def compartilhar(n_args, lg='pt'):
     m1, m2, t1, t2, sb, dom = TXT[lg]
@@ -58,18 +83,19 @@ def compartilhar(n_args, lg='pt'):
     d.rounded_rectangle([90, 90, W - 90, H - 90], radius=56, fill=CREME, outline=TINTA, width=6)
     for y in range(330, H - 120, 76): d.line([150, y, W - 150, y], fill=(205, 225, 240), width=3)
     logo(im, 150, 140, 5.4)
-    marca = fonte(['seguibl.ttf', 'segoeuib.ttf', 'arialbd.ttf'], 54)
+    marca = fonte_site(TITULO, 56, b'Bold')
     d.text((390, 180), m1, font=marca, fill=TINTA)
     d.text((390, 248), m2, font=marca, fill=TINTA)
-    tit = fonte(['seguibl.ttf', 'georgiab.ttf', 'arialbd.ttf'], 150)
-    d.text((150, 470), t1, font=tit, fill=TINTA)
-    l2 = t2
-    x0, y0, x1, y1 = d.textbbox((150, 660), l2, font=tit)
-    d.rectangle([x0 - 16, y0 + 20, x1 + 16, y1 + 14], fill=AMARELO)
-    d.text((150, 660), l2, font=tit, fill=TINTA)
-    sub = fonte(['segoeuib.ttf', 'arialbd.ttf'], 50)
-    d.text((150, 920), sb.format(n=n_args // 50 * 50), font=sub, fill=TINTA)
-    d.text((150, 1000), dom, font=fonte(['consolab.ttf', 'cour.ttf', 'arialbd.ttf'], 44), fill=(60, 90, 60))
+    tit = fonte_site(TITULO, 150, b'Bold')
+    d.text((150, 450), t1, font=tit, fill=TINTA)
+    x0, y0, x1, y1 = d.textbbox((150, 630), t2, font=tit)
+    d.rectangle([x0 - 16, y0 + 10, x1 + 16, y1 + 14], fill=AMARELO)
+    d.text((150, 630), t2, font=tit, fill=TINTA)
+    sub = fonte_site(TEXTO, 46, b'SemiBold')
+    y = 850
+    for ln in quebra(d, sb.format(n=n_args // 10 * 10), sub, W - 300):
+        d.text((150, y), ln, font=sub, fill=TINTA); y += 60
+    d.text((150, y + 18), dom, font=fonte_site(MONO, 40, b'Bold'), fill=(60, 90, 60))
     return im.resize((1200, 630), Image.LANCZOS)
 
 

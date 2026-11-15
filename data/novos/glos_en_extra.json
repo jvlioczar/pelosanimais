@@ -268,5 +268,35 @@
   "termo": "Learned helplessness",
   "def": "A state in which a person stops trying to change a situation because they have come to believe that nothing they do will make a difference.",
   "com": "The concept comes from experiments by Martin Seligman and Steven Maier in the 1960s with dogs given electric shocks, an example of the very animal suffering the guide discusses. In 2016, the same authors revised the theory: passivity in the face of pain would be the default response, and what is learned is the perception of control. In activism, it shows up as the feeling that exploitation is too big to change. Seeing concrete results, even small ones, helps get out of it. See Activist burnout and the argument \"One person doesn't make a difference\"."
+ },
+ {
+  "pt": "Fato",
+  "termo": "Fact",
+  "def": "Something that happens or is the case, and that can be checked by observation or evidence.",
+  "com": "Facts alone don't decide what we should do: from the fact that we have eaten meat for millennia it doesn't follow that we should keep doing so (see Hume's law on the fallacies page). But moral arguments depend on getting the facts right. \"Fish don't feel pain\" is a factual claim, and it can be checked. Telling apart fact, opinion and value helps you know what kind of answer each claim calls for. See Opinion and Truth."
+ },
+ {
+  "pt": "Opinião",
+  "termo": "Opinion",
+  "def": "A personal judgment about something, which may or may not be supported by reasons and evidence.",
+  "com": "\"That's my opinion\" doesn't end the conversation. Opinions about facts can be checked, and moral opinions can be assessed by the reasons behind them and by their consistency with what the person already accepts. Everyone has the right to hold opinions, but not every opinion is equally well grounded. See Fact and the argument \"Veganism is opinion, not science\"."
+ },
+ {
+  "pt": "Verdade",
+  "termo": "Truth",
+  "def": "Correspondence between a statement and reality: a statement is true when things are as it says.",
+  "com": "Factual statements are true or false regardless of who defends them. In ethics, philosophers debate whether moral judgments can also be true, the debate between moral realism and anti-realism. The guide doesn't depend on settling that question: it asks for consistency. If a human being's pain matters because it is pain, another sentient being's pain matters too. See Moral relativism, Fact and Opinion."
+ },
+ {
+  "pt": "Mito",
+  "termo": "Myth",
+  "def": "A widely held belief that isn't supported by the facts; in anthropology, also a traditional narrative that gives meaning to a culture, without necessarily being false.",
+  "com": "In the debate about animals, a myth is a widespread false belief, such as \"plant protein is incomplete\" or \"fish don't feel pain\". But calling something a myth requires showing the evidence: a belief doesn't become a myth just because we disagree with it, and vegans repeat myths too, such as some exaggerations about health (see \"Stop saying\"). See Fact and Truth."
+ },
+ {
+  "pt": "Justificativa",
+  "termo": "Justification",
+  "def": "A reason given to show that an action or a belief is right.",
+  "com": "In ethics, anyone who causes harm to someone needs a justification, and the guide examines precisely the justifications given for using animals. A good justification has to be factually true and morally relevant. It is also different from an explanation: explaining why someone does something, such as habit or culture, doesn't show that it is right to do it. See Argument and Fallacies."
  }
 ]

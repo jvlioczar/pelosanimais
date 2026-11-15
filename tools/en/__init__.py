@@ -30,7 +30,7 @@ _EXTRA_EN = {'A12': ["We're all naturally biased: we protect our family, our spe
     'I10': ['Silk is a natural, noble fabric, better than synthetics', 'Nobody kills anything to make silk'], 'I11': ["Honey is healthy and natural; there's nothing wrong with it"],
     'N21': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L20': ['Vegans prefer animals to people']}
 for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-15)
-    'A1': ["You can't know what goes on in an animal's head"], 'A4': ["Plants have it worse, they can't even run away", 'If you defend life, why do you kill plants?', 'Plants defend themselves, so they want to live'],
+    'A1': ["You can't know what goes on in an animal's head", "An animal is a machine; it feels nothing", 'Animals are like robots; they just react', 'I can only be sure that I feel'], 'A4': ["Plants have it worse, they can't even run away", 'If you defend life, why do you kill plants?', 'Plants defend themselves, so they want to live'],
     'A7': ["It's just pity for cute animals", 'Veganism is more emotion than reason'], 'A9': ['Animals are less evolved than us'], 'A20': ["For a cow, being alive or dead makes no difference"],
     'A21': ["Slaughter isn't murder"], 'A22': ['A cow would kill you if it had the chance'], 'A23': ['Ethics is for humans, not animals'],
     'B1': ['Almost every slaughterhouse is clean and painless'], 'B3': ['Animals live better on the farm than in the wild'], 'B8': ['On the farm the animals are treated like royalty'],

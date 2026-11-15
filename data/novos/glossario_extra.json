@@ -441,5 +441,40 @@
   "links": [
    "https://doi.org/10.1037/rev0000033"
   ]
+ },
+ {
+  "termo": "Fato",
+  "sec": 6,
+  "def": "aquilo que acontece ou é o caso, e que pode ser verificado por observação ou evidência.",
+  "com": "Fatos sozinhos não decidem o que devemos fazer: do fato de que comemos carne há milênios não se segue que devemos continuar (veja Lei de Hume, na página de falácias). Mas os argumentos morais dependem de fatos certos. \"Peixes não sentem dor\" é uma afirmação de fato, e pode ser verificada. Distinguir fato, opinião e valor ajuda a saber que tipo de resposta cada afirmação pede. Veja Opinião e Verdade.",
+  "links": []
+ },
+ {
+  "termo": "Opinião",
+  "sec": 6,
+  "def": "juízo pessoal sobre algo, que pode estar ou não apoiado em razões e evidências.",
+  "com": "\"É a minha opinião\" não encerra a conversa. Opiniões sobre fatos podem ser checadas, e opiniões morais podem ser avaliadas pelas razões que as sustentam e pela coerência com o que a própria pessoa já aceita. Todos têm direito a ter opiniões, mas nem toda opinião está igualmente bem fundamentada. Veja Fato e o argumento \"Veganismo é opinião, não ciência\".",
+  "links": []
+ },
+ {
+  "termo": "Verdade",
+  "sec": 6,
+  "def": "correspondência entre uma afirmação e a realidade: uma afirmação é verdadeira quando as coisas são como ela diz.",
+  "com": "Afirmações de fato são verdadeiras ou falsas independentemente de quem as defende. Na ética, filósofos discutem se juízos morais também podem ser verdadeiros, o debate entre realismo e antirrealismo moral. O guia não depende de resolver essa questão: pede coerência. Se a dor de um ser humano importa porque é dor, a dor de outro ser senciente também importa. Veja Relativismo moral, Fato e Opinião.",
+  "links": []
+ },
+ {
+  "termo": "Mito",
+  "sec": 6,
+  "def": "crença amplamente aceita que não se sustenta nos fatos; em antropologia, também uma narrativa tradicional que dá sentido a uma cultura, sem ser necessariamente falsa.",
+  "com": "No debate sobre os animais, chama-se de mito uma crença difundida e falsa, como \"proteína vegetal é incompleta\" ou \"peixe não sente dor\". Mas chamar algo de mito exige mostrar a evidência: uma crença não vira mito só porque discordamos dela, e veganos também repetem mitos, como alguns exageros sobre saúde (veja o \"Pare de dizer\"). Veja Fato e Verdade.",
+  "links": []
+ },
+ {
+  "termo": "Justificativa",
+  "sec": 6,
+  "def": "razão apresentada para mostrar que uma ação ou uma crença é correta.",
+  "com": "Na ética, quem causa dano a alguém precisa de uma justificativa, e o guia examina justamente as justificativas dadas para usar animais. Uma boa justificativa precisa ser verdadeira nos fatos e relevante moralmente. Ela também é diferente de uma explicação: explicar por que alguém faz algo, como o hábito ou a cultura, não mostra que é certo fazê-lo. Veja Argumento e Falácias.",
+  "links": []
  }
 ]
