@@ -138,10 +138,10 @@ PAGINAS = [
 <tr><td><strong>Universalidade</strong></td><td>Uma regra moral vale para todos os casos iguais, não só para os que nos convêm</td><td><a href="../argumentos/a12.html">A12</a>, <a href="../argumentos/a11.html">A11</a></td></tr>
 <tr><td><strong>Senciência e interesses</strong></td><td>Quem pode ter experiências boas ou ruins tem interesses que contam, venha o dano de onde vier</td><td><a href="../argumentos/a1.html">A1</a>, <a href="../familias/n.html">família N</a></td></tr>
 <tr><td><strong>Círculo moral e progresso</strong></td><td>A história moral é, em boa parte, a inclusão de quem antes era excluído</td><td><a href="../argumentos/a23.html">A23</a></td></tr>
-<tr><td><strong>Justiça</strong></td><td>Não impor a outros danos graves para obter benefícios pequenos</td><td><a href="../argumentos/j5.html">J5</a></td></tr>
+<tr><td><strong>Justiça</strong></td><td>Não impor a outros danos graves para obter benefícios pequenos</td><td><a href="../argumentos/j6.html">J6</a></td></tr>
 <tr><td><strong>Bem comum</strong></td><td>Pensar no conjunto dos afetados, inclusive os que não votam, não falam e ainda não nasceram</td><td><a href="../argumentos/n17.html">N17</a></td></tr></table></div>
 <h2>O que enfraquece</h2><div class="tabela"><table><tr><th scope="col">Atitude</th><th scope="col">Como enfraquece</th><th scope="col">Onde aparece neste guia</th></tr>
-<tr><td><strong>Racionalidade só instrumental</strong></td><td>Usar a razão apenas para conseguir o que se quer, sem perguntar se o fim é justo</td><td><a href="../argumentos/j5.html">J5</a>, <a href="../argumentos/e15.html">E15</a></td></tr>
+<tr><td><strong>Racionalidade só instrumental</strong></td><td>Usar a razão apenas para conseguir o que se quer, sem perguntar se o fim é justo</td><td><a href="../argumentos/j6.html">J6</a>, <a href="../argumentos/e15.html">E15</a></td></tr>
 <tr><td><strong>Incoerência lógica</strong></td><td>Aceitar um princípio num caso e rejeitá-lo no caso igual, quando a conclusão incomoda</td><td><a href="../argumentos/e11.html">E11</a></td></tr>
 <tr><td><strong>Fuga do que é relevante</strong></td><td>Trocar a pergunta "isso prejudica alguém?" por outras: tradição, sabor, saúde, quem está falando</td><td><a href="../familias.html">Parte IND</a></td></tr>
 <tr><td><strong>Parcialidade</strong></td><td>Dar peso maior aos interesses de quem se parece conosco</td><td><a href="../argumentos/a13.html">A13</a></td></tr>

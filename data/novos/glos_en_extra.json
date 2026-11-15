@@ -604,5 +604,47 @@
   "termo": "Charity",
   "def": "Help given voluntarily to those in need, such as donations of money, time or goods, usually without expecting anything in return.",
   "com": "In the animal cause, charity shows up in donations to shelters, sanctuaries and organizations, and in rescues. It is valuable, but there is an important critique: treating animals as objects of charity, rather than as beings with rights, suggests that helping them is an optional favor. For many animal advocates, what animals need is justice, starting with not being exploited. Charity can also be more or less effective, and some organizations assess where donations reduce the most suffering. See Altruism, Effective altruism and Rights."
+ },
+ {
+  "pt": "Lobby",
+  "termo": "Lobby",
+  "def": "The activity of organized groups that seek to influence laws, public policies and government decisions in favor of their interests; also the group that exerts this pressure.",
+  "com": "The word comes from the lobbies where legislators were approached. Lobbying is legal and common in democracies, but each group's power is very unequal. In Brazil, the farming sector has one of the largest parliamentary caucuses in Congress, and it tends to weigh in on issues such as environmental licensing and animal welfare rules. Animal protection organizations also lobby, for example for bans on cosmetics testing on animals. See Lobbying, Agribusiness and Representation."
+ },
+ {
+  "pt": "Lobismo",
+  "termo": "Lobbying",
+  "def": "The practice or system of lobbies and lobbyists acting on those who decide public policy.",
+  "com": "Whether the activity should have its own transparency rules, such as registering lobbyists and disclosing meetings, has been debated for years, to reduce the risk of undue influence. See Lobby."
+ },
+ {
+  "pt": "Políticas afirmativas",
+  "termo": "Affirmative action",
+  "def": "Measures, usually temporary, that seek to correct historical inequalities affecting discriminated groups, giving them more access to opportunities.",
+  "com": "The best-known example in Brazil is quotas in public universities, which the Supreme Federal Court ruled constitutional in 2012 and which became mandatory in federal universities by law that same year. The underlying idea is that treating equally those who start from very unequal situations can keep the inequality in place. This connects with the principle of equal consideration of interests: equal consideration doesn't mean identical treatment, but giving the same weight to what each one needs. See Intersectionality, Representation and Equal consideration."
+ },
+ {
+  "pt": "Representatividade",
+  "termo": "Representation",
+  "def": "The presence of people from different social groups in spaces of decision-making, visibility and voice, such as governments, companies, media and social movements.",
+  "com": "A movement with broader representation tends to hear more experiences and reach more people; in the animal movement, there are criticisms that in some countries it is still dominated by certain social groups. There is also an issue specific to the cause: animals can't represent themselves or vote, and depend on humans to defend their interests. That is why there are proposals for the political representation of animals, and parties devoted to them, such as the Party for the Animals in the Netherlands, which first won seats in parliament in 2006. See Lobby, Affirmative action and Intersectionality."
+ },
+ {
+  "pt": "Subsídios",
+  "termo": "Subsidies",
+  "def": "Public resources given to a sector or product, such as direct payments, cheap credit, insurance or price guarantees, to lower its costs or sustain its production.",
+  "com": "According to a 2021 report by FAO, UNDP and UNEP, support to agricultural producers worldwide amounts to about 540 billion dollars a year, and 87% of it distorts prices or causes environmental and social harm. Much of it goes to animal farming and feed grains, which helps keep meat, milk and eggs artificially cheap. The environmentalist critique asks for prices to include costs to the environment and health, but the animal-centered critique goes further: the gravest cost, the suffering and death of animals, isn't counted at all. And a caution: a policy that charged only for environmental impact could make chicken and fish cheaper, since they emit less per kilo, and increase the number of animals killed. Well-justified subsidies would be those supporting plant proteins, fermentation and cultivated meat. See Tax incentive, Agribusiness and Externality."
+ },
+ {
+  "pt": "Incentivo fiscal",
+  "termo": "Tax incentive",
+  "def": "A reduction of or exemption from taxes granted by the government to encourage an activity, a sector or the consumption of a product.",
+  "com": "Tax incentives usually apply to products considered essential or strategic. In Brazil's tax reform, for example, meats were included in the national basic food basket with a zero tax rate, alongside foods such as rice and beans. From the animals' point of view, the problem is that the tax doesn't account for the cost production imposes on them: a product that requires confining, causing suffering to and killing sentient beings gets the same treatment as, or better than, alternatives that don't. Being strategic or profitable for the economy doesn't make a practice just. A tax policy that took animals seriously would favor plant proteins and new food technologies, not exploitation. See Subsidies and Externality."
+ },
+ {
+  "pt": "Externalidade",
+  "termo": "Externality",
+  "def": "A cost or benefit that an activity causes to other people, or other beings, and that doesn't show up in the product's price.",
+  "com": "In the production of meat, milk and eggs, the most cited externalities are water and air pollution, greenhouse gas emissions, deforestation, antibiotic resistance and the risk of new diseases from animals. Since these costs aren't in the price, society pays them, and the product seems cheaper than it is. The animal-centered critique adds a point usually left out even of this account: the suffering and death of the animals themselves, which aren't even treated as a cost, because the animals are seen as the product. See Subsidies, Tax incentive and Antimicrobial resistance."
  }
 ]

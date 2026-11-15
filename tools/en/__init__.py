@@ -42,9 +42,9 @@ for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-1
     'G12': ["Vegans are all skinny and can't gain weight"], 'G16': ['Cavemen ate meat'], 'G18': ["Without soy and fake meat, vegans can't get enough nutrients"],
     'H7': ["Cow burps don't warm the planet", 'If cattle pollute, just eat the cattle'], 'H15': ['With good management, livestock farming becomes sustainable', 'Modern livestock farming is more efficient and emits less per kilo'],
     'H19': ["If nobody fishes, the sea will be overrun with fish"], 'I1': ["Livestock and animal testing brought progress; we can't abolish them"],
-    'J1': ['Vegans have to buy everything at health-food stores'], 'J4': ["Vegans can't go to barbecues"], 'J6': ['Vegan food is all foreign stuff', "Vegans can't even have a little treat"],
-    'J21': ["It's lobbying by people who profit from ending livestock farming"], 'J23': ['Humans are cruel by nature; that will never change'], 'K1': ['One swallow does not make a summer'],
-    'J7': ["I'm flexitarian and spare the animals", "I'm reducetarian; I eat less meat and already spare lots of animals", "I'm vegan at home and eat everything when I'm out"],
+    'J1': ['Vegans have to buy everything at health-food stores'], 'J5': ["Vegans can't go to barbecues"], 'J7': ['Vegan food is all foreign stuff', "Vegans can't even have a little treat"],
+    'J22': ["It's lobbying by people who profit from ending livestock farming"], 'J24': ['Humans are cruel by nature; that will never change'], 'K1': ['One swallow does not make a summer'],
+    'J8': ["I'm flexitarian and spare the animals", "I'm reducetarian; I eat less meat and already spare lots of animals", "I'm vegan at home and eat everything when I'm out"],
     'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L25': ["It's a 1960s hippie fad"],
 }.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])

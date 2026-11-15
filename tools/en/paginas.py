@@ -70,7 +70,7 @@ POLITICAS = {
           'Whether "labor" applies to animals is a real debate: Marx himself distinguished human labor from animal activity. But authors such as Ted Benton and Kendra Coulter show that cows, horses and working dogs perform productive functions without choice or compensation.',
           'Even those who reject calling it labor must explain why the exploitation of a sentient being would be acceptable just because it is not human.'],
   replica='The most serious version says the priority must be the human working class, and that the animal cause diverts energy from the revolution.',
-  resposta='Ending the exploitation of animals does not compete with the workers\' struggle, and industrial animal farming also exploits the humans who work in it (J14). And "first one cause, then the other" has been used against almost every struggle that came after (J19, K5).',
+  resposta='Ending the exploitation of animals does not compete with the workers\' struggle, and industrial animal farming also exploits the humans who work in it (J15). And "first one cause, then the other" has been used against almost every struggle that came after (J20, K5).',
   nomes=[('Ted Benton', 'British sociologist; in Natural Relations (1993), he brings Marxism and animal rights together and criticizes what is anthropocentric in Marx'),
          ('David Nibert', 'American sociologist; in Animal Oppression and Human Violence (2013), he ties the oppression of animals to the history of capitalism'),
          ('Marco Maurizi', 'Italian philosopher; in Beyond Nature: Animal Liberation, Marxism, and Critical Theory (2021), he defends a Marxist reading of animal liberation'),
@@ -217,7 +217,7 @@ POLITICAS = {
           'Part of the resistance comes from fear that talking about animal rights lowers the human dignity of groups that have already been dehumanized. But defending animals does not require denying anything to any human.',
           'Animals are today, by far, the group with the most individuals deliberately killed by humans. And almost all of those deaths happen in exploitation carried out by majorities and large companies, such as industrial fishing, industrial animal farming and insect farming, not in the practices of human minorities.'],
   replica='The most serious version points to a real problem: animal campaigns have targeted minority practices, such as ritual slaughter or hunting by Indigenous peoples, while ignoring far more numerous majority practices.',
-  resposta='The criticism is fair and should be taken seriously: the standard has to be the same for everyone, and starting with the most widespread exploitation is the most consistent course. That is an argument against selectivity, not against animals. A respect for diversity that did not count animals would repeat the very cut it fights (D6, J19).',
+  resposta='The criticism is fair and should be taken seriously: the standard has to be the same for everyone, and starting with the most widespread exploitation is the most consistent course. That is an argument against selectivity, not against animals. A respect for diversity that did not count animals would repeat the very cut it fights (D6, J20).',
   nomes=[('Will Kymlicka and Sue Donaldson', 'Canadian philosophers; Kymlicka is one of the main theorists of multiculturalism and argues, with Donaldson, that the left should include animals'),
          ('Claire Jean Kim', 'American political scientist; in Dangerous Crossings (2015), she analyzes conflicts between the defense of animals and of minorities and proposes taking both seriously at once'),
          ('Maneesha Deckha', 'Canadian legal scholar; in Animals as Legal Beings (2021), she starts from feminism and postcolonial thought to argue for a new legal status for animals')],
@@ -238,7 +238,7 @@ POLITICAS = {
   principio='Use evidence and reason to do the most good possible with the resources available.',
   quebra=["Effective altruism's criteria, scale, neglectedness and tractability, favor the animal cause: the number of victims is enormous and the resources devoted to it are small.",
           'Excluding animals in advance is deciding the result before doing the math, the opposite of what the approach proposes.',
-          'Not eating animals takes no resources from any other cause (J19).'],
+          'Not eating animals takes no resources from any other cause (J20).'],
   replica='The most serious version says it is hard to compare well-being across species, and that uncertainty favors the better-known human causes.',
   resposta='The uncertainty is real, but it cuts both ways, and the scale is so large that the animal cause stays a priority even with heavy discounts on the weight of each animal.',
   nomes=[('Peter Singer', 'one of the central references of both effective altruism and antispeciesism'),
@@ -271,7 +271,7 @@ POLITICAS = {
           'What is "viable" changes, and it changes because someone acts. In a few decades, conventional battery cages were banned in the European Union, the sale of cosmetics tested on animals was banned in dozens of countries and the market for plant-based alternatives grew. Treating what exists today as a fixed limit confuses the possible with the habitual (D2, K9).',
           'Philosophical pragmatism, in authors such as William James and John Dewey, asks that moral beliefs be revised by experience. The experience gathered so far, from the science of sentience to the alternatives available, is exactly what calls for revision in the case of animals.'],
   replica='The most serious version says that resources and political attention are limited, and that a responsible politician or manager should spend them where there is popular support and a sure result.',
-  resposta='That calculation applies to choosing the means, not to deciding who counts. A pragmatist can prefer gradual goals with proven results for animals, and many exist. What a pragmatist cannot do, without abandoning their own method, is ignore the consequences for those who feel. And not eating animals depends on neither votes nor public budgets (J19, K6).',
+  resposta='That calculation applies to choosing the means, not to deciding who counts. A pragmatist can prefer gradual goals with proven results for animals, and many exist. What a pragmatist cannot do, without abandoning their own method, is ignore the consequences for those who feel. And not eating animals depends on neither votes nor public budgets (J20, K6).',
   mais=[('Not to be confused with pragmatic veganism', [
       'This page is about pragmatism as a general political and philosophical outlook. It is not the same as so-called pragmatic veganism, a current within the vegan movement that accepts the goal of ending animal exploitation and discusses which strategies get the most results, such as gradual reforms and corporate campaigns. One is an objection from outside; the other is an internal debate about means.',
       'Philosophical pragmatism does not, on its own, lead to a conclusion about animals: it is a method, and what it concludes depends on which consequences are counted. The authors below show what happens when the consequences for animals are counted.'])],
@@ -419,10 +419,10 @@ ALEM = {
 <tr><td><strong>Universality</strong></td><td>A moral rule applies to all like cases, not only to those that suit us</td><td><a href="../argumentos/a12.html">A12</a>, <a href="../argumentos/a11.html">A11</a></td></tr>
 <tr><td><strong>Sentience and interests</strong></td><td>Whoever can have good or bad experiences has interests that count, wherever the harm comes from</td><td><a href="../argumentos/a1.html">A1</a>, <a href="../familias/n.html">family N</a></td></tr>
 <tr><td><strong>The moral circle and progress</strong></td><td>Moral history is, to a large extent, the inclusion of those who were once excluded</td><td><a href="../argumentos/a23.html">A23</a></td></tr>
-<tr><td><strong>Justice</strong></td><td>Not imposing serious harm on others to obtain small benefits</td><td><a href="../argumentos/j5.html">J5</a></td></tr>
+<tr><td><strong>Justice</strong></td><td>Not imposing serious harm on others to obtain small benefits</td><td><a href="../argumentos/j6.html">J6</a></td></tr>
 <tr><td><strong>The common good</strong></td><td>Thinking about everyone affected, including those who don't vote, can't speak and aren't born yet</td><td><a href="../argumentos/n17.html">N17</a></td></tr></table></div>
 <h2>What weakens it</h2><div class="tabela"><table><tr><th scope="col">Attitude</th><th scope="col">How it weakens</th><th scope="col">Where it appears in this guide</th></tr>
-<tr><td><strong>Merely instrumental rationality</strong></td><td>Using reason only to get what one wants, without asking whether the end is just</td><td><a href="../argumentos/j5.html">J5</a>, <a href="../argumentos/e15.html">E15</a></td></tr>
+<tr><td><strong>Merely instrumental rationality</strong></td><td>Using reason only to get what one wants, without asking whether the end is just</td><td><a href="../argumentos/j6.html">J6</a>, <a href="../argumentos/e15.html">E15</a></td></tr>
 <tr><td><strong>Logical inconsistency</strong></td><td>Accepting a principle in one case and rejecting it in a like case when the conclusion is uncomfortable</td><td><a href="../argumentos/e11.html">E11</a></td></tr>
 <tr><td><strong>Escaping what is relevant</strong></td><td>Swapping the question "does this harm someone?" for others: tradition, taste, health, who is speaking</td><td><a href="../familias.html">Part IND</a></td></tr>
 <tr><td><strong>Partiality</strong></td><td>Giving greater weight to the interests of those who resemble us</td><td><a href="../argumentos/a13.html">A13</a></td></tr>

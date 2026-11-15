@@ -38,7 +38,7 @@ OP = {
   me='Disputes the wrong fact, and the claim is false: early humans ate meat. Even if it were true, it would accept that what is natural decides what is right.',
   r="Dying of an infection at thirty is natural too, so be consistent and stop taking medicine, wearing glasses and going to the dentist. But of course you won't: a hypocrite only cares about what's natural when it defends the barbecue.",
   re='The underlying idea is good, but the personal attack makes the person defend themselves instead of thinking.'),
- 'J5': dict(
+ 'J6': dict(
   f="For people who like it, it does taste good. The question is whether that pleasure justifies someone's life. No one would defend eating dogs because they're tasty. And much of the flavor comes from seasoning and cooking, which work on plants too.",
   fe='Concedes what is true, puts the weight on both sides and tests the principle with a case the person rejects.',
   m="It's true that many people like it, but that's no longer a problem: plant-based meat is now exactly the same as the real thing in flavor, texture and juiciness. In a blind test nobody can tell the difference, so you lose nothing by switching.",
@@ -262,7 +262,7 @@ OP = {
   me='A false generalization: there are old pastures and pastures in other ecosystems. The exaggeration shifts the focus.',
   r="Cattle destroy everything they touch; that's a fact: they wreck the soil, the water and the climate. Any informed person knows it, and whoever defends pasture either hasn't read anything on the subject or has a rancher in the family.",
   re='A vague, exaggerated claim that is easy to rebut, with a personal jab at the end, and it also swaps the moral question for an environmental one.'),
- 'J7': dict(
+ 'J8': dict(
   f="Eating less meat is good and deserves credit: fewer animals die. But if killing without need is wrong, doing it less often is less wrong, not right. Cutting back is a great path, as long as it doesn't become the destination.",
   fe='Values the step and shows it does not answer the moral question.',
   m='A little meat is still meat, and it changes nothing. To the animal that died, it makes no difference whether you eat it every day or only on Sundays. Cutting back is just a way to feel good without really changing, and I see no reason to praise it.',
@@ -547,21 +547,21 @@ OP.update({
   me="Confirms the argument's false premise.",
   r="A heart attack is what's expensive. But fine, keep eating meat to save money and spend it later at the hospital. Taking care of your health is cheaper, but you'd rather save now and pay later.",
   re='Uses the threat of disease instead of showing real prices.'),
- 'J3': dict(
+ 'J4': dict(
   f="Changing takes effort at first, like any learning, but then it gets easy. Everyday vegan food can be as quick as food with meat: rice, beans frozen in portions, roasted vegetables, pasta. And you can change gradually.",
   fe='Acknowledges the initial effort and shows it is small and temporary.',
   m="There's nothing hard about it, it's just willpower. People who say they have no time are making excuses, because everyone has time for what they consider important. Those who want to find a way; those who don't find an excuse.",
   me='Ignores the real difficulty and sounds judgmental.',
   r="You have time to watch shows, right? But not to cook some beans? Then the problem isn't time, it's priorities. I've never seen anyone die from cooking beans. You're not busy, you're comfortable.",
   re='Accuses instead of helping.'),
- 'J4': dict(
+ 'J5': dict(
   f="The social cost exists, but it's usually smaller than it looks and shrinks over time. Vegan options keep growing in restaurants and delivery apps, you can bring a dish to the party and research before traveling. People with allergies do this all the time.",
   fe='Acknowledges the difficulty and shows concrete solutions.',
   m="I've never had any problem, anywhere in the world there's a vegan option nowadays. People who say it's hard just didn't look properly. The problem isn't veganism, it's not bothering to look for an option.",
   me="Denies the real experience of many people.",
   r="So your fun is worth more than an animal's life? How selfish. A party without meat won't kill you. The animals didn't ask to die so you could have fun at the weekend. Stay home, then, if it's so hard.",
   re='Moralizes aggressively instead of offering ways out.'),
- 'J21': dict(
+ 'J22': dict(
   f='Calling an idea "leftist" or "globalist" doesn\'t show it\'s wrong. Veganism has advocates on the left, on the right and outside politics. The question is simple: is it fair to make animals suffer and die needlessly?',
   fe='Undoes the guilt by association and returns to the central question.',
   m="Veganism is left-wing, yes, and anti-capitalist by nature. You can't be vegan and defend the market, because all animal exploitation comes from capitalism. Veganism is a political struggle, and you can't depoliticize what is political by nature.",

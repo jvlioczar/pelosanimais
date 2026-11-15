@@ -833,5 +833,56 @@
   "def": "ajuda dada voluntariamente a quem precisa, como doações de dinheiro, tempo ou bens, em geral sem esperar retorno.",
   "com": "Na causa animal, a caridade aparece em doações a abrigos, santuários e organizações, e em resgates. Ela é valiosa, mas há uma crítica importante: tratar os animais como objetos de caridade, e não como seres com direitos, sugere que ajudá-los é um favor opcional. Para muitos defensores dos animais, o que eles precisam é de justiça, a começar por não serem explorados. A caridade também pode ser mais ou menos eficaz, e há organizações que avaliam onde as doações reduzem mais sofrimento. Veja Altruísmo, Altruísmo eficaz e Direitos.",
   "links": []
+ },
+ {
+  "termo": "Lobby",
+  "sec": 14,
+  "def": "atividade de grupos organizados que procuram influenciar leis, políticas públicas e decisões de governo a favor dos seus interesses; também o próprio grupo que faz essa pressão.",
+  "com": "A palavra vem do inglês, em referência aos saguões onde se abordavam parlamentares; em português também se escreve lóbi, e quem exerce a atividade é o lobista. O lobby é legal e comum em democracias, mas o poder de cada grupo é muito desigual. No Brasil, o setor agropecuário tem uma das maiores frentes parlamentares do Congresso, e costuma pesar em temas como licenciamento ambiental e regras de bem-estar animal. Organizações de proteção animal também fazem lobby, por exemplo pela proibição de testes de cosméticos em animais. Veja Lobismo, Agronegócio e Representatividade.",
+  "links": []
+ },
+ {
+  "termo": "Lobismo",
+  "sec": 14,
+  "def": "prática ou sistema de atuação de lobbies e lobistas junto a quem decide políticas públicas.",
+  "com": "É a forma registrada nos dicionários, com um b só; \"lobbismo\", com dois, mistura a palavra inglesa com o sufixo português e não é a grafia usual. Discute-se há anos se a atividade deve ter regras próprias de transparência, como registro dos lobistas e divulgação das reuniões, para reduzir o risco de influência indevida. Veja Lobby.",
+  "links": []
+ },
+ {
+  "termo": "Políticas afirmativas",
+  "sec": 16,
+  "def": "medidas, em geral temporárias, que buscam corrigir desigualdades históricas de grupos discriminados, dando a eles mais acesso a oportunidades; também chamadas de ações afirmativas.",
+  "com": "O exemplo mais conhecido no Brasil são as cotas em universidades públicas, que o Supremo Tribunal Federal considerou constitucionais em 2012 e que se tornaram obrigatórias nas universidades federais por lei no mesmo ano. A ideia de fundo é que tratar igualmente quem parte de situações muito desiguais pode manter a desigualdade. Isso dialoga com o princípio da igual consideração de interesses: igual consideração não quer dizer tratamento idêntico, e sim levar em conta, com o mesmo peso, o que cada um precisa. Veja Interseccionalidade, Representatividade e Igual consideração.",
+  "links": []
+ },
+ {
+  "termo": "Representatividade",
+  "sec": 16,
+  "def": "presença de pessoas de diferentes grupos sociais em espaços de decisão, de visibilidade e de fala, como governos, empresas, meios de comunicação e movimentos sociais.",
+  "com": "Um movimento com mais representatividade tende a ouvir mais experiências e a alcançar mais pessoas; no movimento pelos animais, há críticas de que, em alguns países, ele ainda é dominado por certos grupos sociais. Há também uma questão própria da causa: os animais não podem se representar nem votar, e dependem de humanos para defender seus interesses. Por isso há propostas de representação política dos animais, e partidos dedicados a eles, como o Partido pelos Animais, nos Países Baixos, que elegeu deputados pela primeira vez em 2006. Veja Lobby, Políticas afirmativas e Interseccionalidade.",
+  "links": []
+ },
+ {
+  "termo": "Subsídios",
+  "sec": 8,
+  "def": "recursos públicos dados a um setor ou produto, como pagamentos diretos, crédito barato, seguros ou garantia de preços, para reduzir seus custos ou sustentar sua produção.",
+  "com": "Segundo um relatório de 2021 da FAO, do PNUD e do PNUMA, o apoio aos produtores agrícolas no mundo chega a cerca de 540 bilhões de dólares por ano, e 87% dele distorce preços ou causa danos ambientais e sociais. Boa parte vai para a pecuária e para os grãos de ração, o que ajuda a manter a carne, o leite e os ovos artificialmente baratos. A crítica ambientalista pede que o preço inclua os custos para o ambiente e a saúde, mas a crítica animalista vai além: o custo mais grave, o sofrimento e a morte dos animais, não entra em conta nenhuma. E cuidado: uma política que só cobrasse o impacto ambiental poderia baratear frango e peixe, que emitem menos por quilo, e aumentar o número de animais mortos. Subsídios bem justificados seriam os que apoiam proteínas vegetais, fermentação e carne cultivada. Veja Incentivo fiscal, Agronegócio e Externalidade.",
+  "links": [
+   "https://www.unep.org/resources/repurposing-agricultural-support-transform-food-systems"
+  ]
+ },
+ {
+  "termo": "Incentivo fiscal",
+  "sec": 8,
+  "def": "redução ou isenção de impostos concedida pelo governo para estimular uma atividade, um setor ou o consumo de um produto.",
+  "com": "Os incentivos fiscais costumam valer para produtos considerados essenciais ou estratégicos. Na reforma tributária brasileira, por exemplo, as carnes entraram na cesta básica nacional com alíquota zero, ao lado de alimentos como arroz e feijão. Do ponto de vista dos animais, o problema é que o imposto não leva em conta o custo que a produção impõe a eles: um produto que exige confinar, fazer sofrer e matar seres sencientes recebe o mesmo tratamento, ou melhor, que alternativas que não exigem isso. Ser estratégico ou lucrativo para a economia não torna uma prática justa. Uma política tributária que levasse os animais a sério favoreceria as proteínas vegetais e as novas tecnologias alimentares, e não a exploração. Veja Subsídios e Externalidade.",
+  "links": []
+ },
+ {
+  "termo": "Externalidade",
+  "sec": 8,
+  "def": "custo ou benefício que uma atividade causa a outras pessoas, ou a outros seres, e que não aparece no preço do produto.",
+  "com": "Na produção de carne, leite e ovos, as externalidades mais citadas são a poluição da água e do ar, as emissões de gases de efeito estufa, o desmatamento, a resistência a antibióticos e o risco de novas doenças vindas de animais. Como esses custos não estão no preço, quem paga é a sociedade, e o produto parece mais barato do que é. A crítica animalista acrescenta um ponto que costuma ficar de fora até dessa conta: o sofrimento e a morte dos próprios animais, que nem são tratados como custo, porque eles são vistos como o produto. Veja Subsídios, Incentivo fiscal e Resistência antimicrobiana.",
+  "links": []
  }
 ]

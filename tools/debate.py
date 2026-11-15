@@ -40,7 +40,7 @@ OP = {
   me='Disputa o fato errado, e a afirmação é falsa: humanos ancestrais comiam carne. Mesmo se fosse verdade, aceitaria que o natural decide o que é certo.',
   r='Natural também é morrer de infecção aos trinta anos, então seja coerente e pare de tomar remédio, de usar óculos e de ir ao dentista. Mas claro que você não vai parar: o natural só interessa ao hipócrita quando serve para defender o churrasco.',
   re='A ideia de fundo é boa, mas o ataque pessoal faz a pessoa se defender em vez de pensar.'),
- 'J5': dict(
+ 'J6': dict(
   f='Para quem gosta, é gostosa mesmo. A pergunta é se esse prazer justifica a vida de alguém. Ninguém defenderia comer cachorro porque é saboroso. E o sabor vem muito do tempero e do preparo, que dá para usar com plantas.',
   fe='Concede o que é verdade, coloca o peso dos dois lados e testa o princípio com um caso que a pessoa rejeita.',
   m='É verdade que muita gente gosta, mas hoje isso deixou de ser problema: a carne vegetal ficou igualzinha à de verdade, em sabor, textura e suculência. Em teste cego ninguém consegue notar a diferença, então você não perde nada ao trocar.',
@@ -264,7 +264,7 @@ OP = {
   me='Generalização falsa: há pastagens antigas e em outros biomas. O exagero desvia o foco.',
   r='O boi destrói tudo onde pisa, isso é fato: acaba com o solo, com a água e com o clima. Qualquer pessoa informada sabe disso, e quem defende pasto ou não leu nada sobre o assunto ou tem parente fazendeiro.',
   re='Afirmação vaga e exagerada, fácil de rebater, com um ataque à pessoa no fim, e ainda troca a questão moral pela ambiental.'),
- 'J7': dict(
+ 'J8': dict(
   f='Comer menos carne é bom e merece reconhecimento: menos animais morrem. Mas, se matar sem necessidade é errado, fazer menos vezes é menos errado, e não certo. A redução é um ótimo caminho, desde que não vire ponto de chegada.',
   fe='Valoriza o passo e mostra que ele não responde à pergunta moral.',
   m='Pouca carne ainda é carne, e não muda nada. Para o animal que morreu, tanto faz se você come todo dia ou só no domingo. Reduzir é só um jeito de se sentir bem sem mudar de verdade, e eu não vejo motivo para elogiar isso.',
@@ -549,21 +549,21 @@ OP.update({
   me='Confirma a premissa falsa do argumento.',
   r='Caro é o tratamento do infarto. Mas tudo bem, pode continuar comendo carne para economizar e gastar depois no hospital. Cuidar da saúde sai mais barato, mas você prefere economizar agora e pagar depois.',
   re='Usa ameaça de doença no lugar de mostrar os preços reais.'),
- 'J3': dict(
+ 'J4': dict(
   f='Mudar dá trabalho no começo, como todo aprendizado, mas depois fica fácil. A comida vegana do dia a dia pode ser tão rápida quanto a com carne: arroz, feijão congelado em porções, legumes assados, macarrão. E dá para mudar aos poucos.',
   fe='Reconhece o esforço inicial e mostra que ele é pequeno e passageiro.',
   m='Não tem nada de difícil, é só força de vontade. Quem diz que não tem tempo está inventando desculpa, porque todo mundo tem tempo para o que considera importante. Quem quer arranja um jeito, quem não quer arranja uma desculpa. É simples assim.',
   me='Ignora a dificuldade real e soa como julgamento.',
   r='Tempo para ver série você tem, né? Para cozinhar um feijão não? Então o problema não é tempo, é prioridade. Nunca vi ninguém morrer por cozinhar um feijão. Você não está ocupado, está acomodado.',
   re='Acusa em vez de ajudar.'),
- 'J4': dict(
+ 'J5': dict(
   f='O custo social existe, mas costuma ser menor do que parece e diminui com o tempo. As opções veganas crescem em restaurantes e aplicativos, dá para levar um prato para a festa e pesquisar antes de viajar. Quem tem alergia faz isso o tempo todo.',
   fe='Reconhece a dificuldade e mostra soluções concretas.',
   m='Nunca tive problema nenhum, em qualquer lugar do mundo tem opção vegana hoje em dia. Quem diz que é difícil é porque não procurou direito. O problema não é o veganismo, é a falta de vontade de procurar uma opção.',
   me='Nega a experiência real de muita gente.',
   r='Então a sua diversão vale mais que a vida de um animal? Que egoísmo. Uma festa sem carne não vai te matar. Os animais não pediram para morrer para você se divertir no fim de semana. Fica em casa, então, se é tão difícil.',
   re='Moraliza com agressividade em vez de oferecer saídas.'),
- 'J21': dict(
+ 'J22': dict(
   f='Chamar uma ideia de "esquerdista" ou "globalista" não mostra que ela está errada. O veganismo tem defensores à esquerda, à direita e fora da política. A pergunta é simples: é justo fazer animais sofrerem e morrerem sem necessidade?',
   fe='Desfaz a culpa por associação e volta à pergunta central.',
   m='O veganismo é de esquerda, sim, e é anticapitalista por natureza. Não dá para ser vegano e defender o mercado, porque toda exploração animal vem do capitalismo. O veganismo é uma luta política, e não adianta tentar despolitizar o que é político por natureza.',
