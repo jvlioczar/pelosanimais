@@ -1345,10 +1345,11 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
     'falacias': 'falacias.html', 'vies': 'vieses.html',
+    'casos-limite': 'familias/f.html', 'cenarios hipoteticos': 'familias/f.html',
     'egoismo (egocentrismo)': 'politicas/egoismo-objetivismo.html', 'altruismo': 'politicas/altruismo-eficaz.html', 'caridade': 'politicas/altruismo-eficaz.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
-                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying')}
+                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying'), 'familias': ('Família de argumentos', 'Argument family')}
 
 def pagina_glossario():
     """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
@@ -1381,6 +1382,9 @@ def pagina_glossario():
     _arg = lambda *inicios: f'argumentos/{SLUG_ARG[next(c for c, a in ARGS.items() if a.get("frase_pt", a["frase"]).startswith(inicios)).lower()]}.html'
     GLOS_GUIA['lei'] = GLOS_GUIA['legislacao de protecao animal'] = _arg('É legal, a lei permite', "It's legal; the law allows it")
     GLOS_GUIA['direitos animais'] = _arg('Animais não são pessoas', "Animals aren't persons")
+    GLOS_GUIA['vegano especista'] = _arg('Veganos também são especistas', 'Vegans are speciesists too')
+    GLOS_GUIA['nutricao animal'] = _arg('Dar comida vegana para cachorro', 'Feeding a dog or cat vegan food')
+    GLOS_GUIA['psicologia animal'] = f'argumentos/{SLUG_ARG["a1"]}.html'
     GLOS_GUIA['filosofia da mente'] = f'argumentos/{SLUG_ARG["a1"]}.html'
     # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
     vs = []

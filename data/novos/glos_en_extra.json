@@ -682,5 +682,35 @@
   "termo": "Philosophy of mind",
   "def": "The branch of philosophy that studies the nature of the mind and consciousness, and the relationship between the mind and the body, or the brain.",
   "com": "Some of its central questions lie at the heart of the debate about animals: how we know other beings have minds, the so-called problem of other minds; what it is to have an experience, Thomas Nagel's question of \"what it is like to be a bat\" (1974); and why physical processes give rise to experiences, the \"hard problem of consciousness\", as David Chalmers called it (1995). The same questions come back in the discussion of whether AIs and robots could come to feel. See Consciousness, Subjective experience, Epistemology and Sentience in AI and digital systems."
+ },
+ {
+  "pt": "Casos-limite",
+  "termo": "Edge cases",
+  "def": "Extreme or rare situations at the boundary of a rule, such as the desert island with no other food or the choice between saving a dog and a child.",
+  "com": "Used well, they test whether a principle holds in every case or needs adjusting, and show where a rule's limits lie. The argument from marginal cases, for example, uses humans with limited capacities to test whether rationality is really the criterion for moral consideration. Used badly, they turn the exception into the rule: from the fact that someone would eat an animal on a desert island it doesn't follow that they may buy one at the supermarket, where there is no necessity at all. The useful question about an edge case is: what does it show about the ordinary case? See Hypothetical scenarios and Argument from marginal cases."
+ },
+ {
+  "pt": "Cenários hipotéticos",
+  "termo": "Hypothetical scenarios",
+  "def": "Imagined situations used to test ideas and principles; when built for this purpose in philosophy, they are called thought experiments.",
+  "com": "They are used on both sides of the debate, and can help or hinder. They help when they isolate what matters morally: vegans ask, for example, whether extraterrestrials more intelligent than us could breed and eat us, to test whether intelligence justifies exploiting those who are less intelligent; or whether an AI that felt pain would deserve consideration, to test whether the criterion is sentience rather than species or the material a being is made of. They hinder when the scenario is impossible or poorly described and hides premises, when an intuition about an artificial case is treated as proof, or when it serves to dodge the real decision, as in \"what if they discover plants feel?\" faced with a choice made today. This also applies to animal advocates: an analogy with extraterrestrials that ignores relevant differences is unconvincing. See Edge cases, Sentience in extraterrestrial life, Sentience in AI and digital systems and Logical consistency."
+ },
+ {
+  "pt": "Vegano especista",
+  "termo": "Speciesist vegan",
+  "def": "A vegan who rejects animal exploitation but still gives less weight to the interests of some sentient beings just because of their species.",
+  "com": "Veganism starts from the principle of not exploiting animals. Antispeciesism goes further: it asks that similar interests of any sentient being weigh equally, whatever the species, including in situations that don't involve exploitation. A vegan can be speciesist in two ways. The first is discriminating among animals by species without justification, such as caring about dogs, cows and dolphins while dismissing fish, insects and other invertebrates who may also feel, which the glossary calls xenospeciesism. The second is ignoring sentient beings in scenarios beyond exploitation: wild animal suffering, treated as \"just nature\" even when helping would be possible; animals seen as pests, killed without need or in cruel ways; animals hit by disasters, road traffic or pollution, who get attention only when they belong to favored species; and possible new minds, such as sentient AIs, dismissed in advance. The critique works as self-criticism, to carry the principle all the way through, not to invalidate veganism: pointing out that some vegans are speciesist doesn't show that exploiting animals is acceptable. See Speciesism, Xenospeciesism, Antispeciesism, Wild animal suffering and Sentience in AI and digital systems."
+ },
+ {
+  "pt": "Nutrição animal",
+  "termo": "Animal nutrition",
+  "def": "The field that studies the nutritional needs of non-human animals and how to meet them through feeding.",
+  "com": "In animal farming, it focuses on making animals grow and produce more at the lowest cost, measuring feed conversion, how much feed becomes meat, milk or eggs. This conversion reveals an inefficiency: the animal spends most of what it eats on living, and only part becomes food for people. The same field also serves welfare, when it looks after the health of companion, rescued and sanctuary animals, and it is the field that studies whether foods without animal ingredients meet the needs of dogs and cats. See Nutrition, Feed, Vegan pet food and Zootechnics (animal science)."
+ },
+ {
+  "pt": "Psicologia animal",
+  "termo": "Animal psychology",
+  "def": "The study of the mind and behavior of non-human animals, such as perception, learning, memory, emotions and social relationships; also called comparative psychology.",
+  "com": "For a long time the field was shaped by behaviorism, which studied only observable behavior and avoided talk of mind, often with experiments that caused suffering, such as the learned helplessness experiments on dogs. Today, together with ethology and the science of animal cognition, it provides much of the evidence that many animals feel fear, pleasure and stress, learn, and have complex social lives. There is also an applied side, which deals with behavior problems in companion and captive animals. Not to be confused with the psychology that studies humans' relationship with animals, such as the meat paradox. See Animal cognition, Ethology, Animal emotions and Morgan's canon."
  }
 ]

@@ -926,5 +926,40 @@
   "def": "ramo da filosofia que estuda a natureza da mente e da consciência, e a relação entre a mente e o corpo, ou o cérebro.",
   "com": "Algumas das suas perguntas centrais estão no coração do debate sobre os animais: como sabemos que outros seres têm mente, o chamado problema das outras mentes; o que é ter uma experiência, a pergunta de Thomas Nagel sobre \"como é ser um morcego\" (1974); e por que processos físicos produzem experiências, o \"problema difícil da consciência\", como o chamou David Chalmers (1995). As mesmas perguntas reaparecem na discussão sobre se IAs e robôs poderiam vir a sentir. Veja Consciência, Experiência subjetiva, Epistemologia e Senciência em IA e sistemas digitais.",
   "links": []
+ },
+ {
+  "termo": "Casos-limite",
+  "sec": 6,
+  "def": "situações extremas ou raras, que ficam na fronteira de uma regra, como a ilha deserta sem outra comida ou a escolha entre salvar um cão e uma criança.",
+  "com": "Bem usados, servem para testar se um princípio vale em todos os casos ou precisa de ajuste, e para mostrar onde ficam os limites de uma regra. O argumento dos casos marginais, por exemplo, usa humanos com capacidades limitadas para testar se a racionalidade é mesmo o critério de consideração moral. Mal usados, transformam a exceção em regra: do fato de que alguém comeria um animal numa ilha deserta não se segue que possa comprá-lo no mercado, onde não há necessidade nenhuma. A pergunta útil diante de um caso-limite é: o que ele mostra sobre o caso comum? Veja Cenários hipotéticos e Argumento dos casos marginais.",
+  "links": []
+ },
+ {
+  "termo": "Cenários hipotéticos",
+  "sec": 6,
+  "def": "situações imaginadas, usadas para testar ideias e princípios; quando são construídas com esse fim na filosofia, chamam-se experimentos mentais.",
+  "com": "São usados dos dois lados do debate, e podem ajudar ou atrapalhar. Ajudam quando isolam o que importa moralmente: veganos perguntam, por exemplo, se seres extraterrestres mais inteligentes que nós poderiam nos criar e comer, para testar se a inteligência justifica explorar quem é menos inteligente; ou se uma IA que sentisse dor mereceria consideração, para testar se o critério é a senciência, e não a espécie ou o material de que o ser é feito. Atrapalham quando o cenário é impossível ou mal descrito e esconde premissas, quando a intuição sobre um caso artificial é tratada como prova, ou quando serve para fugir da decisão real, como em \"e se descobrirem que as plantas sentem?\" diante de uma escolha que se faz hoje. Isso vale também para quem defende os animais: uma analogia com extraterrestres que ignora diferenças relevantes convence pouco. Veja Casos-limite, Senciência em vida extraterrestre, Senciência em IA e sistemas digitais e Coerência lógica.",
+  "links": []
+ },
+ {
+  "termo": "Vegano especista",
+  "sec": 5,
+  "def": "pessoa vegana que recusa a exploração animal, mas ainda dá menos peso aos interesses de alguns seres sencientes só por causa da espécie a que pertencem.",
+  "com": "O veganismo parte do princípio de não explorar animais. O antiespecismo vai além: pede que interesses semelhantes de qualquer ser senciente pesem igualmente, seja qual for a espécie, inclusive em situações que não envolvem exploração. Um vegano pode ser especista de duas formas. A primeira é discriminar animais por espécie sem justificativa, como se importar com cães, vacas e golfinhos e desprezar peixes, insetos e outros invertebrados que também podem sentir, o que o glossário chama de xenoespecismo. A segunda é ignorar seres sencientes em cenários que vão além da exploração: o sofrimento dos animais selvagens, tratado como \"coisa da natureza\" mesmo quando seria possível ajudar; animais vistos como pragas, mortos sem necessidade ou de formas cruéis; animais atingidos por desastres, atropelamentos ou poluição, que recebem atenção só quando são de espécies queridas; e possíveis mentes novas, como IAs sencientes, descartadas de antemão. A crítica serve como autocrítica, para levar o princípio até o fim, e não para invalidar o veganismo: apontar que alguns veganos são especistas não mostra que explorar animais é aceitável. Veja Especismo, Xenoespecismo, Antiespecismo, Sofrimento dos animais selvagens e Senciência em IA e sistemas digitais.",
+  "links": []
+ },
+ {
+  "termo": "Nutrição animal",
+  "sec": 2,
+  "def": "área que estuda as necessidades nutricionais dos animais não humanos e como atendê-las com a alimentação.",
+  "com": "Na pecuária, ela se concentra em fazer os animais crescerem e produzirem mais pelo menor custo, medindo a conversão alimentar, quanto de ração vira carne, leite ou ovos. Essa conversão mostra uma ineficiência: o animal gasta a maior parte do que come para viver, e só uma parte vira comida para as pessoas. A mesma área também serve ao bem-estar, quando cuida da saúde de animais de companhia, resgatados e de santuários, e é ela que estuda se rações sem ingredientes animais atendem às necessidades de cães e gatos. Veja Nutrição, Ração, Ração vegana e Zootecnia.",
+  "links": []
+ },
+ {
+  "termo": "Psicologia animal",
+  "sec": 2,
+  "def": "estudo da mente e do comportamento dos animais não humanos, como percepção, aprendizagem, memória, emoções e relações sociais; também chamada de psicologia comparada.",
+  "com": "Por muito tempo, a área foi marcada pelo behaviorismo, que estudava apenas o comportamento observável e evitava falar em mente, muitas vezes com experimentos que causavam sofrimento, como os de desamparo aprendido com cães. Hoje, junto com a etologia e a ciência da cognição animal, ela traz boa parte das evidências de que muitos animais sentem medo, prazer e estresse, aprendem e têm vidas sociais complexas. Também há uma área aplicada, que trata problemas de comportamento em animais de companhia e de cativeiro. Não confundir com a psicologia que estuda a relação dos humanos com os animais, como o paradoxo da carne. Veja Cognição animal, Etologia, Emoções animais e Cânone de Morgan.",
+  "links": []
  }
 ]
