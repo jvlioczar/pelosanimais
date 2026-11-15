@@ -1343,7 +1343,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'biologia do bem-estar': 'alem/animais-selvagens.html', 'senciencia em ia e sistemas digitais': 'alem/ia-e-robos.html', 'senciencia em robos': 'alem/ia-e-robos.html',
     'senciencia em vida extraterrestre': 'alem/extraterrestres.html', 'abolicionismo': 'alem/correntes-do-veganismo.html', 'veganismo abolicionista': 'alem/correntes-do-veganismo.html',
     'bem-estarismo': 'alem/correntes-do-veganismo.html', 'novo bem-estarismo (neo-welfarism)': 'alem/correntes-do-veganismo.html', 'veganismo pragmatico': 'alem/correntes-do-veganismo.html',
-    'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
+    'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'veganismo baseado em evidencias (ou racionalista)': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
     'falacias': 'falacias.html', 'vies': 'vieses.html',
     'casos-limite': 'familias/f.html', 'cenarios hipoteticos': 'familias/f.html',
