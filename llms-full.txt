@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 272 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 273 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -109,6 +109,7 @@ O costume justifica?
 - [E13. Ele come carne, mas é uma pessoa boa](https://pelosanimais.biblioverse.org/argumentos/ele-come-carne-mas-e-uma-pessoa-boa.html): Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume
 - [E14. Te admiro, mas não consigo](https://pelosanimais.biblioverse.org/argumentos/te-admiro-mas-nao-consigo.html): Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona
 - [E15. Sei que é errado, mas não vou mudar](https://pelosanimais.biblioverse.org/argumentos/sei-que-e-errado-mas-nao-vou-mudar.html): Acrasia assumida: concede o ponto moral e recusa a consequência
+- [E16. Concordo com os veganos, o veganismo é um movimento importante](https://pelosanimais.biblioverse.org/argumentos/concordo-com-os-veganos-o-veganismo-e-um-movimento-importante.html): Concordar não poupa nenhum animal: reconhecer o erro é necessário, mas não suficiente, e o dever de não causar dano não se terceiriza para o movimento
 
 ## F. Casos-limite e hipotéticos (Parte DIR)
 

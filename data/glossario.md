@@ -297,7 +297,7 @@
 
 **Progressismo** — postura política e social favorável a mudanças e reformas, associada a maior abertura para expandir direitos e consideração moral a novos grupos. *A inclusão dos animais na pauta progressista ainda é, no entanto, menos consensual do que a de outros grupos historicamente marginalizados, o que reflete a persistência do especismo mesmo em setores politicamente progressistas.*
 
-**Radicalismo** — postura que defende mudanças profundas e estruturais, rejeitando soluções parciais ou incrementais. *No movimento animal, associa-se sobretudo ao abolicionismo, que rejeita reformas graduais como fim em si mesmas, defendendo o término completo do uso de animais como propriedade.*
+**Radicalismo** — postura que busca mudanças profundas, que vão à raiz de um problema, em vez de ajustes superficiais. *A palavra vem do latim *radix*, "raiz". Por isso radical não quer dizer violento nem extremista, embora as palavras sejam muitas vezes usadas como sinônimos: radical diz respeito à profundidade da mudança defendida, e extremismo, em geral, aos métodos e à rejeição do pluralismo e dos direitos dos outros. Muitas ideias tidas como radicais em sua época viraram consenso, como o fim da escravidão e o voto feminino. No movimento animal, o radicalismo se associa sobretudo ao abolicionismo, que defende o fim do uso de animais como propriedade, e não só reformas. Uma posição pode ser radical no objetivo e moderada no tom e nos meios. Veja Extremismo, Abolicionismo e Reformismo.*
 
 **Reacionarismo** — postura de oposição a mudanças sociais, buscando retorno a normas ou práticas anteriores. *Aplicado à questão animal, frequentemente se apoia em apelos à tradição e à naturalidade, ambos considerados falácias quando usados isoladamente como justificativa moral.*
 
@@ -313,7 +313,7 @@
 
 ## 6. Vieses, Falácias e Retórica
 
-**Alienação** — estado de distanciamento psicológico ou social em relação às consequências reais das próprias ações. *No consumo de produtos animais, essa alienação é facilitada pela distância física e informacional entre o consumidor e o processo de produção — quanto menos visível o sofrimento, mais fácil sustentar práticas que, confrontadas diretamente, seriam moralmente rejeitadas.*
+**Alienação** — distanciamento entre as pessoas e as consequências reais do que fazem, produzem ou consomem; no uso popular, também a falta de consciência sobre o que acontece à sua volta. *O conceito tem origem filosófica e ganhou força com Karl Marx, que nos *Manuscritos de 1844* descreveu a alienação do trabalhador em relação ao produto do seu trabalho. No consumo de produtos animais, a alienação é facilitada pela distância física e informacional: os animais ficam longe, em galpões fechados, a morte acontece fora da vista, e a carne chega ao mercado em pedaços que não lembram um animal. Quanto menos visível o sofrimento, mais fácil manter práticas que, vistas de perto, muita gente rejeitaria. Vale um cuidado: chamar alguém de "alienado" costuma soar como insulto e fechar a conversa; mostrar o que está escondido funciona melhor do que rotular quem não viu. Veja Referente ausente, Carnismo e Dissonância cognitiva.*
 
 **Analogia** — recurso argumentativo que compara situações distintas por compartilharem características relevantes. *Comparações entre exploração animal e opressões humanas, como a escravidão, são usadas por antiespecistas para evidenciar estruturas comuns de dominação, mas são também alvo de crítica por poderem minimizar as especificidades e a gravidade do sofrimento humano histórico envolvido.*
 

@@ -300,6 +300,7 @@ NOVOS = [
     ('M5', 'Deixei de ser vegano porque estou em outro momento da vida', ['Era uma fase', 'Hoje tenho outras prioridades'], 'A fase da vida muda o que é fácil, e não o que acontece com os animais; uma fase difícil pede ajustes, e não desistir'),
     ('M3', 'Ser vegano me limitava comer na casa dos meus familiares', ['Na casa da minha avó, não tinha o que comer', 'Minha mãe ficava magoada quando eu recusava a comida'], 'O custo social é real, mas tem saídas: conversar antes, levar um prato para dividir, comer o que já é vegano na mesa'),
     ('M4', 'Ser vegano é difícil para quem viaja muito', ['Na estrada, não tem o que comer', 'Em viagem de trabalho, não dá para escolher'], 'A dificuldade de algumas refeições justifica, no máximo, uma exceção real, e não abandonar o veganismo em casa'),
+    ('E16', 'Concordo com os veganos, o veganismo é um movimento importante', ['Concordo com vocês, de verdade', 'O veganismo é um movimento importante', 'Apoio a causa', 'Precisamos de mais gente como você', 'Acho lindo o que vocês fazem'], 'Concordar não poupa nenhum animal: reconhecer o erro é necessário, mas não suficiente, e o dever de não causar dano não se terceiriza para o movimento'),
     ('E14', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
     ('M10', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
     ('K9', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
@@ -1386,6 +1387,7 @@ def pagina_glossario():
     GLOS_GUIA['relativismo moral'] = GLOS_GUIA['relativismo cultural'] = _arg('A moral é relativa', 'Morality is relative')
     GLOS_GUIA['educacao positiva'] = _arg('A coleira de choque', 'A shock collar')
     GLOS_GUIA['conhecimento procedural'] = 'debate.html'
+    GLOS_GUIA['extremismo'] = GLOS_GUIA['radicalismo'] = _arg('Ativistas veganos são radicais', 'Vegan activists are radicals')
     GLOS_GUIA['aprendizagem superficial'] = GLOS_GUIA['aprendizagem profunda'] = 'treino.html'
     GLOS_GUIA['especialista'] = 'falacias.html#' + L('apelo-a-autoridade', 'appeal-to-authority')
     GLOS_GUIA['nutricao animal'] = _arg('Dar comida vegana para cachorro', 'Feeding a dog or cat vegan food')
