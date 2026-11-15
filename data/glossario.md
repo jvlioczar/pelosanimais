@@ -953,7 +953,7 @@
 
 **Veganismo feminista** — vertente que articula veganismo com crítica às estruturas patriarcais (ligado ao ecofeminismo).
 
-**Veganismo interseccional** — vertente que conecta a causa animal a outras formas de opressão (raça, classe, gênero).
+**Veganismo interseccional** — vertente do veganismo que liga a defesa dos animais ao combate a outras formas de opressão, como o racismo, o sexismo, a desigualdade de classe e o capacitismo. *Na prática, isso significa, por exemplo, considerar os trabalhadores de frigoríficos, que estão entre os mais explorados da cadeia alimentar; lutar para que a comida vegetal seja acessível também a quem é pobre ou mora na periferia; combater o racismo e o machismo dentro do próprio movimento; e evitar comparações e campanhas que ofendam grupos historicamente oprimidos. Há uma discussão sobre os limites: uma parte do movimento teme que a causa animal se dilua em muitas pautas, e outra lembra que excluir pessoas afasta aliados. Este guia não exige que todo vegano abrace todas as pautas, mas pede que ninguém use a causa animal para prejudicar outros grupos, e que ninguém use outras causas para descartar os animais. Veja Interseccionalidade, Afroveganismo (ou veganismo negro), Veganismo popular, Ecofeminismo e Instrumentalização.*
 
 **Veganismo popular** — vertente voltada à acessibilidade econômica e cultural do veganismo às classes populares.
 
@@ -971,7 +971,7 @@
 
 **Colonialismo alimentar / decolonialidade vegana** — crítica a como sistemas alimentares coloniais moldaram dietas e apagaram tradições vegetais locais.
 
-**Interseccionalidade** — enquadramento teórico que analisa como opressões (raça, gênero, classe, espécie) se cruzam e se reforçam.
+**Interseccionalidade** — enquadramento teórico que analisa como diferentes formas de opressão, como racismo, sexismo, desigualdade de classe e capacitismo, se cruzam e produzem experiências específicas de discriminação. *O termo foi criado pela jurista Kimberlé Crenshaw, em 1989, para mostrar que a discriminação sofrida por mulheres negras não é a simples soma do racismo e do sexismo, e por isso passava despercebida tanto nas lutas antirracistas quanto nas feministas. A ideia tem raízes no feminismo negro, como no manifesto do Coletivo Combahee River, de 1977. Crenshaw tratava de opressões entre humanos. A inclusão da espécie é uma extensão proposta por autoras da ética animal, como Carol J. Adams e Lori Gruen, que veem uma lógica comum de dominação entre o especismo e outras opressões; outras autoras, inclusive feministas negras, discutem se essa extensão é adequada ou se dilui o sentido original. Veja Veganismo interseccional, Ecofeminismo, Afroveganismo (ou veganismo negro) e Escravidão animal.*
 
 **Justiça alimentar** — movimento que conecta acesso à alimentação digna com equidade social, incluindo dimensão animal e ambiental.
 
