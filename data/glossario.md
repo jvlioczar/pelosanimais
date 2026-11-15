@@ -91,7 +91,7 @@
 
 **Filosofia política** — ramo da filosofia que estuda a organização do poder, a justiça e os direitos; relevante para discutir representação e cidadania de animais (ex.: senciocracia). *Propostas como a senciocracia desafiam a suposição tradicional de que apenas humanos podem ser sujeitos políticos, defendendo a inclusão dos interesses de todos os seres sencientes na esfera pública.*
 
-**Lógica** — ramo da filosofia que estuda os princípios do raciocínio válido; ferramenta usada para identificar falácias e inconsistências em argumentos sobre o uso de animais. *Aplicada com rigor, a lógica revela que muitas justificativas comuns para o uso de animais — apelo à tradição, à natureza ou ao paladar — não resistem ao teste da coerência argumentativa.*
+**Lógica** — ramo da filosofia que estuda o raciocínio correto: quando uma conclusão se segue das premissas. *Um argumento é válido quando, se as premissas forem verdadeiras, a conclusão também tem de ser; e é sólido quando, além de válido, tem premissas de fato verdadeiras. Cada capítulo do guia faz esse teste: reconstrói a versão mais forte da objeção e mostra se ela falha na validade ou numa premissa. A lógica sozinha não decide fatos nem valores: ela mostra o que se segue do que se aceita, e por isso precisa de premissas apoiadas em evidências. Veja Argumento, Falácias, Coerência lógica e Evidências.*
 
 **Nutrição** — ciência que estuda os processos pelos quais organismos obtêm e utilizam alimentos; central nas discussões sobre a viabilidade de dietas vegetais. *Órgãos de nutrição têm progressivamente reconhecido que dietas vegetarianas e veganas bem planejadas podem ser nutricionalmente adequadas em todas as fases da vida, o que enfraquece o argumento nutricional tradicionalmente usado contra o veganismo.*
 
@@ -195,7 +195,7 @@
 
 **Valor instrumental** — valor atribuído a algo em função de sua utilidade para outro fim, e não por si mesmo. *Tratar animais exclusivamente como portadores de valor instrumental — como recursos — é o cerne da crítica abolicionista e antiespecista à sua condição de propriedade.*
 
-**Valor intrínseco** — valor que um ser possui por si mesmo, independentemente de sua utilidade para outros; também chamado de valor inerente. *É o conceito central das teorias de direitos animais, que defendem que todo sujeito de uma vida possui valor intrínseco, incompatível com seu tratamento como mero recurso.*
+**Valor intrínseco** — valor que um ser possui por si mesmo, independentemente de sua utilidade para outros; também chamado de valor em si ou valor inerente. *É o conceito central das teorias de direitos animais, que defendem que todo sujeito de uma vida possui valor intrínseco, incompatível com seu tratamento como mero recurso.*
 
 **Zona de conforto** — estado psicológico de familiaridade e baixo risco que tende a resistir a mudanças. *No contexto do consumo animal, costuma ser citada como um dos principais obstáculos psicológicos à adoção de hábitos mais alinhados com a igual consideração de interesses entre espécies.*
 

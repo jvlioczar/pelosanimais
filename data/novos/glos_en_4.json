@@ -30,8 +30,8 @@
 {
 "i": 283,
 "termo": "Logic",
-"def": "The branch of philosophy that studies the principles of valid reasoning; a tool used to identify fallacies and inconsistencies in arguments about the use of animals.",
-"com": "Applied rigorously, logic shows that many common justifications for using animals (appeals to tradition, to nature or to taste) do not withstand the test of argumentative coherence.",
+"def": "The branch of philosophy that studies correct reasoning: when a conclusion follows from the premises.",
+"com": "An argument is valid when, if the premises are true, the conclusion must be true too; and it is sound when, besides being valid, its premises are actually true. Every chapter of the guide runs this test: it reconstructs the strongest version of the objection and shows whether it fails on validity or on a premise. Logic alone doesn't settle facts or values: it shows what follows from what one accepts, so it needs premises supported by evidence. See Argument, Fallacies, Logical consistency and Evidence.",
 "pt": "Lógica"
 },
 {

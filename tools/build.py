@@ -1344,6 +1344,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'veganismo interseccional': 'alem/correntes-do-veganismo.html', 'interseccionalidade': 'alem/correntes-do-veganismo.html', 'libertacao total': 'alem/correntes-do-veganismo.html',
     'antiveganismo': 'raciocinio.html', 'comoditizacao (ou comodificacao)': 'politicas/marxismo.html', 'pseudociencia': 'falacias.html',
     'falacias': 'falacias.html', 'vies': 'vieses.html',
+    'egoismo (egocentrismo)': 'politicas/egoismo-objetivismo.html', 'altruismo': 'politicas/altruismo-eficaz.html', 'caridade': 'politicas/altruismo-eficaz.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
                     'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying')}

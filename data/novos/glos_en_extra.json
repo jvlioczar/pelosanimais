@@ -568,5 +568,41 @@
   "termo": "Human-animal bond",
   "def": "A relationship of affection and companionship between people and animals, which can bring benefits to both.",
   "com": "It is studied mainly with companion animals, and there is research on effects on people's health and well-being, although the results are mixed. The bond shows that many people recognize animals as someone, not something. At the same time, it reveals an arbitrary division: the affection given to dogs and cats rarely extends to pigs, cows and chickens, who have similar capacities. A healthy bond also requires attending to the animal's needs, not only to what they offer people. See Companion animal, Animal-assisted therapy and Cognitive dissonance."
+ },
+ {
+  "pt": "Evidências",
+  "termo": "Evidence",
+  "def": "Information obtained by observation, measurement, experiment or record that makes a claim more or less likely.",
+  "com": "Not all evidence weighs the same. In general, personal accounts count less than observational studies, which count less than controlled experiments, and reviews that pool many studies count more than a single study; the consensus of scientific bodies shows where the evidence converges. Having little evidence is not the same as having evidence against. And the demand applies to both sides: animal advocates also need to back their claims about health, the environment and data with evidence. See Fact, Science, Pseudoscience and Evidence-based practice."
+ },
+ {
+  "pt": "Coerência lógica",
+  "termo": "Logical consistency",
+  "def": "The absence of contradiction between the statements of an argument or of a set of beliefs.",
+  "com": "Consistency guarantees internal logic, but not external truth: a set of beliefs can be perfectly consistent and still false, if it starts from a false premise. So, besides consistency, a good argument needs true premises, supported by evidence. In debate, pointing out an inconsistency shows that some belief has to change, but doesn't by itself say which. It differs from moral consistency, which asks us to apply the same principles to similar cases. See Logic, Moral consistency and Evidence."
+ },
+ {
+  "pt": "Práticas baseadas em evidências",
+  "termo": "Evidence-based practice",
+  "def": "A way of deciding that uses the best available evidence about what works, rather than relying only on intuition, tradition or preference.",
+  "com": "The idea took hold in medicine in the 1990s, with evidence-based medicine, and spread to other fields such as education and public policy. In animal advocacy, research organizations study which campaigns, messages and strategies reduce suffering the most. It requires humility: evidence about strategies is limited and changes over time. And it doesn't replace ethics: evidence helps choose the means, but the reason to defend animals comes from sentience. See Evidence, Rationalist (or evidence-based) veganism and Effective altruism."
+ },
+ {
+  "pt": "Altruísmo",
+  "termo": "Altruism",
+  "def": "A disposition to act for the benefit of others, even when it brings no advantage to the one who acts, or has some cost.",
+  "com": "The term was coined in the 19th century by the philosopher Auguste Comte, as the opposite of egoism. In biology, it also describes animal behavior that helps others, such as warning the group about a predator. In animal ethics, altruism shows up when someone changes habits or devotes time and resources to beings who will never repay them. But the defense of animals doesn't depend on altruism: not causing avoidable harm is a duty, not a generous gesture. See Effective altruism, Egoism (egocentrism), Charity and Compassion."
+ },
+ {
+  "pt": "Egoísmo (egocentrismo)",
+  "termo": "Egoism (egocentrism)",
+  "def": "An attitude of putting one's own interests first, without considering, or barely considering, the interests of others.",
+  "com": "In everyday use, egoism and egocentrism blur together, but they aren't the same: in psychology, egocentrism is difficulty seeing things from other people's point of view, common in young children, and not a moral choice. In philosophy, psychological egoism says people always act out of self-interest, and ethical egoism says they ought to; the guide discusses the latter on its page about egoism and Objectivism. The argument \"I like it, so I eat it\" puts one's own pleasure above another being's life. See Altruism, Speciesism and Anthropocentrism."
+ },
+ {
+  "pt": "Caridade",
+  "termo": "Charity",
+  "def": "Help given voluntarily to those in need, such as donations of money, time or goods, usually without expecting anything in return.",
+  "com": "In the animal cause, charity shows up in donations to shelters, sanctuaries and organizations, and in rescues. It is valuable, but there is an important critique: treating animals as objects of charity, rather than as beings with rights, suggests that helping them is an optional favor. For many animal advocates, what animals need is justice, starting with not being exploited. Charity can also be more or less effective, and some organizations assess where donations reduce the most suffering. See Altruism, Effective altruism and Rights."
  }
 ]
