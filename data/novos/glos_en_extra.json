@@ -904,5 +904,83 @@
   "termo": "Partiality",
   "def": "Giving special weight to the interests of some, such as family, friends, compatriots or one's own companion animals, because of the relationship we have with them.",
   "com": "Some partiality is accepted by almost everyone: caring for one's own children before strangers' children doesn't seem wrong. Philosophers such as Bernard Williams criticized theories that demand total impartiality, and the ethics of care values close relationships. The limit lies elsewhere: partiality can justify helping those close to us more, but not harming those far away. Loving one's own dog is legitimate partiality; paying for pigs to suffer isn't a way of caring for anyone. Partiality also becomes injustice when the criterion is arbitrary, such as skin colour or species, rather than a real relationship. See Impartiality, Ethics of care, Double standard and Speciesism."
+ },
+ {
+  "pt": "Tática de guerrilha",
+  "termo": "Guerrilla tactics",
+  "def": "In activism, quick, cheap and surprising actions carried out by small groups to draw attention where and when it isn't expected, such as projections on buildings, banners, street interventions and flash demonstrations.",
+  "com": "The term comes from irregular warfare: \"guerrilla\" means \"little war\" in Spanish and became popular during the resistance to Napoleon's occupation of Spain in the early 19th century, with small, mobile groups that avoided direct confrontation with a larger army. In activism, the idea is to make up for a lack of resources with creativity and surprise. There is an important difference between legal, peaceful actions and actions that damage property or intimidate people. And the effect isn't always what was intended: a 2020 study by Matthew Feinberg, Robb Willer and Chloe Kovacheff found that protest tactics seen as extreme tend to reduce public support for the cause, even when they draw more attention. See Guerrilla marketing, Direct action, Protest and Vigil."
+ },
+ {
+  "pt": "Marketing de guerrilha",
+  "termo": "Guerrilla marketing",
+  "def": "An unconventional, low-cost form of promotion that uses creativity, surprise and public spaces to draw attention, instead of paid advertising.",
+  "com": "The term was popularized by Jay Conrad Levinson in his book *Guerrilla Marketing* (1984), written for small businesses. Social movements adopted the same logic. In the animal cause, a well-known example is the Cube of Truth, by the group Anonymous for the Voiceless, founded in Australia in 2016: masked activists, standing in a cube formation, hold screens showing footage from farms and slaughterhouses while others talk to passers-by who stop. Projections, stickers, art interventions and online actions also fall into this category. Creativity doesn't excuse dishonesty: footage must be genuine and in context, and the effect of each action should be evaluated, not assumed. See Guerrilla tactics, Manipulation, Street activism and Vegan witness (bearing witness)."
+ },
+ {
+  "pt": "Vigília",
+  "termo": "Vigil",
+  "def": "In animal advocacy, a peaceful gathering outside slaughterhouses, farms or animal markets to bear witness to the animals' suffering, record it and make it visible.",
+  "com": "The format became known through Toronto Pig Save, founded in Canada in 2010 by Anita Krajnc, which grew into the Animal Save Movement, now with groups in many countries. At vigils, activists look at the animals arriving in trucks, photograph and film them, and sometimes give them water when drivers stop. In 2015, Krajnc was charged for giving water to pigs in a truck, and she was acquitted in 2017. Vigils usually follow safety and non-violence rules, but they carry risks: in 2020, the activist Regan Russell was killed by a truck transporting pigs during a vigil in Ontario. For many participants, a vigil is also an act of mourning and a refusal to look away. See Vegan witness (bearing witness), Protest and Guerrilla tactics."
+ },
+ {
+  "pt": "Minimalismo",
+  "termo": "Minimalism",
+  "def": "A lifestyle that seeks to own and consume less, keeping what is useful or meaningful and letting go of excess.",
+  "com": "The name comes from the minimalist art of the 1960s, and the lifestyle became popular in the 2010s, through books, blogs and documentaries such as those by the duo The Minimalists. It has points in common with veganism: buying less, choosing second-hand and repairing instead of replacing reduce environmental impact, and many minimalists question the idea that consuming more brings happiness. But the two aren't the same. Minimalism asks how much is consumed; veganism asks what is consumed and who pays for it. A minimalist can own few things and still eat meat or wear leather, and a vegan can consume a lot. Some also criticize minimalism when it becomes just an aesthetic, with expensive products sold as simplicity. See Conscious consumption, Consumption and Veganism."
+ },
+ {
+  "pt": "Aprendizagem superficial",
+  "termo": "Surface learning",
+  "def": "A way of studying aimed at memorizing and reproducing information, without seeking to understand its meaning or connect the ideas.",
+  "com": "The distinction between surface and deep learning comes from the Swedish researchers Ference Marton and Roger Säljö in the 1970s. Memorizing has its place: knowing the short answer to an objection by heart helps in a quick conversation. The problem is stopping there. Someone who memorized an answer often gets stuck when the objection comes in another form, or when the other person makes the next reply. See Deep learning, Declarative (or explicit) knowledge and Critical thinking."
+ },
+ {
+  "pt": "Aprendizagem profunda",
+  "termo": "Deep learning",
+  "def": "A way of studying aimed at understanding the meaning, the reasons and the links between ideas, and applying them to new situations.",
+  "com": "In argumentation, it is the difference between memorizing that an argument is wrong and understanding why it fails, which premise is false or which principle would lead to conclusions the person themselves rejects. That understanding makes it possible to recognize the same error in new forms. That's why the guide offers layers: the short answer to use now and the full answer, with the best counter-reply, for those who want to understand. Not to be confused with deep learning in artificial intelligence, a machine learning technique; in education the term is also called a deep approach to learning. See Surface learning, Critical thinking and Procedural knowledge."
+ },
+ {
+  "pt": "Generalista",
+  "termo": "Generalist",
+  "def": "A person who knows a little about many fields and can connect what they learn in each.",
+  "com": "Animal ethics cuts across many fields, such as philosophy, nutrition, ecology, law, economics and psychology, and a generalist sees connections a specialist may miss. The political scientist Philip Tetlock, studying expert predictions, found that those he called \"foxes\", who know many things and combine several perspectives, tended to do better than the \"hedgehogs\", attached to one big idea. The generalist's risk is superficiality: on technical questions, such as nutrition or fish welfare, it pays to consult those who study the subject in depth. See Specialist and Deep learning."
+ },
+ {
+  "pt": "Especialista",
+  "termo": "Specialist",
+  "def": "A person with in-depth, recognized knowledge in a field, acquired through training, research or long experience.",
+  "com": "Trusting specialists is reasonable, because no one can check everything alone. But there are cautions: authority holds within each person's field, and a doctor isn't an expert in ethics nor a philosopher in nutrition; the consensus of many specialists weighs more than the opinion of one; and specialists also have biases and conflicts of interest, as when research is funded by those who profit from the result. Citing a specialist outside their field, or a lone one against the consensus, is what is called an appeal to authority. See Generalist, Evidence and Ethicist."
+ },
+ {
+  "pt": "Crítico",
+  "termo": "Critic",
+  "def": "Someone who examines and evaluates something, pointing out strengths and flaws; as the adjective \"critical\", what involves that examination, as in critical thinking, or what is decisive, as in a critical moment.",
+  "com": "Being critical isn't being contrarian: good criticism acknowledges what is right before pointing out what is wrong, which is why the guide shows, for each argument, what it gets right. Critics of veganism aren't enemies to defeat, and many of their objections raise real points. Likewise, animal advocates need to accept criticism, including from within the movement, to correct mistakes and improve their arguments. See Critical thinking, Anti-vegan and Skepticism."
+ },
+ {
+  "pt": "Conhecimento declarativo (ou explícito)",
+  "termo": "Declarative (or explicit) knowledge",
+  "def": "Knowledge of facts and ideas that can be stated, written down and taught in words; \"knowing that\", such as knowing that fish have nociceptors.",
+  "com": "The philosopher Gilbert Ryle, in 1949, distinguished \"knowing that\" from \"knowing how\". The terms declarative, used more in psychology, and explicit, used more in knowledge management, are close and often treated as synonyms. It is the kind of knowledge a book or this guide conveys: data, definitions, arguments. It is necessary, but not enough to hold a good conversation; that also takes procedural knowledge. See Procedural knowledge, Tacit knowledge and Surface learning."
+ },
+ {
+  "pt": "Conhecimento procedural",
+  "termo": "Procedural knowledge",
+  "def": "Knowledge of how to do something, acquired and refined through practice; \"knowing how\", such as cooking, riding a bike or handling a difficult conversation.",
+  "com": "Knowing all the arguments doesn't guarantee knowing how to use them: listening carefully, noticing what the person really means, staying calm and choosing the right answer at the right moment are skills learned through practice. That's why the guide has the simulated debate and the flashcard practice, which train responding, not just reading. See Declarative (or explicit) knowledge, Tacit knowledge and Deep learning."
+ },
+ {
+  "pt": "Conhecimento empírico",
+  "termo": "Empirical knowledge",
+  "def": "Knowledge gained through experience and observation, which can be tested against evidence; in Brazilian schooling, also everyday practical knowledge without systematic method, as opposed to scientific knowledge.",
+  "com": "In philosophy, it is contrasted with a priori knowledge, which doesn't depend on experience, like that of logic and mathematics. Many questions in the debate about animals are empirical: whether an animal feels pain, how much a diet pollutes, whether a vegan diet is adequate. They are settled by observation and research. Others are moral: whether an animal's suffering counts, and how much. Separating the two kinds of question avoids confusion, because no data alone decides what we should do, and no principle alone decides the facts. See Evidence, Epistemology and Tacit knowledge."
+ },
+ {
+  "pt": "Conhecimento tácito",
+  "termo": "Tacit knowledge",
+  "def": "Knowledge we have and use but can't fully explain in words, such as recognizing a face or sensing that an animal isn't well.",
+  "com": "The concept comes from the philosopher and chemist Michael Polanyi, in *The Tacit Dimension* (1966), summed up in the phrase \"we can know more than we can tell\". It is learned by living and practising alongside those who already know. Sanctuary caretakers, for example, often notice that an animal is ill from their posture or the way they move before any test. This knowledge is valuable, but it is worth confirming with systematic observation, because intuition can also be wrong. See Procedural knowledge, Declarative (or explicit) knowledge and Empirical knowledge."
  }
 ]

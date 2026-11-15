@@ -1349,7 +1349,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'egoismo (egocentrismo)': 'politicas/egoismo-objetivismo.html', 'altruismo': 'politicas/altruismo-eficaz.html', 'caridade': 'politicas/altruismo-eficaz.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
-                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying'), 'familias': ('Família de argumentos', 'Argument family')}
+                    'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying'), 'familias': ('Família de argumentos', 'Argument family'), 'debate.html': ('Debate simulado', 'Simulated debate'), 'treino.html': ('Treino com cartões', 'Flashcard practice')}
 
 def pagina_glossario():
     """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
@@ -1385,6 +1385,9 @@ def pagina_glossario():
     GLOS_GUIA['vegano especista'] = _arg('Veganos também são especistas', 'Vegans are speciesists too')
     GLOS_GUIA['relativismo moral'] = GLOS_GUIA['relativismo cultural'] = _arg('A moral é relativa', 'Morality is relative')
     GLOS_GUIA['educacao positiva'] = _arg('A coleira de choque', 'A shock collar')
+    GLOS_GUIA['conhecimento procedural'] = 'debate.html'
+    GLOS_GUIA['aprendizagem superficial'] = GLOS_GUIA['aprendizagem profunda'] = 'treino.html'
+    GLOS_GUIA['especialista'] = 'falacias.html#' + L('apelo-a-autoridade', 'appeal-to-authority')
     GLOS_GUIA['nutricao animal'] = _arg('Dar comida vegana para cachorro', 'Feeding a dog or cat vegan food')
     GLOS_GUIA['psicologia animal'] = f'argumentos/{SLUG_ARG["a1"]}.html'
     GLOS_GUIA['filosofia da mente'] = f'argumentos/{SLUG_ARG["a1"]}.html'
@@ -1421,7 +1424,7 @@ def pagina_glossario():
         t = norm(v['pt']); os_ = []
         alvo = GLOS_GUIA.get(t)
         if alvo:
-            ch = alvo.split('/')[0] if '/' in alvo else alvo
+            ch = alvo.split('/')[0] if '/' in alvo else alvo.split('#')[0]
             rot = GLOS_GUIA_ROTULO.get(ch, ('No guia', 'In the guide'))[1 if EN else 0]
             os_.append((rot, alvo))
         base = re.sub(r'\s*\(.*?\)', '', v['pt']).strip()
