@@ -23,8 +23,8 @@
 {
 "i": 282,
 "termo": "Free thought",
-"def": "An intellectual stance that values forming opinions independently, based on reason and evidence rather than authority or tradition.",
-"com": "It is often invoked by antispeciesists to justify revising culturally inherited speciesist beliefs without relying on religious authority, tradition or social consensus.",
+"def": "The attitude of forming opinions through reason and evidence, not authority, tradition or dogma.",
+"com": "The term arose in England in the late 17th and the 18th century, among critics of religious authority, such as Anthony Collins, author of *A Discourse of Free-Thinking* (1713). Thinking freely helps revise inherited beliefs, including about animals. But it doesn't mean every conclusion is equally good: free thinkers are still bound by the evidence, and the label is sometimes used to reject scientific consensus without good reasons. See Critical thinking, Skepticism and Evidence.",
 "pt": "Livre pensamento"
 },
 {
@@ -331,8 +331,8 @@
 {
 "i": 326,
 "termo": "Critical thinking",
-"def": "The ability to analyse, question and evaluate arguments and beliefs in a rational and independent way.",
-"com": "Its consistent application is often cited as what makes it possible to identify logical inconsistencies in common justifications for speciesism, such as the appeal to tradition or to personal convenience.",
+"def": "The ability to evaluate claims and arguments carefully: identifying premises, weighing evidence, recognizing fallacies and biases, and reaching conclusions proportionate to the reasons.",
+"com": "It isn't the same as distrusting everything or disagreeing on principle; it includes knowing when to trust experts and changing one's mind in the face of good reasons. Its hardest test is applying it to one's own beliefs, not just to other people's. In the debate about animals, it helps spot appeals to tradition, nature and convenience, but it cuts both ways: a good argument for animals also has to withstand critical scrutiny. See Free thought, Skepticism, Logic and Evidence.",
 "pt": "Pensamento crítico"
 },
 {
@@ -625,15 +625,15 @@
 {
 "i": 368,
 "termo": "Cultural relativism",
-"def": "The application of moral relativism to specific cultural practices.",
-"com": "Used as an argument against outside criticism of practices such as bullfighting or rituals involving animals, it is rejected by universalist currents of animal ethics, which consider the capacity to suffer a biological fact rather than a cultural construction open to relativisation.",
+"def": "In anthropology, the principle of understanding each practice within the culture where it exists; in ethics, the thesis that a practice is right if the culture that performs it accepts it.",
+"com": "The first sense, associated with the anthropologist Franz Boas, is a valuable method: it helps us understand a practice before judging it and avoids mistaking one's own custom for everyone's standard. The second is a form of moral relativism and inherits its problems, because it would make any accepted practice, however cruel, immune to criticism. In the debate about animals, both traps appear: using culture to shield rodeos, bullfighting or Brazil's vaquejada, and condemning other peoples' practices while accepting those of one's own culture, like someone outraged at dog eating in another country who eats pigs at home. See Moral relativism, Double standard and Instrumentalization.",
 "pt": "Relativismo cultural"
 },
 {
 "i": 369,
 "termo": "Moral relativism",
-"def": "The position that moral values depend on cultural or individual context.",
-"com": "Taken to its ultimate consequences, moral relativism would make it impossible to criticise practices of animal cruelty universally, even when widely recognised as avoidable, a limit pointed out by objectivist currents of animal ethics.",
+"def": "The position that right and wrong are not universal, but depend on the culture, era or person judging.",
+"com": "Two theses need separating. The first is descriptive and true: cultures and people disagree about what is right. The second is relativism proper: there would be no standard for saying some of these views are better than others. It faces well-known objections, such as those of the philosopher James Rachels: if it were true, we couldn't condemn slavery where it was accepted, nor speak of moral progress, and reformers would always be wrong. Some also invoke relativism selectively, only for the practices they want to protect. Some philosophers, such as Gilbert Harman and David Wong, defend more sophisticated versions, and the debate continues. Even in those versions, an animal's suffering isn't a matter of opinion: they feel pain whatever the culture of the observer. See Cultural relativism, Moral progress, Moral universality and Double standard.",
 "pt": "Relativismo moral"
 },
 {
