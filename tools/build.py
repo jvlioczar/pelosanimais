@@ -1378,6 +1378,10 @@ def pagina_glossario():
     GLOS_GUIA['escravidao animal'] = GLOS_GUIA['holocausto animal'] = f'argumentos/{SLUG_ARG[_c.lower()]}.html'
     _c = next(c for c, a in ARGS.items() if a.get('frase_pt', a['frase']).startswith(('Veganismo é caro', 'Veganism is expensive')))
     GLOS_GUIA['subsidios'] = GLOS_GUIA['incentivo fiscal'] = GLOS_GUIA['externalidade'] = f'argumentos/{SLUG_ARG[_c.lower()]}.html'
+    _arg = lambda *inicios: f'argumentos/{SLUG_ARG[next(c for c, a in ARGS.items() if a.get("frase_pt", a["frase"]).startswith(inicios)).lower()]}.html'
+    GLOS_GUIA['lei'] = GLOS_GUIA['legislacao de protecao animal'] = _arg('É legal, a lei permite', "It's legal; the law allows it")
+    GLOS_GUIA['direitos animais'] = _arg('Animais não são pessoas', "Animals aren't persons")
+    GLOS_GUIA['filosofia da mente'] = f'argumentos/{SLUG_ARG["a1"]}.html'
     # junta verbetes repetidos (mesmo termo em duas seções): ficam com a definição mais completa e aparecem nos dois temas
     vs = []
     for v in glossario.VERBETES:

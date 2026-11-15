@@ -646,5 +646,41 @@
   "termo": "Externality",
   "def": "A cost or benefit that an activity causes to other people, or other beings, and that doesn't show up in the product's price.",
   "com": "In the production of meat, milk and eggs, the most cited externalities are water and air pollution, greenhouse gas emissions, deforestation, antibiotic resistance and the risk of new diseases from animals. Since these costs aren't in the price, society pays them, and the product seems cheaper than it is. The animal-centered critique adds a point usually left out even of this account: the suffering and death of the animals themselves, which aren't even treated as a cost, because the animals are seen as the product. See Subsidies, Tax incentive and Antimicrobial resistance."
+ },
+ {
+  "pt": "Jurisdição",
+  "termo": "Jurisdiction",
+  "def": "The power of a state, court or authority to apply the law and settle disputes; also the territory or subject matter over which that power applies.",
+  "com": "Animal protection varies greatly from one jurisdiction to another: a practice banned in one country may be allowed next door, and companies sometimes move abroad what is banned at home. That's why animal advocacy happens at several levels at once: municipal, state, national and international. See Statute, Law and Animal protection legislation."
+ },
+ {
+  "pt": "Lei",
+  "termo": "Statute",
+  "def": "A written, general and binding rule passed by the legislature through the process set out in the constitution.",
+  "com": "Statutes sit within a hierarchy: below the constitution and above decrees and regulations. In Brazil, the Constitution itself prohibits practices that subject animals to cruelty (art. 225), and laws such as the Environmental Crimes Law and the Arouca Law deal with cruelty and the use of animals in research. A statute can protect animals or allow their exploitation, and something being legal doesn't settle whether it is just. See Law, Jurisdiction and Animal protection legislation."
+ },
+ {
+  "pt": "Legislação de proteção animal",
+  "termo": "Animal protection legislation",
+  "def": "The body of laws and rules that protect animals against cruelty and regulate their use, in areas such as farming, transport, slaughter, research and entertainment.",
+  "com": "Most of this legislation is welfarist: it limits how animals are used, but doesn't ban using them. Some rules go further and recognize animals as sentient beings, such as the Treaty of Lisbon in the European Union. See Animal law, Statute, Sentience in law and Welfarism."
+ },
+ {
+  "pt": "Direitos animais",
+  "termo": "Animal rights",
+  "def": "Rights that non-human animals would have, in the moral or legal sense, such as not being killed, confined or used as property.",
+  "com": "The theory of animal rights took shape with the philosopher Tom Regan, in *The Case for Animal Rights* (1983), for whom animals who are subjects-of-a-life have intrinsic value and cannot be treated as mere resources. It differs from welfarism, which accepts using animals as long as suffering is reduced. Not to be confused with animal law, the branch of law that studies rules about animals: one thing is the field of study, another is the thesis that animals have rights. See Animal law, Rights, Intrinsic value and Abolitionism."
+ },
+ {
+  "pt": "Filosofia moral",
+  "termo": "Moral philosophy",
+  "def": "The branch of philosophy that studies what is right and wrong, good and bad, and how we should act; in practice, another name for ethics.",
+  "com": "It is usually divided into three parts: metaethics, which asks what moral judgments are and whether they can be true; normative ethics, which proposes criteria for what we should do, such as utilitarianism, deontology and virtue ethics; and applied ethics, which discusses concrete cases, such as abortion, the death penalty and the use of animals. Animal ethics is part of applied ethics, but depends on the other two. See Ethics, Normative ethics and Animal ethics."
+ },
+ {
+  "pt": "Filosofia da mente",
+  "termo": "Philosophy of mind",
+  "def": "The branch of philosophy that studies the nature of the mind and consciousness, and the relationship between the mind and the body, or the brain.",
+  "com": "Some of its central questions lie at the heart of the debate about animals: how we know other beings have minds, the so-called problem of other minds; what it is to have an experience, Thomas Nagel's question of \"what it is like to be a bat\" (1974); and why physical processes give rise to experiences, the \"hard problem of consciousness\", as David Chalmers called it (1995). The same questions come back in the discussion of whether AIs and robots could come to feel. See Consciousness, Subjective experience, Epistemology and Sentience in AI and digital systems."
  }
 ]

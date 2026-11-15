@@ -884,5 +884,47 @@
   "def": "custo ou benefício que uma atividade causa a outras pessoas, ou a outros seres, e que não aparece no preço do produto.",
   "com": "Na produção de carne, leite e ovos, as externalidades mais citadas são a poluição da água e do ar, as emissões de gases de efeito estufa, o desmatamento, a resistência a antibióticos e o risco de novas doenças vindas de animais. Como esses custos não estão no preço, quem paga é a sociedade, e o produto parece mais barato do que é. A crítica animalista acrescenta um ponto que costuma ficar de fora até dessa conta: o sofrimento e a morte dos próprios animais, que nem são tratados como custo, porque eles são vistos como o produto. Veja Subsídios, Incentivo fiscal e Resistência antimicrobiana.",
   "links": []
+ },
+ {
+  "termo": "Jurisdição",
+  "sec": 7,
+  "def": "poder de um Estado, de um tribunal ou de uma autoridade de aplicar a lei e decidir conflitos; também o território ou o assunto sobre o qual esse poder vale.",
+  "com": "A proteção dos animais muda muito de uma jurisdição para outra: uma prática proibida num país pode ser permitida no vizinho, e empresas às vezes levam para fora o que é proibido em casa. Por isso a defesa dos animais acontece em vários níveis ao mesmo tempo, municipal, estadual, nacional e internacional. Veja Lei, Direito e Legislação de proteção animal.",
+  "links": []
+ },
+ {
+  "termo": "Lei",
+  "sec": 7,
+  "def": "norma escrita, geral e obrigatória, aprovada pelo Poder Legislativo segundo o processo previsto na Constituição.",
+  "com": "As leis ocupam um lugar numa hierarquia: abaixo da Constituição e acima de decretos e regulamentos. No Brasil, a própria Constituição veda as práticas que submetam os animais a crueldade (art. 225), e leis como a de Crimes Ambientais e a Lei Arouca tratam de maus-tratos e do uso de animais em pesquisa. Uma lei pode proteger os animais ou permitir sua exploração, e o fato de algo ser legal não decide se é justo. Veja Direito, Jurisdição e Legislação de proteção animal.",
+  "links": []
+ },
+ {
+  "termo": "Legislação de proteção animal",
+  "sec": 7,
+  "def": "conjunto de leis e normas que protegem os animais contra maus-tratos e regulam seu uso, em áreas como criação, transporte, abate, pesquisa e entretenimento.",
+  "com": "Em português, \"lei animal\" não é uma expressão usual: o mais comum é falar em lei ou legislação de proteção animal. \"Animalista\" é o adjetivo da causa e do movimento, como em causa animalista ou advogado animalista, e \"lei animalista\" aparece só como uso informal, para uma lei favorável aos animais. A maior parte dessa legislação é bem-estarista: limita como os animais são usados, mas não proíbe usá-los. Algumas normas vão além e reconhecem os animais como seres sencientes, como o Tratado de Lisboa, na União Europeia. Veja Direito animal, Lei, Senciência na lei e Bem-estarismo.",
+  "links": []
+ },
+ {
+  "termo": "Direitos animais",
+  "sec": 3,
+  "def": "direitos que os animais não humanos teriam, no sentido moral ou jurídico, como o de não serem mortos, confinados ou usados como propriedade.",
+  "com": "A teoria dos direitos animais ganhou forma com o filósofo Tom Regan, no livro *The Case for Animal Rights* (1983), para quem os animais que são sujeitos de uma vida têm valor intrínseco e não podem ser tratados como meros recursos. Ela se distingue do bem-estarismo, que aceita usar os animais desde que se reduza o sofrimento. Não confundir com direito animal, o ramo do direito que estuda as normas sobre animais: uma coisa é o campo de estudo, outra é a tese de que os animais têm direitos. Veja Direito animal, Direitos, Valor intrínseco e Abolicionismo.",
+  "links": []
+ },
+ {
+  "termo": "Filosofia moral",
+  "sec": 4,
+  "def": "ramo da filosofia que estuda o que é certo e errado, bom e mau, e como devemos agir; na prática, outro nome para a ética.",
+  "com": "Costuma ser dividida em três partes: a metaética, que pergunta o que são os juízos morais e se podem ser verdadeiros; a ética normativa, que propõe critérios do que devemos fazer, como o utilitarismo, a deontologia e a ética das virtudes; e a ética aplicada, que discute casos concretos, como o aborto, a pena de morte e o uso de animais. A ética animal faz parte da ética aplicada, mas depende das outras duas. Veja Ética, Ética normativa e Ética animal.",
+  "links": []
+ },
+ {
+  "termo": "Filosofia da mente",
+  "sec": 1,
+  "def": "ramo da filosofia que estuda a natureza da mente e da consciência, e a relação entre a mente e o corpo, ou o cérebro.",
+  "com": "Algumas das suas perguntas centrais estão no coração do debate sobre os animais: como sabemos que outros seres têm mente, o chamado problema das outras mentes; o que é ter uma experiência, a pergunta de Thomas Nagel sobre \"como é ser um morcego\" (1974); e por que processos físicos produzem experiências, o \"problema difícil da consciência\", como o chamou David Chalmers (1995). As mesmas perguntas reaparecem na discussão sobre se IAs e robôs poderiam vir a sentir. Veja Consciência, Experiência subjetiva, Epistemologia e Senciência em IA e sistemas digitais.",
+  "links": []
  }
 ]
