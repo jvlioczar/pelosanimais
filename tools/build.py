@@ -1679,6 +1679,10 @@ def redireciona(pasta, velho, novo):
 if not EN:  # o site em inglês já nasce com os endereços legíveis
     for velho, novo in SLUG_ARG.items(): redireciona('argumentos', velho, novo)
     for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
+else:  # endereços em inglês que mudaram quando a frase do argumento foi corrigida
+    for velho, c in {'so-should-we-stop-lions-from-hunting': 'f4', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'f2'}.items():
+        novo = SLUG_ARG[c]
+        escreve(f'arguments/{velho}.html', f'<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Page moved</title><meta name="robots" content="noindex"/><link rel="canonical" href="{SITE}/arguments/{novo}.html"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">This page has moved.</a></p></body></html>\n')
 import icones; icones.gera(len(ARGS), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
 escreve('assets/icon.svg', LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n')
 escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='en' if EN else 'pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
