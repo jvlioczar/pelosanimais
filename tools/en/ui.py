@@ -101,6 +101,7 @@ UI = [
  ('<span>A falha principal</span>', '<span>The main flaw</span>'),
  ('<p class="ti">A falha principal</p>', '<p class="ti">The main flaw</p>'),
  ('<h2>Como pode aparecer</h2>', '<h2>How it can show up</h2>'),
+ ('<h2 id="b2">Como pode aparecer</h2>', '<h2 id="b2">How it can show up</h2>'),
  ('<span>Devolva à questão moral</span><p>Mesmo se fosse verdadeiro, este argumento indireto justificaria no máximo exceções. Os interesses dos animais contam?</p>', '<span>Bring it back to the moral question</span><p>Even if it were true, this indirect argument would justify exceptions at most. Do the interests of animals count?</p>'),
  ('<h2>Erros e vieses ligados</h2>', '<h2>Related errors and biases</h2>'),
  ('<span class="cod">Falácia</span>', '<span class="cod">Fallacy</span>'),
