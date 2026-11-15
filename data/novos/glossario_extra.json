@@ -1309,7 +1309,7 @@
   "termo": "Pandemia",
   "sec": 17,
   "def": "epidemia que se espalha por vários países ou continentes e atinge um grande número de pessoas, como a gripe de 1918, a pandemia de HIV e a covid-19.",
-  "com": "A maioria das pandemias recentes começou com vírus vindos de animais. Segundo o painel de biodiversidade da ONU (IPBES), em 2020, os principais fatores de risco para novas pandemias são a mudança no uso da terra, a expansão e a intensificação da agropecuária e o comércio e o consumo de animais silvestres. A criação de animais tem um papel real nisso, como mostrou a pandemia de gripe de 2009, que teve origem em porcos. Mas a maior parte das zoonoses vem de animais silvestres, e a origem da covid-19 ainda é debatida. Por isso o guia recomenda não dizer que \"ser vegano evita pandemias\", e sim que comer menos animais reduz um dos fatores de risco. Veja Zoonose, Resistência antimicrobiana e Pecuária industrial.",
+  "com": "A maioria das pandemias recentes começou com vírus vindos de animais. Segundo o painel de biodiversidade da ONU (IPBES), em 2020, os principais fatores de risco para novas pandemias são a mudança no uso da terra, a expansão e a intensificação da agropecuária e o comércio e o consumo de animais silvestres. A criação de animais tem um papel real nisso, como mostrou a pandemia de gripe de 2009, que teve origem em porcos. Mas a maior parte das zoonoses vem de animais silvestres, e a origem da covid-19 ainda é debatida. Por isso o guia recomenda não dizer que \"ser vegano evita pandemias\", e sim que comer menos animais reduz um dos fatores de risco. Veja Saúde Única (One Health), Zoonose, Resistência antimicrobiana e Pecuária industrial.",
   "links": []
  },
  {
@@ -1317,6 +1317,13 @@
   "sec": 8,
   "def": "bactéria resistente a vários antibióticos, às vezes a quase todos os disponíveis, o que torna as infecções que ela causa difíceis ou impossíveis de tratar.",
   "com": "O nome é popular, e não técnico: os especialistas falam em bactérias multirresistentes. Elas surgem e se espalham pelo uso excessivo ou inadequado de antibióticos, na medicina humana e na criação de animais, onde os remédios são dados muitas vezes a animais saudáveis. Um exemplo é o gene mcr-1, que dá resistência à colistina, um antibiótico de último recurso, identificado em 2015 em porcos e frangos na China. Veja Resistência antimicrobiana, Zoonose e Pecuária industrial.",
+  "links": []
+ },
+ {
+  "termo": "Saúde Única (One Health)",
+  "sec": 17,
+  "def": "abordagem que trata a saúde humana, a saúde dos animais e a saúde do ambiente como interligadas, e propõe que sejam cuidadas em conjunto por diferentes áreas e governos.",
+  "com": "É adotada em conjunto pela Organização Mundial da Saúde, pela FAO, pela Organização Mundial de Saúde Animal e pelo Programa da ONU para o Meio Ambiente, que desde 2022 atuam como uma aliança de quatro organizações sobre o tema. Seus focos principais são a prevenção de zoonoses e pandemias, a resistência antimicrobiana e a segurança dos alimentos. No debate sobre os animais, ela dá base científica a um ponto verdadeiro: reduzir a criação intensiva, o uso de antibióticos em animais saudáveis, o comércio de animais silvestres e o desmatamento é uma medida de prevenção em saúde pública. Vale notar que, na Saúde Única, a saúde dos animais costuma ser tratada sobretudo como meio para proteger os humanos, e não por causa dos próprios animais. Veja Zoonose, Pandemia, Resistência antimicrobiana e Superbactéria.",
   "links": []
  }
 ]

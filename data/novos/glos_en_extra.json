@@ -1011,12 +1011,18 @@
   "pt": "Pandemia",
   "termo": "Pandemic",
   "def": "An epidemic that spreads across several countries or continents and affects a large number of people, such as the 1918 flu, the HIV pandemic and COVID-19.",
-  "com": "Most recent pandemics began with viruses from animals. According to the UN biodiversity panel (IPBES), in 2020, the main risk factors for new pandemics are land-use change, the expansion and intensification of agriculture and livestock farming, and the trade and consumption of wild animals. Animal farming plays a real part in this, as shown by the 2009 flu pandemic, which originated in pigs. But most zoonoses come from wild animals, and the origin of COVID-19 is still debated. That's why the guide recommends not saying that \"going vegan prevents pandemics\", but that eating fewer animals reduces one of the risk factors. See Zoonosis, Antimicrobial resistance and Industrial livestock farming."
+  "com": "Most recent pandemics began with viruses from animals. According to the UN biodiversity panel (IPBES), in 2020, the main risk factors for new pandemics are land-use change, the expansion and intensification of agriculture and livestock farming, and the trade and consumption of wild animals. Animal farming plays a real part in this, as shown by the 2009 flu pandemic, which originated in pigs. But most zoonoses come from wild animals, and the origin of COVID-19 is still debated. That's why the guide recommends not saying that \"going vegan prevents pandemics\", but that eating fewer animals reduces one of the risk factors. See One Health, Zoonosis, Antimicrobial resistance and Industrial livestock farming."
  },
  {
   "pt": "Superbactéria",
   "termo": "Superbug",
   "def": "A bacterium resistant to several antibiotics, sometimes to almost all those available, which makes the infections it causes hard or impossible to treat.",
   "com": "The name is popular, not technical: specialists speak of multidrug-resistant bacteria. They emerge and spread through excessive or inappropriate antibiotic use, in human medicine and in animal farming, where drugs are often given to healthy animals. One example is the mcr-1 gene, which confers resistance to colistin, a last-resort antibiotic, identified in 2015 in pigs and chickens in China. See Antimicrobial resistance, Zoonosis and Industrial livestock farming."
+ },
+ {
+  "pt": "Saúde Única (One Health)",
+  "termo": "One Health",
+  "def": "An approach that treats human health, animal health and environmental health as interconnected, and proposes that they be cared for together across different fields and governments.",
+  "com": "It is adopted jointly by the World Health Organization, the FAO, the World Organisation for Animal Health and the UN Environment Programme, which since 2022 have worked as a four-organization alliance on the subject. Its main focuses are preventing zoonoses and pandemics, antimicrobial resistance and food safety. In the debate about animals, it gives scientific grounding to a true point: reducing intensive farming, antibiotic use in healthy animals, the wildlife trade and deforestation is a public health prevention measure. It's worth noting that, in One Health, animal health is usually treated mainly as a means to protect humans, not for the sake of the animals themselves. See Zoonosis, Pandemic, Antimicrobial resistance and Superbug."
  }
 ]

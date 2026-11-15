@@ -1378,6 +1378,7 @@ def pagina_glossario():
     GLOS_GUIA['misantropia'] = f'ruins/{SLUG_RUIM[_v.lower()]}.html'
     _ruim = lambda inicio: f'ruins/{SLUG_RUIM[next(x["c"] for x in RUINS if x.get("frase_pt", x["frase"]).startswith(inicio)).lower()]}.html'
     GLOS_GUIA['pandemia'] = GLOS_GUIA['zoonose'] = _ruim('Ser vegano evita pandemias')
+    GLOS_GUIA['saude unica (one health)'] = _ruim('Ser vegano evita pandemias')
     GLOS_GUIA['superbacteria'] = GLOS_GUIA['resistencia antimicrobiana'] = _ruim('As superbactérias vêm')
     _c = next(c for c, a in ARGS.items() if a.get('frase_pt', a['frase']).startswith(('Comparar pecuária', 'Comparing animal farming')))
     GLOS_GUIA['escravidao animal'] = GLOS_GUIA['holocausto animal'] = f'argumentos/{SLUG_ARG[_c.lower()]}.html'
