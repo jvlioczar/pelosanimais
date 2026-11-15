@@ -51,6 +51,7 @@ SITES = [
     ('Sua Falácia Vegana É', 'Falácias comuns contra o veganismo, em cartões', 'https://yourveganfallacyis.com/pt-br'),
     ("Jamie's Corner: MythBusting", 'Em inglês: 16 mitos e objeções comuns ao veganismo, cada um com uma resposta, por um educador e ativista', 'https://www.itsjamiescorner.com/why-vegan/mythbusting'),
     ('Carnism Debunked', 'Em inglês: respostas aos argumentos usados para defender a exploração animal', 'https://www.carnismdebunked.com'),
+    ('Vegan Sidekick', 'Em inglês: quadrinhos de humor que mostram, com ironia, as desculpas mais comuns contra o veganismo, pelo Instagram', 'https://www.instagram.com/vegansidekick'),
     ('ADAPTT', 'Em inglês: acervo de textos sobre veganismo, ética e libertação animal, com guias para começar, palestras e formas de agir', 'https://www.adaptt.org'),
     ('Sentientism', 'Em inglês: visão de mundo comprometida com evidência, razão e compaixão por todos os seres sencientes, com comunidade e entrevistas', 'https://www.sentientism.info'),
     ('Essays on Reducing Suffering', 'Em inglês: ensaios sobre como reduzir o sofrimento, com foco em animais criados para consumo, animais selvagens e invertebrados', 'https://reducing-suffering.org/'),

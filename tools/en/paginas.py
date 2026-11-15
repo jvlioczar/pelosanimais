@@ -597,6 +597,7 @@ SITES = {
  'https://medium.com/veganismo-s': ('Veganismos', 'A Medium publication on veganism and animal ethics, in Portuguese'),
  'https://www.itsjamiescorner.com/why-vegan/mythbusting': ("Jamie's Corner: MythBusting", '16 common myths and objections to veganism, each with an answer, from an educator and activist'),
  'https://www.carnismdebunked.com': ('Carnism Debunked', 'Answers to the arguments used to defend animal exploitation'),
+ 'https://www.instagram.com/vegansidekick': ('Vegan Sidekick', 'Humorous comics that ironically show the most common excuses against veganism, on Instagram'),
  'https://www.sentienceinstitute.org/foundational-questions-summaries': ('Sentience Institute', 'A summary of the evidence on the foundational questions of effective animal advocacy'),
  'https://veganadvocacy.org/communication-hacks': ('Center for Effective Vegan Advocacy', 'Training for advocates, with communication tips for talking about veganism'),
  'https://reducing-suffering.org/': ('Essays on Reducing Suffering', 'Essays on reducing suffering, focused on farmed animals, wild animals and invertebrates'),
