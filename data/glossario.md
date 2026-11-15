@@ -9,7 +9,7 @@
 
 **Animal** — ser vivo multicelular do reino Animalia, dotado de mobilidade e, na maioria dos casos, de sistema nervoso; termo biológico que inclui os humanos, embora seja usado popularmente para designar apenas os não-humanos. *Essa separação cotidiana entre "humanos" e "animais" reforça, na linguagem comum, uma hierarquia moral entre espécies que a própria biologia não sustenta.*
 
-**Animal não-humano** — expressão usada para se referir a qualquer animal que não seja da espécie humana. *Seu uso é uma escolha deliberada de linguagem antiespecista: ao lembrar que o ser humano também é um animal, evita reforçar a oposição implícita "humano vs. animal" e a exclusão moral que essa oposição naturaliza.*
+**Animal não humano** — qualquer animal que não seja da espécie humana, como mamíferos, aves, peixes, répteis, anfíbios e invertebrados. *A expressão lembra que o ser humano também é um animal e evita a oposição "humanos e animais", que sugere uma separação maior do que a biologia mostra e costuma vir junto com a exclusão moral dos outros animais. Pelo Acordo Ortográfico de 1990, escreve-se sem hífen, "não humano", embora a forma "não-humano" ainda apareça. Em textos do dia a dia, "animais" ou "outros animais" também servem, desde que fique claro de quem se fala. Veja Animal, Especismo e Antropocentrismo.*
 
 **Cognição animal** — estudo das capacidades mentais de animais não-humanos, como memória, planejamento e resolução de problemas. *Descobertas recentes nessa área têm revelado, em diversas espécies, capacidades antes atribuídas exclusivamente a humanos, o que enfraquece critérios de exclusão moral baseados em suposta inferioridade cognitiva.*
 
@@ -135,7 +135,7 @@
 
 **Contradição** — incompatibilidade lógica entre duas afirmações ou práticas. *No campo da ética animal, é frequentemente apontada entre valores declarados — como amar animais — e comportamentos habituais, como consumir produtos de sua exploração; fenômeno também descrito como dissonância cognitiva.*
 
-**Dano da morte** — discussão filosófica sobre em que sentido a morte prejudica um ser senciente, mesmo sem dor física envolvida. *Reconhecer que a morte pode prejudicar um ser senciente independentemente de dor física fortalece o argumento de que matar animais para consumo — mesmo com métodos indolores — constitui um dano moralmente relevante.*
+**Dano da morte** — o prejuízo que a morte causa a quem morre, mesmo quando ela é rápida e sem dor. *A explicação mais aceita é a da privação, defendida pelo filósofo Thomas Nagel em 1970: a morte é um dano extrínseco, porque tira de quem morre todas as experiências boas que ainda teria. Epicuro discordava: para ele, a morte "não é nada para nós", porque quando ela chega já não há ninguém para sofrê-la. Entre os que aceitam a privação, há divergência sobre o tamanho do dano: para Jeff McMahan, ele depende de quanto o ser está psicologicamente ligado ao próprio futuro, o que levaria alguns a atribuir aos animais um dano menor; outros respondem que a vida perdida é a mesma, com ou sem planos. Em qualquer versão, matar um animal saudável, mesmo sem dor, tira dele o resto da vida, e na criação a maioria é morta muito jovem: frangos de corte, com poucas semanas. Veja Dano, Dano extrínseco, Dano intrínseco e Interesse.*
 
 **Decisão** — escolha deliberada entre alternativas, avaliada moralmente conforme processo e consequências. *Decisões de consumo cotidianas, ainda que pareçam triviais, têm consequências diretas — e frequentemente ignoradas — sobre a vida e o sofrimento de seres sencientes.*
 
@@ -249,7 +249,7 @@
 
 **Antipropomorfismo** *(ver Antropomorfismo)*
 
-**Antiveganismo** — conjunto de posições, discursos ou movimentos que se opõem ao veganismo como filosofia ou prática, seja por ceticismo ético, cultural ou nutricional. *Argumentos antiveganistas de base nutricional têm sido crescentemente contestados por posicionamentos de órgãos de nutrição que reconhecem a adequação de dietas vegetarianas e veganas bem planejadas (ver Nutrição, seção 2).*
+**Antiveganismo** — conjunto de posições, discursos, campanhas e medidas que se opõem ao veganismo, como filosofia ou como prática. *Vai de piadas e estereótipos a campanhas da indústria e a regras que dificultam produtos veganos, como a decisão do Tribunal de Justiça da União Europeia, em 2017, que reservou nomes como "leite" e "queijo" para produtos de origem animal. Os argumentos antiveganos mais comuns são nutricionais, culturais e econômicos. Os nutricionais perderam força: entidades como a Academy of Nutrition and Dietetics, dos Estados Unidos, consideram dietas veganas bem planejadas adequadas em todas as fases da vida, embora haja quem peça mais cautela na infância. Veja Antivegano, Não vegano e Carnismo.*
 
 **Antropocentrismo** — visão que coloca o ser humano como centro e medida do valor moral. *É a visão de mundo que o antiespecismo e o sencientismo mais diretamente contestam, por atribuir valor moral com base na espécie, e não na capacidade de sofrer.*
 
@@ -257,7 +257,7 @@
 
 **Biocentrismo** — visão que estende valor moral a toda vida, senciente ou não. *Diverge do sencientismo por incluir também organismos sem capacidade de sentir, como plantas, na esfera de consideração moral direta — ponto de desacordo relevante entre as duas correntes.*
 
-**Carnismo** — sistema de crenças que naturaliza, normaliza e torna invisível o consumo de certos animais (conceito citado apenas como exemplo de autoria, não verbete pessoal). *Segundo essa análise, o carnismo opera por meio de justificativas como "normal, natural e necessário", raramente aplicadas de forma consistente entre as diferentes espécies consumidas ou não.*
+**Carnismo** — sistema de crenças que faz comer certos animais parecer normal, natural e inevitável, e que torna invisível que isso é uma escolha. *O termo foi criado pela psicóloga social Melanie Joy em 2001 e difundido no livro *Por que amamos cachorros, comemos porcos e vestimos vacas* (2009). A ideia central é que comer carne não é uma ausência de posição, mas uma posição sustentada por justificativas que Joy resumiu em três "Ns": normal, natural e necessário. Um estudo de Jared Piazza e colegas, de 2015, confirmou essas justificativas e acrescentou uma quarta, "nice", isto é, gostoso. O carnismo também explica por que a mesma cultura acha certo comer porcos e errado comer cães. Há quem critique o termo como carregado, porque nomeia como ideologia o que a maioria vê como simples hábito. Veja Carnista, Especismo, Dissonância cognitiva e Antivegano.*
 
 **Conservadorismo** — nesse contexto, postura que tende a resistir a mudanças nas normas sociais relativas ao uso de animais, defendendo práticas tradicionais. *Do ponto de vista antiespecista, defender uma prática apenas por ser tradicional é considerado uma falácia — o apelo à tradição —, incapaz de justificar moralmente o sofrimento que ela possa causar.*
 
@@ -385,7 +385,7 @@
 
 **Legítima defesa** — *(ver seção 3, "Critérios e Status Moral")*.
 
-**Liberdade** — ausência de restrições indevidas à ação ou existência de um ser. *Reconhecer a liberdade como um interesse relevante para os animais implica questionar práticas que os privam sistematicamente de movimento, de expressão de comportamentos naturais e de autodeterminação básica, como o confinamento.*
+**Liberdade** — ausência de restrições indevidas à ação de um ser; também a possibilidade real de agir e de viver segundo sua natureza. *Os filósofos costumam distinguir dois sentidos, a liberdade negativa, não sofrer interferência, e a liberdade positiva, ter condições de agir e de conduzir a própria vida. Para os animais, a liberdade é um interesse relevante: o confinamento os priva de movimento, de comportamentos naturais e de escolhas básicas, como com quem ficar e para onde ir. Veja Liberdade negativa, Liberdade positiva e Cinco Liberdades.*
 
 **Personalidade jurídica animal** — debate sobre reconhecer animais como sujeitos de direitos, e não apenas propriedade. *É defendida por juristas antiespecistas como uma mudança de paradigma necessária para romper com a redução histórica dos animais à condição de bens patrimoniais.*
 
@@ -901,7 +901,7 @@
 
 **Crustovegetarianismo** — dieta vegetariana que inclui o consumo de crustáceos, com base no argumento (contestado) de que esses animais teriam menor ou nenhuma capacidade de sofrer.
 
-**Dieta** — padrão habitual de alimentação de um indivíduo ou grupo.
+**Dieta** — padrão habitual de alimentação de uma pessoa ou de um grupo, como em dieta mediterrânea ou dieta vegana; no uso popular, também um regime para emagrecer ou tratar uma condição de saúde. *A palavra vem do grego díaita, "modo de vida". Na nutrição, todo mundo tem uma dieta, porque o termo descreve o que se come, e não uma restrição. Por isso "dieta vegana" não quer dizer regime: é só a alimentação sem produtos de origem animal. Veja Dieta saudável, Dieta restritiva e Dieta vegana.*
 
 **Dieta restritiva** — dieta que exclui deliberadamente certos alimentos ou grupos alimentares, por razões de saúde, ética, religião ou outras.
 
@@ -959,9 +959,9 @@
 
 **Veganismo pragmático** — vertente focada em resultados e redução de dano, priorizando adesão em massa sobre pureza ideológica.
 
-**Vegetarianismo** — alimentação que exclui carnes de qualquer animal, inclusive peixes e frutos do mar, mas pode incluir outros produtos de origem animal, como leite, ovos e mel. *O termo se popularizou com a fundação da Vegetarian Society, na Inglaterra, em 1847. Muita gente acha que vegetarianos comem peixe, mas não comem. Alguns produtos escondem ingredientes de animais mortos, como a gelatina e o coalho de certos queijos. As vertentes mais comuns são o ovolactovegetarianismo, o lactovegetarianismo e o ovovegetarianismo; a versão sem nenhum produto animal é o vegetarianismo estrito. Veja Veganismo.*
+**Vegetarianismo** — alimentação que exclui a carne de qualquer animal, inclusive peixes e frutos do mar; em sentido estrito, também exclui todos os outros produtos de origem animal, como leite, ovos e mel. *A palavra tem dois sentidos. Em sentido amplo (lato sensu), o mais comum, vegetariano é quem não come carne, mas pode consumir leite, ovos ou mel; na prática, a maioria é ovolactovegetariana, e é isso que a maior parte das pessoas entende pelo termo. Em sentido estrito (stricto sensu), vegetarianismo é a alimentação sem nenhum produto de origem animal, o que no Brasil se chama vegetarianismo estrito. Quem defende o sentido estrito costuma dizer que esse era o sentido original, e há algum apoio para isso: alguns dos primeiros a usar a palavra, no início da década de 1840, como os membros da comunidade de Alcott House, na Inglaterra, não comiam nenhum produto animal. Mas a Vegetarian Society, fundada em 1847 e responsável por popularizar o termo, aceitou ovos e laticínios desde o início, e foi esse uso que se firmou; os historiadores ainda discutem o sentido exato dos primeiros registros. Foi para nomear quem não consumia nenhum produto animal que se criou, em 1944, a palavra vegan. Muita gente acha que vegetarianos comem peixe, mas não comem, e alguns produtos escondem ingredientes de animais mortos, como a gelatina e o coalho de certos queijos. Veja Vegetariano, Vegetarianismo estrito, Ovolactovegetarianismo e Veganismo.*
 
-**Vegetarianismo estrito** — termo usado no Brasil como sinônimo de dieta 100% vegetal (exclui carne, laticínios, ovos e mel), distinto do veganismo como filosofia mais ampla que também abrange vestuário, entretenimento e outros usos de animais.
+**Vegetarianismo estrito** — alimentação sem nenhum produto de origem animal: sem carnes, peixes, frutos do mar, leite e derivados, ovos e mel. *Corresponde ao sentido estrito de vegetarianismo e é a expressão usada no Brasil, por exemplo pela Sociedade Vegetariana Brasileira. Descreve só a alimentação: o veganismo inclui a mesma dieta, mas vai além e recusa a exploração animal também no vestuário, no entretenimento e em outros usos. Veja Vegetarianismo, Dieta vegana e Veganismo.*
 
 ---
 

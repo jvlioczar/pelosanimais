@@ -699,7 +699,7 @@
   "pt": "Vegano especista",
   "termo": "Speciesist vegan",
   "def": "A vegan who rejects animal exploitation but still gives less weight to the interests of some sentient beings just because of their species.",
-  "com": "Veganism starts from the principle of not exploiting animals. Antispeciesism goes further: it asks that similar interests of any sentient being weigh equally, whatever the species, including in situations that don't involve exploitation. A vegan can be speciesist in two ways. The first is discriminating among animals by species without justification, such as caring about dogs, cows and dolphins while dismissing fish, insects and other invertebrates who may also feel, which the glossary calls xenospeciesism. The second is ignoring sentient beings in scenarios beyond exploitation: wild animal suffering, treated as \"just nature\" even when helping would be possible; animals seen as pests, killed without need or in cruel ways; animals hit by disasters, road traffic or pollution, who get attention only when they belong to favored species; and possible new minds, such as sentient AIs, dismissed in advance. The critique works as self-criticism, to carry the principle all the way through, not to invalidate veganism: pointing out that some vegans are speciesist doesn't show that exploiting animals is acceptable. See Speciesism, Xenospeciesism, Antispeciesism, Wild animal suffering and Sentience in AI and digital systems."
+  "com": "Veganism starts from the principle of not exploiting animals. Antispeciesism goes further: it asks that similar interests of any sentient being weigh equally, whatever the species, including in situations that don't involve exploitation. A vegan can be speciesist in two ways. The first is discriminating among animals by species without justification, such as caring about dogs, cows and dolphins while dismissing fish, insects and other invertebrates who may also feel, which the glossary calls xenospeciesism. The second is ignoring sentient beings in scenarios beyond exploitation: wild animal suffering, treated as \"just nature\" even when helping would be possible; animals seen as pests, killed without need or in cruel ways; animals hit by disasters, road traffic or pollution, who get attention only when they belong to favored species. Dismissing possible new minds, such as sentient AIs, in advance is a similar mistake, but it isn't speciesism, because they belong to no species: the name for that bias is substratism, or carbonism when it favors organic bodies. The critique works as self-criticism, to carry the principle all the way through, not to invalidate veganism: pointing out that some vegans are speciesist doesn't show that exploiting animals is acceptable. See Speciesism, Xenospeciesism, Antispeciesism, Wild animal suffering and Substratism."
  },
  {
   "pt": "Nutrição animal",
@@ -712,5 +712,131 @@
   "termo": "Animal psychology",
   "def": "The study of the mind and behavior of non-human animals, such as perception, learning, memory, emotions and social relationships; also called comparative psychology.",
   "com": "For a long time the field was shaped by behaviorism, which studied only observable behavior and avoided talk of mind, often with experiments that caused suffering, such as the learned helplessness experiments on dogs. Today, together with ethology and the science of animal cognition, it provides much of the evidence that many animals feel fear, pleasure and stress, learn, and have complex social lives. There is also an applied side, which deals with behavior problems in companion and captive animals. Not to be confused with the psychology that studies humans' relationship with animals, such as the meat paradox. See Animal cognition, Ethology, Animal emotions and Morgan's canon."
+ },
+ {
+  "pt": "Vegano",
+  "termo": "Vegan",
+  "def": "A person who follows veganism, that is, who seeks to exclude, as far as is possible and practicable, all forms of exploitation of and cruelty to animals, in food, clothing, entertainment and other uses; also the adjective for products and practices free of animal origin or exploitation.",
+  "com": "The word was coined in 1944 by Donald Watson and other founders of the Vegan Society, in England, from the first and last letters of \"vegetarian\". Being vegan isn't just a diet: someone who eats only plants but wears leather or pays to watch animals in shows follows a vegan diet without being vegan. The phrase \"as far as is possible and practicable\" acknowledges that living without causing any harm to animals is impossible; the commitment is to avoid what can be avoided. See Veganism, Vegan diet, Vegetarian and Speciesist vegan."
+ },
+ {
+  "pt": "Vegetariano",
+  "termo": "Vegetarian",
+  "def": "A person who doesn't eat the meat of any animal, including fish and seafood; in the most common sense, they may consume other animal products, such as milk, eggs and honey.",
+  "com": "Many people call someone who eats fish or chicken a vegetarian, but that usage is wrong: someone who eats fish is a pescetarian. Most vegetarians are lacto-ovo vegetarians. That is the broad and most common sense; in the strict sense, a vegetarian is someone who consumes no animal products in their diet, which in Brazil is called a strict vegetarian. It's worth noting that, in most of the industry, producing milk and eggs also involves killing animals, such as the calves separated from cows and the male chicks culled at hatching; so vegetarianism reduces, but doesn't eliminate, participation in the killing. See Vegetarianism, Lacto-ovo vegetarianism, Vegan and Reducetarianism."
+ },
+ {
+  "pt": "Sencientista",
+  "termo": "Sentientist",
+  "def": "A person who holds sentientism, that is, who takes sentience, rather than species, substrate or intelligence, as the criterion for moral consideration.",
+  "com": "For a sentientist, every being able to feel, to have good and bad experiences, deserves to have their interests taken into account, whether a human, another animal or, if one ever exists, a sentient artificial mind. Since the late 2010s, the term has also named a worldview that joins reason and evidence with compassion for all sentient beings. A sentientist isn't necessarily vegan, and a vegan isn't necessarily a sentientist: one starts from a criterion of moral consideration, the other from a commitment not to exploit animals, and the two usually go together. See Sentientism, Sentience, Antispeciesism and Substratism."
+ },
+ {
+  "pt": "Eticista",
+  "termo": "Ethicist",
+  "def": "An expert in ethics: a person who studies, teaches or researches ethics, or who advises institutions on moral questions.",
+  "com": "Being an ethicist means knowing about ethics, not a guarantee of acting better. The philosophers Eric Schwitzgebel and Joshua Rust compared ethics professors with other professors in the United States and, in a study published in 2014, found that ethicists more often condemned eating the meat of mammals, but didn't report eating less meat than other philosophers. The result shows the gap between knowing and doing, which is why moral consistency is a challenge for everyone, animal advocates included. See Ethics, Animal ethics, Bioethicist and Moral consistency."
+ },
+ {
+  "pt": "Bioeticista",
+  "termo": "Bioethicist",
+  "def": "An expert in bioethics: a person who studies the moral problems of medicine, scientific research and biotechnology, and who often sits on committees that review research and clinical decisions.",
+  "com": "Bioethicists serve on ethics committees in hospitals and in human research and, in the case of animals, on committees such as Brazil's CEUAs, which review the use of animals in teaching and research. Most of this work follows the 3Rs principle, replacing, reducing and refining the use of animals, which limits harm without questioning whether the use is just. Some bioethicists go further: Peter Singer, one of the central figures of animal ethics, was for decades a professor of bioethics at Princeton University. See Bioethics, Ethicist, 3Rs, Animal Use Ethics Committee (CEUA) and Animal experimentation."
+ },
+ {
+  "pt": "Transumanismo (transhumanismo)",
+  "termo": "Transhumanism",
+  "def": "An intellectual movement that advocates using science and technology to overcome biological limits, such as ageing, disease, cognitive limitations and suffering.",
+  "com": "The term was popularized by the biologist Julian Huxley in 1957, and the movement organized in the late 1990s, when Nick Bostrom and David Pearce founded the World Transhumanist Association, now Humanity+. The Transhumanist Declaration advocates the well-being of all sentience, including humans, non-human animals and possible artificial intelligences. Pearce goes further and proposes using technology to abolish suffering in all sentient beings, wild animals included. Not every transhumanist thinks this way: many focus only on enhancing humans. The movement also draws criticism, about unequal access to technologies, the risk of new forms of eugenics and speculative promises; the political scientist Francis Fukuyama went as far as calling it \"the world's most dangerous idea\". See Transhumanist, Wild animal suffering, Cultivated meat and Sentience in AI and digital systems."
+ },
+ {
+  "pt": "Transumanista (transhumanista)",
+  "termo": "Transhumanist",
+  "def": "A person who holds transhumanism, that is, who advocates using science and technology to overcome the biological limits of humans and, in some versions, of all sentient beings.",
+  "com": "For the animal cause, the difference between versions matters: a transhumanist focused only on humans can be as speciesist as anyone else, while a sentientist transhumanist sees technology as a means of reducing everyone's suffering, for example through cultivated meat or interventions to help wild animals. See Transhumanism, Sentientist and Wild animal suffering."
+ },
+ {
+  "pt": "Carnista",
+  "termo": "Carnist",
+  "def": "A person who, knowingly or not, follows carnism, that is, who eats animals because they consider it normal, natural and necessary; also the adjective for what reflects or sustains carnism, such as an advertisement or a policy.",
+  "com": "The word describes a position, not an insult, and hardly anyone calls themselves a carnist: most people have never thought of eating meat as a choice, which is exactly what the concept points out. So using it in a conversation can sound like an accusation and push the other person away; it usually works better to explain an idea than to label someone. Not every carnist is anti-vegan: many people eat meat and respect, or even admire, those who don't. See Carnism, Non-vegan and Anti-vegan."
+ },
+ {
+  "pt": "Antivegano",
+  "termo": "Anti-vegan",
+  "def": "A person who opposes veganism, often actively; also the adjective for what goes against veganism, such as a speech, a campaign, a law or a joke.",
+  "com": "Not to be confused with non-vegan: someone who isn't vegan isn't anti-vegan for that reason. An anti-vegan is someone who rejects veganism, mocks vegans or works against the cause, for example with campaigns to restrict vegan products. The hostility is measurable: in a 2017 study, the psychologists Cara MacInnis and Gordon Hodson found that vegans were rated as negatively as, or more negatively than, several other social groups. This guide treats anti-vegan arguments in their strongest version, with what they get right and where they fail, because answering those who disagree well is more useful than dismissing them. See Anti-veganism, Non-vegan and Carnist."
+ },
+ {
+  "pt": "Não vegano",
+  "termo": "Non-vegan",
+  "def": "A person who isn't vegan; also the adjective for products and practices that involve exploitation or ingredients of animal origin.",
+  "com": "It is a neutral term, which describes without judging: most people are non-vegan, including vegetarians, reducetarians and those who have never thought about it. Non-vegan isn't a synonym for anti-vegan: it describes what a person consumes, not what they think of veganism. As an adjective, it appears on labels and menus to warn that a product contains milk, eggs, honey, gelatin or other ingredients of animal origin. See Vegan, Anti-vegan and Carnist."
+ },
+ {
+  "pt": "Dieta saudável",
+  "termo": "Healthy diet",
+  "def": "A diet that provides the nutrients and energy the body needs and helps prevent disease, based on varied and minimally processed foods.",
+  "com": "The World Health Organization recommends basing one's diet on fruit, vegetables, legumes, nuts and whole grains, with at least 400 g of fruit and vegetables a day, and limiting free sugars, saturated fats, trans fats and salt. The 2014 Dietary Guidelines for the Brazilian Population propose a simple rule: make fresh or minimally processed foods the basis of the diet and avoid ultra-processed ones. A well-planned vegan diet can be healthy, with vitamin B12 supplementation, according to bodies such as the Academy of Nutrition and Dietetics; but being vegan doesn't make it healthy by itself, because soft drinks and crisps are vegan too. Health and ethics are different questions: the moral question is whether it's necessary to exploit animals to eat well, and the answer of the main nutrition bodies is that it isn't. See Diet, Vegan diet, Nutrition and Evidence."
+ },
+ {
+  "pt": "Instrumentalização",
+  "termo": "Instrumentalization",
+  "def": "Treating someone merely as a means to others' ends, ignoring their own interests; also using a cause or a person for ends foreign to it.",
+  "com": "The idea comes from Immanuel Kant, for whom people must always be treated also as ends, and never merely as means. Using someone as a means isn't always wrong: when we buy bread, the baker serves us, but consents and is paid. The problem is using someone merely as a means, without consent and against their interests. Kant didn't extend this principle to animals, but philosophers such as Tom Regan argued that every subject-of-a-life has value of their own and can't be treated as a mere resource. That is what happens in animal farming, where the animal's whole life is organized around what they produce. In the political sense, people also speak of instrumentalizing a cause, for example when animal protection is used only to attack the practices of minority groups, while those of the majority are left out. See Instrumental value, Intrinsic value, Objectification and Subjects-of-a-life."
+ },
+ {
+  "pt": "Pós-verdade",
+  "termo": "Post-truth",
+  "def": "A situation in which objective facts are less influential in shaping public opinion than appeals to emotion and personal belief.",
+  "com": "The term was chosen as word of the year for 2016 by Oxford Dictionaries, the year of the Brexit referendum and the US presidential election. It isn't the same as fake news: fake news is the content, and post-truth is the climate in which it circulates and convinces, because it confirms what people already want to believe. In the debate about animals, it appears on both sides: in advertisements of happy cows that don't show the reality of farms, in nutrition myths that spread on social media, and also in exaggerations by animal advocates. The antidote is the same for everyone: verifiable sources, attention to what scientific bodies say, including where they disagree, and willingness to admit uncertainty. See Truth, Evidence and Cognitive dissonance."
+ },
+ {
+  "pt": "Indústria da carne",
+  "termo": "Meat industry",
+  "def": "The set of companies and activities that breed, slaughter, process and sell animals as meat, from genetics and feed to meatpacking plants, distribution and advertising.",
+  "com": "It is one of the largest industries in the world: according to FAO data, more than 80 billion land animals are slaughtered each year for consumption, not counting fish, which are measured in tonnes. The sector is concentrated in a few companies, and one of them, Brazil's JBS, is the largest meat processor in the world; Brazil is also the largest exporter of beef and chicken. To protect its prices and image, the industry relies on lobbying, subsidies and advertising with happy animals, fights in court over the use of names like \"burger\" for plant-based products and, in the United States, backed laws that punish those who secretly film farms, several of which courts have struck down. The costs it doesn't pay fall on others: cattle ranching is the main driver of deforestation in the Amazon, and meatpacking workers face high rates of injury and psychological distress. Criticizing the industry isn't accusing each worker or small producer, who often have few alternatives. See Livestock industry, Industrial livestock farming, Lobby, Subsidies and Externality."
+ },
+ {
+  "pt": "Dano",
+  "termo": "Harm",
+  "def": "What leaves a being worse off than they would otherwise be; in the moral sense, a setback to someone's interests.",
+  "com": "There are two ways of causing harm: bringing about something bad, such as pain, fear or disease, which is intrinsic harm, or taking away something good, such as freedom, companionship or the rest of one's life, which is extrinsic harm, or harm by deprivation. In the moral sense, only those who have interests, that is, sentient beings, can be harmed: a car can be damaged, but there is no one for whom that is bad. In law, the word has its own uses, as in material and moral damages. See Intrinsic harm, Extrinsic harm, Harm of death, Maleficence and Benefit."
+ },
+ {
+  "pt": "Dano intrínseco",
+  "termo": "Intrinsic harm",
+  "def": "Harm that is bad in itself for the one who suffers it, regardless of its consequences, such as pain, fear, distress and boredom.",
+  "com": "It is the easiest kind of harm to recognize, because it is felt: an animal mutilated without anaesthesia or confined in a space where they can barely move suffers an intrinsic harm. Many animal welfare reforms try to reduce only this kind of harm, and leave aside extrinsic harm, such as death. See Harm, Extrinsic harm and Suffering."
+ },
+ {
+  "pt": "Dano extrínseco",
+  "termo": "Extrinsic harm",
+  "def": "Harm that is not bad in itself, but because of what it prevents or causes; the main case is deprivation, when something good someone would have had is taken away.",
+  "com": "An extrinsic harm can happen without any pain: a quick death takes away all the good experiences to come, and comfortable confinement takes away freedom, exploration of the environment and companionship. That's why the question \"what if the animal doesn't suffer?\" doesn't settle the debate: even without intrinsic harm, there can be serious extrinsic harm. Also called harm by deprivation. See Harm, Intrinsic harm and Harm of death."
+ },
+ {
+  "pt": "Benefício",
+  "termo": "Benefit",
+  "def": "What leaves a being better off than they would otherwise be, either by giving them something good, such as pleasure, health or companionship, or by preventing something bad.",
+  "com": "In bioethics, the principle of beneficence asks us to act for the good of others, and it is one of the four principles proposed by Tom Beauchamp and James Childress in 1979, alongside respect for autonomy, non-maleficence and justice. In the debate about animals, the question is often whether the benefits of a use outweigh the harms it causes. Often the benefit to humans is small, such as taste or convenience, and the harm to animals is enormous, such as a life of confinement and death. See Harm, Maleficence and Interest."
+ },
+ {
+  "pt": "Malefício",
+  "termo": "Maleficence",
+  "def": "The evil or harm done to someone; the opposite of benefit.",
+  "com": "In bioethics, the principle of non-maleficence, \"first, do no harm\", is one of the oldest in medical ethics. Applied consistently, it asks us not to cause unnecessary harm to any being who can suffer it, which includes animals. See Harm, Benefit and Bioethics."
+ },
+ {
+  "pt": "Liberdade negativa",
+  "termo": "Negative liberty",
+  "def": "Liberty as the absence of interference: to be free is not to be prevented or coerced by others.",
+  "com": "The distinction between negative and positive liberty became well known through the philosopher Isaiah Berlin, in the 1958 essay *Two Concepts of Liberty*. For animals, negative liberty is the most obvious: not being locked in cages, crates or tanks, not being tied up, not being forced to work or perform. But it isn't enough: an animal released in a place where they can't survive suffers no interference and can still suffer greatly. See Freedom, Positive liberty and Five Freedoms."
+ },
+ {
+  "pt": "Liberdade positiva",
+  "termo": "Positive liberty",
+  "def": "Liberty as the capacity to act: to be free is to have real conditions to make choices and run one's own life.",
+  "com": "For Isaiah Berlin, positive liberty was above all self-determination, being one's own master; today the term also covers having the means to act, such as health, resources and a suitable environment. For animals, it helps explain why opening the cages isn't enough: rescued animals need care and a place where they can live well, and wild animals free from human interference can still go hungry, fall ill and suffer. It is one of the reasons part of the movement argues for helping animals in the wild when this is possible without causing more harm. See Freedom, Negative liberty and Wild animal suffering."
  }
 ]

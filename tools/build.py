@@ -1458,17 +1458,26 @@ def pagina_glossario():
 
 </div></section>
 <script type="application/ld+json">{ld}</script>
-<script>(function(){{var q=document.getElementById("gq"),s=document.getElementById("gs"),n=document.getElementById("gn"),v=document.getElementById("gvazio");
+<script>(function(){{var q=document.getElementById("gq"),s=document.getElementById("gs"),n=document.getElementById("gn"),v=document.getElementById("gvazio"),G=document.getElementById("glos");
 var itens=[].slice.call(document.querySelectorAll(".glos-item")),letras=[].slice.call(document.querySelectorAll(".glos-letra")),az=[].slice.call(document.querySelectorAll(".glos-az a"));
 function norm(t){{return t.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"")}}
-var txt=itens.map(function(i){{return norm(i.textContent)}});
-function filtra(){{var t=norm(q.value.trim()),sec=s.value,c=0;
-itens.forEach(function(i,k){{var ok=(!sec||(" "+i.dataset.sec+" ").indexOf(" "+sec+" ")>-1)&&(!t||txt[k].indexOf(t)>-1);i.hidden=!ok;if(ok)c++}});
-letras.forEach(function(l,k){{var tem=!!l.querySelector(".glos-item:not([hidden])");l.hidden=!tem;az[k].classList.toggle("off",!tem)}});
+function tx(i,sel){{return [].map.call(i.querySelectorAll(sel),function(x){{return x.textContent}}).join(" ")}}
+var dados=itens.map(function(i){{var com=tx(i,".glos-com"),m=com.match(/(?:^|[.!?] )((?:Veja|See) [^]*)$/),veja=m?m[1]:"";if(m)com=com.slice(0,com.length-veja.length);
+return {{el:i,pai:i.parentNode,tit:norm(tx(i,"h3")),txt:norm(tx(i,".glos-def")+" "+com),rel:norm(veja+" "+tx(i,".glos-links")+" "+tx(i,".glos-no-guia")+" "+tx(i,".glos-sec"))}}}});
+var res=document.createElement("div");res.id="glos-res";res.hidden=true;G.parentNode.insertBefore(res,G);
+var ROT=["{L("No título", "In the title")}","{L("No texto", "In the text")}","{L("Relacionados", "Related")}"];
+function nivel(d,t){{if(d.tit.indexOf(t)>-1){{return d.tit===t?0:d.tit.indexOf(t)===0?1:(" "+d.tit).indexOf(" "+t)>-1?2:3}}if(d.txt.indexOf(t)>-1)return 10;if(d.rel.indexOf(t)>-1)return 20;return -1}}
+function filtra(){{var t=norm(q.value.trim()),sec=s.value,c=0,ach=[];
+dados.forEach(function(d,k){{var ok=!sec||(" "+d.el.dataset.sec+" ").indexOf(" "+sec+" ")>-1,nv=t?nivel(d,t):0;if(nv<0)ok=false;d.el.hidden=!ok;if(ok){{c++;ach.push([nv,k,d])}}}});
+if(t){{ach.sort(function(a,b){{return a[0]-b[0]||a[1]-b[1]}});res.innerHTML="";var g=-1;
+ach.forEach(function(a){{var gr=a[0]<10?0:a[0]<20?1:2;if(gr!==g){{g=gr;var h=document.createElement("h2");h.className="glos-grupo";h.textContent=ROT[gr];res.appendChild(h)}}res.appendChild(a[2].el)}});
+res.hidden=false;G.hidden=true;az.forEach(function(a){{a.classList.add("off")}})}}
+else{{dados.forEach(function(d){{d.pai.appendChild(d.el)}});res.hidden=true;G.hidden=false;
+letras.forEach(function(l,k){{var tem=!!l.querySelector(".glos-item:not([hidden])");l.hidden=!tem;az[k].classList.toggle("off",!tem)}})}}
 n.textContent=c+(c===1?" {L("termo", "term")}":" {L("termos", "terms")}");v.hidden=c>0}}
 q.addEventListener("input",filtra);s.addEventListener("change",filtra);
 try{{var p=new URLSearchParams(location.search);if(p.get("q")){{q.value=p.get("q");filtra()}}}}catch(e){{}}
-function irPara(){{var id=location.hash.slice(1),el=id&&document.getElementById(id);if(el&&el.hidden){{q.value="";s.value="";filtra();el.scrollIntoView()}}}}
+function irPara(){{var id=location.hash.slice(1),el=id&&document.getElementById(id);if(el&&(el.hidden||!G.contains(el))){{q.value="";s.value="";filtra();el.scrollIntoView()}}}}
 window.addEventListener("hashchange",irPara);irPara();
 }})();</script>"""
     page('glossario.html', L('Glossário', 'Glossary'), L(f'Glossário com {len(vs)} termos da ética animal, do veganismo e do antiespecismo, com busca e filtro por tema.', f'Glossary of {len(vs)} terms from animal ethics, veganism and antispeciesism, with search and a topic filter.'), corpo, 'glossario.html', 'CollectionPage')

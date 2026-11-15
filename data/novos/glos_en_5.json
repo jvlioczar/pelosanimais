@@ -499,15 +499,15 @@
 {
 "i": 443,
 "termo": "Vegetarianism",
-"def": "A diet that excludes the meat of any animal, including fish and seafood, but may include other animal products, such as milk, eggs and honey.",
-"com": "The term became popular with the founding of the Vegetarian Society in England in 1847. Many people think vegetarians eat fish, but they don't. Some products hide ingredients from killed animals, such as gelatin and the rennet in certain cheeses. The most common forms are lacto-ovo vegetarianism, lacto-vegetarianism and ovo-vegetarianism; the version with no animal products at all is strict vegetarianism. See Veganism.",
+"def": "A diet that excludes the meat of any animal, including fish and seafood; in the strict sense, it also excludes all other animal products, such as milk, eggs and honey.",
+"com": "The word has two senses. In the broad sense (lato sensu), the most common, a vegetarian is someone who doesn't eat meat but may consume milk, eggs or honey; in practice, most are lacto-ovo vegetarians, and that is what most people understand by the term. In the strict sense (stricto sensu), vegetarianism is a diet free of all animal products, which in Brazil is called strict vegetarianism. Those who defend the strict sense often say it was the original meaning, and there is some support for this: some of the first to use the word, in the early 1840s, such as the members of the Alcott House community in England, ate no animal products at all. But the Vegetarian Society, founded in 1847 and responsible for popularizing the term, accepted eggs and dairy from the start, and that usage took hold; historians still debate the exact meaning of the earliest records. It was to name those who consumed no animal products that the word vegan was coined in 1944. Many people think vegetarians eat fish, but they don't, and some products hide ingredients from dead animals, such as gelatin and the rennet in certain cheeses. See Vegetarian, Strict vegetarianism, Lacto-ovo vegetarianism and Veganism.",
 "pt": "Vegetarianismo"
 },
 {
 "i": 444,
 "termo": "Strict vegetarianism",
-"def": "A term used in Brazil as a synonym for a 100% plant-based diet (excluding meat, dairy, eggs and honey), distinct from veganism as a broader philosophy that also covers clothing, entertainment and other uses of animals.",
-"com": "",
+"def": "A diet free of all animal products: no meat, fish, seafood, milk and dairy, eggs or honey.",
+"com": "It corresponds to the strict sense of vegetarianism and is the expression used in Brazil, for example by the Brazilian Vegetarian Society. It describes only the diet: veganism includes the same diet, but goes further and rejects animal exploitation also in clothing, entertainment and other uses. See Vegetarianism, Vegan diet and Veganism.",
 "pt": "Vegetarianismo estrito"
 },
 {
