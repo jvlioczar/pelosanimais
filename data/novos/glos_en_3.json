@@ -37,8 +37,8 @@
 {
 "i": 191,
 "termo": "Stereotypy",
-"def": "Repetitive behavior with no apparent function, an indicator of psychological suffering or frustration in animals kept in inadequate conditions (see also stereotyped behavior, section 8).",
-"com": "",
+"def": "Repetitive behavior with no apparent function, such as pacing back and forth, head swaying or bar biting, an indicator of psychological suffering or frustration in animals kept in inadequate conditions.",
+"com": "It appears in sows confined in crates, horses in stalls, elephants and bears in zoos and laboratory animals. A stereotypy can be the scar of a poor past environment and may continue even after conditions improve. On the other hand, the absence of stereotypies doesn't prove that the animal is well: some become apathetic. See Stereotypic behavior, Environmental enrichment and Stress.",
 "pt": "Estereotipia"
 },
 {
@@ -94,7 +94,7 @@
 "i": 199,
 "termo": "Euthanasia",
 "def": "The controlled induction of an animal's death, generally to spare it from suffering; distinct from slaughter, which aims at consumption or production.",
-"com": "",
+"com": "It is truly euthanasia only when death is in the animal's own interest, as in untreatable suffering. Killing healthy animals for lack of space, at the end of an experiment or because they are no longer profitable is something else, even when the method is painless, and calling it euthanasia is a euphemism. See No-kill shelter, Euphemism and Slaughter.",
 "pt": "Eutanásia"
 },
 {
@@ -114,8 +114,8 @@
 {
 "i": 202,
 "termo": "Animal experimentation",
-"def": "The use of animals in scientific, medical or cosmetic tests.",
-"com": "",
+"def": "The use of animals in scientific research, product safety testing, teaching and the production of biological substances, such as vaccines and antibodies.",
+"com": "An estimate published in 2019 calculated that about 190 million animals were used in laboratories worldwide in 2015, mostly mice, rats, fish and birds. Experimentation is regulated by laws that require justification and pain control, but allow procedures that cause severe suffering. Supporters point to contributions to medicine; critics question how well the results transfer to humans and advocate animal-free methods. See 3Rs, Animal model, Arouca Law and Replacement methods.",
 "pt": "Experimentação animal"
 },
 {
@@ -276,7 +276,7 @@
 "i": 225,
 "termo": "Battery cages",
 "def": "Stacked, overcrowded cages used to confine laying hens, with extremely restricted space.",
-"com": "",
+"com": "Each hen usually has less space than a sheet of letter-size paper, unable to spread her wings, nest, scratch or dust-bathe. The European Union banned conventional cages from 2012, but allows slightly larger \"enriched\" cages. Many companies, including in Brazil, have committed to buying only cage-free eggs, but cage-free systems still have problems, such as overcrowding and the culling of male chicks. See Animal confinement, Free range and Beak trimming.",
 "pt": "Gaiolas de bateria (battery cages)"
 },
 {
@@ -486,7 +486,7 @@
 "i": 255,
 "termo": "Stunning of animals",
 "def": "A procedure that seeks to render an animal unconscious before slaughter, reducing (but not always eliminating) the perception of pain.",
-"com": "",
+"com": "The most common methods are the captive bolt gun, electric shock and, for pigs and poultry, gases such as carbon dioxide. At high concentrations, carbon dioxide is aversive to pigs, who show signs of panic and breathlessness before losing consciousness. Failures happen, and some animals reach the bleeding stage conscious. See Humane slaughter, Slaughterhouse and Slaughter.",
 "pt": "Insensibilização de animais"
 },
 {

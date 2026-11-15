@@ -36,7 +36,7 @@
         "falha": "Appeal to authority and, at second hand, to the majority: AI repeats the texts it was trained on and is tuned not to take sides; abstaining is not concluding that it isn't wrong"
       }
     },
-    "H13": {
+    "H14": {
       "falha_pt": "Falsa dicotomia: dá para escolher plantas e cuidar de como são cultivadas; o tipo de alimento pesa mais que o modo de produção, e nada disso responde ao que acontece com o animal",
       "en": {
         "frase": "What matters is how food is grown, not whether it comes from animals",
@@ -48,7 +48,7 @@
         "falha": "False dichotomy: you can choose plants and care about how they are grown; the type of food weighs more than the production method, and none of it answers what happens to the animal"
       }
     },
-    "H3": {
+    "H4": {
       "falha_pt": "A maior parte da soja e boa parte dos grãos alimentam animais de criação; comer plantas reduz a área agrícola, e comparar a pior lavoura com a melhor pecuária é injusto",
       "en": {
         "frase": "Plant monoculture destroys as much as industrial animal farming",

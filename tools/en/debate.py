@@ -213,14 +213,14 @@ OP = {
   me='It may even be a logical description, but labeling ends the conversation right when the person conceded the point.',
   r="Then don't complain when someone does the same to you. A person who knows they're wrong and carries on is worse than one who doesn't know, and one day the bill comes due. When it does, I hope you're treated as lazily as you treat animals.",
   re='A vague threat with no argument and no way forward.'),
- 'F2': dict(
+ 'F3': dict(
   f="I'd probably save the child, just as many people would save their own child rather than a stranger. But that doesn't give permission to use strangers. Choosing whom to save in a tragedy doesn't license hurting those who aren't in danger.",
   fe='Answers the question honestly and shows that a preference in an emergency does not justify exploitation.',
   m="I'd save the dog. It's more innocent: it has never harmed anyone, and humans are the species that does the most damage to the planet. Honestly, most of the time animals deserve our help more than people do.",
   me='Sounds like contempt for humans and reinforces the stereotype that vegans value animals over people.',
   r="That's a manipulative question; I won't answer it. You set up an absurd scenario just to corner me and then go around saying vegans hate people. Save that trick for someone who falls for it, and let me know when you want a real conversation.",
   re='Refusing to answer looks like dodging. The question has a good answer.'),
- 'F3': dict(
+ 'F4': dict(
   f="Wild animal suffering is a serious question, and some people study ways to reduce it without causing more harm. But whatever the answer, it doesn't favor eating animals: suffering in nature is no reason to cause more.",
   fe='Takes the question seriously and shows it does not support the conclusion.',
   m="It's a serious question, and the consistent answer is yes: we should get rid of all predators. If suffering is bad, it doesn't matter who causes it, so the right thing would be to phase out lions, wolves and hawks and leave only herbivores.",
@@ -255,7 +255,7 @@ OP = {
   me='Flips the stereotype with another claim the evidence does not support.',
   r="The pale ones are people who live on barbecue and beer. Look around at the next family party: bellies, high blood pressure, cholesterol pills. If anyone here looks sick, it certainly isn't the person eating salad.",
   re='Answers a stereotype with a stereotype and gives offense.'),
- 'H9': dict(
+ 'H10': dict(
   f="It's true that some pasture can't grow crops. But that land produces little food: livestock uses about 80% of agricultural land and provides about 17% of calories. That land could return to native vegetation.",
   fe='Concedes the true part and shows the ratio between land used and food produced.',
   m="That doesn't hold up, because all pasture is cleared rainforest. There's no such thing as \"natural\" grazing land: wherever there are cattle today, there used to be forest. Every steak you eat is a piece of woodland that was cut down.",
@@ -449,35 +449,35 @@ OP.update({
   me='Ignores real difficulties and sounds like a demand.',
   r="Admiring doesn't save a single animal. While you admire me, they keep dying. Admiration without action is just a polite way of doing nothing. Animals can't eat admiration. Do something.",
   re='Turns a sincere compliment into an accusation.'),
- 'F4': dict(
+ 'F5': dict(
   f="Killing insects by accident while driving is different from paying to have an animal raised and killed. One is accidental and hard to avoid; the other is intentional and easy to avoid. Nobody asks you to avoid every possible harm, only the avoidable ones.",
   fe='Separates accidental from intentional and avoidable from unavoidable.',
   m="Insects don't feel anything, so there's no problem at all in killing them while driving. That's completely different from eating a real animal that feels pain. Comparing the two is absurd and dishonest, and doesn't deserve an answer.",
   me="States a certainty science doesn't have about insects.",
   r="Then let's all stop driving, walking and breathing, because something always dies. That argument is just an excuse not to change anything. Nobody really takes that question seriously, not even the person asking.",
   re='Ridicules the question instead of answering.'),
- 'F5': dict(
+ 'F6': dict(
   f="Protecting yourself from a dengue mosquito or stopping rats from contaminating food is defense against a real threat. Raising an animal to eat isn't: it threatens nobody. And the ideal is prevention: screens, sealing, removing breeding sites.",
   fe='Distinguishes defense from exploitation and shows harm can be reduced.',
   m="I never kill a single mosquito or rat, I'm a real vegan. Anyone who kills any creature, even at home, can't call themselves vegan. That's what consistency is: never killing anything, in any situation, not even in self-defense.",
   me='Creates a purity rule veganism doesn\'t have.',
   r="Was the pig that became bacon attacking you? Were you defending yourself from it? No? Then don't compare the two. What a forced comparison. You don't even believe it yourself. Nobody falls for that, not even you.",
   re='The idea is good, but the tone mocks.'),
- 'F7': dict(
+ 'F8': dict(
   f="You may be right about oysters and mussels: their nervous system is very simple. But in saying so, you accept that what matters is whether the animal feels. And that criterion condemns eating fish, octopuses, chickens and pigs, who do feel.",
   fe='Grants the point and shows the criterion turns against the rest of the plate.',
   m="Oysters and mussels feel pain like any other animal, it's been proven. That's why no vegan should even accept this discussion. Every animal feels the same, from a mussel to a chimpanzee, and doubting it is already speciesism.",
   me="States a certainty science doesn't have, a mistake this guide asks you to avoid.",
   r="Here comes the oyster to rescue the barbecue. Nobody eats only oysters, it's an excuse to justify everything else. Next you'll tell me you're vegan because you eat oysters on Sundays.",
   re='Ridicules the question without using its strong point.'),
- 'F8': dict(
+ 'F9': dict(
   f="Today there's no evidence that plants feel. But if one day we found out, eating plants would still be better, because animals raised for food eat far more plants than we would eat directly.",
   fe='Shows that even granting the hypothesis, the conclusion favors eating plants.',
   m="Plants will never feel anything, it's biologically impossible, and anyone asking is just trying to change the subject. It's a meaningless question from someone looking for any loophole not to change anything.",
   me='Asserts an impossibility and accuses of bad faith.',
   r="Then you eat rocks. Or stop eating. A hypothetical question from someone who doesn't want to think about what happens today, right now, to animals who really feel. It's just a way of dodging the subject.",
   re='Sarcasm that ignores the strong, simple answer.'),
- 'F12': dict(
+ 'F13': dict(
   f='Refusing on principle is consistent. Accepting can be too, if the money saves many more victims. The same question works for any cause: "would you torture someone for a million?". Nobody uses the answer to prove the cause is false.',
   fe='Shows both answers are consistent and the test doesn\'t prove what it claims.',
   m="Never, for no amount of money in the world. Anyone who'd accept isn't really vegan, and I'd never betray my values for money, not even to help anyone. Dirty money never helps any cause, even if it saves many animals.",
@@ -519,7 +519,7 @@ OP.update({
   me='Makes a false, sweeping claim.',
   r="Funny how people who eat steak turn environmentalist when it's time to criticize tofu. Get less misinformed and read something before you talk. That argument only serves to let meat eaters off the hook.",
   re='Personal attack without the data that would settle it.'),
- 'H12': dict(
+ 'H13': dict(
   f='Organic and local help on some points, but they don\'t change the essentials: meat emits a lot and uses a lot of land. In Poore and Nemecek\'s data, even the most efficient beef emits more than ten times what the highest-impact peas emit.',
   fe='Acknowledges the merit and shows the proportion that decides it.',
   m="Local, organic meat pollutes even more than industrial meat, and it's the worst option of all for the planet. Buying from small farmers is what destroys the environment most. Nobody should ever buy from small meat producers.",
@@ -561,7 +561,7 @@ OP.update({
   me="Denies the real experience of many people.",
   r="So your fun is worth more than an animal's life? How selfish. A party without meat won't kill you. The animals didn't ask to die so you could have fun at the weekend. Stay home, then, if it's so hard.",
   re='Moralizes aggressively instead of offering ways out.'),
- 'J18': dict(
+ 'J21': dict(
   f='Calling an idea "leftist" or "globalist" doesn\'t show it\'s wrong. Veganism has advocates on the left, on the right and outside politics. The question is simple: is it fair to make animals suffer and die needlessly?',
   fe='Undoes the guilt by association and returns to the central question.',
   m="Veganism is left-wing, yes, and anti-capitalist by nature. You can't be vegan and defend the market, because all animal exploitation comes from capitalism. Veganism is a political struggle, and you can't depoliticize what is political by nature.",

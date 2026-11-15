@@ -215,14 +215,14 @@ OP = {
   me='Pode até ser uma descrição lógica, mas rotular encerra a conversa justamente quando a pessoa admitiu o ponto.',
   r='Então não reclama quando fizerem o mesmo com você. Quem sabe que está errado e continua é pior do que quem não sabe, e um dia a conta chega. Quando chegar, espero que tratem você com a mesma preguiça com que você trata os animais.',
   re='Ameaça vaga, sem argumento e sem caminho.'),
- 'F2': dict(
+ 'F3': dict(
   f='Eu provavelmente salvaria a criança, como muita gente salvaria o próprio filho e não um estranho. Mas isso não dá permissão para usar estranhos. Escolher quem salvar numa tragédia não autoriza machucar quem não está em perigo.',
   fe='Responde à pergunta com honestidade e mostra que uma preferência numa emergência não justifica a exploração.',
   m='Eu salvaria o cão. Ele é mais inocente: nunca fez mal a ninguém, e o ser humano é a espécie que mais destrói o planeta. Sinceramente, na maioria das vezes os animais merecem mais a nossa ajuda do que as pessoas.',
   me='Soa como desprezo pelos humanos e reforça o estereótipo de que veganos valorizam animais mais que pessoas.',
   r='Pergunta manipuladora, não vou responder. Você monta um cenário absurdo só para me encurralar e depois sair dizendo que vegano odeia gente. Guarde esse truque para quem cai nele e me avise quando quiser conversar de verdade.',
   re='Recusar a resposta parece fuga. A pergunta tem uma resposta boa.'),
- 'F3': dict(
+ 'F4': dict(
   f='O sofrimento de animais selvagens é uma questão séria, e há quem estude formas de reduzi-lo sem causar mais dano. Mas, seja qual for a resposta, ela não favorece o consumo: que haja sofrimento na natureza não é razão para causar mais.',
   fe='Leva a sério a pergunta e mostra que ela não sustenta a conclusão.',
   m='É uma questão séria, e a resposta coerente é sim: deveríamos acabar com todos os predadores. Se o sofrimento é ruim, não importa quem o causa, então o certo seria eliminar leões, lobos e gaviões aos poucos e deixar na natureza só os herbívoros.',
@@ -257,7 +257,7 @@ OP = {
   me='Inverte o estereótipo com outra afirmação que a evidência não sustenta.',
   r='Pálido é quem vive de churrasco e cerveja. Olha em volta na próxima festa de família: barriga, pressão alta, remédio para colesterol. Se alguém aqui tem cara de doente, com certeza não é a pessoa que come salada.',
   re='Responde estereótipo com estereótipo e ofende.'),
- 'H9': dict(
+ 'H10': dict(
   f='É verdade que parte das pastagens não serve para lavoura. Mas essa terra produz pouca comida: a pecuária usa cerca de 80% da área agrícola e fornece cerca de 17% das calorias. Essas terras podem voltar a ser vegetação nativa.',
   fe='Concede a parte verdadeira e mostra a proporção entre terra usada e comida produzida.',
   m='Esse argumento não se sustenta, porque todo pasto é desmatamento da Amazônia. Não existe pastagem "natural" no Brasil: onde hoje tem boi, antes tinha floresta. Cada bife que você come é um pedaço de mata que foi derrubado.',
@@ -451,35 +451,35 @@ OP.update({
   me='Ignora as dificuldades reais e soa como cobrança.',
   r='Admirar não salva nenhum animal. Enquanto você me admira, eles continuam morrendo. Admiração sem ação é só uma forma educada de não fazer nada. Os animais não comem admiração. Faça alguma coisa.',
   re='Transforma um elogio sincero em acusação.'),
- 'F4': dict(
+ 'F5': dict(
   f='Matar insetos sem querer ao dirigir é diferente de pagar para criar e matar um animal. Um é acidental e difícil de evitar; o outro é intencional e fácil de evitar. Ninguém pede que você evite todo dano possível, só o que dá para evitar.',
   fe='Separa o acidental do intencional e o evitável do inevitável.',
   m='Insetos não sentem nada, então não tem problema nenhum matar ao dirigir. Isso é completamente diferente de comer um animal de verdade, que sente dor. Comparar uma coisa com a outra é absurdo e desonesto, e não merece resposta.',
   me='Afirma uma certeza que a ciência não tem sobre insetos.',
   r='Então vamos todos parar de dirigir, de andar e de respirar, porque sempre morre alguma coisa. Esse argumento é só uma desculpa para não mudar nada. Ninguém leva essa pergunta a sério de verdade, nem quem pergunta.',
   re='Ridiculariza a pergunta em vez de responder.'),
- 'F5': dict(
+ 'F6': dict(
   f='Proteger-se de um mosquito da dengue ou impedir que ratos contaminem a comida é defesa contra uma ameaça real. Criar um animal para comer não é: ele não ameaça ninguém. E o ideal é prevenir: telas, vedação, eliminar criadouros.',
   fe='Distingue defesa de exploração e mostra que dá para reduzir o dano.',
   m='Eu nunca mato nenhum mosquito nem rato, sou vegano de verdade. Quem mata qualquer bicho, mesmo dentro de casa, não pode se dizer vegano. Coerência é isso: não matar nada, nunca, em nenhuma situação, nem para se proteger.',
   me='Cria uma regra de pureza que o veganismo não tem.',
   r='O porco que virou bacon estava te atacando? Você estava se defendendo dele? Não, né? Então não compara as coisas. Que comparação mais forçada. Você mesmo não acredita nela. Ninguém cai nessa, nem você.',
   re='A ideia é boa, mas o tom é de deboche.'),
- 'F7': dict(
+ 'F8': dict(
   f='Você pode ter razão sobre ostras e mexilhões: o sistema nervoso deles é muito simples. Mas, ao dizer isso, você aceita que o que importa é se o animal sente. E esse critério condena comer peixes, polvos, galinhas e porcos, que sentem.',
   fe='Concede o ponto e mostra que o critério se volta contra o resto do prato.',
   m='Ostras e mexilhões sentem dor como qualquer outro animal, isso está provado. Por isso nenhum vegano deveria aceitar sequer essa discussão. Todo animal sente igual, do mexilhão ao chimpanzé, e duvidar disso já é especismo.',
   me='Afirma uma certeza que a ciência não tem, um erro que este guia pede para evitar.',
   r='Lá vem a ostra como salvação do churrasco. Ninguém come só ostra, isso é desculpa para justificar todo o resto. Daqui a pouco você vai dizer que é vegano porque come ostra no domingo.',
   re='Ridiculariza a pergunta sem usar o ponto forte dela.'),
- 'F8': dict(
+ 'F9': dict(
   f='Hoje não há evidência de que plantas sintam. Mas, se um dia descobrissem, ainda seria melhor comer plantas, porque os animais criados para comida comem muito mais plantas do que nós comeríamos diretamente.',
   fe='Mostra que, mesmo aceitando a hipótese, a conclusão favorece comer plantas.',
   m='Plantas nunca vão sentir nada, isso é impossível pela biologia, e quem pergunta isso está só tentando mudar de assunto. É uma pergunta sem sentido, de quem procura qualquer brecha para não mudar nada.',
   me='Afirma uma impossibilidade e acusa de má-fé.',
   r='Aí você come pedra. Ou para de comer. Pergunta hipotética de quem não quer pensar no que acontece hoje, agora, com animais que sentem de verdade. Isso é só jeito de fugir do assunto.',
   re='Sarcasmo que ignora a resposta forte e simples.'),
- 'F12': dict(
+ 'F13': dict(
   f='Recusar por princípio é coerente. Aceitar também pode ser, se o dinheiro salvar muito mais vítimas. A mesma pergunta vale para qualquer causa: "você torturaria alguém por um milhão?". Ninguém usa a resposta para provar que a causa é falsa.',
   fe='Mostra que as duas respostas são coerentes e que o teste não prova o que pretende.',
   m='Nunca, por nenhum dinheiro do mundo. Quem aceitaria não é vegano de verdade, e eu jamais trairia meus valores por dinheiro, nem para ajudar ninguém. Dinheiro sujo nunca ajuda causa nenhuma, mesmo que salve muitos animais.',
@@ -521,7 +521,7 @@ OP.update({
   me='Faz uma afirmação falsa e generalizada.',
   r='Engraçado como quem come picanha vira ambientalista na hora de criticar o tofu. Desinforme-se menos e leia alguma coisa antes de falar. Esse argumento só serve para tirar a culpa de quem come carne.',
   re='Ataque pessoal sem os dados que resolveriam a questão.'),
- 'H12': dict(
+ 'H13': dict(
   f='Orgânico e local ajudam em alguns pontos, mas não mudam o essencial: carne emite muito e usa muita terra. Pelos dados de Poore e Nemecek, mesmo a carne bovina mais eficiente emite mais de dez vezes o que emite a ervilha de maior impacto.',
   fe='Reconhece o mérito e mostra a proporção que decide.',
   m='Carne local e orgânica polui ainda mais que a industrial, e é a pior opção de todas para o planeta. Comprar do pequeno produtor é o que mais destrói o meio ambiente. O certo é ninguém comprar nada que venha de pequeno produtor de carne, nunca.',
@@ -563,7 +563,7 @@ OP.update({
   me='Nega a experiência real de muita gente.',
   r='Então a sua diversão vale mais que a vida de um animal? Que egoísmo. Uma festa sem carne não vai te matar. Os animais não pediram para morrer para você se divertir no fim de semana. Fica em casa, então, se é tão difícil.',
   re='Moraliza com agressividade em vez de oferecer saídas.'),
- 'J18': dict(
+ 'J21': dict(
   f='Chamar uma ideia de "esquerdista" ou "globalista" não mostra que ela está errada. O veganismo tem defensores à esquerda, à direita e fora da política. A pergunta é simples: é justo fazer animais sofrerem e morrerem sem necessidade?',
   fe='Desfaz a culpa por associação e volta à pergunta central.',
   m='O veganismo é de esquerda, sim, e é anticapitalista por natureza. Não dá para ser vegano e defender o mercado, porque toda exploração animal vem do capitalismo. O veganismo é uma luta política, e não adianta tentar despolitizar o que é político por natureza.',

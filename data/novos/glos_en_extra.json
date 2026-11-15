@@ -298,5 +298,251 @@
   "termo": "Justification",
   "def": "A reason given to show that an action or a belief is right.",
   "com": "In ethics, anyone who causes harm to someone needs a justification, and the guide examines precisely the justifications given for using animals. A good justification has to be factually true and morally relevant. It is also different from an explanation: explaining why someone does something, such as habit or culture, doesn't show that it is right to do it. See Argument and Fallacies."
+ },
+ {
+  "pt": "Continuidade evolutiva",
+  "termo": "Evolutionary continuity",
+  "def": "The idea, set out by Charles Darwin, that the mental differences between humans and other animals are differences of degree, not of kind, because all species descend from common ancestors.",
+  "com": "If the human body and brain come from a long history shared with other animals, it would be odd for the capacity to feel to have appeared out of nowhere in our species alone. That is why evolutionary continuity is one of the pillars for attributing pain and emotion to other vertebrates, and increasingly to some invertebrates. It doesn't say that all animals feel the same, only that the question has to be answered with evidence, species by species, and not by a line drawn in advance. See Sentience, Animal consciousness and Animal cognition."
+ },
+ {
+  "pt": "Cânone de Morgan",
+  "termo": "Morgan's canon",
+  "def": "A rule of method proposed by the British psychologist Conwy Lloyd Morgan in 1894: an animal's behavior should not be explained by a higher mental capacity if it can be explained by a simpler one.",
+  "com": "For much of the 20th century, the canon was used to deny emotions and thought to animals. Today many scientists point out that the simplest explanation is not always the one that denies a mind: if a dog and a human react to injury in the same way and have similar brain structures, it may be simpler to assume that both feel pain. Morgan himself didn't mean to forbid mental explanations when there is evidence for them. See Anthropomorphism, Evolutionary continuity and Critical anthropomorphism."
+ },
+ {
+  "pt": "Antropomorfismo crítico",
+  "termo": "Critical anthropomorphism",
+  "def": "The conscious and controlled use of our own experience to form hypotheses about what an animal feels or thinks, which are then tested by observation and experiments; an approach associated with the ethologist Gordon Burghardt.",
+  "com": "It sits between two errors: projecting human feelings onto everything an animal does, and denying any mental life on principle. Critical anthropomorphism takes into account the biology and typical behavior of the species. A dog wagging its tail isn't necessarily happy, but a pig that avoids a place where it felt pain offers a clue that can be tested. See Anthropomorphism, Morgan's canon and Ethology."
+ },
+ {
+  "pt": "Declaração de Cambridge sobre a Consciência",
+  "termo": "Cambridge Declaration on Consciousness",
+  "def": "A declaration signed by a group of neuroscientists on July 7, 2012, at the University of Cambridge, stating that humans are not the only beings with the neurological substrates that generate consciousness.",
+  "com": "The text states that all mammals and birds, and many other animals such as octopuses, have these substrates. It is neither a law nor a formal consensus of all of science, but it carried great public weight because it came from researchers in the field. In 2024, the New York Declaration on Animal Consciousness went further, speaking of a realistic possibility of conscious experience in all vertebrates and many invertebrates. See Animal consciousness, Subjective experience and Sentience."
+ },
+ {
+  "pt": "Emoções animais",
+  "termo": "Animal emotions",
+  "def": "Affective states, such as fear, anger, joy, grief or the urge to play, experienced by nonhuman animals and studied by ethology and affective neuroscience.",
+  "com": "For a long time science avoided talking about emotions in animals, partly because of the legacy of Descartes, who saw animals as machines. Charles Darwin had already devoted a book to the expression of emotions in humans and animals, in 1872. The neuroscientist Jaak Panksepp, who coined the term affective neuroscience, identified basic emotional systems in ancient brain regions that mammals share. Knowing that an animal can feel fear or joy changes the moral question: avoiding physical pain is not enough. See Animal-machine, Positive experiences and Suffering."
+ },
+ {
+  "pt": "Animal-máquina",
+  "termo": "Animal-machine",
+  "def": "A view associated with the philosopher René Descartes, in the 17th century, that animals are mindless automata whose cries and movements are merely mechanical reactions, without feeling.",
+  "com": "This idea helped justify experiments on living animals with no concern for pain, and shaped Western science for centuries. Historians debate how far Descartes himself denied all sensation to animals, but the doctrine associated with him was used in exactly that way. Today it is rejected by biology and neuroscience. See Evolutionary continuity, Animal emotions and Vivisection."
+ },
+ {
+  "pt": "Misoteria",
+  "termo": "Misothery",
+  "def": "Contempt for or aversion to animals and nature, seen as inferior, dirty or cruel; a term coined by the writer Jim Mason in the book *An Unnatural Order* (1993), by analogy with misogyny.",
+  "com": "It shows up in everyday expressions, such as calling a cruel person an animal or a beast, and in the idea that nature is nothing but violence. Mason argues that this attitude grew with agriculture and animal husbandry, and that it makes exploitation easier: it is easier to use those we despise. See Dominionism, Anthropocentrism and Ecofeminism."
+ },
+ {
+  "pt": "Domínio (dominionismo)",
+  "termo": "Dominionism",
+  "def": "The view that humans have the right to rule over and use other animals and nature, often based on the passage in Genesis in which God gives humans dominion over the animals.",
+  "com": "There are different readings of this passage within the religions themselves. Many theologians, Jewish and Christian, understand dominion as stewardship, that is, a responsibility to care, and not as a license to exploit. The debate shows that faith does not necessarily lead to speciesism. See Theocentrism, Religious speciesism, Anthropocentrism and Misothery."
+ },
+ {
+  "pt": "Telos",
+  "termo": "Telos",
+  "def": "A Greek term for purpose or proper nature; in animal ethics, used by the philosopher Bernard Rollin for the set of needs and interests characteristic of each species, such as a pig's need to root or a hen's need to scratch and dust-bathe.",
+  "com": "Rollin argued that respecting an animal includes letting it live according to its nature, not only avoiding pain. The idea helps explain why confinement causes suffering even without injuries. Critics point out that genetic engineering can alter the telos itself, for instance by creating animals that tolerate confinement better, which shows the concept needs to be combined with attention to what the individual feels. See Psychological integrity, Animal confinement and Genetic engineering."
+ },
+ {
+  "pt": "Tamanhismo (sizeism)",
+  "termo": "Sizeism",
+  "def": "The tendency to give less consideration to small animals, or to young ones, than to large animals, for example by accepting painful procedures on them that would not be done without anesthesia on a larger animal.",
+  "com": "It shows up in the castration and tail docking of piglets and lambs without anesthesia, in procedures performed on mice and in the disregard for fish and insects. Body size doesn't say how much an animal feels, and there are indications that young animals can feel pain intensely. It is a form of bias that leads to inconsistent decisions. See Speciesism, Bias and Castration."
+ },
+ {
+  "pt": "Objetificação",
+  "termo": "Objectification",
+  "def": "Treating a sentient being as a thing, resource or product, erasing their status as an individual with interests of their own.",
+  "com": "Language plays a part: calling animals \"units\", \"head\" or \"stock\", or using \"it\" instead of \"he\" or \"she\", helps us forget that someone is there. That is why part of the movement proposes language that treats animals as subjects. See Commodification, Absent referent and Euphemism."
+ },
+ {
+  "pt": "Eufemismo",
+  "termo": "Euphemism",
+  "def": "A mild word or expression used in place of a more direct or unpleasant one.",
+  "com": "Animal use is full of euphemisms: \"slaughter\" or \"processing\" instead of killing, \"sacrifice\" for the killing of animals at the end of experiments, \"harvest\" for hunting and fishing, \"animal protein\" instead of the flesh of an animal. They are not necessarily dishonest, but they reduce discomfort and draw attention away from the victim. Pointing this out calmly, without accusing the speaker, helps the conversation. See Objectification, Absent referent and Humane washing."
+ },
+ {
+  "pt": "Lei Martin",
+  "termo": "Martin's Act",
+  "def": "A British law of 1822, proposed by the Irish MP Richard Martin, which prohibited the mistreatment of cattle, horses, sheep and other farm and working animals; it is considered one of the first national animal protection laws.",
+  "com": "The law did not protect dogs and cats, and animals remained property, but it paved the way for the first animal protection society, in 1824, which later became the RSPCA. It shows that legal protection of animals began with the idea of cruelty, not of rights. See Animal cruelty, Animals as property and Welfarism."
+ },
+ {
+  "pt": "Relatório Brambell",
+  "termo": "Brambell Report",
+  "def": "A report by a British government committee, published in 1965, on the welfare of animals in intensive farming systems; it was a response to Ruth Harrison's book *Animal Machines* (1964).",
+  "com": "The report argued that every animal should at least be able to turn around, groom itself, get up, lie down and stretch its limbs, and it recognized that animals can suffer mentally. These ideas gave rise to the Five Freedoms, later formulated by the UK's Farm Animal Welfare Council. It is a landmark in the beginning of animal welfare science. See Five Freedoms, Animal welfare science and Animal confinement."
+ },
+ {
+  "pt": "Senciência na lei",
+  "termo": "Sentience in law",
+  "def": "The recognition, in laws and treaties, that animals are sentient beings and not mere things.",
+  "com": "In the European Union, Article 13 of the Treaty on the Functioning of the European Union, in force since the Treaty of Lisbon (2009), requires paying regard to the welfare of animals as sentient beings, but makes exceptions for religious rites, cultural traditions and regional heritage. France began defining animals in its Civil Code as living beings endowed with sensitivity in 2015, and the United Kingdom passed an animal sentience law in 2022. The recognition is a symbolic step forward, but on its own it bans no practice: animals are still treated as property. See Animals as property, Animal legal personhood and Sentience."
+ },
+ {
+  "pt": "Lei de Crimes Ambientais (maus-tratos)",
+  "termo": "Environmental Crimes Law (animal abuse)",
+  "def": "In Brazil, Law 9,605 of 1998, whose Article 32 makes it a crime to abuse, mistreat, injure or mutilate wild, domestic or domesticated animals, whether native or exotic.",
+  "com": "The same article punishes anyone who carries out a painful or cruel experiment on a live animal, even for teaching or scientific purposes, when alternative resources exist. In 2020, Law 14,064, known as the Sansão Law, raised the penalty for abusing dogs and cats to two to five years in prison. The difference in penalty between dogs and cats and other animals is an example of institutional speciesism, and the practices of regulated livestock farming are generally not treated as abuse. See Animal cruelty, Institutional speciesism and Animal law."
+ },
+ {
+  "pt": "Lei Arouca",
+  "termo": "Arouca Law",
+  "def": "Brazilian Law 11,794 of 2008, which regulates the use of vertebrate animals in scientific research and teaching, created the National Council for the Control of Animal Experimentation (CONCEA) and made Animal Use Ethics Committees mandatory.",
+  "com": "It is named after the public health doctor and congressman Sérgio Arouca, author of the original bill. The law regulates experimentation rather than banning it: it requires institutions to be accredited, projects to receive ethical approval and attention to alternative methods. Critics argue that it legitimized practices that had been challenged in court, and supporters say it brought rules where there were almost none before. See Animal Use Ethics Committee (CEUA), Animal experimentation and 3Rs."
+ },
+ {
+  "pt": "Comissão de Ética no Uso de Animais (CEUA)",
+  "termo": "Animal Use Ethics Committee (CEUA)",
+  "def": "A committee that reviews and approves, or rejects, an institution's research and teaching projects involving animals; in Brazil, mandatory under the Arouca Law, with equivalents in other countries, such as IACUCs in the United States.",
+  "com": "The committee must check whether the use of animals is justified, whether the number of animals is the minimum needed and whether pain will be controlled. Studies of committees of this kind point to limits: they are generally made up mostly of researchers from the institution itself, and they rarely reject projects. Including outside members, such as representatives of animal protection societies, is one way of balancing this review. See Arouca Law, 3Rs and Animal experimentation."
+ },
+ {
+  "pt": "Projeto Grandes Primatas",
+  "termo": "Great Ape Project",
+  "def": "An initiative launched in 1993 by the philosophers Paola Cavalieri and Peter Singer, which calls for extending three basic rights to chimpanzees, bonobos, gorillas and orangutans: to life, to liberty and not to be tortured.",
+  "com": "The project helped put on the agenda the idea that other animals can have legal rights. Several countries have banned or restricted the use of great apes in research. Sentientists support protecting these animals, but criticize a criterion based on similarity to humans, which can leave out other beings who also feel. See Animals as persons, Animal habeas corpus and Animal legal personhood."
+ },
+ {
+  "pt": "CITES",
+  "termo": "CITES",
+  "def": "The Convention on International Trade in Endangered Species of Wild Fauna and Flora, a treaty signed in 1973 and in force since 1975, which controls or prohibits trade between countries in threatened species.",
+  "com": "Species are listed in appendices according to their level of threat, and commercial trade in the most threatened is prohibited. The convention protects species, not individuals: an animal of a common species is not protected by it, and the treaty does not deal with suffering in transport or captivity. Even so, it is the main international tool against the trafficking of wild animals. See Animal trafficking, Extinction and Holistic environmentalism."
+ },
+ {
+  "pt": "Teoria do elo (the link)",
+  "termo": "The Link",
+  "def": "A body of research that finds an association between animal abuse and other forms of violence, such as domestic violence, child abuse and violent crime.",
+  "com": "Because of this research, some protection services began cross-reporting animal abuse and domestic violence, and the FBI began recording animal cruelty crimes in their own category from 2016. Overstatement should be avoided: the association is statistical, and most people who mistreat an animal do not go on to commit serious crimes against people. Nor should the argument be the only reason to protect animals, who matter in themselves. See Animal cruelty and Empathy."
+ },
+ {
+  "pt": "Proibição de testes de cosméticos em animais",
+  "termo": "Cosmetics animal testing ban",
+  "def": "Laws that prohibit testing cosmetics, toiletries and perfumes, or their ingredients, on animals, and in some cases selling products that were tested.",
+  "com": "The European Union banned testing of finished products in 2004 and completed its ban on selling cosmetics with ingredients tested on animals in 2013. In Brazil, Law 15,183 of 2025 banned the use of live vertebrate animals in tests of cosmetics, personal hygiene products, perfumes and ingredients used only in these products. There are loopholes: ingredients that also have other uses may be tested when other rules, such as chemical safety rules, require it. See Cruelty-free, Replacement methods and Draize test."
+ },
+ {
+  "pt": "Objeção de consciência à experimentação animal",
+  "termo": "Conscientious objection to animal experimentation",
+  "def": "The right of students, teachers and professionals to refuse to take part in practices that use or kill animals, such as dissection in classes, without suffering academic or professional harm.",
+  "com": "Italy has had a law recognizing this right since 1993. In many courses, refusals opened the way to replacement methods, such as models, computer simulations and the bodies of animals that died of natural causes, and comparative studies have found no loss of learning with these methods. See Replacement methods, 3Rs and Vivisection."
+ },
+ {
+  "pt": "Modelo animal",
+  "termo": "Animal model",
+  "def": "An animal used in research to represent a biological process or a human disease, such as mice genetically altered to develop a type of cancer.",
+  "com": "The choice of species often follows the Krogh principle, from the Danish physiologist August Krogh: for each problem there is an animal in which it can be studied most conveniently. Being convenient doesn't guarantee that the result holds for humans. Most drugs that pass preclinical testing fail in human trials, through lack of efficacy or safety problems, and differences between species are one of the causes discussed. Supporters point out that animal models have contributed to medical advances; critics advocate methods based on human biology. In 2022, the United States stopped requiring animal tests for approving new drugs. See Animal experimentation, Replacement methods and 3Rs."
+ },
+ {
+  "pt": "Domesticação",
+  "termo": "Domestication",
+  "def": "The process, over many generations, by which animal populations came to live under human control and were modified by artificial selection; the dog was first, more than 15,000 years ago, and cattle, sheep, goats and pigs were domesticated around 10,000 years ago.",
+  "com": "Domestication changed bodies and behavior: hens that lay around 300 eggs a year, broiler chickens that grow so fast that many have leg problems, cows with enormous udders. A common argument says these animals exist thanks to us and so we may use them. But having brought someone into existence doesn't give the right to make them suffer. For veganism, ending exploitation doesn't mean releasing domesticated animals, but no longer breeding them for use and caring for those who already exist. See Artificial selection, Domestic animal and Sanctuary."
+ },
+ {
+  "pt": "Reprodução em cativeiro",
+  "termo": "Captive breeding",
+  "def": "The breeding of animals of wild species in zoos, aquariums or conservation centers, generally with the stated aim of maintaining populations of threatened species.",
+  "com": "There are success stories with release back into the wild, such as the golden lion tamarin in Brazil and Przewalski's horse in Mongolia. But most animals born in zoos are never released, many belong to species that are not threatened, and surplus animals may be sold or killed. The ethical question is whether the good of the species justifies each individual's life in captivity. See Zoo, Extinction and Holistic environmentalism."
+ },
+ {
+  "pt": "Controle populacional de animais",
+  "termo": "Animal population control",
+  "def": "A set of methods for reducing the number of animals in a population, ranging from killing (culling, hunting, poisoning) to non-lethal methods such as neutering and contraception.",
+  "com": "For stray dogs and cats, trap-neuter-return (TNR) is an alternative to capture and killing. In wild animals, contraceptive vaccines are already used, for example in wild horses in the United States. From a sentientist point of view, non-lethal methods are preferable when they work, and the question is not only how many animals there are, but how they live and die. Killing is often defended as cheaper or faster, but in many cases the population grows back. See Castration, Invasive alien species and Pests."
+ },
+ {
+  "pt": "Espécie exótica invasora",
+  "termo": "Invasive alien species",
+  "def": "A species taken by humans outside its native range that spreads and causes harm to ecosystems, other species or the economy, such as the European wild boar in Brazil.",
+  "com": "These species are usually fought by large-scale killing, which creates a conflict between the conservationist view, which values species and ecosystems, and the sentientist view, which looks at each individual. The invasive animals themselves are not to blame for being there. Sentientists don't deny the ecological harm, but call for methods that cause less suffering and for attention also to the native animals affected. In Brazil, the boar hunting authorized for control has been criticized for also serving as a pretext for sport hunting. See Holistic environmentalism, Sentientist environmentalism and Animal population control."
+ },
+ {
+  "pt": "Armadilha de mandíbula (leghold trap)",
+  "termo": "Leghold trap",
+  "def": "A metal trap with two jaws that snap shut on an animal's leg and hold it until the trapper arrives; used mainly to catch animals for their fur.",
+  "com": "The animal may stay trapped for hours or days, with fractures, dehydration and fear, and some chew off their own leg to escape. Non-target animals, including dogs and protected species, are also caught. The European Union approved a ban on these traps in 1991, effective from 1995, but they remain legal in other countries. See Hunting, Fur and leather and Suffering."
+ },
+ {
+  "pt": "Fazenda de bile de urso",
+  "termo": "Bear bile farming",
+  "def": "The keeping of bears, mainly Asiatic black bears, in small cages for the periodic extraction of bile from the gallbladder, used in the traditional medicine of some Asian countries.",
+  "com": "Extraction is done through catheters or open wounds in the abdomen, and the bears may spend years confined, with pain, infections and stereotypic behaviors. The active substance in bile, ursodeoxycholic acid, can be produced without animals, and there are plant alternatives within traditional medicine itself. The practice remains legal in China. Vietnam banned it in 2005, and South Korea approved the end of bear farming for bile from 2026. See Animal confinement, Stereotypic behavior and Animal trafficking."
+ },
+ {
+  "pt": "Resistência antimicrobiana",
+  "termo": "Antimicrobial resistance",
+  "def": "The ability of bacteria and other microorganisms to survive drugs that used to kill them, which makes infections harder to treat.",
+  "com": "One of the causes is the mass use of antibiotics in animal farming, often to prevent diseases favored by confinement or to speed up growth. Estimates published in the journal *Science* in 2019 indicate that about three quarters of the antimicrobials sold worldwide are used in farmed animals. The World Health Organization considers resistance one of the greatest threats to global health, and the European Union banned the use of antibiotics as growth promoters in 2006. It is a public health argument that adds to the ethical one. See Industrial livestock farming, Factory farm and Zoonosis."
+ },
+ {
+  "pt": "Pesque e solte",
+  "termo": "Catch and release",
+  "def": "A form of recreational fishing in which the fish is hooked, taken out of the water and returned alive.",
+  "com": "It is presented as harmless or sustainable, but the hook injures the mouth and sometimes the gills, the struggle and time out of water cause stress, and some fish die after release. Research on pain in fish, such as the biologist Lynne Sneddon's work with trout, shows responses to injury that go beyond reflex. If the fish can feel, injuring them for fun is hard to justify, even when they go back into the water. See Fishing, Pain and Sentience."
+ },
+ {
+  "pt": "Terapia assistida por animais",
+  "termo": "Animal-assisted therapy",
+  "def": "The use of animals, such as dogs, horses and cats, in health treatment, rehabilitation or education, under professional supervision.",
+  "com": "There is evidence of benefits for some people, such as reduced anxiety, although many studies are small. The ethical question is the animal's side: they need rest, the ability to refuse contact and not to be exposed to constant stress. Practices such as therapy with captive dolphins are criticized because they depend on capturing or confining animals who suffer in those conditions. See Companion animal, Animal welfare and Animal entertainment."
+ },
+ {
+  "pt": "Abrigo sem eutanásia (no-kill)",
+  "termo": "No-kill shelter",
+  "def": "An animal shelter that does not kill healthy or treatable animals for lack of space or adopters, keeping euthanasia for cases of untreatable suffering.",
+  "com": "In Brazil, Law 14,228 of 2021 prohibited zoonosis control agencies, public kennels and official establishments from killing dogs and cats, except by euthanasia in cases of serious or incurable infectious diseases. No-kill shelters depend on neutering, adoption and intake management, and can become overcrowded when these policies are lacking. See Euthanasia, Adoption and Animal population control."
+ },
+ {
+  "pt": "Antivivisseccionismo",
+  "termo": "Antivivisectionism",
+  "def": "The movement that opposes vivisection and, more broadly, experimentation on animals; organized mainly from the 19th century in the United Kingdom.",
+  "com": "The Irish writer Frances Power Cobbe founded one of the first antivivisection societies in 1875, and in 1876 the United Kingdom passed the first law regulating experiments on animals. The movement brought together many women and had links with women's suffrage. Today part of it calls for an end to all experimentation and part for gradual replacement by animal-free methods. See Vivisection, Animal experimentation and Replacement methods."
+ },
+ {
+  "pt": "Estresse",
+  "termo": "Stress",
+  "def": "The set of bodily and behavioral responses to a threat or challenge, such as the release of hormones like cortisol, a faster heart rate and flight.",
+  "com": "Short-term stress is part of life and helps an animal react to danger. The problem is intense or prolonged stress, sometimes called distress, when the animal can no longer adapt and their health and behavior deteriorate, as in many confinement systems. Measuring hormones helps but is not enough: cortisol also rises in good situations, such as mating, so scientists combine several indicators. See Coping, Suffering and Stereotypic behavior."
+ },
+ {
+  "pt": "Enfrentamento (coping)",
+  "termo": "Coping",
+  "def": "An animal's effort, through body and behavior, to deal with the challenges of their environment and keep their physical and mental balance.",
+  "com": "The welfare scientist Donald Broom defined an individual's welfare as their state as regards their attempts to cope with the environment: the harder or more impossible it is to cope, the worse the welfare. An animal can be coping successfully and still be suffering, and failure to cope leads to disease, stereotypies and helplessness. See Stress, Animal welfare and Learned helplessness."
+ },
+ {
+  "pt": "Enriquecimento ambiental",
+  "termo": "Environmental enrichment",
+  "def": "Changes to the environment of captive animals, such as objects, hiding places, material to root in, challenges to obtain food, or company, to encourage natural behaviors and reduce boredom and frustration.",
+  "com": "Studies show that enrichment can reduce stereotypies and improve the health of animals in zoos, laboratories and farms. But it has limits: a toy in a cramped pen doesn't make up for lack of space, social life or freedom. It can also be used as a showcase to justify captivity. See Stereotypic behavior, Zoo and Humane washing."
+ },
+ {
+  "pt": "Cinco Domínios",
+  "termo": "Five Domains",
+  "def": "A model for assessing animal welfare created by the New Zealand scientist David Mellor and colleagues in 1994, which looks at nutrition, physical environment, health and behavioral interactions in order to infer the fifth domain, the animal's mental state.",
+  "com": "Unlike the Five Freedoms, which focus on avoiding what is bad, the Five Domains also look for positive experiences, such as comfort, play and curiosity. The model was updated in 2020 and is used by several organizations and governments. Even an animal with a good score may be killed young for food, which the model does not assess. See Five Freedoms, Positive experiences and A life worth living."
+ },
+ {
+  "pt": "Vida que vale a pena ser vivida",
+  "termo": "A life worth living",
+  "def": "The idea that welfare should not only avoid suffering but ensure that the animal's life, overall, has more good experiences than bad ones; used by the UK's farm animal welfare council since 2009.",
+  "com": "The concept forces us to ask whether an animal's life has a positive balance, not only whether they were spared some pain. Many intensively farmed animals would hardly pass this test. At the same time, sentientists point out that a good life doesn't justify taking it early: death is also a harm. See Welfare range, Harm of death and Five Domains."
+ },
+ {
+  "pt": "Escala de expressão facial de dor (grimace scale)",
+  "termo": "Grimace scale",
+  "def": "A method for assessing pain in animals by changes in facial expression, such as narrowed eyes, tightened muzzle and cheeks, and ears and whiskers in a different position.",
+  "com": "The first scale was published in 2010 for mice, and versions followed for rats, rabbits, horses, sheep, pigs and cats, among others. They show that many animals show pain in their faces, as humans do, and help vets and researchers recognize pain that used to go unnoticed. See Pain, Nociception and Animal behavior."
  }
 ]

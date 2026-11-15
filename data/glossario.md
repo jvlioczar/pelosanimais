@@ -395,7 +395,7 @@
 
 **Abate** — matança de animais, praticada para consumo e também em outros contextos, como descarte de rebanhos, controle sanitário ou populacional. *O termo também é usado, de forma eufemística, para a morte de pessoas em guerras e massacres, como se fosse algo justificável. Em qualquer dos casos, o foco central dos debates é o sofrimento e o dano da morte.*
 
-**Abate humanitário** — método de abate que busca minimizar o sofrimento do animal, geralmente por meio de insensibilização prévia; termo contestado por abolicionistas, que o consideram um oxímoro.
+**Abate humanitário** — método de abate que busca minimizar o sofrimento do animal, geralmente por meio de insensibilização prévia; termo contestado por abolicionistas, que o consideram um oxímoro. *Na prática, a insensibilização falha em parte dos animais, a velocidade das linhas de abate dificulta a correção dessas falhas, e há exceções para o abate religioso sem insensibilização em vários países. O termo também desvia a atenção do fato central: o animal é morto sem necessidade, quase sempre muito jovem. Veja Insensibilização de animais, Oxímoro e Humane washing.*
 
 **Abate prematuro** — matança de um animal antes de atingir maturidade ou idade produtiva plena, comum em algumas cadeias de produção (ex.: bezerros machos na indústria de laticínios).
 
@@ -505,13 +505,13 @@
 
 **Espora** — instrumento preso ao calcanhar do cavaleiro usado para incitar o animal montado através de pressão ou dor.
 
-**Eutanásia** — indução da morte de um animal de forma controlada, geralmente para poupá-lo de sofrimento; distinta do abate, que visa consumo ou produção.
+**Eutanásia** — indução da morte de um animal de forma controlada, geralmente para poupá-lo de sofrimento; distinta do abate, que visa consumo ou produção. *Só é eutanásia de fato quando a morte é no interesse do próprio animal, como num sofrimento sem tratamento. Matar animais saudáveis por falta de espaço, ao fim de um experimento ou por não serem mais lucrativos é outra coisa, mesmo quando o método é indolor, e chamar isso de eutanásia é um eufemismo. Veja Abrigo sem eutanásia (no-kill), Eufemismo e Abate.*
 
 **Exploração animal** — termo guarda-chuva para qualquer uso instrumental de animais em benefício humano.
 
 **Exploração feliz** — expressão crítica que designa narrativas que apresentam a exploração animal como benigna ou consensual, mascarando o sofrimento envolvido.
 
-**Experimentação animal** — uso de animais em testes científicos, médicos ou cosméticos.
+**Experimentação animal** — uso de animais em pesquisas científicas, testes de segurança de produtos, ensino e produção de substâncias biológicas, como vacinas e anticorpos. *Uma estimativa publicada em 2019 calculou que cerca de 190 milhões de animais foram usados em laboratórios no mundo em 2015, sobretudo camundongos, ratos, peixes e aves. A experimentação é regulada por leis que exigem justificativa e controle da dor, mas permitem procedimentos que causam sofrimento intenso. Defensores apontam contribuições para a medicina; críticos questionam a transferência dos resultados para humanos e defendem métodos sem animais. Veja 3Rs, Modelo animal, Lei Arouca e Métodos substitutivos.*
 
 **Extinção** — desaparecimento completo de uma espécie; tema relevante nos debates sobre conservação e responsabilidade humana pela biodiversidade.
 
@@ -521,7 +521,7 @@
 
 **Gado** — termo genérico para animais de produção, especialmente bovinos.
 
-**Gaiolas de bateria (battery cages)** — gaiolas empilhadas e superlotadas usadas para confinar galinhas poedeiras, com espaço extremamente restrito.
+**Gaiolas de bateria (battery cages)** — gaiolas empilhadas e superlotadas usadas para confinar galinhas poedeiras, com espaço extremamente restrito. *Cada galinha costuma ter um espaço menor que uma folha de papel A4, sem poder abrir as asas, fazer ninho, ciscar ou tomar banho de terra. A União Europeia proibiu as gaiolas convencionais a partir de 2012, mas permite gaiolas "enriquecidas", um pouco maiores. Muitas empresas, inclusive no Brasil, assumiram compromissos de comprar só ovos livres de gaiola, mas sistemas sem gaiola continuam tendo problemas, como superlotação e o descarte dos pintinhos machos. Veja Confinamento animal, Free range e Debicagem.*
 
 **Gestação** — período de desenvolvimento do feto no útero, cuja gestão (ex.: caixas de gestação) é foco de debates de bem-estar em fêmeas de produção.
 
@@ -533,7 +533,7 @@
 
 **Inseminação artificial** — introdução mecânica de sêmen no trato reprodutivo de uma fêmea sem cópula natural, prática padrão na pecuária moderna.
 
-**Insensibilização de animais** — procedimento que busca tornar um animal inconsciente antes do abate, reduzindo (mas nem sempre eliminando) a percepção de dor.
+**Insensibilização de animais** — procedimento que busca tornar um animal inconsciente antes do abate, reduzindo (mas nem sempre eliminando) a percepção de dor. *Os métodos mais comuns são a pistola de dardo cativo, o choque elétrico e, para porcos e aves, gases como o dióxido de carbono. Em concentração alta, o dióxido de carbono é aversivo para os porcos, que mostram sinais de pânico e falta de ar antes de perder a consciência. Falhas acontecem, e alguns animais chegam conscientes à sangria. Veja Abate humanitário, Matadouro e Abate.*
 
 **Irritação cutânea induzida** — teste toxicológico que aplica substâncias na pele de animais para medir reações irritativas, associado a métodos como o Draize test.
 
@@ -567,7 +567,7 @@
 
 **Peleteria e couro** — indústrias de produção de pele e couro animal, com debates específicos de sofrimento e alternativas sintéticas.
 
-**Pesca** — captura de animais aquáticos, com debate crescente sobre senciência de peixes.
+**Pesca** — captura de animais aquáticos, com debate crescente sobre senciência de peixes. *É, em número de indivíduos, a maior forma de matança de vertebrados: estimativas de Alison Mood e Phil Brooke indicam mais de um trilhão de peixes selvagens capturados por ano. Os peixes morrem por asfixia, esmagamento ou descompressão, em geral sem qualquer insensibilização, e a pesca captura também outros animais sem querer, como tartarugas, golfinhos e aves. Há evidências crescentes de que peixes sentem dor. Veja Pesca industrial, Pesque e solte e Aquicultura.*
 
 **Pesca industrial** — pesca em larga escala, associada a sobre-exploração e sofrimento em massa.
 
@@ -613,11 +613,11 @@
 
 **Tráfico de animais** — comércio ilegal de animais silvestres ou domésticos, frequentemente envolvendo captura, transporte e condições cruéis.
 
-**Transporte de animais vivos** — etapa da cadeia produtiva associada a estresse, ferimentos e mortalidade.
+**Transporte de animais vivos** — etapa da cadeia produtiva associada a estresse, ferimentos e mortalidade. *Os animais podem passar horas ou dias sem comida, água ou descanso, em calor ou frio extremos, e muitos se ferem ou morrem no caminho. A exportação de bois vivos por navio, em viagens de semanas, é especialmente criticada, e o Brasil é um dos grandes exportadores. A Nova Zelândia proibiu a exportação de animais de criação por mar em 2023, e o Reino Unido proibiu a exportação de animais vivos para abate e engorda em 2024. Veja Carga viva, Animal caído e Abate.*
 
 **Tutor ou cuidador** — pessoa responsável pelos cuidados de um animal de companhia; termo preferido por ativistas ao invés de "dono", por não implicar relação de propriedade.
 
-**Vaquejada** — prática tradicional brasileira em que dois vaqueiros a cavalo perseguem e derrubam um boi pela cauda, causando lesões físicas ao animal.
+**Vaquejada** — prática tradicional brasileira em que dois vaqueiros a cavalo perseguem e derrubam um boi pela cauda, causando lesões físicas ao animal. *Em 2016, o Supremo Tribunal Federal julgou inconstitucional uma lei do Ceará que regulamentava a vaquejada, por considerar que a prática submete os animais a crueldade, o que a Constituição proíbe. Em 2017, o Congresso aprovou a Emenda Constitucional 96, que diz que práticas desportivas com animais registradas como manifestação cultural não são consideradas cruéis. O caso mostra o conflito entre tradição e proteção animal, e como a lei pode ser mudada para manter uma prática. Veja Rodeio, Tourada e Crueldade animal.*
 
 **Vitela** — carne proveniente de bezerros abatidos ainda jovens, geralmente criados em condições de confinamento extremo (caixa de vitela).
 
@@ -627,9 +627,9 @@
 
 **Zoofilia** — prática de atividade sexual entre humanos e animais; crime e forma grave de abuso animal.
 
-**Zoológico** — instituição que mantém animais selvagens em cativeiro para exibição, educação ou pesquisa; alvo central de crítica do movimento de libertação animal.
+**Zoológico** — instituição que mantém animais selvagens em cativeiro para exibição, educação ou pesquisa; alvo central de crítica do movimento de libertação animal. *Os zoológicos se justificam pela conservação e pela educação, mas muitas espécies exibidas não estão ameaçadas, e é difícil mostrar que as visitas mudam o comportamento do público. Animais que percorrem grandes áreas na natureza, como elefantes, ursos-polares e grandes felinos, costumam sofrer mais no cativeiro, com estereotipias e mortalidade mais alta. Há diferenças entre zoológicos, e alguns se aproximam de centros de resgate ou santuários. Veja Reprodução em cativeiro, Enriquecimento ambiental e Santuário.*
 
-**Zoonose** — doença transmissível entre animais e humanos, tema relevante nos debates sobre pecuária industrial e saúde pública.
+**Zoonose** — doença transmissível entre animais e humanos, tema relevante nos debates sobre pecuária industrial e saúde pública. *A maioria das doenças infecciosas emergentes em humanos tem origem em animais. A criação intensiva, com milhares de animais geneticamente parecidos e próximos, favorece a circulação e a mutação de vírus, como os da gripe aviária e da gripe suína; o comércio e a caça de animais silvestres e o desmatamento também aumentam o contato entre espécies. O uso de antibióticos na pecuária agrava o problema ao favorecer bactérias resistentes. Veja Pecuária industrial, Resistência antimicrobiana e Tráfico de animais.*
 
 **Zoosadismo** — prazer obtido ao infligir sofrimento ou morte a animais; forma de crueldade associada a transtornos comportamentais.
 
@@ -781,7 +781,7 @@
 
 ## 11. Redução e Término do Uso de Animais
 
-**3Rs** — princípio de Replacement (substituição), Reduction (redução) e Refinement (refinamento) na experimentação animal.
+**3Rs** — princípio de Replacement (substituição), Reduction (redução) e Refinement (refinamento) na experimentação animal: substituir animais por outros métodos sempre que possível, usar o menor número de animais e reduzir ao máximo a dor e o estresse dos que forem usados. *Foi proposto pelos cientistas britânicos William Russell e Rex Burch no livro *The Principles of Humane Experimental Technique* (1959). Hoje está em leis como a diretiva europeia de 2010, que declara como objetivo final a substituição completa dos animais, e a brasileira Lei Arouca. Críticos dizem que, na prática, o refinamento e a redução recebem mais atenção que a substituição. Veja Métodos substitutivos, Lei Arouca e Modelo animal.*
 
 **Agricultura celular** — produção de tecidos biológicos (incluindo "carne") a partir de cultivo celular, sem criação e abate de animais.
 
@@ -789,7 +789,7 @@
 
 **Carne cultivada** — produto alimentar derivado de agricultura celular, apresentado como alternativa à pecuária tradicional.
 
-**Cruelty Free** — selo ou designação que indica que um produto não foi testado em animais.
+**Cruelty Free** — selo ou designação que indica que um produto não foi testado em animais. *Por muito tempo o termo não teve definição legal, e cada empresa o usava como queria; selos de certificadoras independentes verificam também os fornecedores de ingredientes. Cruelty free não é o mesmo que vegano: um produto pode não ser testado em animais e conter ingredientes de origem animal, como cera de abelha, lanolina ou carmim. No Brasil, a lei que proibiu testes de cosméticos em animais, de 2025, também prevê regras para esse tipo de rótulo. Veja Proibição de testes de cosméticos em animais, Lanolina e Carmim de cochonilha.*
 
 **Protesto** — manifestação pública coletiva de discordância, usada como ferramenta do ativismo animal para pressionar mudanças.
 
@@ -801,11 +801,11 @@
 
 ## 12. Experiências (Bem-Estar, Dor e Estados Afetivos)
 
-**Bem-estar animal** — campo científico e ético que avalia e busca melhorar as condições de vida de animais sob cuidado humano.
+**Bem-estar animal** — estado de um animal em relação à sua saúde, ao que sente e à possibilidade de viver de acordo com sua natureza; também o campo científico e ético que avalia e busca melhorar esse estado, sobretudo em animais sob cuidado humano. *O cientista David Fraser descreveu três formas de pensar o bem-estar: funcionamento biológico (saúde, crescimento), estados afetivos (o que o animal sente) e vida natural (poder expressar seus comportamentos). As três nem sempre andam juntas: um frango pode crescer rápido e estar com dor. Para uma ética sencientista, o que o animal sente é o centro. Bem-estar animal, como ciência, não é o mesmo que bem-estarismo, a posição política que aceita o uso de animais desde que bem tratados. Veja Cinco Domínios, Enfrentamento (coping) e Bem-estarismo.*
 
 **Dor** — experiência sensorial e emocional desagradável associada a um dano real ou potencial aos tecidos, ou semelhante à associada a esse dano. É a definição adotada em 2020 pela Associação Internacional para o Estudo da Dor (IASP). *A dor é uma experiência, e não apenas um reflexo: por isso se distingue da nocicepção. Há evidências fortes de dor em mamíferos e aves, e evidências crescentes em peixes, polvos e lulas, caranguejos e lagostas; com base numa revisão dessas evidências, o Reino Unido incluiu polvos, lulas, caranguejos e lagostas na sua lei de senciência animal de 2022. Veja Nocicepção, Sofrimento e Senciência.*
 
-**Estereotipia** — comportamento repetitivo e sem função aparente, indicador de sofrimento psicológico ou frustração em animais mantidos em condições inadequadas *(ver também comportamento estereotipado, seção 8)*.
+**Estereotipia** — comportamento repetitivo e sem função aparente, como andar de um lado para o outro, balançar a cabeça ou morder barras, indicador de sofrimento psicológico ou frustração em animais mantidos em condições inadequadas. *Aparece em porcas presas em celas, cavalos em baias, elefantes e ursos em zoológicos e animais de laboratório. A estereotipia pode ser uma cicatriz de um ambiente ruim do passado e pode continuar mesmo depois que as condições melhoram. Por outro lado, a ausência de estereotipias não prova que o animal esteja bem: alguns ficam apáticos. Veja Comportamento estereotipado, Enriquecimento ambiental e Estresse.*
 
 **Experiências negativas** — categoria ampla de estados subjetivos aversivos (dor, medo, frustração, tédio) usados para avaliar sofrimento.
 
@@ -825,7 +825,7 @@
 
 **Sofrimento de causas naturais** — dor e morte que ocorrem sem intervenção humana (doença, predação, desastres).
 
-**Sofrimento dos animais selvagens** — debate filosófico sobre se e como humanos teriam obrigação de intervir para reduzir sofrimento na natureza (wild animal suffering).
+**Sofrimento dos animais selvagens** — debate filosófico sobre se e como humanos teriam obrigação de intervir para reduzir sofrimento na natureza (wild animal suffering). *Na natureza, a maioria das espécies tem muitos filhotes, e quase todos morrem cedo, de fome, frio, doença ou predação. Se o sofrimento importa onde quer que esteja, isso também é um problema moral. A maioria dos que estudam o tema não propõe intervir em larga escala hoje, por falta de conhecimento e risco de piorar as coisas, e sim pesquisar e agir em casos seguros, como a vacinação de animais silvestres contra a raiva, o resgate em desastres e a contracepção. Veja Sofrimento de causas naturais, Natureza idílica e Predação.*
 
 **Vistopia** ⚠️ — termo pouco padronizado, possivelmente neologismo específico de um autor ou coletivo, usado para designar um ideal de convivência entre humanos e animais livre de exploração. Recomendo confirmar a fonte antes de publicar.
 

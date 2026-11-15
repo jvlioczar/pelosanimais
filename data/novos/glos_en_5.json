@@ -220,7 +220,7 @@
 "i": 403,
 "termo": "Wild animal suffering",
 "def": "A philosophical debate over whether and how humans would have an obligation to intervene to reduce suffering in nature.",
-"com": "",
+"com": "In nature, most species have many offspring, and almost all of them die young, from hunger, cold, disease or predation. If suffering matters wherever it occurs, this is also a moral problem. Most of those who study the subject don't propose intervening on a large scale today, for lack of knowledge and the risk of making things worse, but rather researching and acting in safe cases, such as vaccinating wild animals against rabies, rescue in disasters and contraception. See Suffering from natural causes, Idyllic nature and Predation.",
 "pt": "Sofrimento dos animais selvagens"
 },
 {
@@ -381,7 +381,7 @@
 "i": 426,
 "termo": "Live animal transport",
 "def": "A stage of the production chain associated with stress, injuries and mortality.",
-"com": "",
+"com": "Animals can spend hours or days without food, water or rest, in extreme heat or cold, and many are injured or die on the way. The export of live cattle by ship, on voyages lasting weeks, is especially criticized, and Brazil is one of the major exporters. New Zealand banned the export of farm animals by sea in 2023, and the United Kingdom banned live exports for slaughter and fattening in 2024. See Live cargo, Downed animal and Slaughter.",
 "pt": "Transporte de animais vivos"
 },
 {
@@ -444,7 +444,7 @@
 "i": 435,
 "termo": "Vaquejada",
 "def": "A traditional Brazilian practice in which two cowboys on horseback chase a bull and bring it down by the tail, causing physical injuries to the animal.",
-"com": "",
+"com": "In 2016, Brazil's Supreme Federal Court struck down a law from the state of Ceará regulating vaquejada, finding that the practice subjects animals to cruelty, which the Constitution forbids. In 2017, Congress passed Constitutional Amendment 96, which states that sporting practices with animals registered as cultural expressions are not considered cruel. The case shows the conflict between tradition and animal protection, and how the law can be changed to keep a practice going. See Rodeo, Bullfighting and Animal cruelty.",
 "pt": "Vaquejada"
 },
 {
@@ -598,14 +598,14 @@
 "i": 457,
 "termo": "Zoo",
 "def": "An institution that keeps wild animals in captivity for display, education or research; a central target of criticism by the animal liberation movement.",
-"com": "",
+"com": "Zoos are justified by conservation and education, but many of the species on display are not threatened, and it is hard to show that visits change the public's behavior. Animals that range over large areas in the wild, such as elephants, polar bears and big cats, tend to suffer more in captivity, with stereotypies and higher mortality. Zoos differ, and some are closer to rescue centers or sanctuaries. See Captive breeding, Environmental enrichment and Sanctuary.",
 "pt": "Zoológico"
 },
 {
 "i": 458,
 "termo": "Zoonosis",
 "def": "A disease transmissible between animals and humans, a topic relevant to debates on industrial livestock farming and public health.",
-"com": "",
+"com": "Most emerging infectious diseases in humans originate in animals. Intensive farming, with thousands of genetically similar animals kept close together, favors the spread and mutation of viruses, such as avian and swine flu; the trade in and hunting of wild animals and deforestation also increase contact between species. The use of antibiotics in livestock farming makes the problem worse by favoring resistant bacteria. See Industrial livestock farming, Antimicrobial resistance and Animal trafficking.",
 "pt": "Zoonose"
 },
 {

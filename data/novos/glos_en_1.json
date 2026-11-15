@@ -2,8 +2,8 @@
 {
 "i": 0,
 "termo": "3Rs",
-"def": "The principle of Replacement, Reduction and Refinement in animal experimentation.",
-"com": "",
+"def": "The principle of Replacement, Reduction and Refinement in animal experimentation: replacing animals with other methods whenever possible, using the smallest number of animals, and reducing as far as possible the pain and stress of those used.",
+"com": "It was proposed by the British scientists William Russell and Rex Burch in the book *The Principles of Humane Experimental Technique* (1959). Today it is written into laws such as the 2010 European directive, which states full replacement of animals as its ultimate goal, and Brazil's Arouca Law. Critics say that, in practice, refinement and reduction get more attention than replacement. See Replacement methods, Arouca Law and Animal model.",
 "pt": "3Rs"
 },
 {
@@ -17,7 +17,7 @@
 "i": 2,
 "termo": "Humane slaughter",
 "def": "A method of slaughter that seeks to minimize the animal's suffering, usually by prior stunning; the term is contested by abolitionists, who regard it as an oxymoron.",
-"com": "",
+"com": "In practice, stunning fails in a share of animals, the speed of slaughter lines makes it hard to correct these failures, and several countries allow exemptions for religious slaughter without stunning. The term also diverts attention from the central fact: the animal is killed without need, almost always very young. See Stunning of animals, Oxymoron and Humane washing.",
 "pt": "Abate humanitário"
 },
 {
@@ -478,8 +478,8 @@
 {
 "i": 68,
 "termo": "Animal welfare",
-"def": "A scientific and ethical field that assesses and seeks to improve the living conditions of animals under human care.",
-"com": "",
+"def": "The state of an animal as regards their health, what they feel and their ability to live according to their nature; also the scientific and ethical field that assesses and seeks to improve that state, especially in animals under human care.",
+"com": "The scientist David Fraser described three ways of thinking about welfare: biological functioning (health, growth), affective states (what the animal feels) and natural living (being able to express their behaviors). The three don't always go together: a broiler chicken can grow fast and be in pain. For a sentientist ethics, what the animal feels is central. Animal welfare as a science is not the same as welfarism, the political position that accepts the use of animals as long as they are treated well. See Five Domains, Coping and Welfarism.",
 "pt": "Bem-estar animal"
 },
 {
