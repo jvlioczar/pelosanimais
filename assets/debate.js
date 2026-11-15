@@ -42,7 +42,7 @@
     var c = J.atual, n = D.n[c], i = J.usados.length;
     J.usados.push(c);
     document.getElementById('deb-cont').textContent = 'Rodada ' + (i + 1) + ' de ' + J.total;
-    var liga = /\bmas\b/.test(n.f) ? sorteia(['Olha, ', 'Sinceramente? ', 'Hmm. ']) : sorteia(LIGA);
+    var liga = /\bmas\b/.test(n.f) ? sorteia(['Olha, ', 'Sinceramente? ', 'Hmm. ']) : sorteia(/^(E|And) /.test(n.f) ? LIGA.filter(function (x) { return !/ (E|And) $/.test(x); }) : LIGA);  // evita "Hmm. E e os insetos..."
     var fala = i === 0 ? n.f : liga + minuscula(n.f);
     var log = document.getElementById('deb-log');
     var h = '';
