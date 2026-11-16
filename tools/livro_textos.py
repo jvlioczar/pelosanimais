@@ -1,5 +1,5 @@
 """Textos editáveis do livro (tools/livro.py). Edite à vontade e rode de novo: python tools/livro.py
-Parágrafos separados por linha em branco. Texto vazio ('') deixa a página com o marcador de "a preencher"."""
+Parágrafos separados por linha em branco. Links no formato [texto](https://endereco). Texto vazio ('') deixa a página com o marcador de "a preencher"."""
 
 AUTOR = 'Julio Cesar Prava'
 EDITORA = 'BiblioVerse'
@@ -11,11 +11,7 @@ AGRADECIMENTOS = ''
 # Ficha catalográfica: deixe vazio para manter o quadro reservado; cole aqui o texto fornecido pela bibliotecária ou pelo bibliotecário.
 FICHA = ''
 
-SOBRE_AUTOR = """Julio Cesar Prava é ativista pelos animais e criador e curador da BiblioVerse, um conjunto de bibliotecas e projetos digitais gratuitos.
-
-É autor de Veganismo Baseado em Evidências e criou o Guia de Argumentação Pelos Animais, lançado em novembro de 2026.
-
-Instagram: @sencientista"""
+SOBRE_AUTOR = """[Julio Cesar Prava](https://instagram.com/sencientista) é designer gráfico e ativista pelos animais. Em 2017, fundou a [Vegpedia](https://vegpedia.com), para mapear o movimento vegano no Brasil e no mundo. Recentemente, lançou o Guia de Argumentação Pelos Animais."""
 
 SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.
 
@@ -23,7 +19,7 @@ O guia segue a tradição da filosofia analítica e da epistemologia: busca clar
 
 Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais.
 
-Este é o primeiro volume da coleção em livro, com os argumentos contra o veganismo e o antiespecismo. O site traz ainda os argumentos que veganos deveriam parar de usar, as objeções políticas e éticas, os debates simulados, a biblioteca e o glossário."""
+Além dos argumentos contra o veganismo e o antiespecismo reunidos neste livro, o site traz os argumentos que veganos deveriam parar de usar, as objeções políticas e éticas, os debates simulados, a biblioteca e o glossário."""
 
 CONTRACAPA = """Toda objeção merece uma boa resposta.
 
