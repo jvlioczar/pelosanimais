@@ -4,3 +4,4 @@ __pycache__/
 data/_novos/
 data/glossario_docx.txt
 data/novos/glos_in_*.json
+_livro/
