@@ -38,7 +38,7 @@ RUINS = [
          lugar='Diga qual é sua objeção de verdade. Se é moral, defenda-a como moral. Se é estratégica, mostre a evidência.', liga=['L22', 'A8']),
     dict(c='V9', tipo='tatica', frase='Não mostre as imagens, é chocante demais.',
          por=['Em algum momento, essa cautela vira uma prioridade invertida: trata o desconforto de quem assiste como mais importante do que o sofrimento de quem é filmado.', 'A distância entre estatística e imagem concreta é justamente o que ativa ou desativa a empatia. Esconder sempre essa realidade reforça o mecanismo que sustenta a indiferença.'],
-         lugar='Pergunte qual abordagem reduz mais sofrimento, e não qual é mais confortável de defender.', liga=['E12', 'B15']),
+         lugar='Pergunte qual abordagem reduz mais sofrimento, e não qual é mais confortável de defender.', liga=['E12', 'B14']),
     dict(c='V10', tipo='tatica', frase='Essa lei parcial é injusta com os outros animais.',
          por=['Soa como um compromisso ainda mais forte, mas prova demais: como é impossível proibir toda forma de exploração de uma só vez, alguém preocupado com o resultado preferiria uma redução real de sofrimento a nenhuma.', 'A mesma pessoa dificilmente se oporia a uma lei que reduzisse parte de um sofrimento humano por ela não resolver todos os problemas humanos de uma vez.'],
          lugar='Avalie cada lei pelo que ela causa ao longo do tempo. O debate entre abolição e reformas é real, mas é empírico e pede evidência caso a caso.', liga=['B10']),
@@ -170,7 +170,7 @@ RUINS = [
     # Encontrado na revisão crítica da família B (2026-11-07).
     dict(c='V49', tipo='impreciso', frase='Todos os animais são mortos conscientes, sem atordoamento.',
          por=['É uma generalização. No Brasil, a lei exige atordoar bois, porcos e aves antes da sangria, e a maior parte dos abates segue essa regra, ainda que com falhas e exceções.', 'Quem conhece o setor desmonta a frase na hora, e o problema real, que é sério, fica escondido atrás do exagero.'],
-         lugar='Diga o que a lei permite e o que falha: aves penduradas conscientes antes do atordoamento, gás que os porcos evitam, abate religioso sem atordoamento, peixes quase sempre mortos por asfixia. E, mesmo com o melhor atordoamento, o animal continua sendo morto.', liga=['B1', 'B15']),
+         lugar='Diga o que a lei permite e o que falha: aves penduradas conscientes antes do atordoamento, gás que os porcos evitam, abate religioso sem atordoamento, peixes quase sempre mortos por asfixia. E, mesmo com o melhor atordoamento, o animal continua sendo morto.', liga=['B1', 'B14']),
     # Encontrado na revisão crítica da família C (2026-11-07).
     dict(c='V50', tipo='ciencia', frase='Está provado que a carne não teve nenhum papel na evolução humana.',
          por=['É um exagero sobre um estudo real. Barr e colegas mostraram, em 2022, que o aparente aumento das evidências de consumo de carne na época do *Homo erectus* desaparece quando se corrige o esforço de pesquisa. Isso enfraquece uma hipótese, mas não prova que a carne não teve papel nenhum.', 'Nossos ancestrais caçaram e comeram animais, e isso é bem documentado. Negar exagera na direção oposta e dá ao interlocutor uma refutação fácil.'],

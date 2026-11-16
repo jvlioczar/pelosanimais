@@ -379,7 +379,7 @@ OP.update({
   me='Generalizes and insults professionals who often genuinely care.',
   r="Then ask the animal scientist if they'd let their daughter live in one of those sheds. Anyone who defends this must be paid to say it. Nobody takes good care of someone they'll kill at six weeks, that's a joke.",
   re='Accuses of corruption without any basis.'),
- 'B15': dict(
+ 'B14': dict(
   f="Some of what's shown is abuse, and some is exactly what the rules allow: gestation crates, castration without anesthesia, culling of chicks. That's not the exception, it's the legal standard. And where there is abuse, those videos are what exposed it.",
   fe='Separates abuse from legal practice and shows the role of the footage.',
   m="Every animal is killed conscious, without stunning, and the videos show exactly what happens on one hundred percent of farms. There are no exceptions at all. Anyone who doubts it can go to any farm and see for themselves.",

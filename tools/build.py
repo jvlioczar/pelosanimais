@@ -177,6 +177,7 @@ UNIDOS = {
 def codigos(s):
     """'C1 a C11, G3' vira a lista de códigos, expandindo os intervalos e trocando os unidos pelo código que ficou."""
     out = []
+    s = re.sub(r'"[^"]*"|“[^”]*”|‘[^’]*’', '', html.unescape(s))  # títulos entre aspas não contam ('G4 "Se precisa suplementar B12…"' é só G4)
     for m in re.finditer(r'([A-N])(\d{1,2})(?: a \1(\d{1,2}))?', s):
         ini, fim = int(m[2]), int(m[3] or m[2])
         out += [f'{m[1]}{n}' for n in range(ini, fim + 1)]
@@ -276,7 +277,7 @@ NOVOS = [
     ('L26', 'Veganos apoiam pseudociências', ['Vegano acredita em qualquer coisa', 'Veganismo é a porta de entrada para a pseudociência', 'Daqui a pouco vão dizer que vacina faz mal'], 'Há veganos que espalham pseudociência, mas a defesa dos animais se apoia na senciência e no consenso nutricional; julgar uma ideia pelos piores defensores derrubaria qualquer causa'),
     ('F13', 'Você comeria animais se alguém te pagasse bem?', ['E se te dessem muito dinheiro?', 'Por um milhão você comia', 'Todo mundo tem um preço'], 'O mesmo dilema vale para qualquer causa humana e nunca prova que ela é falsa; recusar por princípio é coerente, e aceitar para salvar muito mais vítimas também é'),
     ('B9', 'Zootecnistas cuidam bem dos animais', ['Você acha que sabe mais que um zootecnista?', 'Tem profissional cuidando disso, não é qualquer um', 'Fiz zootecnia, e os animais são muito bem tratados'], 'Cuidam bem dentro do objetivo da profissão, que é a produção; competência técnica não responde se é justo criar animais para matar'),
-    ('B16', 'Você não vive na fazenda para saber a verdade', ['Você nunca viu um boi de perto', 'Gente da cidade acha que leite vem da caixinha', 'Vem trabalhar uma semana na roça e depois me fala'], 'O que se critica está nos manuais e normas da própria produção; e atacar quem fala não mostra que o que é dito está errado'),
+    ('B15', 'Você não vive na fazenda para saber a verdade', ['Você nunca viu um boi de perto', 'Gente da cidade acha que leite vem da caixinha', 'Vem trabalhar uma semana na roça e depois me fala'], 'O que se critica está nos manuais e normas da própria produção; e atacar quem fala não mostra que o que é dito está errado'),
     ('G1', 'Comer animais é necessário para sobreviver', ['A gente precisa comer carne para viver', 'Sem proteína animal o corpo não aguenta', 'E os povos do Ártico? Lá não tem alface', 'O ser humano é onívoro, isso é biologia'], 'Necessário para quem? Onde a alternativa existe, é escolha, e a definição de veganismo já fala em fazer o possível e praticável; e o argumento concede o princípio que o derruba, porque sem necessidade não há justificativa'),
     ('J21', 'Tem gente morrendo na guerra e vocês se preocupam com animais', ['Tem criança morrendo e você posta foto de cachorro', 'Numa hora dessas, falar de animal é falta de respeito', 'Primeiro as pessoas, depois os bichos', 'Vocês só se comovem quando a vítima tem quatro patas'], 'Os animais são vítimas da mesma guerra; o custo de ajudá-los é muito menor do que a frase supõe, e existir um custo não decide nada, já que isso vale para todo uso de recurso'),
     ('N12', 'Sencientistas querem acabar com os predadores', ['Vocês querem matar os leões', 'Querem um mundo sem predador, isso é loucura', 'Vão dar ração vegana para a onça?', 'E quem vai controlar a população dos herbívoros depois?'], 'Matar predadores é o que a posição rejeita, e pelo motivo ecológico da própria objeção; o que existe é pesquisa de longo prazo sobre reduzir a predação sem causar dano'),
@@ -332,8 +333,8 @@ NOVOS = [
     ('B11', 'O transporte de animais vivos é regulamentado e segue normas para garantir o bem dos animais', ['O transporte é regulamentado', 'Tem norma para tudo, até para o tempo de viagem', 'A exportação de gado vivo é fiscalizada'], 'As normas permitem viagens muito longas e são mal fiscalizadas; e, mesmo cumpridas, regulam a viagem de um animal que será morto no destino'),
     # Práticas específicas, segunda rodada (2026-11-15): alimentação, pesquisa, vestuário, entretenimento, trabalho, companhia e as defendidas pelo ambientalismo
     ('B6', 'A vitela aproveita os bezerros que nascem na produção de leite', ['O bezerro nasce de qualquer jeito', 'Vitela é carne de bezerro bem tratado', 'Melhor aproveitar do que jogar fora'], 'O bezerro não nasce de qualquer jeito: nasce porque a vaca precisa parir para dar leite, e a vitela torna o leite mais rentável'),
-    ('B13', 'Foie gras é uma iguaria tradicional, e patos comem muito por natureza', ['É tradição da culinária francesa', 'Pato engorda sozinho antes de migrar', 'É uma iguaria de ocasião especial'], 'A ave não come sozinha: é alimentada à força por um tubo até o fígado adoecer, e a ciência europeia concluiu que isso prejudica o bem-estar'),
-    ('B14', 'Lagosta cozida viva não sente nada e fica mais fresca', ['Lagosta não sente nada', 'Tem que ser cozida viva, senão estraga', 'O barulho na panela é só ar saindo da casca'], 'Há evidência séria de dor em crustáceos; o Reino Unido os reconheceu como sencientes, e a Suíça exige atordoamento antes de matá-los'),
+    ('B12', 'Foie gras é uma iguaria tradicional, e patos comem muito por natureza', ['É tradição da culinária francesa', 'Pato engorda sozinho antes de migrar', 'É uma iguaria de ocasião especial'], 'A ave não come sozinha: é alimentada à força por um tubo, sem precisar, até o fígado adoecer de propósito'),
+    ('B13', 'Lagosta cozida viva não sente nada e fica mais fresca', ['Lagosta não sente nada', 'Tem que ser cozida viva, senão estraga', 'O barulho na panela é só ar saindo da casca'], 'Há evidência séria de dor em crustáceos; o Reino Unido os reconheceu como sencientes, e a Suíça exige atordoamento antes de matá-los'),
     ('I3', 'Cosméticos testados em animais são mais seguros', ['Testado em animal é mais seguro', 'Prefiro saber que não vai me dar alergia', 'Sem teste, como saber se é seguro?'], 'Cosmético não é remédio; a UE proíbe desde 2013 e o Brasil restringe desde 2023, e a segurança é garantida com ingredientes conhecidos e métodos sem animais'),
     ('I4', 'Estudantes de medicina e veterinária precisam praticar em animais', ['Dissecar o sapo faz parte da aula', 'Você quer ser operado por quem nunca praticou?', 'Sem aula prática com animal, o curso fica fraco'], 'Revisões sistemáticas mostram que métodos sem dano ensinam tão bem ou melhor; dá para praticar em tecido vivo sem matar animais saudáveis'),
     ('I5', 'Órgãos de porco vão salvar milhares de vidas', ['Um coração de porco pode salvar uma vida', 'Você deixaria uma criança morrer para salvar um porco?', 'Já comemos porco, por que não usar o coração?'], 'A falta de órgãos é real, mas há caminhos sem criar animais para retirar órgãos: doação humana, órgãos artificiais e cultivados'),
@@ -355,8 +356,8 @@ NOVOS = [
     ('J11', 'Sou pescetariano, troquei a carne por peixe e poupo os animais', ['Só como peixe e frutos do mar, já não como bicho', 'Peixe não conta, ele não sente', 'Troquei a carne por camarão'], 'Peixes são sencientes e muito menores que bois e porcos: a troca costuma multiplicar o número de animais mortos'),
     ('I13', 'Sem os zoológicos, várias espécies já estariam extintas', ['A maioria das espécies que se recuperaram foi salva em cativeiro', 'Os zoológicos guardam alguns de cada espécie e depois reintroduzem na natureza', 'Sem zoológico, muito bicho já tinha sumido'], 'Há casos reais, mas poucos: a reprodução em cativeiro foi ação principal em 13 de 68 espécies recuperadas, a maior parte da conservação vem do habitat, e isso não justifica expor animais de espécies não ameaçadas'),
     ('L13', 'Vegano que compra de empresa com trabalho escravo não é vegano de verdade', ['Você se preocupa com a vaca, mas não com o trabalhador', 'Vegano que usa droga do tráfico financia a morte de gente', 'Veganismo sem justiça para os trabalhadores é hipocrisia'], 'O fundamento do veganismo inclui os humanos e pede evitar também a exploração humana; mas a incoerência não torna aceitável explorar animais, e a cobrança vale para quem não é vegano'),
-    ('B18', 'Os animais não ligam, até gostam e, de certa forma, consentem', ['A vaca nem liga de ser ordenhada', 'A galinha bota o ovo e esquece', 'Se não quisessem, fugiriam', 'O porco vem correndo quando me vê, ele gosta', 'O peixe mordeu a isca porque quis'], 'Parecer calmo não é não se importar, e gostar de comida não é gostar de ser morto; consentir exige entender e poder recusar, e a morte é um dano mesmo sem ser percebida'),
-    ('B17', 'É uma troca justa: a gente cuida e alimenta, e eles dão a carne', ['A gente cuida, eles dão a carne', 'Lá fora eles seriam comidos por outro bicho', 'Existe um pacto entre o criador e o animal'], 'Uma troca exige que os dois lados possam recusar; quem protege é quem mata, e o preço é a vida do animal'),
+    ('B17', 'Os animais não ligam, até gostam e, de certa forma, consentem', ['A vaca nem liga de ser ordenhada', 'A galinha bota o ovo e esquece', 'Se não quisessem, fugiriam', 'O porco vem correndo quando me vê, ele gosta', 'O peixe mordeu a isca porque quis'], 'Parecer calmo não é não se importar, e gostar de comida não é gostar de ser morto; consentir exige entender e poder recusar, e a morte é um dano mesmo sem ser percebida'),
+    ('B16', 'É uma troca justa: a gente cuida e alimenta, e eles dão a carne', ['A gente cuida, eles dão a carne', 'Lá fora eles seriam comidos por outro bicho', 'Existe um pacto entre o criador e o animal'], 'Uma troca exige que os dois lados possam recusar; quem protege é quem mata, e o preço é a vida do animal'),
     ('H21', 'Se todo mundo virar vegano, vai ter que desmatar para plantar', ['Não ia ter terra para plantar tanta comida', 'Vão derrubar a floresta para plantar soja para os veganos'], 'É o contrário: os produtos animais ocupam 83% das terras agrícolas e dão 18% das calorias, e uma dieta vegetal reduziria a área em cerca de 76%'),
     ('I36', 'Dar comida vegana para cachorro e gato é maus-tratos', ['Cachorro é carnívoro, não pode ser vegano', 'Impor o seu veganismo ao bicho é maus-tratos'], 'Cães são onívoros e podem ter dieta vegana completa com acompanhamento; para gatos a cautela é justificada, e nada disso muda o prato humano'),
     ('J25', 'Festa só com comida vegana exclui quem come carne', ['Festa sem carne não é festa', 'Merenda vegana é imposição às crianças', 'Segunda sem carne é autoritarismo'], 'Quem come carne pode comer comida vegana, e o vegano não pode comer carne: o cardápio vegano é o único que todos podem comer'),
@@ -377,8 +378,6 @@ for c, frase, formas, falha in NOVOS:
 _FAM_ORD = list(FAMILIAS)  # a ordem das famílias no site: N (ex-veganos) vem antes de M (animais selvagens e futuro)
 for c, fs in FORMAS_EXTRA.items():  # formas de argumentos acrescentados depois (família M, N, lotes novos)
     if c not in _feitas: ARGS[c]['formas'] += fs
-# B12 não pode ser código de argumento: o texto cita a vitamina B12 o tempo todo, e o build ligaria cada menção.
-assert 'B12' not in ARGS, 'B12 colide com a vitamina B12; use outro número'
 ORDEM = sorted(ARGS, key=lambda c: (_FAM_ORD.index(c[0]), int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
@@ -455,7 +454,7 @@ def qe_bloco(c):
     itens = ''.join(item(k) for k in QE[c])
     return f'<div class="qe"><h2 id="aprofunde">Aprofunde no Questão de Ética</h2><p>Capítulos da coleção <em>Uma Jornada pela Ética Animal</em>, em acesso aberto, que discutem este argumento com mais detalhe:</p><ul>{itens}</ul></div>'
 # Cadeia acrescentada depois do doc original, com argumentos novos (2026-11-15)
-CADEIAS.append(dict(n='Consumo consciente', cods=['I35', 'B4', 'B17', 'C13', 'B3', 'B2'], fim='A8 ("são só animais") e J6 ("carne é gostosa")'))
+CADEIAS.append(dict(n='Consumo consciente', cods=['I35', 'B4', 'B16', 'C13', 'B3', 'B2'], fim='A8 ("são só animais") e J6 ("carne é gostosa")'))
 CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C5', 'G2', 'G4', 'H1', 'H2', 'L12', 'K1', 'E1']),
                   ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'B2', 'A15', 'A18'])]
 RAIZES = ['A8', 'J6', 'E15']
@@ -479,10 +478,18 @@ def limpa(s):
     return s
 
 COD_RE = re.compile(r'(?<![\w.-])([A-N]\d{1,2})(?![\w-])')
+def _codigo_b12(s, m):
+    """B12 é também a vitamina, citada o tempo todo: só vira link quando aparece como código de argumento,
+    seguido do título entre aspas, depois de "que é"/"which is" ou ao lado de outro código ("B10, B12", "E12 e B12")."""
+    antes, depois = s[max(0, m.start() - 14):m.start()], s[m.end():m.end() + 14]
+    return (depois[:2] in (' "', ' “', ' ‘') or re.search(r'(que é|which is) $', antes) is not None
+            or re.search(r'[A-N]\d{1,2}(, | e | and )$', antes) is not None or re.match(r'(, | e | and )[A-N]\d{1,2}(?!\d)', depois) is not None)
+
 def liga(s, ctx):
     def f(m):
         c = UNIDOS[m[1]][0] if m[1] in UNIDOS else m[1]
         if c not in ARGS or c == ctx.get('c') or c in ctx.get('fora', ()): return m[0]
+        if c == 'B12' and not _codigo_b12(s, m): return m[0]
         return f'<a class="ref" href="{ctx["pre"]}argumentos/{c.lower()}.html">{c}</a>'
     return COD_RE.sub(f, s)
 
@@ -1096,7 +1103,7 @@ def comece():
 # Tipos de exploração (2026-11-15): os argumentos reunidos pela prática, de várias famílias, para quem chega com uma pergunta específica.
 EXPLORACAO = [
     ('Alimentação', 'Food', 'Carne, leite, ovos e frutos do mar: o bem-estar na criação, no transporte e no abate.', 'Meat, milk, eggs and seafood: welfare in farming, transport and slaughter.',
-     ['B1', 'B3', 'B4', 'B5', 'B6', 'B8', 'B9', 'B10', 'B11', 'B13', 'B14', 'F10']),
+     ['B1', 'B3', 'B4', 'B5', 'B6', 'B8', 'B9', 'B10', 'B11', 'B12', 'B13', 'F10']),
     ('Trocas e reduções', 'Swaps and reductions', 'Quem come menos carne, corta só a carne ou troca por frango e peixe, e as trocas que aumentam o número de vítimas.', 'Eating less meat, cutting out only meat, or swapping it for chicken and fish, and the swaps that increase the number of victims.',
      ['J8', 'J9', 'J10', 'J11']),
     ('Pesquisa, ensino e saúde', 'Research, teaching and health', 'Testes, cosméticos, aulas com animais, órgãos de porco e medicina tradicional.', 'Testing, cosmetics, teaching with animals, pig organs and traditional medicine.',

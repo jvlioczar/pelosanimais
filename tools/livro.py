@@ -54,8 +54,16 @@ def plano(no):
 
 def paragrafos(t):
     """Parágrafos separados por linha em branco; [texto](https://...) vira link clicável no PDF."""
-    links = lambda h: re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', h)
-    return ''.join(f'<p>{links(e(p.strip())).replace(chr(10), "<br/>")}</p>' for p in t.strip().split('\n\n') if p.strip())
+    def fmt(h):
+        h = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', e(h))
+        return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', h)
+    out = ''
+    for bloco in (b.strip() for b in t.strip().split('\n\n')):
+        if not bloco: continue
+        linhas = bloco.split('\n')
+        if all(l.startswith('- ') for l in linhas): out += '<ul>' + ''.join(f'<li>{fmt(l[2:])}</li>' for l in linhas) + '</ul>'
+        else: out += f'<p>{fmt(bloco).replace(chr(10), "<br/>")}</p>'
+    return out
 
 def vazio(rotulo):
     return f'<div class="vazio">{e(rotulo)}</div>'
@@ -74,13 +82,13 @@ def essencial(c):
 
 CSS = """
 {FACES}
-@page{size:148mm 210mm;margin:0}
+@page{size:420pt 594pt;margin:0}  /* A5 arredondado para um número inteiro de pixels (560 x 792): com outras medidas o Chrome deixa um filete branco nas páginas coloridas */
 :root{--papel:#fcfaf5;--areia:#f4f1e3;--tinta:#0a3703;--texto:#173300;--suave:#4f6346;--linha:#dcdac6;--amarelo:#ffeb5b;
   --serif:'Mozilla Headline',sans-serif;--sans:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--papel);color:var(--texto);font:400 10pt/1.5 var(--sans);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 a{color:inherit}
-.pag{width:148mm;height:210mm;position:relative;overflow:hidden;page-break-after:always;break-after:page;padding:14mm 14mm 16mm}
+.pag{width:420pt;height:594pt;position:relative;overflow:hidden;background:var(--papel);page-break-after:always;break-after:page;padding:14mm 14mm 16mm}
 .pag:last-child{page-break-after:auto;break-after:auto}
 .rodape{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;font:500 7pt var(--mono);color:var(--suave);letter-spacing:.02em}
 .par .rodape{flex-direction:row-reverse}
@@ -88,18 +96,24 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .ti{font:700 6.8pt var(--sans);text-transform:uppercase;letter-spacing:.11em;color:var(--suave);margin:0 0 2.2mm}
 .vazio{border:1.2px dashed var(--linha);border-radius:3mm;color:var(--suave);font:500 8pt var(--mono);display:flex;align-items:center;justify-content:center;text-align:center;padding:6mm;min-height:40mm}
 /* capa e contracapa */
-.capa,.contra{background:var(--tinta);color:#fff;padding:18mm 15mm;display:flex;flex-direction:column}
+.capa,.contra{--bg:var(--tinta);color:#fff;padding:18mm 15mm;display:flex;flex-direction:column}
+.capa,.contra,.fam{background:var(--bg)}
 .capa .selo{align-self:flex-start;background:var(--amarelo);color:var(--tinta);font:700 7.5pt var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:1.6mm 4mm;border-radius:99px}
-.capa .logo{width:46mm;height:46mm;background:var(--amarelo);border-radius:10mm;padding:7mm;margin:6mm 0 0}
+.capa{padding:15mm 15mm 14mm;align-items:center;text-align:center}
+.capa .sub{margin-left:auto!important;margin-right:auto!important}
+.capa .logo{width:88mm;height:88mm;background:var(--amarelo);border-radius:18mm;padding:13mm;margin:0}
 .capa .logo svg{display:block}
-.capa h1{color:#fff;font-size:29pt;font-weight:700;margin:12mm 0 7mm;line-height:1.04;white-space:nowrap}
+.capa h1{color:#fff;font-size:40pt;font-weight:700;margin:10mm 0 6mm;line-height:1.0;white-space:nowrap}
 .capa h1 span,.contra h2 span{color:var(--amarelo)}
-.capa .sub{font:500 13pt/1.35 var(--sans);color:#d8e8cf;margin:0;max-width:105mm}
-.capa .autor{font:600 11pt var(--sans);color:#fff;margin:9mm 0 0}
+.capa .sub{font:500 15pt/1.35 var(--sans);color:#d8e8cf;margin:0;max-width:112mm}
+.capa .autor{font:600 14pt var(--sans);color:#fff;margin:auto 0 0}
 .faixa{margin-top:auto;display:flex;gap:1.6mm;flex-wrap:wrap}
 .faixa i{width:7.2mm;height:7.2mm;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font:700 8pt var(--sans);font-style:normal;color:#fff}
 .capa .pe,.contra .pe{margin-top:8mm;font:500 8pt var(--mono);color:#c6dcd3;display:flex;justify-content:space-between}
-.capa .pe{margin-top:auto}
+.contra{align-items:center;text-align:center;justify-content:center}
+.contra p{max-width:108mm;text-wrap:balance}
+.contra .pe{justify-content:center;margin-top:24mm;font-size:11pt}
+.contra .pe a{color:#c6dcd3;text-decoration:none}
 .contra h2{color:#fff;font-size:20pt;margin:0 0 7mm}
 .contra p{font:400 10.5pt/1.55 var(--sans);color:#e6efe0;margin:0 0 3.6mm}
 .contra p:first-of-type{font:600 13pt/1.35 var(--serif);color:var(--amarelo)}
@@ -129,6 +143,12 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 /* sumário */
 .sum li{display:flex;align-items:baseline;gap:2mm;list-style:none;margin:0 0 2.1mm}
 .sum ol{padding:0;margin:0}
+.fams h2{margin-bottom:3.5mm}
+.fams ul{list-style:none;padding:0;margin:0}
+.fams li{display:flex;gap:2.6mm;margin:0 0 1.5mm;align-items:flex-start}
+.fams .l{flex:none;width:5.6mm;height:5.6mm;border-radius:50%;color:#fff;font:700 7pt/5.6mm var(--sans);text-align:center;margin-top:.3mm}
+.fams strong{font-size:8pt;color:var(--tinta);line-height:1.25}
+.fams p{margin:.2mm 0 0;font-size:7.5pt;line-height:1.32;color:var(--texto)}
 .sum .l{flex:none;width:6mm;height:6mm;border-radius:50%;color:#fff;font:700 7.5pt/6mm var(--sans);text-align:center;align-self:center}
 .sum a{text-decoration:none;flex:1;display:flex;gap:2mm}
 .sum a span{flex:1;border-bottom:1px dotted var(--linha)}
@@ -193,18 +213,18 @@ def gera():
         L.add(f'<h1>{e(TITULO)}</h1>', 'falso', num=False)
         L.branco()
         L.add(f'<h1>Guia de Argumentação Pelos Animais</h1><p class="sub">{e(SUB)}</p>'
-              f'<p class="autor">{e(T.AUTOR)}</p><p class="ed">{e(T.EDITORA)} · {ANO}</p>', 'rosto', num=False)
+              f'<p class="autor">{e(T.AUTOR)}</p><p class="ed">{e(T.EDITORA) + " · " if T.EDITORA else ""}{ANO}</p>', 'rosto', num=False)
         ficha = f'<pre>{e(T.FICHA.strip())}</pre>' if T.FICHA.strip() else vazio('Ficha catalográfica (a inserir)')
         L.add(f'<p><strong>{e(TITULO)}</strong></p>'
-              f'<p>© {ANO} {e(T.AUTOR)}<br/>Publicado pela {e(T.EDITORA)}. Edição digital gerada em {B.ATUALIZADO[8:10]}/{B.ATUALIZADO[5:7]}/{ANO}.</p>'
-              f'<p>O conteúdo completo e atualizado deste livro está disponível gratuitamente em {e(SITE)}.</p>'
+              f'<p>© {ANO} {e(T.AUTOR)}<br/>{"Publicado por " + e(T.EDITORA) + ". " if T.EDITORA else ""}Edição digital de {B.ATUALIZADO[8:10]}/{B.ATUALIZADO[5:7]}/{ANO}.</p>'
+              f'<p>O conteúdo completo e atualizado deste livro está disponível gratuitamente em <a href="{B.SITE_PT}">{e(SITE)}</a>.</p>'
               f'<p>Fontes tipográficas: Mozilla Headline, Inter e JetBrains Mono, sob a licença SIL Open Font License.</p>'
               f'<div class="ficha">{ficha}</div>', 'creditos', num=False)
         L.add(f'<div class="txt">{paragrafos(T.DEDICATORIA)}</div>' if T.DEDICATORIA.strip() else vazio('Dedicatória (opcional)'), 'ded', num=False)
         L.branco()
         L.add('<div class="texto"><h2>Agradecimentos</h2>' + (paragrafos(T.AGRADECIMENTOS) if T.AGRADECIMENTOS.strip() else vazio('Agradecimentos (a escrever)')) + '</div>')
         L.branco()
-        itens = [('+', 'var(--tinta)', 'Sobre o projeto', 'projeto', ''), ('+', 'var(--tinta)', 'Como usar este livro', 'como', '')]
+        itens = [('+', 'var(--tinta)', 'Sobre o projeto', 'projeto', ''), ('+', 'var(--tinta)', 'Como usar este livro', 'como', ''), ('+', 'var(--tinta)', 'As famílias', 'familias', '')]
         itens += [(f['c'], f['cor'], f['nome'], f'fam-{f["c"]}', f' <small>· {len(por_fam[f["c"]])}</small>') for f in fams]
         itens += [('+', 'var(--tinta)', 'Sobre o autor', 'autor', ''), ('+', 'var(--tinta)', 'Continue no site', 'fim', '')]
         sumario = '<h2>Sumário</h2><ol>' + ''.join(
@@ -217,7 +237,7 @@ def gera():
         L.impar()
         como = (f'<h2>Como usar este livro</h2>'
                 f'<p>Este livro reúne o essencial de {len(B.ARGS)} argumentos usados contra o veganismo e o antiespecismo, um por página, organizados em {len(fams)} famílias. '
-                'Cada argumento aparece na forma em que costuma ser dito, e a resposta tenta ser honesta: reconhece o que ele acerta e mostra onde falha.</p>'
+                'Cada argumento aparece na forma em que costuma ser dito, com uma resposta direta e curta. O que ele acerta, a versão mais forte e a desmontagem completa ficam no capítulo do site.</p>'
                 '<p>Em cada página você encontra:</p><ul>'
                 '<li><strong>A frase</strong>, como ela costuma aparecer numa conversa;</li>'
                 '<li><strong>A falha principal</strong>, em uma linha;</li>'
@@ -228,13 +248,16 @@ def gera():
                 'Os da Parte IND discutem saúde, ambiente, economia ou quem defende o veganismo. Nesses, vale corrigir os fatos e depois voltar à pergunta de fundo: '
                 'os interesses dos animais contam?</p></div>')
         num['como'] = L.add(f'<div class="texto">{como}</div>', ancora='como')
+        lista = ''.join(f'<li><span class="l" style="background:{f["cor"]}">{f["c"]}</span><div><strong>{e(f["nome"])}</strong>'
+                        f'<p>{e(T.FAMILIAS.get(f["c"], f["perg"]))}</p></div></li>' for f in fams)
+        num['familias'] = L.add(f'<div class="texto fams"><h2>As famílias</h2><ul>{lista}</ul></div>', ancora='familias')
         for f in fams:
             L.impar()
             dir_ = f['parte'] == 'DIR'
             parte = ('Parte DIR · argumentos diretos: discutem se é certo usar os animais.' if dir_ else
                      'Parte IND · argumentos indiretos: discutem saúde, ambiente, economia ou quem defende os animais. Corrija os fatos e volte à pergunta moral.')
             num[f'fam-{f["c"]}'] = L.add(f'<p class="letra">{f["c"]}</p><h2>{e(f["nome"])}</h2><p class="perg">{e(f["perg"])}</p>'
-                                         f'<p class="parte">{e(parte)}<b>{len(por_fam[f["c"]])} argumentos</b></p>', 'fam', f'background:{f["cor"]}', ancora=f'fam-{f["c"]}')
+                                         f'<p class="parte">{e(parte)}<b>{len(por_fam[f["c"]])} argumentos</b></p>', 'fam', f'--bg:{f["cor"]}', ancora=f'fam-{f["c"]}')
             for c in por_fam[f['c']]:
                 a = B.ARGS[c]
                 ps, ret = essencial(c)
@@ -262,10 +285,10 @@ def gera():
     L, num2 = monta(num)
     assert num == num2
     logo = re.sub(r'width="\d+" height="\d+"', 'width="100%" height="100%"', B.LOGO)
-    capa = (f'<div class="logo">{logo}</div><h1>Guia de Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{e(SUB)}</p>'
-            f'<p class="autor">{e(T.AUTOR)}</p><div class="pe"><span>{e(T.EDITORA)}</span><span>{e(SITE)}</span></div>')
-    contra = (f'<h2>Guia de Argumentação <span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=N10))}'
-              f'{faixa}<div class="pe"><span>{e(T.EDITORA)}</span><span>{e(SITE)}</span></div>')
+    capa = (f'<div class="logo">{logo}</div><h1>Guia de<br/>Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{e(SUB)}</p>'
+            f'<p class="autor">{e(T.AUTOR)}</p>')
+    contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=N10))}'
+              f'<div class="pe"><a href="{B.SITE_PT}">{e(SITE)}</a></div>')
     corpo = f'<section class="pag capa">{capa}</section>{L.html()}<section class="pag contra">{contra}</section>'
     return f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>{e(TITULO)}</title><style>{CSS.replace('{FACES}', fontes_estaticas())}</style></head><body>{corpo}</body></html>', len(L.pags)
 

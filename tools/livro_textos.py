@@ -1,8 +1,8 @@
 """Textos editáveis do livro (tools/livro.py). Edite à vontade e rode de novo: python tools/livro.py
-Parágrafos separados por linha em branco. Links no formato [texto](https://endereco). Texto vazio ('') deixa a página com o marcador de "a preencher"."""
+Parágrafos separados por linha em branco. Links no formato [texto](https://endereco), **negrito** e listas com linhas começando por "- ". Texto vazio ('') deixa a página com o marcador de "a preencher"."""
 
 AUTOR = 'Julio Cesar Prava'
-EDITORA = 'BiblioVerse'
+EDITORA = ''  # editora, se houver; vazio não aparece no livro
 
 DEDICATORIA = ''
 
@@ -13,16 +13,40 @@ FICHA = ''
 
 SOBRE_AUTOR = """[Julio Cesar Prava](https://instagram.com/sencientista) é designer gráfico e ativista pelos animais. Em 2017, fundou a [Vegpedia](https://vegpedia.com), para mapear o movimento vegano no Brasil e no mundo. Recentemente, lançou o Guia de Argumentação Pelos Animais."""
 
-SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.
+SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 para mapear os argumentos usados para justificar a exploração animal e o especismo, e para ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.
 
-O guia segue a tradição da filosofia analítica e da epistemologia: busca clareza nos conceitos, argumentos válidos e premissas apoiadas em evidência. A ética que o orienta é baseada na senciência, o sencientismo: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie.
+**O projeto tem dois formatos: o site e este livro.** O livro reúne só o essencial de cada argumento: a frase, a falha principal, uma resposta e uma pergunta para devolver. O site é gratuito, mais completo e atualizado com frequência. Este livro registra o conteúdo como estava na data desta edição; ao acessar o site, você pode encontrar argumentos revistos e melhorados, num esforço contínuo e honesto de se aproximar cada vez mais da verdade. No site você encontra também:
 
-Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais.
+- o capítulo completo de cada argumento: a versão mais forte, o que ele acerta, a desmontagem passo a passo, a melhor réplica, os erros e vieses, as contradições e as fontes;
+- o mapa de conexões entre os argumentos e o raciocínio antivegano passo a passo;
+- um debate simulado e um treino com cartões para praticar as respostas;
+- os argumentos que veganos deveriam parar de usar;
+- as objeções políticas e éticas, teoria por teoria;
+- a seção Além do veganismo, a biblioteca e o glossário;
+- a versão em inglês, For the Animals.
 
-Além dos argumentos contra o veganismo e o antiespecismo reunidos neste livro, o site traz os argumentos que veganos deveriam parar de usar, as objeções políticas e éticas, os debates simulados, a biblioteca e o glossário."""
+O guia segue a filosofia analítica, com conceitos claros e premissas apoiadas em evidência, e o sencientismo: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie."""
 
 CONTRACAPA = """Toda objeção merece uma boa resposta.
 
 Este livro reúne mais de {n} argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma resposta curta para usar na hora e uma pergunta para manter a conversa aberta.
 
-As respostas tentam ser honestas: reconhecem o que cada argumento acerta antes de mostrar onde ele falha. E cada página leva ao capítulo completo no site, com a versão mais forte da objeção, a desmontagem passo a passo e as fontes."""
+Aqui as respostas são diretas e curtas, para usar numa conversa. Cada página leva ao capítulo completo no site, onde a objeção aparece na sua versão mais forte, com o que ela acerta, onde falha, a desmontagem passo a passo e as fontes."""
+
+# Descrição curta de cada família, na página "As famílias", logo depois de "Como usar este livro".
+FAMILIAS = {
+    'A': 'Se os animais sentem, quais sentem e se isso basta para que contem moralmente.',
+    'B': 'Se matar sem dor é um dano, se existe abate humanitário e se o bem-estar na criação resolve o problema.',
+    'C': 'Apelos à natureza e à biologia: caninos, evolução, cadeia alimentar e o ciclo da vida.',
+    'D': 'Tradição, família, cultura e religião como justificativa para usar animais.',
+    'E': 'Escolha pessoal, relativismo e outras formas de encerrar a conversa sem responder a ela.',
+    'F': 'Ilhas desertas, dilemas e casos extremos, usados para testar o princípio ou para fugir dele.',
+    'G': 'Proteína, B12, ferro, leite e ômega-3: se é possível viver bem sem produtos animais.',
+    'H': 'Soja, desmatamento, colheitas, água e clima: se o veganismo seria pior para o planeta.',
+    'I': 'Testes em animais, couro, pele, zoológicos, rodeios, trabalho e animais de companhia: os usos fora do prato.',
+    'J': 'Preço, acesso, tempo, sabor e vida social: se é viável e justo pedir a mudança.',
+    'K': 'Se a escolha de uma pessoa faz diferença, e de quem é a responsabilidade.',
+    'L': 'Críticas às pessoas veganas e ao movimento, no lugar de respostas aos argumentos.',
+    'M': 'Os motivos de quem foi vegano e desistiu, e se isso muda o que é certo.',
+    'N': 'Traz debates do estado da arte da ética animal que muitos veganos ainda desconhecem, mas que envolvem seres sencientes: o sofrimento dos animais selvagens, a possível senciência de inteligências artificiais e o peso dos seres que ainda vão nascer.',
+}

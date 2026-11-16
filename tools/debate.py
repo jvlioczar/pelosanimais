@@ -381,7 +381,7 @@ OP.update({
   me='Generaliza e ofende profissionais que, muitas vezes, se importam de verdade.',
   r='Então pergunta para o zootecnista se ele deixaria a filha morar num galpão daqueles. Quem defende isso só pode estar sendo pago para dizer o que diz. Ninguém cuida bem de quem vai matar com seis semanas, isso é piada.',
   re='Acusa de corrupção sem nenhuma base.'),
- 'B15': dict(
+ 'B14': dict(
   f='Parte do que aparece é abuso, e parte é exatamente o que as regras permitem: celas de gestação, castração sem anestesia, descarte de pintinhos. Isso não é exceção, é o padrão legal. E, quando há abuso, foram esses vídeos que o revelaram.',
   fe='Separa abuso de prática legal e mostra o papel das imagens.',
   m='Todos os animais são mortos conscientes, sem atordoamento, e os vídeos mostram exatamente o que acontece em cem por cento das fazendas. Não existe nenhuma exceção. Quem duvida é só ir a qualquer fazenda e ver com os próprios olhos.',
