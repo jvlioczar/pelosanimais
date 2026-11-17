@@ -1397,6 +1397,8 @@ def pagina_glossario():
     GLOS_GUIA['lei'] = GLOS_GUIA['legislacao de protecao animal'] = _arg('É legal, a lei permite', "It's legal; the law allows it")
     GLOS_GUIA['direitos animais'] = _arg('Animais não são pessoas', "Animals aren't persons")
     GLOS_GUIA['vegano especista'] = _arg('Veganos também são especistas', 'Vegans are speciesists too')
+    GLOS_GUIA['tokenizacao'] = _arg('Povos indígenas e tradicionais', 'Indigenous and traditional peoples')
+    GLOS_GUIA['indignacao seletiva'] = _arg('O sacrifício de animais em rituais', 'Animal sacrifice in religious rituals')
     GLOS_GUIA['relativismo moral'] = GLOS_GUIA['relativismo cultural'] = _arg('A moral é relativa', 'Morality is relative')
     GLOS_GUIA['educacao positiva'] = _arg('A coleira de choque', 'A shock collar')
     GLOS_GUIA['conhecimento procedural'] = 'debate.html'
