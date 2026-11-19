@@ -463,21 +463,21 @@ OP.update({
   me='Creates a purity rule veganism doesn\'t have.',
   r="Was the pig that became bacon attacking you? Were you defending yourself from it? No? Then don't compare the two. What a forced comparison. You don't even believe it yourself. Nobody falls for that, not even you.",
   re='The idea is good, but the tone mocks.'),
- 'F8': dict(
+ 'F7': dict(
   f="You may be right about oysters and mussels: their nervous system is very simple. But in saying so, you accept that what matters is whether the animal feels. And that criterion condemns eating fish, octopuses, chickens and pigs, who do feel.",
   fe='Grants the point and shows the criterion turns against the rest of the plate.',
   m="Oysters and mussels feel pain like any other animal, it's been proven. That's why no vegan should even accept this discussion. Every animal feels the same, from a mussel to a chimpanzee, and doubting it is already speciesism.",
   me="States a certainty science doesn't have, a mistake this guide asks you to avoid.",
   r="Here comes the oyster to rescue the barbecue. Nobody eats only oysters, it's an excuse to justify everything else. Next you'll tell me you're vegan because you eat oysters on Sundays.",
   re='Ridicules the question without using its strong point.'),
- 'F9': dict(
+ 'F8': dict(
   f="Today there's no evidence that plants feel. But if one day we found out, eating plants would still be better, because animals raised for food eat far more plants than we would eat directly.",
   fe='Shows that even granting the hypothesis, the conclusion favors eating plants.',
   m="Plants will never feel anything, it's biologically impossible, and anyone asking is just trying to change the subject. It's a meaningless question from someone looking for any loophole not to change anything.",
   me='Asserts an impossibility and accuses of bad faith.',
   r="Then you eat rocks. Or stop eating. A hypothetical question from someone who doesn't want to think about what happens today, right now, to animals who really feel. It's just a way of dodging the subject.",
   re='Sarcasm that ignores the strong, simple answer.'),
- 'F13': dict(
+ 'F12': dict(
   f='Refusing on principle is consistent. Accepting can be too, if the money saves many more victims. The same question works for any cause: "would you torture someone for a million?". Nobody uses the answer to prove the cause is false.',
   fe='Shows both answers are consistent and the test doesn\'t prove what it claims.',
   m="Never, for no amount of money in the world. Anyone who'd accept isn't really vegan, and I'd never betray my values for money, not even to help anyone. Dirty money never helps any cause, even if it saves many animals.",

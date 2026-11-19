@@ -465,21 +465,21 @@ OP.update({
   me='Cria uma regra de pureza que o veganismo não tem.',
   r='O porco que virou bacon estava te atacando? Você estava se defendendo dele? Não, né? Então não compara as coisas. Que comparação mais forçada. Você mesmo não acredita nela. Ninguém cai nessa, nem você.',
   re='A ideia é boa, mas o tom é de deboche.'),
- 'F8': dict(
+ 'F7': dict(
   f='Você pode ter razão sobre ostras e mexilhões: o sistema nervoso deles é muito simples. Mas, ao dizer isso, você aceita que o que importa é se o animal sente. E esse critério condena comer peixes, polvos, galinhas e porcos, que sentem.',
   fe='Concede o ponto e mostra que o critério se volta contra o resto do prato.',
   m='Ostras e mexilhões sentem dor como qualquer outro animal, isso está provado. Por isso nenhum vegano deveria aceitar sequer essa discussão. Todo animal sente igual, do mexilhão ao chimpanzé, e duvidar disso já é especismo.',
   me='Afirma uma certeza que a ciência não tem, um erro que este guia pede para evitar.',
   r='Lá vem a ostra como salvação do churrasco. Ninguém come só ostra, isso é desculpa para justificar todo o resto. Daqui a pouco você vai dizer que é vegano porque come ostra no domingo.',
   re='Ridiculariza a pergunta sem usar o ponto forte dela.'),
- 'F9': dict(
+ 'F8': dict(
   f='Hoje não há evidência de que plantas sintam. Mas, se um dia descobrissem, ainda seria melhor comer plantas, porque os animais criados para comida comem muito mais plantas do que nós comeríamos diretamente.',
   fe='Mostra que, mesmo aceitando a hipótese, a conclusão favorece comer plantas.',
   m='Plantas nunca vão sentir nada, isso é impossível pela biologia, e quem pergunta isso está só tentando mudar de assunto. É uma pergunta sem sentido, de quem procura qualquer brecha para não mudar nada.',
   me='Afirma uma impossibilidade e acusa de má-fé.',
   r='Aí você come pedra. Ou para de comer. Pergunta hipotética de quem não quer pensar no que acontece hoje, agora, com animais que sentem de verdade. Isso é só jeito de fugir do assunto.',
   re='Sarcasmo que ignora a resposta forte e simples.'),
- 'F13': dict(
+ 'F12': dict(
   f='Recusar por princípio é coerente. Aceitar também pode ser, se o dinheiro salvar muito mais vítimas. A mesma pergunta vale para qualquer causa: "você torturaria alguém por um milhão?". Ninguém usa a resposta para provar que a causa é falsa.',
   fe='Mostra que as duas respostas são coerentes e que o teste não prova o que pretende.',
   m='Nunca, por nenhum dinheiro do mundo. Quem aceitaria não é vegano de verdade, e eu jamais trairia meus valores por dinheiro, nem para ajudar ninguém. Dinheiro sujo nunca ajuda causa nenhuma, mesmo que salve muitos animais.',

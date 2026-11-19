@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 274 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 273 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -122,13 +122,12 @@ E na ilha deserta?
 - [F4. Então deveríamos impedir leões de caçar?](https://pelosanimais.biblioverse.org/argumentos/entao-deveriamos-impedir-leoes-de-cacar.html): A questão do sofrimento selvagem é séria e não favorece o consumo
 - [F5. E os insetos que você mata ao dirigir?](https://pelosanimais.biblioverse.org/argumentos/e-os-insetos-que-voce-mata-ao-dirigir.html): Dano acidental e inevitável difere de dano intencional e evitável
 - [F6. Você também mata mosquitos e ratos em casa](https://pelosanimais.biblioverse.org/argumentos/voce-tambem-mata-mosquitos-e-ratos-em-casa.html): Autodefesa e conflito real diferem de criação para consumo
-- [F7. Matar insetos nos protege](https://pelosanimais.biblioverse.org/argumentos/matar-insetos-nos-protege.html): O perigo vem de poucas espécies, e a melhor proteção costuma ser prevenir: o Ministério da Saúde não recomenda veneno contra escorpiões, e o método Wolbachia reduziu a dengue sem matar mosquitos
-- [F8. Ostras e mexilhões não sentem](https://pelosanimais.biblioverse.org/argumentos/ostras-e-mexilhoes-nao-sentem.html): Parcialmente plausível; confirma que o critério é senciência
-- [F9. E se descobrirem que as plantas sentem?](https://pelosanimais.biblioverse.org/argumentos/e-se-descobrirem-que-as-plantas-sentem.html): Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente
-- [F10. E os ovos da minha galinha resgatada?](https://pelosanimais.biblioverse.org/argumentos/e-os-ovos-da-minha-galinha-resgatada.html): Caso raro e discutível, sem ligação com a indústria; não legitima a compra
-- [F11. Você comeria um animal que morreu de causas naturais?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-um-animal-que-morreu-de-causas-naturais.html): Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos
-- [F12. E a carne que vai para o lixo?](https://pelosanimais.biblioverse.org/argumentos/e-a-carne-que-vai-para-o-lixo.html): Consumo sem demanda é caso distinto; ainda reforça ver animais como comida
-- [F13. Você comeria animais se alguém te pagasse bem?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-animais-se-alguem-te-pagasse-bem.html): O mesmo dilema vale para qualquer causa humana e nunca prova que ela é falsa; recusar por princípio é coerente, e aceitar para salvar muito mais vítimas também é
+- [F7. Ostras e mexilhões não sentem](https://pelosanimais.biblioverse.org/argumentos/ostras-e-mexilhoes-nao-sentem.html): Parcialmente plausível; confirma que o critério é senciência
+- [F8. E se descobrirem que as plantas sentem?](https://pelosanimais.biblioverse.org/argumentos/e-se-descobrirem-que-as-plantas-sentem.html): Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente
+- [F9. E os ovos da minha galinha resgatada?](https://pelosanimais.biblioverse.org/argumentos/e-os-ovos-da-minha-galinha-resgatada.html): Caso raro e discutível, sem ligação com a indústria; não legitima a compra
+- [F10. Você comeria um animal que morreu de causas naturais?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-um-animal-que-morreu-de-causas-naturais.html): Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos
+- [F11. E a carne que vai para o lixo?](https://pelosanimais.biblioverse.org/argumentos/e-a-carne-que-vai-para-o-lixo.html): Consumo sem demanda é caso distinto; ainda reforça ver animais como comida
+- [F12. Você comeria animais se alguém te pagasse bem?](https://pelosanimais.biblioverse.org/argumentos/voce-comeria-animais-se-alguem-te-pagasse-bem.html): O mesmo dilema vale para qualquer causa humana e nunca prova que ela é falsa; recusar por princípio é coerente, e aceitar para salvar muito mais vítimas também é
 
 ## G. Saúde e nutrição (Parte IND)
 

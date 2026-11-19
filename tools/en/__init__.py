@@ -47,6 +47,7 @@ for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-1
     'J8': ["I'm flexitarian and spare the animals", "I'm reducetarian; I eat less meat and already spare lots of animals", "I'm vegan at home and eat everything when I'm out"],
     'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L25': ["It's a 1960s hippie fad"],
 }.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
+_EXTRA_EN.setdefault('F6', []).extend(['Killing insects protects us', "I kill mosquitoes, it's a health issue", 'A scorpion in the house has to be killed', 'Insects are pests; spray everything'])  # antigo F7 unido ao F6
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
 
 FALTAM = {}
