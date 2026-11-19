@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 273 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 274 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -209,7 +209,7 @@ E fora do prato?
 - [I23. Cavalos de corrida e cães de esporte vivem melhor que muita gente](https://pelosanimais.biblioverse.org/argumentos/cavalos-de-corrida-e-caes-de-esporte-vivem-melhor-que-muita-gente.html): O cuidado dura enquanto o animal rende, as corridas matam e descartam, e a pobreza humana é uma injustiça a corrigir, não uma régua para usar animais
 - [I24. Na pesca esportiva o peixe é solto](https://pelosanimais.biblioverse.org/argumentos/na-pesca-esportiva-o-peixe-e-solto.html): Ferimento, estresse e mortalidade pós-soltura; dor como passatempo
 - [I25. Pesco o que como, é mais honesto que comprar no mercado](https://pelosanimais.biblioverse.org/argumentos/pesco-o-que-como-e-mais-honesto-que-comprar-no-mercado.html): Ser honesto sobre um dano não o torna necessário; o peixe fora da água morre por asfixia, com minutos de dor
-- [I26. A caça de troféu financia a conservação](https://pelosanimais.biblioverse.org/argumentos/a-caca-de-trofeu-financia-a-conservacao.html): Pouco dinheiro chega à conservação; instrumentaliza indivíduos
+- [I26. A caça esportiva financia a conservação](https://pelosanimais.biblioverse.org/argumentos/a-caca-esportiva-financia-a-conservacao.html): Pouco dinheiro chega à conservação; instrumentaliza indivíduos
 - [I27. A carroça é o sustento do carroceiro, e o cavalo é bem cuidado](https://pelosanimais.biblioverse.org/argumentos/a-carroca-e-o-sustento-do-carroceiro-e-o-cavalo-e-bem-cuidado.html): A renda do trabalhador é real; a saída é trocar o cavalo por um veículo, com apoio, e não manter o animal no asfalto
 - [I28. Cães-guia e de assistência são bem cuidados e fazem um trabalho importante](https://pelosanimais.biblioverse.org/argumentos/caes-guia-e-de-assistencia-sao-bem-cuidados-e-fazem-um-trabalho.html): É um caso de fronteira, discutido com nuance; um caso difícil não torna aceitáveis os fáceis, como a criação para abate
 - [I29. Cães policiais e farejadores são bem cuidados e salvam vidas](https://pelosanimais.biblioverse.org/argumentos/caes-policiais-e-farejadores-sao-bem-cuidados-e-salvam-vidas.html): O cão é posto em risco sem poder escolher, e o cuidado depende da utilidade; um uso que salva vidas não justifica os que não salvam
@@ -303,6 +303,7 @@ Quem fala isso é confiável?
 - [L31. Vou comer o dobro para compensar você](https://pelosanimais.biblioverse.org/argumentos/vou-comer-o-dobro-para-compensar-voce.html): Reação emocional (reatância), não argumento
 - [L32. Minha comida caga na sua](https://pelosanimais.biblioverse.org/argumentos/minha-comida-caga-na-sua.html): Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre
 - [L33. Olha o que você está perdendo](https://pelosanimais.biblioverse.org/argumentos/olha-o-que-voce-esta-perdendo.html): Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo
+- [L34. Eu odeio veganos](https://pelosanimais.biblioverse.org/argumentos/eu-odeio-veganos.html): Ódio não é argumento: costuma ser a defesa de uma identidade e de um hábito ameaçados, e se volta contra quem só pede menos sofrimento para as vítimas
 
 ## M. Ex-veganos: por que desisti (Parte IND)
 
