@@ -29,7 +29,7 @@ O guia segue a filosofia analítica, com conceitos claros e premissas apoiadas e
 
 CONTRACAPA = """Toda objeção merece uma boa resposta.
 
-Este livro reúne {n} argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma resposta curta para usar na hora e uma pergunta para manter a conversa aberta.
+Este livro reúne {n} argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma réplica para usar na hora e uma pergunta para manter a conversa aberta.
 
 Aqui as respostas são diretas e curtas, para usar numa conversa. Cada página leva ao capítulo completo no site, onde a objeção aparece na sua versão mais forte, com o que ela acerta, onde falha, a desmontagem passo a passo e as fontes."""
 
@@ -48,5 +48,5 @@ FAMILIAS = {
     'K': 'Se a escolha de uma pessoa faz diferença, e de quem é a responsabilidade.',
     'L': 'Críticas às pessoas veganas e ao movimento, no lugar de respostas aos argumentos.',
     'M': 'Os motivos de quem foi vegano e desistiu, e se isso muda o que é certo.',
-    'N': 'Traz debates do estado da arte da ética animal que muitos veganos ainda desconhecem, mas que envolvem seres sencientes: o sofrimento dos animais selvagens, a possível senciência de inteligências artificiais e o peso dos seres que ainda vão nascer.',
+    'N': 'Debates recentes da ética animal que muitos veganos ainda desconhecem, mas que envolvem seres sencientes: o sofrimento dos animais selvagens, a possível senciência de inteligências artificiais e o peso dos seres que ainda vão nascer.',
 }

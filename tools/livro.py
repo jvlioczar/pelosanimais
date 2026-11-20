@@ -49,13 +49,18 @@ SUB = f'Respostas a {len(B.ARGS)} argumentos contra o veganismo e o antiespecism
 SITE = B.SITE_PT.replace('https://', '')
 ANO = B.ATUALIZADO[:4]
 
+def tipo(s):
+    """Aspas tipográficas para o livro impresso: "x" vira “x”, 'x' vira ‘x’ e o apóstrofo (d'água) vira ’."""
+    s = re.sub(r'(^|(?<=[\s(\[—–‘]))"', '“', str(s)).replace('"', '”')
+    return re.sub(r"(^|(?<=[\s(\[—–“]))'", '‘', s).replace("'", '’')
+
 def plano(no):
     return re.sub(r'\s+', ' ', B.texto(no)).strip()
 
 def paragrafos(t):
     """Parágrafos separados por linha em branco; [texto](https://...) vira link clicável no PDF."""
     def fmt(h):
-        h = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', e(h))
+        h = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', e(tipo(h)))
         return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', h)
     out = ''
     for bloco in (b.strip() for b in t.strip().split('\n\n')):
@@ -84,7 +89,7 @@ def essencial(c):
     ps, ret = [], ''
     for no in B.secao_cap(c, 4):
         if no.tag != 'paragraph': continue
-        t = plano(no)
+        t = tipo(plano(no))
         if not t: continue
         if t.startswith('Pergunta de retorno'): ret = re.sub(r'^Pergunta de retorno:?\s*', '', t)
         else: ps.append(t)
@@ -115,7 +120,7 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .capa .logo svg{display:block}
 .capa h1{color:#fff;font-size:40pt;font-weight:700;margin:10mm 0 6mm;line-height:1.0;white-space:nowrap}
 .capa h1 span,.contra h2 span{color:var(--amarelo)}
-.capa .sub{font:500 15pt/1.35 var(--sans);color:#d8e8cf;margin:0;max-width:112mm}
+.capa .sub{font:500 15pt/1.35 var(--sans);color:#d8e8cf;margin:0;max-width:112mm;text-wrap:balance}
 .capa .autor{font:600 14pt var(--sans);color:#fff;margin:auto 0 0}
 .faixa{margin-top:auto;display:flex;gap:1.6mm;flex-wrap:wrap}
 .faixa i{width:7.2mm;height:7.2mm;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font:700 8pt var(--sans);font-style:normal;color:#fff}
@@ -132,7 +137,7 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .falso h1{font-size:17pt}
 .rosto{display:flex;flex-direction:column;text-align:center;padding-top:40mm}
 .rosto h1{font-size:26pt;font-weight:700}
-.rosto .sub{font:500 11pt/1.4 var(--sans);color:var(--suave);margin:6mm auto 0;max-width:100mm}
+.rosto .sub{font:500 11pt/1.4 var(--sans);color:var(--suave);margin:6mm auto 0;max-width:100mm;text-wrap:balance}
 .rosto .vol{font:700 7.5pt var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--suave);margin:10mm 0 0}
 .rosto .autor{font:600 12pt var(--sans);color:var(--tinta);margin:auto 0 0}
 .rosto .ed{font:500 8pt var(--mono);color:var(--suave);margin:3mm 0 0}
@@ -160,7 +165,7 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .fams strong{font-size:8pt;color:var(--tinta);line-height:1.25}
 .fams p{margin:.2mm 0 0;font-size:7.5pt;line-height:1.32;color:var(--texto)}
 .sum .l{flex:none;width:6mm;height:6mm;border-radius:50%;color:#fff;font:700 7.5pt/6mm var(--sans);text-align:center;align-self:center}
-.sum a{text-decoration:none;flex:1;display:flex;gap:2mm}
+.sum a{text-decoration:none;flex:1;display:flex;gap:2mm;align-items:baseline}
 .sum a span{flex:1;border-bottom:1px dotted var(--linha)}
 .sum small{font:500 7.5pt var(--mono);color:var(--suave)}
 /* família */
@@ -278,12 +283,12 @@ def gera():
                 a = B.ARGS[c]
                 ps, ret = essencial(c)
                 url = f'{B.SITE_PT}/argumentos/{a["slug"]}.html'
-                corpo = (f'<div class="falha"><p class="ti">A falha principal</p><p class="txt">{e(a["falha"])}</p></div>'
+                corpo = (f'<div class="falha"><p class="ti">A falha principal</p><p class="txt">{e(tipo(a["falha"]))}</p></div>'
                          + (f'<div class="curta">' + ''.join(f'<p>{e(p)}</p>' for p in ps) + '</div>' if ps else '')
                          + (f'<div class="retorno"><p class="ti">Devolva com uma pergunta</p><p class="txt">{e(ret)}</p></div>' if ret else '')
                          + ('' if dir_ else '<p class="ind">Argumento indireto: corrija os fatos, mas lembre que a questão de fundo é se os interesses dos animais contam.</p>'))
                 L.add(f'<div class="barra"></div><div class="topo"><span class="fam-n">{f["c"]} · {e(f["nome"])}</span><span class="parte-n">{"Direto" if dir_ else "Indireto"}</span></div>'
-                      f'<span class="cod">{c}</span><h2>“{e(a["frase"].rstrip("."))}”</h2><div class="corpo">{corpo}</div>'
+                      f'<span class="cod">{c}</span><h2>“{e(tipo(a["frase"].rstrip(".")))}”</h2><div class="corpo">{corpo}</div>'
                       f'<a class="botao" href="{e(url)}">Veja o argumento completo <span class="seta">↗</span></a>',
                       'arg', f'--c:{f["cor"]}')
         L.impar()

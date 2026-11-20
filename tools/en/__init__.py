@@ -225,6 +225,6 @@ def relatorio(out):
     print(f'  Portuguese strings left in the English pages: {len(achados)}')
     for s, n in sorted(achados.items(), key=lambda x: -x[1])[:60]:
         print(f'   {n:4} {s}')
-# Absorvidos na revisão de 2026-11-20: A20 em B2, J24 em K10
+# Absorvidos na revisão de 2026-11-20: A20 em B2, J24 (hoje J99) em K10
 _EXTRA_EN.setdefault('B2', []).extend(["Animals don't know they're going to die, so killing them is fine", "They don't suffer over the idea of death", 'Animals live in the present; they make no plans', 'It has no sense of the future, so it loses nothing', 'For a cow, being alive or dead makes no difference'])
 _EXTRA_EN.setdefault('K10', []).extend(['A vegan world is utopian', 'That will never happen', "It's a hippie dream", 'Humans are cruel by nature; that will never change'])

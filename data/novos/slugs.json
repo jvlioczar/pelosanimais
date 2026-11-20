@@ -204,7 +204,7 @@
   "J21": "tem-gente-morrendo-na-guerra-e-voces-se-preocupam-com-animais",
   "J22": "veganismo-e-ideologia-politica-ou-agenda-globalista",
   "J23": "o-que-fazer-com-os-animais-se-todos-virarem-veganos",
-  "J25": "festa-so-com-comida-vegana-exclui-quem-come-carne",
+  "J24": "festa-so-com-comida-vegana-exclui-quem-come-carne",
   "K1": "um-individuo-nao-faz-diferenca",
   "K2": "o-animal-ja-esta-morto",
   "K3": "eu-nao-mato-so-como",
@@ -496,7 +496,7 @@
   "J21": "people-are-dying-in-a-war-and-youre-worried-about-animals",
   "J22": "veganism-is-a-political-ideology-or-a-globalist-agenda",
   "J23": "what-would-we-do-with-the-animals-if-everyone-went-vegan",
-  "J25": "a-party-with-only-vegan-food-excludes-people-who-eat-meat",
+  "J24": "a-party-with-only-vegan-food-excludes-people-who-eat-meat",
   "K1": "one-person-doesnt-make-a-difference",
   "K2": "the-animal-is-already-dead",
   "K3": "i-dont-kill-i-just-eat",
@@ -746,12 +746,12 @@
  "retirados": {
   "pt": {
    "argumentos/os-animais-nao-sabem-que-vao-morrer-entao-nao-tem-problema-mata-los": "A99",
-   "argumentos/um-mundo-vegano-e-utopico": "J24",
+   "argumentos/um-mundo-vegano-e-utopico": "J99",
    "argumentos/falar-de-animais-selvagens-afasta-as-pessoas-do-veganismo": "N27"
   },
   "en": {
    "argumentos/animals-dont-know-theyre-going-to-die-so-killing-them-is-fine": "A99",
-   "argumentos/a-vegan-world-is-utopian": "J24",
+   "argumentos/a-vegan-world-is-utopian": "J99",
    "argumentos/talking-about-wild-animals-pushes-people-away-from-veganism": "N27"
   }
  }
