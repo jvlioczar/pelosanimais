@@ -142,7 +142,7 @@ UI = [
  # ---------- political objections ----------
  ('O que cada teoria ética ou política costuma dizer para deixar os animais de fora, por que essa exclusão contradiz o próprio princípio da teoria e por que os animais devem ser incluídos.', 'What each ethical or political theory usually says to leave animals out, why that exclusion contradicts the theory\'s own principle, and why animals should be included.'),
  ('<h2>Por que excluir os animais contradiz o princípio</h2>', '<h2>Why excluding animals contradicts the principle</h2>'),
- ('<p class="ti">A melhor réplica</p>', '<p class="ti">The strongest counter-reply</p>'),
+ ('<p class="ti">A melhor tréplica</p>', '<p class="ti">The strongest counter-reply</p>'),
  ('<p class="ti">A resposta</p>', '<p class="ti">The answer</p>'),
  ('aria-label="Outras teorias"', 'aria-label="Other theories"'),
  (': o princípio</span>', ': the principle</span>'),
@@ -223,7 +223,7 @@ UI = [
  ('Como pode aparecer: outras formas do mesmo argumento', 'How it can show up: other forms of the same argument'),
  ('Resposta para crianças: linguagem de 8 a 10 anos, sem culpa nem choque', 'Answer for children: language for ages 8 to 10, without guilt or shock'),
  ('Réplica: o que dizer à pessoa, com a falha central e uma pergunta de retorno', 'Reply: what to say to the person, with the central flaw and a question to ask back'),
- ('Resposta completa: validade, evidências, a melhor réplica e por que ela também falha', 'Full answer: validity, evidence, the strongest counter-reply and why it fails too'),
+ ('Resposta completa: validade, evidências, a melhor tréplica e por que ela também falha', 'Full answer: validity, evidence, the strongest counter-reply and why it fails too'),
  ('Conexões: o que costuma vir antes e depois', 'Connections: what usually comes before and after'),
  ('Erros de raciocínio: lógicos, epistemológicos e morais', 'Reasoning errors: logical, epistemological and moral'),
  ('Contradições: onde o argumento colide com outras crenças da própria pessoa', "Contradictions: where the argument clashes with the person's other beliefs"),

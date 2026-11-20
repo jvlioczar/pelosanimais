@@ -45,7 +45,7 @@ def fontes_estaticas():
 
 N15 = len(B.ARGS) // 10 * 10
 TITULO = 'Guia de Argumentação Pelos Animais'
-SUB = f'Respostas a mais de {N15} argumentos contra o veganismo e o antiespecismo'
+SUB = f'Respostas a {len(B.ARGS)} argumentos contra o veganismo e o antiespecismo'  # número exato (antes "mais de", arredondado para baixo)
 SITE = B.SITE_PT.replace('https://', '')
 ANO = B.ATUALIZADO[:4]
 
@@ -184,7 +184,7 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .falha{background:var(--areia);border-radius:3mm;padding:3mm 4mm;margin:0 0 5mm}
 .falha .txt{margin:0;font-weight:600;color:var(--tinta);line-height:1.4}
 .curta p{margin:0 0 2.6mm}
-.doacao{margin-top:4mm}.doacao code{font:500 0.95em var(--mono)}
+.doacao{margin-top:4mm}.secoes li{margin:0 0 1.6mm}.obrigado{margin-top:5mm;font-weight:600}.doacao code{font:500 0.95em var(--mono)}
 .retorno{background:var(--tinta);color:#fff;border-radius:3.5mm;padding:3.4mm 4.5mm;margin:4mm 0 0}
 .retorno .ti{color:var(--amarelo);margin-bottom:1.4mm}
 .retorno .txt{margin:0;font-weight:600;line-height:1.4}
@@ -225,13 +225,13 @@ def gera():
         L.branco()
         L.add(f'<h1>Guia de Argumentação Pelos Animais</h1><p class="sub">{e(SUB)}</p>'
               f'<p class="autor">{e(T.AUTOR)}</p><p class="ed">{e(T.EDITORA) + " · " if T.EDITORA else ""}{ANO}</p>', 'rosto', num=False)
-        ficha = f'<pre>{e(T.FICHA.strip())}</pre>' if T.FICHA.strip() else vazio('Ficha catalográfica (a inserir)')
+        ficha = f'<div class="ficha"><pre>{e(T.FICHA.strip())}</pre></div>' if T.FICHA.strip() else ''  # o livro não tem ficha catalográfica
         L.add(f'<p><strong>{e(TITULO)}</strong></p>'
               f'<p>© {ANO} {e(T.AUTOR)}<br/>{"Publicado por " + e(T.EDITORA) + ". " if T.EDITORA else ""}Edição digital de {B.ATUALIZADO[8:10]}/{B.ATUALIZADO[5:7]}/{ANO}.</p>'
               f'<p>O conteúdo completo e atualizado deste livro está disponível gratuitamente em <a href="{B.SITE_PT}">{e(SITE)}</a>.</p>'
               '<p>Texto sob a licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>: pode ser copiado, compartilhado e adaptado, inclusive para fins comerciais, desde que a fonte seja citada. Materiais de terceiros citados seguem as licenças de origem.</p>'
-              f'<p>Fontes tipográficas: Mozilla Headline, Inter e JetBrains Mono, sob a licença SIL Open Font License.</p>'
-              f'<div class="ficha">{ficha}</div>', 'creditos', num=False)
+              '<p>Tipografias:<br/>Mozilla Headline, Inter e JetBrains Mono</p>'
+              + ficha, 'creditos', num=False)
         L.add(f'<div class="txt">{paragrafos(T.DEDICATORIA)}</div>' if T.DEDICATORIA.strip() else vazio('Dedicatória (opcional)'), 'ded', num=False)
         L.branco()
         L.add('<div class="texto"><h2>Agradecimentos</h2>' + (paragrafos(T.AGRADECIMENTOS) if T.AGRADECIMENTOS.strip() else vazio('Agradecimentos (a escrever)')) + '</div>')
@@ -291,10 +291,14 @@ def gera():
         L.impar()
         num['fim'] = L.add('<div class="texto"><h2>Continue no site</h2>'
                            '<p>Este livro traz só o essencial de cada argumento. No site, cada um tem um capítulo completo: a versão mais forte da objeção, o que ela acerta, '
-                           'a resposta passo a passo, a melhor réplica e por que ela também falha, os erros de raciocínio, os vieses, as contradições e as fontes.</p>'
-                           '<p>Lá também estão o mapa de conexões entre os argumentos, um debate simulado para treinar, os argumentos que veganos deveriam parar de usar, '
-                           'as objeções políticas e éticas, a biblioteca e o glossário.</p>'
-                           f'<div class="caixa"><p><strong><a href="{B.SITE_PT}">{e(SITE)}</a></strong><br/>Gratuito, sem cadastro, revisado e atualizado.</p></div></div>', ancora='fim')
+                           'a resposta passo a passo, a melhor tréplica e por que ela também falha, os erros de raciocínio, os vieses, as contradições e as fontes.</p>'
+                           '<p>Algumas seções para começar:</p><ul class="secoes">'
+                           f'<li><a href="{B.SITE_PT}/debate.html"><strong>Debate simulado</strong></a>: a objeção aparece como numa conversa real, e você escolhe entre três respostas; o site explica qual funciona melhor e por quê.</li>'
+                           f'<li><a href="{B.SITE_PT}/argumentos-ruins.html"><strong>Pare de dizer isso</strong></a>: argumentos que veganos deveriam parar de usar, porque são falsos, exagerados ou fáceis de derrubar, e o que dizer no lugar.</li>'
+                           f'<li><a href="{B.SITE_PT}/glossario.html"><strong>Glossário</strong></a>: centenas de termos da ética animal e do veganismo, com definição, comentário crítico, sinônimos e exemplos.</li>'
+                           f'<li><a href="{B.SITE_PT}/alem-do-veganismo.html"><strong>Além do veganismo</strong></a>: o que vem depois de não explorar animais, como o antiespecismo, o sofrimento dos animais selvagens e as mentes do futuro.</li></ul>'
+                           f'<div class="caixa"><p><strong><a href="{B.SITE_PT}">{e(SITE)}</a></strong><br/>Gratuito, sem cadastro, revisado e atualizado.</p></div>'
+                           '<p class="obrigado">Obrigado por ler este livro. Que ele ajude você a exercitar o raciocínio e a usá-lo bem, em favor de todos os seres sencientes.</p></div>', ancora='fim')
         if len(L.pags) % 2: L.branco()  # miolo com número par de páginas, como num caderno impresso
         return L, num
     _, num = monta({})
@@ -303,7 +307,7 @@ def gera():
     logo = re.sub(r'width="\d+" height="\d+"', 'width="100%" height="100%"', B.LOGO)
     capa = (f'<div class="logo">{logo}</div><h1>Guia de<br/>Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{e(SUB)}</p>'
             f'<p class="autor">{e(T.AUTOR)}</p>')
-    contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=N15))}'
+    contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=len(B.ARGS)))}'
               f'<div class="pe"><a href="{B.SITE_PT}">{e(SITE)}</a></div>')
     corpo = f'<section class="pag capa">{capa}</section>{L.html()}<section class="pag contra">{contra}</section>'
     return f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>{e(TITULO)}</title><style>{CSS.replace('{FACES}', fontes_estaticas())}</style></head><body>{corpo}</body></html>', len(L.pags)
