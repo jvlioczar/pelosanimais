@@ -45,8 +45,8 @@ def fonte(nomes, tam):
 
 
 TXT = {
-    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'uma boa resposta.', 'Confira mais de {n} argumentos contra o veganismo e o antiespecismo, tratados de forma honesta', 'pelosanimais.biblioverse.org'),
-    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'a good answer.', 'Explore more than {n} arguments against veganism and antispeciesism, treated honestly', 'fortheanimals.biblioverse.org'),
+    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'uma boa resposta.', 'Confira {n} argumentos contra o veganismo e o antiespecismo, tratados de forma honesta', 'pelosanimais.biblioverse.org'),
+    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'a good answer.', 'Explore {n} arguments against veganism and antispeciesism, treated honestly', 'fortheanimals.biblioverse.org'),
 }
 
 # As mesmas fontes do site (Google Fonts, licença OFL), guardadas em tools/fontes
@@ -93,7 +93,7 @@ def compartilhar(n_args, lg='pt'):
     d.text((150, 630), t2, font=tit, fill=TINTA)
     sub = fonte_site(TEXTO, 46, b'SemiBold')
     y = 850
-    for ln in quebra(d, sb.format(n=n_args // 10 * 10), sub, W - 300):
+    for ln in quebra(d, sb.format(n=n_args), sub, W - 300):
         d.text((150, y), ln, font=sub, fill=TINTA); y += 60
     d.text((150, y + 18), dom, font=fonte_site(MONO, 40, b'Bold'), fill=(60, 90, 60))
     return im.resize((1200, 630), Image.LANCZOS)
