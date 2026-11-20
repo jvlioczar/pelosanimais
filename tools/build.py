@@ -1987,6 +1987,9 @@ def mapa_redirecionamentos():
         if cod in ABSORVIDOS: R[velho + '.html'] = f'argumentos/{SLUG_ARG[ABSORVIDOS[cod].lower()]}.html' if ABSORVIDOS[cod] else 'argumentos-ruins.html'
     for cod, novo in ABSORVIDOS.items():  # os endereços por código dos absorvidos, enquanto o código não for reaproveitado
         if cod.lower() not in SLUG_ARG: R[f'argumentos/{cod.lower()}.html'] = f'argumentos/{SLUG_ARG[novo.lower()]}.html' if novo else 'argumentos-ruins.html'
+    if not EN:  # endereços por código que foram páginas de verdade (e estão no Google): vão para o conteúdo que tinham,
+        for velho, novo in _REG.get('codigos_pt', {}).items():  # e não para quem tem o código depois das renumerações
+            R[velho + '.html'] = novo + '.html'
     return R
 def redireciona(velho, novo):
     """Grava o stub de velho (caminho em português) apontando para novo, já resolvido até a página final."""
