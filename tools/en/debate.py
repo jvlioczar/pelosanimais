@@ -103,7 +103,7 @@ OP = {
   re="A moralizing appeal that doesn't address the real doubt about the effect of one purchase."),
  'A15': dict(
   f="The question isn't whether a being can reason, but whether it can suffer. A pig's pain doesn't hurt less because it can't solve equations. If reason were the criterion, babies and people with profound intellectual disabilities could be used, and no one accepts that.",
-  fe='Replaces the wrong criterion with the relevant one and shows the reason criterion would exclude humans we all protect.',
+  fe="Replaces the wrong criterion with the relevant one and shows the reason criterion would exclude humans we all protect. Tip: faced with \"animals don't have X like humans\", ask \"which humans?\". Newborns, adults and people with dementia have very different mental lives.",
   m="Science has already shown that animals are as intelligent as we are. Pigs are smarter than three-year-olds, octopuses solve puzzles and crows use tools. If they reason the way we do, the difference you're pointing to simply doesn't exist.",
   me='There are comparisons on specific tasks, but generalizing overstates them. And it accepts the idea that intelligence decides who counts.',
   r="You're not being very rational yourself, and nobody puts you on a plate for it. Someone so proud of their own reason should start using it, instead of repeating the first sentence they heard somewhere just to justify today's lunch.",
@@ -297,7 +297,7 @@ OP = {
 OP.update({
  'A1': dict(
   f='Science has dealt with this: the Cambridge Declaration (2012) and the New York Declaration (2024), signed by researchers, recognize conscious experience in mammals and birds. And "not like we do" doesn\'t help: different isn\'t less.',
-  fe='Uses the scientific consensus and also answers the softer version of the argument.',
+  fe='Uses the scientific consensus and also answers the softer version of the argument. Tip: ask "which animals?". The evidence on mammals, fish and insects differs, and the conversation improves once it is clear which ones are meant.',
   m="Animals feel exactly like we do, with no difference at all: a chicken's pain is identical to a person's, and every serious scientist agrees. Anyone who says otherwise simply never studied the subject. Serious science has no doubt about it.",
   me="Overstates: science doesn't say the experience is identical, and defending animals doesn't need it.",
   r="So if I kick your dog it feels nothing? I'll pretend I didn't hear that. Anyone who thinks animals are machines isn't fit to be in this conversation. Serious science has no doubt about this whatsoever.",
@@ -528,7 +528,7 @@ OP.update({
   re='Has an ethical point, but the sarcasm gets in the way.'),
  'I1': dict(
   f="Having brought benefits isn't enough: tests on people who can't consent would bring them too, and nobody accepts that. Besides, about 90% of drugs that pass preclinical tests fail in humans, and the US stopped requiring animal tests in 2022.",
-  fe="Shows benefit doesn't justify the means and brings the data on effectiveness.",
+  fe="Shows benefit doesn't justify the means and brings the data on effectiveness. Tip for keeping cool: find the conclusion, ask for the reasons and keep the science apart from the ethics. A scientific result only has moral implications together with a moral principle.",
   m="Animal testing is useless and never saved a single life. Every medical advance came from other methods, and the industry hides it. The studies that say otherwise are all paid for by the pharmaceutical industry.",
   me='States something false this guide asks you not to use.',
   r="Then volunteer for the tests yourself, since you think they're so important. Easy to defend when someone else suffers. Or stop taking medicine, since you think it's so fair. I doubt you would. You don't have the courage to change.",

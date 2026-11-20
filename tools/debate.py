@@ -105,7 +105,7 @@ OP = {
   re='O apelo é moralista e não responde à dúvida real sobre o efeito de uma compra.'),
  'A15': dict(
   f='A questão não é se um ser pode raciocinar, mas se pode sofrer. A dor de um porco não dói menos porque ele não resolve equações. Se a razão fosse o critério, bebês e pessoas com deficiência intelectual profunda poderiam ser usados, e ninguém aceita isso.',
-  fe='Troca o critério errado pelo relevante e mostra que o critério da razão excluiria humanos que todos protegemos.',
+  fe='Troca o critério errado pelo relevante e mostra que o critério da razão excluiria humanos que todos protegemos. Dica: diante de "os animais não têm X como os humanos", pergunte "que humanos?". Recém-nascidos, adultos e pessoas com demência têm vidas mentais muito diferentes.',
   m='A ciência já mostrou que os animais são tão inteligentes quanto nós. Porcos são mais espertos que crianças de três anos, polvos resolvem quebra-cabeças e corvos usam ferramentas. Se eles raciocinam como a gente, a diferença que você aponta simplesmente não existe.',
   me='Há comparações em tarefas específicas, mas generalizar exagera. E aceita a ideia de que a inteligência decide quem conta.',
   r='Racional você também não está sendo, e mesmo assim ninguém te põe no prato. Quem se orgulha tanto da própria razão deveria começar a usá-la, em vez de repetir a primeira frase que ouviu por aí só para justificar o almoço de hoje.',
@@ -299,7 +299,7 @@ OP = {
 OP.update({
  'A1': dict(
   f='A ciência já tratou disso: a Declaração de Cambridge (2012) e a de Nova York (2024), assinadas por pesquisadores, reconhecem experiência consciente em mamíferos e aves. E "não sentem como nós" não ajuda: diferente não é menos.',
-  fe='Usa o consenso científico e responde também à versão branda do argumento.',
+  fe='Usa o consenso científico e responde também à versão branda do argumento. Dica: pergunte "que animais?". A evidência sobre mamíferos, peixes e insetos é diferente, e a conversa melhora quando se diz de quais se fala.',
   m='Animais sentem exatamente como nós, sem nenhuma diferença: a dor de uma galinha é idêntica à de uma pessoa, e qualquer cientista sério concorda com isso. Quem diz o contrário simplesmente nunca estudou o assunto.',
   me='Exagera: a ciência não diz que a experiência é idêntica, e a defesa dos animais não precisa disso.',
   r='Então quer dizer que se eu chutar seu cachorro ele não sente nada? Vou fingir que não ouvi isso. Quem acredita que animal é máquina não tem nem condição de estar nesta conversa. Ciência séria não tem dúvida nenhuma sobre isso.',
@@ -530,7 +530,7 @@ OP.update({
   re='Tem um ponto ético, mas o sarcasmo atrapalha.'),
  'I1': dict(
   f='Ter trazido benefícios não basta: testes em pessoas que não podem consentir também trariam, e ninguém aceita. Além disso, cerca de 90% dos remédios aprovados em testes pré-clínicos falham em humanos, e os EUA deixaram de exigir testes em animais em 2022.',
-  fe='Mostra que benefício não justifica o meio e traz o dado sobre a eficácia.',
+  fe='Mostra que benefício não justifica o meio e traz o dado sobre a eficácia. Dica para manter a calma: ache a conclusão, peça as razões e separe a parte científica da moral. Um resultado científico só tem consequência moral junto com um princípio moral.',
   m='Testes em animais não servem para nada e nunca salvaram vida nenhuma. Todos os avanços da medicina vieram de outros métodos, e a indústria esconde isso. Os estudos que dizem o contrário são todos pagos pela indústria farmacêutica.',
   me='Afirma algo falso que este guia pede para não usar.',
   r='Então se oferece você para os testes, já que acha tão importante. Fácil defender quando quem sofre é outro. Ou então para de tomar remédio, já que acha tão justo. Duvido que você faça isso. Coragem para mudar você não tem.',

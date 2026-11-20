@@ -3980,6 +3980,43 @@
   "ex": "\"Por condicionamento social, a criança aprende cedo a rir de rodeios e comer carne, sem nunca ser convidada a pensar no que acontece com os animais.\"",
   "ex_en": "\"Through social conditioning, a child learns early to cheer at rodeos and eat meat, never being invited to think about what happens to the animals.\""
  },
+ "Condição necessária": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "requisito"
+  ],
+  "sin_en": [
+   "requirement",
+   "prerequisite"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Condição suficiente",
+   "Contraexemplo",
+   "Argumento dos casos marginais",
+   "Status moral"
+  ],
+  "ex": "“Se a racionalidade fosse condição necessária para ter status moral, os bebês ficariam de fora, o que quase ninguém aceita.”",
+  "ex_en": "“If rationality were a necessary condition for moral status, babies would be left out, which almost no one accepts.”"
+ },
+ "Condição suficiente": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Condição necessária",
+   "Senciência",
+   "Sujeitos de uma vida",
+   "Contraexemplo"
+  ],
+  "ex": "“O argumento não diz que só os sencientes importam: diz que a senciência é condição suficiente para que o sofrimento de alguém conte.”",
+  "ex_en": "“The argument doesn't say that only sentient beings matter: it says sentience is a sufficient condition for someone's suffering to count.”"
+ },
  "Confinamento animal": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -4378,6 +4415,26 @@
   ],
   "ex": "\"Dizer que ama os animais e, ao mesmo tempo, comer carne todos os dias foi apontado por colegas como uma contradição difícil de justificar.\"",
   "ex_en": "\"Claiming to love animals while eating meat every day was pointed out by colleagues as a contradiction that is hard to justify.\""
+ },
+ "Contraexemplo": {
+  "tipo": "substantivo",
+  "tipo_en": "noun",
+  "sin": [
+   "contra-exemplo"
+  ],
+  "sin_en": [
+   "counter-example"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Argumento dos casos marginais",
+   "Condição necessária",
+   "Validade",
+   "Casos-limite"
+  ],
+  "ex": "“Os bebês são um contraexemplo à tese de que só tem direitos quem tem deveres.”",
+  "ex_en": "“Babies are a counterexample to the claim that only those with duties have rights.”"
  },
  "Contratualismo": {
   "tipo": "substantivo masculino",
@@ -5331,6 +5388,26 @@
   ],
   "ex": "\"A faculdade criou uma disciplina de Direito animal, que estuda desde as leis contra maus-tratos até o debate sobre a personalidade jurídica dos animais.\"",
   "ex_en": "\"The law school created an Animal law course, covering everything from anti-cruelty statutes to the debate over animals' legal personhood.\""
+ },
+ "Direito moral e direito legal": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "direitos morais e direitos jurídicos"
+  ],
+  "sin_en": [
+   "moral and juridical rights"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Direitos",
+   "Direitos animais",
+   "Legalidade",
+   "Direito"
+  ],
+  "ex": "“A pergunta não é se devemos dar direitos aos animais: direitos morais se reconhecem, e o que a lei cria são direitos legais.”",
+  "ex_en": "“The question isn't whether we should give animals rights: moral rights are recognized, and what the law creates are legal rights.”"
  },
  "Direitos": {
   "tipo": "substantivo masculino",
@@ -8303,6 +8380,32 @@
   "ex": "\"Por imparcialidade temporal, ele sustentava que o sofrimento de um animal daqui a cem anos importa tanto quanto o de um animal hoje.\"",
   "ex_en": "\"On temporal impartiality grounds, he held that an animal's suffering a hundred years from now matters as much as an animal's suffering today.\""
  },
+ "Imperativo categórico": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "princípio de humanidade",
+   "fórmula da humanidade"
+  ],
+  "sin_en": [
+   "formula of humanity",
+   "humanity principle"
+  ],
+  "ant": [
+   "imperativo hipotético"
+  ],
+  "ant_en": [
+   "hypothetical imperative"
+  ],
+  "veja": [
+   "Deontologia",
+   "Instrumentalização",
+   "Sujeitos de uma vida",
+   "Deveres perfeitos e imperfeitos"
+  ],
+  "ex": "“Se o imperativo categórico manda nunca tratar alguém apenas como meio, a pergunta é por que esse alguém teria de ser racional, e não apenas senciente.”",
+  "ex_en": "“If the categorical imperative tells us never to treat anyone merely as a means, the question is why that someone would have to be rational, and not just sentient.”"
+ },
  "Incentivo fiscal": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -8473,6 +8576,28 @@
   ],
   "ex": "\"A indústria pecuária tem peso relevante nas exportações do país e grande influência política nas decisões sobre o uso da terra.\"",
   "ex_en": "\"The livestock industry carries significant weight in the country's exports and great political influence over decisions on land use.\""
+ },
+ "Inferência para a melhor explicação": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "abdução",
+   "raciocínio abdutivo"
+  ],
+  "sin_en": [
+   "abduction",
+   "abductive reasoning"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Problema das outras mentes",
+   "Analogia",
+   "Senciência",
+   "Equilíbrio reflexivo"
+  ],
+  "ex": "“Que o polvo sente dor é a inferência para a melhor explicação do modo como ele protege e trata a parte ferida do corpo.”",
+  "ex_en": "“That the octopus feels pain is the inference to the best explanation of how it guards and tends the injured part of its body.”"
  },
  "Inseminação artificial": {
   "tipo": "locução substantiva",
@@ -10264,6 +10389,32 @@
   "ex": "\"Alimentação, abrigo e cuidados médicos são necessidades básicas que cada pessoa deveria ter garantidas.\"",
   "ex_en": "\"Food, shelter and medical care are basic needs that everyone should have guaranteed.\""
  },
+ "Negação do antecedente": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "falácia da negação do antecedente",
+   "inversão do condicional"
+  ],
+  "sin_en": [
+   "fallacy of the inverse",
+   "inverse error"
+  ],
+  "ant": [
+   "modus tollens"
+  ],
+  "ant_en": [
+   "modus tollens"
+  ],
+  "veja": [
+   "Validade",
+   "Condição necessária",
+   "Falácias",
+   "Contraexemplo"
+  ],
+  "ex": "“‘Se tivessem direitos, seria errado fazê-los sofrer; não têm direitos; logo, não é errado’ é uma negação do antecedente.”",
+  "ex_en": "“‘If they had rights, it would be wrong to make them suffer; they have no rights; so it isn't wrong’ is a case of denying the antecedent.”"
+ },
  "Neutralidade liberal": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -10553,6 +10704,34 @@
   ],
   "ex": "“A estudante de biologia apresentou objeção de consciência e foi autorizada a cumprir a disciplina com simuladores digitais, sem dissecar animais.”",
   "ex_en": "“The biology student filed a conscientious objection and was allowed to complete the course with digital simulators instead of dissecting animals.”"
+ },
+ "Obrigatório": {
+  "tipo": "adjetivo",
+  "tipo_en": "adjective",
+  "sin": [
+   "moralmente exigido",
+   "devido"
+  ],
+  "sin_en": [
+   "morally required",
+   "mandatory"
+  ],
+  "ant": [
+   "Supererrogatório",
+   "facultativo"
+  ],
+  "ant_en": [
+   "Supererogatory",
+   "optional"
+  ],
+  "veja": [
+   "Permissível",
+   "Proibido",
+   "Supererrogatório",
+   "Dever implica poder"
+  ],
+  "ex": "“Ela não vê o veganismo como gesto heroico, e sim como obrigatório: deixar de causar sofrimento evitável é dever, não favor.”",
+  "ex_en": "“She doesn't see veganism as a heroic gesture but as obligatory: ceasing to cause avoidable suffering is a duty, not a favor.”"
  },
  "Omissão": {
   "tipo": "substantivo feminino",
@@ -11095,6 +11274,34 @@
   "ex": "“Um bom debate pede pensamento crítico: examinar as razões de cada lado em vez de repetir slogans ou aceitar tudo sem questionar.”",
   "ex_en": "“A good debate calls for critical thinking: examining each side's reasons instead of repeating slogans or accepting everything unquestioned.”"
  },
+ "Permissível": {
+  "tipo": "adjetivo",
+  "tipo_en": "adjective",
+  "sin": [
+   "moralmente permitido",
+   "lícito"
+  ],
+  "sin_en": [
+   "morally permitted",
+   "allowed"
+  ],
+  "ant": [
+   "Proibido",
+   "impermissível"
+  ],
+  "ant_en": [
+   "Forbidden",
+   "impermissible"
+  ],
+  "veja": [
+   "Obrigatório",
+   "Proibido",
+   "Supererrogatório",
+   "Escolha pessoal"
+  ],
+  "ex": "“A pergunta não é se usar animais é ‘certo’, mas se cada uso é permissível e por quê.”",
+  "ex_en": "“The question isn't whether using animals is ‘right’, but whether each use is permissible, and why.”"
+ },
  "Personalidade": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -11291,6 +11498,28 @@
   ],
   "ex": "“A vitrine do pet shop exibia filhotes de raça à venda, enquanto a poucos quarteirões um abrigo lotado buscava lares.”",
   "ex_en": "“The pet shop window displayed purebred puppies for sale, while a few blocks away a crowded shelter was looking for homes.”"
+ },
+ "Petição de princípio": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "raciocínio circular",
+   "petitio principii"
+  ],
+  "sin_en": [
+   "circular reasoning",
+   "petitio principii"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Falácias",
+   "Validade",
+   "Premissa oculta",
+   "Direitos"
+  ],
+  "ex": "“Dizer que comer animais é permitido porque temos o direito de comê-los é uma petição de princípio: a premissa só repete a conclusão.”",
+  "ex_en": "“Saying that eating animals is permissible because we have a right to eat them is begging the question: the premise just repeats the conclusion.”"
  },
  "Piscicultura": {
   "tipo": "substantivo feminino",
@@ -11566,6 +11795,34 @@
   "ex": "“O vídeo de um leão caçando uma zebra reacendeu a discussão sobre se a predação na natureza é algo que devemos tentar mudar.”",
   "ex_en": "“A video of a lion hunting a zebra rekindled the discussion about whether predation in nature is something we should try to change.”"
  },
+ "Premissa oculta": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "premissa implícita",
+   "premissa tácita",
+   "entimema"
+  ],
+  "sin_en": [
+   "implicit premise",
+   "unstated premise",
+   "enthymeme"
+  ],
+  "ant": [
+   "premissa explícita"
+  ],
+  "ant_en": [
+   "explicit premise"
+  ],
+  "veja": [
+   "Validade",
+   "Solidez",
+   "Argumento",
+   "Falácias"
+  ],
+  "ex": "“Quando ele disse que come carne porque é gostosa, ela apontou a premissa oculta: que o sabor justifica matar alguém.”",
+  "ex_en": "“When he said he eats meat because it tastes good, she pointed out the hidden premise: that taste justifies killing someone.”"
+ },
  "Prescritividade": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -11590,6 +11847,32 @@
   "ex": "“A prescritividade distingue ‘os animais sentem dor’ de ‘devemos evitar causar dor’: a segunda frase indica um dever, não só um fato.”",
   "ex_en": "“Prescriptivity distinguishes ‘animals feel pain’ from ‘we should avoid causing pain’: the second sentence indicates a duty, not just a fact.”"
  },
+ "Prima facie": {
+  "tipo": "locução adjetiva e adverbial",
+  "tipo_en": "adjective and adverb (Latin phrase)",
+  "sin": [
+   "à primeira vista",
+   "salvo razão em contrário"
+  ],
+  "sin_en": [
+   "at first sight",
+   "defeasible"
+  ],
+  "ant": [
+   "absoluto"
+  ],
+  "ant_en": [
+   "absolute"
+  ],
+  "veja": [
+   "Deveres",
+   "Deontologia",
+   "Proibido",
+   "Necessidade"
+  ],
+  "ex": "“Matar um animal senciente é errado prima facie: quem quiser abrir uma exceção precisa mostrar uma razão muito forte.”",
+  "ex_en": "“Killing a sentient animal is prima facie wrong: anyone who wants to make an exception must show a very strong reason.”"
+ },
  "Princípio das necessidades": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -11605,6 +11888,28 @@
   ],
   "ex": "“O princípio das necessidades defende que os bens sejam distribuídos conforme o que cada um precisa, e não conforme o que pode pagar.”",
   "ex_en": "“The needs principle holds that goods should be distributed according to what each person needs, not what they can pay.”"
+ },
+ "Princípio moral": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "regra moral",
+   "norma moral"
+  ],
+  "sin_en": [
+   "moral rule",
+   "moral norm"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Teorias éticas",
+   "Premissa oculta",
+   "Contraexemplo",
+   "Equilíbrio reflexivo"
+  ],
+  "ex": "“O fato de que o teste ajuda alguém só vira argumento junto com um princípio moral que diga que ajudar justifica o dano.”",
+  "ex_en": "“The fact that the test helps someone becomes an argument only together with a moral principle saying that helping justifies the harm.”"
  },
  "Prioritarismo": {
   "tipo": "substantivo masculino",
@@ -11625,6 +11930,26 @@
   ],
   "ex": "“Pelo prioritarismo, aliviar o sofrimento de um animal preso em uma gaiola pequena tem mais peso do que aumentar o conforto de quem já vive bem.”",
   "ex_en": "“Under prioritarianism, relieving the suffering of an animal trapped in a tiny cage weighs more than adding comfort for those already well off.”"
+ },
+ "Problema das outras mentes": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "problema epistemológico das outras mentes"
+  ],
+  "sin_en": [
+   "epistemological problem of other minds"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Inferência para a melhor explicação",
+   "Filosofia da mente",
+   "Consciência",
+   "Antropomorfismo"
+  ],
+  "ex": "“Se o problema das outras mentes bastasse para negar dor aos animais, bastaria também para negá-la ao vizinho.”",
+  "ex_en": "“If the problem of other minds were enough to deny pain to animals, it would also be enough to deny it to your neighbor.”"
  },
  "Progressismo": {
   "tipo": "substantivo masculino",
@@ -11699,6 +12024,34 @@
   ],
   "ex": "“O acesso à educação e à saúde marcou o progresso social do século passado, e hoje o bem-estar animal entra na pauta.”",
   "ex_en": "“Access to education and health care marked social progress last century, and today animal welfare enters the agenda.”"
+ },
+ "Proibido": {
+  "tipo": "adjetivo",
+  "tipo_en": "adjective",
+  "sin": [
+   "moralmente impermissível",
+   "moralmente errado",
+   "vedado"
+  ],
+  "sin_en": [
+   "morally impermissible",
+   "morally wrong",
+   "prohibited"
+  ],
+  "ant": [
+   "Permissível"
+  ],
+  "ant_en": [
+   "Permissible"
+  ],
+  "veja": [
+   "Permissível",
+   "Obrigatório",
+   "Legalidade",
+   "Deveres"
+  ],
+  "ex": "“Que a lei permita a prática não responde se ela é moralmente proibida.”",
+  "ex_en": "“That the law allows the practice doesn't answer whether it is morally forbidden.”"
  },
  "Proibição de testes de cosméticos em animais": {
   "tipo": "locução substantiva",
@@ -12629,6 +12982,28 @@
   "ex": "“Tratar um animal com respeito significa reconhecer seus interesses, independentemente de sua utilidade ou de sua semelhança com os humanos.”",
   "ex_en": "“Treating an animal with respect means recognizing its interests, regardless of its usefulness or similarity to humans.”"
  },
+ "Resposta ad hoc": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "hipótese ad hoc",
+   "explicação ad hoc"
+  ],
+  "sin_en": [
+   "ad hoc hypothesis",
+   "ad hoc explanation"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Argumento dos casos marginais",
+   "Contraexemplo",
+   "Petição de princípio",
+   "Equilíbrio reflexivo"
+  ],
+  "ex": "“Dizer que os bebês contam porque pertencem a uma espécie racional parece uma resposta ad hoc: a regra só foi criada para incluí-los.”",
+  "ex_en": "“Saying babies count because they belong to a rational species looks like an ad hoc reply: the rule was made up only to include them.”"
+ },
  "Reverência pela vida": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -13480,6 +13855,31 @@
   "ex": "“A maior parte da soja plantada no mundo vira ração para animais, e não tofu ou leite de soja para consumo direto.”",
   "ex_en": "“Most of the soy grown in the world becomes animal feed, not tofu or soy milk for direct consumption.”"
  },
+ "Solidez": {
+  "tipo": "substantivo",
+  "tipo_en": "noun",
+  "sin": [
+   "argumento sólido",
+   "correção"
+  ],
+  "sin_en": [
+   "sound argument"
+  ],
+  "ant": [
+   "argumento não sólido"
+  ],
+  "ant_en": [
+   "unsound argument"
+  ],
+  "veja": [
+   "Validade",
+   "Contraexemplo",
+   "Argumento dos casos marginais",
+   "Lógica"
+  ],
+  "ex": "“O raciocínio é válido, mas falta solidez: a premissa de que só quem tem deveres tem direitos é falsa.”",
+  "ex_en": "“The reasoning is valid but lacks soundness: the premise that only those with duties have rights is false.”"
+ },
  "Status moral": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -13961,6 +14361,28 @@
   ],
   "ex": "“Defensores da teoria do elo apontam que muitos agressores de pessoas tiveram antes histórico de maus-tratos a animais, e por isso levam a crueldade animal a sério.”",
   "ex_en": "“Supporters of the link theory point out that many violent offenders had a prior history of abusing animals, and so they take animal cruelty seriously.”"
+ },
+ "Teoria do mandamento divino": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "voluntarismo teológico",
+   "teoria do comando divino"
+  ],
+  "sin_en": [
+   "theological voluntarism",
+   "divine command ethics"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Teorias éticas",
+   "Especismo religioso",
+   "Princípio moral",
+   "Deontologia"
+  ],
+  "ex": "“Pela teoria do mandamento divino, comer animais seria permitido só porque Deus o permitiu; o dilema de Eutífron pergunta se haveria então alguma razão para essa permissão.”",
+  "ex_en": "“On divine command theory, eating animals would be permissible only because God permitted it; the Euthyphro dilemma asks whether there would then be any reason for that permission.”"
  },
  "Teorias éticas": {
   "tipo": "locução substantiva",
@@ -14703,6 +15125,30 @@
   "ex": "“Pelo utilitarismo negativo, o dever central é reduzir o sofrimento, e nenhum prazer, por maior que seja, compensa o tormento de um único ser.”",
   "ex_en": "“By negative utilitarianism, the central duty is to reduce suffering, and no pleasure, however great, makes up for the torment of a single being.”"
  },
+ "Validade": {
+  "tipo": "substantivo",
+  "tipo_en": "noun",
+  "sin": [
+   "argumento válido"
+  ],
+  "sin_en": [
+   "valid argument"
+  ],
+  "ant": [
+   "invalidade"
+  ],
+  "ant_en": [
+   "invalidity"
+  ],
+  "veja": [
+   "Solidez",
+   "Premissa oculta",
+   "Lógica",
+   "Falácias"
+  ],
+  "ex": "“O argumento tem validade, porque a conclusão se segue das premissas, mas isso não diz nada sobre se a premissa ‘só os racionais importam’ é verdadeira.”",
+  "ex_en": "“The argument has validity, because the conclusion follows from the premises, but that says nothing about whether the premise ‘only rational beings matter’ is true.”"
+ },
  "Valor instrumental": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -15357,6 +15803,26 @@
   ],
   "ex": "“A autora descreveu como a vistopia a levou a se sentir isolada em um mundo onde a violência contra os animais é normal e invisível.”",
   "ex_en": "“The author described how vystopia left her feeling isolated in a world where violence against animals is normal and invisible.”"
+ },
+ "Visão crueldade-bondade": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "visão da crueldade e da bondade"
+  ],
+  "sin_en": [
+   "cruelty-kindness view"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Ética das virtudes",
+   "Crueldade animal",
+   "Compaixão",
+   "Bem-estarismo"
+  ],
+  "ex": "“A visão crueldade-bondade fala do caráter de quem age, mas não diz se o abate sem crueldade é permitido.”",
+  "ex_en": "“The cruelty-kindness view speaks to the character of the one who acts, but it doesn't say whether slaughter without cruelty is permissible.”"
  },
  "Visão total e visão da existência prévia": {
   "tipo": "locução substantiva",

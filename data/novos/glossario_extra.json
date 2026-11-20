@@ -1831,5 +1831,145 @@
   "def": "regra de decisão segundo a qual, havendo dúvida real sobre se um ato evitável causaria um dano grave a alguém, deve-se agir como se causasse, em vez de correr o risco.",
   "com": "Em *Ética prática* (2.ª ed., 1993), Peter Singer a ilustra com a regra dos caçadores: quem vê algo se mexer no mato e não sabe se é a caça ou outro caçador não atira. Ele a aplicou à dúvida sobre quais animais têm consciência de si: como é difícil saber, e matar um ser assim seria grave, deve-se dar a ele o benefício da dúvida, o que basta, diz Singer, para condenar grande parte do abate. A mesma lógica vale para a dúvida sobre a senciência de peixes, crustáceos e insetos, e está por trás da precaução defendida por Jonathan Birch em *The Edge of Sentience* (2024), para quem uma possibilidade realista de senciência já pede medidas proporcionais. Críticos dizem que a regra, aplicada sem limite, paralisaria a ação, já que quase tudo pode afetar algum ser de senciência incerta; a resposta comum é pesar a probabilidade e a gravidade do dano contra o custo de evitá-lo, que, no caso da alimentação, é baixo. Veja Nocicepção, Senciência e Ser consciente de si e ser meramente consciente.",
   "links": []
+ },
+ {
+  "termo": "Validade",
+  "sec": 6,
+  "def": "propriedade de um argumento em que a conclusão se segue das premissas, de modo que, se elas forem verdadeiras, a conclusão não pode ser falsa.",
+  "com": "A validade diz respeito à forma, e não ao conteúdo: um argumento pode ser válido com premissas falsas, e inválido com premissas e conclusão verdadeiras. Por isso, diante de uma objeção ao veganismo, há duas perguntas separadas: a conclusão se segue das premissas? E as premissas são verdadeiras? \"Animais não são humanos; logo, podemos comê-los\" não é válido, porque falta a premissa que liga uma coisa à outra; ao acrescentá-la (\"podemos comer quem não é humano\"), o argumento fica válido, e o debate passa a ser sobre essa premissa. Nathan Nobis, em *Animals & Ethics 101* (2016), recomenda esse método: tornar precisas a conclusão e as premissas e acrescentar as que estão pressupostas até o argumento ficar válido. Ser válido não basta para aceitar a conclusão; para isso o argumento precisa ser também sólido. Veja Solidez, Premissa oculta, Lógica e Falácias.",
+  "links": []
+ },
+ {
+  "termo": "Solidez",
+  "sec": 6,
+  "def": "propriedade de um argumento que é válido e tem todas as premissas verdadeiras, o que garante que a conclusão também é verdadeira.",
+  "com": "É o padrão que um argumento precisa atingir para obrigar quem aceita as premissas a aceitar a conclusão. Um argumento pode ser inválido, válido mas não sólido, por ter alguma premissa falsa, ou sólido. Muitas objeções aos animais ficam válidas depois de reconstruídas e falham na solidez: \"só merece consideração moral quem é racional; animais não são racionais; logo, não merecem consideração\" é válido, mas a primeira premissa é falsa, já que bebês e pessoas com deficiência cognitiva grave merecem consideração sem ser racionais no sentido exigido. Mostrar que um argumento não é sólido não prova que a conclusão é falsa, só que aquele argumento não a sustenta. O mesmo teste vale para os argumentos a favor dos animais, que também precisam de premissas verdadeiras, apoiadas em evidências. Veja Validade, Contraexemplo, Argumento dos casos marginais e Lógica.",
+  "links": []
+ },
+ {
+  "termo": "Premissa oculta",
+  "sec": 6,
+  "def": "premissa que um argumento pressupõe sem declarar, mas sem a qual a conclusão não se segue das premissas ditas.",
+  "com": "Também se diz premissa implícita, e o argumento que a deixa de fora é chamado de entimema; o nome vem da *Retórica* de Aristóteles, embora o sentido de silogismo com uma premissa omitida tenha se firmado na tradição posterior. Muitas defesas do uso de animais se apoiam em premissas ocultas: quem dá \"carne é gostosa\" ou \"sempre comi carne\" como razão para matar animais pressupõe que o sabor, ou o hábito, torna aceitável matar alguém, princípio que ninguém aceitaria se aplicado a humanos. Nathan Nobis, em *Animals & Ethics 101* (2016), propõe explicitar essas premissas para que o argumento fique válido e se possa discutir se elas são verdadeiras. A reconstrução deve ser caridosa: a premissa acrescentada deve ser a mais plausível que torne o argumento válido, e não uma versão fácil de derrubar, o que seria um espantalho. Veja Validade, Solidez, Argumento e Falácias.",
+  "links": []
+ },
+ {
+  "termo": "Condição necessária",
+  "sec": 6,
+  "def": "condição sem a qual algo não ocorre ou não vale: A é condição necessária de B quando não pode haver B sem A.",
+  "com": "Em forma condicional, escreve-se \"só se A, B\", ou \"se B, então A\". No debate sobre o status moral, quem nega consideração aos animais costuma propor condições necessárias exigentes: só merece consideração quem é racional, tem linguagem, é pessoa ou tem deveres, como nos capítulos \"Animais não são racionais\" e \"Quem não tem deveres não tem direitos\". Nathan Nobis observa, em *Animals & Ethics 101* (2016), que essas propostas esbarram no argumento dos casos marginais: muitos humanos, como bebês e pessoas com deficiência cognitiva grave, não atendem à condição e, ainda assim, merecem consideração, o que mostra que ela não é necessária. Quem defende os animais costuma, em vez disso, apontar a senciência como condição suficiente. Confundir os dois tipos de condição é uma fonte comum de erro, como na negação do antecedente. Veja Condição suficiente, Contraexemplo, Argumento dos casos marginais e Status moral.",
+  "links": []
+ },
+ {
+  "termo": "Condição suficiente",
+  "sec": 6,
+  "def": "condição que basta para que algo ocorra ou valha: A é condição suficiente de B quando, havendo A, há B.",
+  "com": "Em forma condicional, escreve-se \"se A, então B\". Uma condição pode ser suficiente sem ser necessária: ser mamífero basta para ser animal, mas há animais que não são mamíferos. Quem defende os animais costuma argumentar por condições suficientes: para Peter Singer, ser senciente basta para ter interesses que contam moralmente; para Tom Regan, ser sujeito de uma vida basta para ter valor inerente e direitos. Essa estratégia não exige mostrar que só os sencientes importam, só que a senciência basta e que os animais a têm; para derrubá-la, seria preciso um contraexemplo, um ser senciente cujo sofrimento não contasse. Por isso, mostrar que os animais não têm razão, linguagem ou deveres não refuta o argumento, que nunca afirmou que essas capacidades fossem necessárias. Veja Condição necessária, Senciência, Sujeitos de uma vida e Contraexemplo.",
+  "links": []
+ },
+ {
+  "termo": "Contraexemplo",
+  "sec": 6,
+  "def": "caso que mostra que uma afirmação geral, uma definição ou uma forma de argumento é falsa, por atender às condições dela e contrariar sua conclusão.",
+  "com": "Um único contraexemplo basta para derrubar uma generalização universal, como \"só tem direitos quem tem deveres\" ou \"o que é natural é bom\". O mais conhecido da filosofia é o de Edmund Gettier, que em 1963, com dois casos curtos, abalou a definição de conhecimento como crença verdadeira justificada. No debate sobre os animais, os bebês e as pessoas com deficiência cognitiva grave funcionam como contraexemplos aos critérios que exigem razão ou linguagem para ter status moral, e esse é o núcleo do argumento dos casos marginais. Contraexemplos também mostram que uma forma de argumento é inválida: basta achar outro argumento com a mesma forma, premissas verdadeiras e conclusão falsa. Para responder a um contraexemplo, é preciso mostrar que ele não atende às condições ou reformular o princípio, e uma reformulação feita só para excluir o caso incômodo, sem outra razão, é ad hoc. Veja Argumento dos casos marginais, Condição necessária, Validade e Casos-limite.",
+  "links": []
+ },
+ {
+  "termo": "Negação do antecedente",
+  "sec": 6,
+  "def": "falácia formal que conclui \"não B\" a partir de \"se A, então B\" e \"não A\".",
+  "com": "É inválida porque B pode ser verdade por outra razão: \"se é um cão, é um mamífero; não é um cão; logo, não é um mamífero\" falha diante de um gato. Nathan Nobis, em *Animals & Ethics 101* (2016), mostra que muitas objeções aos animais têm essa forma: se os animais tivessem direitos, seria errado fazê-los sofrer; eles não têm direitos; logo, não é errado, quando fazê-los sofrer poderia ser errado por outra razão, como o próprio sofrimento. \"Quem não tem deveres não tem direitos\" esconde o mesmo erro quando parte de \"quem tem deveres tem direitos\" e conclui, de \"animais não têm deveres\", que eles não têm direitos. A falácia irmã é a afirmação do consequente, que conclui \"A\" a partir de \"se A, então B\" e \"B\". As formas válidas próximas são o modus ponens, que conclui \"B\" de \"se A, então B\" e \"A\", e o modus tollens, que conclui \"não A\" de \"se A, então B\" e \"não B\". Veja Validade, Condição necessária, Falácias e Contraexemplo.",
+  "links": []
+ },
+ {
+  "termo": "Permissível",
+  "sec": 4,
+  "def": "diz-se do ato que não é moralmente errado fazer, ou seja, que não é proibido; pode ser também obrigatório, mas não precisa ser.",
+  "com": "Nathan Nobis, em *Animals & Ethics 101* (2016), sugere trocar a pergunta ambígua \"é certo usar animais?\" por outra mais precisa: cada uso é permissível, obrigatório ou proibido, e por quê? As três categorias se definem umas pelas outras: permissível é o que não é proibido, e obrigatório é aquilo cuja omissão é proibida; a lógica deôntica, proposta por Georg Henrik von Wright em 1951, formaliza essas relações. Quando se diz que comer carne é escolha pessoal, o que se afirma é que é permissível, e é isso que precisa ser defendido com razões, e não apenas presumido. O que a lei permite não é, só por isso, moralmente permissível: a permissão legal e a moral são questões distintas. Veja Obrigatório, Proibido, Supererrogatório e Escolha pessoal.",
+  "links": []
+ },
+ {
+  "termo": "Obrigatório",
+  "sec": 4,
+  "def": "diz-se do ato que é dever fazer, de modo que deixar de fazê-lo é moralmente errado.",
+  "com": "É o mesmo que moralmente exigido, e seu par é o proibido, que é o que se tem o dever de não fazer. Entre o obrigatório e o meramente permissível fica, para muitos autores, o supererrogatório: o ato bom e louvável que vai além do dever. Boa parte do debate sobre o veganismo é sobre em qual dessas categorias ele cai: há quem aceite que poupar animais é admirável, mas opcional, e há quem defenda que deixar de explorá-los é obrigatório, como deixar de fazer mal a humanos. Se o veganismo for apenas supererrogatório, os argumentos que concluem que ele é obrigatório não são sólidos; se for obrigatório, tratá-lo como opcional é um erro, e por isso vale dizer com clareza qual das teses está em jogo. Um ato só pode ser obrigatório para quem é capaz de praticá-lo, princípio conhecido como dever implica poder. Veja Permissível, Proibido, Supererrogatório e Dever implica poder.",
+  "links": []
+ },
+ {
+  "termo": "Proibido",
+  "sec": 4,
+  "def": "diz-se do ato que é moralmente errado fazer, ou seja, que é obrigatório não fazer; o mesmo que moralmente impermissível.",
+  "com": "Dizer que um ato é proibido em sentido moral não é dizer que a lei o proíbe: a lei proíbe coisas que não são moralmente erradas e permite outras que muita gente considera erradas. A tese central de quem defende os direitos animais é que certos usos, como criar e matar animais para comer quando há alternativas, são proibidos, e não apenas menos louváveis. Muitos autores tratam essas proibições como prima facie: valem salvo razão muito forte em contrário, como a de quem não tem outra comida para sobreviver. Quem discorda precisa mostrar por que esses usos são permissíveis, e não apenas que são comuns ou legais. Veja Permissível, Obrigatório, Legalidade e Deveres.",
+  "links": []
+ },
+ {
+  "termo": "Petição de princípio",
+  "sec": 6,
+  "def": "falácia em que o argumento pressupõe, numa das premissas, a própria conclusão que deveria provar, muitas vezes com outras palavras.",
+  "com": "Também se chama raciocínio circular, e o nome vem do latim *petitio principii*; Aristóteles já a descrevia. O argumento pode até ser válido, mas não dá a quem duvida da conclusão nenhuma razão nova para aceitá-la. Nathan Nobis, em *Animals & Ethics 101* (2016), mostra que o erro aparece dos dois lados do debate: \"temos o direito de comer animais\" e \"os animais têm direito à vida\", ditos sem nenhuma razão a mais, só repetem que comer animais é permitido ou que matá-los é errado. O mesmo acontece quando se define o valor moral pelo traço que se quer usar para excluir os animais, como ter alma humana ou pertencer à espécie humana. A saída é dizer por que o direito existe, por exemplo pela senciência ou pelos interesses de quem o teria. Veja Falácias, Validade, Premissa oculta e Direitos.",
+  "links": []
+ },
+ {
+  "termo": "Prima facie",
+  "sec": 4,
+  "def": "diz-se de um dever ou de uma razão que vale à primeira vista, ou seja, que deve ser cumprido salvo se houver uma razão mais forte em sentido contrário.",
+  "com": "A expressão é latina e foi consagrada na ética por W. D. Ross, em *The Right and the Good* (1930), que listou deveres prima facie, como não causar dano, cumprir promessas e ajudar, que podem entrar em conflito; nesse caso, um cede ao outro, sem deixar de existir. Nathan Nobis, em *Animals & Ethics 101* (2016), usa a ideia para separar o que é errado matar salvo razão muito forte, como os humanos, do que não é errado matar nem nesse sentido, como plantas e bactérias. Muitos defensores dos animais formulam assim as suas conclusões: matar ou fazer sofrer um animal senciente é errado prima facie, o que deixa espaço para casos como a legítima defesa ou a sobrevivência sem alternativa. Isso não enfraquece o argumento no caso comum, porque quem invoca a exceção precisa mostrar a razão forte, e o sabor, o hábito ou o custo menor dificilmente são razões desse tipo. Veja Deveres, Deontologia, Proibido e Necessidade.",
+  "links": []
+ },
+ {
+  "termo": "Princípio moral",
+  "sec": 4,
+  "def": "regra geral que diz que tipo de ato é certo, errado ou permitido, como \"é errado causar sofrimento sem necessidade\".",
+  "com": "É diferente de uma teoria moral, que é um sistema que organiza e justifica vários princípios, como o utilitarismo ou a teoria dos direitos: duas pessoas podem aceitar o mesmo princípio por teorias diferentes. Nathan Nobis, em *Animals & Ethics 101* (2016), insiste que um fato, sozinho, não leva a nenhuma conclusão moral: \"os testes beneficiam humanos\" só justifica algo junto com um princípio que diga que esse benefício torna o teste permitido. Por isso, reconstruir um argumento costuma exigir escrever o princípio que estava oculto e testá-lo com contraexemplos, em casos humanos e animais. O guia faz isso no bloco \"Extrapolações\" de cada capítulo, que mostra aonde levaria o princípio usado para justificar o uso de animais. Veja Teorias éticas, Premissa oculta, Contraexemplo e Equilíbrio reflexivo.",
+  "links": []
+ },
+ {
+  "termo": "Inferência para a melhor explicação",
+  "sec": 6,
+  "def": "forma de raciocínio que aceita, entre as hipóteses que explicariam um conjunto de fatos, aquela que os explica melhor, por ser mais simples, mais completa ou mais coerente com o resto do que se sabe.",
+  "com": "Também é chamada de abdução, ideia associada a Charles S. Peirce; o nome atual foi proposto por Gilbert Harman em 1965. É uma das formas de raciocínio que usamos para atribuir mente a outras pessoas, e Nathan Nobis, em *Animals & Ethics 101* (2016), mostra que ela vale também para os animais: a hipótese de que um cão que grita, foge e protege a pata ferida sente dor explica o comportamento melhor do que a de que ele é um autômato sem experiência, sobretudo diante das semelhanças no sistema nervoso e na história evolutiva. Ela é diferente do argumento por analogia, que parte das semelhanças entre dois casos, embora os dois costumem andar juntos. Nobis usa a mesma forma na ética: partir de juízos firmes, como o de que o racismo é errado, perguntar que princípio os explica melhor e ver o que esse princípio implica para os animais. Veja Problema das outras mentes, Analogia, Senciência e Equilíbrio reflexivo.",
+  "links": []
+ },
+ {
+  "termo": "Problema das outras mentes",
+  "sec": 1,
+  "def": "problema filosófico de justificar a crença de que outros seres têm mente e experiências, já que cada um só tem acesso direto à própria.",
+  "com": "Ninguém sente a dor de outra pessoa: nós a atribuímos a partir do comportamento, do que a pessoa diz e da semelhança conosco. O argumento por analogia, formulado por John Stuart Mill no século XIX, e a inferência para a melhor explicação são as respostas mais conhecidas, e nenhuma é aceita por todos os filósofos. Nathan Nobis, em *Animals & Ethics 101* (2016), observa que usamos o mesmo tipo de raciocínio sobre a mente dos animais: o comportamento diante da dor, a anatomia e a história evolutiva compartilhadas apontam na mesma direção. Um ceticismo que negasse mente aos animais só por falta de acesso direto teria de negá-la também aos outros humanos, inclusive aos que não falam, como os bebês. Veja Inferência para a melhor explicação, Filosofia da mente, Consciência e Antropomorfismo.",
+  "links": []
+ },
+ {
+  "termo": "Direito moral e direito legal",
+  "sec": 7,
+  "def": "distinção entre o direito que alguém tem por razões morais, independentemente de qualquer lei, e o direito que uma lei ou um tribunal reconhece e faz valer.",
+  "com": "Os direitos legais são criados por pessoas e mudam com o tempo e o lugar; para saber quais são, basta consultar a lei. Os direitos morais, se existem, não dependem de reconhecimento: as pessoas escravizadas já tinham direito à liberdade antes de a lei reconhecê-lo, e por isso não se diz que a abolição \"deu\" esse direito. Nathan Nobis, em *Animals & Ethics 101* (2016), tira daí duas consequências. Perguntar se devemos \"dar\" direitos aos animais parte de um pressuposto errado, porque direitos morais se reconhecem, e não se concedem; o que se cria são direitos legais. E o que a lei permite não é, só por isso, moralmente permitido, assim como o que ela exige nem sempre é justo. A distinção também ajuda diante da objeção de que direitos são invenção humana: a lei é invenção humana, mas isso não decide quais direitos morais existem, e se os animais os têm é justamente o que está em debate. Veja Direitos, Direitos animais, Legalidade e Direito.",
+  "links": []
+ },
+ {
+  "termo": "Visão crueldade-bondade",
+  "sec": 5,
+  "def": "nome dado por Tom Regan à posição segundo a qual tudo o que devemos aos animais é não ser cruéis com eles e, se possível, ser bondosos.",
+  "com": "Regan a discute em *The Case for Animal Rights* (1983) e no ensaio de mesmo nome (1985). A crítica dele é que crueldade e bondade descrevem motivos e caráter, e não o que torna um ato certo ou errado. Uma pessoa bondosa pode fazer algo errado, e muito dano é causado sem crueldade nenhuma, por indiferença, rotina ou lucro. Por isso \"basta não ser cruel\" não responde se um uso de animais é permitido: um abate feito sem nenhum prazer no sofrimento continua sendo uma morte. A crítica atinge as versões da ética das virtudes que só proíbem a crueldade, e não autoras como Rosalind Hursthouse, para quem a compaixão e a justiça já condenam as práticas atuais. Nathan Nobis inclui essa visão entre as teorias examinadas em *Animals & Ethics 101* (2016). Veja Ética das virtudes, Crueldade animal, Compaixão e Bem-estarismo.",
+  "links": []
+ },
+ {
+  "termo": "Teoria do mandamento divino",
+  "sec": 4,
+  "def": "teoria segundo a qual um ato é certo ou errado porque Deus o ordena ou o proíbe.",
+  "com": "A objeção clássica é o dilema de Eutífron, do diálogo de Platão com esse nome: algo é bom porque Deus o ordena, ou Deus o ordena porque é bom? Na primeira resposta, a moral fica arbitrária, porque Deus poderia ter ordenado a crueldade; na segunda, o que torna o ato bom são as razões que Deus teria, e elas podem ser examinadas diretamente. James Rachels usa esse dilema contra a teoria, e Nathan Nobis, em *Animals & Ethics 101* (2016), segue Rachels: se uma autoridade diz que um uso de animais é permitido, ou há razões para isso ou não há, e são as razões que decidem. Muitos religiosos não aceitam a teoria em sua forma simples: a tradição da lei natural, de Tomás de Aquino, funda a moral na razão, e versões modificadas, como a de Robert M. Adams, ligam a obrigação à natureza amorosa de Deus. Veja Teorias éticas, Especismo religioso e Princípio moral.",
+  "links": []
+ },
+ {
+  "termo": "Imperativo categórico",
+  "sec": 4,
+  "def": "na ética de Immanuel Kant, o princípio supremo da moralidade, que manda agir de certo modo sem depender dos desejos ou dos fins de quem age.",
+  "com": "Kant o apresentou na *Fundamentação da metafísica dos costumes* (1785) em mais de uma fórmula. A da lei universal pede que se aja apenas segundo uma regra que se possa querer que valha para todos; a da humanidade pede que se trate a humanidade, em si e nos outros, sempre também como fim, e nunca apenas como meio. Para Kant, só os seres racionais são fins em si mesmos, e os deveres a respeito dos animais seriam indiretos: a crueldade com eles seria errada porque embrutece quem a pratica. Tom Regan, na leitura de Nathan Nobis em *Animals & Ethics 101* (2016), mantém a ideia de nunca tratar alguém apenas como meio e muda quem conta como fim em si: todo sujeito de uma vida. Christine Korsgaard, em *Fellow Creatures* (2018), defende a partir do próprio Kant que os animais também são fins em si mesmos. Veja Deontologia, Instrumentalização e Sujeitos de uma vida.",
+  "links": []
+ },
+ {
+  "termo": "Resposta ad hoc",
+  "sec": 6,
+  "def": "resposta ou hipótese criada só para salvar uma tese de uma objeção ou de um contraexemplo, sem nenhuma razão independente a seu favor.",
+  "com": "A expressão latina quer dizer \"para isto\", e a crítica a hipóteses ad hoc é comum na filosofia da ciência, por exemplo em Karl Popper. Uma resposta não é ad hoc só por ter surgido depois da objeção: é ad hoc quando não teria nenhum apoio se a objeção não existisse e quando não explica mais nada além do caso que precisa salvar. Nathan Nobis, em *Animals & Ethics 101* (2016), aplica o teste às respostas ao argumento dos casos marginais: quem diz que só os racionais têm direitos precisa explicar os bebês e as pessoas com deficiência cognitiva profunda, e regras como \"conta quem pertence a uma espécie normalmente racional\" muitas vezes parecem feitas sob medida para incluir esses humanos e excluir os animais. É o que o compromisso de parcimônia deste guia pede que se evite. Veja Argumento dos casos marginais, Contraexemplo e Petição de princípio.",
+  "links": []
  }
 ]

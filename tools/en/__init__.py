@@ -21,6 +21,12 @@ CURTO = 'For the Animals'
 MARCA = 'For the Animals<br/>An Argument Guide'
 SITE_PT = 'https://pelosanimais.biblioverse.org'
 
+# Formal fallacies added on 2026-11-20 (Nobis, Animals & Ethics 101, pp. 41 and 98)
+FALACIAS.update({
+ 'Negação do antecedente': ('Denying the antecedent', '"If A, then B; not A; so, not B". E.g. "if a person studies medicine, they are at university; they do not study medicine; so, they are not at university". They may be on another course'),
+ 'Afirmação do consequente': ('Affirming the consequent', '"If A, then B; B; so, A". E.g. "if it rained, the street is wet; the street is wet; so, it rained". Someone may have hosed down the pavement'),
+})
+
 import novos as _novos_lotes  # argumentos acrescentados em 2026-11-13
 ARGS.update(_novos_lotes.EN); MOTIVOS.update(_novos_lotes.MOTIVOS)
 
@@ -48,6 +54,7 @@ for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-1
     'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L25': ["It's a 1960s hippie fad"],
 }.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
 _EXTRA_EN.setdefault('F6', []).extend(['Killing insects protects us', "I kill mosquitoes, it's a health issue", 'A scorpion in the house has to be killed', 'Insects are pests; spray everything'])  # antigo F7 unido ao F6
+_EXTRA_EN.setdefault('E1', []).append('We have the right to eat animals')
 _EXTRA_EN.setdefault('J19', []).append('The vegan industry is trying to manipulate you')
 for _c, _fs in _EXTRA_EN.items(): ARGS[_c] = (ARGS[_c][0], list(ARGS[_c][1]) + _fs, ARGS[_c][2])
 
