@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 285 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 289 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -32,6 +32,8 @@ Os animais contam moralmente?
 - [A24. A moral existe para nos proteger uns dos outros](https://pelosanimais.biblioverse.org/argumentos/a-moral-existe-para-nos-proteger-uns-dos-outros.html): Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática
 - [A25. Animais são propriedade](https://pelosanimais.biblioverse.org/argumentos/animais-sao-propriedade.html): Descreve um estatuto legal, não o justifica (como na escravidão)
 - [A26. Tratar bem os animais é questão de compaixão, não de justiça](https://pelosanimais.biblioverse.org/argumentos/tratar-bem-os-animais-e-questao-de-compaixao-nao-de-justica.html): Um dever de compaixão que ninguém pode fazer valer cede a quem quer descumpri-lo, e o critério usado para excluir os animais da justiça excluiria também bebês
+- [A27. Igualar animais a humanos com deficiência vai rebaixar os humanos](https://pelosanimais.biblioverse.org/argumentos/igualar-animais-a-humanos-com-deficiencia-vai-rebaixar-os-humanos.html): Confunde comparar o critério com comparar o valor das pessoas: a senciência protege todo humano que sente e estende essa proteção aos animais, sem rebaixar ninguém
+- [A28. Não se pode comparar a vida humana com a de um animal](https://pelosanimais.biblioverse.org/argumentos/nao-se-pode-comparar-a-vida-humana-com-a-de-um-animal.html): Quem diz que não se compara já comparou ao afirmar que a vida humana vale mais; comparar não é igualar, e a proibição só impede de examinar o que fazemos aos animais
 
 ## B. Dano, morte e bem-estar (Parte DIR)
 
@@ -114,6 +116,7 @@ O costume justifica?
 - [E14. Te admiro, mas não consigo](https://pelosanimais.biblioverse.org/argumentos/te-admiro-mas-nao-consigo.html): Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona
 - [E15. Sei que é errado, mas não vou mudar](https://pelosanimais.biblioverse.org/argumentos/sei-que-e-errado-mas-nao-vou-mudar.html): Acrasia assumida: concede o ponto moral e recusa a consequência
 - [E16. Concordo com os veganos, o veganismo é um movimento importante](https://pelosanimais.biblioverse.org/argumentos/concordo-com-os-veganos-o-veganismo-e-um-movimento-importante.html): Concordar não poupa nenhum animal: reconhecer o erro é necessário, mas não suficiente, e o dever de não causar dano não se terceiriza para o movimento
+- [E17. Por que eu deveria ser ético, se não me traz vantagem?](https://pelosanimais.biblioverse.org/argumentos/por-que-eu-deveria-ser-etico-se-nao-me-traz-vantagem.html): Troca a pergunta sobre o certo pela pergunta sobre a vantagem: o dano continua errado mesmo que não compense, e uma vida só para si costuma não satisfazer
 
 ## F. Casos-limite e hipotéticos (Parte DIR)
 
@@ -268,6 +271,7 @@ Minha escolha muda algo?
 - [K8. Veganismo radical afasta as pessoas](https://pelosanimais.biblioverse.org/argumentos/veganismo-radical-afasta-as-pessoas.html): Pode ser verdade estratégica, mas não é refutação moral nem desculpa individual
 - [K9. Veganos vão ser sempre minoria](https://pelosanimais.biblioverse.org/argumentos/veganos-vao-ser-sempre-minoria.html): Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana
 - [K10. Vou esperar a carne cultivada](https://pelosanimais.biblioverse.org/argumentos/vou-esperar-a-carne-cultivada.html): Adia a obrigação até que ela seja indolor
+- [K11. Numa democracia, só vale mudar pela via legal](https://pelosanimais.biblioverse.org/argumentos/numa-democracia-so-vale-mudar-pela-via-legal.html): Os canais legais são o caminho principal, mas a desobediência civil pacífica tem longa história legítima; a violência contra pessoas é outra coisa
 
 ## L. Ataques ao veganismo e aos veganos (Parte IND)
 
@@ -465,13 +469,14 @@ Devemos ajudar, e não só deixar de prejudicar?
 ## Além do veganismo
 
 - [Antiespecismo e sencientismo](https://pelosanimais.biblioverse.org/alem/antiespecismo.html): O veganismo é uma das consequências de um critério mais amplo: o que importa moralmente é a capacidade de ser prejudicado ou beneficiado.
+- [O que sustenta a ética animal, e o que a enfraquece](https://pelosanimais.biblioverse.org/alem/fundamentos.html): Razão crítica, relevância, imparcialidade e senciência sustentam o veganismo e a ética animal. Parcialidade, relativismo, tribalismo, capacitismo, a sacralização de abstrações e a vontade fraca os enfraquecem.
 - [O estado da arte da ética animal](https://pelosanimais.biblioverse.org/alem/estado-da-arte.html): Depois de 1975, a ética animal foi testada em casos cada vez mais difíceis, por autores de escolas que discordam entre si, e chegou à mesma rejeição do especismo.
+- [As correntes do movimento vegano](https://pelosanimais.biblioverse.org/alem/correntes-do-veganismo.html): Todos os veganos querem o fim da exploração animal. As correntes divergem sobre por que, com quem e como chegar lá. Um mapa dos fins, dos meios e dos principais debates.
+- [A definição de veganismo em debate](https://pelosanimais.biblioverse.org/alem/definicao-de-veganismo.html): O que define o veganismo: recusar a exploração dos animais, ou recusar tudo o que tem origem animal? A pergunta voltou com força com a carne cultivada e a fermentação de precisão.
+- [Matar x causar sofrimento: o debate sobre o valor da vida](https://pelosanimais.biblioverse.org/alem/matar-ou-fazer-sofrer.html): A morte sem dor prejudica quem morre? A filosofia responde de vários modos, e a resposta decide se basta acabar com o sofrimento dos animais ou se é preciso parar de matá-los.
 - [O sofrimento dos animais selvagens](https://pelosanimais.biblioverse.org/alem/animais-selvagens.html): Fome, doença e predação não foram causadas por nós. Mas, se a senciência é o que importa, esse sofrimento não pode ser descartado só por ter origem natural.
 - [Senciência em IA e robôs](https://pelosanimais.biblioverse.org/alem/ia-e-robos.html): Nenhum sistema atual é reconhecido como senciente. Mas a possibilidade não é absurda, e o critério não depende do material de que um ser é feito.
-- [A definição de veganismo em debate](https://pelosanimais.biblioverse.org/alem/definicao-de-veganismo.html): O que define o veganismo: recusar a exploração dos animais, ou recusar tudo o que tem origem animal? A pergunta voltou com força com a carne cultivada e a fermentação de precisão.
 - [Senciência em extraterrestres, plantas e outras formas de vida](https://pelosanimais.biblioverse.org/alem/extraterrestres.html): Não há evidência de vida fora da Terra, muito menos senciente, nem evidência robusta de que plantas ou fungos sintam. As duas perguntas testam se o nosso critério é mesmo um critério, e o que faríamos se a evidência mudasse.
-- [O que sustenta a ética animal, e o que a enfraquece](https://pelosanimais.biblioverse.org/alem/fundamentos.html): Razão crítica, relevância, imparcialidade e senciência sustentam o veganismo e a ética animal. Parcialidade, relativismo, tribalismo, capacitismo, a sacralização de abstrações e a vontade fraca os enfraquecem.
 - [Comedimento com os argumentos indiretos](https://pelosanimais.biblioverse.org/alem/argumentos-diretos.html): Assim como veganos devem ter cuidado ao criticar outros veganos, quem usa argumentos de saúde e ambiente deve ter cuidado para não fortalecer o antropocentrismo e o ambientalismo, que trabalham contra os animais.
 - [O mínimo comum](https://pelosanimais.biblioverse.org/alem/minimo-comum.html): Encontrar o ponto de convergência: quem discorda da conclusão inteira quase sempre pode aceitar uma parte dela. Mostrar essa parte não é abrir mão do que se defende, é não exigir que a pessoa mude de visão de mundo antes de dar o primeiro passo.
 - [Quando a lógica não basta](https://pelosanimais.biblioverse.org/alem/quando-a-logica-nao-basta.html): Fatos e argumentos mostram o que é certo, mas raramente bastam para que alguém mude. A apatia, o hábito e a indiferença pedem outras razões: alguém por quem se importar, gente com quem mudar e um caminho fácil para seguir.
-- [As correntes do movimento vegano](https://pelosanimais.biblioverse.org/alem/correntes-do-veganismo.html): Todos os veganos querem o fim da exploração animal. As correntes divergem sobre por que, com quem e como chegar lá. Um mapa dos fins, dos meios e dos principais debates.

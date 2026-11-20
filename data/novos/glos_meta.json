@@ -1652,6 +1652,26 @@
   "ex": "\"Um bom argumento mostra as premissas e a conclusão com clareza, de modo que quem discorda saiba exatamente qual passo contestar.\"",
   "ex_en": "\"A good argument shows its premises and conclusion clearly, so that anyone who disagrees knows exactly which step to contest.\""
  },
+ "Argumento da potencialidade": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Argumento do potencial"
+  ],
+  "sin_en": [
+   "Potentiality argument"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Argumento dos casos marginais",
+   "Ser consciente de si e ser meramente consciente",
+   "Status moral",
+   "Casos-limite"
+  ],
+  "ex": "“Pelo argumento da potencialidade, o bebê merece proteção pelo que poderá ser, mas o argumento não explica por que o que o porco já é contaria menos.”",
+  "ex_en": "“By the argument from potential, a baby deserves protection for what it may become, but the argument does not explain why what the pig already is should count for less.”"
+ },
  "Argumento da relevância": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -1695,6 +1715,28 @@
   ],
   "ex": "\"Em vez de discutir sobre saúde, ela fez um argumento direto: se o porco sente dor como o cão, não há razão para matar um e poupar o outro.\"",
   "ex_en": "\"Instead of arguing about health, she made a direct argument: if the pig feels pain like the dog, there is no reason to kill one and spare the other.\""
+ },
+ "Argumento do lago": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Argumento da criança que se afoga",
+   "Analogia do lago"
+  ],
+  "sin_en": [
+   "Drowning child argument",
+   "Shallow pond argument"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Pobreza absoluta",
+   "Objeção da exigência",
+   "Tese da equivalência",
+   "Altruísmo eficaz"
+  ],
+  "ex": "“Pelo argumento do lago, se trocar o leite de vaca por um vegetal custa tão pouco, a pergunta é por que não fazê-lo.”",
+  "ex_en": "“By the pond argument, if swapping cow's milk for a plant milk costs so little, the question is why not do it.”"
  },
  "Argumento dos casos marginais": {
   "tipo": "locução substantiva",
@@ -2271,6 +2313,27 @@
   ],
   "ex": "\"Para o criador, o confinamento traz o benefício de menores custos, mas o dano ao animal, uma vida de confinamento seguida de morte, é muito maior.\"",
   "ex_en": "\"For the breeder, confinement brings the benefit of lower costs, but the harm to the animal, a life of confinement followed by death, is far greater.\""
+ },
+ "Benefício da dúvida": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Regra do caçador",
+   "Princípio de precaução (sobre a senciência)"
+  ],
+  "sin_en": [
+   "Hunter's rule",
+   "Precautionary principle (on sentience)"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Nocicepção",
+   "Senciência",
+   "Ser consciente de si e ser meramente consciente"
+  ],
+  "ex": "\"Se não sabemos se o polvo sofre, o benefício da dúvida manda não cozinhá-lo vivo.\"",
+  "ex_en": "\"If we do not know whether the octopus suffers, the benefit of the doubt says not to cook it alive.\""
  },
  "Biocentrismo": {
   "tipo": "substantivo masculino",
@@ -3225,10 +3288,12 @@
   "tipo_en": "noun phrase",
   "sin": [
    "caça recreativa",
-   "caça por lazer"
+   "caça por lazer",
+   "caça de troféu"
   ],
   "sin_en": [
-   "recreational hunting"
+   "recreational hunting",
+   "trophy hunting"
   ],
   "ant": [
    "Caça de subsistência"
@@ -4927,6 +4992,30 @@
   "ex": "\"Na pecuária leiteira, o bezerro é afastado da mãe logo após o nascimento, muito antes da desmama natural, para que o leite seja vendido.\"",
   "ex_en": "\"In dairy farming, the calf is taken from its mother shortly after birth, long before natural weaning, so that the milk can be sold.\""
  },
+ "Desobediência civil": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Resistência civil"
+  ],
+  "sin_en": [
+   "Civil resistance"
+  ],
+  "ant": [
+   "Obediência à lei"
+  ],
+  "ant_en": [
+   "Obedience to the law"
+  ],
+  "veja": [
+   "Ação direta",
+   "Não-violência",
+   "Protesto",
+   "Legalidade"
+  ],
+  "ex": "“O grupo entrou na granja de rosto descoberto, filmou tudo e esperou a polícia, num ato de desobediência civil.”",
+  "ex_en": "“The group entered the farm openly, filmed everything and waited for the police, in an act of civil disobedience.”"
+ },
  "Desvocalização": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -6388,6 +6477,28 @@
   "ex": "“Uma doutrina que afirma que os animais existem para servir ao homem pode ser criticada como especismo religioso.”",
   "ex_en": "“A doctrine claiming that animals exist to serve humankind can be criticized as religious speciesism.”"
  },
+ "Espectador imparcial e observador ideal": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Espectador imparcial",
+   "Observador ideal"
+  ],
+  "sin_en": [
+   "Impartial spectator",
+   "Ideal observer"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Imparcialidade",
+   "Universalidade moral",
+   "Prescritividade",
+   "Parcialidade"
+  ],
+  "ex": "“Ela perguntou o que diria um espectador imparcial que conhecesse a dor do porco tão bem quanto a do cachorro.”",
+  "ex_en": "“She asked what an impartial spectator would say if they knew the pig's pain as well as the dog's.”"
+ },
  "Espora": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -7813,6 +7924,28 @@
   "ex": "\"O herbivorismo dos bois explica por que o sistema digestivo deles fermenta capim, algo que o corpo humano não faz.\"",
   "ex_en": "\"Cattle herbivory explains why their digestive system ferments grass, something the human body does not do.\""
  },
+ "Hipótese de Gaia": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Teoria de Gaia",
+   "Gaia"
+  ],
+  "sin_en": [
+   "Gaia theory",
+   "Gaia"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Holismo",
+   "Ecocentrismo",
+   "Ecologia profunda",
+   "Ambientalismo holista"
+  ],
+  "ex": "\"A hipótese de Gaia descreve a Terra como um sistema que se regula, mas não diz que o planeta sente alguma coisa.\"",
+  "ex_en": "\"The Gaia hypothesis describes the Earth as a self-regulating system, but it does not say the planet feels anything.\""
+ },
  "Holismo": {
   "tipo": "substantivo masculino",
   "tipo_en": "noun",
@@ -8065,6 +8198,34 @@
   ],
   "ex": "\"Defensora do igualitarismo, ela argumentava que ninguém deve ter menos peso moral por pertencer a determinado grupo.\"",
   "ex_en": "\"A defender of egalitarianism, she argued that no one should carry less moral weight for belonging to a particular group.\""
+ },
+ "Igualitarismo biocêntrico": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Igualdade biocêntrica",
+   "Igualitarismo biosférico"
+  ],
+  "sin_en": [
+   "Biocentric equality",
+   "Biospherical egalitarianism"
+  ],
+  "ant": [
+   "Sencientismo",
+   "Antropocentrismo"
+  ],
+  "ant_en": [
+   "Sentientism",
+   "Anthropocentrism"
+  ],
+  "veja": [
+   "Biocentrismo",
+   "Reverência pela vida",
+   "Ecologia profunda",
+   "Sencientismo"
+  ],
+  "ex": "\"Pelo igualitarismo biocêntrico, um carvalho e um cão teriam o mesmo valor intrínseco.\"",
+  "ex_en": "\"Under biocentric egalitarianism, an oak and a dog would have the same intrinsic value.\""
  },
  "Impacto esperado": {
   "tipo": "locução substantiva",
@@ -10282,6 +10443,28 @@
   "ex": "\"Seguindo a não-violência, o grupo organizou uma vigília silenciosa em vez de confrontar os trabalhadores do matadouro.\"",
   "ex_en": "\"Following nonviolence, the group held a silent vigil instead of confronting the slaughterhouse workers.\""
  },
+ "Níveis intuitivo e crítico": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Pensamento moral em dois níveis",
+   "Utilitarismo de dois níveis"
+  ],
+  "sin_en": [
+   "Two-level moral thinking",
+   "Two-level utilitarianism"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Utilitarismo das preferências",
+   "Substituibilidade (argumento da substituição)",
+   "Equilíbrio reflexivo",
+   "Consequencialismo"
+  ],
+  "ex": "“Pelos níveis intuitivo e crítico, mesmo quem admite exceções na teoria pode seguir no dia a dia a regra de não matar animais para comer.”",
+  "ex_en": "“On the intuitive and critical levels, even someone who admits exceptions in theory can follow, in everyday life, the rule of not killing animals for food.”"
+ },
  "Objetificação": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -11203,6 +11386,31 @@
   ],
   "ex": "“Adepta do pluralismo moral, ela combina o respeito a direitos com a preocupação com consequências, sem se prender a uma única teoria.”",
   "ex_en": "“A moral pluralist, she combines respect for rights with concern for consequences, without committing to a single theory.”"
+ },
+ "Pobreza absoluta": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Pobreza extrema",
+   "Miséria"
+  ],
+  "sin_en": [
+   "Extreme poverty"
+  ],
+  "ant": [
+   "Riqueza absoluta"
+  ],
+  "ant_en": [
+   "Absolute affluence"
+  ],
+  "veja": [
+   "Argumento do lago",
+   "Objeção da exigência",
+   "Altruísmo eficaz",
+   "Justiça alimentar"
+  ],
+  "ex": "“Ele lembrou que combater a pobreza absoluta e deixar de comer animais não competem entre si.”",
+  "ex_en": "“He pointed out that fighting absolute poverty and no longer eating animals do not compete with each other.”"
  },
  "Políticas afirmativas": {
   "tipo": "locução substantiva",
@@ -12421,6 +12629,32 @@
   "ex": "“Tratar um animal com respeito significa reconhecer seus interesses, independentemente de sua utilidade ou de sua semelhança com os humanos.”",
   "ex_en": "“Treating an animal with respect means recognizing its interests, regardless of its usefulness or similarity to humans.”"
  },
+ "Reverência pela vida": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Respeito pela vida",
+   "Ética da reverência pela vida"
+  ],
+  "sin_en": [
+   "Respect for life",
+   "Ehrfurcht vor dem Leben"
+  ],
+  "ant": [
+   "Antropocentrismo"
+  ],
+  "ant_en": [
+   "Anthropocentrism"
+  ],
+  "veja": [
+   "Biocentrismo",
+   "Igualitarismo biocêntrico",
+   "Ecologia profunda",
+   "Sencientismo"
+  ],
+  "ex": "\"Ela citava a reverência pela vida de Schweitzer, mas o sencientismo lhe perguntou o que uma flor perde ao ser colhida.\"",
+  "ex_en": "\"She quoted Schweitzer's reverence for life, but sentientism asked her what a flower loses when it is picked.\""
+ },
  "Rinha": {
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
@@ -12581,6 +12815,32 @@
   ],
   "ex": "“Um toque de sal negro no tofu mexido dá um sabor sulfuroso parecido com o do ovo, sem usar produtos animais.”",
   "ex_en": "“A pinch of black salt in scrambled tofu gives an egg-like sulfurous flavor without using animal products.”"
+ },
+ "Santidade da vida": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Sacralidade da vida",
+   "Inviolabilidade da vida"
+  ],
+  "sin_en": [
+   "Sanctity-of-life doctrine",
+   "Inviolability of life"
+  ],
+  "ant": [
+   "Qualidade de vida (como critério)"
+  ],
+  "ant_en": [
+   "Quality of life (as a criterion)"
+  ],
+  "veja": [
+   "Especismo religioso",
+   "Domínio (dominionismo)",
+   "Teocentrismo",
+   "Dano da morte"
+  ],
+  "ex": "“Quem defende a santidade da vida precisa explicar por que ela termina na fronteira da espécie.”",
+  "ex_en": "“Those who defend the sanctity of life need to explain why it ends at the species boundary.”"
  },
  "Santuário": {
   "tipo": "substantivo masculino",
@@ -12929,6 +13189,29 @@
   ],
   "ex": "“A reforma legal passou a reconhecer os animais como seres sencientes, o que na prática exige que os tribunais considerem seu sofrimento em disputas judiciais.”",
   "ex_en": "“The legal reform began to recognize animals as sentient beings, which in practice requires courts to consider their suffering in legal disputes.”"
+ },
+ "Ser consciente de si e ser meramente consciente": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Pessoa e ser apenas consciente",
+   "Ser autoconsciente e ser senciente"
+  ],
+  "sin_en": [
+   "Persons and merely conscious beings",
+   "Self-aware and merely sentient beings"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Animais como pessoas",
+   "Sujeitos de uma vida",
+   "Consciência animal",
+   "Substituibilidade (argumento da substituição)",
+   "Argumento dos casos marginais"
+  ],
+  "ex": "\"No seminário, a turma discutiu se a distinção entre ser consciente de si e ser meramente consciente se sustenta diante dos estudos sobre polvos e corvos.\"",
+  "ex_en": "\"In the seminar, the class discussed whether the distinction between self-conscious and merely conscious beings holds up against studies of octopuses and crows.\""
  },
  "Ser humano": {
   "tipo": "locução substantiva",
@@ -13340,6 +13623,33 @@
   "ex": "“Uma comunidade isolada que depende da pesca para sobreviver não está na mesma situação de quem tem supermercado e opções vegetais à mão.”",
   "ex_en": "“An isolated community that depends on fishing to survive is not in the same situation as someone with a supermarket and plant options at hand.”"
  },
+ "Substituibilidade (argumento da substituição)": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Argumento da substituição",
+   "Tese da substituibilidade"
+  ],
+  "sin_en": [
+   "Replaceability argument",
+   "Replaceability thesis"
+  ],
+  "ant": [
+   "Insubstituibilidade do indivíduo"
+  ],
+  "ant_en": [
+   "Irreplaceability of the individual"
+  ],
+  "veja": [
+   "Visão total e visão da existência prévia",
+   "Ser consciente de si e ser meramente consciente",
+   "Dano da morte",
+   "Carne feliz (happy meat)",
+   "Sujeitos de uma vida"
+  ],
+  "ex": "\"Para defender a criação ao ar livre, o produtor recorreu à substituibilidade, dizendo que cada animal abatido daria lugar a outro com uma vida igualmente boa.\"",
+  "ex_en": "\"To defend free-range farming, the producer appealed to replaceability, saying that each animal slaughtered would make room for another with an equally good life.\""
+ },
  "Substratismo": {
   "tipo": "substantivo masculino",
   "tipo_en": "noun",
@@ -13745,6 +14055,29 @@
   ],
   "ex": "“Pela tese da equivalência, deixar um animal morrer sem ajudá-lo seria moralmente igual a matá-lo, o que muitos consideram uma conclusão exagerada.”",
   "ex_en": "“By the equivalence thesis, letting an animal die without helping would be morally the same as killing it, which many consider an exaggerated conclusion.”"
+ },
+ "Teste do espelho": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Teste da marca",
+   "Teste de autorreconhecimento no espelho"
+  ],
+  "sin_en": [
+   "Mark test",
+   "Rouge test",
+   "Mirror self-recognition test"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Ser consciente de si e ser meramente consciente",
+   "Consciência animal",
+   "Cognição animal",
+   "Animais como pessoas"
+  ],
+  "ex": "\"O cão não passou no teste do espelho, mas reconhece o próprio cheiro e sente dor como qualquer um de nós.\"",
+  "ex_en": "\"The dog failed the mirror test, but it recognizes its own scent and feels pain like any of us.\""
  },
  "Teste humano": {
   "tipo": "locução substantiva",
@@ -14251,6 +14584,27 @@
   "ex": "“O universalismo contextual aceita que o princípio de evitar sofrimento é geral, mas que sua aplicação depende do contexto de cada comunidade.”",
   "ex_en": "“Contextual universalism accepts that the principle of avoiding suffering is general, but that its application depends on each community’s context.”"
  },
+ "Utilidade marginal decrescente": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Lei da utilidade marginal decrescente",
+   "Diminuição da utilidade marginal"
+  ],
+  "sin_en": [
+   "Law of diminishing marginal utility"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Igual consideração",
+   "Prioritarismo",
+   "Igualitarismo",
+   "Maximin"
+  ],
+  "ex": "“Pela utilidade marginal decrescente, o mesmo dinheiro faz mais diferença para quem passa fome do que para quem já tem de sobra.”",
+  "ex_en": "“By diminishing marginal utility, the same money makes more difference to someone who is starving than to someone who already has plenty.”"
+ },
  "Utilitarismo": {
   "tipo": "substantivo masculino",
   "tipo_en": "noun",
@@ -14299,6 +14653,31 @@
   ],
   "ex": "“Para o utilitarismo clássico, uma experiência prazerosa pode compensar uma dolorosa, e por isso a conta total de felicidade é o que importa.”",
   "ex_en": "“For classical utilitarianism, a pleasurable experience can offset a painful one, so the total balance of happiness is what matters.”"
+ },
+ "Utilitarismo das preferências": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Utilitarismo de preferências"
+  ],
+  "sin_en": [
+   "Preference-satisfaction utilitarianism"
+  ],
+  "ant": [
+   "Utilitarismo hedonista"
+  ],
+  "ant_en": [
+   "Hedonistic utilitarianism"
+  ],
+  "veja": [
+   "Utilitarismo",
+   "Utilitarismo clássico",
+   "Substituibilidade (argumento da substituição)",
+   "Ser consciente de si e ser meramente consciente",
+   "Consequencialismo"
+  ],
+  "ex": "\"No utilitarismo das preferências, confinar uma porca numa gaiola é errado porque frustra o que ela prefere, como andar, fuçar e fazer ninho.\"",
+  "ex_en": "\"In preference utilitarianism, confining a sow in a crate is wrong because it frustrates what she prefers, such as walking, rooting and nest-building.\""
  },
  "Utilitarismo negativo": {
   "tipo": "locução substantiva",
@@ -14979,6 +15358,26 @@
   "ex": "“A autora descreveu como a vistopia a levou a se sentir isolada em um mundo onde a violência contra os animais é normal e invisível.”",
   "ex_en": "“The author described how vystopia left her feeling isolated in a world where violence against animals is normal and invisible.”"
  },
+ "Visão total e visão da existência prévia": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Perspectiva total e perspectiva da existência prévia"
+  ],
+  "sin_en": [
+   "Total view and prior-existence view"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Substituibilidade (argumento da substituição)",
+   "Utilitarismo das preferências",
+   "Utilitarismo clássico",
+   "Dano da morte"
+  ],
+  "ex": "\"Pela visão total, criar mais frangos felizes seria um bem; pela visão da existência prévia, só contam os frangos que já existem.\"",
+  "ex_en": "\"On the total view, creating more happy chickens would be good; on the prior existence view, only the chickens who already exist count.\""
+ },
  "Vitamina B12": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -15375,6 +15774,32 @@
   ],
   "ex": "“Em um curso de ética animal, a turma discutiu se criar porcos para comer pode ser justificado.”",
   "ex_en": "“In an animal ethics course, the class discussed whether raising pigs for food can be justified.”"
+ },
+ "Ética da terra": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "Land ethic",
+   "Ética da Terra de Leopold"
+  ],
+  "sin_en": [
+   "Leopold's land ethic"
+  ],
+  "ant": [
+   "Ambientalismo sencientista"
+  ],
+  "ant_en": [
+   "Sentientist environmentalism"
+  ],
+  "veja": [
+   "Ecocentrismo",
+   "Holismo",
+   "Ecologia profunda",
+   "Caça",
+   "Ambientalismo (moral)"
+  ],
+  "ex": "\"Em nome da ética da terra, o parque autorizou o abate de cervos para proteger a vegetação.\"",
+  "ex_en": "\"In the name of the land ethic, the park authorized culling deer to protect the vegetation.\""
  },
  "Ética das virtudes": {
   "tipo": "locução substantiva",

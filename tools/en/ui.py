@@ -297,6 +297,14 @@ JS = [
  ("'Recolher' : 'Abrir') + ' ' + fs.length + ' caminhos de '", "'Collapse' : 'Open') + ' ' + fs.length + ' paths from '"),
  ("'↺ já apareceu neste ramo'", "'↺ already came up in this branch'"),
  ("el('small', 'rac-ciclo', 'raiz')", "el('small', 'rac-ciclo', 'root')"),
+ # glossary entry card (trecho.js)
+ ("b.textContent = 'Gerar imagem'", "b.textContent = 'Make an image'"),
+ ("[['def', 'Definição', 'Definição',", "[['def', 'Definition', 'Definition',"),
+ ("ops.push(['com', 'Comentário crítico', 'Comentário crítico',", "ops.push(['com', 'Critical comment', 'Critical comment',"),
+ ("cab: 'Glossário', ops: ops", "cab: 'Glossary', ops: ops"),
+ ("caixa: ex ? ['Exemplo',", "caixa: ex ? ['Example',"),
+ ("inclui: 'Incluir o exemplo'", "inclui: 'Include the example'"),
+ ("janela: 'Compartilhar o verbete'", "janela: 'Share the entry'"),
  # compartilhar trecho (assets/trecho.js)
  ("'Ações para o trecho selecionado'", "'Actions for the selected passage'"),
  ("'Compartilhar trecho'", "'Share passage'"),
