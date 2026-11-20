@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 276 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 278 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -305,7 +305,9 @@ Quem fala isso é confiável?
 - [L31. Vou comer o dobro para compensar você](https://pelosanimais.biblioverse.org/argumentos/vou-comer-o-dobro-para-compensar-voce.html): Reação emocional (reatância), não argumento
 - [L32. Minha comida caga na sua](https://pelosanimais.biblioverse.org/argumentos/minha-comida-caga-na-sua.html): Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre
 - [L33. Olha o que você está perdendo](https://pelosanimais.biblioverse.org/argumentos/olha-o-que-voce-esta-perdendo.html): Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo
-- [L34. Eu odeio veganos](https://pelosanimais.biblioverse.org/argumentos/eu-odeio-veganos.html): Ódio não é argumento: costuma ser a defesa de uma identidade e de um hábito ameaçados, e se volta contra quem só pede menos sofrimento para as vítimas
+- [L34. Defender os animais é apelo emocional, não argumento](https://pelosanimais.biblioverse.org/argumentos/defender-os-animais-e-apelo-emocional-nao-argumento.html): Os argumentos pelos animais partem de critérios e de fatos sobre a senciência, e a defesa do consumo também se apoia em emoções como prazer, hábito e apego
+- [L35. Defender os animais é moralismo de classe média](https://pelosanimais.biblioverse.org/argumentos/defender-os-animais-e-moralismo-de-classe-media.html): Recusar carne não é coisa só de ricos, a classe de quem defende uma ideia não decide se ela é certa, e cuidar dos animais não tira cuidado dos humanos
+- [L36. Eu odeio veganos](https://pelosanimais.biblioverse.org/argumentos/eu-odeio-veganos.html): Ódio não é argumento: costuma ser a defesa de uma identidade e de um hábito ameaçados, e se volta contra quem só pede menos sofrimento para as vítimas
 
 ## M. Ex-veganos: por que desisti (Parte IND)
 
@@ -432,6 +434,7 @@ Devemos ajudar, e não só deixar de prejudicar?
 - [Anarquismo](https://pelosanimais.biblioverse.org/politicas/anarquismo.html): O anarquismo combate a dominação entre pessoas; animais não fazem parte disso. Rejeitar hierarquias e formas de dominação que não se justificam.
 - [Utilitarismo](https://pelosanimais.biblioverse.org/politicas/utilitarismo.html): Os prazeres humanos valem mais: é melhor ser um humano insatisfeito do que um porco satisfeito. Maximizar o bem-estar e minimizar o sofrimento de todos os afetados, contando o interesse de cada um igualmente.
 - [Contratualismo e justiça rawlsiana](https://pelosanimais.biblioverse.org/politicas/contratualismo.html): A justiça vale entre quem tem senso de justiça e pode fazer acordos. Escolher as regras de uma sociedade de forma imparcial, como se não soubéssemos que posição ocuparíamos nela.
+- [Abordagem das capacidades](https://pelosanimais.biblioverse.org/politicas/capacidades.html): O que importa é o animal viver de acordo com a sua espécie: uma criação que o deixa pastar e conviver, e o mata sem dor, respeita isso. Garantir a cada indivíduo, até um mínimo adequado, as capacidades centrais para uma vida digna: não só o que ele sente ou possui, mas o que consegue de fato ser e fazer. A abordagem foi proposta pelo economista indiano Amartya Sen para pensar o desenvolvimento humano e transformada numa teoria da justiça pela filósofa norte-americana Martha Nussbaum, que a estendeu aos animais.
 - [Deontologia e kantismo](https://pelosanimais.biblioverse.org/politicas/deontologia.html): Só seres racionais são fins em si mesmos; com os animais temos, no máximo, deveres indiretos. Tratar os seres que têm valor próprio como fins, e nunca apenas como meios.
 - [Comunitarismo](https://pelosanimais.biblioverse.org/politicas/comunitarismo.html): Os deveres nascem da comunidade e de suas tradições, e os animais não são membros dela. A moral se constrói nos vínculos e nas práticas de uma comunidade.
 - [Igualitarismo e prioritarismo](https://pelosanimais.biblioverse.org/politicas/igualitarismo.html): A igualdade é entre cidadãos humanos; os animais estão em outra categoria. Reduzir desigualdades injustas e dar prioridade a quem está em pior situação.
