@@ -27,7 +27,7 @@ SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novemb
 
 O guia segue a filosofia analítica, com conceitos claros e premissas apoiadas em evidência, e o sencientismo: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie."""
 
-CONTRACAPA = """Toda objeção merece uma boa resposta.
+CONTRACAPA = """Toda objeção merece ser levada a sério.
 
 Este livro reúne {n} argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma réplica para usar na hora e uma pergunta para manter a conversa aberta.
 

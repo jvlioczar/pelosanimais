@@ -45,8 +45,8 @@ def fonte(nomes, tam):
 
 
 TXT = {
-    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'uma boa resposta.', 'Confira {n} argumentos contra o veganismo e o antiespecismo, tratados de forma honesta', 'pelosanimais.biblioverse.org'),
-    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'a good answer.', 'Explore {n} arguments against veganism and antispeciesism, treated honestly', 'fortheanimals.biblioverse.org'),
+    'pt': ('Guia de Argumentação', 'Pelos Animais', 'Toda objeção merece', 'ser levada a sério.', 'Confira {n} argumentos contra o veganismo e o antiespecismo, tratados de forma honesta', 'pelosanimais.biblioverse.org'),
+    'en': ('For the Animals', 'An Argument Guide', 'Every objection deserves', 'to be taken seriously.', 'Explore {n} arguments against veganism and antispeciesism, treated honestly', 'fortheanimals.biblioverse.org'),
 }
 
 # As mesmas fontes do site (Google Fonts, licença OFL), guardadas em tools/fontes

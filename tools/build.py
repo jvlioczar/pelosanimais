@@ -903,7 +903,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <meta property="og:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="{e(NOME)}: {"every objection deserves a good answer." if EN else "toda objeção merece uma boa resposta."}"/>
+<meta property="og:image:alt" content="{e(NOME)}: {"every objection deserves to be taken seriously." if EN else "toda objeção merece ser levada a sério."}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta name="theme-color" content="#0a3703"/>
@@ -1023,7 +1023,7 @@ def inicio():
     alemc = ''.join(cartao_alem(p) for p in alem.PAGINAS)
     tons = list(CORES.values())
     polc = ''.join(f'<a class="cartao pol-c" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3></a>' for i, t in enumerate(politicas.TEORIAS))
-    corpo = f'''<section class="capa"><div class="wrap capa-in"><p class="etiqueta"><span>Para pensar com cuidado sobre os argumentos contra o veganismo:</span></p><h1>Toda objeção merece <mark>uma boa resposta</mark>.</h1><p class="lede">{e(DESCRICAO)}</p>
+    corpo = f'''<section class="capa"><div class="wrap capa-in"><p class="etiqueta"><span>Para pensar com cuidado sobre os argumentos contra o veganismo:</span></p><h1>Toda objeção merece <mark>ser levada a sério</mark>.</h1><p class="lede">{e(DESCRICAO)}</p>
 <div class="busca-h"><label class="so-leitor" for="hq">O que te disseram?</label><input id="hq" type="search" placeholder="O que te disseram? Ex.: de onde você tira proteína" autocomplete="off"/><div id="hres" class="hres" hidden></div></div>
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
@@ -1039,7 +1039,7 @@ def inicio():
 <section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
 <section class="bloco-cor amarelo" id="alem"><div class="wrap alem-in"><div>{circulo()}</div><div><div class="sec-cab"><h2>Além do veganismo</h2><p>O critério da senciência não termina no prato. Clique em um círculo ou escolha um tema.</p></div><div class="lista-alem">{alemc}</div></div></div></section>
 <section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="debate.html">Simular um debate</a> <a class="btn alt" href="treino.html">Treinar respostas</a></div></section>'''
-    page('index.html', NOME, L(f'Toda objeção merece uma boa resposta. {len(ARGS)} argumentos contra o veganismo e o antiespecismo, na versão mais forte, com o que acertam e onde falham.', f'Every objection deserves a good answer. {len(ARGS)} arguments against veganism and antispeciesism, in their strongest form: what they get right and where they fail.'), corpo)
+    page('index.html', NOME, L(f'Toda objeção merece ser levada a sério. {len(ARGS)} argumentos contra o veganismo e o antiespecismo, na versão mais forte, com o que acertam e onde falham.', f'Every objection deserves to be taken seriously. {len(ARGS)} arguments against veganism and antispeciesism, in their strongest form: what they get right and where they fail.'), corpo)
 
 def cartao_ruim(r, pre=''):
     return f'<a class="cartao" style="--c:#b8460f" href="{pre}ruins/{r["c"].lower()}.html"><span class="cod">{r["c"]} · {e(TIPOS[r["tipo"]][0])}</span><h3>"{e(r["frase"])}"</h3><p class="falha">{e(r["por"][0])}</p></a>'
@@ -1889,7 +1889,7 @@ def llms_txt():
             (L('Biblioteca', 'Library'), 'biblioteca.html', L('livros e sites para aprender a argumentar pelos animais', 'books and websites for learning to argue for animals')),
         ]),
     ]
-    txt = f'# {NOME}\n\n> {L("Toda objeção merece uma boa resposta. ", "Every objection deserves a good answer. ")}{DESCRICAO}\n\n'
+    txt = f'# {NOME}\n\n> {L("Toda objeção merece ser levada a sério. ", "Every objection deserves to be taken seriously. ")}{DESCRICAO}\n\n'
     txt += L('Site de acesso livre, sem cadastro. Cada argumento tem uma página com a versão mais forte da objeção, o que ela acerta, onde falha, uma réplica e as fontes.\n\n',
              'A free, open site, with no sign-up. Each argument has a page with the strongest version of the objection, what it gets right, where it fails, a reply and the sources.\n\n')
     licenca = L(f'Licença: textos originais sob CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); cite "{NOME}" com link.\n\n',
