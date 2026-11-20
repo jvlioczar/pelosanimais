@@ -822,7 +822,7 @@ SITES_URL = {'https://questaodeetica.biblioverse.org/desbancando.html': QE_EN + 
 
 # Long texts of build.py (module-level constants)
 TEXTOS = {
- 'DESCRICAO': 'A guide for people who want to talk better and think more clearly about animals, veganism and animal ethics. It systematically catalogs every idea used to exploit, harm or kill sentient beings, or to avoid helping them, and takes seriously and explains in depth the objections and biases of those who oppose antispeciesism.',
+ 'DESCRICAO': 'A guide for people who want to talk better and think more clearly about animals, veganism and animal ethics. It systematically catalogs every idea used to exploit, harm or kill sentient beings, or to avoid helping them, and takes seriously, explaining in depth the objections and biases of those who oppose antispeciesism.',
  'IND_TEMA': {'G': 'health and nutrition', 'H': 'the environment and agriculture', 'I': 'the usefulness of testing, clothing, entertainment, work and companion animals',
               'J': 'cost, practicality and the economy', 'K': 'effectiveness and individual responsibility', 'L': 'who defends veganism', 'M': 'the experience of someone who tried to be vegan and gave up'},
  'IND_EXEMPLO': {
