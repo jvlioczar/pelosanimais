@@ -4,9 +4,9 @@ Parágrafos separados por linha em branco. Links no formato [texto](https://ende
 AUTOR = 'Julio Cesar Prava'
 EDITORA = ''  # editora, se houver; vazio não aparece no livro
 
-DEDICATORIA = ''
+DEDICATORIA = '''A todos os seres sencientes inocentes que nascem na natureza selvagem para logo morrer, a todos os que são postos no mundo para ser explorados e mortos, e a todos os que ainda virão e enfrentarão a fúria da natureza e da humanidade.'''
 
-AGRADECIMENTOS = ''
+AGRADECIMENTOS = '''Agradeço a todas as pessoas que pensam e trabalham para ajudar os animais, principalmente àquelas que, postas diante de razões melhores, não têm medo de assumi-las e de deixar para trás aquilo em que acreditavam, para assim buscar o melhor mundo possível.'''
 
 # Ficha catalográfica: deixe vazio para manter o quadro reservado; cole aqui o texto fornecido pela bibliotecária ou pelo bibliotecário.
 FICHA = ''
@@ -15,7 +15,7 @@ SOBRE_AUTOR = """[Julio Cesar Prava](https://instagram.com/sencientista) é desi
 
 SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 para mapear os argumentos usados para justificar a exploração animal e o especismo, e para ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.
 
-**O projeto tem dois formatos: o site e este livro.** O livro reúne só o essencial de cada argumento: a frase, a falha principal, uma resposta e uma pergunta para devolver. O site é gratuito, mais completo e atualizado com frequência. Este livro registra o conteúdo como estava na data desta edição; ao acessar o site, você pode encontrar argumentos revistos e melhorados, num esforço contínuo e honesto de se aproximar cada vez mais da verdade. No site você encontra também:
+**O projeto tem dois formatos: o site e este livro.** O livro reúne só o essencial de cada argumento: a frase, a falha principal, uma réplica e uma pergunta para devolver. O site é gratuito, mais completo e atualizado com frequência. Este livro registra o conteúdo como estava na data desta edição; ao acessar o site, você pode encontrar argumentos revistos e melhorados, num esforço contínuo e honesto de se aproximar cada vez mais da verdade. No site você encontra também:
 
 - o capítulo completo de cada argumento: a versão mais forte, o que ele acerta, a desmontagem passo a passo, a melhor réplica, os erros e vieses, as contradições e as fontes;
 - o mapa de conexões entre os argumentos e o raciocínio antivegano passo a passo;

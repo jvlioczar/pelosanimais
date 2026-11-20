@@ -483,7 +483,7 @@
 
 **Descorna ou remoção de chifre** — procedimento de retirada dos chifres de bovinos, geralmente sem anestesia adequada. *Feita depois que o chifre já se ligou ao crânio, é mais invasiva que o amochamento: usa serras, fios ou cortadores e pode abrir os seios da face. No Reino Unido, a descorna de qualquer bovino exige anestesia local aplicada por veterinário, mas em muitos países não há essa exigência. Existem raças naturalmente sem chifres, e a seleção genética para essa característica é apontada como alternativa. Veja Amochamento e Anestesia.*
 
-**Desmama** — separação de um filhote de sua mãe antes do fim natural da amamentação, prática rotineira e precoce na pecuária leiteira. *Nas vacas leiteiras, o bezerro costuma ser separado da mãe nas primeiras horas ou dias de vida, para que o leite seja vendido, e mães e filhotes podem chamar e procurar um pelo outro por dias. Na suinocultura, os leitões são desmamados com três a quatro semanas, enquanto em condições semi-naturais o desmame termina por volta dos três a quatro meses. No gado de corte, o desmame é feito em geral por volta dos sete meses, mais perto da idade natural, que vai de sete a catorze meses. Veja Indústria dos lacticínios, Vitela e Leite.*
+**Desmama** — fim da amamentação de um filhote; na pecuária leiteira, a separação do bezerro e da mãe é feita nas primeiras horas ou dias, muito antes do desmame natural, que nos bovinos ocorre por volta dos 9 a 11 meses. *Nas vacas leiteiras, o bezerro costuma ser separado da mãe nas primeiras horas ou dias de vida, para que o leite seja vendido, e mães e filhotes podem chamar e procurar um pelo outro por dias. Na suinocultura, os leitões são desmamados com três a quatro semanas, enquanto em condições semi-naturais o desmame termina por volta dos três a quatro meses. No gado de corte, o desmame é feito em geral por volta dos sete meses, mais perto da idade natural, que vai de sete a catorze meses. Veja Indústria dos lacticínios, Vitela e Leite.*
 
 **Desvocalização** — procedimento cirúrgico que remove ou danifica as cordas vocais de um animal para impedir ou reduzir sua vocalização. *A cirurgia é feita sobretudo em cães, para que latam menos. É proibida para fins não terapêuticos pela Convenção Europeia para a Proteção dos Animais de Companhia, do Conselho da Europa, e por leis de vários países e de alguns estados dos Estados Unidos; no Brasil, o Conselho Federal de Medicina Veterinária proíbe a cordectomia em cães desde 2008. A crítica é que o procedimento trata o latido como um problema do tutor, e não como forma de comunicação do animal, quando há alternativas como o treino e a mudança de rotina. Veja Remoção de orelha (ear cropping), Caudectomia (tail docking) e Integridade física.*
 
@@ -619,7 +619,7 @@
 
 **Vaquejada** — prática tradicional brasileira em que dois vaqueiros a cavalo perseguem e derrubam um boi pela cauda, causando lesões físicas ao animal. *Em 2016, o Supremo Tribunal Federal julgou inconstitucional uma lei do Ceará que regulamentava a vaquejada, por considerar que a prática submete os animais a crueldade, o que a Constituição proíbe. Em 2017, o Congresso aprovou a Emenda Constitucional 96, que diz que práticas desportivas com animais registradas como manifestação cultural não são consideradas cruéis. O caso mostra o conflito entre tradição e proteção animal, e como a lei pode ser mudada para manter uma prática. Veja Rodeio, Tourada e Crueldade animal.*
 
-**Vitela** — carne proveniente de bezerros abatidos ainda jovens, geralmente criados em condições de confinamento extremo (caixa de vitela). *A vitela é um subproduto da indústria do leite: os bezerros machos das raças leiteiras não produzem leite e crescem devagar demais para a pecuária de corte, e por isso são mortos jovens, com dias, semanas ou poucos meses de vida. A carne clara tradicional depende de dieta pobre em ferro e de pouca movimentação. Mesmo onde as caixas de vitela foram proibidas, como na União Europeia, a separação da mãe e o abate jovem continuam. Veja Caixa de vitela (veal crate), Indústria dos lacticínios e Abate prematuro.*
+**Vitela** — carne de bezerros abatidos ainda jovens, também chamada carne de vitela, muitas vezes criados em confinamento intenso (a caixa de vitela). *A vitela é um subproduto da indústria do leite: os bezerros machos das raças leiteiras não produzem leite e crescem devagar demais para a pecuária de corte, e por isso são mortos jovens, com dias, semanas ou poucos meses de vida. A carne clara tradicional depende de dieta pobre em ferro e de pouca movimentação. Mesmo onde as caixas de vitela foram proibidas, como na União Europeia, a separação da mãe e o abate jovem continuam. Veja Caixa de vitela (veal crate), Indústria dos lacticínios e Abate prematuro.*
 
 **Vivissecção** — experimentação em animais vivos, termo historicamente carregado usado por movimentos antivivisseccionistas.
 
@@ -643,11 +643,9 @@
 
 **Carne** — tecido muscular e outros órgãos de animais usados como alimento. *A linguagem cotidiana costuma afastar a carne do animal: fala-se em filé, picanha ou peito, e não no boi ou na galinha mortos. No Brasil, muita gente não conta peixe e frutos do mar como carne, embora também sejam tecido de animais. Também se fala em "produzir" carne, como se fosse uma mercadoria qualquer, quando cada pedaço vem de um animal que foi criado e abatido, em geral muito jovem. Veja Referente ausente, Eufemismo e Abate.*
 
-**Carne de vitela** — carne obtida de bezerros abatidos ainda jovens, geralmente criados em confinamento extremo. *A vitela é em grande parte um subproduto da indústria do leite: os bezerros machos não produzem leite e são separados das mães logo após o nascimento. As caixas individuais em que muitos eram criados, sem espaço para se virar, foram proibidas no Reino Unido em 1990 e na União Europeia em 2007, mas ainda são usadas em outros países. Por isso, quem deixa de comer vitela mas continua consumindo laticínios segue sustentando o mesmo sistema. Veja Caixa de vitela (veal crate), Indústria dos lacticínios e Desmama.*
-
 **Churrasco** — técnica de preparo de carne grelhada em brasa, associada culturalmente ao consumo de carne bovina na América do Sul.
 
-**Colesterol** — substância lipídica presente exclusivamente em tecidos animais (ausente em alimentos vegetais), relevante em discussões nutricionais sobre dietas. *O corpo humano produz todo o colesterol de que precisa, por isso não há necessidade de obtê-lo pela alimentação. Plantas têm fitosteróis, de estrutura parecida, e apenas traços de colesterol, sem importância na dieta. Veja Dieta saudável e Nutrição.*
+**Colesterol** — substância lipídica produzida pelo próprio corpo e presente em quantidade relevante só em alimentos de origem animal; as plantas têm apenas traços dela, sem importância na dieta. *O corpo humano produz todo o colesterol de que precisa, por isso não há necessidade de obtê-lo pela alimentação. Plantas têm fitosteróis, de estrutura parecida, e apenas traços de colesterol, sem importância na dieta. Veja Dieta saudável e Nutrição.*
 
 **Foie-gras** — fígado gorduroso de patos ou gansos obtido por meio de alimentação forçada (gavagem), prática associada a grave sofrimento animal. *A produção por alimentação forçada é proibida em vários países, como Reino Unido, Alemanha e Israel, onde a proibição veio de uma decisão da Suprema Corte; a Índia proibiu a importação, e a Califórnia proíbe a venda desde 2012. A França é de longe o maior produtor e o protege por lei como patrimônio cultural. O argumento da tradição não muda o que acontece com as aves, que têm o fígado aumentado várias vezes pela engorda forçada. Veja Engorda e Relativismo cultural.*
 
@@ -655,13 +653,13 @@
 
 **Gelatina** — substância obtida do colágeno de ossos, peles e tecidos conectivos de animais, usada como espessante alimentar. *Por vir de ossos, peles e cartilagens de animais abatidos, sobretudo porcos e bois, a gelatina não é vegetariana. Ela aparece em lugares inesperados, como balas de goma, cápsulas de remédios, alguns iogurtes e na clarificação de certos vinhos e cervejas, em que nem sempre é listada no rótulo. Há substitutos vegetais, como o ágar e a pectina. Veja Agar, Sebo animal e Vegetarianismo.*
 
-**Laticínios** — produtos derivados do leite animal (queijo, iogurte, manteiga). *Muita gente que deixa de comer carne mantém os laticínios por achar que eles não envolvem morte, mas a produção de leite depende de gestações repetidas, separa os bezerros das mães e termina no abate das vacas e de muitos machos. Veja Leite, Indústria dos lacticínios e Carne de vitela.*
+**Laticínios** — produtos derivados do leite animal (queijo, iogurte, manteiga). *Muita gente que deixa de comer carne mantém os laticínios por achar que eles não envolvem morte, mas a produção de leite depende de gestações repetidas, separa os bezerros das mães e termina no abate das vacas e de muitos machos. Veja Leite, Indústria dos lacticínios e Vitela.*
 
-**Leite** — secreção mamária produzida por fêmeas de mamíferos para alimentar seus filhotes, extraída comercialmente de vacas, cabras e outras espécies. *Para produzir leite, a vaca precisa ter um filhote, e na pecuária leiteira ela costuma ser inseminada artificialmente a cada ano. Os bezerros em geral são separados das mães pouco depois do nascimento, para que o leite seja vendido; as fêmeas entram no rebanho e muitos machos vão para a vitela ou o abate. Quando a produção cai, depois de poucos anos, as vacas são abatidas, bem antes do fim da vida natural. Veja Indústria dos lacticínios, Inseminação artificial e Carne de vitela.*
+**Leite** — secreção mamária produzida por fêmeas de mamíferos para alimentar seus filhotes, extraída comercialmente de vacas, cabras e outras espécies. *Para produzir leite, a vaca precisa ter um filhote, e na pecuária leiteira ela costuma ser inseminada artificialmente a cada ano. Os bezerros em geral são separados das mães pouco depois do nascimento, para que o leite seja vendido; as fêmeas entram no rebanho e muitos machos vão para a vitela ou o abate. Quando a produção cai, depois de poucos anos, as vacas são abatidas, bem antes do fim da vida natural. Veja Indústria dos lacticínios, Inseminação artificial e Vitela.*
 
 **Manteiga** — gordura láctea obtida do batimento do creme de leite.
 
-**Margarina** — gordura para consumo geralmente de origem vegetal, embora versões antigas usassem gordura animal; hoje majoritariamente vegana, mas não obrigatoriamente.
+**Margarina** — gordura para passar feita principalmente de óleos vegetais; muitas são veganas, mas várias levam soro de leite, leite em pó ou vitamina D3 de lanolina, por isso vale ler o rótulo.
 
 **Mel** — substância açucarada produzida por abelhas a partir do néctar de flores; seu consumo é rejeitado pelo veganismo estrito por envolver exploração de insetos. *Na apicultura comercial são comuns práticas como cortar as asas da rainha, inseminá-la artificialmente, trocá-la periodicamente e substituir o mel retirado por xarope de açúcar. Pesquisas do grupo de Lars Chittka, em Londres, sugerem que abelhas podem ter alguma forma de experiência subjetiva, embora a questão siga em aberto. Há veganos que discordam sobre o mel por causa dessa incerteza, mas a posição da Vegan Society é que ele não é vegano. Veja Apicultura, Própolis e Insetivorismo.*
 
@@ -671,11 +669,13 @@
 
 **Queijo** — produto lácteo obtido pela coagulação do leite, tradicionalmente usando coalho de origem animal (rennet).
 
-**Rennet** — enzima (coalho) extraída do estômago de bezerros, usada na produção tradicional de queijo para coagular o leite. *O coalho tradicional vem do estômago de bezerros, e também de cordeiros e cabritos, mortos ainda jovens, por isso muitos queijos não são sequer vegetarianos. Hoje a maior parte dos queijos industriais nos Estados Unidos e no Reino Unido usa quimosina produzida por fermentação com microrganismos, mas queijos tradicionais protegidos, como o Parmigiano Reggiano, ainda exigem coalho animal. Os rótulos nem sempre dizem a origem do coalho. Veja Queijo, Laticínios e Vegetarianismo.*
+**Rennet** — enzima (coalho) extraída do estômago de bezerros, cordeiros ou cabritos jovens, usada na produção tradicional de queijo para coagular o leite. *O coalho tradicional vem do estômago de bezerros, e também de cordeiros e cabritos, mortos ainda jovens, por isso muitos queijos não são sequer vegetarianos. Hoje a maior parte dos queijos industriais nos Estados Unidos e no Reino Unido usa quimosina produzida por fermentação com microrganismos, mas queijos tradicionais protegidos, como o Parmigiano Reggiano, ainda exigem coalho animal. Os rótulos nem sempre dizem a origem do coalho. Veja Queijo, Laticínios e Vegetarianismo.*
 
 **Sebo animal** — gordura sólida extraída de tecidos animais, usada na produção de velas, sabões e alguns alimentos. *O sebo é um subproduto do abate e aparece em usos pouco visíveis, como sabonetes, velas, lubrificantes e aditivos industriais. Em 2016, o Banco da Inglaterra confirmou que as novas notas de 5 libras, de polímero, tinham traços de sebo; uma petição contra isso passou de 130 mil assinaturas, mas o banco manteve as notas, alegando custo. O caso mostra como derivados animais circulam em produtos que quase ninguém associa a animais. Veja Gelatina e Lanolina.*
 
 ---
+
+**Kebab** — prato de carne assada no espeto, comum no Oriente Médio, na Turquia e no Sul da Ásia, com versões vegetais cada vez mais comuns.
 
 ## 10. Produtos de Origem Vegetal
 
@@ -735,8 +735,6 @@
 
 **Homus** — pasta de grão-de-bico com tahine, azeite e limão, típica da culinária do Oriente Médio.
 
-**Kebab** — prato à base de carne assada em espeto, tradicionalmente de origem animal, com versões vegetais cada vez mais comuns.
-
 **Leite vegetal** — bebida de origem vegetal (soja, aveia, amêndoa etc.) usada como substituto do leite animal. *Em 2017, no caso TofuTown, o Tribunal de Justiça da União Europeia decidiu que nomes como leite, manteiga e queijo ficam reservados, no comércio, a produtos de origem animal; por isso, na Europa, muitos rótulos dizem "bebida de soja" ou "bebida de aveia". No uso comum, porém, "leite de coco" e "leite de soja" existem há muito tempo. Veja Leite, Laticínios e Carne vegetal.*
 
 **Levedura nutricional** — fungo desativado, rico em vitaminas do complexo B, usado para conferir sabor "amanteigado" ou de queijo a pratos veganos. *Só a levedura fortificada é fonte de vitamina B12; a levedura sem fortificação não tem quantidades confiáveis da vitamina, e vale ler o rótulo. Veja Vitamina B12.*
@@ -753,7 +751,7 @@
 
 **Queijo vegetal** — substituto do queijo tradicional feito a partir de oleaginosas, soja ou amidos, sem uso de leite animal.
 
-**Requesoy** — marca comercial brasileira de queijo vegetal cremoso à base de soja, inspirado na ricota.
+**Requei Soy** — marca brasileira (Life Co) de análogo vegetal de requeijão cremoso, à base de soja.
 
 **Róbson** ⚠️ — não foi possível confirmar com segurança o significado ou origem deste termo; pode ser nome de produto, marca regional ou erro de digitação. Recomendo revisar a fonte.
 
@@ -973,7 +971,7 @@
 
 **Interseccionalidade** — enquadramento teórico que analisa como diferentes formas de opressão, como racismo, sexismo, desigualdade de classe e capacitismo, se cruzam e produzem experiências específicas de discriminação. *O termo foi criado pela jurista Kimberlé Crenshaw, em 1989, para mostrar que a discriminação sofrida por mulheres negras não é a simples soma do racismo e do sexismo, e por isso passava despercebida tanto nas lutas antirracistas quanto nas feministas. A ideia tem raízes no feminismo negro, como no manifesto do Coletivo Combahee River, de 1977. Crenshaw tratava de opressões entre humanos. A inclusão da espécie é uma extensão proposta por autoras da ética animal, como Carol J. Adams e Lori Gruen, que veem uma lógica comum de dominação entre o especismo e outras opressões; outras autoras, inclusive feministas negras, discutem se essa extensão é adequada ou se dilui o sentido original. Veja Veganismo interseccional, Ecofeminismo, Afroveganismo (ou veganismo negro) e Escravidão animal.*
 
-**Justiça alimentar** — movimento que conecta acesso à alimentação digna com equidade social, incluindo dimensão animal e ambiental.
+**Justiça alimentar** — movimento que liga o acesso a alimentação adequada à equidade social e racial; em sua corrente principal é centrado em pessoas, e parte dele estende a análise aos animais e ao ambiente.
 
 ---
 

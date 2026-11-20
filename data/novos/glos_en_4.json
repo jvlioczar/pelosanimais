@@ -65,7 +65,7 @@
 {
 "i": 288,
 "termo": "Margarine",
-"def": "A fat for consumption that is generally of plant origin, although older versions used animal fat; today mostly vegan, but not necessarily.",
+"def": "A spread made mainly from vegetable oils; many are vegan, but several contain whey, milk powder or vitamin D3 from lanolin, so it is worth reading the label.",
 "com": "",
 "pt": "Margarina"
 },
@@ -646,7 +646,7 @@
 {
 "i": 371,
 "termo": "Rennet",
-"def": "An enzyme extracted from the stomach of calves, used in traditional cheese production to coagulate milk.",
+"def": "An enzyme extracted from the stomach of young calves, lambs or kids, used in traditional cheese production to coagulate milk.",
 "com": "Traditional rennet comes from the stomachs of calves, and also of lambs and kids, killed while young, which is why many cheeses are not even vegetarian. Today most industrial cheese in the United States and the United Kingdom uses chymosin produced by fermentation with microorganisms, but protected traditional cheeses such as Parmigiano Reggiano still require animal rennet. Labels do not always state where the rennet comes from. See Cheese, Dairy products and Vegetarianism.",
 "pt": "Rennet"
 }

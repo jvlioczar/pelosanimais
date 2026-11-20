@@ -2986,26 +2986,6 @@
   "ex": "\"Hidratada e temperada, a carne de soja virou recheio de pastel e substituiu a carne moída no molho à bolonhesa da família.\"",
   "ex_en": "\"Rehydrated and seasoned, the soy meat became pastry filling and replaced ground beef in the family's bolognese sauce.\""
  },
- "Carne de vitela": {
-  "tipo": "locução substantiva",
-  "tipo_en": "noun phrase",
-  "sin": [
-   "vitela",
-   "carne de bezerro"
-  ],
-  "sin_en": [
-   "calf meat"
-  ],
-  "ant": [],
-  "ant_en": [],
-  "veja": [
-   "Caixa de vitela (veal crate)",
-   "Indústria dos lacticínios",
-   "Desmama"
-  ],
-  "ex": "\"Poucos consumidores sabem que a carne de vitela no cardápio é um subproduto da indústria do leite, já que os bezerros machos não produzem leite.\"",
-  "ex_en": "\"Few consumers know that the veal on the menu is a by-product of the dairy industry, since male calves do not produce milk.\""
- },
  "Carne feliz (happy meat)": {
   "tipo": "locução substantiva",
   "tipo_en": "noun phrase",
@@ -3232,7 +3212,7 @@
   "ant_en": [],
   "veja": [
    "Creme vegetal",
-   "Requesoy",
+   "Requei Soy",
    "Proteína de soja"
   ],
   "ex": "\"No café da manhã vegano, ela passou o Catupsoy no pão quentinho, pois o creme de soja lembra o requeijão que comia na infância.\"",
@@ -9070,7 +9050,7 @@
   "veja": [
    "Leite",
    "Indústria dos lacticínios",
-   "Carne de vitela",
+   "Vitela",
    "Leite vegetal"
   ],
   "ex": "\"Ao cortar os laticínios, ele passou a usar manteiga vegetal e queijo de castanhas nas receitas.\"",
@@ -9249,7 +9229,7 @@
   "veja": [
    "Indústria dos lacticínios",
    "Inseminação artificial",
-   "Carne de vitela",
+   "Vitela",
    "Leite vegetal"
   ],
   "ex": "\"Para produzir leite continuamente, a vaca precisa ser engravidada de tempos em tempos, e seu bezerro é separado dela.\"",
@@ -12901,7 +12881,7 @@
   "ex": "“O zoológico anunciou o nascimento de um filhote de onça por reprodução em cativeiro, mas o animal viverá sempre em recinto fechado.”",
   "ex_en": "“The zoo announced the birth of a jaguar cub through captive breeding, but the animal will always live in an enclosure.”"
  },
- "Requesoy": {
+ "Requei Soy": {
   "tipo": "nome próprio",
   "tipo_en": "proper noun",
   "sin": [],
@@ -12914,8 +12894,8 @@
    "Soja",
    "Tofu"
   ],
-  "ex": "“Na lanchonete vegana, o pão de queijo vinha recheado com Requesoy, versão de soja do requeijão.”",
-  "ex_en": "“At the vegan snack bar, the cheese bun came stuffed with Requesoy, a soy-based version of cream cheese.”"
+  "ex": "“Na lanchonete vegana, o pão de queijo vinha recheado com Requei Soy, versão de soja do requeijão.”",
+  "ex_en": "“At the vegan snack bar, the cheese bun came stuffed with Requei Soy, a soy-based version of cream cheese.”"
  },
  "Resgate": {
   "tipo": "substantivo masculino",
@@ -15870,6 +15850,7 @@
   "tipo": "substantivo feminino",
   "tipo_en": "noun",
   "sin": [
+   "carne de vitela",
    "Carne de bezerro"
   ],
   "sin_en": [
@@ -15879,7 +15860,7 @@
   "ant_en": [],
   "veja": [
    "Caixa de vitela (veal crate)",
-   "Carne de vitela",
+   "Vitela",
    "Indústria dos lacticínios",
    "Abate prematuro"
   ],

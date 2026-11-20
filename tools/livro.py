@@ -68,6 +68,16 @@ def paragrafos(t):
 def vazio(rotulo):
     return f'<div class="vazio">{e(rotulo)}</div>'
 
+def chave_pix():
+    """A chave Pix fica fora do código, como no site: variável de ambiente GUIA_PIX ou o arquivo pessoal ~/.guia-doacoes."""
+    v = os.environ.get('GUIA_PIX', '').strip()
+    arq = os.path.join(os.path.expanduser('~'), '.guia-doacoes')
+    if not v and os.path.exists(arq):
+        for ln in open(arq, encoding='utf-8'):
+            k, _, val = ln.partition('=')
+            if k.strip() == 'GUIA_PIX': v = val.strip()
+    return v
+
 def essencial(c):
     """Resposta curta e pergunta de retorno, em texto simples (seção 4 do capítulo)."""
     if c not in B.CAPS: return [], ''
@@ -174,6 +184,7 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .falha{background:var(--areia);border-radius:3mm;padding:3mm 4mm;margin:0 0 5mm}
 .falha .txt{margin:0;font-weight:600;color:var(--tinta);line-height:1.4}
 .curta p{margin:0 0 2.6mm}
+.doacao{margin-top:4mm}.doacao code{font:500 0.95em var(--mono)}
 .retorno{background:var(--tinta);color:#fff;border-radius:3.5mm;padding:3.4mm 4.5mm;margin:4mm 0 0}
 .retorno .ti{color:var(--amarelo);margin-bottom:1.4mm}
 .retorno .txt{margin:0;font-weight:600;line-height:1.4}
@@ -218,6 +229,7 @@ def gera():
         L.add(f'<p><strong>{e(TITULO)}</strong></p>'
               f'<p>© {ANO} {e(T.AUTOR)}<br/>{"Publicado por " + e(T.EDITORA) + ". " if T.EDITORA else ""}Edição digital de {B.ATUALIZADO[8:10]}/{B.ATUALIZADO[5:7]}/{ANO}.</p>'
               f'<p>O conteúdo completo e atualizado deste livro está disponível gratuitamente em <a href="{B.SITE_PT}">{e(SITE)}</a>.</p>'
+              '<p>Texto sob a licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>: pode ser copiado, compartilhado e adaptado, inclusive para fins comerciais, desde que a fonte seja citada. Materiais de terceiros citados seguem as licenças de origem.</p>'
               f'<p>Fontes tipográficas: Mozilla Headline, Inter e JetBrains Mono, sob a licença SIL Open Font License.</p>'
               f'<div class="ficha">{ficha}</div>', 'creditos', num=False)
         L.add(f'<div class="txt">{paragrafos(T.DEDICATORIA)}</div>' if T.DEDICATORIA.strip() else vazio('Dedicatória (opcional)'), 'ded', num=False)
@@ -237,16 +249,20 @@ def gera():
         L.impar()
         como = (f'<h2>Como usar este livro</h2>'
                 f'<p>Este livro reúne o essencial de {len(B.ARGS)} argumentos usados contra o veganismo e o antiespecismo, um por página, organizados em {len(fams)} famílias. '
-                'Cada argumento aparece na forma em que costuma ser dito, com uma resposta direta e curta. O que ele acerta, a versão mais forte e a desmontagem completa ficam no capítulo do site.</p>'
+                'Cada argumento aparece na forma em que costuma ser dito, com uma réplica direta, do jeito que se diria à pessoa. O que ele acerta, a versão mais forte e a desmontagem completa ficam no capítulo do site.</p>'
                 '<p>Em cada página você encontra:</p><ul>'
                 '<li><strong>A frase</strong>, como ela costuma aparecer numa conversa;</li>'
                 '<li><strong>A falha principal</strong>, em uma linha;</li>'
-                '<li><strong>Uma resposta curta</strong>, para usar na hora;</li>'
+                '<li><strong>Uma réplica</strong>, para usar na hora;</li>'
                 '<li><strong>Uma pergunta</strong> para devolver e manter a conversa aberta;</li>'
                 '<li><strong>Um botão</strong>, “Veja o argumento completo”, que abre o capítulo no site, com a versão mais forte do argumento, a desmontagem passo a passo, os erros e vieses, as conexões e as fontes.</li></ul>'
                 '<div class="caixa"><p><strong>Argumentos diretos e indiretos.</strong> Os argumentos da Parte DIR discutem se é certo explorar os animais. '
                 'Os da Parte IND discutem saúde, ambiente, economia ou quem defende o veganismo. Nesses, vale corrigir os fatos e depois voltar à pergunta de fundo: '
                 'os interesses dos animais contam?</p></div>')
+        pix = chave_pix()
+        if pix:
+            como += (f'<p class="doacao"><strong>Gostou do livro?</strong> Uma doação ajuda a manter o site no ar e a fazer mais projetos para ajudar os animais. '
+                     f'Pix: <code>{e(pix)}</code></p>')
         num['como'] = L.add(f'<div class="texto">{como}</div>', ancora='como')
         lista = ''.join(f'<li><span class="l" style="background:{f["cor"]}">{f["c"]}</span><div><strong>{e(f["nome"])}</strong>'
                         f'<p>{e(T.FAMILIAS.get(f["c"], f["perg"]))}</p></div></li>' for f in fams)
