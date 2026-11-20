@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 274 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 276 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -31,6 +31,7 @@ Os animais contam moralmente?
 - [A23. Direitos são invenção humana, só valem para humanos](https://pelosanimais.biblioverse.org/argumentos/direitos-sao-invencao-humana-so-valem-para-humanos.html): Falácia genética: a origem de uma norma não define seu alcance
 - [A24. A moral existe para nos proteger uns dos outros](https://pelosanimais.biblioverse.org/argumentos/a-moral-existe-para-nos-proteger-uns-dos-outros.html): Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática
 - [A25. Animais são propriedade](https://pelosanimais.biblioverse.org/argumentos/animais-sao-propriedade.html): Descreve um estatuto legal, não o justifica (como na escravidão)
+- [A26. Tratar bem os animais é questão de compaixão, não de justiça](https://pelosanimais.biblioverse.org/argumentos/tratar-bem-os-animais-e-questao-de-compaixao-nao-de-justica.html): Um dever de compaixão que ninguém pode fazer valer cede a quem quer descumpri-lo, e o critério usado para excluir os animais da justiça excluiria também bebês
 
 ## B. Dano, morte e bem-estar (Parte DIR)
 
@@ -53,6 +54,7 @@ Matar sem sofrimento prejudica o indivíduo?
 - [B15. Você não vive na fazenda para saber a verdade](https://pelosanimais.biblioverse.org/argumentos/voce-nao-vive-na-fazenda-para-saber-a-verdade.html): O que se critica está nos manuais e normas da própria produção; e atacar quem fala não mostra que o que é dito está errado
 - [B16. É uma troca justa: a gente cuida e alimenta, e eles dão a carne](https://pelosanimais.biblioverse.org/argumentos/e-uma-troca-justa-a-gente-cuida-e-alimenta-e-eles-dao-a-carne.html): Uma troca exige que os dois lados possam recusar; quem protege é quem mata, e o preço é a vida do animal
 - [B17. Os animais não ligam, até gostam e, de certa forma, consentem](https://pelosanimais.biblioverse.org/argumentos/os-animais-nao-ligam-ate-gostam-e-de-certa-forma-consentem.html): Parecer calmo não é não se importar, e gostar de comida não é gostar de ser morto; consentir exige entender e poder recusar, e a morte é um dano mesmo sem ser percebida
+- [B18. O problema é o sofrimento, não o uso](https://pelosanimais.biblioverse.org/argumentos/o-problema-e-o-sofrimento-nao-o-uso.html): Quase todo uso para alimento termina em morte, que é dano mesmo sem dor, e as práticas reais de carne, leite e ovos não são o uso sem sofrimento que a tese supõe
 
 ## C. Natureza, biologia e evolução (Parte DIR)
 
