@@ -140,9 +140,7 @@ UI = [
  ('O veganismo é uma consequência do antiespecismo e do sencientismo, não o limite deles.', 'Veganism is a consequence of antispeciesism and sentientism, not their limit.'),
  ('<p class="ti">Nesta seção</p>', '<p class="ti">In this section</p>'),
  # ---------- political objections ----------
- ('O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.', 'What each ethical or political theory usually says to leave animals out, and why that exclusion contradicts the theory\'s own principle.'),
- ('A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.',
-  'The section draws on the book <em>An Introduction to Animals and Political Theory</em>, by Alasdair Cochrane, the article <em>Animal Rights, Multiculturalism, and the Left</em>, by Will Kymlicka and Sue Donaldson, and two essays by Julio Cesar Prava, revised: the claims were checked and the analogies adjusted so as not to say more than the evidence allows.'),
+ ('O que cada teoria ética ou política costuma dizer para deixar os animais de fora, por que essa exclusão contradiz o próprio princípio da teoria e por que os animais devem ser incluídos.', 'What each ethical or political theory usually says to leave animals out, why that exclusion contradicts the theory\'s own principle, and why animals should be included.'),
  ('<h2>Por que excluir os animais contradiz o princípio</h2>', '<h2>Why excluding animals contradicts the principle</h2>'),
  ('<p class="ti">A melhor réplica</p>', '<p class="ti">The strongest counter-reply</p>'),
  ('<p class="ti">A resposta</p>', '<p class="ti">The answer</p>'),

@@ -368,7 +368,7 @@ NOVOS = [
     ('N23', 'Salvar um animal selvagem só prolonga a agonia', ['Você salva hoje e ele morre amanhã de outra coisa', 'Se a vida deles é tão ruim, melhor deixar morrer', 'Se a vida na natureza é sofrimento, a conclusão de vocês é matar todos?'], 'O que faz sofrer costuma ser o que mata, então tratar a causa tira o sofrimento; e parte da ajuda só evita nascimentos'),  # do livro de Cunha, 2026-11-20
     ('N24', 'Ajudar os mais fracos estraga a seleção natural', ['É a seleção natural, só os fortes sobrevivem', 'Se salvar o bicho doente, a espécie enfraquece', 'O predador faz bem à presa, porque elimina os doentes'], 'A seleção favorece quem deixa mais descendentes, não quem vive bem; espécies não sentem, e com humanos essa ideia se chama eugenia'),  # do livro de Cunha, 2026-11-20
     ('N25', 'A natureza é justa, cada animal tem armas para escapar', ['O leão é forte, mas a gazela é rápida', 'Cada bicho nasce preparado para se defender', 'Se a presa fosse tão fraca, já teria sido extinta'], 'A maioria das vítimas são filhotes sem defesa, os predadores escolhem os mais fracos, e uma espécie sobreviver não mostra que cada indivíduo escapa'),  # do livro de Cunha, 2026-11-20
-    ('N26', 'Os domésticos são responsabilidade nossa, os selvagens não', ['Cachorro e gato a gente domesticou, bicho do mato é da natureza', 'Bicho selvagem sabe se virar', 'Primeiro os animais de rua, que são culpa nossa'], 'Uma relação especial pode dar prioridade, mas não apaga o dever com os outros; ajudamos humanos distantes sem relação nenhuma com eles'),  # do livro de Cunha, 2026-11-20
+    ('N26', 'Os animais domésticos são responsabilidade nossa, os selvagens não', ['Os domésticos são responsabilidade nossa, os selvagens não', 'Cachorro e gato a gente domesticou, bicho do mato é da natureza', 'Bicho selvagem sabe se virar', 'Primeiro os animais de rua, que são culpa nossa'], 'Uma relação especial pode dar prioridade, mas não apaga o dever com os outros; ajudamos humanos distantes sem relação nenhuma com eles'),  # do livro de Cunha, 2026-11-20
     ('N27', 'Falar de animais selvagens afasta as pessoas do veganismo', ['Isso queima o filme do movimento', 'Primeiro a gente acaba com a pecuária, depois pensa nisso', 'Vocês querem salvar até o mosquito? Aí já é demais'], 'É uma previsão que ninguém mediu; as pesquisas mostram que a maioria já se importa com esses animais, e a forma de falar pode ser cuidadosa'),  # do livro de Cunha, 2026-11-20
     ('D15', 'Ser vegano não faz você mais evoluído espiritualmente', ['Espiritualidade está no coração, e não no prato', 'Evolução espiritual não tem nada a ver com dieta', 'Tem muito vegano arrogante, isso não é evolução'], 'Troca a pergunta: o ponto não é quem está mais evoluído, e sim se causar sofrimento e morte evitáveis a animais inocentes tem justificativa'),  # 2026-11-20
     ('A26', 'Tratar bem os animais é questão de compaixão, não de justiça', ['Ninguém deve ser cruel com os animais, mas isso é consciência de cada um, não assunto de lei', 'Gostar de bicho é bonito, mas direitos são para pessoas', 'Agora o Estado vai fiscalizar como eu trato a minha galinha?'], 'Um dever de compaixão que ninguém pode fazer valer cede a quem quer descumpri-lo, e o critério usado para excluir os animais da justiça excluiria também bebês'),  # do livro de Cochrane, 2026-11-20
@@ -1044,11 +1044,10 @@ def paginas_politicas():
     def nos(cods, pre='../'):
         return ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="{pre}argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in cods))
     cards = ''.join(f'<a class="cartao" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3><p class="falha">{e(t["principio"])}</p></a>' for i, t in enumerate(politicas.TEORIAS))
-    corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas e éticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, e por que essa exclusão contradiz o princípio da própria teoria.') + f'''<section class="secao"><div class="wrap">
+    corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas e éticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, por que essa exclusão contradiz o próprio princípio da teoria e por que os animais devem ser incluídos.') + f'''<section class="secao"><div class="wrap">
 <p class="estreito" style="margin:0 0 26px">{e(politicas.INTRO)}</p>
 <h2 class="so-leitor">{L("As teorias", "The theories")}</h2><div class="grade">{cards}</div>
 {espectro()}
-<p class="fino" style="margin-top:26px">A seção parte do livro <em>An Introduction to Animals and Political Theory</em>, de Alasdair Cochrane, do artigo <em>Animal Rights, Multiculturalism, and the Left</em>, de Will Kymlicka e Sue Donaldson, e de dois textos de Julio Cesar Prava, revistos: as afirmações foram conferidas e as analogias, ajustadas para não dizer mais do que a evidência permite.</p>
 </div></section>'''
     page('objecoes-politicas.html', 'Objeções políticas e éticas', L('Liberalismo, marxismo, anarquismo, utilitarismo, Rawls, Kant, feminismo, antirracismo e outras teorias: por que nenhuma oferece, nos próprios termos, razão para excluir os animais.', 'Liberalism, Marxism, anarchism, utilitarianism, Rawls, Kant, feminism, anti-racism and other theories: why none offers, on its own terms, a reason to exclude animals.'), corpo, 'objecoes-politicas.html', 'CollectionPage')
     T = politicas.TEORIAS
@@ -1377,6 +1376,14 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
                     'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying'), 'familias': ('Família de argumentos', 'Argument family'), 'debate.html': ('Debate simulado', 'Simulated debate'), 'treino.html': ('Treino com cartões', 'Flashcard practice')}
 
+GLOS_ARGS = {  # termo do glossário (sem acento, minúsculas) -> argumentos que tratam dele, além dos achados pelo título
+    'agronegocio': ['J14', 'J13'], 'agropecuaria': ['J13', 'J14'], 'pecuaria': ['J13', 'J15'], 'industria da carne': ['J13', 'J15'],
+    # quando o termo está aqui, só estes valem (a busca pelo título ligava termos genéricos a argumentos que não tratam deles)
+    'argumento': [], 'biologia': [], 'liberdade': ['E2'], 'consumo': ['K4', 'K5'], 'vegetariano': ['J10', 'L29'],
+}
+
+GLOS_ARGS_SO = {'argumento', 'biologia', 'liberdade', 'consumo', 'vegetariano'}
+
 def pagina_glossario():
     """Glossário em uma página só (dados em data/glossario.md e data/novos/glossario_extra.json, lidos por tools/glossario.py).
     Tem busca, filtro por tema, A–Z, remissivas entre verbetes, links para as páginas do guia que aprofundam o termo e DefinedTermSet para os buscadores."""
@@ -1458,6 +1465,17 @@ def pagina_glossario():
         return out + em(texto[pos:])
     # páginas do guia: mapa fixo (GLOS_GUIA) e, para vieses e falácias, correspondência pelo nome
     ancoras_v = {slug(i['n']) for i in VIESES}; ancoras_f = {slug(i['n']) for i in FALACIAS}
+    # argumentos cujo título contém o termo (só quando são até 3, para não ligar termos genéricos), mais o mapa GLOS_ARGS
+    _titulos_pt = [(c, norm(a.get('frase_pt', a['frase']))) for c, a in ARGS.items()]
+    def args_do_termo(v):
+        t = norm(v['pt'])
+        cods = list(GLOS_ARGS.get(t, []))
+        base = re.sub(r'\s*\(.*?\)', '', t).strip()
+        if len(base) >= 5 and t not in GLOS_ARGS_SO:
+            pad = re.compile(r'(?<![a-z])' + re.escape(base) + r's?(?![a-z])')
+            achados = [c for c, f in _titulos_pt if pad.search(f)]
+            if len(achados) <= 3: cods += [c for c in achados if c not in cods]
+        return cods[:4]
     def guia(v):
         t = norm(v['pt']); os_ = []
         alvo = GLOS_GUIA.get(t)
@@ -1471,6 +1489,10 @@ def pagina_glossario():
                 if norm(re.sub(r'\s*\(.*?\)', '', nome)) == norm(base):
                     sl = slug(val[0] if EN else nome)
                     if sl in ancoras: os_.append((L('Vieses', 'Biases') if pag == 'vieses' else L('Falácias', 'Fallacies'), f'{pag}.html#{sl}'))
+        ja = {u for _, u in os_}
+        for c in args_do_termo(v):
+            u = f'argumentos/{SLUG_ARG[c.lower()]}.html'
+            if u not in ja: os_.append((f'{c} · ' + ARGS[c]['frase'].rstrip('.'), u)); ja.add(u)
         return os_
     # complementos (tipo, sinônimos, antônimos, veja também, exemplo): data/novos/glos_meta.json, por termo em português
     caminho_meta = os.path.join(ROOT, 'data', 'novos', 'glos_meta.json')
@@ -1766,6 +1788,7 @@ if not EN:  # o site em inglês já nasce com os endereços legíveis
     redireciona('argumentos', 'matar-insetos-nos-protege', SLUG_ARG['f6'])  # antigo F7 unido ao F6 (2026-11-19)
     redireciona('argumentos', 'a-caca-de-trofeu-financia-a-conservacao', SLUG_ARG['i26'])  # título trocado em 2026-11-20
     redireciona('argumentos', 'sencientistas-defendem-o-parasitismo', SLUG_ARG['n13'])  # título trocado em 2026-11-20
+    redireciona('argumentos', 'os-domesticos-sao-responsabilidade-nossa-os-selvagens-nao', SLUG_ARG['n26'])  # título trocado em 2026-11-20
 else:  # endereços em inglês que mudaram quando a frase do argumento foi corrigida
     for velho, c in {'so-should-we-stop-lions-from-hunting': 'f4', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'f2', 'killing-insects-protects-us': 'f6', 'trophy-hunting-funds-conservation': 'i26', 'sentientists-defend-parasitism': 'n13'}.items():
         novo = SLUG_ARG[c]
