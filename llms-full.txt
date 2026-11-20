@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 278 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 279 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -92,6 +92,7 @@ O costume justifica?
 - [D12. Minha religião aprova o consumo de animais](https://pelosanimais.biblioverse.org/argumentos/minha-religiao-aprova-o-consumo-de-animais.html): Permitir não é obrigar, e as próprias tradições religiosas proíbem o sofrimento desnecessário, que a produção atual causa em massa
 - [D13. O sacrifício de animais em rituais religiosos é liberdade de culto](https://pelosanimais.biblioverse.org/argumentos/o-sacrificio-de-animais-em-rituais-religiosos-e-liberdade-de-culto.html): A liberdade de culto responde se o Estado pode proibir o rito, e não se matar o animal é justo; essa pergunta vale igualmente para o rito e para o matadouro, e criticar só as religiões afro-brasileiras é incoerente
 - [D14. Vou pagar pelos meus erros na próxima vida](https://pelosanimais.biblioverse.org/argumentos/vou-pagar-pelos-meus-erros-na-proxima-vida.html): A frase admite o erro e adia a conta, mas quem paga agora é o animal; as tradições do carma ensinam a não violência
+- [D15. Ser vegano não faz você mais evoluído espiritualmente](https://pelosanimais.biblioverse.org/argumentos/ser-vegano-nao-faz-voce-mais-evoluido-espiritualmente.html): Troca a pergunta: o ponto não é quem está mais evoluído, e sim se causar sofrimento e morte evitáveis a animais inocentes tem justificativa
 
 ## E. Relativismo, liberdade e evasões (Parte DIR)
 
