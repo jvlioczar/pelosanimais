@@ -203,7 +203,7 @@
   "termo": "Natureza idílica",
   "sec": 5,
   "def": "visão de que a vida dos animais na natureza é, em geral, boa e feliz, em equilíbrio e livre de sofrimento relevante.",
-  "com": "É a visão popular e padrão, apoiada em imagens enviesadas: animais grandes e carismáticos aparecem muito mais em capas e documentários do que a maioria dos animais selvagens, que são invertebrados e têm muitos filhotes, quase todos morrendo cedo. Oscar Horta e a Ética Animal criticam essa visão. Ver Biologia do bem-estar.",
+  "com": "É a visão popular e padrão, apoiada em imagens enviesadas: animais grandes e carismáticos aparecem muito mais em capas e documentários do que a maioria dos animais selvagens, que são invertebrados e têm muitos filhotes, quase todos morrendo cedo. Oscar Horta e a Ética Animal criticam essa visão. A visão oposta, de que o sofrimento predomina na natureza, também é contestada: Zach Groff e Yew-Kwang Ng (2019) acharam um erro no modelo de Ng de 1995 e concluíram que o saldo é incerto, e Heather Browning e Walter Veit (2023) argumentam que as vidas selvagens podem ser bem mais positivas do que se supõe. Luciano Carlos Cunha (2022) responde que, mesmo com saldo positivo, continuaria havendo razões para ajudar os animais que sofrem, e lembra que a ideia de equilíbrio da natureza não tem definição clara na ecologia. Veja Biologia do bem-estar, Equilíbrio ecológico e Sofrimento dos animais selvagens.",
   "links": []
  },
  {
@@ -665,14 +665,14 @@
   "termo": "Controle populacional de animais",
   "sec": 8,
   "def": "conjunto de métodos para reduzir o número de animais de uma população, que vão da matança (abate de controle, caça, envenenamento) a métodos não letais, como a castração e a contracepção.",
-  "com": "Para cães e gatos de rua, o método de captura, esterilização e devolução (CED) é uma alternativa à captura e morte. Em animais selvagens, já se usam vacinas contraceptivas, por exemplo em cavalos selvagens nos Estados Unidos. Do ponto de vista sencientista, métodos não letais são preferíveis quando funcionam, e a pergunta não é só quantos animais existem, mas como vivem e morrem. A matança costuma ser defendida como mais barata ou mais rápida, mas em muitos casos a população volta a crescer. Veja Castração, Espécie exótica invasora e Pragas.",
+  "com": "Para cães e gatos de rua, o método de captura, esterilização e devolução (CED) é uma alternativa à captura e morte. Em animais selvagens, já se usam vacinas contraceptivas, por exemplo em cavalos selvagens nos Estados Unidos. Do ponto de vista sencientista, métodos não letais são preferíveis quando funcionam, e a pergunta não é só quantos animais existem, mas como vivem e morrem. A matança costuma ser defendida como mais barata ou mais rápida, mas em muitos casos a população volta a crescer. Para os animais selvagens, Luciano Carlos Cunha (2022) defende esterilizar sem consentimento apenas quando três condições se cumprem: alta probabilidade de que os filhotes tenham vidas de sofrimento extremo, alta probabilidade de reprodução e ausência de meio menos danoso igualmente eficaz; observa também que esterilizar fêmeas é mais eficiente, já que um macho fecunda muitas fêmeas. Ele distingue esses casos dos de humanos em situação de pobreza, em que o obstáculo é social, mas críticos veem na comparação um eco de políticas eugenistas de esterilização forçada, e a justiça reprodutiva e o ecofeminismo rejeitam o princípio. Veja Castração, Espécie exótica invasora, Pragas e Técnica do inseto estéril.",
   "links": []
  },
  {
   "termo": "Espécie exótica invasora",
   "sec": 8,
   "def": "espécie levada por humanos para fora de sua área de origem que se espalha e causa danos a ecossistemas, a outras espécies ou à economia, como o javali-europeu no Brasil.",
-  "com": "O combate a essas espécies costuma ser feito pela matança em grande escala, o que cria um conflito entre a visão conservacionista, que valoriza espécies e ecossistemas, e a sencientista, que olha para cada indivíduo. Os próprios animais invasores não têm culpa de estar ali. Sencientistas não negam o dano ecológico, mas pedem métodos que causem menos sofrimento e atenção também aos animais nativos afetados. No Brasil, a caça ao javali autorizada para controle tem sido criticada por servir também de pretexto para a caça esportiva. Veja Ambientalismo holista, Ambientalismo sencientista e Controle populacional de animais.",
+  "com": "O combate a essas espécies costuma ser feito pela matança em grande escala, o que cria um conflito entre a visão conservacionista, que valoriza espécies e ecossistemas, e a sencientista, que olha para cada indivíduo. Os próprios animais invasores não têm culpa de estar ali. Sencientistas não negam o dano ecológico, mas pedem métodos que causem menos sofrimento e atenção também aos animais nativos afetados. No Brasil, a caça ao javali autorizada para controle tem sido criticada por servir também de pretexto para a caça esportiva. Nem toda espécie exótica é invasora: exótica é a que vive fora da sua área de origem, e invasora é a exótica que se espalha e ameaça metas como a biodiversidade, de modo que o critério é ambiental, e não o sofrimento dos animais. Um caso citado por Luciano Carlos Cunha (2022) é o do pato-de-rabo-alçado-americano (Oxyura jamaicensis), levado ao Reino Unido nos anos 1940, que escapou para a natureza e chegou à Espanha, onde se cruzou com o pato-de-rabo-alçado europeu (Oxyura leucocephala), ameaçado de extinção; para proteger a espécie nativa de híbridos, a Espanha mata patos americanos desde os anos 1990, e o Reino Unido abateu milhares deles num programa de erradicação iniciado em 2005. Veja Ambientalismo holista, Ambientalismo sencientista, Controle populacional de animais e Biologia da conservação.",
   "links": []
  },
  {
@@ -1473,6 +1473,223 @@
   "sec": 4,
   "def": "princípio de Ronald Dworkin de que o Estado deve tratar cada pessoa com igual consideração, pelos seus interesses e bem-estar, e com igual respeito, pelas suas escolhas de vida.",
   "com": "Dworkin o apresentou em *Levando os direitos a sério* (1977), ao interpretar a teoria de John Rawls, e o desenvolveu em *A virtude soberana* (2000). Ele o restringia aos humanos capazes de fazer planos e de agir com justiça, mas as duas metades têm origens diferentes: o respeito se liga à autonomia, e a consideração vem de sermos seres que sentem e têm necessidades, o que vale também para os animais sencientes. Por isso, autores como Alasdair Cochrane argumentam que a parte da consideração se estende naturalmente aos animais, mesmo que a do respeito se aplique a eles de outro modo. Não confundir com a igual consideração de interesses de Peter Singer: a de Dworkin é um princípio sobre como o Estado trata seus membros; a de Singer, um princípio moral geral sobre o peso de interesses semelhantes. Veja Igual consideração, Autonomia, Liberalismo e Justiça.",
+  "links": []
+ },
+ {
+  "termo": "Danos naturais",
+  "sec": 3,
+  "def": "danos que os seres sencientes sofrem por causas que não vêm de práticas humanas, como doenças, parasitas, fome, frio, predação e desastres.",
+  "com": "Luciano Carlos Cunha usa a expressão em *Razões para ajudar* (2022) como sinônimo de danos não antropogênicos e reconhece que o rótulo é discutível, porque parece pôr os humanos fora da natureza. Para quem olha para o animal que sofre, a origem do dano não muda o que ele sente: uma fratura causada por uma queda dói tanto quanto uma causada por uma armadilha, e por isso Cunha e Oscar Horta negam que os danos naturais sejam neutros em valor. Uma confusão frequente, apontada por Horta, é chamar de antropocêntrico o que é apenas antropogênico: uma ajuda decidida e feita por humanos é antropogênica, mas só seria antropocêntrica se visasse o bem dos humanos e ignorasse o dos animais. Quem defende deixar a natureza seguir seu curso costuma aceitar o dever de não causar danos e recusar o de prevenir os naturais, e essa assimetria é o centro do debate sobre os animais selvagens. Veja Sofrimento de causas naturais, Sofrimento dos animais selvagens, Antropocentrismo e Tese da equivalência.",
+  "links": []
+ },
+ {
+  "termo": "Dinâmica populacional",
+  "sec": 2,
+  "def": "ramo da ecologia que estuda como o tamanho das populações varia ao longo do tempo, conforme as taxas de nascimento, morte e migração.",
+  "com": "Um de seus dados mais importantes para a ética é a mortalidade por idade, isto é, a proporção de animais de uma espécie que morre em cada fase da vida, resumida em tabelas de vida e curvas de sobrevivência. Na maioria das espécies, que põem centenas ou milhares de ovos, quase todos os filhotes morrem pouco depois de nascer, padrão que os ecólogos chamam de curva de sobrevivência do tipo III. Autores como Oscar Horta, Catia Faria e Luciano Carlos Cunha usam esses dados para argumentar que, se esses filhotes já sentem, uma morte precoce, muitas vezes por fome ou predação, é a experiência típica de um animal selvagem. O ponto empírico mais discutido é quando começa a senciência nessas fases iniciais, o que ainda é incerto em muitos grupos, como larvas de peixes e de insetos. Veja Capacidade de carga, Estratégias reprodutivas r e K, Animais altriciais e precociais e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Capacidade de carga",
+  "sec": 2,
+  "def": "o tamanho máximo de população de uma espécie que um ambiente consegue manter de forma duradoura, dados os recursos disponíveis, representado nos modelos pela letra K.",
+  "com": "O conceito aparece na equação logística, proposta pelo matemático belga Pierre-François Verhulst em 1838, em que o crescimento de uma população desacelera à medida que ela se aproxima de K. Na ética dos animais selvagens, o ponto central é que o número de filhotes que nascem costuma ser muito maior do que a capacidade de carga, de modo que, numa população estável, o excedente morre, em geral cedo. Por isso, oferecer mais comida sem controlar a natalidade pode apenas aumentar o número de animais que nascem e morrem, e é por esse motivo que propostas como a contracepção aparecem nesse debate. Ecólogos criticam o uso da capacidade de carga como um número fixo, já que ela varia com o clima, com as outras espécies e ao longo do tempo. Veja Dinâmica populacional, Estratégias reprodutivas r e K e Controle populacional de animais.",
+  "links": []
+ },
+ {
+  "termo": "Estratégias reprodutivas r e K",
+  "sec": 2,
+  "def": "distinção entre espécies que têm muitos filhotes e investem pouco em cada um (estrategistas r) e espécies que têm poucos filhotes e cuidam deles (estrategistas K).",
+  "com": "As letras vêm da equação logística: r é a taxa de crescimento da população, e K, a capacidade de carga. A teoria da seleção r/K foi formulada por Robert MacArthur e Edward O. Wilson em 1967 e ampliada por Eric Pianka em 1970, que lhe atribuiu uma série de previsões sobre outros traços dos animais. Hoje ela é considerada ultrapassada na ecologia e deu lugar à teoria da história de vida, que fala num contínuo entre histórias de vida rápidas e lentas, como mostram David Reznick e colegas numa revisão de 2002; a distinção básica entre ter muitos ou poucos filhotes, porém, continua válida, como observa Luciano Carlos Cunha (2022). \"Estratégia\" é uma metáfora, porque os animais não planejam como se reproduzem. O ponto ético é que a maioria dos animais nasce em espécies do primeiro tipo, nas quais quase todos os filhotes morrem logo, embora Heather Browning e Walter Veit (2023) contestem que isso implique tanto sofrimento quanto se costuma supor. Veja Dinâmica populacional, Capacidade de carga e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Animais altriciais e precociais",
+  "sec": 2,
+  "def": "classificação dos animais conforme o grau de desenvolvimento ao nascer ou sair do ovo: os precociais já nascem relativamente maduros e móveis, e os altriciais nascem pouco desenvolvidos e dependem de cuidado parental.",
+  "com": "Exemplos clássicos são os potros e os patinhos, precociais, e os filhotes de passarinhos e de humanos, altriciais; Augustine, Lika e Kooijman (2019) mostram que se trata de um contínuo, e não de duas caixas. A distinção pesa no debate sobre o sofrimento dos animais selvagens porque às vezes se diz que os filhotes que morrem cedo ainda não sentem nada. Luciano Carlos Cunha (2022) responde que ser imaturo não é o mesmo que não ser senciente e que a maior parte dos animais pequenos que têm muitos filhotes é precocial, isto é, precisa se virar sozinha desde cedo. A questão empírica, porém, continua aberta: para muitas larvas e muitos alevinos não se sabe quando a senciência começa. Veja Senciência, Dinâmica populacional e Estratégias reprodutivas r e K.",
+  "links": []
+ },
+ {
+  "termo": "Equilíbrio ecológico",
+  "sec": 5,
+  "def": "ideia de que a natureza, deixada a si mesma, tende a um estado estável e harmonioso, em que as populações se mantêm constantes.",
+  "com": "A noção vem da antiga ideia de \"balanço da natureza\" e ainda é muito usada para rejeitar qualquer ajuda aos animais selvagens. Na ecologia, porém, ela não tem definição única: o ecólogo Charles Elton já escrevia em 1930 que esse balanço não existe, e Volker Grimm e Christian Wissel (1997) reuniram mais de 160 definições de estabilidade, a ponto de considerar o termo quase inútil. Os ecossistemas são vistos hoje como dinâmicos, abertos e sujeitos a perturbações. Luciano Carlos Cunha (2022) acrescenta que, mesmo onde há algo parecido com estabilidade, ela se mantém justamente porque a maioria dos filhotes morre, de modo que equilíbrio não significa bem-estar dos indivíduos. Isso não torna irrelevante o risco ecológico: intervenções mal planejadas podem piorar a situação, e por isso quem defende ajudar os animais selvagens pede pesquisa antes de agir. Veja Natureza idílica, Ecologia, Holismo e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Holismo",
+  "sec": 5,
+  "def": "na ética ambiental, visão que dá consideração moral direta a totalidades sem senciência, como espécies, ecossistemas ou a comunidade biótica.",
+  "com": "Seu marco é a ética da terra de Aldo Leopold, em *A Sand County Almanac* (1949), desenvolvida por J. Baird Callicott e Holmes Rolston III; o ecocentrismo é a variante em que o todo valioso é o ecossistema. Como o valor está no todo, um holista coerente pode aceitar matar indivíduos para proteger uma espécie ou um ecossistema, consequência que Tom Regan, em *The Case for Animal Rights* (1983), chamou de \"fascismo ambiental\". Do ponto de vista sencientista, espécies e ecossistemas não sentem nada e só importam pelo efeito que têm sobre quem sente; daí o conflito com a ajuda aos animais selvagens, que o holismo tende a rejeitar quando ela altera processos naturais. Holistas respondem que a abordagem centrada no indivíduo ignora a interdependência ecológica e pode ter consequências desastrosas. Veja Ambientalismo holista, Ecocentrismo, Naturocentrismo e Biocentrismo.",
+  "links": []
+ },
+ {
+  "termo": "Naturocentrismo",
+  "sec": 5,
+  "def": "visão que dá valor moral direto ao que é natural por causa da sua origem, isto é, por não ter sido produzido ou alterado por humanos.",
+  "com": "Luciano Carlos Cunha (2022) usa o termo para distinguir essa posição do holismo: para o naturocentrismo, não basta que algo tenha certas características, é preciso que tenha surgido de processos naturais. Um exemplo é o artigo \"Faking Nature\" (1982), de Robert Elliot, segundo o qual uma área restaurada por humanos vale menos que a original, mesmo que seja idêntica, assim como uma falsificação vale menos que a obra autêntica; Eric Katz defendeu ideia parecida em 1992. A crítica sencientista é que a origem de um dano não muda o que ele faz a quem o sofre: a fome causada por uma seca não dói menos que a causada por humanos. Também se aponta que a posição pressupõe que os humanos estão fora da natureza, separação que muitos filósofos e ecólogos rejeitam. Veja Holismo, Danos naturais, Falácia naturalista e Biocentrismo.",
+  "links": []
+ },
+ {
+  "termo": "Ecologia do medo",
+  "sec": 2,
+  "def": "na ecologia, o estudo de como o risco de predação muda o comportamento, a fisiologia e a distribuição das presas, mesmo quando elas não são mortas.",
+  "com": "O conceito foi proposto por Joel Brown, John Laundré e Mahesh Gurung num artigo de 1999, e dele vem a ideia de \"paisagem do medo\", o mapa dos lugares que as presas evitam por medo dos predadores. Na conservação, a expressão passou a designar também a reintrodução de predadores, como a dos lobos no Parque Nacional de Yellowstone, nos Estados Unidos, a partir de 1995, para que o medo afaste cervos e outros herbívoros das plantas que se quer proteger. O efeito em cascata atribuído aos lobos de Yellowstone é debatido entre ecólogos, que discordam sobre quanto da recuperação da vegetação se deve a eles. Oscar Horta (2010) e Luciano Carlos Cunha (2022) criticam a prática: ela usa o medo, a fome e a morte de animais sencientes como instrumentos de metas ambientais, e mostra que intervir na natureza já é aceito quando o objetivo não é o bem dos animais. Veja Predação, Holismo, Biologia da conservação e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Biologia da conservação",
+  "sec": 2,
+  "def": "ciência aplicada que estuda como proteger a diversidade biológica, isto é, espécies, populações e ecossistemas, das ameaças de extinção e degradação.",
+  "com": "O campo foi definido por Michael Soulé no artigo \"What Is Conservation Biology?\" (1985), que lhe atribuiu também postulados de valor, como o de que a diversidade biológica tem valor em si. Nele, os animais são estudados sobretudo como membros de espécies ou partes de ecossistemas, e o sofrimento de cada um costuma ficar em segundo plano, o que explica por que a matança de animais de espécies invasoras é prática comum. Luciano Carlos Cunha (2022) a distingue da biologia do bem-estar, que estuda o que é bom ou ruim para os animais enquanto indivíduos sencientes, e de dois campos intermediários, a conservação compassiva e o bem-estar da conservação. As áreas usam conhecimentos parecidos, como a ecologia e a dinâmica populacional, mas têm metas finais diferentes. Veja Biologia do bem-estar, Conservação compassiva, Bem-estar da conservação e Espécie exótica invasora.",
+  "links": []
+ },
+ {
+  "termo": "Conservação compassiva",
+  "sec": 5,
+  "def": "corrente da conservação que defende proteger espécies e ecossistemas sem causar danos desnecessários aos animais individuais.",
+  "com": "Um marco do movimento é a coletânea *Ignoring Nature No More* (2013), organizada pelo etólogo Marc Bekoff, e seus princípios costumam ser resumidos como \"primeiro, não causar dano\", \"os indivíduos importam\", inclusão e coexistência pacífica. Arian Wallach e colegas (2018) defenderam a abordagem na revista *Conservation Biology*, e Matt Hayward e colegas (2019) responderam na mesma revista que ela escolhe exemplos de mamíferos, ignora os animais nativos mortos por predadores invasores e pode enfraquecer a conservação. Do ponto de vista sencientista, a conservação compassiva é um avanço, mas limitado: como observa Luciano Carlos Cunha (2022), ela se ocupa sobretudo dos danos causados pelas próprias ações de conservação, e não dos danos naturais que a maioria dos animais selvagens sofre. É por isso que ele a distingue da biologia do bem-estar. Veja Biologia da conservação, Bem-estar da conservação, Biologia do bem-estar e Espécie exótica invasora.",
+  "links": []
+ },
+ {
+  "termo": "Bem-estar da conservação",
+  "sec": 2,
+  "def": "campo que combina a biologia da conservação com a ciência do bem-estar animal para avaliar e melhorar o bem-estar dos animais selvagens afetados por ações de conservação.",
+  "com": "A expressão foi proposta pela cientista neozelandesa Ngaio Beausoleil e colegas em 2018, e no artigo \"I Am a Compassionate Conservation Welfare Scientist\" (2020) ela explicou por que o campo não se confunde com a conservação compassiva: aceita as metas da conservação e busca reduzir aos poucos os danos aos animais, trabalhando com os conservacionistas, em vez de partir de princípios como \"primeiro, não causar dano\". O campo também pode estudar como danos naturais, ou causados indiretamente por humanos, afetam o bem-estar, quando esses dados servem à conservação. Luciano Carlos Cunha (2022) observa que esses conhecimentos podem ser úteis à biologia do bem-estar, mas a meta final é outra: aqui o bem-estar importa dentro dos limites da conservação, e lá importa por si mesmo. Organizações como a Wild Animal Initiative veem nesse campo uma ponte entre conservacionistas e quem se preocupa com os animais selvagens. Veja Biologia da conservação, Conservação compassiva, Biologia do bem-estar e Bem-estar animal.",
+  "links": []
+ },
+ {
+  "termo": "Melhoramento ambiental",
+  "sec": 5,
+  "def": "qualquer modificação das condições do ambiente natural que tenha efeito líquido positivo sobre o bem-estar dos indivíduos sencientes que vivem ali.",
+  "com": "A definição é da filósofa portuguesa Catia Faria, na tese *Animal Ethics Goes Wild* (2016) e no livro *Animal Ethics in the Wild* (Cambridge University Press, 2022). Faria argumenta que, se temos o dever de atender às necessidades dos animais selvagens, e se preservar os ambientes naturais significa manter o sofrimento e a morte da maioria deles, então temos a obrigação, e não só a permissão, de modificar esses ambientes para melhor. A proposta inverte a ideia comum de que o dever para com a natureza é preservá-la como está. Críticos, de ambientalistas a parte dos defensores dos animais, como Clare Palmer, apontam o risco de efeitos imprevistos e o desrespeito à vida independente dos animais selvagens, e a própria Faria discute, num artigo de 2023, como evitar que as intervenções criem novas vulnerabilidades. Veja Danos naturais, Biologia do bem-estar, Sofrimento dos animais selvagens e Natureza idílica.",
+  "links": []
+ },
+ {
+  "termo": "Animais liminares e soberania animal",
+  "sec": 7,
+  "def": "categorias da teoria política de Sue Donaldson e Will Kymlicka: animais liminares são os animais não domesticados que vivem entre os humanos, como pombos e ratos, e soberania animal é o direito das comunidades de animais selvagens de se governar no próprio território.",
+  "com": "Em *Zoopolis* (2011), os autores propõem que as obrigações para com os animais dependem da relação política: os domesticados seriam cidadãos, os liminares, residentes com direitos próprios, e os selvagens, comunidades soberanas, como nações estrangeiras. Disso tiram que devemos respeitar a autonomia dos animais selvagens e intervir só em casos limitados, embora aceitem que intervir às vezes é permitido e até obrigatório. Oscar Horta (2013) e Luciano Carlos Cunha (2022) respondem que a analogia com nações não se aplica bem: animais que nascem às centenas e morrem quase todos em poucos dias não formam comunidades capazes de autogoverno, e a fronteira entre território humano e selvagem não muda o que cada animal sente. Quem defende a abordagem replica que ela evita o paternalismo e leva a sério a vida que os animais selvagens levam sem nós. Veja Animais sinantrópicos, Comunidade mista, Paternalismo e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Paternalismo",
+  "sec": 4,
+  "def": "interferir na liberdade ou nas escolhas de alguém contra a sua vontade, com o objetivo de beneficiá-lo.",
+  "com": "O nome lembra a autoridade dos pais sobre os filhos, e a discussão filosófica clássica é a de Gerald Dworkin, no artigo \"Paternalism\" (1972), que distingue casos justificáveis, como impedir uma criança de dirigir, de casos em que se desrespeita a autonomia de adultos. Tom Regan, no prefácio da edição de 2004 de *The Case for Animal Rights*, acusou de paternalista a proposta de ajudar os animais selvagens vítimas de danos naturais. Luciano Carlos Cunha (2022) responde que, para haver paternalismo, a ajuda teria de contrariar o que o animal prefere, e nenhum animal prefere morrer de fome ou de uma infecção; dar comida ou vacinar com iscas não contraria vontade alguma. A objeção tem mais força contra intervenções coercitivas, como capturar um animal para esterilizá-lo, mas mesmo aí o paternalismo costuma ser aceito com crianças e animais domésticos quando o dano evitado é grande. Veja Autonomia, Consentimento, Animais liminares e soberania animal e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Regulamentarismo normativo e estratégico",
+  "sec": 14,
+  "def": "termos propostos por Luciano Carlos Cunha para separar duas posições que costumam ser chamadas de bem-estarismo: a que considera a exploração animal justa desde que regulamentada (normativo) e a que a considera injusta, mas defende regulamentá-la como estratégia para acabar com ela (estratégico).",
+  "com": "Cunha introduz a distinção em *Razões para ajudar* (2022) para desfazer uma confusão: como as duas posições se chamam bem-estarismo, muita gente conclui que toda preocupação com o bem-estar dos animais é reformista, e que defender ajudar os animais selvagens seria uma forma de bem-estarismo. Não é: é possível rejeitar toda exploração e ainda assim se preocupar com o bem-estar dos animais, inclusive dos que sofrem por causas naturais. O regulamentarismo estratégico corresponde, em boa parte, ao que Gary Francione chamou de novo bem-estarismo, em *Rain Without Thunder* (1996). O debate entre abolicionistas e reformistas sobre se as reformas aproximam ou adiam o fim da exploração continua aberto. Veja Bem-estarismo, Novo bem-estarismo (neo-welfarism), Abolicionismo e Reformas incrementais.",
+  "links": []
+ },
+ {
+  "termo": "Supererrogatório",
+  "sec": 4,
+  "def": "ato moralmente bom e louvável que vai além do dever, de modo que não praticá-lo não é errado.",
+  "com": "A discussão moderna começa com o artigo \"Saints and Heroes\" (1958), de J. O. Urmson, que chamou a atenção para atos heroicos que ninguém tem obrigação de praticar. A noção só cabe em algumas teorias não consequencialistas: para o consequencialismo, há sempre o dever de escolher o melhor resultado possível, por mais difícil que seja. No debate sobre os animais selvagens, é comum aceitar que ajudá-los é bonito, mas opcional; Luciano Carlos Cunha (2022) responde que, mesmo admitindo a categoria, os danos naturais em jogo são tão grandes que ajudar quando o custo é baixo dificilmente seria apenas louvável. Quem defende o supererrogatório argumenta que uma moral sem espaço para escolhas pessoais seria exigente demais. Veja Objeção da exigência, Deveres positivos e negativos, Consequencialismo e Deontologia.",
+  "links": []
+ },
+ {
+  "termo": "Deveres perfeitos e imperfeitos",
+  "sec": 4,
+  "def": "distinção, de origem kantiana, entre deveres que valem sempre e para com todos, sem exceção (perfeitos), e deveres que deixam margem de escolha sobre quando, como e a quem cumpri-los (imperfeitos).",
+  "com": "Immanuel Kant a usou na *Fundamentação da metafísica dos costumes* (1785) e na *Metafísica dos costumes* (1797): não mentir seria um dever perfeito, e ajudar os necessitados, um dever imperfeito. Costuma-se associar os deveres negativos, de não causar dano, aos perfeitos, e os positivos, de ajudar, aos imperfeitos e mais fracos. Luciano Carlos Cunha (2022) contesta essa associação: como a agricultura, o transporte e quase tudo o que fazemos matam animais, ninguém consegue cumprir deveres negativos para com todos os sencientes, e eles só parecem perfeitos num contexto que deixa os animais de fora. Para ele, dado o mundo como é, os dois tipos de dever são imperfeitos, e ser imperfeito não torna um dever necessariamente mais fraco; é uma tese original, ainda pouco discutida na literatura. Veja Deveres positivos e negativos, Deveres, Deontologia e Omissão.",
+  "links": []
+ },
+ {
+  "termo": "Deveres positivos e negativos",
+  "sec": 4,
+  "def": "deveres negativos são deveres de não fazer algo, como não causar dano, e deveres positivos são deveres de fazer algo, como ajudar quem precisa.",
+  "com": "Muitas teorias, sobretudo deontológicas e libertárias, dão aos deveres negativos mais força que aos positivos, e algumas negam que existam deveres positivos. É com base nisso que parte dos defensores dos direitos animais, como Tom Regan e Gary Francione, defende apenas deixar os animais selvagens em paz. Luciano Carlos Cunha (2022) argumenta que a razão para garantir direitos negativos, proteger interesses vitais, também justifica deveres positivos, já que esses interesses podem ser ameaçados por fome, doença ou predação, e não só por agentes. Quem defende a assimetria responde que é pior causar um dano do que deixar de evitá-lo, posição associada a Philippa Foot e Warren Quinn. Veja Deveres, Deveres perfeitos e imperfeitos, Tese da equivalência e Omissão.",
+  "links": []
+ },
+ {
+  "termo": "Tese da equivalência",
+  "sec": 3,
+  "def": "tese de que a diferença entre causar um dano e deixar que ele aconteça não tem, em si mesma, importância moral.",
+  "com": "Foi defendida por James Rachels, no artigo \"Active and Passive Euthanasia\" (1975), e por Peter Singer, em *Ética prática*: o que importaria são o tamanho do dano, a probabilidade de ele ocorrer e a possibilidade de evitá-lo, e a distinção entre agir e omitir-se só contaria indiretamente, quando afeta esses fatores. Luciano Carlos Cunha (2022) a aplica aos animais selvagens: se a tese é verdadeira, deixar um animal morrer de uma doença que poderíamos tratar pesa tanto quanto causar-lhe a doença. Grande parte da deontologia rejeita a tese e defende a distinção entre fazer e permitir, como Philippa Foot, Warren Quinn e Frances Kamm. Mesmo quem rejeita a tese costuma aceitar algum dever de ajudar quando o custo é baixo, o que já basta para parte das razões para ajudar os animais selvagens. Veja Omissão, Deveres positivos e negativos, Danos naturais e Consequencialismo.",
+  "links": []
+ },
+ {
+  "termo": "Dever implica poder",
+  "sec": 4,
+  "def": "princípio de que só se pode ter o dever de fazer o que é possível fazer.",
+  "com": "É tradicionalmente atribuído a Immanuel Kant e aceito pela maioria das teorias morais. No debate sobre os animais selvagens, aparece como objeção: como é impossível ajudar todos os animais da natureza, não haveria dever de ajudá-los. Luciano Carlos Cunha (2022) responde que o princípio só elimina o dever de fazer o impossível, não o de fazer o que está ao alcance, como vacinar, resgatar ou pesquisar, e que o que é impossível hoje pode deixar de ser com mais conhecimento. O próprio princípio é discutido: um estudo de Vladimir Chituc e colegas (2016) mostrou que as pessoas muitas vezes julgam que alguém deve fazer o que não pode, quando tem culpa pela própria incapacidade. Veja Objeção da exigência, Deveres positivos e negativos e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Objeção da exigência",
+  "sec": 4,
+  "def": "objeção segundo a qual uma teoria ou proposta moral deve ser rejeitada se exigir demais das pessoas, a ponto de não deixar espaço para a própria vida.",
+  "com": "Ela é dirigida sobretudo ao consequencialismo e ganhou força depois do artigo \"Famine, Affluence, and Morality\" (1972), de Peter Singer, que defendia doar até o ponto em que doar mais causaria um sacrifício comparável ao que se evita. No caso dos animais selvagens, diz-se que ajudá-los exigiria largar tudo, dado o tamanho do sofrimento na natureza. Luciano Carlos Cunha (2022) responde que a objeção pressupõe que ser exigente é um defeito, justamente o que está em discussão, e que o custo para quem ajuda deve ser pesado com imparcialidade diante do dano evitado; lembra também que descanso e lazer podem tornar alguém mais eficaz, e não menos. Autores como Liam Murphy, em *Moral Demands in Nonideal Theory* (2000), propõem limitar o dever à parte justa de cada um, o que ainda deixa um dever real de ajudar. Veja Supererrogatório, Dever implica poder, Consequencialismo e Altruísmo eficaz.",
+  "links": []
+ },
+ {
+  "termo": "Impacto esperado",
+  "sec": 3,
+  "def": "o valor de um resultado possível multiplicado pela probabilidade de ele acontecer, usado para comparar decisões sob incerteza.",
+  "com": "É a aplicação prática da maximização do valor esperado: entre a certeza de um dano pequeno e uma chance razoável de um dano muito grave, pode ser mais sensato aceitar o primeiro. Luciano Carlos Cunha (2022) usa a ideia em dois pontos: para decidir se vale a pena ajudar os animais selvagens sem esperar certezas, e para responder à objeção de que, como uma intervenção pode dar errado, não se deve fazer nada, já que não agir também tem consequências e probabilidades. O mesmo raciocínio sustenta a cautela com seres de senciência incerta, como os insetos. A crítica conhecida é o problema do fanatismo: probabilidades minúsculas de resultados enormes podem dominar todas as decisões, e muitos filósofos procuram limites para isso. Veja Maximização do valor esperado, Riscos-s, Altruísmo eficaz e Sofrimento dos animais selvagens.",
+  "links": []
+ },
+ {
+  "termo": "Trunfo e peso maior",
+  "sec": 4,
+  "def": "distinção entre um fator moral que vence qualquer outro, seja qual for a quantidade em jogo (trunfo), e um fator que pesa mais, mas pode ser superado por quantidades bem maiores do outro lado (peso maior).",
+  "com": "A ideia de direitos como trunfos foi popularizada por Ronald Dworkin, em *Levando os direitos a sério* (1977), e lembra a prioridade lexical de John Rawls. Luciano Carlos Cunha (2022) usa a distinção em vários argumentos: mesmo que evitar danos causados por humanos importasse mais do que evitar danos naturais, só um trunfo lhe daria prioridade sempre; com um peso maior, haveria um ponto em que evitar uma quantidade muito grande de danos naturais passaria à frente. O mesmo vale para a ideia de que evitar sofrimento conta mais do que promover felicidade, que ele aceita como peso maior, mas não como trunfo. A distinção ajuda a identificar argumentos que pressupõem, sem dizer, que um fator vence sempre. Veja Axiologia negativa, Danos naturais, Direitos e Prioritarismo.",
+  "links": []
+ },
+ {
+  "termo": "Axiologia negativa",
+  "sec": 4,
+  "def": "teoria do valor segundo a qual existe o que é ruim em si, como o sofrimento, mas não existe o que é bom em si.",
+  "com": "Para ela, beneficiar alguém é sempre reduzir ou evitar algo ruim, e nunca acrescentar algo bom; o utilitarismo negativo é sua versão mais conhecida na ética normativa, com raízes numa nota de Karl Popper em *A sociedade aberta e seus inimigos* (1945). A crítica clássica é a de R. N. Smart (1958): se só o sofrimento conta, seria bom destruir o mundo sem dor, já que assim todo sofrimento acabaria. Luciano Carlos Cunha (2022) observa que o critério da senciência é compatível tanto com axiologias negativas quanto com as que reconhecem valores positivos, e que as razões para ajudar os animais selvagens valem nas duas, porque ambas tomam o sofrimento como ruim. Versões moderadas apenas dão peso maior ao sofrimento, sem negar o valor da felicidade. Veja Utilitarismo negativo, Trunfo e peso maior, Riscos-s e Experiências negativas.",
+  "links": []
+ },
+ {
+  "termo": "Valência",
+  "sec": 12,
+  "def": "o caráter positivo ou negativo de uma experiência, isto é, se ela é sentida como boa ou ruim por quem a vive.",
+  "com": "O termo vem da psicologia das emoções e é usado na ciência do bem-estar animal para falar de estados afetivos sem pressupor emoções iguais às humanas: dor, medo e fome têm valência negativa, e prazer, brincadeira e saciedade, positiva. Para muitos autores, ter experiências com valência é o que distingue a senciência da simples capacidade de detectar estímulos nocivos, a nocicepção. No debate sobre os animais selvagens, discute-se se a intensidade da valência depende do número de neurônios: Heather Browning e Walter Veit sugerem que filhotes muito pequenos sentiriam menos, e Luciano Carlos Cunha (2022) responde com casos como o das larvas de peixe-zebra, que têm cerca de 100 mil neurônios, contra uns 10 milhões no adulto, e ainda assim dão sinais de sentir dor. Ainda não há método seguro para comparar a intensidade de experiências entre espécies, tema dos estudos sobre faixas de bem-estar. Veja Senciência, Nocicepção, Experiências negativas, Experiências positivas e Faixa de bem-estar.",
+  "links": []
+ },
+ {
+  "termo": "Especismo indexical",
+  "sec": 5,
+  "def": "forma de especismo segundo a qual cada ser deve favorecer os membros da sua própria espécie, seja ela qual for.",
+  "com": "A distinção vem de Mark Bernstein (2004) e Dale Jamieson (2008), que a opõem ao especismo absoluto, que Luciano Carlos Cunha (2022) prefere chamar de objeto-referente: o que diz que todos devem favorecer certa espécie, como o antropocentrismo, para o qual todos devem favorecer os humanos. A versão indexical parece mais modesta, porque permitiria aos humanos favorecer humanos e aos lobos favorecer lobos, e se aproxima da defesa de Bernard Williams em \"The Human Prejudice\" (2006). A crítica antiespecista é que ela não explica por que a espécie, e não a raça, o sexo ou a nacionalidade, seria o grupo que autoriza favorecer os seus: a mesma lógica justificaria um racismo indexical. Seus defensores comparam o favorecimento da própria espécie ao da própria família, que muitos consideram legítimo. Veja Especismo, Especismo antropocêntrico, Antropocentrismo e Parcialidade.",
+  "links": []
+ },
+ {
+  "termo": "Inteligentismo",
+  "sec": 6,
+  "def": "discriminação que dá menos peso aos interesses de alguém por ter menor inteligência ou menores capacidades cognitivas.",
+  "com": "O termo é pouco usado, mas descreve um critério muito comum: a ideia de que animais considerados mais inteligentes, como primatas, golfinhos ou cães, merecem mais consideração do que peixes ou insetos, ou de que os humanos importam mais por serem mais inteligentes. Luciano Carlos Cunha (2022) o lista ao lado do especismo, do racismo, do sexismo, do tamanhismo e do capacitismo, como formas de discriminação que ocorrem não só quando os interesses de alguém são ignorados, mas sempre que recebem peso menor. A crítica sencientista é que a inteligência não muda quanto a dor dói: uma criança pequena ou uma pessoa com deficiência intelectual sofre tanto quanto qualquer outra pessoa, e o mesmo raciocínio vale para os animais, como mostra o argumento dos casos marginais. Quem defende alguma hierarquia responde que capacidades cognitivas podem aumentar o que alguém perde, por exemplo com a morte, o que é diferente de dar menos peso a um mesmo interesse. Veja Tamanhismo (sizeism), Especismo, Argumento dos casos marginais e Igual consideração.",
+  "links": []
+ },
+ {
+  "termo": "AVAQ (anos de vida ajustados pela qualidade)",
+  "sec": 3,
+  "def": "medida que multiplica o tempo de vida pela qualidade desse tempo, usada na saúde pública para comparar tratamentos e, na ética, para avaliar o dano da morte.",
+  "com": "A sigla em inglês, QALY, apareceu impressa em 1976, num artigo de Richard Zeckhauser e Donald Shepard, e a medida orienta hoje decisões de sistemas de saúde. Oscar Horta (2010) e Luciano Carlos Cunha (2022) a aplicam ao dano da morte e acrescentam um parâmetro: além dos anos bons que a morte tira, conta também quantos anos bons alguém já teve, de modo que morrer cedo, sem ter desfrutado quase nada da vida, é especialmente ruim. Isso agrava o quadro dos animais selvagens, que em sua maioria morrem pouco depois de nascer, e também o dos animais criados para consumo, mortos muito jovens. A medida é criticada por poder discriminar pessoas com deficiência ou doenças crônicas, cuja qualidade de vida recebe nota menor, crítica feita por John Harris (1987), e por depender de comparações de bem-estar difíceis de fazer entre espécies. Veja Dano da morte, Concepção epicurista da morte, Faixa de bem-estar e Vida que vale a pena ser vivida.",
+  "links": []
+ },
+ {
+  "termo": "Concepção epicurista da morte",
+  "sec": 3,
+  "def": "visão, atribuída a Epicuro, de que a morte não é um dano para quem morre, porque enquanto a pessoa existe a morte não está presente, e quando a morte chega a pessoa já não existe.",
+  "com": "Ela se opõe à concepção da morte como dano por privação, defendida por Thomas Nagel no artigo \"Death\" (1970), segundo a qual a morte é ruim por tirar de quem morre as experiências boas que ainda viriam. A versão epicurista tem defensores contemporâneos, como David Suits, e às vezes é usada para justificar matar animais sem dor. Críticos, entre eles Luciano Carlos Cunha (2022), respondem que ela levaria a conclusões que quase ninguém aceita, como a de que matar sem dor um ser humano feliz não o prejudica, e lembram que, mesmo nessa visão, a dor e o medo que costumam vir antes da morte continuam sendo ruins. A maioria dos filósofos aceita alguma forma da explicação por privação e discute sobretudo o tamanho do dano. Veja Dano da morte, Dano extrínseco, AVAQ (anos de vida ajustados pela qualidade) e Interesse.",
+  "links": []
+ },
+ {
+  "termo": "Técnica do inseto estéril",
+  "sec": 17,
+  "def": "método de controle de populações de insetos que consiste em criar e esterilizar grandes quantidades de machos, geralmente por radiação, e soltá-los na natureza para que acasalem sem gerar descendentes.",
+  "com": "Foi desenvolvida pelos entomologistas Edward Knipling e Raymond Bushland nos anos 1950 contra a mosca-da-bicheira (*Cochliomyia hominivorax*), cujas larvas comem a carne viva de mamíferos e aves, e eliminou a praga dos Estados Unidos e, depois, do México e da América Central até o Panamá. A mosca voltou a se espalhar a partir de 2023 e chegou ao México em 2024, o que levou os Estados Unidos a abrir no Texas, em 2026, uma base para soltar moscas estéreis. Luciano Carlos Cunha (2022) cita a técnica como prova de que já se interfere há décadas na reprodução de animais selvagens, por motivos econômicos e ambientais, e como modelo de intervenção que reduz nascimentos sem matar; no caso da bicheira, ela ainda poupa muitos animais, inclusive selvagens, de uma morte lenta. Do ponto de vista sencientista, a técnica levanta suas próprias perguntas, como o bem-estar dos insetos criados e irradiados e os efeitos da redução de uma população sobre outras espécies. Veja Controle populacional de animais, Pragas, Parasitismo e Sofrimento dos animais selvagens.",
   "links": []
  }
 ]

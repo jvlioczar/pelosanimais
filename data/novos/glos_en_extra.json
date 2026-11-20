@@ -150,7 +150,7 @@
   "pt": "Natureza idílica",
   "termo": "Idyllic nature",
   "def": "The view that the lives of animals in nature are, in general, good and happy, in balance and free of significant suffering.",
-  "com": "It is the popular and default view, supported by skewed images: large, charismatic animals appear far more often on covers and in documentaries than most wild animals, which are invertebrates and have many offspring, almost all dying early. Oscar Horta and Animal Ethics criticize this view. See Welfare biology."
+  "com": "It is the popular and default view, supported by skewed images: large, charismatic animals appear far more often on covers and in documentaries than most wild animals, which are invertebrates and have many offspring, almost all dying early. Oscar Horta and Animal Ethics criticize this view. The opposite view, that suffering predominates in nature, is also disputed: Zach Groff and Yew-Kwang Ng (2019) found an error in Ng's 1995 model and concluded that the balance is uncertain, and Heather Browning and Walter Veit (2023) argue that wild lives may be considerably more positive than assumed. Luciano Carlos Cunha (2022) answers that, even with a positive balance, there would still be reasons to help the animals who suffer, and points out that the idea of a balance of nature has no clear definition in ecology. See Welfare biology, Ecological balance and Wild animal suffering."
  },
  {
   "pt": "Referente ausente",
@@ -462,13 +462,13 @@
   "pt": "Controle populacional de animais",
   "termo": "Animal population control",
   "def": "A set of methods for reducing the number of animals in a population, ranging from killing (culling, hunting, poisoning) to non-lethal methods such as neutering and contraception.",
-  "com": "For stray dogs and cats, trap-neuter-return (TNR) is an alternative to capture and killing. In wild animals, contraceptive vaccines are already used, for example in wild horses in the United States. From a sentientist point of view, non-lethal methods are preferable when they work, and the question is not only how many animals there are, but how they live and die. Killing is often defended as cheaper or faster, but in many cases the population grows back. See Castration, Invasive alien species and Pests."
+  "com": "For stray dogs and cats, trap-neuter-return (TNR) is an alternative to capture and killing. In wild animals, contraceptive vaccines are already used, for example in wild horses in the United States. From a sentientist point of view, non-lethal methods are preferable when they work, and the question is not only how many animals there are, but how they live and die. Killing is often defended as cheaper or faster, but in many cases the population grows back. For wild animals, Luciano Carlos Cunha (2022) defends sterilization without consent only when three conditions are met: a high probability that the offspring would have lives of extreme suffering, a high probability of reproduction and no less harmful means that is equally effective; he also notes that sterilizing females is more efficient, since one male can fertilize many females. He distinguishes these cases from those of humans living in poverty, where the obstacle is social, but critics see in the comparison an echo of eugenic policies of forced sterilization, and reproductive justice and ecofeminism reject the principle. See Castration, Invasive alien species, Pests and Sterile insect technique."
  },
  {
   "pt": "Espécie exótica invasora",
   "termo": "Invasive alien species",
   "def": "A species taken by humans outside its native range that spreads and causes harm to ecosystems, other species or the economy, such as the European wild boar in Brazil.",
-  "com": "These species are usually fought by large-scale killing, which creates a conflict between the conservationist view, which values species and ecosystems, and the sentientist view, which looks at each individual. The invasive animals themselves are not to blame for being there. Sentientists don't deny the ecological harm, but call for methods that cause less suffering and for attention also to the native animals affected. In Brazil, the boar hunting authorized for control has been criticized for also serving as a pretext for sport hunting. See Holistic environmentalism, Sentientist environmentalism and Animal population control."
+  "com": "These species are usually fought by large-scale killing, which creates a conflict between the conservationist view, which values species and ecosystems, and the sentientist view, which looks at each individual. The invasive animals themselves are not to blame for being there. Sentientists don't deny the ecological harm, but call for methods that cause less suffering and for attention also to the native animals affected. In Brazil, the boar hunting authorized for control has been criticized for also serving as a pretext for sport hunting. Not every alien species is invasive: an alien species is one living outside its native range, and an invasive species is an alien one that spreads and threatens goals such as biodiversity, so the criterion is environmental, not the suffering of animals. A case cited by Luciano Carlos Cunha (2022) is that of the ruddy duck (Oxyura jamaicensis), brought to the United Kingdom in the 1940s, which escaped into the wild and reached Spain, where it interbred with the endangered white-headed duck (Oxyura leucocephala); to protect the native species from hybrids, Spain has killed ruddy ducks since the 1990s, and the UK culled thousands of them in an eradication programme begun in 2005. See Holistic environmentalism, Sentientist environmentalism, Animal population control and Conservation biology."
  },
  {
   "pt": "Armadilha de mandíbula (leghold trap)",
@@ -1169,6 +1169,223 @@
   "termo": "Equal concern and respect (Dworkin)",
   "def": "Ronald Dworkin's principle that the state must treat each person with equal concern, for their interests and well-being, and equal respect, for their life choices.",
   "com": "Dworkin set it out in *Taking Rights Seriously* (1977), while interpreting John Rawls's theory, and developed it in *Sovereign Virtue* (2000). He restricted it to humans able to make plans and act justly, but the two halves have different sources: respect is tied to autonomy, while concern comes from our being beings who feel and have needs, which is also true of sentient animals. For this reason, authors such as Alasdair Cochrane argue that the concern half extends naturally to animals, even if the respect half applies to them differently. Not to be confused with Peter Singer's equal consideration of interests: Dworkin's is a principle about how the state treats its members; Singer's is a general moral principle about the weight of similar interests. See Equal consideration, Autonomy, Liberalism and Justice.",
+  "links": []
+ },
+ {
+  "pt": "Danos naturais",
+  "termo": "Natural harms",
+  "def": "Harms that sentient beings suffer from causes that do not come from human practices, such as disease, parasites, hunger, cold, predation and disasters.",
+  "com": "Luciano Carlos Cunha uses the expression in *Razões para ajudar* (2022, in Portuguese) as a synonym for non-anthropogenic harms and acknowledges that the label is debatable, because it seems to place humans outside nature. For anyone who looks at the suffering animal, the origin of the harm does not change what they feel: a fracture caused by a fall hurts as much as one caused by a trap, and for this reason Cunha and Oscar Horta deny that natural harms are value-neutral. A frequent confusion, pointed out by Horta, is to call anthropocentric what is merely anthropogenic: help decided on and carried out by humans is anthropogenic, but it would only be anthropocentric if it aimed at the good of humans and ignored that of the animals. Those who defend letting nature take its course usually accept the duty not to cause harm and reject the duty to prevent natural harms, and this asymmetry is at the heart of the debate about wild animals. See Suffering from natural causes, Wild animal suffering, Anthropocentrism and Equivalence thesis.",
+  "links": []
+ },
+ {
+  "pt": "Dinâmica populacional",
+  "termo": "Population dynamics",
+  "def": "The branch of ecology that studies how the size of populations changes over time, according to rates of birth, death and migration.",
+  "com": "One of its most important data points for ethics is age-specific mortality, that is, the proportion of animals of a species that die at each stage of life, summarized in life tables and survivorship curves. In most species, which lay hundreds or thousands of eggs, almost all offspring die shortly after birth, a pattern ecologists call a type III survivorship curve. Authors such as Oscar Horta, Catia Faria and Luciano Carlos Cunha use these data to argue that, if these young animals can already feel, an early death, often from hunger or predation, is the typical experience of a wild animal. The most debated empirical point is when sentience begins in these early stages, which is still uncertain in many groups, such as fish and insect larvae. See Carrying capacity, r and K reproductive strategies, Altricial and precocial animals and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Capacidade de carga",
+  "termo": "Carrying capacity",
+  "def": "The maximum population size of a species that an environment can sustain over time, given the available resources, represented in models by the letter K.",
+  "com": "The concept appears in the logistic equation, proposed by the Belgian mathematician Pierre-François Verhulst in 1838, in which a population's growth slows as it approaches K. In wild animal ethics, the central point is that the number of offspring born is usually far greater than the carrying capacity, so that in a stable population the surplus dies, generally early. For this reason, providing more food without controlling births may only increase the number of animals that are born and die, which is why proposals such as contraception come up in this debate. Ecologists criticize the use of carrying capacity as a fixed number, since it varies with climate, with other species and over time. See Population dynamics, r and K reproductive strategies and Animal population control.",
+  "links": []
+ },
+ {
+  "pt": "Estratégias reprodutivas r e K",
+  "termo": "r and K reproductive strategies",
+  "def": "The distinction between species that have many offspring and invest little in each (r-strategists) and species that have few offspring and care for them (K-strategists).",
+  "com": "The letters come from the logistic equation: r is the population's growth rate and K the carrying capacity. The theory of r/K selection was formulated by Robert MacArthur and Edward O. Wilson in 1967 and extended by Eric Pianka in 1970, who attached to it a series of predictions about other traits of animals. Today it is considered outdated in ecology and has given way to life-history theory, which speaks of a continuum between fast and slow life histories, as David Reznick and colleagues show in a 2002 review; the basic distinction between having many or few offspring, however, remains valid, as Luciano Carlos Cunha (2022) notes. \"Strategy\" is a metaphor, because animals do not plan how they reproduce. The ethical point is that most animals are born into species of the first kind, in which almost all offspring die soon, although Heather Browning and Walter Veit (2023) dispute that this implies as much suffering as is usually assumed. See Population dynamics, Carrying capacity and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Animais altriciais e precociais",
+  "termo": "Altricial and precocial animals",
+  "def": "A classification of animals by their degree of development at birth or hatching: precocial animals are born relatively mature and mobile, while altricial animals are born underdeveloped and depend on parental care.",
+  "com": "Classic examples are foals and ducklings, which are precocial, and songbird chicks and human babies, which are altricial; Augustine, Lika and Kooijman (2019) show that this is a continuum, not two boxes. The distinction matters in the debate about wild animal suffering because it is sometimes said that young animals who die early do not yet feel anything. Luciano Carlos Cunha (2022) answers that being immature is not the same as not being sentient, and that most small animals with many offspring are precocial, that is, they must fend for themselves from very early on. The empirical question, however, remains open: for many larvae and fish fry it is not known when sentience begins. See Sentience, Population dynamics and r and K reproductive strategies.",
+  "links": []
+ },
+ {
+  "pt": "Equilíbrio ecológico",
+  "termo": "Ecological balance",
+  "def": "The idea that nature, left to itself, tends towards a stable and harmonious state in which populations remain constant.",
+  "com": "The notion comes from the ancient idea of the \"balance of nature\" and is still widely used to reject any help for wild animals. In ecology, however, it has no single definition: the ecologist Charles Elton was already writing in 1930 that this balance does not exist, and Volker Grimm and Christian Wissel (1997) gathered more than 160 definitions of stability, to the point of considering the term nearly useless. Ecosystems are now seen as dynamic, open and subject to disturbance. Luciano Carlos Cunha (2022) adds that, even where there is something like stability, it is maintained precisely because most offspring die, so that balance does not mean the well-being of individuals. This does not make ecological risk irrelevant: poorly planned interventions can make things worse, which is why those who defend helping wild animals call for research before action. See Idyllic nature, Ecology, Holism and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Holismo",
+  "termo": "Holism",
+  "def": "In environmental ethics, the view that gives direct moral consideration to non-sentient wholes, such as species, ecosystems or the biotic community.",
+  "com": "Its landmark is Aldo Leopold's land ethic, in *A Sand County Almanac* (1949), developed by J. Baird Callicott and Holmes Rolston III; ecocentrism is the variant in which the valuable whole is the ecosystem. Since value lies in the whole, a consistent holist may accept killing individuals to protect a species or an ecosystem, a consequence Tom Regan, in *The Case for Animal Rights* (1983), called \"environmental fascism\". From a sentientist point of view, species and ecosystems feel nothing and matter only through their effect on those who feel; hence the conflict with helping wild animals, which holism tends to reject when it alters natural processes. Holists answer that the individual-centred approach ignores ecological interdependence and may have disastrous consequences. See Holistic environmentalism, Ecocentrism, Naturocentrism and Biocentrism.",
+  "links": []
+ },
+ {
+  "pt": "Naturocentrismo",
+  "termo": "Naturocentrism",
+  "def": "The view that gives direct moral value to what is natural because of its origin, that is, because it was not produced or altered by humans.",
+  "com": "Luciano Carlos Cunha (2022) uses the term to distinguish this position from holism: for naturocentrism, it is not enough for something to have certain characteristics; it must have arisen from natural processes. An example is Robert Elliot's article \"Faking Nature\" (1982), according to which an area restored by humans is worth less than the original, even if identical, just as a forgery is worth less than the authentic work; Eric Katz defended a similar idea in 1992. The sentientist criticism is that the origin of a harm does not change what it does to the one who suffers it: hunger caused by a drought hurts no less than hunger caused by humans. Critics also point out that the position assumes humans stand outside nature, a separation many philosophers and ecologists reject. See Holism, Natural harms, Naturalistic fallacy and Biocentrism.",
+  "links": []
+ },
+ {
+  "pt": "Ecologia do medo",
+  "termo": "Ecology of fear",
+  "def": "In ecology, the study of how predation risk changes the behaviour, physiology and distribution of prey, even when they are not killed.",
+  "com": "The concept was proposed by Joel Brown, John Laundré and Mahesh Gurung in a 1999 article, and from it comes the idea of the \"landscape of fear\", the map of places prey avoid out of fear of predators. In conservation, the expression has also come to mean the reintroduction of predators, such as wolves in Yellowstone National Park, in the United States, from 1995, so that fear drives deer and other herbivores away from plants one wants to protect. The cascading effect attributed to the Yellowstone wolves is debated among ecologists, who disagree about how much of the vegetation's recovery is due to them. Oscar Horta (2010) and Luciano Carlos Cunha (2022) criticize the practice: it uses the fear, hunger and death of sentient animals as tools for environmental goals, and shows that intervening in nature is already accepted when the aim is not the good of the animals. See Predation, Holism, Conservation biology and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Biologia da conservação",
+  "termo": "Conservation biology",
+  "def": "The applied science that studies how to protect biological diversity, that is, species, populations and ecosystems, from threats of extinction and degradation.",
+  "com": "The field was defined by Michael Soulé in the article \"What Is Conservation Biology?\" (1985), which also gave it value postulates, such as the claim that biological diversity has value in itself. In it, animals are studied mainly as members of species or parts of ecosystems, and the suffering of each one usually takes second place, which explains why killing animals of invasive species is common practice. Luciano Carlos Cunha (2022) distinguishes it from welfare biology, which studies what is good or bad for animals as sentient individuals, and from two intermediate fields, compassionate conservation and conservation welfare. These areas use similar knowledge, such as ecology and population dynamics, but have different ultimate goals. See Welfare biology, Compassionate conservation, Conservation welfare and Invasive alien species.",
+  "links": []
+ },
+ {
+  "pt": "Conservação compassiva",
+  "termo": "Compassionate conservation",
+  "def": "A current in conservation that defends protecting species and ecosystems without causing unnecessary harm to individual animals.",
+  "com": "A landmark of the movement is the collection *Ignoring Nature No More* (2013), edited by the ethologist Marc Bekoff, and its principles are usually summed up as \"first, do no harm\", \"individuals matter\", inclusivity and peaceful coexistence. Arian Wallach and colleagues (2018) defended the approach in the journal *Conservation Biology*, and Matt Hayward and colleagues (2019) replied in the same journal that it picks mammal examples, ignores the native animals killed by invasive predators and may weaken conservation. From a sentientist point of view, compassionate conservation is an advance, but a limited one: as Luciano Carlos Cunha (2022) notes, it deals mainly with the harms caused by conservation actions themselves, not with the natural harms that most wild animals suffer. That is why he distinguishes it from welfare biology. See Conservation biology, Conservation welfare, Welfare biology and Invasive alien species.",
+  "links": []
+ },
+ {
+  "pt": "Bem-estar da conservação",
+  "termo": "Conservation welfare",
+  "def": "A field that combines conservation biology with animal welfare science to assess and improve the welfare of wild animals affected by conservation actions.",
+  "com": "The expression was proposed by the New Zealand scientist Ngaio Beausoleil and colleagues in 2018, and in the article \"I Am a Compassionate Conservation Welfare Scientist\" (2020) she explained why the field is not the same as compassionate conservation: it accepts the goals of conservation and seeks to reduce harms to animals step by step, working with conservationists, rather than starting from principles such as \"first, do no harm\". The field may also study how natural harms, or harms indirectly caused by humans, affect welfare, when these data serve conservation. Luciano Carlos Cunha (2022) notes that this knowledge may be useful to welfare biology, but the ultimate goal is different: here welfare matters within the limits of conservation, there it matters for its own sake. Organizations such as Wild Animal Initiative see the field as a bridge between conservationists and those concerned with wild animals. See Conservation biology, Compassionate conservation, Welfare biology and Animal welfare.",
+  "links": []
+ },
+ {
+  "pt": "Melhoramento ambiental",
+  "termo": "Environmental enhancement",
+  "def": "Any modification of the conditions of the natural environment that has a net positive effect on the well-being of the sentient individuals living there.",
+  "com": "The definition is by the Portuguese philosopher Catia Faria, in her thesis *Animal Ethics Goes Wild* (2016) and her book *Animal Ethics in the Wild* (Cambridge University Press, 2022). Faria argues that if we have a duty to meet the needs of wild animals, and if preserving natural environments means maintaining the suffering and death of most of them, then we have an obligation, not merely a permission, to change these environments for the better. The proposal reverses the common idea that our duty towards nature is to preserve it as it is. Critics, from environmentalists to some animal advocates such as Clare Palmer, point to the risk of unforeseen effects and to disrespect for the independent lives of wild animals, and Faria herself discusses, in a 2023 article, how to keep interventions from creating new vulnerabilities. See Natural harms, Welfare biology, Wild animal suffering and Idyllic nature.",
+  "links": []
+ },
+ {
+  "pt": "Animais liminares e soberania animal",
+  "termo": "Liminal animals and animal sovereignty",
+  "def": "Categories from Sue Donaldson and Will Kymlicka's political theory: liminal animals are non-domesticated animals who live among humans, such as pigeons and rats, and animal sovereignty is the right of communities of wild animals to govern themselves in their own territory.",
+  "com": "In *Zoopolis* (2011), the authors propose that our obligations to animals depend on the political relationship: domesticated animals would be citizens, liminal animals denizens with rights of their own, and wild animals sovereign communities, like foreign nations. From this they conclude that we should respect the autonomy of wild animals and intervene only in limited cases, although they accept that intervening is sometimes permissible and even obligatory. Oscar Horta (2013) and Luciano Carlos Cunha (2022) answer that the analogy with nations does not fit well: animals who are born by the hundreds and almost all die within a few days do not form communities capable of self-government, and the border between human and wild territory does not change what each animal feels. Defenders of the approach reply that it avoids paternalism and takes seriously the lives wild animals lead without us. See Synanthropic animals, Mixed community, Paternalism and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Paternalismo",
+  "termo": "Paternalism",
+  "def": "Interfering with someone's freedom or choices against their will, with the aim of benefiting them.",
+  "com": "The name recalls the authority of parents over their children, and the classic philosophical discussion is Gerald Dworkin's article \"Paternalism\" (1972), which distinguishes justifiable cases, such as stopping a child from driving, from cases that disrespect the autonomy of adults. Tom Regan, in the preface to the 2004 edition of *The Case for Animal Rights*, accused the proposal to help wild animals who are victims of natural harms of being paternalistic. Luciano Carlos Cunha (2022) answers that, for there to be paternalism, help would have to go against what the animal prefers, and no animal prefers to die of hunger or infection; providing food or vaccinating with baits goes against no one's will. The objection has more force against coercive interventions, such as capturing an animal to sterilize them, but even there paternalism is usually accepted with children and domestic animals when the harm prevented is great. See Autonomy, Consent, Liminal animals and animal sovereignty and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Regulamentarismo normativo e estratégico",
+  "termo": "Normative and strategic regulationism",
+  "def": "Terms proposed by Luciano Carlos Cunha to separate two positions usually called welfarism: the one that considers animal exploitation fair as long as it is regulated (normative) and the one that considers it unjust but defends regulating it as a strategy to end it (strategic).",
+  "com": "Cunha introduces the distinction in *Razões para ajudar* (2022, in Portuguese) to clear up a confusion: since both positions are called welfarism, many people conclude that any concern for animal welfare is reformist, and that defending help for wild animals would be a form of welfarism. It is not: one can reject all exploitation and still care about the well-being of animals, including those who suffer from natural causes. Strategic regulationism corresponds largely to what Gary Francione called new welfarism, in *Rain Without Thunder* (1996). The debate between abolitionists and reformists over whether reforms bring the end of exploitation closer or postpone it remains open. See Welfarism, Neo-welfarism, Abolitionism and Incremental reforms.",
+  "links": []
+ },
+ {
+  "pt": "Supererrogatório",
+  "termo": "Supererogatory",
+  "def": "Describes a morally good and praiseworthy act that goes beyond duty, so that not doing it is not wrong.",
+  "com": "The modern discussion begins with J. O. Urmson's article \"Saints and Heroes\" (1958), which drew attention to heroic acts that no one is obliged to perform. The notion only fits some non-consequentialist theories: for consequentialism, there is always a duty to choose the best possible outcome, however difficult. In the debate about wild animals, it is common to accept that helping them is admirable but optional; Luciano Carlos Cunha (2022) answers that, even granting the category, the natural harms at stake are so great that helping when the cost is low could hardly be merely praiseworthy. Defenders of the supererogatory argue that a morality with no room for personal choices would be too demanding. See Demandingness objection, Positive and negative duties, Consequentialism and Deontology.",
+  "links": []
+ },
+ {
+  "pt": "Deveres perfeitos e imperfeitos",
+  "termo": "Perfect and imperfect duties",
+  "def": "A distinction of Kantian origin between duties that hold always and towards everyone, without exception (perfect), and duties that leave room for choice about when, how and towards whom to fulfil them (imperfect).",
+  "com": "Immanuel Kant used it in the *Groundwork of the Metaphysics of Morals* (1785) and *The Metaphysics of Morals* (1797): not lying would be a perfect duty, and helping those in need an imperfect one. Negative duties, not to cause harm, are usually associated with perfect duties, and positive duties, to help, with imperfect and weaker ones. Luciano Carlos Cunha (2022) disputes this association: since agriculture, transport and nearly everything we do kill animals, no one can fulfil negative duties towards all sentient beings, and they only seem perfect in a context that leaves animals out. For him, given the world as it is, both kinds of duty are imperfect, and being imperfect does not necessarily make a duty weaker; this is an original thesis, still little discussed in the literature. See Positive and negative duties, Duties, Deontology and Omission.",
+  "links": []
+ },
+ {
+  "pt": "Deveres positivos e negativos",
+  "termo": "Positive and negative duties",
+  "def": "Negative duties are duties not to do something, such as not to cause harm, and positive duties are duties to do something, such as to help those in need.",
+  "com": "Many theories, especially deontological and libertarian ones, give negative duties more force than positive ones, and some deny that positive duties exist. On this basis, some animal rights advocates, such as Tom Regan and Gary Francione, argue that we should simply leave wild animals alone. Luciano Carlos Cunha (2022) argues that the reason for guaranteeing negative rights, protecting vital interests, also justifies positive duties, since these interests can be threatened by hunger, disease or predation, not only by agents. Defenders of the asymmetry answer that causing harm is worse than failing to prevent it, a position associated with Philippa Foot and Warren Quinn. See Duties, Perfect and imperfect duties, Equivalence thesis and Omission.",
+  "links": []
+ },
+ {
+  "pt": "Tese da equivalência",
+  "termo": "Equivalence thesis",
+  "def": "The thesis that the difference between causing a harm and allowing it to happen has no moral importance in itself.",
+  "com": "It was defended by James Rachels, in the article \"Active and Passive Euthanasia\" (1975), and by Peter Singer, in *Practical Ethics*: what would matter is the size of the harm, the probability of it occurring and whether it can be avoided, and the distinction between acting and omitting would only count indirectly, when it affects these factors. Luciano Carlos Cunha (2022) applies it to wild animals: if the thesis is true, letting an animal die of a disease we could treat weighs as much as causing them the disease. Much of deontology rejects the thesis and defends the distinction between doing and allowing, as Philippa Foot, Warren Quinn and Frances Kamm do. Even those who reject the thesis usually accept some duty to help when the cost is low, which is already enough for part of the reasons to help wild animals. See Omission, Positive and negative duties, Natural harms and Consequentialism.",
+  "links": []
+ },
+ {
+  "pt": "Dever implica poder",
+  "termo": "Ought implies can",
+  "def": "The principle that one can only have a duty to do what it is possible to do.",
+  "com": "It is traditionally attributed to Immanuel Kant and accepted by most moral theories. In the debate about wild animals, it appears as an objection: since it is impossible to help all the animals in nature, there would be no duty to help them. Luciano Carlos Cunha (2022) answers that the principle only removes the duty to do the impossible, not the duty to do what is within reach, such as vaccinating, rescuing or researching, and that what is impossible today may cease to be so with more knowledge. The principle itself is debated: a study by Vladimir Chituc and colleagues (2016) found that people often judge that someone ought to do what they cannot, when they are to blame for their own inability. See Demandingness objection, Positive and negative duties and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Objeção da exigência",
+  "termo": "Demandingness objection",
+  "def": "The objection that a moral theory or proposal should be rejected if it demands too much of people, to the point of leaving no room for their own lives.",
+  "com": "It is aimed mainly at consequentialism and gained force after Peter Singer's article \"Famine, Affluence, and Morality\" (1972), which argued for giving up to the point where giving more would cause a sacrifice comparable to the one prevented. In the case of wild animals, it is said that helping them would require dropping everything, given the scale of suffering in nature. Luciano Carlos Cunha (2022) answers that the objection assumes that being demanding is a defect, which is exactly what is in question, and that the cost to those who help must be weighed impartially against the harm prevented; he also points out that rest and leisure can make someone more effective, not less. Authors such as Liam Murphy, in *Moral Demands in Nonideal Theory* (2000), propose limiting the duty to each person's fair share, which still leaves a real duty to help. See Supererogatory, Ought implies can, Consequentialism and Effective altruism.",
+  "links": []
+ },
+ {
+  "pt": "Impacto esperado",
+  "termo": "Expected impact",
+  "def": "The value of a possible outcome multiplied by the probability of it happening, used to compare decisions under uncertainty.",
+  "com": "It is the practical application of expected value maximisation: between the certainty of a small harm and a reasonable chance of a very serious one, it may be wiser to accept the former. Luciano Carlos Cunha (2022) uses the idea on two points: to decide whether helping wild animals is worthwhile without waiting for certainty, and to answer the objection that, since an intervention may go wrong, nothing should be done, given that not acting also has consequences and probabilities. The same reasoning supports caution with beings of uncertain sentience, such as insects. The well-known criticism is the problem of fanaticism: tiny probabilities of enormous outcomes can dominate every decision, and many philosophers look for limits on this. See Expected value maximisation, S-risks, Effective altruism and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Trunfo e peso maior",
+  "termo": "Trump and greater weight",
+  "def": "The distinction between a moral factor that beats any other, whatever the quantities at stake (a trump), and a factor that weighs more but can be outweighed by much larger quantities on the other side (greater weight).",
+  "com": "The idea of rights as trumps was popularized by Ronald Dworkin, in *Taking Rights Seriously* (1977), and recalls John Rawls's lexical priority. Luciano Carlos Cunha (2022) uses the distinction in several arguments: even if preventing harms caused by humans mattered more than preventing natural harms, only a trump would always give it priority; with greater weight, there would be a point at which preventing a very large amount of natural harm would come first. The same applies to the idea that preventing suffering counts more than promoting happiness, which he accepts as greater weight but not as a trump. The distinction helps to spot arguments that assume, without saying so, that one factor always wins. See Negative axiology, Natural harms, Rights and Prioritarianism.",
+  "links": []
+ },
+ {
+  "pt": "Axiologia negativa",
+  "termo": "Negative axiology",
+  "def": "A theory of value according to which there is what is bad in itself, such as suffering, but nothing that is good in itself.",
+  "com": "On this view, benefiting someone always means reducing or preventing something bad, never adding something good; negative utilitarianism is its best-known version in normative ethics, with roots in a note by Karl Popper in *The Open Society and Its Enemies* (1945). The classic criticism is R. N. Smart's (1958): if only suffering counts, it would be good to destroy the world painlessly, since all suffering would then end. Luciano Carlos Cunha (2022) notes that the sentience criterion is compatible both with negative axiologies and with those that recognize positive values, and that the reasons to help wild animals hold under both, because both take suffering to be bad. Moderate versions merely give greater weight to suffering, without denying the value of happiness. See Negative utilitarianism, Trump and greater weight, S-risks and Negative experiences.",
+  "links": []
+ },
+ {
+  "pt": "Valência",
+  "termo": "Valence",
+  "def": "The positive or negative character of an experience, that is, whether it is felt as good or bad by the one living it.",
+  "com": "The term comes from the psychology of emotion and is used in animal welfare science to speak of affective states without assuming emotions identical to human ones: pain, fear and hunger have negative valence, while pleasure, play and satiety have positive valence. For many authors, having valenced experiences is what distinguishes sentience from the mere capacity to detect harmful stimuli, nociception. In the debate about wild animals, it is discussed whether the intensity of valence depends on the number of neurons: Heather Browning and Walter Veit suggest that very small young animals might feel less, and Luciano Carlos Cunha (2022) answers with cases such as zebrafish larvae, which have about 100,000 neurons, against some 10 million in the adult, and still show signs of feeling pain. There is still no reliable method for comparing the intensity of experiences across species, the subject of studies on welfare ranges. See Sentience, Nociception, Negative experiences, Positive experiences and Welfare range.",
+  "links": []
+ },
+ {
+  "pt": "Especismo indexical",
+  "termo": "Indexical speciesism",
+  "def": "A form of speciesism according to which each being should favour members of their own species, whatever it is.",
+  "com": "The distinction comes from Mark Bernstein (2004) and Dale Jamieson (2008), who contrast it with absolute speciesism, which Luciano Carlos Cunha (2022) prefers to call object-referent: the view that everyone should favour a certain species, like anthropocentrism, for which everyone should favour humans. The indexical version seems more modest, because it would allow humans to favour humans and wolves to favour wolves, and it is close to Bernard Williams's defence in \"The Human Prejudice\" (2006). The antispeciesist criticism is that it does not explain why species, rather than race, sex or nationality, should be the group that licenses favouring one's own: the same logic would justify an indexical racism. Its defenders compare favouring one's own species to favouring one's own family, which many consider legitimate. See Speciesism, Anthropocentric speciesism, Anthropocentrism and Partiality.",
+  "links": []
+ },
+ {
+  "pt": "Inteligentismo",
+  "termo": "Intelligentism",
+  "def": "Discrimination that gives less weight to someone's interests because they have lower intelligence or fewer cognitive capacities.",
+  "com": "The term is rarely used, but it describes a very common criterion: the idea that animals considered more intelligent, such as primates, dolphins or dogs, deserve more consideration than fish or insects, or that humans matter more because they are more intelligent. Luciano Carlos Cunha (2022) lists it alongside speciesism, racism, sexism, sizeism and ableism, as forms of discrimination that occur not only when someone's interests are ignored but whenever they are given less weight. The sentientist criticism is that intelligence does not change how much pain hurts: a small child or a person with an intellectual disability suffers as much as anyone else, and the same reasoning applies to animals, as the argument from marginal cases shows. Those who defend some hierarchy answer that cognitive capacities may increase what someone loses, for example through death, which is different from giving less weight to the same interest. See Sizeism, Speciesism, Argument from marginal cases and Equal consideration.",
+  "links": []
+ },
+ {
+  "pt": "AVAQ (anos de vida ajustados pela qualidade)",
+  "termo": "QALY (quality-adjusted life year)",
+  "def": "A measure that multiplies length of life by the quality of that time, used in public health to compare treatments and, in ethics, to assess the harm of death.",
+  "com": "The term appeared in print in 1976, in an article by Richard Zeckhauser and Donald Shepard, and the measure now guides decisions in health systems. Oscar Horta (2010) and Luciano Carlos Cunha (2022) apply it to the harm of death and add a parameter: besides the good years death takes away, it also matters how many good years someone has already had, so that dying early, having enjoyed almost nothing of life, is especially bad. This worsens the picture for wild animals, most of whom die shortly after birth, and also for animals raised for food, who are killed very young. The measure is criticized for possibly discriminating against people with disabilities or chronic illnesses, whose quality of life is scored lower, a criticism made by John Harris (1987), and for depending on welfare comparisons that are hard to make across species. See Harm of death, Epicurean view of death, Welfare range and A life worth living.",
+  "links": []
+ },
+ {
+  "pt": "Concepção epicurista da morte",
+  "termo": "Epicurean view of death",
+  "def": "The view, attributed to Epicurus, that death is not a harm to the one who dies, because while the person exists death is not present, and when death comes the person no longer exists.",
+  "com": "It is opposed to the view of death as a deprivation harm, defended by Thomas Nagel in the article \"Death\" (1970), according to which death is bad because it takes from the one who dies the good experiences still to come. The Epicurean view has contemporary defenders, such as David Suits, and is sometimes used to justify killing animals painlessly. Critics, among them Luciano Carlos Cunha (2022), answer that it would lead to conclusions almost no one accepts, such as that painlessly killing a happy human being does not harm them, and point out that, even on this view, the pain and fear that usually come before death remain bad. Most philosophers accept some form of the deprivation account and mainly debate the size of the harm. See Harm of death, Extrinsic harm, QALY (quality-adjusted life year) and Interest.",
+  "links": []
+ },
+ {
+  "pt": "Técnica do inseto estéril",
+  "termo": "Sterile insect technique",
+  "def": "A method of controlling insect populations that consists of rearing and sterilizing large numbers of males, usually by radiation, and releasing them into the wild so that they mate without producing offspring.",
+  "com": "It was developed by the entomologists Edward Knipling and Raymond Bushland in the 1950s against the New World screwworm (*Cochliomyia hominivorax*), whose larvae eat the living flesh of mammals and birds, and it eliminated the pest from the United States and later from Mexico and Central America down to Panama. The fly began spreading again in 2023 and reached Mexico in 2024, which led the United States to open a base in Texas in 2026 for releasing sterile flies. Luciano Carlos Cunha (2022) cites the technique as proof that humans have been interfering with the reproduction of wild animals for decades, for economic and environmental reasons, and as a model of intervention that reduces births without killing; in the case of the screwworm, it also spares many animals, including wild ones, a slow death. From a sentientist point of view, the technique raises its own questions, such as the welfare of the insects reared and irradiated and the effects of reducing one population on other species. See Animal population control, Pests, Parasitism and Wild animal suffering.",
   "links": []
  }
 ]

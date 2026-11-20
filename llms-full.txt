@@ -1,6 +1,6 @@
 # Guia de Argumentação Pelos Animais
 
-> Os 279 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
+> Os 285 argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.
 
 ## A. Senciência e status moral (Parte DIR)
 
@@ -350,6 +350,12 @@ Devemos ajudar, e não só deixar de prejudicar?
 - [N19. Não há como traçar estratégias de longo prazo, pois não podemos prever um futuro distante](https://pelosanimais.biblioverse.org/argumentos/nao-ha-como-tracar-estrategias-de-longo-prazo-pois-nao-podemos-prever.html): Vale contra planos que dependem de acertar um cenário, não contra ações que valem em quase todos; e a incerteza corta dos dois lados
 - [N20. O futuro com certeza será melhor, não precisamos nos preocupar tanto](https://pelosanimais.biblioverse.org/argumentos/o-futuro-com-certeza-sera-melhor-nao-precisamos-nos-preocupar-tanto.html): O progresso moral não é automático: cada avanço teve quem o fizesse; e com os animais a tendência recente é contrária, porque o poder cresceu sem que a consideração acompanhasse
 - [N21. Isso é ficção científica, temos problemas reais agora](https://pelosanimais.biblioverse.org/argumentos/isso-e-ficcao-cientifica-temos-problemas-reais-agora.html): Um risco incerto mas imenso pode merecer atenção, e muito do que reduz sofrimento futuro, como ampliar o círculo moral, também ajuda agora
+- [N22. Teríamos que largar tudo para ajudar os animais selvagens](https://pelosanimais.biblioverse.org/argumentos/teriamos-que-largar-tudo-para-ajudar-os-animais-selvagens.html): Quem pesquisa e ajuda são profissionais da área; ao público cabem impostos, doações e apoio, como já fazemos com a saúde pública
+- [N23. Salvar um animal selvagem só prolonga a agonia](https://pelosanimais.biblioverse.org/argumentos/salvar-um-animal-selvagem-so-prolonga-a-agonia.html): O que faz sofrer costuma ser o que mata, então tratar a causa tira o sofrimento; e parte da ajuda só evita nascimentos
+- [N24. Ajudar os mais fracos estraga a seleção natural](https://pelosanimais.biblioverse.org/argumentos/ajudar-os-mais-fracos-estraga-a-selecao-natural.html): A seleção favorece quem deixa mais descendentes, não quem vive bem; espécies não sentem, e com humanos essa ideia se chama eugenia
+- [N25. A natureza é justa, cada animal tem armas para escapar](https://pelosanimais.biblioverse.org/argumentos/a-natureza-e-justa-cada-animal-tem-armas-para-escapar.html): A maioria das vítimas são filhotes sem defesa, os predadores escolhem os mais fracos, e uma espécie sobreviver não mostra que cada indivíduo escapa
+- [N26. Os domésticos são responsabilidade nossa, os selvagens não](https://pelosanimais.biblioverse.org/argumentos/os-domesticos-sao-responsabilidade-nossa-os-selvagens-nao.html): Uma relação especial pode dar prioridade, mas não apaga o dever com os outros; ajudamos humanos distantes sem relação nenhuma com eles
+- [N27. Falar de animais selvagens afasta as pessoas do veganismo](https://pelosanimais.biblioverse.org/argumentos/falar-de-animais-selvagens-afasta-as-pessoas-do-veganismo.html): É uma previsão que ninguém mediu; as pesquisas mostram que a maioria já se importa com esses animais, e a forma de falar pode ser cuidadosa
 
 ## Pare de dizer isso
 
