@@ -1674,5 +1674,26 @@
   "def": "a reply or hypothesis made up only to save a claim from an objection or a counterexample, with no independent reason in its favor.",
   "com": "The Latin phrase means \"for this\", and criticism of ad hoc hypotheses is common in the philosophy of science, for example in Karl Popper. A reply is not ad hoc just because it came after the objection: it is ad hoc when it would have no support if the objection did not exist and when it explains nothing beyond the case it needs to save. Nathan Nobis, in *Animals & Ethics 101* (2016), applies the test to replies to the argument from marginal cases: those who say only rational beings have rights must account for babies and people with profound cognitive disabilities, and rules such as \"those who belong to a normally rational species count\" often look tailor-made to include these humans and exclude animals. It is what this guide's commitment to parsimony asks us to avoid. See Argument from marginal cases, Counterexample and Begging the question.",
   "links": []
+ },
+ {
+  "pt": "Biologia sintética",
+  "termo": "Synthetic biology",
+  "def": "The field of biotechnology that designs or redesigns organisms, either by altering the genome of beings that already exist (top-down) or by assembling new organisms from inert components (bottom-up).",
+  "com": "Oscar Horta and Mat Rozas (2024) note that it could create animals tailor-made for exploitation, including animals modified to feel less pain so they can be used in other ways that harm them, and that the suffering of new sentient organisms could go unnoticed because they would be very different from the animals we know. See the argument \"This is science fiction, we have real problems now\".",
+  "links": []
+ },
+ {
+  "pt": "Panspermia dirigida",
+  "termo": "Directed panspermia",
+  "def": "The deliberate sending of microorganisms or other biological material to other planets to seed life, an idea discussed by Francis Crick and Leslie Orgel in 1973.",
+  "com": "If the life sent this way evolved as it did on Earth, with animals who have many offspring and nearly all die young, wild animal suffering could repeat itself on a far larger scale; that is why the philosopher Gary O'Brien (2022) argues such missions would probably have negative value. See the argument \"We should care about future humans, not about animals\".",
+  "links": []
+ },
+ {
+  "pt": "Terraformação",
+  "termo": "Terraforming",
+  "def": "The planned transformation of another planet, such as Mars, so that it has Earth-like conditions and can host ecosystems.",
+  "com": "From the animals' point of view, taking ecosystems to other planets would also mean taking the dynamics that produce wild animal suffering, as Luciano Carlos Cunha (2022) and Oscar Horta and Mat Rozas (2024) note. See the argument \"This is science fiction, we have real problems now\".",
+  "links": []
  }
 ]

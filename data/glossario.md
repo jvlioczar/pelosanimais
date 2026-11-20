@@ -979,13 +979,19 @@
 
 **Altruísmo eficaz** — movimento que busca maximizar o impacto positivo das ações e recursos, incluindo a causa animal como uma causa importante. *Seus critérios de escala, negligência e tratabilidade costumam favorecer a causa animal.*
 
+**Biologia sintética** — área da biotecnologia que projeta ou redesenha organismos, seja alterando o genoma de seres que já existem (de cima para baixo), seja montando organismos novos a partir de componentes inertes (de baixo para cima). *Oscar Horta e Mat Rozas (2024) apontam que ela pode criar animais feitos sob medida para a exploração, inclusive modificados para sentir menos dor e assim ser usados de outras formas que os prejudicam, e que o sofrimento de organismos sencientes novos poderia passar despercebido, por serem muito diferentes dos animais que conhecemos. Veja o argumento "Isso é ficção científica, temos problemas reais agora".*
+
 **Longoprazismo** — posição filosófica segundo a qual influenciar positivamente o futuro de longo prazo é uma das prioridades morais centrais do nosso tempo, porque o futuro pode durar muito e conter um número imenso de seres. *Formulado no altruísmo eficaz por filósofos como William MacAskill, Toby Ord e Nick Bostrom, na prática se concentra sobretudo no futuro da humanidade, em especial na redução dos riscos de extinção. Defensores dos animais argumentam que a mesma lógica pede incluir todos os seres sencientes do futuro, a maioria dos quais provavelmente não será humana, e chamam a atenção para os riscos-s. Veja Altruísmo eficaz, Riscos-s e Riscos-x.*
+
+**Panspermia dirigida** — envio intencional de micro-organismos ou de outro material biológico a outros planetas para semear vida, ideia discutida por Francis Crick e Leslie Orgel em 1973. *Se a vida levada assim evoluísse como na Terra, com animais que têm muitos filhotes e quase todos morrem cedo, o sofrimento dos animais selvagens poderia se repetir em escala muito maior; por isso o filósofo Gary O'Brien (2022) argumenta que essas missões provavelmente teriam valor negativo. Veja o argumento "Temos que nos preocupar com os humanos do futuro, não com os animais".*
 
 **Populações futuras não-humanas** — extensão da preocupação moral a gerações futuras de animais, no cruzamento entre ética animal e longoprazismo.
 
 **Riscos-s** — riscos de sofrimento em escala astronômica ("s-risks"), conceito ligado à preocupação com sofrimento futuro massivo, inclusive de animais.
 
 **Riscos-x** — riscos existenciais, capazes de extinguir a vida humana e a vida senciente ou seu potencial futuro.
+
+**Terraformação** — transformação planejada de outro planeta, como Marte, para que tenha condições parecidas com as da Terra e possa abrigar ecossistemas. *Do ponto de vista dos animais, levar ecossistemas para outros planetas significaria levar também a dinâmica que produz o sofrimento dos animais selvagens, como observam Luciano Carlos Cunha (2022) e Oscar Horta e Mat Rozas (2024). Veja o argumento "Isso é ficção científica, temos problemas reais agora".*
 
 ---
 

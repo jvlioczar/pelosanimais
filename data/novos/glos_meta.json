@@ -16339,5 +16339,56 @@
   ],
   "ex": "“Questões como o uso de animais em pesquisa são tratadas pela ética prática, que aplica teorias a casos reais.”",
   "ex_en": "“Questions such as the use of animals in research are handled by practical ethics, which applies theories to real cases.”"
+ },
+ "Biologia sintética": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [],
+  "sin_en": [
+   "Synbio"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Longoprazismo",
+   "Riscos-s",
+   "Engenharia genética"
+  ],
+  "ex": "\"Com a biologia sintética, uma empresa poderia criar uma linhagem de peixes que cresce mais rápido, sem que ninguém soubesse se ela sofre mais.\"",
+  "ex_en": "\"With synthetic biology, a company could create a line of fish that grows faster, without anyone knowing whether they suffer more.\""
+ },
+ "Panspermia dirigida": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Panspermia direcionada"
+  ],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Terraformação",
+   "Sofrimento dos animais selvagens",
+   "Riscos-s"
+  ],
+  "ex": "\"Uma missão de panspermia dirigida a uma lua gelada poderia, em milhões de anos, dar origem a seres que sofrem.\"",
+  "ex_en": "\"A directed panspermia mission to an icy moon could, over millions of years, give rise to beings who suffer.\""
+ },
+ "Terraformação": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Terraformagem"
+  ],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Panspermia dirigida",
+   "Sofrimento dos animais selvagens",
+   "Longoprazismo"
+  ],
+  "ex": "\"Os planos de terraformação de Marte costumam discutir o clima e a água, e quase nunca quem viveria e sofreria lá.\"",
+  "ex_en": "\"Plans to terraform Mars usually discuss climate and water, and hardly ever who would live and suffer there.\""
  }
 }
