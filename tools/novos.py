@@ -25,7 +25,7 @@ FORMAS_PT = {
  'N10': ['Sencientistas querem reduzir a biodiversidade', 'Sencientistas são a favor da perda de biodiversidade', 'Para vocês, tanto faz uma espécie se extinguir'],
  'N11': ['Vocês querem asfaltar a natureza para acabar com o sofrimento', 'Para acabar com a predação, só destruindo os ecossistemas', 'Isso é ecocídio com boas intenções'],
  'N15': ['Então uma formiga vale o mesmo que uma pessoa?', 'Vocês acham que uma barata vale o mesmo que o seu filho?', 'Se tudo importa igual, nada importa'],
- 'N13': ['Então não posso tirar o carrapato do meu cachorro?', 'Para sencientista, matar mil vermes para salvar um bicho é crime', 'O parasita também é um animal, ou vocês escolhem quem merece?'],
+ 'N13': ['Sencientistas defendem o parasitismo', 'Então não posso tirar o carrapato do meu cachorro?', 'Para sencientista, matar mil vermes para salvar um bicho é crime', 'O parasita também é um animal, ou vocês escolhem quem merece?'],
  'M9': ['Fui ficando rígido e só via o mundo em preto e branco', 'Perdi amigos e a família por causa do meu radicalismo', 'Não me reconhecia mais, virei um chato'],
  'L4': ['Já era difícil aguentar os veganos, agora tem sencientista', 'Sencientista é vegano que perdeu o juízo', 'Isso é veganismo levado ao delírio'],
  'M6': ['Saí por causa dos próprios veganos', 'O movimento é tóxico, cansei da patrulha', 'Não quero ser confundido com essa gente'],

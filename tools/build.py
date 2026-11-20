@@ -1707,8 +1707,9 @@ if not EN:  # o site em inglês já nasce com os endereços legíveis
     for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
     redireciona('argumentos', 'matar-insetos-nos-protege', SLUG_ARG['f6'])  # antigo F7 unido ao F6 (2026-11-19)
     redireciona('argumentos', 'a-caca-de-trofeu-financia-a-conservacao', SLUG_ARG['i26'])  # título trocado em 2026-11-20
+    redireciona('argumentos', 'sencientistas-defendem-o-parasitismo', SLUG_ARG['n13'])  # título trocado em 2026-11-20
 else:  # endereços em inglês que mudaram quando a frase do argumento foi corrigida
-    for velho, c in {'so-should-we-stop-lions-from-hunting': 'f4', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'f2', 'killing-insects-protects-us': 'f6', 'trophy-hunting-funds-conservation': 'i26'}.items():
+    for velho, c in {'so-should-we-stop-lions-from-hunting': 'f4', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'f2', 'killing-insects-protects-us': 'f6', 'trophy-hunting-funds-conservation': 'i26', 'sentientists-defend-parasitism': 'n13'}.items():
         novo = SLUG_ARG[c]
         escreve(f'arguments/{velho}.html', f'<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Page moved</title><meta name="robots" content="noindex"/><link rel="canonical" href="{SITE}/arguments/{novo}.html"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">This page has moved.</a></p></body></html>\n')
 import icones; icones.gera(len(ARGS), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
