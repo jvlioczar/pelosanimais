@@ -1414,6 +1414,9 @@ def pagina_glossario():
     GLOS_GUIA['lei'] = GLOS_GUIA['legislacao de protecao animal'] = _arg('É legal, a lei permite', "It's legal; the law allows it")
     GLOS_GUIA['direitos animais'] = _arg('Animais não são pessoas', "Animals aren't persons")
     GLOS_GUIA['vegano especista'] = _arg('Veganos também são especistas', 'Vegans are speciesists too')
+    GLOS_GUIA['natureba (naturebismo)'] = _arg('Vegano é tudo hippie', 'Vegans are all hippies')
+    GLOS_GUIA['ecologia profunda'] = 'politicas/ambientalismo.html'
+    GLOS_GUIA['jusnaturalismo (direito natural)'] = 'politicas/lei-natural.html'
     GLOS_GUIA['tokenizacao'] = _arg('Povos indígenas e tradicionais', 'Indigenous and traditional peoples')
     GLOS_GUIA['indignacao seletiva'] = _arg('O sacrifício de animais em rituais', 'Animal sacrifice in religious rituals')
     GLOS_GUIA['relativismo moral'] = GLOS_GUIA['relativismo cultural'] = _arg('A moral é relativa', 'Morality is relative')
@@ -1469,6 +1472,28 @@ def pagina_glossario():
                     sl = slug(val[0] if EN else nome)
                     if sl in ancoras: os_.append((L('Vieses', 'Biases') if pag == 'vieses' else L('Falácias', 'Fallacies'), f'{pag}.html#{sl}'))
         return os_
+    # complementos (tipo, sinônimos, antônimos, veja também, exemplo): data/novos/glos_meta.json, por termo em português
+    caminho_meta = os.path.join(ROOT, 'data', 'novos', 'glos_meta.json')
+    META = json.load(open(caminho_meta, encoding='utf-8')) if os.path.exists(caminho_meta) else {}
+    por_pt = {w['pt']: w for w in vs}
+    por_nome = {norm(w['termo']): w for w in vs}
+    def separa_veja(com, proprio):
+        # o "Veja X, Y e Z." do fim do comentário vira a lista "Veja também"
+        m = re.search(r'\s*(?:Veja|See) ([^.]+)\.\s*$', com or '')
+        if not m: return com, []
+        ach = []
+        for parte in re.split(r',\s*', m[1]):
+            w = por_nome.get(norm(parte.strip()))
+            if w: ach.append(w); continue
+            # "X e Y" no fim da lista; nomes com "e" no meio (ex.: "Animais altriciais e precociais") já casaram acima
+            pedacos = re.split(r'\s+(?:e|and)\s+', parte)
+            for i in range(1, len(pedacos)):
+                a, b = ' e '.join(pedacos[:i]) if not EN else ' and '.join(pedacos[:i]), (' e ' if not EN else ' and ').join(pedacos[i:])
+                if por_nome.get(norm(a.strip())) and por_nome.get(norm(b.strip())):
+                    ach += [por_nome[norm(a.strip())], por_nome[norm(b.strip())]]; break
+            else: ach.append(None)
+        if not all(ach): return com, [w for w in ach if w and w is not proprio]
+        return com[:m.start()].rstrip(), [w for w in ach if w is not proprio]
     itens, letras = '', []
     for v in vs:
         l = inicial(v['termo'])
@@ -1478,9 +1503,22 @@ def pagina_glossario():
         links = ''.join(f'<li><a href="{e(u)}" {EXT}>{e(re.sub(r"^https?://(www\.)?", "", u).split("/")[0])}</a></li>' for u in v['links'])
         noguia = ''.join(f'<a class="glos-guia" href="{u}">{e(r)} →</a>' for r, u in guia(v))
         temas = ' · '.join(e(secoes[x]) for x in v['secs'])
-        itens += (f'<article class="glos-item" id="{v["slug"]}" data-sec="{" ".join(str(x) for x in v["secs"])}"><h3><a href="#{v["slug"]}">{e(v["termo"])}</a></h3><p class="glos-def">{liga_termos(v["def"][:1].upper() + v["def"][1:], v)}</p>'
-                  + (f'<p class="glos-com">{liga_termos(v["com"], v)}</p>' if v['com'] else '') + (f'<ul class="glos-links">{links}</ul>' if links else '')
-                  + (f'<p class="glos-no-guia">{noguia}</p>' if noguia else '') + f'<p class="glos-sec">{temas}</p></article>')
+        m = META.get(v['pt'], {})
+        com, veja = separa_veja(v['com'], v)
+        for t in m.get('veja', []):
+            w = por_pt.get(t)
+            if w and w is not v and w not in veja: veja.append(w)
+        tipo = m.get('tipo_en' if EN else 'tipo', '')
+        sin, ant, ex = m.get('sin_en' if EN else 'sin', []), m.get('ant_en' if EN else 'ant', []), m.get('ex_en' if EN else 'ex', '')
+        linhas = ''.join(f'<div><dt>{r}</dt><dd>{x}</dd></div>' for r, x in (
+            (L('Sinônimos e usos análogos', 'Synonyms and related uses'), e(', '.join(sin))), (L('Antônimos', 'Antonyms'), e(', '.join(ant))),
+            (L('Veja também', 'See also'), ', '.join(f'<a class="glos-ref" href="#{w["slug"]}">{e(w["termo"])}</a>' for w in veja[:6])),
+            (L('Exemplo aplicado', 'Example'), e(ex))) if x)
+        itens += (f'<article class="glos-item" id="{v["slug"]}" data-sec="{" ".join(str(x) for x in v["secs"])}"><h3><a href="#{v["slug"]}">{e(v["termo"])}</a></h3>'
+                  + f'<p class="glos-sec">' + (f'<span class="glos-tipo">{e(tipo)}</span> · ' if tipo else '') + f'{temas}</p><p class="glos-def">{liga_termos(v["def"][:1].upper() + v["def"][1:], v)}</p>'
+                  + (f'<p class="glos-com">{liga_termos(com, v)}</p>' if com else '')
+                  + (f'<details class="glos-mais"><summary>{L("Sinônimos, exemplo e termos relacionados", "Synonyms, example and related terms")}</summary><dl>{linhas}</dl></details>' if linhas else '')
+                  + (f'<ul class="glos-links">{links}</ul>' if links else '') + (f'<p class="glos-no-guia">{noguia}</p>' if noguia else '') + '</article>')
     itens += '</div>'
     cont = collections.Counter(x for v in vs for x in v['secs'])
     opt = lambda n, t: f'<option value="{n}">{e(t)} ({cont[n]})</option>'
@@ -1490,7 +1528,13 @@ def pagina_glossario():
     ld = json.dumps({'@context': 'https://schema.org', '@type': 'DefinedTermSet', 'name': L('Glossário de ética animal e veganismo', 'Glossary of animal ethics and veganism'), 'inLanguage': 'en' if EN else 'pt-BR',
                      'url': f'{SITE}/{"glossary" if EN else "glossario"}.html', 'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': v['termo'], 'url': f'{SITE}/{"glossary" if EN else "glossario"}.html#{v["slug"]}'} for v in vs]},
                     ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-    corpo = cabeca('<a href="./">Início</a>', L('Glossário', 'Glossary'), L(f'{len(vs)} termos da ética animal, do veganismo e do debate sobre a exploração dos animais, em ordem alfabética. Procure pelo termo ou filtre por tema.', f'{len(vs)} terms from animal ethics, veganism and the debate on animal exploitation, in alphabetical order. Search for a term or filter by topic.')) + f"""<section class="secao"><div class="wrap estreito">
+    corpo = cabeca('<a href="./">Início</a>', L('Glossário', 'Glossary'), L(f'{len(vs)} termos da ética animal, do veganismo e do debate sobre a exploração dos animais, em ordem alfabética. Procure pelo termo ou filtre por tema.', f'{len(vs)} terms from animal ethics, veganism and the debate on animal exploitation, in alphabetical order. Search for a term or filter by topic.'), f'<p class="lede glos-lede2">{L("Depois da definição, que é descritiva e imparcial, a maioria dos verbetes traz um comentário crítico do ponto de vista vegano e antiespecista, marcado com uma barra amarela.", "After the definition, which is descriptive and impartial, most entries have a critical comment from a vegan and antispeciesist point of view, marked with a yellow bar.")}</p>') + f"""<section class="secao"><div class="wrap estreito">
+<details class="glos-como"><summary>{L("Como ler este glossário", "How to read this glossary")}</summary>
+<div class="glos-como-corpo"><p class="glos-como-ex"><strong>{L("Termo", "Term")}</strong> <span>{L("tipo · área de domínio", "type · subject area")}</span></p>
+<ol><li>{L("<strong>Definição:</strong> texto imparcial, objetivo e descritivo sobre a palavra.", "<strong>Definition:</strong> an impartial, objective and descriptive text about the word.")}</li>
+<li>{L("<strong>Comentário crítico</strong>, com a barra amarela: o que o termo significa para os animais, do ponto de vista vegano e antiespecista.", "<strong>Critical comment</strong>, with the yellow bar: what the term means for animals, from a vegan and antispeciesist point of view.")}</li>
+<li>{L("<strong>Sinônimos, exemplo e termos relacionados</strong>, num bloco que se abre com um toque: sinônimos e usos análogos, antônimos, termos para ver também e um exemplo aplicado, uma frase plausível que mostra o termo em uso.", "<strong>Synonyms, example and related terms</strong>, in a block that opens with a tap: synonyms and related uses, antonyms, terms to see also and an applied example, a plausible sentence showing the term in use.")}</li>
+<li>{L("Quando existe, um link leva à página do guia que aprofunda o assunto.", "Where one exists, a link leads to the page of the guide that goes deeper into the subject.")}</li></ol></div></details>
 <div class="filtros glos-filtros"><input id="gq" type="search" placeholder="{L("Procurar um termo ou uma ideia", "Search for a term or an idea")}" aria-label="{L("Procurar no glossário", "Search the glossary")}" autocomplete="off"/><label class="so-leitor" for="gs">{L("Tema", "Topic")}</label><select id="gs" class="sel"><option value="">{L("Todos os temas", "All topics")}</option>{ops}</select><span id="gn" aria-live="polite">{len(vs)} {L("termos", "terms")}</span></div>
 <nav class="glos-az" id="glos-az" aria-label="{L("Ir para a letra", "Jump to letter")}">{az}</nav>
 <div id="glos">{itens}</div>
@@ -1503,7 +1547,7 @@ var itens=[].slice.call(document.querySelectorAll(".glos-item")),letras=[].slice
 function norm(t){{return t.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"")}}
 function tx(i,sel){{return [].map.call(i.querySelectorAll(sel),function(x){{return x.textContent}}).join(" ")}}
 var dados=itens.map(function(i){{var com=tx(i,".glos-com"),m=com.match(/(?:^|[.!?] )((?:Veja|See) [^]*)$/),veja=m?m[1]:"";if(m)com=com.slice(0,com.length-veja.length);
-return {{el:i,pai:i.parentNode,tit:norm(tx(i,"h3")),txt:norm(tx(i,".glos-def")+" "+com),rel:norm(veja+" "+tx(i,".glos-links")+" "+tx(i,".glos-no-guia")+" "+tx(i,".glos-sec"))}}}});
+return {{el:i,pai:i.parentNode,tit:norm(tx(i,"h3")),txt:norm(tx(i,".glos-def")+" "+com+" "+tx(i,".glos-mais dd")),rel:norm(veja+" "+tx(i,".glos-links")+" "+tx(i,".glos-no-guia")+" "+tx(i,".glos-sec"))}}}});
 var res=document.createElement("div");res.id="glos-res";res.hidden=true;G.parentNode.insertBefore(res,G);
 var ROT=["{L("No título", "In the title")}","{L("No texto", "In the text")}","{L("Relacionados", "Related")}"];
 function nivel(d,t){{if(d.tit.indexOf(t)>-1){{return d.tit===t?0:d.tit.indexOf(t)===0?1:(" "+d.tit).indexOf(" "+t)>-1?2:3}}if(d.txt.indexOf(t)>-1)return 10;if(d.rel.indexOf(t)>-1)return 20;return -1}}
