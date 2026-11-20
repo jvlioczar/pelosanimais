@@ -31,7 +31,7 @@
 "i": 376,
 "termo": "Animal fighting",
 "def": "Forced confrontation between animals (roosters, dogs) for entertainment and betting, usually illegal.",
-"com": "",
+"com": "In Brazil, the Supreme Federal Court struck down several state laws that authorized cockfighting, such as Rio de Janeiro's in 2011, holding the practice to be cruelty prohibited by the Constitution. In the United States, taking part in animal fighting is a federal crime. Even so, clandestine fights continue to be uncovered, and cockfighting is legal and popular in countries such as the Philippines. See Animal cruelty, The Link and Vaquejada.",
 "pt": "Rinha"
 },
 {
@@ -52,14 +52,14 @@
 "i": 379,
 "termo": "Religious rituals involving animals",
 "def": "Practices of sacrifice or ritual use, a sensitive topic at the intersection of ethics and religion.",
-"com": "",
+"com": "The rituals vary widely: they include religious slaughter for food, such as halal and kosher, and sacrifices at festivals and ceremonies of many religions worldwide. In Brazil, the Supreme Federal Court ruled in 2019 that the Rio Grande do Sul law allowing animal sacrifice in Afro-Brazilian religious ceremonies is constitutional. Critics point out that outrage at these rituals is often directed at religious minorities, while the slaughter of billions of animals in ordinary livestock farming receives little attention; from a sentientist point of view, the criterion should be the same in every case: the animal's suffering and death. See Religious speciesism, Selective outrage and Cultural relativism.",
 "pt": "Rituais religiosos com animais"
 },
 {
 "i": 380,
 "termo": "Rodeo",
 "def": "A spectacle in which horses or bulls are ridden or chased by competitors, involving methods that induce stressful behavior in the animal.",
-"com": "",
+"com": "In Brazil, Law 10,519/2002 requires cinches and girths of natural wool and bans pointed spurs and electric shocks, but allows the flank strap; in 2016 another law declared rodeo and vaquejada intangible cultural heritage. Animals can suffer fractures and other injuries, and calf-roping events, in which calves are brought down at high speed, are among the most criticized. See Flank strap, Vaquejada and Bullfighting.",
 "pt": "Rodeio"
 },
 {
@@ -80,35 +80,35 @@
 "i": 383,
 "termo": "Sanctuary",
 "def": "A nonprofit institution dedicated to taking in and caring for rescued animals, with no purpose of exploitation or commercial breeding.",
-"com": "",
+"com": "Sanctuaries differ from zoos and breeding facilities because they do not buy, sell or breed the animals, and seek to give them the best possible life until natural death. Because the name is not protected and is also used by places that exploit animals for tourism, with elephant rides or contact with big-cat cubs, organizations such as the Global Federation of Animal Sanctuaries (GFAS) accredit sanctuaries that meet care standards. Farmed animal sanctuaries also play an educational role, showing pigs, cows and chickens as individuals. See Rescue, Zoo and Adoption.",
 "pt": "Santuário"
 },
 {
 "i": 384,
 "termo": "Tallow",
 "def": "Solid fat extracted from animal tissues, used to make candles, soaps and some foods.",
-"com": "",
+"com": "Tallow is a by-product of slaughter and appears in little-noticed uses, such as soaps, candles, lubricants and industrial additives. In 2016, the Bank of England confirmed that the new polymer £5 notes contained traces of tallow; a petition against this passed 130,000 signatures, but the bank kept the notes, citing cost. The case shows how animal derivatives circulate in products almost no one associates with animals. See Gelatin and Lanolin.",
 "pt": "Sebo animal"
 },
 {
 "i": 385,
 "termo": "Silk",
 "def": "A textile fiber produced by silkworm larvae, whose traditional extraction usually involves killing the larvae inside the cocoon.",
-"com": "",
+"com": "In conventional production, cocoons are boiled or steamed with the pupa still alive inside, so that the thread can be unwound whole; estimates, mostly from animal protection organizations, range from 5,000 to 7,000 larvae per kilogram of silk. So-called \"ahimsa\" or \"peace\" silk waits for the moth to leave the cocoon, but it also draws criticism, for example about rearing conditions. Insect sentience is still debated, but there is growing evidence that some insects can feel pain. See Wool, Fur and leather and Xenospeciesism.",
 "pt": "Seda"
 },
 {
 "i": 386,
 "termo": "Food security",
 "def": "Guaranteed regular and permanent access to food of sufficient quality for a healthy life, a topic connected to food justice.",
-"com": "",
+"com": "The most widely used definition is the one from the FAO World Food Summit of 1996. Animal farming competes with people for land and grain: according to a study by Joseph Poore and Thomas Nemecek published in *Science* in 2018, animal products take up about 83% of farmland and provide only 18% of the calories eaten worldwide. For this reason, diets with fewer animal products are often pointed to as a way to feed more people on the same land, although hunger depends mainly on income, distribution and conflict. See Food justice, Soy and Food classism.",
 "pt": "Segurança alimentar"
 },
 {
 "i": 387,
 "termo": "Artificial selection",
 "def": "Deliberate human choice of desired genetic traits in animals through controlled breeding.",
-"com": "",
+"com": "Selection for productivity has changed animals' bodies: according to a 2014 study by Martin Zuidhof and colleagues, broiler growth increased by more than 400% between 1957 and 2005, and rapid growth is associated with leg and heart problems. Dairy cows produce far more milk than the calf needs, which is associated with more mastitis and hoof problems, and laying hens lay about 300 eggs a year, far more than the wild ancestral species. In dogs, selection for appearance has produced hereditary diseases. See Pedigree, Artificial insemination and Domestication.",
 "pt": "Seleção artificial"
 },
 {
@@ -213,7 +213,7 @@
 "i": 402,
 "termo": "Suffering from natural causes",
 "def": "Pain and death that occur without human intervention (disease, predation, disasters).",
-"com": "",
+"com": "Most wild animals are born into species that have many offspring, and most of these die shortly after birth from hunger, disease, cold or predation. For this reason some philosophers, such as Oscar Horta, argue that suffering in nature is enormous and deserves moral attention, even without human fault. Others answer that intervening in nature may cause more harm than it prevents; the most common position among those who study the subject is to research before acting. See Wild animal suffering, Idyllic nature and Predation.",
 "pt": "Sofrimento de causas naturais"
 },
 {
@@ -227,7 +227,7 @@
 "i": 404,
 "termo": "Soy",
 "def": "A versatile legume, the basis of countless vegan products (tofu, milk, soy meat).",
-"com": "",
+"com": "It is common to hear that vegans' soy destroys forests, but according to Our World in Data, based on FAO data, more than three quarters of the world's soy becomes feed for farmed animals, and only a small part is eaten directly by people, as tofu, soy milk or tempeh. In Brazil, one of the largest producers, soy expansion is linked to deforestation in the Cerrado and the Amazon. People who eat meat generally consume more soy indirectly than people who eat tofu. See Food security, Plant protein and Livestock farming.",
 "pt": "Soja"
 },
 {
@@ -262,7 +262,7 @@
 "i": 409,
 "termo": "Subsistence",
 "def": "The use of animals out of a need for direct survival, a recurring argument in debates about ethical exceptions.",
-"com": "",
+"com": "The argument applies to real situations, such as peoples living in regions without viable alternatives, and many advocates of veganism recognize these exceptions; the Vegan Society's definition speaks of avoiding exploitation \"as far as is possible and practicable\". Most consumption of animal products in the world, however, takes place where alternatives exist, and the argument does not extend to those cases. See Necessity, Hunting and Veganism.",
 "pt": "Subsistência"
 },
 {
@@ -325,7 +325,7 @@
 "i": 418,
 "termo": "Vegan witness (bearing witness)",
 "def": "The practice of publicly documenting animal suffering at sites of exploitation (slaughterhouses, markets).",
-"com": "",
+"com": "The practice spread from Toronto Pig Save, founded in Canada in 2010, which inspired hundreds of similar groups known as the Save Movement. In 2017, its founder, Anita Krajnc, was acquitted of charges for giving water to pigs in a truck on the way to slaughter, in a case that drew international attention. See Vigil and Street activism.",
 "pt": "Testemunho vegano (bearing witness)"
 },
 {
@@ -346,7 +346,7 @@
 "i": 421,
 "termo": "Bullfighting",
 "def": "A spectacle involving a confrontation between a bull and bullfighters, usually resulting in serious injury and the death of the animal.",
-"com": "",
+"com": "In the Spanish bullfight, the bull is wounded with lances and banderillas before being killed with a sword; in Portugal, killing in the ring is generally prohibited, but the bull is wounded and usually slaughtered afterwards. Bullfighting is still legal in a few countries, such as Spain, Portugal, France (in some regions), Mexico, Peru, Ecuador and Venezuela, and in 2024 Colombia passed a law banning it from 2027. Supporters invoke tradition and culture, an argument that also appears in defence of vaquejada and rodeo. See Banderillas, Vaquejada and Cultural relativism.",
 "pt": "Tourada"
 },
 {
@@ -360,14 +360,14 @@
 "i": 423,
 "termo": "Traces (of allergens)",
 "def": "A labeling warning indicating possible cross-contamination of a product with small unintentional amounts of an ingredient (such as milk or egg).",
-"com": "",
+"com": "Vegans debate whether a product that \"may contain traces of milk\" is vegan. The Vegan Society accepts this warning on products with its trademark, as long as the contamination risk is managed, because it signals a risk on the production line, not an ingredient; other certifiers are stricter. The warning exists to protect people with allergies, and avoiding these products does not reduce the use of animals. See Vegan and Cruelty-free.",
 "pt": "Traços (de alérgenos)"
 },
 {
 "i": 424,
 "termo": "Animal trafficking",
 "def": "The illegal trade in wild or domestic animals, often involving capture, transport and cruel conditions.",
-"com": "",
+"com": "In Brazil, Renctas, a network against wildlife trafficking, has estimated since its first report in 2001 that about 38 million wild animals are taken from nature each year, most of them birds, and that most die during capture or transport; the figure is old and its method is poorly documented. In international trade, the CITES convention regulates the sale of endangered species. Trafficking supplies mainly the pet market, as well as collectors, traditional medicine and food, and it increases the risk of zoonoses. See CITES, Pet shop and Zoonosis.",
 "pt": "Tráfico de animais"
 },
 {
@@ -395,7 +395,7 @@
 "i": 428,
 "termo": "Guardianship",
 "def": "The practice of taking on continuing responsibility for the care of an animal, usually a rescued one, as an alternative to the concept of ownership.",
-"com": "",
+"com": "Replacing \"owner\" with \"guardian\" shows a change of outlook, but in the law of most countries animals are still property. Some countries changed the status of animals in their civil codes, such as France in 2015, Portugal in 2017 and Spain in 2021, which now recognize them as sentient beings, without giving them full legal personhood. See Guardian or caregiver, Animals as property and Animal legal personhood.",
 "pt": "Tutoria"
 },
 {
@@ -458,21 +458,21 @@
 "i": 437,
 "termo": "Veganism",
 "def": "A philosophy and practice that seeks to exclude, as far as possible and practicable, all forms of animal exploitation.",
-"com": "",
+"com": "The most cited definition is that of the Vegan Society, founded in England in 1944. Veganism is not only a diet: it includes clothing, entertainment, testing and other uses. The phrase \"as far as is possible and practicable\" acknowledges that living without causing any harm to animals is impossible, and also opens debates about where that limit lies, for example with medicines tested on animals. There is disagreement about whether veganism is a moral baseline, as abolitionism holds, or a means of reducing suffering, as pragmatic strands hold. See Vegan, Vegan diet, Abolitionist veganism and Pragmatic veganism.",
 "pt": "Veganismo"
 },
 {
 "i": 438,
 "termo": "Abolitionist veganism",
 "def": "A strand that emphasizes ending animals' status as property as its central axis, critical of welfarism.",
-"com": "",
+"com": "This strand is associated with the legal scholar Gary Francione, who defends veganism as a moral baseline and vegan education as the main strategy, and criticizes welfare reform campaigns and single-issue campaigns. Critics accuse it of purism and say it rejects concrete gains for animals alive today. See Abolitionism, Welfarism and Pragmatic veganism.",
 "pt": "Veganismo abolicionista"
 },
 {
 "i": 439,
 "termo": "Feminist veganism",
 "def": "A strand that links veganism with a critique of patriarchal structures (connected to ecofeminism).",
-"com": "",
+"com": "The best-known work is *The Sexual Politics of Meat* (1990) by Carol J. Adams, which links the objectification of women and of animals and proposed the idea of the absent referent. The strand also draws attention to the exploitation of females' reproductive systems, as in milk and egg production. See Ecofeminism, Absent referent and Dairy products.",
 "pt": "Veganismo feminista"
 },
 {
@@ -535,14 +535,14 @@
 "i": 448,
 "termo": "Vitamin B12",
 "def": "An essential nutrient produced by microorganisms, not reliably present in plant sources, whose supplementation is usually recommended in vegan diets.",
-"com": "",
+"com": "B12 is not produced by animals or plants, but by bacteria. In livestock farming, farmed animals are usually given cobalt or B12 itself in their feed, so part of the B12 in meat also comes from supplements. For this reason, the need to supplement does not show that a vegan diet is unnatural, only that the source of the vitamin has changed. See Vegan diet and Nutritional yeast.",
 "pt": "Vitamina B12"
 },
 {
 "i": 449,
 "termo": "Veal",
 "def": "Meat from calves slaughtered while still young, usually raised in conditions of extreme confinement (veal crate).",
-"com": "",
+"com": "Veal is a by-product of the dairy industry: male calves of dairy breeds do not produce milk and grow too slowly for beef production, so they are killed young, at days, weeks or a few months of age. Traditional pale meat depends on a low-iron diet and little movement. Even where veal crates have been banned, as in the European Union, separation from the mother and slaughter at a young age continue. See Veal crate, Dairy industry and Premature slaughter.",
 "pt": "Vitela"
 },
 {
@@ -563,7 +563,7 @@
 "i": 452,
 "termo": "Xenotransplantation",
 "def": "The transplantation of organs or tissues between different species (e.g. from pigs to humans), raising ethical questions about the use of animals as \"organ banks\".",
-"com": "",
+"com": "The organs come from genetically modified pigs, raised in isolated facilities and killed to remove their organs. The first pig heart transplants into living patients, in the United States in 2022 and 2023, gave survival of at most about two months; pig kidney transplants performed since 2024 have had better results, and the FDA authorized clinical trials in 2025. The shortage of human organs is real, but critics argue that the technique expands the use of animals as a source of spare parts and advocate strengthening human organ donation and other alternatives. See Genetic engineering, Animal experimentation and Instrumentalization.",
 "pt": "Xenotransplante"
 },
 {

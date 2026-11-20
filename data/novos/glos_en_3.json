@@ -143,7 +143,7 @@
 "i": 206,
 "termo": "Extinction",
 "def": "The complete disappearance of a species; a relevant topic in debates about conservation and human responsibility for biodiversity.",
-"com": "",
+"com": "Conservation usually focuses on species and ecosystems, and sentientism on the individuals who can feel: the two views converge when habitat loss kills and displaces animals, and diverge when protecting one species involves killing individuals of another. In 2019 the intergovernmental platform IPBES estimated that about 1 million plant and animal species are threatened with extinction and named land-use change, mainly for agriculture and livestock, as the main direct cause. See Invasive alien species, Sentientist environmentalism and Holistic environmentalism.",
 "pt": "Extinção"
 },
 {
@@ -220,7 +220,7 @@
 "i": 217,
 "termo": "Foie gras",
 "def": "The fatty liver of ducks or geese obtained through force-feeding (gavage), a practice associated with severe animal suffering.",
-"com": "",
+"com": "Production by force-feeding is banned in several countries, such as the United Kingdom, Germany and Israel, where the ban came from a Supreme Court ruling; India banned imports, and California has banned sales since 2012. France is by far the largest producer and protects it by law as cultural heritage. The tradition argument does not change what happens to the birds, whose livers are enlarged several times over by force-feeding. See Fattening and Cultural relativism.",
 "pt": "Foie-gras"
 },
 {
@@ -234,14 +234,14 @@
 "i": 219,
 "termo": "Free range",
 "def": "A farming system in which animals have some access to outdoor areas, in contrast to total confinement, without necessarily guaranteeing good welfare conditions.",
-"com": "",
+"com": "The expression has no single definition. In the European Union, free-range eggs require continuous daytime access to outdoor runs with at least 4 m² per hen; in the United States, for poultry meat, \"access to the outdoors\" is enough, with no clear rules on size or time. Even in the strictest systems, hens come from hatcheries that kill male chicks and are slaughtered when laying declines. See Happy meat, Battery cages and Hatchery.",
 "pt": "Free range"
 },
 {
 "i": 220,
 "termo": "Freeganism",
 "def": "The practice of recovering and eating discarded food (still fit for consumption) as a way of reducing waste and resisting consumerism, often associated with vegan values.",
-"com": "",
+"com": "Some freegans eat discarded animal products, arguing that, since they come from the trash, they do not fund exploitation. Many vegans disagree, because treating animals as food still sends the message that they are products. See Veganism and Consumption.",
 "pt": "Freeganismo"
 },
 {
@@ -255,7 +255,7 @@
 "i": 222,
 "termo": "Seafood",
 "def": "A generic term for aquatic animals other than fish used as food (mollusks, crustaceans).",
-"com": "",
+"com": "The expression, like \"fruits de mer\" or the Portuguese \"frutos do mar\" (fruits of the sea), makes animals sound like a harvest. It groups shrimp, lobsters, crabs, octopuses, squid, mussels and oysters, animals with very different capacities: there is good evidence of sentience in decapod crustaceans and cephalopods, and the United Kingdom recognized them as sentient in law in 2022. Shrimp trawling catches many other animals by accident, and octopus farming was banned in the US states of Washington and California in 2024. See Crustacean-vegetarianism (crustovegetarianismo, Brazilian usage), Ostroveganism and Pescatarianism.",
 "pt": "Frutos do mar"
 },
 {
@@ -269,7 +269,7 @@
 "i": 224,
 "termo": "Livestock (gado)",
 "def": "A generic term for farmed animals, especially cattle.",
-"com": "",
+"com": "In English, \"cattle\" comes from the Anglo-Norman \"catel\", meaning goods or property, and shares its origin with \"capital\" and \"chattel\", which shows how animals were long counted as wealth. In Portuguese, \"gado\" is also used for people seen as an obedient mass, a usage that reinforces the idea of these animals as a group without individuals. See Animals as property, Commodification and Speciesist term.",
 "pt": "Gado"
 },
 {
@@ -283,7 +283,7 @@
 "i": 226,
 "termo": "Gelatin",
 "def": "A substance obtained from the collagen in animal bones, skin and connective tissue, used as a food thickener.",
-"com": "",
+"com": "Because it comes from the bones, skins and cartilage of slaughtered animals, mainly pigs and cattle, gelatin is not vegetarian. It shows up in unexpected places, such as gummy candies, medicine capsules, some yogurts and the fining of certain wines and beers, where it is not always listed on the label. There are plant substitutes, such as agar and pectin. See Agar, Tallow and Vegetarianism.",
 "pt": "Gelatina"
 },
 {
@@ -465,21 +465,21 @@
 "i": 252,
 "termo": "Dairy industry",
 "def": "The economic sector devoted to the production and sale of milk and its derivatives, dependent on the repeated separation of mothers and their young.",
-"com": "",
+"com": "To produce milk, a cow must give birth, so she is inseminated roughly once a year. The calf is usually separated within the first hours or days; females generally replace the herd, and males are killed young or raised for meat. The cow is slaughtered when production falls, usually at four to five years, in a species that can live 15 to 20 years. See Weaning, Veal and Dairy products.",
 "pt": "Indústria dos lacticínios"
 },
 {
 "i": 253,
 "termo": "Livestock industry",
 "def": "The set of economic activities linked to raising animals for the production of food and other products.",
-"com": "",
+"com": "According to FAO data, more than 80 billion land animals are slaughtered each year worldwide, not counting fish and male chicks killed at hatching. A 2018 study by Joseph Poore and Thomas Nemecek estimated that meat, dairy, eggs and farmed fish occupy 83% of farmland and provide 18% of calories consumed. The FAO estimated that livestock supply chains account for about 12% of human greenhouse gas emissions, in a 2023 revision, or 14.5%, in a 2013 estimate. Brazil is among the largest producers and exporters of beef and chicken. See Agribusiness, Industrial livestock farming and Meat industry.",
 "pt": "Indústria pecuária"
 },
 {
 "i": 254,
 "termo": "Artificial insemination",
 "def": "The mechanical introduction of semen into a female's reproductive tract without natural mating, a standard practice in modern livestock farming.",
-"com": "",
+"com": "Semen is collected from males with an artificial vagina or, in some cases, by electroejaculation, and placed in the restrained female. The technique allows a few selected males to sire thousands of offspring, which speeds up selection for productivity. In commercial turkeys, selection has gone so far that the males, too heavy, have difficulty mating, and practically all reproduction depends on insemination. See Forced mating, Artificial selection and Rape rack.",
 "pt": "Inseminação artificial"
 },
 {
@@ -493,7 +493,7 @@
 "i": 256,
 "termo": "Physical integrity",
 "def": "The state of a body free from injury, mutilation or undue violation; a welfare principle that opposes practices such as tail docking or dehorning without necessity.",
-"com": "",
+"com": "In livestock farming, many mutilations are routine and legal in much of the world, such as castration, tail docking, teeth clipping, beak trimming and dehorning, often without anesthesia. They exist to adapt the animal to the farming system, for example to stop stressed pigs from biting each other's tails, not for the animal's own good. See Tail docking, Beak trimming, Castration and Dehorning.",
 "pt": "Integridade física"
 },
 {
@@ -521,14 +521,14 @@
 "i": 260,
 "termo": "Food intolerance",
 "def": "An adverse reaction of the body to a given food, distinct from allergy, relevant for adapting vegetarian and vegan diets.",
-"com": "",
+"com": "Lactose intolerance is very common: according to the US National Institutes of Health (NIH), about 65% of people worldwide lose part of their ability to digest lactose after infancy, with wide variation between regions. This shows that drinking milk in adulthood is not the norm for the human species, although it is not an ethical argument in itself. See Milk, Plant milk and Dairy products.",
 "pt": "Intolerância alimentar"
 },
 {
 "i": 261,
 "termo": "Induced skin irritation",
 "def": "A toxicological test that applies substances to animals' skin to measure irritant reactions, associated with methods such as the Draize test.",
-"com": "",
+"com": "In the classic test, OECD guideline 404, the substance is applied to the shaved skin of rabbits and the reaction is observed for up to 14 days. Since 2010 the OECD has accepted tests with laboratory-reconstructed human skin, which can now replace the animal test in many cases. In the European Union, selling cosmetics tested on animals has been banned since 2013. See Draize test, Replacement methods and Cosmetics animal testing ban.",
 "pt": "Irritação cutânea induzida"
 },
 {
@@ -563,7 +563,7 @@
 "i": 266,
 "termo": "Wool",
 "def": "A fiber obtained from the shearing of sheep and other animals, whose production can involve injuries and stress (e.g., mulesing).",
-"com": "",
+"com": "Merino sheep were selected to produce far more wool than they need and to have wrinkled skin, which makes them dependent on shearing and vulnerable to flystrike, the reason for mulesing. Shearing at industrial pace can cause cuts and stress, as investigations by animal protection organizations in several countries have shown. In much of the world, wool and meat come from the same flocks, and wool sheep are also slaughtered when production falls. See Mulesing, Lanolin and Fur and leather.",
 "pt": "Lã"
 },
 {
@@ -577,14 +577,14 @@
 "i": 268,
 "termo": "Lanolin",
 "def": "A fatty substance extracted from sheep's wool, used in cosmetics.",
-"com": "",
+"com": "It is extracted from wool after shearing, without killing the animal, but it is a by-product of the wool industry and therefore is not considered vegan. Lanolin is also the main raw material for the vitamin D3 in supplements; vegan versions of D3 are made from lichens. See Wool and Cruelty-free.",
 "pt": "Lanolina"
 },
 {
 "i": 269,
 "termo": "Dairy products",
 "def": "Products derived from animal milk (cheese, yogurt, butter).",
-"com": "",
+"com": "Many people who stop eating meat keep dairy because they think it involves no death, but milk production depends on repeated pregnancies, separates calves from their mothers and ends with the slaughter of the cows and of many males. See Milk, Dairy industry and Veal.",
 "pt": "Laticínios"
 },
 {
@@ -612,21 +612,21 @@
 "i": 273,
 "termo": "Milk",
 "def": "A mammary secretion produced by female mammals to feed their young, commercially extracted from cows, goats and other species.",
-"com": "",
+"com": "To produce milk, a cow must have a calf, and in dairy farming she is usually artificially inseminated every year. Calves are generally separated from their mothers shortly after birth so the milk can be sold; females join the herd and many males go to veal or slaughter. When production drops, after a few years, the cows are slaughtered, long before the end of their natural lives. See Dairy industry, Artificial insemination and Veal.",
 "pt": "Leite"
 },
 {
 "i": 274,
 "termo": "Plant milk",
 "def": "A plant-based drink (soy, oat, almond, etc.) used as a substitute for animal milk.",
-"com": "",
+"com": "In 2017, in the TofuTown case, the Court of Justice of the European Union ruled that names such as milk, butter and cheese are reserved, in trade, for animal products; that is why many European labels say \"soy drink\" or \"oat drink\". In everyday use, however, \"coconut milk\" and \"soy milk\" have existed for a long time. See Milk, Dairy products and Plant-based meat.",
 "pt": "Leite vegetal"
 },
 {
 "i": 275,
 "termo": "Nutritional yeast",
 "def": "A deactivated fungus, rich in B-complex vitamins, used to give a \"buttery\" or cheese-like flavor to vegan dishes.",
-"com": "",
+"com": "Only fortified yeast is a source of vitamin B12; unfortified yeast has no reliable amounts of the vitamin, so it is worth reading the label. See Vitamin B12.",
 "pt": "Levedura nutricional"
 },
 {
@@ -647,7 +647,7 @@
 "i": 278,
 "termo": "Animal liberation",
 "def": "Both a philosophical concept and the tactic of directly rescuing animals from exploitation.",
-"com": "",
+"com": "The expression became known through the book *Animal Liberation* (1975) by Peter Singer, who took the name from the Black and women's liberation movements. Singer's argument is utilitarian and rests on equal consideration of interests, not on rights. As a tactic, the expression also names the Animal Liberation Front. See Direct action, Rescue and Speciesism.",
 "pt": "Libertação animal"
 }
 ]

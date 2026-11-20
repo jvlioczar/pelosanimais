@@ -24,7 +24,7 @@
 "i": 3,
 "termo": "Premature slaughter",
 "def": "The killing of an animal before it reaches maturity or full productive age, common in some production chains (e.g. male calves in the dairy industry).",
-"com": "",
+"com": "The name suggests there is a normal age of slaughter, but in livestock farming almost all animals are already killed very young compared with how long they could live: broiler chickens at about six weeks, pigs at five to six months and dairy cows at four to five years, in a species that can live 15 to 20 years. The cases called premature are those in which the animal never even acquires commercial value, such as male calves of dairy breeds, killed at days or weeks of age, and male chicks of laying strains, killed on their first day. See Veal, Dairy industry and Hatchery.",
 "pt": "Abate prematuro"
 },
 {
@@ -45,21 +45,21 @@
 "i": 6,
 "termo": "Direct action",
 "def": "Direct intervention against animal exploitation, sometimes outside the law (e.g. rescues, sabotage).",
-"com": "",
+"com": "The best-known example is the Animal Liberation Front (ALF), which emerged in the United Kingdom in 1976, claims rescues and property damage and says it rejects harming any living being. In Brazil, the removal of about 180 beagles from the Instituto Royal in São Roque in 2013 reignited the debate. Governments often treat some of these actions as crime or terrorism, as in the US Animal Enterprise Terrorism Act of 2006, and there is disagreement within the movement about the legitimacy and effectiveness of acting outside the law. See Rescue, Ecoterrorism and Nonviolence.",
 "pt": "Ação direta"
 },
 {
 "i": 7,
 "termo": "Animal training",
 "def": "The process of training an animal to perform specific behaviors through conditioning; coercive methods are debated ethically.",
-"com": "",
+"com": "Methods range from rewards, such as food and play, to punishment, such as leash jerks and shock or prong collars. A study by Ana Catarina Vieira de Castro and colleagues, published in 2020, observed dogs at training schools in Portugal and associated aversive methods with more signs of stress and more pessimistic responses, and several veterinary bodies recommend reward-based training. In circuses, rodeos and other shows, training serves behaviours the animal would not perform on its own, and the criticism goes beyond the method: it questions the use itself. See Animal entertainment and Rodeo.",
 "pt": "Adestramento"
 },
 {
 "i": 8,
 "termo": "Adoption",
 "def": "The act of taking on the responsible, permanent care of an animal, usually a rescued or abandoned one, instead of buying it.",
-"com": "",
+"com": "The slogan \"adopt, don't shop\" rests on the idea that each purchase encourages commercial breeding, while shelters and rescuers have animals waiting for a home. Adoption solves one animal's situation, but not the cause of abandonment; for that reason it usually comes with neutering and responsible-care campaigns. See Rescue, Animal rescuers (Brazil's \"protetores de animais\") and Castration.",
 "pt": "Adoção"
 },
 {
@@ -73,7 +73,7 @@
 "i": 10,
 "termo": "Afro-veganism (or Black veganism)",
 "def": "A strand that centers Black experiences and racial critique within the vegan movement, questioning its predominantly white history.",
-"com": "",
+"com": "Two works mark this strand: the anthology *Sistah Vegan* (2010), edited by A. Breeze Harper, with writings by Black vegan women, and *Aphro-ism* (2017), by the sisters Aph Ko and Syl Ko. They criticize the idea that veganism is a thing for white and wealthy people and connect the oppression of animals to racism, without treating the two kinds of suffering as equal. See Intersectionality, Intersectional veganism and Animal slavery.",
 "pt": "Afroveganismo (ou veganismo negro)"
 },
 {
@@ -101,7 +101,7 @@
 "i": 14,
 "termo": "Cellular agriculture",
 "def": "The production of biological tissues (including \"meat\") from cell culture, without raising and slaughtering animals.",
-"com": "",
+"com": "Besides cultivated meat, the field includes precision fermentation, in which microorganisms produce proteins identical to animal ones, such as whey or egg-white proteins, without cows or hens. Not every cellular agriculture product does away with animals entirely: cultivated meat still starts from animal cells. See Cultivated meat and Technological veganism.",
 "pt": "Agricultura celular"
 },
 {
@@ -115,14 +115,14 @@
 "i": 16,
 "termo": "Flank strap",
 "def": "A tight strap placed around the abdomen of horses or bulls in rodeos to induce bucking, causing discomfort.",
-"com": "",
+"com": "In Brazil the device is called sedém. Rodeo supporters say it only bothers the animal and does not hurt; critics, such as animal protection organizations, argue that the discomfort is precisely what makes the animal buck, and that the behaviour is not spontaneous. Brazil's Law 10,519/2002 requires cinches and girths to be made of natural wool and bans pointed spurs and electric shocks, but does not ban the flank strap. Pittsburgh, in the United States, banned flank straps at rodeos in 1992, in a city ordinance later overridden by a change in state law. See Rodeo and Vaquejada.",
 "pt": "Alça de flanco (flank strap)"
 },
 {
 "i": 17,
 "termo": "Seaweed (kombu, nori)",
 "def": "A marine plant used in cooking, especially in Asian cuisine, and also a source of iodine and other nutrients.",
-"com": "",
+"com": "Seaweeds such as nori are sometimes cited as a source of vitamin B12, but many contain forms of the vitamin that the body cannot use, and the content varies greatly between samples. For this reason, nutritionists recommend supplements or fortified foods as a reliable source. Some seaweeds, such as kombu, are also very high in iodine, and excess can be harmful. See Vitamin B12.",
 "pt": "Alga (kombu, nori)"
 },
 {
@@ -155,9 +155,9 @@
 },
 {
 "i": 22,
-"termo": "Dehorning",
+"termo": "Disbudding",
 "def": "The removal or prevention of horn growth in cattle, usually by cauterization, in most cases without anesthesia.",
-"com": "",
+"com": "It is usually done on calves a few weeks old, with a hot iron or caustic paste that burns the horn bud, and studies record signs of pain during and after the procedure. Veterinary bodies, such as the British BVA and BCVA, recommend local anaesthesia and an anti-inflammatory, but surveys of dairy farmers in the United States, Italy and France found that most use no pain relief at all. The reason is management: hornless animals take up less space and injure each other less in crowded groups. Breeding naturally hornless (polled) cattle is pointed to as an alternative. See Dehorning and Anesthesia.",
 "pt": "Amochamento"
 },
 {
@@ -185,7 +185,7 @@
 "i": 26,
 "termo": "Anesthesia",
 "def": "A medical procedure to suppress the sensation of pain during interventions; its use (or absence) in livestock procedures is a central topic in welfare debates.",
-"com": "",
+"com": "Several routine procedures in livestock farming are allowed without anaesthesia when performed on very young animals. In the European Union, castration and tail docking of piglets require anaesthesia only after the seventh day of life; in Brazil, the 2020 pig welfare rule of the Ministry of Agriculture requires anaesthesia for tail docking only after the third day and gives farms until 2030 to make it mandatory for all surgical castration. Beak trimming, disbudding and hot-iron branding are also usually done without anaesthesia. Even with local anaesthesia, pain can last for days after the procedure, which is why veterinary bodies also recommend analgesics. See Castration, Tail docking and Beak trimming.",
 "pt": "Anestesia"
 },
 {
@@ -206,7 +206,7 @@
 "i": 29,
 "termo": "Synanthropic animals",
 "def": "Species that have adapted to live in urban environments or near humans (rats, pigeons, cockroaches), often treated as pests.",
-"com": "",
+"com": "Rats, pigeons and cockroaches live near humans because cities offer abundant food, shelter and waste; to a large extent, their presence is a consequence of how humans organize space. For that reason, measures such as waste management and sealing entry points tend to reduce populations more lastingly than killing, which can be followed by recolonization. Living close to humans does not change these animals' capacity to feel. See Pests and Animal population control.",
 "pt": "Animais sinantrópicos"
 },
 {
@@ -220,28 +220,28 @@
 "i": 31,
 "termo": "Downed animal",
 "def": "An animal that cannot stand up or move because of illness, exhaustion or injury, usually during transport or confinement; a situation associated with serious welfare violations.",
-"com": "",
+"com": "The industry term is \"downer\". Because they are hard to move, downed animals may be dragged, pushed or moved with electric shocks to slaughter. In the United States, a 2008 Humane Society video recorded at a California slaughterhouse showed workers using forklifts, water hoses and shocks to force downed cattle to stand, which led to the largest meat recall in the country up to then, about 143 million pounds. In 2009 the US Department of Agriculture banned the slaughter of downed cattle for food, but the rule does not cover pigs and other species. See Live animal transport and Slaughter.",
 "pt": "Animal caído"
 },
 {
 "i": 32,
 "termo": "Companion animal",
 "def": "An animal kept for emotional and social reasons, with no productive purpose (dogs, cats and other pets).",
-"com": "",
+"com": "The line between companion and farmed animal is cultural, not biological: dogs are eaten in some countries, guinea pigs are pets in some places and food in others, such as Peru, and pigs can also live as companions. Companion animals receive more affection and legal protection, but they are also bought, sold, bred in large numbers and abandoned. See Pet, Carnism and Selective outrage.",
 "pt": "Animal de companhia"
 },
 {
 "i": 33,
 "termo": "Meat animal",
 "def": "An animal raised specifically for slaughter and meat consumption.",
-"com": "",
+"com": "The expression defines the animal by its function for humans, as if being eaten were one of its traits. Meat strains were selected to grow fast: a broiler chicken reaches slaughter weight in about six weeks, and rapid growth is associated with leg and heart problems. See Farmed animal, Speciesist term and Artificial selection.",
 "pt": "Animal de corte"
 },
 {
 "i": 34,
 "termo": "Farmed animal",
 "def": "An animal raised to generate products (meat, milk, eggs, wool) for human consumption or trade.",
-"com": "",
+"com": "The expression treats the animal's body as a machine that generates products and hides that, in the case of meat, the product is the dead animal itself. It is used in laws and technical standards worldwide, including Brazil, and so appears even in texts on animal welfare. Some people prefer \"animal raised for consumption\" or \"exploited animal\", which make clear who benefits. See Meat animal, Speciesist term and Objectification.",
 "pt": "Animal de produção"
 },
 {
@@ -318,7 +318,7 @@
 "i": 45,
 "termo": "Beekeeping",
 "def": "The keeping of bees to produce honey, wax, propolis and other products, with its own debates about insect sentience and the impact of commercial production.",
-"com": "",
+"com": "In commercial beekeeping it is common to clip the queen's wings to stop the swarm from leaving, artificially inseminate queens, replace the queen frequently and substitute sugar syrup for the honey removed. Research gathered, for example, in the book *The Mind of a Bee* (2022), by the biologist Lars Chittka, suggests that bees have complex learning and emotion-like states, which makes it plausible that they are sentient, although the question remains open. There are also studies indicating that large numbers of European honeybee hives can compete with native bees for flowers. Most definitions of veganism, such as the Vegan Society's, exclude honey. See Honey, Propolis and Xenospeciesism.",
 "pt": "Apicultura"
 },
 {
@@ -332,7 +332,7 @@
 "i": 47,
 "termo": "Aquaculture",
 "def": "The farming of aquatic animals in captivity, with its own welfare issues that are little regulated.",
-"com": "",
+"com": "In 2022, according to the FAO, aquaculture overtook capture fisheries for the first time as the main source of aquatic animals, with about 51% of production. A study published in 2023 estimated that about 124 billion farmed fish were killed for food in 2019, not counting shrimp and other crustaceans. Most die by asphyxiation in air or on ice, without stunning, and welfare laws usually protect fish far less than mammals and birds. Farming in dense tanks and net pens also brings disease and parasites and, for carnivorous species such as salmon, the use of wild fish in feed. See Fish farming (pisciculture), Fishing and Industrial fishing.",
 "pt": "Aquicultura"
 },
 {
@@ -346,7 +346,7 @@
 "i": 49,
 "termo": "Nose ring",
 "def": "A metal device inserted into the nose of some animals (such as cattle) to make them easier to restrain and lead.",
-"com": "",
+"com": "The nasal septum is a sensitive area, and the ring works because pulling it causes pain, which makes the animal comply. In bulls it is used to lead large animals; in sows kept outdoors, rings and cuts to the snout are used to stop them from rooting, a natural behaviour of the species. In Brazil, the 2020 pig welfare rule only tolerates snout cutting for this purpose in outdoor sows and with anaesthesia. See Halter, Muzzle and Physical integrity.",
 "pt": "Argola no focinho ou nasal"
 },
 {
@@ -451,7 +451,7 @@
 "i": 64,
 "termo": "Poultry farming",
 "def": "The raising of birds (mainly chickens) for meat and egg production.",
-"com": "",
+"com": "Birds are by far the land animals most killed for food: according to FAO data, more than 70 billion chickens a year, out of a total of more than 80 billion land animals. Broiler chickens are slaughtered at about six weeks; laying hens at around a year and a half, when laying declines; and male chicks of laying strains are killed at hatching. Brazil is one of the largest producers and the largest exporter of chicken meat in the world. See Battery cages, Beak trimming and Hatchery.",
 "pt": "Avicultura"
 },
 {
@@ -486,7 +486,7 @@
 "i": 69,
 "termo": "Welfarism",
 "def": "A position that accepts the use of animals as long as high welfare standards are met, often set against abolitionism in the movement's strategic debate.",
-"com": "",
+"com": "The best-known criticism comes from the legal scholar Gary Francione, who argued in *Rain Without Thunder* (1996) that welfare reforms make the use of animals more acceptable and prolong it. Supporters of reforms answer that they reduce suffering now, for animals who cannot wait for abolition. Welfarism, as a political position, is not the same as animal welfare, the science that assesses how animals are doing. See Abolitionism, Neo-welfarism and Incremental reforms.",
 "pt": "Bem-estarismo"
 },
 {
@@ -549,7 +549,7 @@
 "i": 78,
 "termo": "Burdizzo",
 "def": "An instrument used for bloodless castration of males, by crushing the spermatic cord without an incision.",
-"com": "",
+"com": "\"Bloodless\" means without blood, not without pain: the clamp crushes the spermatic cord through the skin, and studies record signs of acute and prolonged pain. Like castration with a rubber ring or a knife, burdizzo castration is allowed without anaesthesia in young animals in many countries; in the United Kingdom, for example, in calves and lambs up to a certain age. See Castration and Anesthesia.",
 "pt": "Burdizzo"
 },
 {
@@ -563,14 +563,14 @@
 "i": 80,
 "termo": "Hunting",
 "def": "The killing of wild animals, for subsistence, population control or sport.",
-"com": "",
+"com": "In Brazil, the 1967 Wildlife Protection Law generally prohibits hunting wild animals, with exceptions such as the control of wild boar, an invasive alien species; in countries such as the United States and much of Europe, recreational hunting is legal and regulated. The population-control justification is disputed, because overpopulation often results from human actions, such as the removal of predators, and non-lethal methods such as contraception are in use. Hunting also wounds animals that escape and die later. From a sentientist point of view, subsistence hunting, where there is no alternative, is treated differently from hunting for leisure. See Sport hunting, Subsistence and Animal population control.",
 "pt": "Caça"
 },
 {
 "i": 81,
 "termo": "Sport hunting",
 "def": "A form of hunting for leisure or trophies, with no subsistence purpose.",
-"com": "",
+"com": "It includes trophy hunting, in which the hunter pays to kill large animals, such as lions, elephants and rhinoceroses, and takes body parts as a souvenir. Supporters say the fees fund conservation and local communities; critics, including some conservationists, question how much of that money actually reaches those ends. The killing of Cecil the lion in Zimbabwe in 2015 caused protests worldwide and led airlines to stop carrying trophies. From a sentientist point of view, conserving a species does not justify killing an individual for fun. See Hunting, Safari and Selective outrage.",
 "pt": "Caça esportiva"
 },
 {
@@ -584,49 +584,49 @@
 "i": 83,
 "termo": "Gestation crate",
 "def": "A narrow individual cage used to confine sows during pregnancy, preventing basic movements such as turning around.",
-"com": "",
+"com": "A sow's pregnancy lasts almost four months, and she may spend much of it in a crate where she cannot turn around, pregnancy after pregnancy. Sweden and the United Kingdom banned these crates in the 1990s, and the European Union, since 2013, allows them only for the first four weeks after service. In Brazil, the 2020 pig welfare rule of the Ministry of Agriculture limits their use to 35 days after service, but gives existing farms until 2045 to switch to group housing. Group housing is better than the crate, but it does not change the rest of the cycle: insemination, farrowing in farrowing crates and slaughter when productivity falls. See Gestation, Animal confinement and Artificial insemination.",
 "pt": "Caixa de gestação (gestation crate)"
 },
 {
 "i": 84,
 "termo": "Veal crate",
 "def": "A narrow compartment used to confine calves destined for veal production, restricting their movement to keep the meat tender.",
-"com": "",
+"com": "The calf, separated from the mother soon after birth, is kept in a narrow individual pen, often tethered, and fed a low-iron liquid diet to keep the meat pale. The United Kingdom banned these crates in 1990, and the European Union completed its ban in 2007; in the United States, several states have banned them. Veal continues to exist without crates, because it depends on the dairy industry, which produces male calves of no value for milk production. See Veal, Dairy industry and Premature slaughter.",
 "pt": "Caixa de vitela (veal crate)"
 },
 {
 "i": 85,
 "termo": "Cannibalism (in confinement)",
 "def": "An abnormal behavior in which confined animals (such as pigs or birds) bite or peck one another because of stress, boredom or behavioral frustration.",
-"com": "",
+"com": "The industry's most common response is not to change the conditions that cause the behaviour but to mutilate the animals: the tip of hens' beaks and piglets' tails are cut off. Research points to lack of space, of straw or other materials for rooting and scratching, and genetic selection for productivity as causes. In the European Union, the law prohibits routine tail docking and requires conditions to be changed first, but the rule is poorly enforced in most countries. See Beak trimming, Tail docking and Environmental enrichment.",
 "pt": "Canibalismo (em confinamento)"
 },
 {
 "i": 86,
 "termo": "Live cargo",
 "def": "A term from the transport sector that designates live animals carried as merchandise.",
-"com": "",
+"com": "The term treats animals as merchandise, in a category close to other perishable cargo. For sea voyages, some countries, such as Australia, set a mortality rate above which the voyage must be investigated, which shows that a certain number of deaths is treated as normal. See Live animal transport, Commodification and Euphemism.",
 "pt": "Carga viva"
 },
 {
 "i": 87,
 "termo": "Cochineal carmine",
 "def": "A natural red dye extracted from dried females of the cochineal insect, used in foods and cosmetics.",
-"com": "",
+"com": "It is estimated that about 70,000 cochineal insects are needed to produce one pound (about half a kilo) of dye. On labels it appears as carmine, cochineal, carminic acid or E120, in yogurts, drinks, candy and lipsticks, and many people do not know it comes from insects. In 2012, Starbucks stopped using it in strawberry drinks after customer complaints. See Cruelty-free and Insectivory.",
 "pt": "Carmim de cochonilha"
 },
 {
 "i": 88,
 "termo": "Meat",
 "def": "The muscle tissue and other organs of animals used as food.",
-"com": "",
+"com": "Everyday language tends to separate meat from the animal: people speak of fillet, rump or breast, not of the dead steer or hen; in English, pork and beef do the same. In Brazil, many people do not count fish and seafood as meat, although they are also animal tissue. People also speak of \"producing\" meat, as if it were any other commodity, when every piece comes from an animal who was raised and slaughtered, usually very young. See Absent referent, Euphemism and Slaughter.",
 "pt": "Carne"
 },
 {
 "i": 89,
 "termo": "Cultivated meat",
 "def": "A food product derived from cellular agriculture, presented as an alternative to traditional animal farming.",
-"com": "",
+"com": "It is also called lab-grown meat (\"labmeat\"), cell-cultured meat or cultured meat; the name \"clean meat\", adopted by the Good Food Institute in 2016, has fallen out of use. Production still uses animal cells, taken by biopsy from living animals or from established cell lines, and early culture media used fetal bovine serum, taken from the blood of fetuses of slaughtered cows; serum-free media now exist, such as the one approved in Singapore in 2023. Sale has been authorized in Singapore in 2020, the United States in 2023, Israel in 2024 and Australia in 2025, and banned in Italy in 2023, Hungary in 2025 and several US states, such as Florida, Alabama and Texas. For veganism, the product is not vegan by origin, but it could greatly reduce the breeding and slaughter of animals if it replaced part of livestock farming, which still depends on cost, scale and acceptance; the guide discusses this debate. See Cellular agriculture and Technological veganism.",
 "pt": "Carne cultivada"
 },
 {
@@ -647,7 +647,7 @@
 "i": 92,
 "termo": "Veal",
 "def": "Meat from calves slaughtered while still young, usually raised in extreme confinement.",
-"com": "",
+"com": "Veal is largely a by-product of the dairy industry: male calves do not produce milk and are separated from their mothers soon after birth. The individual crates in which many were raised, with no room to turn around, were banned in the United Kingdom in 1990 and in the European Union in 2007, but are still used in other countries. For this reason, someone who stops eating veal but keeps consuming dairy still sustains the same system. See Veal crate, Dairy industry and Weaning.",
 "pt": "Carne de vitela"
 }
 ]

@@ -3,21 +3,21 @@
 "i": 93,
 "termo": "Happy meat",
 "def": "A critical expression for animal products marketed as coming from supposedly more ethical or humane farming.",
-"com": "",
+"com": "Labels such as \"free range\", \"welfare certified\" or \"organic\" can indicate real improvements, such as more space or outdoor access, but standards vary widely, and many allow mutilations, separation of young and long transport. In every case the animal is slaughtered young, often in the same slaughterhouses that receive animals from industrial farming. Critics also point out that the promise of \"happy\" meat can ease consumers' discomfort and slow the shift to a diet without animal products. See Humane washing, Happy exploitation and Oxymoron.",
 "pt": "Carne feliz (happy meat)"
 },
 {
 "i": 94,
 "termo": "Organic meat",
 "def": "Meat from production systems with organic certification (no pesticides or synthetic hormones), which does not necessarily mean better animal welfare conditions.",
-"com": "",
+"com": "Welfare requirements vary by country: in the European Union, for example, organic rules require outdoor access and more space, and restrict some mutilations. The label, however, deals mainly with inputs, such as pesticides in feed, hormones and antibiotics, and is not a guarantee of welfare. In every case, the animal is still raised to be killed. See Happy meat, Humane washing and Free range.",
 "pt": "Carne orgânica"
 },
 {
 "i": 95,
 "termo": "Plant-based meat",
 "def": "A plant-based food product formulated to imitate the taste, texture or appearance of animal meat.",
-"com": "",
+"com": "The name is contested. In 2017, the Court of Justice of the European Union reserved dairy names for animal products, and in 2026 the European Union adopted rules reserving about 30 meat-related names, such as \"steak\" and \"bacon\", while still allowing \"burger\" and \"sausage\" for plant products. Critics say these rules protect livestock farming more than consumers, who usually know what they are buying. These products are often called ultra-processed, but their nutritional profile varies greatly between brands. See Plant milk and Plant-based.",
 "pt": "Carne vegetal"
 },
 {
@@ -38,14 +38,14 @@
 "i": 98,
 "termo": "Animal-drawn cart (carroça, Brazilian usage)",
 "def": "A vehicle pulled by animals, used to carry goods or people.",
-"com": "",
+"com": "In Brazil, carts are widely used by waste pickers and other low-income workers, and the horses suffer from overloading, long working days, lack of rest and traffic accidents. Several cities have passed laws banning animal-drawn vehicles, such as Recife and Belo Horizonte, where the ban took effect in 2026, but enforcement runs into the lack of alternatives for cart drivers. For that reason, replacement proposals usually combine removing the horses with motorized or electric vehicles and income support for the workers. See Animal traction, Beast of burden and Intersectionality.",
 "pt": "Carroça"
 },
 {
 "i": 99,
 "termo": "Castration",
 "def": "The surgical removal or disabling of an animal's reproductive organs, used both in livestock production and in population control of pets.",
-"com": "",
+"com": "In dogs and cats, neutering is done by veterinarians under anaesthesia and is the main way to reduce the number of abandoned animals. In livestock farming it serves mainly production interests, such as avoiding boar taint in the meat of male pigs and making bulls more docile, and it is often done without anaesthesia on young animals, with a knife, rubber ring or burdizzo. For pigs there is immunocastration, a vaccine that suppresses sex hormones. Germany banned castrating piglets without anaesthesia in 2021, and in Brazil the 2020 pig welfare rule gives farms until 2030 to require anaesthesia and analgesia for all surgical castration. See Burdizzo, Anesthesia and Animal population control.",
 "pt": "Castração"
 },
 {
@@ -59,7 +59,7 @@
 "i": 101,
 "termo": "Tail docking",
 "def": "The partial or total amputation of an animal's tail, a common practice in pigs and some dog breeds.",
-"com": "",
+"com": "In piglets, the tail is cut to prevent pigs from biting each other's tails, a behaviour linked to stress and lack of stimulation. In the European Union routine docking is prohibited, but it is still done on most farms, with exceptions such as Sweden and Finland; in Brazil, the 2020 pig welfare rule tolerates cutting the last third of the tail and requires anaesthesia only after the third day of life. In dogs, cosmetic docking is banned in several European countries and, in Brazil, by the Federal Council of Veterinary Medicine since 2013. Tails are also docked in sheep and, in some countries, in dairy cows. See Cannibalism (in confinement), Ear cropping and Anesthesia.",
 "pt": "Caudectomia (tail docking)"
 },
 {
@@ -136,14 +136,14 @@
 "i": 112,
 "termo": "Food classism",
 "def": "Inequality of access to ethical or healthy food according to social class.",
-"com": "",
+"com": "Veganism is often seen as expensive, but that depends on what one buys: foods such as rice, beans, lentils and seasonal vegetables are among the cheapest. A study by Marco Springmann and colleagues at the University of Oxford, published in *The Lancet Planetary Health* in 2021, estimated that vegan diets based on minimally processed foods cut food spending by up to a third in rich countries; in low-income countries the picture is different. Industrial substitute products, usually more expensive, were left out of the calculation. See Working-class veganism (veganismo popular, Brazilian usage), Food justice and Elitism.",
 "pt": "Classismo alimentar"
 },
 {
 "i": 113,
 "termo": "Forced mating",
 "def": "Mating imposed on an animal with no possibility of refusal, a standard practice in livestock breeding.",
-"com": "",
+"com": "In livestock farming, reproduction is decided by the farmer: the female is restrained, often in a dedicated structure, and mated with a chosen male or artificially inseminated, according to the production cycle. Activists compare the practice to sexual violence, and the industry rejects the comparison; what both views share is that the female has no choice. See Artificial insemination, Rape rack and Consent.",
 "pt": "Cobrição forçada ou monta forçada"
 },
 {
@@ -171,7 +171,7 @@
 "i": 117,
 "termo": "Cholesterol",
 "def": "A lipid substance found exclusively in animal tissues (absent from plant foods), relevant in nutritional discussions about diets.",
-"com": "",
+"com": "The human body produces all the cholesterol it needs, so there is no need to get it from food. Plants have phytosterols, of similar structure, and only traces of cholesterol, of no dietary importance. See Healthy diet and Nutrition.",
 "pt": "Colesterol"
 },
 {
@@ -185,7 +185,7 @@
 "i": 119,
 "termo": "Commodification",
 "def": "The process of turning a sentient being into a commodity, valued for their exchange value rather than their intrinsic value.",
-"com": "",
+"com": "In most of the world's laws, including Brazil's, animals are treated as property that can be bought, sold and inherited, even though some instruments, such as the European Union's Treaty of Lisbon, already recognize them as sentient beings. An animal's price depends on its weight, breed or productivity, not on its interests. See Animals as property, Intrinsic value and Objectification.",
 "pt": "Comoditização (ou comodificação)"
 },
 {
@@ -206,7 +206,7 @@
 "i": 122,
 "termo": "Stereotypic behavior",
 "def": "A repetitive, invariable behavior pattern with no apparent function, an indicator of psychological suffering in confined animals.",
-"com": "",
+"com": "Common examples are sows biting the bars of their crates, cattle rolling their tongues, horses biting their stalls and zoo animals pacing back and forth. Ethologists treat stereotypy as a sign that the current or past environment does not meet the animal's needs, although its absence does not prove that the animal is doing well. See Stereotypy, Environmental enrichment and Zoo.",
 "pt": "Comportamento estereotipado"
 },
 {
@@ -220,7 +220,7 @@
 "i": 124,
 "termo": "Animal confinement",
 "def": "A farming system in enclosed, restricted spaces (e.g., CAFO, Concentrated Animal Feeding Operation).",
-"com": "",
+"com": "According to a 2019 Sentience Institute estimate, about 74% of farmed land animals worldwide and almost all farmed fish live on factory farms; in the United States, the share reaches 99%. Confinement makes it possible to produce more with less space and labour, but it prevents basic behaviours such as walking, scratching, rooting or caring for young. It also concentrates manure and favours the spread of disease, which leads to heavy antibiotic use. See Factory farm, Industrial livestock farming and Antimicrobial resistance.",
 "pt": "Confinamento animal"
 },
 {
@@ -346,7 +346,7 @@
 "i": 142,
 "termo": "Crustacean-vegetarianism (crustovegetarianismo, Brazilian usage)",
 "def": "A vegetarian diet that includes eating crustaceans, based on the (contested) argument that these animals would have lesser or no capacity to suffer.",
-"com": "",
+"com": "The idea that crustaceans do not suffer is increasingly contested. A review of more than 300 studies, carried out by the London School of Economics for the British government in 2021, concluded that decapod crustaceans, such as crabs, lobsters and shrimp, should be treated as sentient, and British law has recognized them as such since 2022. Switzerland banned boiling lobsters alive in 2018. None of this proves that every crustacean feels, but the doubt weighs against killing them without need. See Sentience, Seafood and Ostroveganism.",
 "pt": "Crustovegetarianismo"
 },
 {
@@ -360,7 +360,7 @@
 "i": 144,
 "termo": "Beak trimming",
 "def": "Partial cutting of the beak of birds (usually laying hens) to reduce aggressive pecking caused by the stress of confinement.",
-"com": "",
+"com": "The cut is made on chicks, with a hot blade or, increasingly, with infrared, and it affects innervated tissue; studies record signs of pain, especially with the hot blade. The practice treats the symptom, not the cause: pecking comes from stress, overcrowding and lack of materials for scratching. Some countries, such as Norway, have banned it for decades, which shows that hens can be kept without beak trimming, although the pecking problem does not disappear with the ban alone. See Battery cages, Cannibalism (in confinement) and Anesthesia.",
 "pt": "Debicagem"
 },
 {
@@ -381,21 +381,21 @@
 "i": 147,
 "termo": "Dehorning",
 "def": "A procedure for removing the horns of cattle, generally without adequate anesthesia.",
-"com": "",
+"com": "Done after the horn has attached to the skull, it is more invasive than disbudding: it uses saws, wire or cutters and can open the sinuses. In the United Kingdom, dehorning any cattle requires local anaesthesia given by a veterinarian, but many countries have no such requirement. There are naturally hornless (polled) breeds, and genetic selection for this trait is pointed to as an alternative. See Disbudding and Anesthesia.",
 "pt": "Descorna ou remoção de chifre"
 },
 {
 "i": 148,
 "termo": "Weaning",
 "def": "Separating a young animal from its mother before the natural end of nursing, a routine and early practice in dairy farming.",
-"com": "",
+"com": "In dairy cattle, the calf is usually separated from the mother within the first hours or days of life so that the milk can be sold, and mothers and young may call and search for each other for days. In pig farming, piglets are weaned at three to four weeks, while in semi-natural conditions weaning ends at around three to four months. In beef cattle, weaning usually happens at around seven months, closer to the natural age, which ranges from seven to fourteen months. See Dairy industry, Veal and Milk.",
 "pt": "Desmama"
 },
 {
 "i": 149,
 "termo": "Devocalization",
 "def": "A surgical procedure that removes or damages an animal's vocal cords to prevent or reduce its vocalization.",
-"com": "",
+"com": "The surgery is done mainly on dogs, so that they bark less. It is prohibited for non-therapeutic purposes by the Council of Europe's European Convention for the Protection of Pet Animals and by laws in several countries and some US states; in Brazil, the Federal Council of Veterinary Medicine has banned devocalization of dogs since 2008. The criticism is that the procedure treats barking as the guardian's problem rather than as the animal's way of communicating, when there are alternatives such as training and changes in routine. See Ear cropping, Tail docking and Physical integrity.",
 "pt": "Desvocalização"
 },
 {
@@ -479,7 +479,7 @@
 "i": 161,
 "termo": "LD50 (lethal dose 50%)",
 "def": "A toxicological measure indicating the dose of a substance capable of killing 50% of a population of tested animals; a classic and controversial method of toxicity testing.",
-"com": "",
+"com": "In the classic test, groups of animals, usually rats or mice, receive doses of a substance until the dose that kills half of them is found, often with intense suffering before death. The OECD removed the classic test from its guidelines in 2002 and replaced it with methods that use fewer animals, but that still use animals and still involve deaths. Critics also question how well the number predicts effects in humans. See Animal experimentation, 3Rs and Replacement methods.",
 "pt": "DL-50 (dose letal 50%)"
 },
 {
@@ -507,14 +507,14 @@
 "i": 165,
 "termo": "Draize test",
 "def": "A toxicological test that applies substances to the eyes or skin of animals (often rabbits) to measure irritation; today widely criticized and replaced by alternatives.",
-"com": "",
+"com": "It was created in 1944 by John Draize and Jacob Spines, toxicologists at the US FDA. In the eye test, the substance is applied to the eye of albino rabbits and the lesions are assessed over days; animals with irreversible damage are killed. Today there are OECD-accepted methods that do not use live animals, such as tests on corneas of slaughtered cattle and on human tissue models, but they replace the test only in part, and the rabbit test remains in the guidelines. See Induced skin irritation, Animal experimentation and Replacement methods.",
 "pt": "Draize test"
 },
 {
 "i": 166,
 "termo": "Forced or induced molting",
 "def": "The practice of inducing feather molt in laying hens through forced fasting, in order to restart the laying cycle.",
-"com": "",
+"com": "In the traditional method, feed is withdrawn from the hens for about one to two weeks, which causes weight loss, stress and deaths. Forced fasting is prohibited in the United Kingdom and the European Union; in the United States, the egg producers' association guidelines now accept only methods without feed withdrawal. The practice exists to extend the productive life of hens that would otherwise be slaughtered. See Poultry farming, Battery cages and Slaughter.",
 "pt": "Ecdise forçada ou induzida (forced/induced molting)"
 },
 {
@@ -591,8 +591,8 @@
 "i": 177,
 "termo": "Hatchery",
 "def": "An industrial facility where eggs are artificially incubated for the mass hatching of chicks.",
-"com": "",
-"pt": "Encubadora (hatchery)"
+"com": "In hatcheries for laying strains, male chicks, which do not lay eggs and grow too slowly to be profitable as broilers, are sorted out and killed on their first day, usually by maceration or gas; industry estimates put the number at about 7 billion a year worldwide. Germany and France banned this killing from 2022, which led to the use of in-ovo sexing technologies that identify the sex before hatching. The chicks that remain go through sorting, vaccination and transport in boxes on their very first day. See Poultry farming, Premature slaughter and Beak trimming.",
+"pt": "Incubadora (hatchery)"
 },
 {
 "i": 178,
@@ -612,7 +612,7 @@
 "i": 180,
 "termo": "Animal entertainment",
 "def": "The use of animals in circuses, zoos, water parks and similar venues.",
-"com": "",
+"com": "More than 40 countries ban or restrict the use of wild animals in circuses, according to a survey by the organization Four Paws, and in Brazil there are state and municipal laws to that effect. Training for shows can involve punishment, and the animals spend much of their time in small spaces and in transport. Dolphins and orcas in marine parks are also criticized, and countries such as Canada and France have restricted by law the keeping of cetaceans in captivity. See Zoo, Rodeo and Bullfighting.",
 "pt": "Entretenimento com animais"
 },
 {

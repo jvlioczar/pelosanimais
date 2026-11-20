@@ -1433,9 +1433,10 @@ def pagina_glossario():
     def liga_termos(texto, proprio):
         if not padrao: return em(texto)
         out, pos, feitos, n = '', 0, set(), 0
+        italicos = [x.span() for x in re.finditer(r'\*[^*]+\*', texto)]  # não liga termos dentro de títulos em itálico
         for m in padrao.finditer(texto):
             v = por_termo[m[1].lower()]
-            if v is proprio or v['slug'] in feitos or n >= 4: continue
+            if v is proprio or v['slug'] in feitos or n >= 4 or any(a < m.start() < b for a, b in italicos): continue
             out += em(texto[pos:m.start()]) + f'<a class="glos-ref" href="#{v["slug"]}">{e(m[1])}</a>'
             pos = m.end(); feitos.add(v['slug']); n += 1
         return out + em(texto[pos:])

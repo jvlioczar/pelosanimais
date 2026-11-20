@@ -59,7 +59,7 @@
 "i": 287,
 "termo": "Marking",
 "def": "The identification of animals by hot-iron branding, ear tags or other means, usually without anaesthesia.",
-"com": "",
+"com": "Hot-iron branding burns the skin until it scars and causes intense pain; freeze branding, with an iron chilled in liquid nitrogen, also hurts, though generally less. Other methods include ear notching, as in piglets, ear tags and tattoos. Ear tags and microchips cause less pain and replace branding in many places; in Brazil, the 2020 pig welfare rule bans ear notching from 2030. See Tabuleta (livestock tag, Brazilian usage), Anesthesia and Physical integrity.",
 "pt": "Marcação"
 },
 {
@@ -73,7 +73,7 @@
 "i": 289,
 "termo": "Slaughterhouse",
 "def": "A facility where animals are slaughtered for consumption.",
-"com": "",
+"com": "Slaughterhouses run fast lines, with thousands of birds per hour, which makes it hard to correct stunning failures. They are generally closed to the public, which keeps slaughter out of consumers' sight. The work has high injury rates, and research points to psychological effects on workers; a 2009 study by Amy Fitzgerald and colleagues found in the United States an association between the presence of slaughterhouses and higher rates of some crimes, without establishing causation. See Slaughter, Stunning of animals and Humane slaughter.",
 "pt": "Matadouro"
 },
 {
@@ -101,14 +101,14 @@
 "i": 293,
 "termo": "Honey",
 "def": "A sugary substance produced by bees from flower nectar; strict veganism rejects its consumption because it involves the exploitation of insects.",
-"com": "",
+"com": "In commercial beekeeping, common practices include clipping the queen's wings, artificially inseminating her, replacing her periodically and replacing the honey taken with sugar syrup. Research by Lars Chittka's group in London suggests that bees may have some form of subjective experience, although the question remains open. Some vegans disagree about honey because of this uncertainty, but the Vegan Society's position is that it is not vegan. See Beekeeping, Propolis and Insectivory.",
 "pt": "Mel"
 },
 {
 "i": 294,
 "termo": "Replacement methods",
 "def": "Alternative techniques to animal experimentation (cell cultures, computer models) developed under the principle of the 3Rs.",
-"com": "",
+"com": "They include human cell and tissue cultures, organs-on-chips, computer models and studies with human volunteers at safe doses. In 2022 a US law, the FDA Modernization Act 2.0, removed the legal requirement for animal tests to approve new drugs, without banning them, and in 2025 the FDA announced a plan to reduce these tests, starting with monoclonal antibodies. In Brazil, CONCEA, the federal council that regulates animal use in research, recognizes validated alternative methods and sets deadlines for their adoption. Even so, validated methods replace only part of the tests, and validation tends to be slow. See 3Rs, Animal experimentation and Arouca Law.",
 "pt": "Métodos substitutivos"
 },
 {
@@ -164,7 +164,7 @@
 "i": 302,
 "termo": "Mulesing",
 "def": "The surgical removal of skin around the tail of sheep (usually without anaesthesia) to prevent infestation by fly larvae, a common practice in wool production.",
-"com": "",
+"com": "It is done mainly in Australia, on merino lambs, with shears, and for a long time without any pain relief. New Zealand banned the practice in 2018, and the Australian state of Victoria now requires pain relief; retailers and fashion brands in several countries refuse wool from mulesed sheep. The alternative advocated by veterinarians and animal protection organizations is to breed sheep with fewer skin folds, which are less susceptible to flystrike. See Wool, Anesthesia and Artificial selection.",
 "pt": "Mulesing"
 },
 {
@@ -283,7 +283,7 @@
 "i": 319,
 "termo": "Extensive livestock farming",
 "def": "Raising animals over large areas, at lower animal density.",
-"com": "",
+"com": "Animals generally have more space and can express more natural behaviours, but they still go through castration, branding, transport and slaughter, and are more exposed to heat, cold and predators. Because it uses a lot of land, extensive cattle ranching is the main cause of deforestation in Brazil, especially in the Amazon, according to analyses compiled by Our World in Data. See Intensive livestock farming, Agribusiness and Extinction.",
 "pt": "Pecuária extensiva"
 },
 {
@@ -297,7 +297,7 @@
 "i": 321,
 "termo": "Industrial livestock farming",
 "def": "An industrial-scale model, oriented towards maximum productivity and lowest cost.",
-"com": "",
+"com": "It is the dominant model in global production of chicken, eggs and pork. Its low costs depend partly on externalities that do not appear in the price, such as water and air pollution from manure, heavy antibiotic use, the risk of new diseases and the animals' suffering. See Animal confinement, Externality and Antimicrobial resistance.",
 "pt": "Pecuária industrial"
 },
 {
@@ -311,21 +311,21 @@
 "i": 323,
 "termo": "Sustainable livestock farming",
 "def": "A model of animal farming that seeks to reduce environmental impacts and increase resource efficiency, without necessarily changing the paradigm of using animals as a resource.",
-"com": "",
+"com": "Measures such as improving pastures, reducing losses and using feed additives can lower emissions per kilogram of meat or milk. Even so, a 2018 study by Joseph Poore and Thomas Nemecek, which analysed about 38,000 farms in 119 countries, concluded that the lowest-impact animal products typically exceed the impacts of plant-based substitutes. The term also says nothing about the animals' welfare or their death. See Livestock farming, Sentientist environmentalism and Plant protein.",
 "pt": "Pecuária sustentável"
 },
 {
 "i": 324,
 "termo": "Pedigree",
 "def": "A genealogical record that documents an animal's lineage, used for selective breeding.",
-"com": "",
+"com": "Pedigree breeding selects animals for the appearance set out in breed standards, which has concentrated hereditary diseases in many breeds, such as breathing problems in short-nosed dogs like bulldogs and pugs. The BBC documentary *Pedigree Dogs Exposed* (2008) led to revisions of breed standards in the United Kingdom and to the BBC dropping its coverage of the Crufts show. From a sentientist point of view, the criticism goes beyond health: commercial breeding of purebred animals continues while shelters are full. See Artificial selection, Pet shop and Adoption.",
 "pt": "Pedigree"
 },
 {
 "i": 325,
 "termo": "Fur and leather",
 "def": "Industries producing animal fur and leather, with specific debates about suffering and synthetic alternatives.",
-"com": "",
+"com": "Animal protection organizations estimate that about 100 million animals, mainly mink and foxes, are killed each year for fur, most of them raised in wire cages. Several countries have banned fur farming, such as the United Kingdom, in 2000, Austria, Norway and the Netherlands, and many fashion brands have stopped using fur. Leather is often seen as a mere by-product of meat, but it is a co-product that generates revenue for the livestock industry, and chrome tanning can pollute rivers and harm workers' health. See Wool, Silk and Livestock farming.",
 "pt": "Peleteria e couro"
 },
 {
@@ -360,7 +360,7 @@
 "i": 330,
 "termo": "Industrial fishing",
 "def": "Large-scale fishing, associated with overexploitation and mass suffering.",
-"com": "",
+"com": "The FAO estimated that 37.7% of assessed fish stocks were overfished in 2021, compared with 10% in 1974. Trawl nets and longlines also catch non-target animals, such as turtles, dolphins, sharks and seabirds, many of them thrown back dead. The fish caught die by asphyxiation, crushing or decompression, without stunning. See Fishing, Aquaculture and Seafood.",
 "pt": "Pesca industrial"
 },
 {
@@ -374,7 +374,7 @@
 "i": 332,
 "termo": "Pet shop",
 "def": "A commercial establishment that sells companion animals and related products.",
-"com": "",
+"com": "Selling puppies and kittens in shops is criticized for encouraging large-scale commercial breeding, sometimes in poor conditions, while shelters have animals waiting for adoption. Since 2019 California has only allowed shops to offer dogs, cats and rabbits from shelters or rescues, and in 2020 England banned third-party sales of puppies and kittens. Shops also sell birds, fish and reptiles, some captured from the wild. See Breeding facility (criadouro), Adoption and Animal trafficking.",
 "pt": "Pet shop"
 },
 {
@@ -388,7 +388,7 @@
 "i": 334,
 "termo": "Plant-based",
 "def": "A term for a diet of plant origin, distinct from veganism in that it does not necessarily cover ethics or other uses of animals.",
-"com": "",
+"com": "The term is attributed to the American biochemist T. Colin Campbell, in the 1980s, as a way to talk about diet without getting into ethics. On a label, \"plant-based\" does not guarantee that a product is vegan, and companies that sell animal products use the term to attract another audience. See Veganism, Vegan diet and Vegan washing.",
 "pt": "Plant-based"
 },
 {
@@ -423,7 +423,7 @@
 "i": 339,
 "termo": "Pests",
 "def": "A social and legal category that lowers the moral status of certain animals (rats, pigeons, insects) because of conflict with human interests.",
-"com": "",
+"com": "The same animal can be a pest, food, a pet or a protected species, depending on the place and on who is looking: rats are fought in the New York subway, revered at a temple in India and kept as companions in many homes. The science journalist Bethany Brookshire defends this thesis in the book *Pests: How Humans Create Animal Villains* (2022): \"pest\" is a human label, applied to animals we fear, that thrive in niches we create or that threaten our control over space. The anthropologist Mary Douglas, in *Purity and Danger: An Analysis of Concepts of Pollution and Taboo* (1966), described dirt as \"matter out of place\", something that disturbs an order of classification; the idea helps explain why animals seen as out of place, such as a rat in the kitchen or a pigeon in the square, come to be treated as contamination. From an antispeciesist point of view, the label does not change the animal's capacity to feel, and real conflicts can be handled with prevention, sealing entry points, waste management and non-lethal methods, leaving killing, when unavoidable, to the methods that cause the least suffering. See Synanthropic animals, Animal population control and Invasive alien species.",
 "pt": "Pragas"
 },
 {
@@ -479,7 +479,7 @@
 "i": 347,
 "termo": "Propolis",
 "def": "A resinous substance produced by bees, used for medicinal and cosmetic purposes.",
-"com": "",
+"com": "Like honey and wax, propolis comes from the hive, so it falls under the same debate about the exploitation of bees; it appears in syrups, sprays and cosmetics sold as natural. See Honey and Beekeeping.",
 "pt": "Própolis"
 },
 {
@@ -493,7 +493,7 @@
 "i": 349,
 "termo": "Animal protein",
 "def": "Protein derived from animal tissues or secretions, distinct from plant protein in amino acid composition.",
-"com": "",
+"com": "It is common to hear that plant protein is \"incomplete\" and that foods must be combined in the same meal. The 2016 position of the US Academy of Nutrition and Dietetics is that a variety of plant foods eaten over the course of the day supplies all the essential amino acids, without the need to combine them at each meal. Rice and beans, a common dish in Brazil, is an example of such a combination. See Plant protein, Nutrition and Vegan diet.",
 "pt": "Proteína animal"
 },
 {
@@ -577,7 +577,7 @@
 "i": 361,
 "termo": "Vegan pet food",
 "def": "Feed formulated without ingredients of animal origin, generally intended for dogs and cats.",
-"com": "",
+"com": "Dogs are omnivores and, according to the available studies, can do well on nutritionally complete vegan foods; cats are obligate carnivores, but what they need are nutrients, such as taurine, arachidonic acid and vitamin A, which can be synthesized and added to the food. Studies are still few and largely based on guardian reports, such as those by Andrew Knight and colleagues in 2022 and 2023, which found no worse health outcomes in animals on vegan diets. Veterinary associations, such as the British BVA, are more cautious and warn of the risk of poorly formulated diets; the common recommendation is to use foods formulated to be complete and to have the animal followed by a veterinarian. See Animal nutrition, Veterinary ethics and Predation.",
 "pt": "Ração vegana"
 },
 {
@@ -612,7 +612,7 @@
 "i": 366,
 "termo": "Incremental reforms",
 "def": "Gradual and partial changes in the conditions of animal exploitation, promoted by reformist currents as a step towards (or a substitute for) deeper change.",
-"com": "",
+"com": "Examples are the European Union ban on battery cages for hens, in force since 2012, and the ban on veal crates. The debate is whether these changes pave the way to ending exploitation or make it more acceptable to the public; evidence on this effect is still limited. See Welfarism, Reformism and Moral gradualism.",
 "pt": "Reformas incrementais"
 },
 {
@@ -640,14 +640,14 @@
 "i": 370,
 "termo": "Ear cropping",
 "def": "The surgical amputation of part of an animal's ears (common in some dog breeds) for aesthetic reasons.",
-"com": "",
+"com": "The cut is made on puppies of breeds such as Dobermann, pit bull and Great Dane, so that the ears stand erect, and it requires weeks of bandaging and splints. It is banned for cosmetic purposes in much of Europe, the United Kingdom, Australia and, in Brazil, by the Federal Council of Veterinary Medicine since 2008, but it is still legal in much of the United States. See Tail docking, Devocalization and Pedigree.",
 "pt": "Remoção de orelha (ear cropping)"
 },
 {
 "i": 371,
 "termo": "Rennet",
 "def": "An enzyme extracted from the stomach of calves, used in traditional cheese production to coagulate milk.",
-"com": "",
+"com": "Traditional rennet comes from the stomachs of calves, and also of lambs and kids, killed while young, which is why many cheeses are not even vegetarian. Today most industrial cheese in the United States and the United Kingdom uses chymosin produced by fermentation with microorganisms, but protected traditional cheeses such as Parmigiano Reggiano still require animal rennet. Labels do not always state where the rennet comes from. See Cheese, Dairy products and Vegetarianism.",
 "pt": "Rennet"
 }
 ]
