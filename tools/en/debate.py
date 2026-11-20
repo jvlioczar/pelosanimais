@@ -165,7 +165,7 @@ OP = {
   r="A natural craving for corpses? Gross. Normal people see a dead animal on the road and look away, but your mouth waters. If that's natural for you, I'd rather not know what else you crave.",
   re="Disgust isn't an argument, and the person feels judged."),
  'D6': dict(
-  f="Respecting a culture isn't accepting everything in it. You probably criticize bullfighting or cockfighting, and many places have banned them for cruelty. And the criticism applies mainly to our own culture.",
+  f="Respecting a culture isn't accepting everything in it. You probably criticize dogfighting or child marriage, even where they are customary. Cultures change from within: Colombia is banning bullfighting from 2027. And veganism mainly criticizes our own culture.",
   fe='Shows the person already judges cultural practices and that the criticism is not aimed at other peoples.',
   m="This culture isn't even ours: eating meat every day is a colonizer thing, brought over with the cattle and the fences. Indigenous peoples lived in harmony with animals, and defending meat today is defending the legacy of colonization.",
   me="A historical generalization that doesn't hold up: many cultures eat animals. It also swaps the moral question for a political dispute.",
@@ -221,8 +221,8 @@ OP = {
   r="That's a manipulative question; I won't answer it. You set up an absurd scenario just to corner me and then go around saying vegans hate people. Save that trick for someone who falls for it, and let me know when you want a real conversation.",
   re='Refusing to answer looks like dodging. The question has a good answer.'),
  'F4': dict(
-  f="Wild animal suffering is a serious question, and some people study ways to reduce it without causing more harm. But whatever the answer, it doesn't favor eating animals: suffering in nature is no reason to cause more.",
-  fe='Takes the question seriously and shows it does not support the conclusion.',
+  f="A lion has no alternative and isn't morally answerable for what it does; we have one, and we are. And suffering in nature is no reason to cause more. Wild animal suffering is a serious question, and some people study how to reduce it without causing more harm.",
+  fe='Shows the moral difference between the lion and us, and takes the question seriously without accepting the conclusion.',
   m="It's a serious question, and the consistent answer is yes: we should get rid of all predators. If suffering is bad, it doesn't matter who causes it, so the right thing would be to phase out lions, wolves and hawks and leave only herbivores.",
   me='Such an intervention could cause more suffering, and the sentence sounds absurd. The topic calls for caution.',
   r="Lions aren't my problem. What happens on the savanna is nature's business, and I only care about suffering that has something to do with me. Besides, that question is just an attempt to change the subject, and I won't fall for it.",
@@ -345,13 +345,6 @@ OP.update({
   r="Souls? You still believe in that? Arguing from superstition is a waste of time. When you want to use real arguments, we'll talk. Until then, I'd rather talk to people who think with their heads, not with faith.",
   re="Disrespects the person's faith and ends the conversation."),
  'A20': dict(
-  f="Not knowing you will die doesn't make death harmless. A baby or someone asleep doesn't know either, and killing them would be very serious. The harm of death is what it takes away: all the life still to come. The animal loses that, knowing it or not.",
-  fe='Uses the human test and shows what the harm of death is.',
-  m="Animals know perfectly well they're going to die, they smell the blood and understand everything that happens in the slaughterhouse. That's why they cry and try to escape, and it's been proven. Nobody can deny it.",
-  me="Overstates what is known and accepts the argument's wrong criterion.",
-  r="So I can kill you in your sleep, since you won't know? Think before you speak, because that argument wouldn't fool a child. I've heard plenty of excuses, but honestly that one is among the worst.",
-  re='The human test is a good idea, but the tone turns it into a threat and an insult.'),
- 'A21': dict(
   f='That settles the question by choice of word. If "person" means self-awareness and plans, newborns aren\'t persons either. If it means having rights, companies are legal persons. Personhood is a tool we grant, not a fact of nature.',
   fe='Shows the definition was chosen to produce the result.',
   m="Animals are persons, and the law already recognizes it in several countries. A pig is a non-human person with the same rights as anyone, and whoever denies it is out of date. Courts have ruled on it many times.",
@@ -533,7 +526,7 @@ OP.update({
   me='States something false this guide asks you not to use.',
   r="Then volunteer for the tests yourself, since you think they're so important. Easy to defend when someone else suffers. Or stop taking medicine, since you think it's so fair. I doubt you would. You don't have the courage to change.",
   re='A taunt instead of an argument.'),
- 'I17': dict(
+ 'I20': dict(
   f="Being tradition doesn't put a practice above the laws against cruelty. England banned hunting with dogs and wild animals in circuses, and Brazil's Supreme Court banned the farra do boi and cockfighting. Festivals can keep the music and food without the suffering.",
   fe='Shows cruel traditions have been banned and that culture can go on.',
   m="That's not culture at all, it's barbarism. People who take part in it are sadists and should be jailed, and whoever defends it is on the side of torture. There's nothing to discuss with people who find this acceptable.",
@@ -610,7 +603,7 @@ OP.update({
   me='Makes the comparison insensitively, which pushes away and hurts.',
   r="What's offensive is what happens to animals, not my comparison. If words offend you more than deaths, that's your problem. Animals don't care about your discomfort, they care about what's done to them.",
   re='Disregards the real pain those comparisons can cause.'),
- 'L31': dict(
+ 'L34': dict(
   f="That's not an argument, it's a provocation. When we feel pressured, we tend to do the opposite. But the one who pays the \"compensation\" isn't me, it's the animals. Whenever you want to really talk about them, I'm here.",
   fe="Doesn't take the bait and leaves the door open.",
   m="Eat double, it makes no difference. Every vegan already saves 200 animals a year, so even if you eat more I still save far more than you kill. Trying to provoke me won't work, the balance is still positive for the animals.",
@@ -631,4 +624,78 @@ OP.update({
   me='Repeats the idyllic view the argument itself relies on.',
   r="So you want to end nature so nobody suffers? What a delusion. Sentientists are even crazier than vegans. Leave the animals alone and stop inventing problems where there are none. Nobody can stand this anymore.",
   re="It's an attack, not an answer, and it distorts the position too."),
+})
+
+# Added on 2026-11-20: frequent objections that came into the guide after the earlier rounds. Same rule.
+OP.update({
+ 'A27': dict(
+  f="Comparing isn't equating. When you say human life is worth more, you're already comparing. I don't need to say a pig is worth the same as a person to say that his pain counts, and that killing him for a sandwich needs a better reason than \"there's no comparison\".",
+  fe='Shows the phrase itself compares, and separates comparing from equating without lowering anyone.',
+  m="Sure we can compare, because a pig's life is worth exactly the same as a person's. A life is a life, and there's no hierarchy at all between species. Anyone who thinks human life is worth more is just repeating the speciesism they learned as a child.",
+  me="Claims an equality of value the argument doesn't need, and confirms the fear that the comparison lowers humans.",
+  r="You really can't compare them: the pig never hurt anyone, and humans are the species destroying the planet. If I had to choose, I'd pick the pig. Plenty of people out there are worth a lot less than an animal, I can promise you that.",
+  re='Devalues human lives and gives the person exactly the reason to refuse the conversation.'),
+ 'B18': dict(
+  f='Suffering is central, I agree. But almost all use of animals for food ends in death, and dying young means losing the life still to come, with or without pain. And "use without suffering" is an imaginary farm: milk requires separating calves, and eggs come from hatcheries that cull male chicks.',
+  fe="Grants the point, shows that death is a harm too and that real practice doesn't match the imagined farm.",
+  m="Use already is suffering: every exploited animal suffers all the time, without exception, even if they look calm. There's no use that doesn't cause pain, and anyone who has seen a farm knows the animals live in constant agony, from birth to slaughter.",
+  me='Exaggerates a true fact and leaves out the point that settles the question: death is a harm too, with or without pain.',
+  r="Here comes the welfarist asking for a bigger cage. People who talk about \"suffering\" just want to ease their conscience so they can keep eating the same way. Either you're against exploitation or you're for it. There's no middle ground here.",
+  re="Attacks the person's intention and doesn't explain why use causes harm."),
+ 'B19': dict(
+  f="Almost nobody eats meat out of malice. But intention doesn't change what the animal goes through: the sow in a crate where she can barely turn, the calf taken from the cow, the piglet castrated without anesthesia. And the purpose, nourishment, can be reached without any of it: well-planned vegan diets are adequate.",
+  fe='Acknowledges the good intention, shows the real harm and that the goal can be reached without it.',
+  m="Eating animals is cruelty, and people who eat them are cruel, even if they don't realize it. There's no hiding behind nutrition: nobody needs meat for anything, and meat only harms the body. Anyone who keeps eating it knows exactly what they're doing.",
+  me='Accuses the person of cruelty and exaggerates about health, when showing what the animal goes through was enough.',
+  r="For nourishment? You eat steak because you're short on nutrients, do you? Nobody buys that excuse. You eat it because you like it, period, so at least be honest and stop pretending it's out of need.",
+  re='Mocks the person instead of showing the suffering and the alternative.'),
+ 'L31': dict(
+  f="Emotion alone doesn't decide anything, I agree. That's why the argument isn't \"I feel sad, so it's wrong\": animals feel pain and fear, science has established that, and causing that suffering without need is wrong. And people who defend meat appeal to emotion too: pleasure, tradition, the family barbecue.",
+  fe="Accepts the person's standard, states the argument without emotion and shows that emotional appeal is on both sides.",
+  m="Emotion is the best argument there is. If you see an animal suffering and feel nothing, the problem is you. You don't need any logic to know it's wrong: just watch the slaughterhouse videos and let your heart decide.",
+  me='Confirms the accusation: swaps reasons for emotion, which is exactly what the person criticizes.',
+  r="Emotional appeal is what you do when you cry at a dog movie and then eat a pig for lunch. Coldness is feeling nothing for those who die to become food. Anyone who isn't moved by that has a serious problem.",
+  re="Insults the person and doesn't show that the argument holds without the emotion."),
+ 'L32': dict(
+  f="Sometimes veganism shows up in pricey products, that's true. But it isn't a cause of the rich: in India, close to 4 in 10 adults are vegetarian, and in the US people who earn less say they're vegetarian more often. And even if it were, that wouldn't tell us whether making animals suffer is right.",
+  fe='Grants the image, corrects the fact with data and goes back to the moral question.',
+  m="You're right, veganism is a middle-class thing, but that doesn't matter: people with money have more of a duty to change. The poor have no choice and have to eat whatever they can, so the demand only applies to those who can pay.",
+  me="Confirms the stereotype and even assumes the poor can't eat without animals, which is false.",
+  r="Middle-class moralism is your weekend steak barbecue. You only bring up the poor to defend yourself; you've never done anything for them. Funny how everyone becomes a champion of the working class when the topic is steak.",
+  re='Tu quoque and an accusation of bad faith, without answering the objection.'),
+ 'L33': dict(
+  f="Many animal advocates live with adopted dogs and cats, and not even PETA proposes taking them out of homes. What many criticize is breeding for sale while shelters are full. And whatever you think about that, it doesn't change what happens to the animals bred for food.",
+  fe='Corrects the caricature, explains the real criticism and returns to the central issue.',
+  m="We do, and rightly so: keeping a pet is slavery, no matter how much you love them. Dogs and cats didn't choose to live with you. No animal should live in a house, and anyone with a pet is exploiting them just the same.",
+  me="Takes a position most advocates don't hold and turns the person's caricature into the truth.",
+  r="What nonsense. That's something you read in some social media group. Nobody wants to take your dog, so stop inventing excuses not to think about the animals you eat. There's always a new theory to dodge the subject.",
+  re='Ridicules instead of explaining, and the person is left not knowing what advocates actually think.'),
+ 'E17': dict(
+  f="I'm glad you find it admirable. Acts beyond duty do exist, like donating a kidney to a stranger: helping someone at great cost to yourself. No longer paying for animals to be confined and killed, when you can live well without it, isn't heroism; it's the minimum we ask in any other case.",
+  fe="Accepts the compliment, explains what going beyond duty is and shows that not causing serious harm isn't that.",
+  m="It isn't admirable, it's a duty, and anyone who doesn't do it is wrong, period. There's no middle ground: either you're vegan or you're complicit in the killing. Compliments don't help any animal, so keep your \"admirable\" and change what you eat.",
+  me="Rebuffs the person's opening harshly, when explaining the difference between helping and not harming was enough.",
+  r="Admirable? Then why don't you do it? Easy to find it lovely and keep eating the same way. This \"beyond duty\" talk is just a polite way of saying you don't want to change.",
+  re='Turns a compliment into an accusation and closes the door the person had opened.'),
+ 'I2': dict(
+  f="There are two questions: whether a test works and whether it's right. Science answers the first, and the answer is mixed: only about 5% of therapies tested in animals end up approved. No data answers the second: experiments on people without consent would also \"work\", and we ban them for ethical reasons.",
+  fe='Separates the fact from the moral question and shows that working is not enough to be ethical.',
+  m="Animal tests don't work, never have, and every serious scientist knows it. Animals are completely different from us, so no result applies to humans. The tests only continue because the industry makes money from them.",
+  me='Denies a fact that has nuance and accepts the wrong premise: that if they worked, they would be ethical.',
+  r="Then test it on yourself, since it's so great. I doubt you'd volunteer. Easy to call it ethical when it's the animal who stays in the cage and suffers so you can take your little pill.",
+  re="A taunt that doesn't separate the two questions and sounds like contempt for people who need medicine."),
+ 'D15': dict(
+  f="I agree: being vegan doesn't make anyone more evolved, and thinking you're superior is a problem. But the conversation is about the animals, not about me or you. Many traditions, from Indian ahimsa to mercy toward animals in Judaism and Islam, teach people to avoid harm.",
+  fe='Grants the point, takes the focus off the speaker and shows that the traditions themselves ask us to avoid harm.',
+  m="It does: people who eat meat absorb the energy of the animal's fear and death, and that weighs on the spirit. Vegans vibrate at a higher frequency and are more connected to the universe. Many traditions know this; only those who don't want to see it miss it.",
+  me='An unfounded claim that confirms the air of superiority being criticized and steers away from the animals.',
+  r="And you think you'll be more evolved eating corpses? At least I don't have blood on my hands. People who eat animals have no moral standing to talk about spirituality, honestly.",
+  re='Answers with the very superiority the person just criticized.'),
+ 'N5': dict(
+  f="Natural selection doesn't pick what's best for animals, only what leaves more offspring, sometimes hundreds of young that starve. A species doesn't suffer; individuals do. And with humans, you know the name for the idea of not treating the weak to improve the species: eugenics.",
+  fe='Corrects the idea of natural selection, goes back to the individual and tests the principle with humans.',
+  m="Natural selection doesn't exist anymore, because humans already interfere with everything. So it makes no difference whether we help or not: nature was spoiled long ago, and there's nothing natural left to preserve. That argument makes no sense in today's world.",
+  me="A false claim: natural selection is still at work. And it doesn't answer the moral point about individuals.",
+  r="So you don't get vaccinated or wear glasses, right? If natural selection should run its course, start with yourself. That's the talk of someone who never needed help in their life and thinks the weak deserve to suffer.",
+  re='The human test has something to it, but said as a personal attack it only makes people defensive.'),
 })

@@ -167,7 +167,7 @@ OP = {
   r='Vontade natural de comer cadáver? Que nojo. Gente normal vê um bicho morto na estrada e desvia o olhar, mas você fica com água na boca. Se isso é natural para você, eu prefiro nem saber o que mais dá vontade.',
   re='Nojo não é argumento, e a pessoa se sente julgada.'),
  'D6': dict(
-  f='Respeitar uma cultura não é aceitar tudo nela. Você provavelmente critica a farra do boi ou a rinha de galo, e o STF proibiu as duas por crueldade. E a crítica vale principalmente para a nossa própria cultura.',
+  f='Respeitar uma cultura não é aceitar tudo nela. Você provavelmente critica a briga de cães ou o casamento infantil, mesmo onde são costume. Culturas mudam por dentro: a Colômbia vai proibir a tourada a partir de 2027. E o veganismo critica principalmente a nossa própria cultura.',
   fe='Mostra que a pessoa já julga práticas culturais e que a crítica não é dirigida a outros povos.',
   m='Essa cultura nem é nossa: comer carne todo dia é coisa de colonizador, trazida junto com o gado e as cercas. Os povos originários viviam em harmonia com os animais, e defender a carne hoje é defender a herança da colonização.',
   me='Generalização histórica que não se sustenta: muitas culturas comem animais. E troca a questão moral por uma disputa política.',
@@ -223,8 +223,8 @@ OP = {
   r='Pergunta manipuladora, não vou responder. Você monta um cenário absurdo só para me encurralar e depois sair dizendo que vegano odeia gente. Guarde esse truque para quem cai nele e me avise quando quiser conversar de verdade.',
   re='Recusar a resposta parece fuga. A pergunta tem uma resposta boa.'),
  'F4': dict(
-  f='O sofrimento de animais selvagens é uma questão séria, e há quem estude formas de reduzi-lo sem causar mais dano. Mas, seja qual for a resposta, ela não favorece o consumo: que haja sofrimento na natureza não é razão para causar mais.',
-  fe='Leva a sério a pergunta e mostra que ela não sustenta a conclusão.',
+  f='O leão não tem alternativa nem responde moralmente pelo que faz; nós temos e respondemos. E haver sofrimento na natureza não é razão para causar mais. O sofrimento dos animais selvagens é uma questão séria, e há quem estude como reduzi-lo sem causar mais dano.',
+  fe='Mostra a diferença moral entre o leão e nós e leva a sério a pergunta sem aceitar a conclusão.',
   m='É uma questão séria, e a resposta coerente é sim: deveríamos acabar com todos os predadores. Se o sofrimento é ruim, não importa quem o causa, então o certo seria eliminar leões, lobos e gaviões aos poucos e deixar na natureza só os herbívoros.',
   me='Uma intervenção dessas poderia causar mais sofrimento, e a frase soa absurda. O tema exige cautela.',
   r='Leões não são problema meu. O que acontece na savana é assunto da natureza, e eu só me preocupo com o sofrimento que tem a ver comigo. Aliás, essa pergunta é só uma tentativa de mudar de assunto, e eu não vou cair nessa.',
@@ -347,13 +347,6 @@ OP.update({
   r='Alma? Você ainda acredita nisso? Discutir com base em superstição é perda de tempo. Quando quiser usar argumentos de verdade, a gente conversa. Até lá, prefiro falar com quem pensa com a cabeça, não com a fé.',
   re='Desrespeita a fé da pessoa e encerra a conversa.'),
  'A20': dict(
-  f='Não saber que vai morrer não torna a morte inofensiva. Um bebê ou alguém dormindo também não sabem, e matá-los seria gravíssimo. O mal da morte é o que ela tira: toda a vida que ainda viria. E isso o animal perde, saiba ou não.',
-  fe='Usa o teste humano e mostra qual é o dano da morte.',
-  m='Os animais sabem perfeitamente que vão morrer, eles sentem o cheiro do sangue e entendem tudo o que acontece no matadouro. Por isso choram e tentam fugir, e isso já foi comprovado. Ninguém pode negar isso.',
-  me='Exagera o que se sabe e aceita o critério errado do argumento.',
-  r='Então posso matar você enquanto dorme, já que você não vai saber? Pensa um pouco antes de falar, porque esse argumento não serve nem para criança. Já ouvi muita desculpa, mas essa é das piores, sinceramente.',
-  re='A ideia do teste humano é boa, mas o tom transforma em ameaça e ofensa.'),
- 'A21': dict(
   f='Isso decide a questão pela escolha da palavra. Se "pessoa" é ter consciência de si e planos, recém-nascidos também não são. Se é ter direitos, empresas são pessoas jurídicas. Pessoa é uma ferramenta que concedemos, não um fato da natureza.',
   fe='Mostra que a definição foi escolhida para dar o resultado.',
   m='Animais são pessoas, sim, e a lei já reconhece isso em vários países. Um porco é uma pessoa não humana, com os mesmos direitos de qualquer um, e quem nega está desatualizado. Os tribunais já decidiram isso várias vezes.',
@@ -535,8 +528,8 @@ OP.update({
   me='Afirma algo falso que este guia pede para não usar.',
   r='Então se oferece você para os testes, já que acha tão importante. Fácil defender quando quem sofre é outro. Ou então para de tomar remédio, já que acha tão justo. Duvido que você faça isso. Coragem para mudar você não tem.',
   re='Provocação no lugar de argumento.'),
- 'I17': dict(
-  f='Ser tradição não coloca uma prática acima das leis contra a crueldade. A Inglaterra proibiu a caça com cães e animais selvagens em circos, e o STF proibiu a farra do boi e a rinha de galo. As festas podem manter a música e a comida, sem o sofrimento.',
+ 'I20': dict(
+  f='Ser tradição não coloca uma prática acima da proibição de crueldade. O STF proibiu a farra do boi e a rinha de galo e, em 2016, julgou a vaquejada inconstitucional por crueldade. As festas podem manter a música, a comida e o encontro, sem o sofrimento.',
   fe='Mostra que tradições cruéis já foram proibidas e que a cultura pode continuar.',
   m='Isso não é cultura nenhuma, é barbárie. Quem participa dessas coisas é sádico e merece ser preso, e quem defende está do lado da tortura. Não tem nada para discutir com quem acha isso aceitável, nem para entender.',
   me='Ofende as pessoas em vez de separar a festa do sofrimento.',
@@ -612,7 +605,7 @@ OP.update({
   me='Faz a comparação de forma insensível, que afasta e machuca.',
   r='Ofensivo é o que acontece com os animais, e não a minha comparação. Se você se ofende mais com palavras do que com mortes, o problema é seu. Os animais não ligam para o seu desconforto, ligam para o que fazem com eles.',
   re='Desconsidera a dor real que essas comparações podem causar.'),
- 'L31': dict(
+ 'L34': dict(
   f='Isso não é um argumento, é uma provocação. Quando nos sentimos pressionados, tendemos a fazer o contrário. Mas quem paga a "compensação" não sou eu, são os animais. Quando quiser conversar sobre eles de verdade, estou aqui.',
   fe='Não entra na provocação e deixa a porta aberta.',
   m='Pode comer o dobro, não faz diferença. Cada vegano já salva 200 animais por ano, então mesmo que você coma mais eu continuo salvando muito mais do que você mata. Não adianta tentar me provocar, o saldo continua positivo para os animais.',
@@ -633,4 +626,78 @@ OP.update({
   me='Repete a visão idílica que o próprio argumento usa.',
   r='Então você quer acabar com a natureza para ninguém sofrer? Que delírio. Os sencientistas são ainda mais malucos que os veganos. Deixa os bichos em paz e para de inventar problema onde não tem. Ninguém aguenta mais isso.',
   re='É um ataque, e não uma resposta, e ainda distorce a posição.'),
+})
+
+# Acrescentados em 2026-11-20: objeções frequentes que entraram no guia depois das outras levas. Mesmo critério.
+OP.update({
+ 'A27': dict(
+  f='Comparar não é igualar. Quando você diz que a vida humana vale mais, já está comparando. Não preciso dizer que um porco vale o mesmo que uma pessoa para dizer que a dor dele conta, e que matá-lo por um sanduíche precisa de uma razão melhor do que "não se compara".',
+  fe='Mostra que a própria frase compara e separa comparar de igualar, sem rebaixar ninguém.',
+  m='Pode comparar, sim, porque a vida de um porco vale exatamente o mesmo que a de uma pessoa. Uma vida é uma vida, e não existe hierarquia nenhuma entre espécies. Quem acha que a vida humana vale mais está só repetindo o especismo que aprendeu desde criança.',
+  me='Afirma uma igualdade de valor que o argumento não precisa, e confirma o medo de que a comparação rebaixe os humanos.',
+  r='Não dá para comparar mesmo: o porco nunca fez mal a ninguém, e o ser humano é a espécie que destrói o planeta. Se for para escolher, eu fico com o porco. Muita gente por aí vale bem menos que um animal, isso eu garanto.',
+  re='Desvaloriza vidas humanas e dá à pessoa exatamente o motivo para recusar a conversa.'),
+ 'B18': dict(
+  f='O sofrimento é central, concordo. Mas quase todo uso de animais para comer termina em morte, e morrer jovem é perder a vida que viria, com ou sem dor. E o "uso sem sofrimento" é uma fazenda imaginária: o leite exige separar bezerros, e os ovos vêm de incubatórios que descartam os pintinhos machos.',
+  fe='Concede o ponto, mostra que a morte também é dano e que a prática real não corresponde à fazenda imaginada.',
+  m='Usar já é sofrer: todo animal explorado sofre o tempo todo, sem exceção, mesmo que pareça tranquilo. Não existe nenhum uso que não cause dor, e qualquer pessoa que já tenha visto uma fazenda sabe que os animais vivem em agonia permanente, do nascimento ao abate.',
+  me='Exagera um fato verdadeiro e deixa de lado o ponto que decide a questão: a morte também é dano, com ou sem dor.',
+  r='Lá vem o bem-estarista querendo gaiola maior. Quem fala em "sofrimento" só quer aliviar a própria consciência para continuar comendo do mesmo jeito. Ou você é contra a exploração, ou é a favor dela. Não existe meio-termo nessa história.',
+  re='Ataca a intenção da pessoa e não explica por que o uso causa dano.'),
+ 'B19': dict(
+  f='Quase ninguém come carne por maldade. Mas a intenção não muda o que o animal passa: a porca na cela onde mal se vira, o bezerro tirado da vaca, o leitão castrado sem anestesia. E o propósito, se nutrir, dá para alcançar sem nada disso: dietas veganas bem planejadas são adequadas.',
+  fe='Reconhece a boa intenção, mostra o dano real e que o objetivo pode ser alcançado sem ele.',
+  m='Comer animais é crueldade, sim, e quem come é cruel, mesmo sem perceber. Não adianta se esconder atrás da nutrição: ninguém precisa de carne para nada, e a carne só faz mal ao corpo. Quem continua comendo sabe muito bem o que está fazendo.',
+  me='Acusa a pessoa de crueldade e exagera sobre a saúde, quando bastava mostrar o que o animal passa.',
+  r='Para se nutrir? Você come picanha porque está com falta de nutrientes, é? Ninguém cai nessa desculpa. Você come porque gosta e pronto, então pelo menos seja honesto e pare de fingir que é por necessidade.',
+  re='Zomba da pessoa em vez de mostrar o sofrimento e a alternativa.'),
+ 'L31': dict(
+  f='Emoção sozinha não decide nada, concordo. Por isso o argumento não é "fico triste, então é errado": os animais sentem dor e medo, a ciência estabelece isso, e causar esse sofrimento sem necessidade é errado. E quem defende a carne também apela à emoção: prazer, tradição, o churrasco de família.',
+  fe='Aceita o critério da pessoa, apresenta o argumento sem emoção e mostra que o apelo emocional está dos dois lados.',
+  m='A emoção é o melhor argumento que existe. Se você vê um animal sofrendo e não sente nada, o problema é com você. Não precisa de lógica nenhuma para saber que é errado: basta assistir aos vídeos dos matadouros e deixar o coração decidir.',
+  me='Confirma a acusação: troca as razões pela emoção, que é justamente o que a pessoa critica.',
+  r='Apelo emocional é o que você faz quando chora vendo filme de cachorro e depois come um porco no almoço. Frieza é não sentir nada por quem morre para virar comida. Quem não se comove com isso tem um problema sério.',
+  re='Insulta a pessoa e não mostra que o argumento se sustenta sem a emoção.'),
+ 'L32': dict(
+  f='Às vezes o veganismo aparece em produtos caros, é verdade. Mas não é causa de ricos: na Índia, perto de 4 em cada 10 adultos são vegetarianos, e nos EUA quem ganha menos se declara vegetariano com mais frequência. E, mesmo que fosse, isso não diria se é certo fazer os animais sofrerem.',
+  fe='Concede a imagem, corrige o fato com dados e volta à pergunta moral.',
+  m='Você tem razão, o veganismo é coisa de classe média mesmo, mas isso não importa: quem tem dinheiro tem mais obrigação de mudar. Os pobres não têm escolha e precisam comer o que conseguem, então a cobrança é só para quem pode pagar.',
+  me='Confirma o estereótipo e ainda supõe que os pobres não podem comer sem animais, o que é falso.',
+  r='Moralismo de classe média é o seu churrasco de picanha de fim de semana. Você fala dos pobres só para se defender, nunca fez nada por eles. Engraçado como todo mundo vira defensor da classe trabalhadora quando o assunto é o bife.',
+  re='Tu quoque e acusação de má-fé, sem responder à objeção.'),
+ 'L33': dict(
+  f='Muitos defensores dos animais vivem com cães e gatos adotados, e nem a PETA propõe tirá-los das casas. O que muitos criticam é a criação para venda, enquanto abrigos estão cheios. E, seja qual for a sua opinião sobre isso, ela não muda o que acontece com os animais criados para comer.',
+  fe='Corrige a caricatura, explica a crítica real e volta ao tema central.',
+  m='Queremos, sim, e com razão: ter um animal de estimação é escravidão, não importa o quanto você o ame. Cão e gato não escolheram morar com você. O certo seria que nenhum animal vivesse numa casa, e quem tem pet está explorando do mesmo jeito.',
+  me='Assume uma posição que a maioria dos defensores não tem e transforma em verdade a caricatura que a pessoa trouxe.',
+  r='Que bobagem. Isso é coisa que você leu em grupo de rede social. Ninguém quer tirar o seu cachorro, para de inventar desculpa para não pensar nos animais que você come. Sempre aparece uma teoria nova para fugir do assunto.',
+  re='Ridiculariza em vez de explicar, e a pessoa fica sem saber o que os defensores realmente pensam.'),
+ 'E17': dict(
+  f='Que bom que acha admirável. Atos além da obrigação existem, como doar um rim a um desconhecido: ajudar alguém com grande custo para si. Deixar de pagar para que animais sejam confinados e mortos, quando dá para viver bem sem isso, não é heroísmo; é o mínimo que pedimos em qualquer outro caso.',
+  fe='Aceita o elogio, explica o que é ir além da obrigação e mostra que não causar dano grave não é isso.',
+  m='Não é admirável, é obrigação, e quem não faz está errado e ponto. Não existe meio-termo: ou você é vegano, ou é cúmplice da matança. Elogio não ajuda nenhum animal, então guarde o seu "admirável" e mude o que você come.',
+  me='Rejeita a abertura da pessoa com rispidez, quando bastava explicar a diferença entre ajudar e não causar dano.',
+  r='Admirável? Então por que você não faz? Fácil achar bonito e continuar comendo do mesmo jeito. Essa conversa de "vai além da obrigação" é só uma forma educada de dizer que você não quer mudar.',
+  re='Transforma um elogio em acusação e fecha a porta que a pessoa tinha aberto.'),
+ 'I2': dict(
+  f='São duas perguntas: se o teste funciona e se ele é certo. A ciência responde à primeira, e a resposta é mista: só cerca de 5% das terapias testadas em animais chegam a ser aprovadas. A segunda, nenhum dado responde: experimentos em pessoas sem consentimento também "funcionariam", e os proibimos por razões éticas.',
+  fe='Separa o fato da questão moral e mostra que funcionar não basta para ser ético.',
+  m='Testes em animais não funcionam, nunca funcionaram, e todos os cientistas sérios sabem disso. Animais são completamente diferentes de nós, então nenhum resultado serve para humanos. Os testes só continuam porque a indústria ganha dinheiro com eles.',
+  me='Nega um fato que tem nuance e aceita a premissa errada: que, se funcionassem, seriam éticos.',
+  r='Então testa em você mesmo, já que é tão bom. Duvido que você se ofereça. Fácil achar ético quando o bicho é que vai ficar na gaiola e sofrer para você tomar seu remedinho.',
+  re='Provocação que não separa as duas perguntas e soa como desprezo por quem precisa de remédio.'),
+ 'D15': dict(
+  f='Concordo: ser vegano não torna ninguém mais evoluído, e se achar superior é um problema. Mas a conversa é sobre os animais, não sobre mim nem sobre você. Muitas tradições, da ahimsa indiana à misericórdia com os animais no judaísmo e no islã, ensinam a evitar o dano.',
+  fe='Concede o ponto, tira o foco de quem fala e mostra que as próprias tradições pedem evitar o dano.',
+  m='Faz, sim: quem come carne absorve a energia do medo e da morte do animal, e isso pesa no espírito. Veganos vibram numa frequência mais alta e ficam mais conectados com o universo. Isso é conhecido em várias tradições, só não vê quem não quer.',
+  me='Afirmação sem base que confirma o ar de superioridade criticado e desvia dos animais.',
+  r='E você acha que vai ser mais evoluído comendo cadáver? Pelo menos eu não tenho sangue nas mãos. Quem come animal não tem moral nenhuma para falar de espiritualidade, sinceramente.',
+  re='Responde com a superioridade que a pessoa acabou de criticar.'),
+ 'N5': dict(
+  f='A seleção natural não escolhe o que é melhor para os animais, só o que deixa mais descendentes, às vezes centenas de filhotes que morrem de fome. Uma espécie não sofre; os indivíduos sofrem. E, com humanos, você sabe o nome da ideia de não tratar os fracos para melhorar a espécie: eugenia.',
+  fe='Corrige a ideia de seleção natural, volta ao indivíduo e testa o princípio com humanos.',
+  m='A seleção natural não existe mais, porque os humanos já interferem em tudo. Então tanto faz ajudar ou não: a natureza já foi estragada há muito tempo, e não sobrou nada natural para preservar. Esse argumento não faz sentido no mundo de hoje.',
+  me='Afirmação falsa: a seleção natural continua agindo. E não responde ao ponto moral sobre os indivíduos.',
+  r='Então você não toma vacina nem usa óculos, né? Se é para deixar a seleção natural agir, comece por você. Esse papo é de quem nunca precisou de ajuda na vida e acha que os fracos merecem sofrer.',
+  re='O teste humano tem algo, mas dito como ataque pessoal só gera defesa.'),
 })

@@ -222,7 +222,7 @@ UI = [
  ('Formulação: a frase do dia a dia e a versão mais forte, com premissas numeradas', 'Formulation: the everyday phrase and the strongest version, with numbered premises'),
  ('Como pode aparecer: outras formas do mesmo argumento', 'How it can show up: other forms of the same argument'),
  ('Resposta para crianças: linguagem de 8 a 10 anos, sem culpa nem choque', 'Answer for children: language for ages 8 to 10, without guilt or shock'),
- ('Resposta curta: a falha central e uma pergunta de retorno', 'Short answer: the central flaw and a question to ask back'),
+ ('Réplica: o que dizer à pessoa, com a falha central e uma pergunta de retorno', 'Reply: what to say to the person, with the central flaw and a question to ask back'),
  ('Resposta completa: validade, evidências, a melhor réplica e por que ela também falha', 'Full answer: validity, evidence, the strongest counter-reply and why it fails too'),
  ('Conexões: o que costuma vir antes e depois', 'Connections: what usually comes before and after'),
  ('Erros de raciocínio: lógicos, epistemológicos e morais', 'Reasoning errors: logical, epistemological and moral'),
@@ -262,7 +262,7 @@ UI = [
  ('<b>Erros e vieses</b><small>O que faz parecer certo</small>', '<b>Errors and biases</b><small>What makes it seem right</small>'),
  ('<b>Testar</b><small>Coerência e concessões</small>', '<b>Test</b><small>Consistency and concessions</small>'),
  ('<b>Conexões</b><small>O que vem antes e depois</small>', '<b>Connections</b><small>What comes before and after</small>'),
- ('>Resposta curta</h2>', '>Short answer</h2>'),
+ ('>Réplica</h2>', '>Reply</h2>'),
  ('>Para crianças</h2>', '>For children</h2>'),
  ('>Copiar resposta</button>', '>Copy answer</button>'),
  ('<span>Devolva com uma pergunta</span>', '<span>Ask a question back</span>'),
@@ -296,7 +296,7 @@ UI = [
  ('"s":"Falácia: ', '"s":"Fallacy: '),
  ('"s":"Viés: ', '"s":"Bias: '),
  ('"t":"Família ', '"t":"Family '),
- ('"k":"política teoria"', '"k":"politics theory"'),
+ ('"k":"política ética teoria"', '"k":"politics ethics theory"'),
  ('<span>A resposta em uma frase</span>', '<span>The answer in one sentence</span>'),
 ] + [(f'Família {c}: ', f'Family {c}: ') for c in 'ABCDEFGHIJKLMN']
 
@@ -304,7 +304,7 @@ JS = [
  # answer card (trecho.js)
  ("'Compartilhar a resposta'", "'Share the answer'"),
  ('aria-label="Qual resposta"', 'aria-label="Which answer"'),
- ("[['curta', 'Resposta curta', 'Resposta curta', textoDe(curtaEl)]]", "[['curta', 'Short answer', 'Short answer', textoDe(curtaEl)]]"),
+ ("[['curta', 'Réplica', 'Réplica', textoDe(curtaEl)]]", "[['curta', 'Reply', 'Reply', textoDe(curtaEl)]]"),
  ("['frase', 'Em uma frase', 'A resposta em uma frase', textoDe(teseEl)]", "['frase', 'In one sentence', 'The answer in one sentence', textoDe(teseEl)]"),
  ("inclui: 'Incluir a pergunta de retorno'", "inclui: 'Include the question to ask back'"),
  ("RESP.caixa = ['Devolva com uma pergunta', textoDe(pergEl)]", "RESP.caixa = ['Ask a question back', textoDe(pergEl)]"),
@@ -313,7 +313,7 @@ JS = [
  ("'resposta-'", "'answer-'"),
  ('<button type="button" class="btn">Gerar imagem da resposta</button>', '<button type="button" class="btn">Make an image of the answer</button>'),
  ("'O argumento, a resposta e a pergunta de retorno numa imagem para as redes.'", "'The argument, the answer and the question to ask back in one image for social media.'"),
- ("n.cap ? 'Resposta curta' : 'Falha principal'", "n.cap ? 'Short answer' : 'Main flaw'"),
+ ("n.cap ? 'Réplica' : 'Falha principal'", "n.cap ? 'Reply' : 'Main flaw'"),
  ("el('span', 'selo', 'raiz')", "el('span', 'selo', 'root')"),
  ("el('small', '', 'Raiz')", "el('small', '', 'Root')"),
  ("'Recolher' : 'Abrir') + ' ' + fs.length + ' caminhos de '", "'Collapse' : 'Open') + ' ' + fs.length + ' paths from '"),
@@ -321,7 +321,7 @@ JS = [
  ("el('small', 'rac-ciclo', 'raiz')", "el('small', 'rac-ciclo', 'root')"),
  # glossary entry card (trecho.js)
  ("b.textContent = 'Gerar imagem'", "b.textContent = 'Make an image'"),
- ("[['def', 'Definição', 'Definição',", "[['def', 'Definition', 'Definition',"),
+ ("ops.push(['def', 'Definição', 'Definição',", "ops.push(['def', 'Definition', 'Definition',"),
  ("ops.push(['com', 'Comentário crítico', 'Comentário crítico',", "ops.push(['com', 'Critical comment', 'Critical comment',"),
  ("cab: 'Glossário', ops: ops", "cab: 'Glossary', ops: ops"),
  ("caixa: ex ? ['Exemplo',", "caixa: ex ? ['Example',"),

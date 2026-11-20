@@ -33,12 +33,11 @@ ARGS.update(_novos_lotes.EN); MOTIVOS.update(_novos_lotes.MOTIVOS)
 _EXTRA_EN = {'A12': ["We're all naturally biased: we protect our family, our species, our nation, and veganism is an illusion"], 'E3': ['We have to respect different views'], 'A7': ['Vegans treat animals like humans'],
     'D7': ['Vegans want to impose veganism on Indigenous peoples'], 'C2': ['Our bodies are designed to eat meat'], 'J2': ["Veganism is classist and elitist, it isn't accessible to poorer people"],
     'C1': ['We have canine teeth, so we were made to eat meat', "If we weren't meant to eat meat, we wouldn't have canines", 'Humans are carnivores by nature'],
-    'I10': ['Silk is a natural, noble fabric, better than synthetics', 'Nobody kills anything to make silk'], 'I11': ["Honey is healthy and natural; there's nothing wrong with it"],
-    'N21': ['Sentientists discuss impossible or very distant scenarios'], 'N8': ['Sentientists want to play God'], 'L21': ['Vegans prefer animals to people']}
+    'I11': ['Silk is a natural, noble fabric, better than synthetics', 'Nobody kills anything to make silk'], 'I12': ["Honey is healthy and natural; there's nothing wrong with it"],
+    'N26': ['Sentientists discuss impossible or very distant scenarios'], 'N10': ['Sentientists want to play God'], 'L21': ['Vegans prefer animals to people']}
 for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-15)
     'A1': ["You can't know what goes on in an animal's head", "An animal is a machine; it feels nothing", 'Animals are like robots; they just react', 'I can only be sure that I feel'], 'A4': ["Plants have it worse, they can't even run away", 'If you defend life, why do you kill plants?', 'Plants defend themselves, so they want to live'],
-    'A7': ["It's just pity for cute animals", 'Veganism is more emotion than reason'], 'A9': ['Animals are less evolved than us'], 'A20': ["For a cow, being alive or dead makes no difference"],
-    'A21': ["Slaughter isn't murder"], 'A22': ['A cow would kill you if it had the chance'], 'A23': ['Ethics is for humans, not animals'],
+    'A7': ["It's just pity for cute animals", 'Veganism is more emotion than reason'], 'A9': ['Animals are less evolved than us'],     'A20': ["Slaughter isn't murder"], 'A21': ['A cow would kill you if it had the chance'], 'A22': ['Ethics is for humans, not animals'],
     'B1': ['Almost every slaughterhouse is clean and painless'], 'B3': ['Animals live better on the farm than in the wild'], 'B8': ['On the farm the animals are treated like royalty'],
     'C1': ['Being vegetarian goes against our biology'], 'C2': ["We can't even digest cellulose"], 'C4': ['Without meat, evolution would have stopped', 'Eating meat is the peak of evolution'],
     'C9': ["If we don't kill, we die"], 'C10': ['These animals were born to die anyway'], 'C12': ['There will be cattle running loose all over nature'], 'C13': ['We have great respect for farm animals'],
@@ -49,7 +48,7 @@ for _c, _fs in {  # phrasings gathered from lists of anti-vegan myths (2026-11-1
     'H7': ["Cow burps don't warm the planet", 'If cattle pollute, just eat the cattle'], 'H15': ['With good management, livestock farming becomes sustainable', 'Modern livestock farming is more efficient and emits less per kilo'],
     'H19': ["If nobody fishes, the sea will be overrun with fish"], 'I1': ["Livestock and animal testing brought progress; we can't abolish them"],
     'J1': ['Vegans have to buy everything at health-food stores'], 'J5': ["Vegans can't go to barbecues"], 'J7': ['Vegan food is all foreign stuff', "Vegans can't even have a little treat"],
-    'J22': ["It's lobbying by people who profit from ending livestock farming"], 'J24': ['Humans are cruel by nature; that will never change'], 'K1': ['One swallow does not make a summer'],
+    'J22': ["It's lobbying by people who profit from ending livestock farming"], 'K1': ['One swallow does not make a summer'],
     'J8': ["I'm flexitarian and spare the animals", "I'm reducetarian; I eat less meat and already spare lots of animals", "I'm vegan at home and eat everything when I'm out"],
     'L2': ['Veganism is for people with nothing better to do'], 'L11': ["Vegans take long showers and don't even recycle"], 'L12': ['Even the water you drink kills fish'], 'L25': ["It's a 1960s hippie fad"],
 }.items(): _EXTRA_EN.setdefault(_c, []).extend(_fs)
@@ -226,3 +225,6 @@ def relatorio(out):
     print(f'  Portuguese strings left in the English pages: {len(achados)}')
     for s, n in sorted(achados.items(), key=lambda x: -x[1])[:60]:
         print(f'   {n:4} {s}')
+# Absorvidos na revisão de 2026-11-20: A20 em B2, J24 em K10
+_EXTRA_EN.setdefault('B2', []).extend(["Animals don't know they're going to die, so killing them is fine", "They don't suffer over the idea of death", 'Animals live in the present; they make no plans', 'It has no sense of the future, so it loses nothing', 'For a cow, being alive or dead makes no difference'])
+_EXTRA_EN.setdefault('K10', []).extend(['A vegan world is utopian', 'That will never happen', "It's a hippie dream", 'Humans are cruel by nature; that will never change'])

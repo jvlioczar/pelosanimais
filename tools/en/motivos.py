@@ -593,6 +593,11 @@ A tradição familiar está ligada ao sustento | Family tradition is tied to the
 Do caso pessoal passa-se ao emprego em geral | From the personal case to employment in general
 Do sustento da família passa-se à economia do país | From the family's livelihood to the country's economy
 O produtor defende que trata bem os seus animais | The producer argues that they treat their animals well
+Sem um critério além da espécie, admite-se que o que pesa é o sabor | With no criterion beyond species, it's admitted that what weighs is the taste
+Se a vida boa não autoriza matar, nega-se que a morte prejudique | If a good life doesn't license killing, it's denied that death harms
+Se não é necessário, diz-se que comer animais não é crueldade, só nutrição | If it isn't necessary, it's said that eating animals isn't cruelty, just nourishment
+Do produto livre de crueldade passa-se à carne de animais criados soltos | From cruelty-free products the talk moves to meat from free-range animals
+A vida boa vira uma troca justa: cuidado em troca da carne | The good life becomes a fair trade: care in exchange for meat
 '''
 
 MOTIVOS = {}

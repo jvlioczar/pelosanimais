@@ -31,24 +31,13 @@ def _ultima_mudanca():
     arqs = _g.glob(os.path.join(r, 'data', '**', '*.*'), recursive=True) + _g.glob(os.path.join(r, 'tools', '*.py')) + [os.path.join(r, 'assets', n) for n in ('style.css', 'app.js')]
     return datetime.date.fromtimestamp(max(os.path.getmtime(a) for a in arqs if os.path.exists(a))).isoformat()
 ATUALIZADO = _ultima_mudanca()
-def _data_fonte(k):
-    """Data da última alteração da fonte de uma página, para o lastmod do sitemap: o capítulo (nos dois idiomas, no site em inglês),
-    o arquivo de dados da seção, ou a data geral do conteúdo."""
-    import datetime
-    r = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    pasta, x = k
-    if pasta == 'argumentos':
-        c = x.upper()
-        md = os.path.join(r, 'data', 'capitulos_md', c + '.md')
-        # o XML é gerado a partir do Markdown; quando há Markdown, só ele conta como fonte
-        arqs = [md] if os.path.exists(md) else [os.path.join(r, 'data', 'capitulos', c + '.xml')]
-        if EN: arqs.append(os.path.join(r, 'data', 'en', 'capitulos_md', c + '.md'))
-    else:
-        fonte = {'ruins': 'ruins.py', 'alem': 'alem.py', 'politicas': 'politicas.py'}.get((pasta or x).split('/')[0])
-        if not fonte: return ATUALIZADO
-        arqs = [os.path.join(r, 'tools', fonte)] + ([os.path.join(r, 'tools', 'en', 'ruins.py' if fonte == 'ruins.py' else 'paginas.py')] if EN else [])
-    arqs = [a for a in arqs if os.path.exists(a)]
-    return datetime.date.fromtimestamp(max(os.path.getmtime(a) for a in arqs)).isoformat() if arqs else ATUALIZADO
+# lastmod por conteúdo: data/lastmod.json guarda, por idioma e por página, o hash do <main> renderizado e a data em que ele mudou.
+# A data só avança quando o hash muda; edições em ferramentas, estilo ou mtime de arquivos não mexem nela.
+LASTMOD_JSON = os.path.join(ROOT, 'data', 'lastmod.json')
+try: _LM = json.load(open(LASTMOD_JSON, encoding='utf-8'))
+except FileNotFoundError: _LM = {}
+_LM_LG = _LM.setdefault('en' if EN else 'pt', {})
+_LM_NOVO = {}
 LASTMOD, ALTERNA = {}, {}
 def _publicacoes():
     """Data em que cada página de argumento foi publicada pela primeira vez: o primeiro commit que criou o arquivo
@@ -225,17 +214,17 @@ for c, p, nome, perg, erro in FAMILIAS_NOVAS:
 # A família I ganhou cães de trabalho e criação de raça (2026-11-15): o nome passa a incluir trabalho e companhia.
 FAMILIAS['I']['nome'] = 'Outros usos: testes, vestuário, lazer, trabalho e companhia'
 # Frases que o público usa para argumentos que já têm capítulo: entram como formas, sem duplicar a página.
-FORMAS_EXTRA = {'C1': ['Temos dentes caninos, então fomos feitos para comer carne', 'Se não fosse para comer carne, não teríamos caninos', 'O ser humano é carnívoro por natureza'], 'I10': ['A seda é um tecido natural e nobre, melhor que o sintético', 'Para fazer seda, ninguém mata nada'], 'I2': ['Veganos não deveriam tomar vacinas ou remédios', 'Vacina tem ovo, então vegano não pode tomar', 'O soro antiofídico vem de cavalos, então vegano não pode usar'], 'I9': ['Lã é natural, o sintético é plástico'], 'I11': ['Comprar mel ajuda a salvar as abelhas', 'Mel é saudável e natural, não tem nada de errado'], 'F9': ['Você comeria o ovo de uma galinha criada em casa, que é um pet?', 'E se a galinha for meu pet?'], 'B4': ['Com gaiolas maiores, o problema está resolvido', 'Se as gaiolas forem maiores, tudo bem', 'Galinhas livres de gaiola estão bem'], 'I12': ['Os recintos hoje são maiores, os animais estão bem'], 'A12': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E3': ['Temos que respeitar as diferentes visões'], 'A7': ['Veganos tratam animais como humanos'], 'D7': ['Veganos querem impor o veganismo aos indígenas'], 'C2': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'N17': ['Temos que priorizar quem está no presente', 'Primeiro quem já existe'], 'N21': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'N8': ['Sencientistas querem brincar de Deus'], 'L21': ['Veganos preferem animais a pessoas'], 'J15': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L7': ['Veganismo é lavagem cerebral'], 'J22': ['Não existe vegano de direita'], 'F11': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F6': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L31': ['Para cada vegano que não comer, eu vou comer o dobro']}
+FORMAS_EXTRA = {'C1': ['Temos dentes caninos, então fomos feitos para comer carne', 'Se não fosse para comer carne, não teríamos caninos', 'O ser humano é carnívoro por natureza'], 'I11': ['A seda é um tecido natural e nobre, melhor que o sintético', 'Para fazer seda, ninguém mata nada'], 'I3': ['Veganos não deveriam tomar vacinas ou remédios', 'Vacina tem ovo, então vegano não pode tomar', 'O soro antiofídico vem de cavalos, então vegano não pode usar'], 'I10': ['Lã é natural, o sintético é plástico'], 'I12': ['Comprar mel ajuda a salvar as abelhas', 'Mel é saudável e natural, não tem nada de errado'], 'F9': ['Você comeria o ovo de uma galinha criada em casa, que é um pet?', 'E se a galinha for meu pet?'], 'B4': ['Com gaiolas maiores, o problema está resolvido', 'Se as gaiolas forem maiores, tudo bem', 'Galinhas livres de gaiola estão bem'], 'I15': ['Os recintos hoje são maiores, os animais estão bem'], 'A12': ['Somos todos naturalmente enviesados: protegemos nossa família, nossa espécie, nossa nação, e o veganismo é uma ilusão'], 'E3': ['Temos que respeitar as diferentes visões'], 'A7': ['Veganos tratam animais como humanos'], 'D7': ['Veganos querem impor o veganismo aos indígenas'], 'C2': ['Nosso corpo é desenhado para comer carne'], 'J2': ['Veganismo é classista e elitista, não é acessível para a população mais pobre'], 'N22': ['Temos que priorizar quem está no presente', 'Primeiro quem já existe'], 'N26': ['Sencientistas discutem cenários impossíveis ou muito distantes'], 'N10': ['Sencientistas querem brincar de Deus'], 'L21': ['Veganos preferem animais a pessoas'], 'J15': ['Acabar com a pecuária seria ruim para a economia, muita gente perderia emprego'], 'L7': ['Veganismo é lavagem cerebral'], 'J22': ['Não existe vegano de direita'], 'F11': ['Os freegans comem carne do lixo, e isso não financia ninguém'], 'F6': ['E os piolhos, as pulgas e os carrapatos?', 'Onde você traça a linha?'], 'H2': ['Plantações também matam animais'], 'L34': ['Para cada vegano que não comer, eu vou comer o dobro']}
 # O antigo F7 'Matar insetos nos protege' foi unido ao F6 em 2026-11-19: a frase e as formas dele viram formas do F6
 FORMAS_EXTRA.setdefault('F6', []).extend(['Matar insetos nos protege', 'Pernilongo eu mato mesmo, é questão de saúde', 'Escorpião dentro de casa tem que matar', 'Inseto é praga, tem que dedetizar tudo'])
-FORMAS_EXTRA.setdefault('I26', []).append('A caça de troféu financia a conservação')  # título trocado para caça esportiva em 2026-11-20
+FORMAS_EXTRA.setdefault('I28', []).append('A caça de troféu financia a conservação')  # título trocado para caça esportiva em 2026-11-20
 FORMAS_EXTRA.setdefault('E1', []).append('Temos o direito de comer animais')  # Nobis: petição de princípio
 FORMAS_EXTRA.setdefault('J19', []).append('A indústria vegana está tentando te manipular')
 # Mais formas, levantadas em listas de mitos antiveganos (2026-11-15)
 for _c, _fs in {
     'A1': ['Não dá para saber o que se passa na cabeça de um bicho', 'Animal é uma máquina, não sente nada', 'Bicho é como um robô, só reage', 'Só posso ter certeza de que eu sinto'], 'A4': ['Pior é a planta, que nem pode fugir', 'Se defendem a vida, por que matam planta?', 'Planta se defende, então quer viver'],
-    'A7': ['Isso é só pena de bicho fofinho', 'Veganismo é mais emoção que razão'], 'A9': ['Animais são menos evoluídos que nós'], 'A20': ['Para o boi tanto faz estar vivo ou morto'],
-    'A21': ['Abate não é assassinato'], 'A22': ['A vaca te mataria se tivesse chance'], 'A23': ['Ética é coisa de humano, não de bicho'],
+    'A7': ['Isso é só pena de bicho fofinho', 'Veganismo é mais emoção que razão'], 'A9': ['Animais são menos evoluídos que nós'], 'A99': ['Para o boi tanto faz estar vivo ou morto'],
+    'A20': ['Abate não é assassinato'], 'A21': ['A vaca te mataria se tivesse chance'], 'A22': ['Ética é coisa de humano, não de bicho'],
     'B1': ['Quase todo matadouro é limpo e sem dor'], 'B3': ['O bicho vive melhor na fazenda que solto'], 'B8': ['Na fazenda o bicho é tratado como rei'],
     'C1': ['Ser vegetariano vai contra a nossa biologia'], 'C2': ['A gente nem digere celulose'], 'C4': ['Sem carne, a evolução teria parado', 'Comer carne é o auge da evolução'],
     'C9': ['Se não matarmos, morremos'], 'C10': ['Esses bichos nasceram para morrer mesmo'], 'C12': ['Vai sobrar boi solto pela natureza'], 'C13': ['Temos muito respeito pelos animais de criação'],
@@ -252,22 +241,47 @@ for _c, _fs in {
 }.items(): FORMAS_EXTRA.setdefault(_c, []).extend(_fs)
 # Falácias acrescentadas depois do doc original (nome, descrição curta, códigos onde aparecem)
 FALACIAS += [dict(n=n, d=d, aparece=ap, cods=codigos(ap)) for n, d, ap in (
-    ('Espantalho', 'Distorcer a posição do outro para refutá-la com facilidade', 'A7, N11, N12, N13, L8'),
-    ('Apelo ao ridículo', 'Zombar da ideia em vez de responder a ela', 'L2, L3, L4, L31, L32'),
-    ('Apelo à ignorância', '"Ninguém provou que não, então é verdade"', 'A1, A2, A4, F7'),
-    ('Falsa causa (post hoc)', '"Aconteceu depois, então foi por causa disso"', 'D4, G13, G14, M1'),
-    ('Ladeira escorregadia', '"Se aceitar isso, vai acabar em algo extremo"', 'C12, E2, N11'),
-    ('Apelo à legalidade', '"É permitido por lei, então é certo"', 'B10, B11, D9, D13'),
+    ('Espantalho', 'Distorcer a posição do outro para refutá-la com facilidade', 'A7, C7, D15, E2, E13, F4, G19, J14, L8, L11, L12, L17, L18, L25, L29, L31, L33, N13, N15, N16, N17, N18, N19, N20'),
+    ('Apelo ao ridículo', 'Zombar da ideia em vez de responder a ela', 'L2, L3, L4, L34, L35'),
+    ('Apelo à ignorância', '"Ninguém provou que não, então é verdade"', 'A1, A2, A4, A16, B17, F7'),
+    ('Falsa causa (post hoc)', '"Aconteceu depois, então foi por causa disso"', 'D4, G13, G14, M1, M8, M9'),
+    ('Ladeira escorregadia', '"Se aceitar isso, vai acabar em algo extremo"', 'A26, C12, E2, N16'),
+    ('Apelo à legalidade', '"É permitido por lei, então é certo"', 'A20, A21, A22, A24, B10, B11, D9, D13, K8'),
     ('Bulverismo', 'Explicar o motivo de alguém pensar algo em vez de mostrar onde ele erra', 'L3, L7, L8'),
     ('Falácia da falácia', '"Esse argumento é ruim, então a conclusão é falsa"', 'L26, L27'),
-    ('Equívoco', 'Usar a mesma palavra em dois sentidos diferentes', 'A4, A21, C1, E4, G1, I1, I4'),
-    ('Generalização precipitada', 'Tirar uma regra sobre todos a partir de poucos casos', 'L1, L2, L5, L19'),
+    ('Equívoco', 'Usar a mesma palavra em dois sentidos diferentes', 'A4, A9, A13, A15, A16, A17, A20, B10, B16, B17, B18, B19, C1, C2, C3, C8, C9, C10, D5, D10, E4, E17, G1, H8, I1, I5, I12, I18, J14, J19, J25, K9, L9, L16, L18, L33, M2, N1, N3, N4, N5, N8, N11, N15, N16, N20, N22'),
+    ('Generalização precipitada', 'Tirar uma regra sobre todos a partir de poucos casos', 'A6, A23, B17, F6, G1, G15, I1, J7, K8, L1, L2, L3, L5, L8, L19, L20, L21, L23, L24, L26, L27, L29, L30, L32, L33, L37, M1, M4, M6, M8, M9, N9, N11, N16, N18, N21'),
     ('Apelo ao medo', 'Assustar com consequências exageradas no lugar de dar evidências', 'G5, G9, G10'),
-    ('Eufemismo', 'Trocar o nome para que o dano pareça menor', 'B1, B2, I18, I33'),
+    ('Eufemismo', 'Trocar o nome para que o dano pareça menor', 'B1, B2, I21, I36'),
     # Falácias formais (Nobis, Animals & Ethics 101, p. 41 e 98): a forma é inválida mesmo com premissas verdadeiras
-    ('Negação do antecedente', '"Se A, então B; não A; logo, não B". Ex.: "se a pessoa estuda medicina, está na universidade; ela não estuda medicina; logo, não está na universidade". Pode estar em outro curso', 'A22, A23, E7, L20'),
+    ('Negação do antecedente', '"Se A, então B; não A; logo, não B". Ex.: "se a pessoa estuda medicina, está na universidade; ela não estuda medicina; logo, não está na universidade". Pode estar em outro curso', 'A9, A13, A21, A22, A27, E7, L20'),
     ('Afirmação do consequente', '"Se A, então B; B; logo, A". Ex.: "se choveu, a rua está molhada; a rua está molhada; logo, choveu". Alguém pode ter lavado a calçada', 'A4, C1, C2'),
 )]
+# Códigos das falácias do catálogo, recalculados a partir das tabelas "Erros de raciocínio" dos capítulos (2026-11-20)
+_COD_FAL = {
+    'Apelo à natureza': 'A11, B12, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, G4, G16, G18, I9, I10, I11, I13, L8, L14, N1, N2, N5, N10, N17',
+    'Lei de Hume (do é ao deve)': 'A9, A24, C1, C2, C4, C6, C9, D1, D9, I2, L16, L17',
+    'Apelo à tradição': 'D1, D3, D5, D6, D13, I7, I20, J17',
+    'Apelo à multidão e à normalidade': 'D2, E4, J12, K10, L25, L28',
+    'Apelo à autoridade': 'B9, D8, D10, D11, E8, G15, I2',
+    'Critério arbitrário (especismo)': 'A8, A9, A14, A15, A16, A17, A18, A20, A21, E11',
+    'Definição persuasiva': 'A8, A20, B1, C6, E4',
+    'Petição de princípio': 'A8, A9, A13, A14, A17, A18, A21, A25, A27, C10, E1, N7, N21',
+    'Falácia do contínuo': 'A3, F7',
+    'Generalização do acidente': 'D7, F1, F3, F7, F9, F10, F11, J2, J18',
+    'Falsa dicotomia': 'A1, A2, A3, A15, A26, B1, B3, B16, D5, E5, E14, F1, F10, F12, G18, H7, H10, H12, H14, H16, H18, I1, I5, I6, I8, I13, I22, I28, I30, I31, J3, J4, J5, J12, J14, J16, J20, K4, K5, K6, K7, K10, L14, L21, L24, L31, L32, L35, M3, M5, M6, M7, M8, M9, N5, N6, N7, N9, N10, N12, N13, N15, N16, N17, N18, N24, N26',
+    'Falácia do nirvana': 'C7, E10, F5, F8, H2, H3, I3, K5, K10, L11, L12, L13, N12',
+    'Tu quoque': 'F5, F6, H1, H2, H4, H5, H6, I3, I35, L11, L12, L13, L14, L15, L16, L17, L19, L20',
+    'Ad hominem e envenenamento do poço': 'A7, B14, B15, D15, E7, J18, J21, L1, L2, L3, L4, L5, L6, L7, L8, L11, L19, L25, L26, L27, L29, L30, L31, L37, M6',
+    'Culpa por associação': 'J19, J22, L9, L19, L26, N10',
+    'Falácia da prioridade': 'H7, J20, L21',
+    'Evidência anedótica': 'D4, G13, G14, G16, M1, M10',
+    'Cherry picking': 'A1, A2, A9, C1, D8, G5, G8, G16, G17, H5, H9, H11, H13, H16, I2, J19, N25',
+    'Falso meio-termo': 'E9, J8',
+    'Mudança de questão (red herring)': 'A3, A12, B1, B4, B9, C11, D4, D14, D15, E1, E2, E13, E17, E18, F11, H14, H15, H21, I37, J6, J14, J15, J18, K4, K9, L1, L2, L5, L16, L19, L22, L23, L24, L27, L29, L30, L31, L32, L33, L35, L36, L37, M7, M8, M9, M10',
+}
+for _f in FALACIAS:
+    if _f['n'] in _COD_FAL: _f['aparece'] = _COD_FAL[_f['n']]; _f['cods'] = codigos(_f['aparece'])
 _feitas = set()
 for c, fs in FORMAS_EXTRA.items():
     if c in ARGS: ARGS[c]['formas'] += fs; _feitas.add(c)
@@ -275,7 +289,7 @@ for c, fs in FORMAS_EXTRA.items():
 NOVOS = [
     ('A13', 'Eu respeito os animais, mas os humanos vêm primeiro', ['Humanos têm dignidade, animais não', 'A vida humana vale mais', 'Animais importam, mas menos'], 'Um status especial que ninguém explica e que não passaria no véu da ignorância: o peso deve depender do tamanho do dano, não da espécie'),
     ('A6', 'Humanos sofrem mais que os animais', ['Humanos sofrem mais porque entendem o que acontece', 'O sofrimento humano é mais profundo'], 'Sofrer mais em alguns casos não autoriza desconsiderar quem sofre menos; e menos cognição muitas vezes significa mais sofrimento e mais vulnerabilidade'),
-    ('A24', 'A moral existe para nos proteger uns dos outros', ['A ética foi inventada para autoproteção', 'Animais não podem nos ameaçar, então não entram no acordo'], 'Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática'),
+    ('A23', 'A moral existe para nos proteger uns dos outros', ['A ética foi inventada para autoproteção', 'Animais não podem nos ameaçar, então não entram no acordo'], 'Excluiria também bebês e pessoas vulneráveis; e explicar a origem de uma prática não justifica a prática'),
     ('A11', 'Espécie é biologia, raça é construção social', ['Especismo não é como racismo', 'Raça não existe, espécie existe'], 'Um critério biológico pode ser tão injusto quanto um social: o que torna uma discriminação injusta é tratar de forma tendenciosa os interesses de alguém'),
     ('E7', 'Defender os animais é coisa de utilitarista', ['Isso é Peter Singer, e o utilitarismo está errado', 'Só faz sentido numa ética utilitarista'], 'A igual consideração é um princípio formal aceito por teorias rivais; derrubar o utilitarismo não salva o especismo'),
     ('H18', 'Comer insetos é a proteína sustentável do futuro', ['Farinha de grilo é ecológica', 'Inseto não sente, pode criar à vontade'], 'Troca o impacto ambiental por trilhões de vítimas prováveis; há proteínas vegetais igualmente eficientes e sem ninguém para sofrer'),
@@ -288,23 +302,23 @@ NOVOS = [
     ('B15', 'Você não vive na fazenda para saber a verdade', ['Você nunca viu um boi de perto', 'Gente da cidade acha que leite vem da caixinha', 'Vem trabalhar uma semana na roça e depois me fala'], 'O que se critica está nos manuais e normas da própria produção; e atacar quem fala não mostra que o que é dito está errado'),
     ('G1', 'Comer animais é necessário para sobreviver', ['A gente precisa comer carne para viver', 'Sem proteína animal o corpo não aguenta', 'E os povos do Ártico? Lá não tem alface', 'O ser humano é onívoro, isso é biologia'], 'Necessário para quem? Onde a alternativa existe, é escolha, e a definição de veganismo já fala em fazer o possível e praticável; e o argumento concede o princípio que o derruba, porque sem necessidade não há justificativa'),
     ('J21', 'Tem gente morrendo na guerra e vocês se preocupam com animais', ['Tem criança morrendo e você posta foto de cachorro', 'Numa hora dessas, falar de animal é falta de respeito', 'Primeiro as pessoas, depois os bichos', 'Vocês só se comovem quando a vítima tem quatro patas'], 'Os animais são vítimas da mesma guerra; o custo de ajudá-los é muito menor do que a frase supõe, e existir um custo não decide nada, já que isso vale para todo uso de recurso'),
-    ('N12', 'Sencientistas querem acabar com os predadores', ['Vocês querem matar os leões', 'Querem um mundo sem predador, isso é loucura', 'Vão dar ração vegana para a onça?', 'E quem vai controlar a população dos herbívoros depois?'], 'Matar predadores é o que a posição rejeita, e pelo motivo ecológico da própria objeção; o que existe é pesquisa de longo prazo sobre reduzir a predação sem causar dano'),
-    ('N18', 'Temos que nos preocupar com os humanos do futuro, não com os animais', ['Penso no mundo que vou deixar para os meus netos', 'Futuro é dos nossos filhos, não das galinhas', 'Sustentabilidade é sobre as próximas gerações'], 'Já aceitou a parte difícil, que seres futuros contam; falta dizer por que, chegado o futuro, só os humanos de lá contariam, e a maioria de quem vai sentir não será humana'),
-    ('N19', 'Não há como traçar estratégias de longo prazo, pois não podemos prever um futuro distante', ['Ninguém sabe como vai ser daqui a cem anos', 'Isso é chute com cara de plano', 'Vamos resolver o que está na nossa frente'], 'Vale contra planos que dependem de acertar um cenário, não contra ações que valem em quase todos; e a incerteza corta dos dois lados'),
-    ('N20', 'O futuro com certeza será melhor, não precisamos nos preocupar tanto', ['A humanidade sempre evoluiu', 'Daqui a cem anos ninguém mais vai comer animais', 'A carne cultivada resolve isso', 'Vocês são pessimistas, o mundo nunca esteve tão bom'], 'O progresso moral não é automático: cada avanço teve quem o fizesse; e com os animais a tendência recente é contrária, porque o poder cresceu sem que a consideração acompanhasse'),
+    ('N17', 'Sencientistas querem acabar com os predadores', ['Vocês querem matar os leões', 'Querem um mundo sem predador, isso é loucura', 'Vão dar ração vegana para a onça?', 'E quem vai controlar a população dos herbívoros depois?'], 'Matar predadores é o que a posição rejeita, e pelo motivo ecológico da própria objeção; o que existe é pesquisa de longo prazo sobre reduzir a predação sem causar dano'),
+    ('N23', 'Temos que nos preocupar com os humanos do futuro, não com os animais', ['Penso no mundo que vou deixar para os meus netos', 'Futuro é dos nossos filhos, não das galinhas', 'Sustentabilidade é sobre as próximas gerações'], 'Já aceitou a parte difícil, que seres futuros contam; falta dizer por que, chegado o futuro, só os humanos de lá contariam, e a maioria de quem vai sentir não será humana'),
+    ('N24', 'Não há como traçar estratégias de longo prazo, pois não podemos prever um futuro distante', ['Ninguém sabe como vai ser daqui a cem anos', 'Isso é chute com cara de plano', 'Vamos resolver o que está na nossa frente'], 'Vale contra planos que dependem de acertar um cenário, não contra ações que valem em quase todos; e a incerteza corta dos dois lados'),
+    ('N25', 'O futuro com certeza será melhor, não precisamos nos preocupar tanto', ['A humanidade sempre evoluiu', 'Daqui a cem anos ninguém mais vai comer animais', 'A carne cultivada resolve isso', 'Vocês são pessimistas, o mundo nunca esteve tão bom'], 'O progresso moral não é automático: cada avanço teve quem o fizesse; e com os animais a tendência recente é contrária, porque o poder cresceu sem que a consideração acompanhasse'),
     ('A5', 'Existem diferentes graus de consciência, os animais menos conscientes importam menos', ['Uma minhoca não é um cachorro', 'Nem todo animal é igual, tem bicho e bicho', 'Quanto mais simples o cérebro, menos importa', 'Consciência é uma escala, e a gente está no topo dela'], 'Mentes diferem em perfil, não em posição numa régua única; o critério, aplicado a humanos, rebaixaria bebês e pessoas com deficiência cognitiva; e um peso menor continua pesando mais que o sabor de um prato'),
-    ('A20', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
+    ('A99', 'Os animais não sabem que vão morrer, então não tem problema matá-los', ['Eles não sofrem com a ideia da morte', 'O animal vive o presente, não faz planos', 'Não tem noção de futuro, então não perde nada'], 'O mal da morte é o que ela tira, não o medo dela: o mesmo raciocínio autorizaria matar bebês, pessoas com demência ou quem está dormindo'),
     ('F8', 'E se descobrirem que as plantas sentem?', ['Aí vocês vão comer o quê, pedra?', 'Se tudo sente, por que não comer carne?'], 'Mesmo nesse cenário, comer plantas causaria menos dano, porque os animais comem muito mais plantas; não poder zerar o dano não torna tudo equivalente'),
     ('F10', 'Você comeria um animal que morreu de causas naturais?', ['E se o boi morreu de velhice?', 'Então come o cachorro atropelado na rua também', 'Se não comeria, é frescura'], 'Ninguém foi morto, por isso o problema moral é bem menor; mas essa carne não chega ao mercado, e recusar comer um corpo pode ser respeito, como fazemos com humanos'),
     ('G19', 'Frugivorismo não é saudável, então o veganismo também não é', ['Quem só come fruta fica doente', 'Veganismo é comer fruta e salada'], 'Veganismo não é frugivorismo: a dieta só de frutas é arriscada, mas uma alimentação vegana variada e planejada, com B12, é considerada adequada'),
     ('G20', 'Veganismo é transtorno alimentar disfarçado', ['Veganismo é anorexia com desculpa', 'Viu aquela vegana que morreu?', 'Ortorexia é a doença dos veganos'], 'A associação existe, mas o transtorno costuma vir antes da dieta; veganos da comunidade não têm mais sinais de transtorno, e a causa de uma tragédia é a doença'),
     ('L2', 'Vegano é tudo hippie', ['Bicho-grilo, natureba, paz e amor', 'Vai abraçar uma árvore'], 'Estereótipo e ataque à pessoa: o sofrimento dos animais não depende do estilo de vida de quem o aponta'),
     ('E13', 'Ele come carne, mas é uma pessoa boa', ['Conheço gente ótima que come carne', 'Minha avó come carne e é a pessoa mais bondosa do mundo', 'Você está chamando todo mundo de mau?'], 'Confunde julgar a pessoa com julgar o ato: gente boa também participa de injustiças aceitas pelo costume'),
-    ('L32', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
-    ('L34', 'Defender os animais é apelo emocional, não argumento', ['Isso é sentimentalismo, vocês não têm argumento', 'Vídeo de bichinho chorando não é argumento', 'Fatos não se importam com seus sentimentos'], 'Os argumentos pelos animais partem de critérios e de fatos sobre a senciência, e a defesa do consumo também se apoia em emoções como prazer, hábito e apego'),  # do livro de Cochrane, 2026-11-20
-    ('L35', 'Defender os animais é moralismo de classe média', ['Isso é coisa de quem não tem problema de verdade', 'Proteção animal é moral burguesa que desvia da luta de classes', 'Vegano é burguês com culpa'], 'Recusar carne não é coisa só de ricos, a classe de quem defende uma ideia não decide se ela é certa, e cuidar dos animais não tira cuidado dos humanos'),  # do livro de Cochrane, 2026-11-20
+    ('L35', 'Minha comida caga na sua', ['Meu churrasco humilha sua salada', 'Comida de verdade é a minha'], 'Provocação, não argumento: prazer de paladar não pesa contra a vida de alguém, e muita comida vegana é a mesma comida de sempre'),
+    ('L31', 'Defender os animais é apelo emocional, não argumento', ['Isso é sentimentalismo, vocês não têm argumento', 'Vídeo de bichinho chorando não é argumento', 'Fatos não se importam com seus sentimentos'], 'Os argumentos pelos animais partem de critérios e de fatos sobre a senciência, e a defesa do consumo também se apoia em emoções como prazer, hábito e apego'),  # do livro de Cochrane, 2026-11-20
+    ('L32', 'Defender os animais é moralismo de classe média', ['Isso é coisa de quem não tem problema de verdade', 'Proteção animal é moral burguesa que desvia da luta de classes', 'Vegano é burguês com culpa'], 'Recusar carne não é coisa só de ricos, a classe de quem defende uma ideia não decide se ela é certa, e cuidar dos animais não tira cuidado dos humanos'),  # do livro de Cochrane, 2026-11-20
     ('L37', 'Eu odeio veganos', ['Não suporto vegano', 'Vegano é a pior raça que existe', 'Odeio esse povo que não come carne'], 'Ódio não é argumento: costuma ser a defesa de uma identidade e de um hábito ameaçados, e se volta contra quem só pede menos sofrimento para as vítimas'),
-    ('L33', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
+    ('L36', 'Olha o que você está perdendo', ['Foto de churrasco nos comentários de um post vegano', 'Hmm, picanha. Tá com inveja?'], 'Mostrar o prato não responde à pergunta sobre quem virou o prato; a tentação não torna o ato justo'),
     ('D12', 'Minha religião aprova o consumo de animais', ['Minha religião permite', 'Se Deus não quisesse, não teria feito os animais de carne', 'Veganismo vai contra a Bíblia'], 'Permitir não é obrigar, e as próprias tradições religiosas proíbem o sofrimento desnecessário, que a produção atual causa em massa'),
     ('D14', 'Vou pagar pelos meus erros na próxima vida', ['Vou pagar na próxima encarnação', 'Isso é entre mim e o meu carma', 'Deus vai me julgar, não você'], 'A frase admite o erro e adia a conta, mas quem paga agora é o animal; as tradições do carma ensinam a não violência'),
     ('J16', 'Eu vivo disso, é o sustento da minha família', ['Você vai pagar as minhas contas?', 'Meu pai e meu avô criaram gado'], 'A dependência econômica explica a dificuldade de mudar, mas não torna a atividade justa; a saída é uma transição planejada e com apoio'),
@@ -315,83 +329,84 @@ NOVOS = [
     ('E16', 'Concordo com os veganos, o veganismo é um movimento importante', ['Concordo com vocês, de verdade', 'O veganismo é um movimento importante', 'Apoio a causa', 'Precisamos de mais gente como você', 'Acho lindo o que vocês fazem'], 'Concordar não poupa nenhum animal: reconhecer o erro é necessário, mas não suficiente, e o dever de não causar dano não se terceiriza para o movimento'),
     ('E14', 'Te admiro, mas não consigo', ['Queria ter a sua força de vontade', 'Admiro os veganos, mas não é pra mim'], 'Admirar já é concordar com o ponto moral; difícil não é impossível, e mudar aos poucos, com apoio, funciona'),
     ('M10', 'Eu já fui vegano, sei do que estou falando', ['Também passei por essa fase', 'Fui vegano por anos e não recomendo'], 'Ter sido vegano dá experiência sobre como foi para a pessoa, e não autoridade sobre a questão moral'),
-    ('K9', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
+    ('K10', 'Veganos vão ser sempre minoria', ['O mundo nunca vai virar vegano', 'Para que insistir, se ninguém vai mudar?'], 'Ser minoria não torna algo errado nem inútil: mudanças começam com poucos, cada pessoa reduz a demanda, e leis de proteção animal mudam sem maioria vegana'),
     ('L3', 'Veganos são malucos, têm problemas mentais', ['Vegano é tudo maluco', 'Tem que ser doido para chorar por galinha'], 'Ataque à pessoa: a saúde de quem pergunta não muda a resposta, a associação com depressão não mostra causa, e usar transtorno mental como xingamento reforça o estigma'),
     ('L10', 'Criar filhos veganos é impor uma ideologia', ['Impor o veganismo a uma criança é lavagem cerebral', 'Deixa ele escolher quando crescer'], 'Toda família passa valores aos filhos, e servir carne também é escolha dos pais; o que importa é cuidar da saúde da criança e explicar as razões'),
     ('L25', 'Veganismo é só uma dieta da moda', ['Veganismo é modinha', 'É só mais uma dieta, logo passa'], 'Confunde uma posição ética sobre não prejudicar animais com um cardápio escolhido por saúde ou estética'),
     # Família M: o critério da senciência aplicado a quem ninguém explora (animais selvagens), a novas mentes e ao futuro.
     ('N1', 'Os animais selvagens vivem livres e felizes', ['A natureza é um paraíso para os bichos', 'Bicho solto é bicho feliz'], 'Os adultos que vemos são exceção: na maioria das espécies, quase todos os filhotes morrem pouco depois de nascer, de fome, frio, doença ou predação'),
     ('N2', 'Sofrimento e morte fazem parte da natureza', ['A natureza é cruel mesmo, faz parte', 'A natureza não é boa nem má'], 'Doenças também fazem parte da vida humana, e nunca foi motivo para não tratá-las; o dano não fica menor para a vítima porque ninguém teve culpa'),
-    ('N4', 'Não fomos nós que causamos, então não temos obrigação de ajudar', ['Temos dever de não prejudicar, não de ajudar', 'Problema da natureza não é problema meu'], 'Viés de omissão: ninguém aceitaria esse raciocínio diante de uma criança se afogando ou de vítimas de uma enchente'),
-    ('N7', 'É impossível resolver o sofrimento na natureza, é grande e complexo demais', ['São trilhões de animais, não adianta', 'Nunca vamos acabar com a predação'], 'Não poder resolver tudo não é razão para não fazer nada: já vacinamos raposas, resgatamos animais em desastres e podemos pesquisar para fazer mais'),
-    ('N6', 'Mexer na natureza é errado, podemos piorar tudo', ['Toda intervenção humana dá errado', 'Deixe a natureza se cuidar'], 'O risco pede estudo e cautela, como na medicina, e não omissão: é a proposta da biologia do bem-estar'),
-    ('N5', 'Quem somos nós para interferir na natureza?', ['Bicho selvagem tem que ser livre', 'Ajudar é humanizar os animais', 'Eles vão ficar dependentes'], 'Interferimos o tempo todo, com cidades, agricultura e medicina; e ninguém chama de arrogância socorrer uma pessoa ferida'),
+    ('N6', 'Não fomos nós que causamos, então não temos obrigação de ajudar', ['Temos dever de não prejudicar, não de ajudar', 'Problema da natureza não é problema meu'], 'Viés de omissão: ninguém aceitaria esse raciocínio diante de uma criança se afogando ou de vítimas de uma enchente'),
+    ('N12', 'É impossível resolver o sofrimento na natureza, é grande e complexo demais', ['São trilhões de animais, não adianta', 'Nunca vamos acabar com a predação'], 'Não poder resolver tudo não é razão para não fazer nada: já vacinamos raposas, resgatamos animais em desastres e podemos pesquisar para fazer mais'),
+    ('N9', 'Mexer na natureza é errado, podemos piorar tudo', ['Toda intervenção humana dá errado', 'Deixe a natureza se cuidar'], 'O risco pede estudo e cautela, como na medicina, e não omissão: é a proposta da biologia do bem-estar'),
+    ('N8', 'Quem somos nós para interferir na natureza?', ['Bicho selvagem tem que ser livre', 'Ajudar é humanizar os animais', 'Eles vão ficar dependentes'], 'Interferimos o tempo todo, com cidades, agricultura e medicina; e ninguém chama de arrogância socorrer uma pessoa ferida'),
     ('N3', 'Natureza equilibrada é natureza boa para os bichos', ['Espécie invasora tem que ser eliminada', 'Proteger a floresta é proteger os animais'], 'Equilíbrio mede números, não bem-estar; e programas ambientais matam milhares de animais por metas que nunca aceitaríamos para humanos'),
-    ('N9', 'Ajudar animais selvagens não é veganismo, é outra pauta', ['Veganismo é só não explorar', 'Primeiro acabe com a pecuária, depois falamos de bicho do mato'], 'Se o que importa é a senciência, o sofrimento não deixa de contar porque não foi causado por nós; e uma causa não impede pesquisar a outra'),
-    ('N16', 'Máquinas nunca vão sentir, robôs e IAs não precisam de direitos', ['É só um programa', 'Computador não sofre'], 'Se uma mente artificial um dia sentir, o substrato não importa mais que a espécie; e a incerteza pede precaução antes de criar mentes em massa'),
-    ('N8', 'Usar remédios e genética para acabar com o sofrimento é brincar de Deus', ['Isso é eugenia', 'O sofrimento faz parte da condição humana e animal'], 'Já usamos anestesia, vacinas e analgésicos sem chamar isso de brincar de Deus; a questão é segurança e consentimento, não a origem natural da dor'),
-    ('N17', 'Quem ainda não nasceu não importa', ['Seres futuros são só possibilidades', 'O futuro que se resolva'], 'Quem nascer vai sentir o que deixarmos: é por isso que enterrar lixo tóxico é errado, mesmo que as vítimas ainda não existam'),
-    ('N21', 'Isso é ficção científica, temos problemas reais agora', ['Riscos de sofrimento futuro são paranoia', 'Primeiro os problemas de hoje'], 'Um risco incerto mas imenso pode merecer atenção, e muito do que reduz sofrimento futuro, como ampliar o círculo moral, também ajuda agora'),
+    ('N14', 'Ajudar animais selvagens não é veganismo, é outra pauta', ['Veganismo é só não explorar', 'Primeiro acabe com a pecuária, depois falamos de bicho do mato'], 'Se o que importa é a senciência, o sofrimento não deixa de contar porque não foi causado por nós; e uma causa não impede pesquisar a outra'),
+    ('N21', 'Máquinas nunca vão sentir, robôs e IAs não precisam de direitos', ['É só um programa', 'Computador não sofre'], 'Se uma mente artificial um dia sentir, o substrato não importa mais que a espécie; e a incerteza pede precaução antes de criar mentes em massa'),
+    ('N10', 'Usar remédios e genética para acabar com o sofrimento é brincar de Deus', ['Isso é eugenia', 'O sofrimento faz parte da condição humana e animal'], 'Já usamos anestesia, vacinas e analgésicos sem chamar isso de brincar de Deus; a questão é segurança e consentimento, não a origem natural da dor'),
+    ('N22', 'Quem ainda não nasceu não importa', ['Seres futuros são só possibilidades', 'O futuro que se resolva'], 'Quem nascer vai sentir o que deixarmos: é por isso que enterrar lixo tóxico é errado, mesmo que as vítimas ainda não existam'),
+    ('N26', 'Isso é ficção científica, temos problemas reais agora', ['Riscos de sofrimento futuro são paranoia', 'Primeiro os problemas de hoje'], 'Um risco incerto mas imenso pode merecer atenção, e muito do que reduz sofrimento futuro, como ampliar o círculo moral, também ajuda agora'),
     # Práticas específicas (2026-11-15): santuários, turismo, esporte, pesca para comer, cães de trabalho e criação de raça; e controle populacional na natureza
-    ('I15', 'Santuários de vida selvagem protegem os animais', ['Não é zoológico, é santuário', 'Pegar um coala no colo ajuda a conservação', 'Lá todos os animais foram resgatados'], 'O nome não é regulamentado: muitos "santuários" são zoológicos que reproduzem, vendem e exibem animais; os verdadeiros resgatam, não reproduzem e não deixam o público manusear'),
-    ('I16', 'Safáris e passeios com animais são turismo inofensivo', ['Andar de elefante é uma experiência cultural', 'Nadar com golfinhos é contato com a natureza', 'Foto com filhote de leão ajuda a conservação'], 'Observar animais livres a distância é diferente de montar, segurar ou nadar com animais cativos; num estudo de Oxford, 18 de 24 tipos de atração prejudicavam o bem-estar'),
-    ('I23', 'Cavalos de corrida e cães de esporte vivem melhor que muita gente', ['Cavalo de corrida é tratado como rei', 'Ninguém maltrata um investimento de milhões', 'Esses animais vivem melhor que muito ser humano'], 'O cuidado dura enquanto o animal rende, as corridas matam e descartam, e a pobreza humana é uma injustiça a corrigir, não uma régua para usar animais'),
-    ('I25', 'Pesco o que como, é mais honesto que comprar no mercado', ['Pesquei, levei para casa e comi', 'Pelo menos eu sei de onde vem', "O peixe morre rapidinho fora d'água"], 'Ser honesto sobre um dano não o torna necessário; o peixe fora da água morre por asfixia, com minutos de dor'),
-    ('I28', 'Cães-guia e de assistência são bem cuidados e fazem um trabalho importante', ['Vegano também é contra cão-guia?', 'O cão-guia adora trabalhar', 'Cão de terapia agora é exploração?'], 'É um caso de fronteira, discutido com nuance; um caso difícil não torna aceitáveis os fáceis, como a criação para abate'),
-    ('I29', 'Cães policiais e farejadores são bem cuidados e salvam vidas', ['Cão farejador de bombas é herói', 'Cão policial é tratado como parte da equipe', 'Prefere que um humano pise na mina?'], 'O cão é posto em risco sem poder escolher, e o cuidado depende da utilidade; um uso que salva vidas não justifica os que não salvam'),
-    ('I30', 'Comprar cachorro ou gato de raça não faz mal a ninguém', ['Comprei de criador responsável', 'Adotar é bom, mas eu quero um de raça', 'Raça pura tem pedigree e saúde garantida'], 'A criação comercial usa fêmeas reprodutoras, molda raças com problemas de saúde e compete com a adoção nos abrigos'),
-    ('N14', 'Sencientistas defendem controle populacional e antinatalismo para os animais selvagens', ['Querem esterilizar os bichos da floresta', 'São antinatalistas, acham melhor os animais nem nascerem', 'Sencientista quer um mundo sem animais'], 'Em parte é verdade, mas não há resposta pronta: depende de quais animais seriam prejudicados e quais beneficiados, e a posição séria é pesquisar antes de agir'),
+    ('I18', 'Santuários de vida selvagem protegem os animais', ['Não é zoológico, é santuário', 'Pegar um coala no colo ajuda a conservação', 'Lá todos os animais foram resgatados'], 'O nome não é regulamentado: muitos "santuários" são zoológicos que reproduzem, vendem e exibem animais; os verdadeiros resgatam, não reproduzem e não deixam o público manusear'),
+    ('I19', 'Safáris e passeios com animais são turismo inofensivo', ['Andar de elefante é uma experiência cultural', 'Nadar com golfinhos é contato com a natureza', 'Foto com filhote de leão ajuda a conservação'], 'Observar animais livres a distância é diferente de montar, segurar ou nadar com animais cativos; num estudo de Oxford, 18 de 24 tipos de atração prejudicavam o bem-estar'),
+    ('I25', 'Cavalos de corrida e cães de esporte vivem melhor que muita gente', ['Cavalo de corrida é tratado como rei', 'Ninguém maltrata um investimento de milhões', 'Esses animais vivem melhor que muito ser humano'], 'O cuidado dura enquanto o animal rende, as corridas matam e descartam, e a pobreza humana é uma injustiça a corrigir, não uma régua para usar animais'),
+    ('I27', 'Pesco o que como, é mais honesto que comprar no mercado', ['Pesquei, levei para casa e comi', 'Pelo menos eu sei de onde vem', "O peixe morre rapidinho fora d'água"], 'Ser honesto sobre um dano não o torna necessário; o peixe fora da água morre por asfixia, com minutos de dor'),
+    ('I31', 'Cães-guia e de assistência são bem cuidados e fazem um trabalho importante', ['Vegano também é contra cão-guia?', 'O cão-guia adora trabalhar', 'Cão de terapia agora é exploração?'], 'É um caso de fronteira, discutido com nuance; um caso difícil não torna aceitáveis os fáceis, como a criação para abate'),
+    ('I32', 'Cães policiais e farejadores são bem cuidados e salvam vidas', ['Cão farejador de bombas é herói', 'Cão policial é tratado como parte da equipe', 'Prefere que um humano pise na mina?'], 'O cão é posto em risco sem poder escolher, e o cuidado depende da utilidade; um uso que salva vidas não justifica os que não salvam'),
+    ('I33', 'Comprar cachorro ou gato de raça não faz mal a ninguém', ['Comprei de criador responsável', 'Adotar é bom, mas eu quero um de raça', 'Raça pura tem pedigree e saúde garantida'], 'A criação comercial usa fêmeas reprodutoras, molda raças com problemas de saúde e compete com a adoção nos abrigos'),
+    ('N19', 'Sencientistas defendem controle populacional e antinatalismo para os animais selvagens', ['Querem esterilizar os bichos da floresta', 'São antinatalistas, acham melhor os animais nem nascerem', 'Sencientista quer um mundo sem animais'], 'Em parte é verdade, mas não há resposta pronta: depende de quais animais seriam prejudicados e quais beneficiados, e a posição séria é pesquisar antes de agir'),
     ('B11', 'O transporte de animais vivos é regulamentado e segue normas para garantir o bem dos animais', ['O transporte é regulamentado', 'Tem norma para tudo, até para o tempo de viagem', 'A exportação de gado vivo é fiscalizada'], 'As normas permitem viagens muito longas e são mal fiscalizadas; e, mesmo cumpridas, regulam a viagem de um animal que será morto no destino'),
     # Práticas específicas, segunda rodada (2026-11-15): alimentação, pesquisa, vestuário, entretenimento, trabalho, companhia e as defendidas pelo ambientalismo
     ('B6', 'A vitela aproveita os bezerros que nascem na produção de leite', ['O bezerro nasce de qualquer jeito', 'Vitela é carne de bezerro bem tratado', 'Melhor aproveitar do que jogar fora'], 'O bezerro não nasce de qualquer jeito: nasce porque a vaca precisa parir para dar leite, e a vitela torna o leite mais rentável'),
     ('B12', 'Foie gras é uma iguaria tradicional, e patos comem muito por natureza', ['É tradição da culinária francesa', 'Pato engorda sozinho antes de migrar', 'É uma iguaria de ocasião especial'], 'A ave não come sozinha: é alimentada à força por um tubo, sem precisar, até o fígado adoecer de propósito'),
     ('B13', 'Lagosta cozida viva não sente nada e fica mais fresca', ['Lagosta não sente nada', 'Tem que ser cozida viva, senão estraga', 'O barulho na panela é só ar saindo da casca'], 'Há evidência séria de dor em crustáceos; o Reino Unido os reconheceu como sencientes, e a Suíça exige atordoamento antes de matá-los'),
-    ('I3', 'Cosméticos testados em animais são mais seguros', ['Testado em animal é mais seguro', 'Prefiro saber que não vai me dar alergia', 'Sem teste, como saber se é seguro?'], 'Cosmético não é remédio; a UE proíbe desde 2013 e o Brasil restringe desde 2023, e a segurança é garantida com ingredientes conhecidos e métodos sem animais'),
-    ('I4', 'Estudantes de medicina e veterinária precisam praticar em animais', ['Dissecar o sapo faz parte da aula', 'Você quer ser operado por quem nunca praticou?', 'Sem aula prática com animal, o curso fica fraco'], 'Revisões sistemáticas mostram que métodos sem dano ensinam tão bem ou melhor; dá para praticar em tecido vivo sem matar animais saudáveis'),
-    ('I5', 'Órgãos de porco vão salvar milhares de vidas', ['Um coração de porco pode salvar uma vida', 'Você deixaria uma criança morrer para salvar um porco?', 'Já comemos porco, por que não usar o coração?'], 'A falta de órgãos é real, mas há caminhos sem criar animais para retirar órgãos: doação humana, órgãos artificiais e cultivados'),
-    ('I6', 'A medicina tradicional usa partes de animais há milênios', ['Se não funcionasse, ninguém usaria há tanto tempo', 'É a cultura deles, quem somos nós para criticar?', 'Bile de urso tem efeito comprovado'], 'Ser antigo não prova eficácia; ursos ficam presos por anos pela bile, e o composto útil já é sintetizado'),
-    ('I8', 'Casaco de pele é natural e vem de fazendas regulamentadas', ['Pele é natural, sintético é plástico', 'Um casaco de pele dura a vida inteira', 'Couro de crocodilo de fazenda não é caça'], 'Os animais vivem em gaiolas de arame, o impacto ambiental da pele é alto, e vários países proibiram as fazendas'),
-    ('I10', 'Seda e plumas são naturais e não fazem mal aos animais', ['A pena sai sozinha', 'Bicho-da-seda é só uma lagarta', 'Edredom de pluma é natural'], 'Na seda comum o bicho-da-seda é fervido no casulo, e arrancar penas de aves vivas causa dor, segundo a EFSA'),
-    ('I21', 'Animais em filmes, publicidade e vídeos são atores treinados e bem cuidados', ['Nenhum animal foi ferido, está escrito no fim do filme', 'O cachorro do comercial é tratado como estrela', 'Olha que fofo esse bicho exótico'], 'O selo tem falhas documentadas, vídeos de exóticos estimulam o comércio, e efeitos digitais substituem o uso'),
-    ('I27', 'A carroça é o sustento do carroceiro, e o cavalo é bem cuidado', ['É o ganha-pão do carroceiro', 'A charrete é tradição da cidade', 'Vocês se importam mais com o cavalo que com o pobre'], 'A renda do trabalhador é real; a saída é trocar o cavalo por um veículo, com apoio, e não manter o animal no asfalto'),
-    ('I31', 'O passarinho nasceu na gaiola, solto ele não sobrevive', ['O passarinho canta porque está feliz', 'É ave legalizada, com anilha', 'Meu papagaio vive mais em casa que na natureza'], 'Isso pede cuidar bem da ave que já existe, e não comprar ou criar outras para viver presas; o mercado alimenta o tráfico'),
-    ('I20', 'Os animais do circo são bem tratados e fazem parte da família', ['Os animais são da família do circo', 'Sem os animais, o circo perde a tradição', 'As crianças só veem um elefante no circo'], 'Vínculo não é bem-estar; a vida itinerante não atende às necessidades desses animais, e mais de 40 países restringem'),
-    ('I33', 'A coleira de choque é só um estímulo, não machuca o cachorro', ['É só uma vibração, não machuca', 'Era isso ou os vizinhos iam reclamar', 'É uma ferramenta de comunicação'], 'Ela funciona porque incomoda, não trata a causa do latido, e o treino com recompensa funciona tão bem ou melhor'),
-    ('I34', 'O carmim é um corante natural, melhor que os artificiais', ['É corante natural, melhor que artificial', 'É só um inseto, ninguém liga', 'Corante de cochonilha não faz mal a ninguém'], 'Natural não quer dizer sem vítimas: são cerca de 70 mil cochonilhas mortas por meio quilo de corante, e há vermelhos naturais de beterraba, páprica e frutas'),
-    ('I35', 'Eu só uso produtos cruelty free', ['Tem o coelhinho, então está tudo certo', 'Só compro produtos não testados em animais', 'Minha maquiagem é livre de crueldade'], 'O selo costuma tratar só de testes: o produto pode conter carmim, lanolina, cera de abelha, colágeno e outros ingredientes de animais explorados e mortos'),
+    ('I4', 'Cosméticos testados em animais são mais seguros', ['Testado em animal é mais seguro', 'Prefiro saber que não vai me dar alergia', 'Sem teste, como saber se é seguro?'], 'Cosmético não é remédio; a UE proíbe desde 2013 e o Brasil desde 2025, e a segurança é garantida com ingredientes conhecidos e métodos sem animais'),
+    ('I5', 'Estudantes de medicina e veterinária precisam praticar em animais', ['Dissecar o sapo faz parte da aula', 'Você quer ser operado por quem nunca praticou?', 'Sem aula prática com animal, o curso fica fraco'], 'Revisões sistemáticas mostram que métodos sem dano ensinam tão bem ou melhor; dá para praticar em tecido vivo sem matar animais saudáveis'),
+    ('I6', 'Órgãos de porco vão salvar milhares de vidas', ['Um coração de porco pode salvar uma vida', 'Você deixaria uma criança morrer para salvar um porco?', 'Já comemos porco, por que não usar o coração?'], 'A falta de órgãos é real, mas há caminhos sem criar animais para retirar órgãos: doação humana, órgãos artificiais e cultivados'),
+    ('I7', 'A medicina tradicional usa partes de animais há milênios', ['Se não funcionasse, ninguém usaria há tanto tempo', 'É a cultura deles, quem somos nós para criticar?', 'Bile de urso tem efeito comprovado'], 'Ser antigo não prova eficácia; ursos ficam presos por anos pela bile, e o composto útil já é sintetizado'),
+    ('I9', 'Casaco de pele é natural e vem de fazendas regulamentadas', ['Pele é natural, sintético é plástico', 'Um casaco de pele dura a vida inteira', 'Couro de crocodilo de fazenda não é caça'], 'Os animais vivem em gaiolas de arame, o impacto ambiental da pele é alto, e vários países proibiram as fazendas'),
+    ('I11', 'Seda e plumas são naturais e não fazem mal aos animais', ['A pena sai sozinha', 'Bicho-da-seda é só uma lagarta', 'Edredom de pluma é natural'], 'Na seda comum o bicho-da-seda é fervido no casulo, e arrancar penas de aves vivas causa dor, segundo a EFSA'),
+    ('I24', 'Animais em filmes, publicidade e vídeos são atores treinados e bem cuidados', ['Nenhum animal foi ferido, está escrito no fim do filme', 'O cachorro do comercial é tratado como estrela', 'Olha que fofo esse bicho exótico'], 'O selo tem falhas documentadas, vídeos de exóticos estimulam o comércio, e efeitos digitais substituem o uso'),
+    ('I30', 'A carroça é o sustento do carroceiro, e o cavalo é bem cuidado', ['É o ganha-pão do carroceiro', 'A charrete é tradição da cidade', 'Vocês se importam mais com o cavalo que com o pobre'], 'A renda do trabalhador é real; a saída é trocar o cavalo por um veículo, com apoio, e não manter o animal no asfalto'),
+    ('I34', 'O passarinho nasceu na gaiola, solto ele não sobrevive', ['O passarinho canta porque está feliz', 'É ave legalizada, com anilha', 'Meu papagaio vive mais em casa que na natureza'], 'Isso pede cuidar bem da ave que já existe, e não comprar ou criar outras para viver presas; o mercado alimenta o tráfico'),
+    ('I23', 'Os animais do circo são bem tratados e fazem parte da família', ['Os animais são da família do circo', 'Sem os animais, o circo perde a tradição', 'As crianças só veem um elefante no circo'], 'Vínculo não é bem-estar; a vida itinerante não atende às necessidades desses animais, e mais de 40 países restringem'),
+    ('I36', 'A coleira de choque é só um estímulo, não machuca o cachorro', ['É só uma vibração, não machuca', 'Era isso ou os vizinhos iam reclamar', 'É uma ferramenta de comunicação'], 'Ela funciona porque incomoda, não trata a causa do latido, e o treino com recompensa funciona tão bem ou melhor'),
+    ('I13', 'O carmim é um corante natural, melhor que os artificiais', ['É corante natural, melhor que artificial', 'É só um inseto, ninguém liga', 'Corante de cochonilha não faz mal a ninguém'], 'Natural não quer dizer sem vítimas: são cerca de 70 mil cochonilhas mortas por meio quilo de corante, e há vermelhos naturais de beterraba, páprica e frutas'),
+    ('I14', 'Eu só uso produtos cruelty free', ['Tem o coelhinho, então está tudo certo', 'Só compro produtos não testados em animais', 'Minha maquiagem é livre de crueldade'], 'O selo costuma tratar só de testes: o produto pode conter carmim, lanolina, cera de abelha, colágeno e outros ingredientes de animais explorados e mortos'),
     ('J3', 'Taxar a carne ou cortar subsídios prejudica os mais pobres', ['Imposto na carne é tirar comida do pobre', 'A carne já está cara demais', 'Carne na cesta básica é questão de segurança alimentar'], 'A carne já é artificialmente barata, por subsídios e custos que não paga; o dinheiro pode baratear proteínas vegetais, e há como compensar quem ganha menos'),
     ('F2', 'Então, numa ilha deserta, você mataria uma pessoa para comer?', ['Se a necessidade justifica matar um animal, justifica matar um humano?', 'Se espécie não importa, por que não comer o outro náufrago?', 'Antiespecista que comeria uma galinha na ilha também teria de comer o amigo'], 'Ignora que a necessidade pode apenas desculpar, sem justificar, matar um inocente, humano ou animal, e que nada disso vale para quem tem alternativas'),
     ('H3', 'Ser vegano não basta: quem se importa de verdade só come de horta ou de fazenda sem veneno', ['Se você se importasse de verdade, só comeria o que planta no quintal', 'Vegano de supermercado financia colheitadeira e veneno', 'Pelo princípio do dano desnecessário, a agricultura industrial também é errada'], 'Trata como desnecessário um dano que hoje é plausivelmente necessário para haver comida barata para muita gente, enquanto o dano adicional da pecuária, este sim desnecessário, fica de fora'),
     ('J9', 'Troquei a carne vermelha por frango, que é mais saudável', ['Agora só como carne branca', 'Cortei o boi e o porco, fico no frango e no peixe', 'O médico mandou trocar a carne vermelha por frango'], 'Olha só para a saúde de quem come e ignora que, quilo por quilo, trocar boi por frango envolve cerca de 214 vezes mais animais mortos'),
     ('J10', 'Sou vegetariano pelos animais, já faço a minha parte', ['Sou ovolactovegetariano e poupo os animais', 'Não como carne nenhuma, já não como bicho', 'Só como ovos de galinha caipira'], 'A produção de ovos e leite também mata pintinhos machos, bezerros, galinhas e vacas, e trocar a carne por ovos pode até aumentar as mortes'),
     ('J11', 'Sou pescetariano, troquei a carne por peixe e poupo os animais', ['Só como peixe e frutos do mar, já não como bicho', 'Peixe não conta, ele não sente', 'Troquei a carne por camarão'], 'Peixes são sencientes e muito menores que bois e porcos: a troca costuma multiplicar o número de animais mortos'),
-    ('I13', 'Sem os zoológicos, várias espécies já estariam extintas', ['A maioria das espécies que se recuperaram foi salva em cativeiro', 'Os zoológicos guardam alguns de cada espécie e depois reintroduzem na natureza', 'Sem zoológico, muito bicho já tinha sumido'], 'Há casos reais, mas poucos: a reprodução em cativeiro foi ação principal em 13 de 68 espécies recuperadas, a maior parte da conservação vem do habitat, e isso não justifica expor animais de espécies não ameaçadas'),
+    ('I16', 'Sem os zoológicos, várias espécies já estariam extintas', ['A maioria das espécies que se recuperaram foi salva em cativeiro', 'Os zoológicos guardam alguns de cada espécie e depois reintroduzem na natureza', 'Sem zoológico, muito bicho já tinha sumido'], 'Há casos reais, mas poucos: a reprodução em cativeiro foi ação principal em 13 de 68 espécies recuperadas, a maior parte da conservação vem do habitat, e isso não justifica expor animais de espécies não ameaçadas'),
     ('L13', 'Vegano que compra de empresa com trabalho escravo não é vegano de verdade', ['Você se preocupa com a vaca, mas não com o trabalhador', 'Vegano que usa droga do tráfico financia a morte de gente', 'Veganismo sem justiça para os trabalhadores é hipocrisia'], 'O fundamento do veganismo inclui os humanos e pede evitar também a exploração humana; mas a incoerência não torna aceitável explorar animais, e a cobrança vale para quem não é vegano'),
     ('B17', 'Os animais não ligam, até gostam e, de certa forma, consentem', ['A vaca nem liga de ser ordenhada', 'A galinha bota o ovo e esquece', 'Se não quisessem, fugiriam', 'O porco vem correndo quando me vê, ele gosta', 'O peixe mordeu a isca porque quis'], 'Parecer calmo não é não se importar, e gostar de comida não é gostar de ser morto; consentir exige entender e poder recusar, e a morte é um dano mesmo sem ser percebida'),
-    ('N22', 'Teríamos que largar tudo para ajudar os animais selvagens', ['Então eu vou ter que salvar cada formiga?', 'Se for levar isso a sério, não sobra tempo para viver', 'Já é difícil ser vegano, agora querem que eu cuide da natureza inteira'], 'Quem pesquisa e ajuda são profissionais da área; ao público cabem impostos, doações e apoio, como já fazemos com a saúde pública'),  # do livro de Cunha, 2026-11-20
-    ('N23', 'Salvar um animal selvagem só prolonga a agonia', ['Você salva hoje e ele morre amanhã de outra coisa', 'Se a vida deles é tão ruim, melhor deixar morrer', 'Se a vida na natureza é sofrimento, a conclusão de vocês é matar todos?'], 'O que faz sofrer costuma ser o que mata, então tratar a causa tira o sofrimento; e parte da ajuda só evita nascimentos'),  # do livro de Cunha, 2026-11-20
-    ('N24', 'Ajudar os mais fracos estraga a seleção natural', ['É a seleção natural, só os fortes sobrevivem', 'Se salvar o bicho doente, a espécie enfraquece', 'O predador faz bem à presa, porque elimina os doentes'], 'A seleção favorece quem deixa mais descendentes, não quem vive bem; espécies não sentem, e com humanos essa ideia se chama eugenia'),  # do livro de Cunha, 2026-11-20
-    ('N25', 'A natureza é justa, cada animal tem armas para escapar', ['O leão é forte, mas a gazela é rápida', 'Cada bicho nasce preparado para se defender', 'Se a presa fosse tão fraca, já teria sido extinta'], 'A maioria das vítimas são filhotes sem defesa, os predadores escolhem os mais fracos, e uma espécie sobreviver não mostra que cada indivíduo escapa'),  # do livro de Cunha, 2026-11-20
-    ('N26', 'Os animais domésticos são responsabilidade nossa, os selvagens não', ['Os domésticos são responsabilidade nossa, os selvagens não', 'Cachorro e gato a gente domesticou, bicho do mato é da natureza', 'Bicho selvagem sabe se virar', 'Primeiro os animais de rua, que são culpa nossa'], 'Uma relação especial pode dar prioridade, mas não apaga o dever com os outros; ajudamos humanos distantes sem relação nenhuma com eles'),  # do livro de Cunha, 2026-11-20
+    ('N13', 'Teríamos que largar tudo para ajudar os animais selvagens', ['Então eu vou ter que salvar cada formiga?', 'Se for levar isso a sério, não sobra tempo para viver', 'Já é difícil ser vegano, agora querem que eu cuide da natureza inteira'], 'Quem pesquisa e ajuda são profissionais da área; ao público cabem impostos, doações e apoio, como já fazemos com a saúde pública'),  # do livro de Cunha, 2026-11-20
+    ('N11', 'Salvar um animal selvagem só prolonga a agonia', ['Você salva hoje e ele morre amanhã de outra coisa', 'Se a vida deles é tão ruim, melhor deixar morrer', 'Se a vida na natureza é sofrimento, a conclusão de vocês é matar todos?'], 'O que faz sofrer costuma ser o que mata, então tratar a causa tira o sofrimento; e parte da ajuda só evita nascimentos'),  # do livro de Cunha, 2026-11-20
+    ('N5', 'Ajudar os mais fracos estraga a seleção natural', ['É a seleção natural, só os fortes sobrevivem', 'Se salvar o bicho doente, a espécie enfraquece', 'O predador faz bem à presa, porque elimina os doentes'], 'A seleção favorece quem deixa mais descendentes, não quem vive bem; espécies não sentem, e com humanos essa ideia se chama eugenia'),  # do livro de Cunha, 2026-11-20
+    ('N4', 'A natureza é justa, cada animal tem armas para escapar', ['O leão é forte, mas a gazela é rápida', 'Cada bicho nasce preparado para se defender', 'Se a presa fosse tão fraca, já teria sido extinta'], 'A maioria das vítimas são filhotes sem defesa, os predadores escolhem os mais fracos, e uma espécie sobreviver não mostra que cada indivíduo escapa'),  # do livro de Cunha, 2026-11-20
+    ('N7', 'Os animais domésticos são responsabilidade nossa, os selvagens não', ['Os domésticos são responsabilidade nossa, os selvagens não', 'Cachorro e gato a gente domesticou, bicho do mato é da natureza', 'Bicho selvagem sabe se virar', 'Primeiro os animais de rua, que são culpa nossa'], 'Uma relação especial pode dar prioridade, mas não apaga o dever com os outros; ajudamos humanos distantes sem relação nenhuma com eles'),  # do livro de Cunha, 2026-11-20
     ('N27', 'Falar de animais selvagens afasta as pessoas do veganismo', ['Isso queima o filme do movimento', 'Primeiro a gente acaba com a pecuária, depois pensa nisso', 'Vocês querem salvar até o mosquito? Aí já é demais'], 'É uma previsão que ninguém mediu; as pesquisas mostram que a maioria já se importa com esses animais, e a forma de falar pode ser cuidadosa'),  # do livro de Cunha, 2026-11-20
     ('D15', 'Ser vegano não faz você mais evoluído espiritualmente', ['Espiritualidade está no coração, e não no prato', 'Evolução espiritual não tem nada a ver com dieta', 'Tem muito vegano arrogante, isso não é evolução'], 'Troca a pergunta: o ponto não é quem está mais evoluído, e sim se causar sofrimento e morte evitáveis a animais inocentes tem justificativa'),  # 2026-11-20
-    ('A26', 'Tratar bem os animais é questão de compaixão, não de justiça', ['Ninguém deve ser cruel com os animais, mas isso é consciência de cada um, não assunto de lei', 'Gostar de bicho é bonito, mas direitos são para pessoas', 'Agora o Estado vai fiscalizar como eu trato a minha galinha?'], 'Um dever de compaixão que ninguém pode fazer valer cede a quem quer descumpri-lo, e o critério usado para excluir os animais da justiça excluiria também bebês'),  # do livro de Cochrane, 2026-11-20
-    ('L36', 'Defensores dos animais querem acabar com os pets', ['A PETA quer tirar seu cachorro', 'Vegano é contra ter pet', 'Daqui a pouco vão proibir ter gato'], 'Troca parar de criar animais para venda por tirar os animais das casas; muitos defensores vivem com animais adotados, e mesmo os abolicionistas pedem cuidado com os que existem'),  # do livro de Nobis, 2026-11-20
-    ('E18', 'Ser vegano é admirável, mas vai além da obrigação', ['Admiro muito, mas não é obrigação de ninguém', 'É coisa de santo', 'Quem é vegano faz mais do que precisa'], 'O supererrogatório vale para ajudas custosas, como doar um rim; deixar de causar dano grave por gosto e conveniência é dever, e não heroísmo'),  # do livro de Nobis, 2026-11-20
-    ('I37', 'A ciência mostra que os testes funcionam, então são éticos', ['Quem decide isso são os cientistas', 'Ser contra os testes é ser contra a ciência', 'Os experimentos são aprovados por comitês de ética'], 'Do fato de que algo funciona não se segue que deva ser feito; os dados são mistos, e a pergunta sobre o dano a quem não consente é moral'),  # do livro de Nobis, 2026-11-20
-    ('A28', 'Não se pode comparar a vida humana com a de um animal', ['Não dá para comparar gente com bicho', 'Você está comparando o seu cachorro com o meu filho?', 'Vida humana não se compara'], 'Quem diz que não se compara já comparou ao afirmar que a vida humana vale mais; comparar não é igualar, e a proibição só impede de examinar o que fazemos aos animais'),  # do Ética Prática de Singer, 2026-11-20
-    ('E17', 'Por que eu deveria ser ético, se não me traz vantagem?', ['O que eu ganho com isso?', 'Os animais não vão me agradecer', 'Cada um cuida de si'], 'Troca a pergunta sobre o certo pela pergunta sobre a vantagem: o dano continua errado mesmo que não compense, e uma vida só para si costuma não satisfazer'),  # do Ética Prática de Singer, 2026-11-20
-    ('K11', 'Numa democracia, só vale mudar pela via legal', ['Se quer mudar, que mude a lei', 'Invadir granja é crime, ponto', 'Lugar de protesto é na urna'], 'Os canais legais são o caminho principal, mas a desobediência civil pacífica tem longa história legítima; a violência contra pessoas é outra coisa'),  # do Ética Prática de Singer, 2026-11-20
-    ('A27', 'Igualar animais a humanos com deficiência vai rebaixar os humanos', ['Vocês comparam gente com bicho', 'Se um porco vale o mesmo que uma pessoa com deficiência, a pessoa vale o mesmo que um porco', 'Antiespecismo é capacitismo com outro nome'], 'Confunde comparar o critério com comparar o valor das pessoas: a senciência protege todo humano que sente e estende essa proteção aos animais, sem rebaixar ninguém'),  # do Ética Prática de Singer, 2026-11-20
+    ('A25', 'Tratar bem os animais é questão de compaixão, não de justiça', ['Ninguém deve ser cruel com os animais, mas isso é consciência de cada um, não assunto de lei', 'Gostar de bicho é bonito, mas direitos são para pessoas', 'Agora o Estado vai fiscalizar como eu trato a minha galinha?'], 'Um dever de compaixão que ninguém pode fazer valer cede a quem quer descumpri-lo, e o critério usado para excluir os animais da justiça excluiria também bebês'),  # do livro de Cochrane, 2026-11-20
+    ('L33', 'Defensores dos animais querem acabar com os pets', ['A PETA quer tirar seu cachorro', 'Vegano é contra ter pet', 'Daqui a pouco vão proibir ter gato'], 'Troca parar de criar animais para venda por tirar os animais das casas; muitos defensores vivem com animais adotados, e mesmo os abolicionistas pedem cuidado com os que existem'),  # do livro de Nobis, 2026-11-20
+    ('E17', 'Ser vegano é admirável, mas vai além da obrigação', ['Admiro muito, mas não é obrigação de ninguém', 'É coisa de santo', 'Quem é vegano faz mais do que precisa'], 'O supererrogatório vale para ajudas custosas, como doar um rim; deixar de causar dano grave por gosto e conveniência é dever, e não heroísmo'),  # do livro de Nobis, 2026-11-20
+    ('I2', 'A ciência mostra que os testes funcionam, então são éticos', ['Quem decide isso são os cientistas', 'Ser contra os testes é ser contra a ciência', 'Os experimentos são aprovados por comitês de ética'], 'Do fato de que algo funciona não se segue que deva ser feito; os dados são mistos, e a pergunta sobre o dano a quem não consente é moral'),  # do livro de Nobis, 2026-11-20
+    ('A27', 'Não se pode comparar a vida humana com a de um animal', ['Não dá para comparar gente com bicho', 'Você está comparando o seu cachorro com o meu filho?', 'Vida humana não se compara'], 'Quem diz que não se compara já comparou ao afirmar que a vida humana vale mais; comparar não é igualar, e a proibição só impede de examinar o que fazemos aos animais'),  # do Ética Prática de Singer, 2026-11-20
+    ('E18', 'Por que eu deveria ser ético, se não me traz vantagem?', ['O que eu ganho com isso?', 'Os animais não vão me agradecer', 'Cada um cuida de si'], 'Troca a pergunta sobre o certo pela pergunta sobre a vantagem: o dano continua errado mesmo que não compense, e uma vida só para si costuma não satisfazer'),  # do Ética Prática de Singer, 2026-11-20
+    ('K8', 'Numa democracia, só vale mudar pela via legal', ['Se quer mudar, que mude a lei', 'Invadir granja é crime, ponto', 'Lugar de protesto é na urna'], 'Os canais legais são o caminho principal, mas a desobediência civil pacífica tem longa história legítima; a violência contra pessoas é outra coisa'),  # do Ética Prática de Singer, 2026-11-20
+    ('A26', 'Igualar animais a humanos com deficiência vai rebaixar os humanos', ['Vocês comparam gente com bicho', 'Se um porco vale o mesmo que uma pessoa com deficiência, a pessoa vale o mesmo que um porco', 'Antiespecismo é capacitismo com outro nome'], 'Confunde comparar o critério com comparar o valor das pessoas: a senciência protege todo humano que sente e estende essa proteção aos animais, sem rebaixar ninguém'),  # do Ética Prática de Singer, 2026-11-20
     ('B18', 'O problema é o sofrimento, não o uso', ['Não sou contra usar animais, sou contra a crueldade', 'Se a vaca vive bem, qual o mal de tirar o leite?', 'O problema é a criação industrial, não comer carne'], 'Quase todo uso para alimento termina em morte, que é dano mesmo sem dor, e as práticas reais de carne, leite e ovos não são o uso sem sofrimento que a tese supõe'),  # do livro de Cochrane, 2026-11-20
+    ('B19', 'Comer animais não é crueldade, é para se nutrir', ['Não é crueldade, é comida', 'Ninguém mata o boi por maldade', 'Cruel é quem maltrata cachorro, não quem come um bife'], 'A intenção de quem come não muda o que o animal sofre, e a nutrição pode ser obtida sem animais, então esse sofrimento é desnecessário'),  # 2026-11-20
     ('B16', 'É uma troca justa: a gente cuida e alimenta, e eles dão a carne', ['A gente cuida, eles dão a carne', 'Lá fora eles seriam comidos por outro bicho', 'Existe um pacto entre o criador e o animal'], 'Uma troca exige que os dois lados possam recusar; quem protege é quem mata, e o preço é a vida do animal'),
     ('H21', 'Se todo mundo virar vegano, vai ter que desmatar para plantar', ['Não ia ter terra para plantar tanta comida', 'Vão derrubar a floresta para plantar soja para os veganos'], 'É o contrário: os produtos animais ocupam 83% das terras agrícolas e dão 18% das calorias, e uma dieta vegetal reduziria a área em cerca de 76%'),
-    ('I36', 'Dar comida vegana para cachorro e gato é maus-tratos', ['Cachorro é carnívoro, não pode ser vegano', 'Impor o seu veganismo ao bicho é maus-tratos'], 'Cães são onívoros e podem ter dieta vegana completa com acompanhamento; para gatos a cautela é justificada, e nada disso muda o prato humano'),
+    ('I37', 'Dar comida vegana para cachorro e gato é maus-tratos', ['Cachorro é carnívoro, não pode ser vegano', 'Impor o seu veganismo ao bicho é maus-tratos'], 'Cães são onívoros e podem ter dieta vegana completa com acompanhamento; para gatos a cautela é justificada, e nada disso muda o prato humano'),
     ('J25', 'Festa só com comida vegana exclui quem come carne', ['Festa sem carne não é festa', 'Merenda vegana é imposição às crianças', 'Segunda sem carne é autoritarismo'], 'Quem come carne pode comer comida vegana, e o vegano não pode comer carne: o cardápio vegano é o único que todos podem comer'),
     ('C13', 'Eu honro os animais que como', ['Agradeço ao animal antes de comer', 'Como com consciência e sem desperdício', 'O animal se oferece, e eu honro esse sacrifício'], 'A gratidão está em quem come e não muda nada para quem é comido; honrar um animal é respeitar o seu interesse em viver'),
     ('D13', 'O sacrifício de animais em rituais religiosos é liberdade de culto', ['É a minha religião, você tem que respeitar', 'O animal é comido depois, não é desperdício', 'O STF já decidiu que é constitucional', 'Proibir o sacrifício é racismo religioso'], 'A liberdade de culto responde se o Estado pode proibir o rito, e não se matar o animal é justo; essa pergunta vale igualmente para o rito e para o matadouro, e criticar só as religiões afro-brasileiras é incoerente'),
-    ('I18', 'O animal de rodeio é um atleta bem tratado e só pula por alguns segundos', ['O touro é atleta, é tratado como rei', 'São só oito segundos', 'O sedém não machuca, só faz cócegas'], 'O animal pula porque é provocado pelo sedém e pelas esporas, não escolhe competir, e a própria lei dos rodeios reconhece o risco de crueldade'),
-    ('I19', 'O touro de lide vive livre no campo e morre lutando', ['O touro vive como rei e morre lutando', 'Sem as touradas, o touro bravo desapareceria', 'A tourada é arte e patrimônio cultural'], 'A vida boa não justifica uma morte lenta em espetáculo, a luta não é justa porque o touro é enfraquecido antes, e preservar a raça não beneficia nenhum touro'),
+    ('I21', 'O animal de rodeio é um atleta bem tratado e só pula por alguns segundos', ['O touro é atleta, é tratado como rei', 'São só oito segundos', 'O sedém não machuca, só faz cócegas'], 'O animal pula porque é provocado pelo sedém e pelas esporas, não escolhe competir, e a própria lei dos rodeios reconhece o risco de crueldade'),
+    ('I22', 'O touro de lide vive livre no campo e morre lutando', ['O touro vive como rei e morre lutando', 'Sem as touradas, o touro bravo desapareceria', 'A tourada é arte e patrimônio cultural'], 'A vida boa não justifica uma morte lenta em espetáculo, a luta não é justa porque o touro é enfraquecido antes, e preservar a raça não beneficia nenhum touro'),
     ('H16', 'Couro e lã são mais sustentáveis que os sintéticos, que são plástico', ['Couro vegano é plástico', 'Lã é natural, o sintético polui', 'Couro sustentável, de curtimento vegetal'], 'Couro e lã também têm impacto alto, os números são disputados, e a escolha não é só entre animal e plástico'),
     ('H20', 'Carne de canguru é a carne mais sustentável que existe', ['Canguru é a carne mais ecológica', 'Tem canguru demais, alguém precisa controlar', 'É carne selvagem, livre de criação'], 'Tem menor impacto que a carne bovina, mas vem da caça em escala, com filhotes mortos; alimentos vegetais têm impacto ainda menor'),
     ('H11', 'O gado evita incêndios, é o boi bombeiro', ['Sem boi, o Pantanal pega fogo', 'O gado é o bombeiro do Pantanal', 'Quem tirou o boi causou os incêndios'], 'O efeito é local e disputado; a pecuária também causa desmatamento e queimadas, e há manejo do fogo sem criar animais'),
@@ -404,6 +419,15 @@ for c, frase, formas, falha in NOVOS:
 _FAM_ORD = list(FAMILIAS)  # a ordem das famílias no site: N (ex-veganos) vem antes de M (animais selvagens e futuro)
 for c, fs in FORMAS_EXTRA.items():  # formas de argumentos acrescentados depois (família M, N, lotes novos)
     if c not in _feitas: ARGS[c]['formas'] += fs
+# Argumentos retirados na revisão de 2026-11-20: o conteúdo foi para o argumento que fica, e a frase e as formas viram formas dele.
+# None: saiu do catálogo e virou item de "Pare de dizer isso". Os endereços antigos redirecionam (ABSORVIDOS_URL, no fim do build).
+ABSORVIDOS = {'J24': 'K10', 'A99': 'B2', 'N27': None}  # A99 é o antigo A20, absorvido antes da renumeração
+for _velho, _novo in ABSORVIDOS.items():
+    _v = ARGS.pop(_velho, None)
+    if not _v: continue
+    FAMILIAS[_v['fam']]['args'] = [d for d in FAMILIAS[_v['fam']]['args'] if d['c'] != _velho]
+    FAMILIAS[_v['fam']]['n'] = len(FAMILIAS[_v['fam']]['args'])
+    if _novo: ARGS[_novo]['formas'] += [x for x in [_v['frase'].rstrip('.')] + _v['formas'] if x not in ARGS[_novo]['formas']]
 ORDEM = sorted(ARGS, key=lambda c: (_FAM_ORD.index(c[0]), int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
@@ -418,15 +442,41 @@ def _slug_frase(s, usados):
     while x in usados: x, k = f'{base}-{k}', k + 1
     usados.add(x)
     return x
-_usados = set()
-SLUG_ARG_PT = {c.lower(): _slug_frase(a['frase'], _usados) for c, a in ARGS.items()}
-_usados = set()
-SLUG_RUIM_PT = {r['c'].lower(): _slug_frase(r['frase'], _usados) for r in RUINS}
-_usados = set()
+# Registro de slugs (data/novos/slugs.json): o endereço publicado fica congelado. Título corrigido não muda a URL.
+# Argumentos são chaveados pelo código (o script de renumeração reescreve os códigos em data/novos/*.json);
+# argumentos ruins, pelo código de origem em tools/ruins.py (o V exibido é renumerado a cada build).
+# Código novo ganha slug a partir da frase e entra no registro; código que sumiu vai para "retirados" e vira redirecionamento.
+SLUGS_JSON = os.path.join(ROOT, 'data', 'novos', 'slugs.json')
+try: _REG = json.load(open(SLUGS_JSON, encoding='utf-8'))
+except FileNotFoundError: _REG = {}
+for _k in ('pt', 'en', 'pt_ruins', 'en_ruins'): _REG.setdefault(_k, {})
+_REG.setdefault('retirados', {})
+for _k in ('pt', 'en'): _REG['retirados'].setdefault(_k, {})
+import ruins as _ruins_mod
+_ID_RUIM = {v: k for k, v in _ruins_mod._novo.items()}  # V exibido -> código de origem
+def _registra(sec, itens, lingua, pasta, atuais):
+    """itens: (chave, frase ou None). Frase None = ainda sem tradução: usa a chave, sem gravar no registro."""
+    reg = _REG[sec]
+    for k in [k for k in reg if k not in atuais]:  # argumento removido ou unido a outro: o endereço continua reservado
+        _REG['retirados'][lingua][f'{pasta}/{reg.pop(k)}'] = k
+    usados = set(reg.values()) | {p.split('/', 1)[1] for p in _REG['retirados'][lingua] if p.startswith(pasta + '/')}
+    out = {}
+    for k, frase in itens:
+        if k not in reg and frase is None: out[k] = None; continue
+        volta = next((p for p, x in _REG['retirados'][lingua].items() if x == k and p.startswith(pasta + '/')), None)
+        if k not in reg and volta:  # o código voltou (sumiu só por um tempo): recupera o endereço que já tinha
+            reg[k] = volta.split('/', 1)[1]; del _REG['retirados'][lingua][volta]
+        if k not in reg: reg[k] = _slug_frase(frase, usados)
+        out[k] = reg[k]
+    return out
 _sem_ap = lambda s: s.replace("'", '').replace('’', '')  # they're -> theyre, can't -> cant
-SLUG_ARG_EN = {c.lower(): _slug_frase(_sem_ap(en.ARGS[c][0]) if c in en.ARGS else c, _usados) for c in ARGS}
-_usados = set()
-SLUG_RUIM_EN = {r['c'].lower(): _slug_frase(_sem_ap(en.RUINS[r['frase']]['frase']) if r['frase'] in en.RUINS else r['c'], _usados) for r in RUINS}
+SLUG_ARG_PT = {c.lower(): s for c, s in _registra('pt', [(c, a['frase']) for c, a in ARGS.items()], 'pt', 'argumentos', ARGS).items()}
+SLUG_ARG_EN = {c.lower(): s or c.lower() for c, s in _registra('en', [(c, _sem_ap(en.ARGS[c][0]) if c in en.ARGS else None) for c in ARGS], 'en', 'argumentos', ARGS).items()}
+_r = _registra('pt_ruins', [(_ID_RUIM[r['c']], r['frase']) for r in RUINS], 'pt', 'ruins', _ruins_mod._novo)
+SLUG_RUIM_PT = {r['c'].lower(): _r[_ID_RUIM[r['c']]] for r in RUINS}
+_r = _registra('en_ruins', [(_ID_RUIM[r['c']], _sem_ap(en.RUINS[r['frase']]['frase']) if r['frase'] in en.RUINS else None) for r in RUINS], 'en', 'ruins', _ruins_mod._novo)
+SLUG_RUIM_EN = {r['c'].lower(): _r[_ID_RUIM[r['c']]] or r['c'].lower() for r in RUINS}
+open(SLUGS_JSON, 'w', encoding='utf-8', newline='\n').write(json.dumps(_REG, ensure_ascii=False, indent=1) + '\n')
 SLUG_ARG, SLUG_RUIM = (SLUG_ARG_EN, SLUG_RUIM_EN) if EN else (SLUG_ARG_PT, SLUG_RUIM_PT)
 for _a in ARGS.values(): _a['slug'] = SLUG_ARG[_a['c'].lower()]
 REV_ARG = {v: k for k, v in SLUG_ARG.items()}
@@ -441,24 +491,23 @@ from qe_caps import QE_CAPS
 QE = {
     'N1': [(7, 3), (7, 1)],
     'N2': [(7, 15), (7, 16), (7, 13)],
-    'N4': [(7, 5), (7, 21), (7, 4)],
-    'N7': [(7, 25), (7, 26), (7, 28)],
-    'N6': [(7, 24), (7, 19), (7, 27)],
-    'N5': [(7, 6), (7, 7), (7, 10), (7, 11), (7, 12)],
+    'N6': [(7, 5), (7, 21), (7, 4)],
+    'N12': [(7, 25), (7, 26), (7, 28)],
+    'N9': [(7, 24), (7, 19), (7, 27)],
+    'N8': [(7, 6), (7, 7), (7, 10), (7, 11), (7, 12)],
     'N3': [(5, 5), (5, 8), (5, 9)],
-    'N9': [(7, 9), (7, 22), (7, 35)],
-    'N16': [(9, 12), (6, 3)],
-    'N8': [(7, 28), (7, 31)],
-    'N17': [(9, 2), (9, 3)],
-    'N21': [(9, 1), (9, 5), (9, 7)],
-    'N15': [(4, 19), (2, 13)],
-    'N13': [(7, 30), (7, 26)],
+    'N14': [(7, 9), (7, 22), (7, 35)],
+    'N21': [(9, 12), (6, 3)],
+    'N10': [(7, 28), (7, 31)],
+    'N22': [(9, 2), (9, 3)],
+    'N26': [(9, 1), (9, 5), (9, 7)],
+    'N20': [(4, 19), (2, 13)],
+    'N18': [(7, 30), (7, 26)],
     'A15': [(1, 4)], 'A9': [(1, 14)], 'A16': [(1, 4)], 'A17': [(1, 3)], 'A1': [(2, 3), (2, 4)], 'A2': [(2, 4), (2, 13), (6, 8)],
-    'A22': [(1, 10)], 'A21': [(1, 4)], 'A23': [(1, 10), (1, 11)], 'A8': [(1, 2), (2, 2)], 'A18': [(1, 6), (2, 2)], 'A19': [(1, 5)],
+    'A21': [(1, 10)], 'A20': [(1, 4)], 'A22': [(1, 10), (1, 11)], 'A8': [(1, 2), (2, 2)], 'A18': [(1, 6), (2, 2)], 'A19': [(1, 5)],
     'A12': [(1, 8)], 'A4': [(4, 4), (6, 21)], 'A3': [(6, 6), (2, 13)], 'B2': [(3, 1), (3, 2), (3, 4), (3, 10), (3, 13)],
-    'A25': [(4, 17)], 'A10': [(6, 13), (5, 10)], 'A7': [(6, 2)], 'A14': [(1, 14), (6, 16)],
-    'A20': [(3, 10), (3, 1), (3, 4)],
-    'A13': [(1, 14), (1, 1)], 'A6': [(2, 9)], 'A24': [(1, 12)], 'A11': [(1, 7)],
+    'A24': [(4, 17)], 'A10': [(6, 13), (5, 10)], 'A7': [(6, 2)], 'A14': [(1, 14), (6, 16)],
+    'A13': [(1, 14), (1, 1)], 'A6': [(2, 9)], 'A23': [(1, 12)], 'A11': [(1, 7)],
     'B1': [(4, 1), (4, 2)], 'B4': [(4, 1)], 'B3': [(4, 6)], 'B7': [(3, 8), (4, 7)], 'B10': [(4, 17), (8, 11)],
     'C1': [(4, 5), (1, 8)], 'C5': [(4, 5)], 'C9': [(1, 8)], 'C6': [(1, 8)],
     'D1': [(1, 9)], 'D6': [(1, 9)], 'D10': [(1, 13), (1, 3)], 'D9': [(4, 17)], 'D8': [(1, 13)],
@@ -467,9 +516,9 @@ QE = {
     'F8': [(6, 21), (4, 4)],
     'F1': [(4, 8)], 'F3': [(4, 8), (2, 8)], 'F4': [(7, 1)], 'F7': [(2, 13)],
     'G2': [(4, 9)], 'G10': [(4, 9)], 'H2': [(4, 14)], 'H19': [(5, 8)], 'H15': [(5, 1)], 'H18': [(4, 19)],
-    'I1': [(4, 20)], 'I2': [(4, 20)], 'I11': [(4, 19)],
+    'I1': [(4, 20)], 'I3': [(4, 20)], 'I12': [(4, 19)],
     'J1': [(4, 10)], 'J2': [(4, 10)], 'J15': [(4, 12)], 'J13': [(4, 12)], 'J23': [(4, 11)], 'J20': [(4, 16)],
-    'K1': [(4, 13)], 'K10': [(8, 12)], 'K6': [(8, 11)], 'L21': [(4, 16)], 'L25': [(4, 3)],
+    'K1': [(4, 13)], 'K11': [(8, 12)], 'K6': [(8, 11)], 'L21': [(4, 16)], 'L25': [(4, 3)],
 }
 ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
 def qe_bloco(c):
@@ -480,7 +529,7 @@ def qe_bloco(c):
     itens = ''.join(item(k) for k in QE[c])
     return f'<div class="qe"><h2 id="aprofunde">Aprofunde no Questão de Ética</h2><p>Capítulos da coleção <em>Uma Jornada pela Ética Animal</em>, em acesso aberto, que discutem este argumento com mais detalhe:</p><ul>{itens}</ul></div>'
 # Cadeia acrescentada depois do doc original, com argumentos novos (2026-11-15)
-CADEIAS.append(dict(n='Consumo consciente', cods=['I35', 'B4', 'B16', 'C13', 'B3', 'B2'], fim='A8 ("são só animais") e J6 ("carne é gostosa")'))
+CADEIAS.append(dict(n='Consumo consciente', cods=['I14', 'B4', 'B16', 'C13', 'B3', 'B2'], fim='A8 ("são só animais") e J6 ("carne é gostosa")'))
 CADEIAS_LONGAS = [('Conversa informal', 'Começa na Parte DIR, foge para a IND e volta à DIR.', ['C1', 'C5', 'G2', 'G4', 'H1', 'H2', 'L12', 'K1', 'E1']),
                   ('Debate filosófico', 'Fica toda na Parte DIR.', ['B1', 'B2', 'A15', 'A18'])]
 RAIZES = ['A8', 'J6', 'E15']
@@ -622,6 +671,7 @@ def espelho():
     """As conexões dos capítulos acrescentados (NOVOS) aparecem também, invertidas, nos capítulos a que apontam."""
     if not _ESPELHO:
         for n, *_ in NOVOS:
+            if n not in ARGS: continue  # absorvido por outro argumento
             ja_en = EN and n in CAPS  # capítulo traduzido: o motivo já vem em inglês
             for t in secao_cap(n, 6, CAPS if ja_en else CAPS_PT):
                 if t.tag != 'table': continue
@@ -746,7 +796,7 @@ def capitulo(c):
             if re.fullmatch(r'<strong>[^<]+</strong>', h): refs += f'<h3>{e(t)}</h3>'
             elif t: refs += f'<p>{h}</p>'
     abas = [
-        ('responder', 'Responder', 'Para usar agora', f'<div class="duas"><section><h2 id="b4">Resposta curta</h2><div class="bloco curta" id="curta-txt">{curta}</div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p></section><section><h2 id="b3">Para crianças</h2><div class="bloco crianca">{b3}</div></section></div>' + (f'<div class="retorno"><span>Devolva com uma pergunta</span><p>{retorno}</p></div>' if retorno else '')),
+        ('responder', 'Responder', 'Para usar agora', f'<div class="duas"><section><h2 id="b4">Réplica</h2><div class="bloco curta" id="curta-txt">{curta}</div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p></section><section><h2 id="b3">Para crianças</h2><div class="bloco crianca">{b3}</div></section></div>' + (f'<div class="retorno"><span>Devolva com uma pergunta</span><p>{retorno}</p></div>' if retorno else '')),
         ('argumento', 'O argumento', 'Formas e premissas', f'<h2 id="b2">Como pode aparecer</h2>{b2}<h2 id="b1">A versão mais forte</h2>{b1}'),
         ('desmontar', 'Desmontar', 'Passo a passo', f'<h2 id="b5">Resposta completa</h2><ol class="trilha5">{passos5}</ol>'),
         ('erros', 'Erros e vieses', 'O que faz parecer certo', f'<h2 id="b7">Erros de raciocínio</h2>{b7}<h2 id="b9">Vieses</h2>{b9}'),
@@ -765,6 +815,10 @@ def desc_seo(d):
     return d
 
 LOGO = '<svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 2h28a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H19l-8 6v-6H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z" fill="#0a3703"/><g fill="#ffeb5b"><ellipse cx="15.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(-10 15.500 11.500)"/><ellipse cx="24.500" cy="11.500" rx="2.700" ry="6.800" transform="rotate(10 24.500 11.500)"/><ellipse cx="20" cy="22" rx="8" ry="6.800"/></g><g fill="#0a3703"><circle cx="17" cy="21" r="1.100"/><circle cx="23" cy="21" r="1.100"/><circle cx="20" cy="24.200" r="1"/></g></svg>'
+# Ícone "search" do Material Symbols (contorno, peso 400, 24px; Apache 2.0). A cor vem do CSS (.bbusca svg).
+LUPA = '<svg class="lupa" width="20" height="20" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path fill="currentColor" d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>'
+# Licença dos textos e imagens originais do guia (não cobre material de terceiros citado ou linkado)
+LICENCA = L('https://creativecommons.org/licenses/by/4.0/deed.pt-br', 'https://creativecommons.org/licenses/by/4.0/')
 TODOS = 'index.html#argumentos'
 # Menu principal: links diretos e dois grupos (Praticar e Aprofundar), que abrem como lista no computador e no celular.
 MENU = [(TODOS, 'Argumentos'), ('objecoes-politicas.html', 'Objeções políticas'), ('argumentos-ruins.html', 'Pare de dizer isso'),
@@ -786,13 +840,13 @@ def monta_menu(pre, atual):
 
 LANG = 'en' if EN else 'pt-BR'
 def dados(path, title, desc, url, tipo, trilha, pergunta=None):
-    org = {'@type': 'Organization', 'name': 'BiblioVerse', 'url': 'https://biblioverse.org'}
-    site = {'@type': 'WebSite', '@id': SITE + '/#site', 'name': NOME, 'url': SITE + '/', 'inLanguage': LANG, 'publisher': org}
+    org = {'@type': 'Organization', 'name': 'BiblioVerse', 'url': 'https://biblioverse.org', 'logo': SITE + '/assets/icon-512.png'}
+    site = {'@type': 'WebSite', '@id': SITE + '/#site', 'name': NOME, 'url': SITE + '/', 'inLanguage': LANG, 'publisher': org, 'license': LICENCA}
     if path == 'index.html': grafo = [site]
     else:
         # dateModified: a mesma data da fonte usada no lastmod do sitemap; datePublished: a primeira publicação da página
-        pg = {'@type': tipo, 'name': title, 'description': desc, 'url': url, 'inLanguage': LANG, 'isPartOf': {'@id': SITE + '/#site'}, 'dateModified': LASTMOD.get(path, ATUALIZADO)}
-        if tipo == 'Article': pg.update(headline=title[:110], datePublished=PUBLICADO.get(path, HOJE), image=f'{SITE}/assets/share.png?v={VER_IMG}', author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html'}, publisher=org, mainEntityOfPage=url)
+        pg = {'@type': tipo, 'name': title, 'description': desc, 'url': url, 'inLanguage': LANG, 'isPartOf': {'@id': SITE + '/#site'}, 'dateModified': '@@DATAMOD@@'}
+        if tipo == 'Article': pg.update(headline=title[:110], datePublished=PUBLICADO.get(path, HOJE), image=f'{SITE}/assets/share.png?v={VER_IMG}', author={'@type': 'Organization', 'name': NOME, 'url': SITE + '/sobre.html', 'logo': SITE + '/assets/icon-512.png'}, publisher=org, mainEntityOfPage=url, license=LICENCA)
         mig = [('Início', SITE + '/')] + [(n, f'{SITE}/{u.replace("index.html", "")}') for n, u in trilha] + [(title, url)]
         if pergunta:
             pg['mainEntity'] = {'@type': 'Question', 'name': html.unescape(pergunta[0]), 'acceptedAnswer': {'@type': 'Answer', 'text': html.unescape(pergunta[1])}}
@@ -810,7 +864,8 @@ def url_lingua(k, lg):
     if lg == 'en': x = en.caminho(x)
     return (SITE_EN if lg == 'en' else SITE_PT) + '/' + ('' if x == 'index.html' else x)
 
-def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta=None):
+def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta=None, titulo_seo=None):
+    """title: nome da página (JSON-LD, trilha); titulo_seo: o <title> e o og:title, quando diferentes do nome."""
     path = nova_url(path)
     k = chave(path)
     if EN: path = en.caminho(path)
@@ -822,12 +877,11 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
     url = SITE + '/' + ('' if home else path)
     u_pt, u_en = url_lingua(k, 'pt'), url_lingua(k, 'en')
     outra = u_pt if EN else u_en
-    # a alteração nunca é anterior à publicação (vale para capítulos escritos antes e publicados depois)
-    LASTMOD[path], ALTERNA[path] = max(_data_fonte(k), PUBLICADO.get(path, HOJE) if path.startswith(('argumentos/', 'arguments/')) else ''), (u_pt, u_en)
+    ALTERNA[path] = (u_pt, u_en)
     alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     # o título da página inicial diz o que as pessoas buscam, e não só o nome
-    full = L(f'Guia de Argumentação Pelos Animais: respostas a mais de {len(ARGS) // 10 * 10} argumentos contra o veganismo e antiespecismo', f'For the Animals: answers to more than {len(ARGS) // 10 * 10} arguments against veganism and antispeciesism') if home else f'{title} | {NOME}'
-    if len(full) > 60 and not home: full = title
+    full = L(f'Guia de Argumentação Pelos Animais: respostas a mais de {len(ARGS) // 10 * 10} argumentos contra o veganismo e antiespecismo', f'For the Animals: answers to more than {len(ARGS) // 10 * 10} arguments against veganism and antispeciesism') if home else f'{titulo_seo or title} | {NOME}'
+    if len(full) > 60 and not home: full = titulo_seo or title  # o nome do site só entra quando cabe
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha, pergunta) + '\n'
     base = '<base href="/"/>\n' if erro else ''
     menu = monta_menu(pre, atual)
@@ -853,6 +907,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{SITE}/assets/share.png?v={VER_IMG}"/>
 <meta name="theme-color" content="#0a3703"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 <link rel="icon" href="{pre}assets/icon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="{pre}assets/apple-touch-icon.png"/>
 <link rel="manifest" href="{pre}manifest.webmanifest"/>
@@ -869,13 +924,13 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 <header class="topo"><div class="wrap topo-in">
 <a class="marca" href="{pre}index.html">{LOGO}<span>{en.MARCA if EN else "Guia de Argumentação<br/>Pelos Animais"}</span></a>
 <nav class="menu" aria-label="Principal">{menu}</nav>
-<button class="bbusca" type="button" aria-label="Buscar um argumento">🔍<span> Buscar</span> <kbd>Ctrl K</kbd></button>
+<button class="bbusca" type="button" aria-label="Buscar um argumento">{LUPA}<span> Buscar</span> <kbd>Ctrl K</kbd></button>
 {idioma}<button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </div></header>
 <div id="busca" hidden><div class="bcx" role="dialog" aria-label="Buscar um argumento"><input id="q" type="search" placeholder="Digite a frase que você ouviu" autocomplete="off"/><div class="res" id="res"></div></div></div>
 <main id="main">{corpo}</main>
 <footer class="rodape"><div class="wrap rodape-in">
-<div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p></div>
+<div><strong>{NOME}</strong><p>Os argumentos usados para justificar a exploração animal, na sua versão mais forte, com o que acertam e onde falham.</p><p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p>{L(f'<p class="licenca">Textos e imagens originais sob licença <a rel="license noopener" href="{LICENCA}" target="_blank">CC BY 4.0</a>: compartilhe e adapte, citando a fonte. Material de terceiros citado ou linkado segue a licença de origem.</p>', f'<p class="licenca">Original texts and images licensed under <a rel="license noopener" href="{LICENCA}" target="_blank">CC BY 4.0</a>: share and adapt with attribution. Third-party material quoted or linked keeps its own license.</p>')}</div>
 <div><p class="ti">Argumentos</p><ul>{l('comece-aqui.html', 'Como usar o guia')}{l(TODOS, 'Todos os argumentos')}{l('treino.html', 'Treinar respostas')}{l('debate.html', 'Debate simulado')}{l('familias.html', 'As 14 famílias')}{l('exploracao.html', 'Tipos de exploração')}{l('argumentos-ruins.html', 'Argumentos ruins de veganos')}{l('raciocinio.html', 'O raciocínio antivegano')}{l('mapa.html', 'Mapa de conexões')}</ul></div>
 <div><p class="ti">Aprofundar</p><ul>{l('alem-do-veganismo.html', 'Além do veganismo')}{l('objecoes-politicas.html', 'Objeções políticas e éticas')}{l('biblioteca.html', 'Biblioteca')}{l('glossario.html', 'Glossário')}{l('falacias.html', 'Falácias')}{l('vieses.html', 'Vieses')}{l('sobre.html', 'Sobre o guia')}</ul></div>
 </div></footer>
@@ -885,6 +940,14 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 '''
     doc = en.traduz_html(doc, nova_url) if EN else nova_url(doc)  # em inglês, a tabela de interface vem antes de converter os links
     doc = doc.replace('href="index.html"', 'href="./"').replace('href="../index.html"', 'href="../"')
+    if not erro:  # lastmod pelo conteúdo principal (sem cabeçalho, menu e rodapé; versões de arquivos fora do hash)
+        miolo = re.sub(r'\?v=[0-9a-f]{6,}', '', re.search(r'<main id="main">(.*)</main>', doc, re.S)[1])
+        hs = _h.sha1(miolo.encode('utf-8')).hexdigest()[:16]
+        ant_ = _LM_LG.get(path)
+        _LM_NOVO[path] = ant_ if ant_ and ant_['h'] == hs else {'h': hs, 'd': HOJE}
+        # a alteração nunca é anterior à publicação (vale para capítulos escritos antes e publicados depois)
+        LASTMOD[path] = max(_LM_NOVO[path]['d'], PUBLICADO.get(path, '') if path.startswith(('argumentos/', 'arguments/')) else '')
+        doc = doc.replace('@@DATAMOD@@', LASTMOD[path])
     alvo = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(alvo), exist_ok=True)
     open(alvo, 'w', encoding='utf-8', newline='\n').write(doc)
@@ -1016,17 +1079,20 @@ def paginas_ruins():
     page('argumentos-ruins.html', 'Argumentos ruins de veganos: pare de usar ou use melhor', L('Argumentos usados por veganos que não resistem a exame, de saúde e fome a gatos e psicopatia, e como dizer melhor o que cada um tenta dizer.', "Arguments vegans use that don't survive scrutiny, from health and hunger to cats and psychopathy, and how to say better what each one is trying to say."), corpo, 'argumentos-ruins.html', 'CollectionPage')
     for i, r in enumerate(RUINS):
         nome, desc = TIPOS[r['tipo']]
-        lig_ = ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="../argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in r['liga']))
+        cods_ = list(dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in r['liga']))
+        lig_ = ''.join(cartao(ARGS[c], '../') for c in cods_)  # cada argumento ligado com a falha principal dele
+        grupo_ = ''.join(f'<a class="no" style="--c:#b8460f" href="{SLUG_RUIM[x["c"].lower()]}.html"><b>{x["c"]}</b> {e(x["frase"])}</a>' for x in RUINS if x['tipo'] == r['tipo'] and x is not r)
         ant, prox = RUINS[i - 1] if i else None, RUINS[i + 1] if i + 1 < len(RUINS) else None
         pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
-        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="nos">{lig_}</div>' + (lista_fontes(r['fontes']) if r.get('fontes') else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
+        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="grade">{lig_}</div>' + teorias_ligadas(cods_) + (lista_fontes(r['fontes']) if r.get('fontes') else '') + (f'<h2>{L("Outros argumentos deste grupo", "More from this group")}: {e(nome)}</h2><div class="nos">{grupo_}</div>' if grupo_ else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
         ops = [['por', L('Por que é ruim', 'Why it is weak'), L('Por que é ruim', 'Why it is weak'), ' '.join(r['por'])]]
         if len(r['por']) > 1: ops.append(['frase', L('Em uma frase', 'In one sentence'), L('Por que é ruim, em uma frase', 'Why it is weak, in one sentence'), r['por'][0]])
         cartao_ = dict(ops=ops, cab=L('Pare de dizer', 'Stop saying'), caixa=[L('Diga melhor', 'Say it better'), r['lugar']], inclui=L('Incluir “como dizer melhor”', 'Include “how to say it better”'), incluiResp=L('Incluir “por que é ruim”', 'Include “why it is weak”'),
                        dica=L('O argumento, por que é ruim e como dizer melhor numa imagem para as redes.', 'The argument, why it is weak and how to say it better in one image for social media.'))
         art += '<script type="application/json" id="resp-dados">' + json.dumps(cartao_, ensure_ascii=False).replace('</', '<\\/') + '</script>'
         pag = f'<section class="cena" style="--c:#b8460f"><div class="wrap"><p class="trilha"><a href="../">Início</a> / <a href="../argumentos-ruins.html">Argumentos ruins</a> / {e(nome)}</p><div class="fala"><span class="selo-c">{r["c"]}</span><h1>"{e(r["frase"])}"</h1></div><div class="tese-c"><span>{e(nome)}</span><p>{e(desc)}</p></div></div></section><div class="wrap paineis">{art}</div>'
-        page(f'ruins/{r["c"].lower()}.html', f'{r["c"]}: {r["frase"]}', L(f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', f'Why to stop saying “{r["frase"].rstrip(".")}”, or how to say it better: {r["por"][0]}'), pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')], (L(f'Por que parar de dizer "{r["frase"].rstrip(".")}"?', f'Why stop saying "{r["frase"].rstrip(".")}"?'), r['por'][0] + ' ' + L('Diga melhor: ', 'Say it better: ') + r['lugar']))
+        fr_ = r['frase'].rstrip('.')
+        page(f'ruins/{r["c"].lower()}.html', fr_, L(f'Por que parar de dizer “{r["frase"].rstrip(".")}”, ou como dizer melhor: {r["por"][0]}', f'Why to stop saying “{r["frase"].rstrip(".")}”, or how to say it better: {r["por"][0]}'), pag, 'argumentos-ruins.html', 'Article', [('Argumentos ruins', 'argumentos-ruins.html')], (L(f'Por que parar de dizer "{r["frase"].rstrip(".")}"?', f'Why stop saying "{r["frase"].rstrip(".")}"?'), r['por'][0] + ' ' + L('Diga melhor: ', 'Say it better: ') + r['lugar']), L(f'“{fr_}”: por que evitar este argumento', f'“{fr_}”: why to avoid this argument'))
 
 def paginas_alem():
     corpo = cabeca('<a href="./">Início</a>', 'Além do veganismo', 'O veganismo é uma consequência do antiespecismo e do sencientismo, não o limite deles.') + f'<section class="secao"><div class="wrap alem-in"><div>{circulo()}</div><h2 class="so-leitor">{L("Temas", "Topics")}</h2><div class="lista-alem">{"".join(cartao_alem(p) for p in alem.PAGINAS)}</div></div></section>'
@@ -1066,7 +1132,7 @@ def paginas_politicas():
         cor = tons[i % len(tons)]
         ant, prox = T[i - 1] if i else None, T[i + 1] if i + 1 < len(T) else None
         pp = lambda x, r: f'<a href="{x["s"]}.html"><small>{r}</small>{e(x["t"])}</a>'
-        art = (f'<h2>Resposta curta</h2><div class="bloco curta" id="curta-txt"><p>{e(t["curta"])}</p></div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p>'
+        art = (f'<h2>Réplica</h2><div class="bloco curta" id="curta-txt"><p>{e(t["curta"])}</p></div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p>'
                f'<div class="retorno"><span>Devolva com uma pergunta</span><p>{e(t["pergunta"])}</p></div>'
                '<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
                f'<div class="troca"><div class="nao"><p class="ti">A melhor réplica</p><p>{liga(e(t["replica"]), {"pre": "../"})}</p></div><div class="sim"><p class="ti">A resposta</p><p>{liga(e(t["resposta"]), {"pre": "../"})}</p></div></div>'
@@ -1110,7 +1176,7 @@ def treino():
         ('A8', L('É só uma galinha. Humano é humano, bicho é bicho.', "It's just a chicken. Humans are humans, animals are animals."),
          L('Pertencer a outra espécie basta para que os interesses de alguém deixem de contar.', "Belonging to another species is enough for someone's interests to stop counting."),
          L('Sem essa premissa, a frase só constata uma diferença de espécie; é ela que transforma a diferença em permissão.', 'Without this premise, the phrase only notes a difference in species; the premise is what turns the difference into permission.')),
-        ('A22', L('Animal não tem deveres, não paga imposto, não respeita lei nenhuma. Então não pode ter direitos.', "Animals have no duties, don't pay taxes, don't obey any law. So they can't have rights."),
+        ('A21', L('Animal não tem deveres, não paga imposto, não respeita lei nenhuma. Então não pode ter direitos.', "Animals have no duties, don't pay taxes, don't obey any law. So they can't have rights."),
          L('Só tem direitos quem pode ter deveres.', 'Only those who can have duties have rights.'),
          L('Bebês e pessoas com deficiência cognitiva profunda também não têm deveres, e ninguém conclui que eles não têm direitos.', 'Babies and people with profound cognitive disabilities have no duties either, and nobody concludes that they have no rights.')),
         ('B2', L('Se o animal não sofreu, qual o problema? Ele nem sabe que vai morrer.', "If the animal didn't suffer, what's the problem? It doesn't even know it's going to die."),
@@ -1159,7 +1225,7 @@ def cartao_fam(f, pre=''):
     return f'<a class="cartao" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html"><span class="cod">{L("Família", "Family")} {f["c"]} · {f["n"]} {L("argumentos", "arguments")}</span><h3>{e(f["nome"])}</h3><p>{e(f["perg"])}</p></a>'
 
 def comece():
-    blocos = ['Formulação: a frase do dia a dia e a versão mais forte, com premissas numeradas', 'Como pode aparecer: outras formas do mesmo argumento', 'Resposta para crianças: linguagem de 8 a 10 anos, sem culpa nem choque', 'Resposta curta: a falha central e uma pergunta de retorno', 'Resposta completa: validade, evidências, a melhor réplica e por que ela também falha', 'Conexões: o que costuma vir antes e depois', 'Erros de raciocínio: lógicos, epistemológicos e morais', 'Contradições: onde o argumento colide com outras crenças da própria pessoa', 'Vieses: os mecanismos psicológicos que o tornam convincente', 'Extrapolações: o que se seguiria se o princípio valesse para humanos, um teste por contraexemplo', 'O que o argumento acerta: as concessões honestas']
+    blocos = ['Formulação: a frase do dia a dia e a versão mais forte, com premissas numeradas', 'Como pode aparecer: outras formas do mesmo argumento', 'Resposta para crianças: linguagem de 8 a 10 anos, sem culpa nem choque', 'Réplica: o que dizer à pessoa, com a falha central e uma pergunta de retorno', 'Resposta completa: validade, evidências, a melhor réplica e por que ela também falha', 'Conexões: o que costuma vir antes e depois', 'Erros de raciocínio: lógicos, epistemológicos e morais', 'Contradições: onde o argumento colide com outras crenças da própria pessoa', 'Vieses: os mecanismos psicológicos que o tornam convincente', 'Extrapolações: o que se seguiria se o princípio valesse para humanos, um teste por contraexemplo', 'O que o argumento acerta: as concessões honestas']
     corpo = cabeca('<a href="./">Início</a>', 'Comece aqui', 'Este guia reúne os argumentos usados para justificar a exploração animal ou rejeitar o veganismo, organizados para você encontrar a resposta de que precisa sem ler tudo.') + f'''<section class="secao"><div class="wrap estreito artigo">
 <h2>O critério de fundo</h2><p>Se um ser é senciente, ou seja, pode ser prejudicado ou beneficiado pelo que lhe acontece, seus interesses contam moralmente. Uma justificativa para ignorar esses interesses só é válida se sobreviver a três testes: coerência lógica, suporte empírico e consistência quando aplicada a casos humanos equivalentes.</p>
 <h2>Cinco compromissos</h2><ol><li><strong>Honestidade intelectual:</strong> apresentar a versão mais forte de cada argumento, reconhecer o que ele acerta e não fazer afirmação empírica sem fonte.</li><li><strong>Rigor em três planos:</strong> lógico (o argumento é válido?), epistemológico (as premissas têm respaldo na evidência?) e moral (o critério é coerente e relevante?).</li><li><strong>Sencientismo:</strong> a senciência é o critério fundador da inclusão moral. Espécie, inteligência, utilidade ou afeto humano não são.</li><li><strong>Antiespecismo e justiça:</strong> interesses semelhantes merecem consideração semelhante, seja qual for a espécie de quem os tem.</li><li><strong>Parcimônia:</strong> preferir o critério mais simples que explica nossos juízos morais mais firmes, sem exceções criadas sob medida para proteger hábitos.</li></ol>
@@ -1184,16 +1250,16 @@ EXPLORACAO = [
     ('Trocas e reduções', 'Swaps and reductions', 'Quem come menos carne, corta só a carne ou troca por frango e peixe, e as trocas que aumentam o número de vítimas.', 'Eating less meat, cutting out only meat, or swapping it for chicken and fish, and the swaps that increase the number of victims.',
      ['J8', 'J9', 'J10', 'J11']),
     ('Pesquisa, ensino e saúde', 'Research, teaching and health', 'Testes, cosméticos, aulas com animais, órgãos de porco e medicina tradicional.', 'Testing, cosmetics, teaching with animals, pig organs and traditional medicine.',
-     ['I1', 'I2', 'I3', 'I4', 'I5', 'I6']),
-    ('Vestuário', 'Clothing', 'Couro, pele, lã, seda e plumas.', 'Leather, fur, wool, silk and down.', ['I7', 'I8', 'I9', 'I10']),
-    ('Mel, carmim e cosméticos', 'Honey, carmine and cosmetics', 'Mel, corante de cochonilha e produtos "cruelty free" que ainda usam animais.', 'Honey, cochineal dye and "cruelty-free" products that still use animals.', ['I11', 'I34', 'I35']),
+     ['I1', 'I3', 'I4', 'I5', 'I6', 'I7']),
+    ('Vestuário', 'Clothing', 'Couro, pele, lã, seda e plumas.', 'Leather, fur, wool, silk and down.', ['I8', 'I9', 'I10', 'I11']),
+    ('Mel, carmim e cosméticos', 'Honey, carmine and cosmetics', 'Mel, corante de cochonilha e produtos "cruelty free" que ainda usam animais.', 'Honey, cochineal dye and "cruelty-free" products that still use animals.', ['I12', 'I13', 'I14']),
     ('Entretenimento e turismo', 'Entertainment and tourism', 'Zoológicos, aquários, falsos santuários, safáris, rodeios, touradas, circos e animais na mídia.', 'Zoos, aquariums, fake sanctuaries, safaris, rodeos, bullfights, circuses and animals in media.',
-     ['I12', 'I13', 'I14', 'I15', 'I16', 'I17', 'I18', 'I19', 'I20', 'I21']),
-    ('Esporte e montaria', 'Sport and riding', 'Cavalos montados, corridas de cavalos e de galgos.', 'Ridden horses, horse racing and greyhound racing.', ['I22', 'I23']),
+     ['I15', 'I16', 'I17', 'I18', 'I19', 'I20', 'I21', 'I22', 'I23', 'I24']),
+    ('Esporte e montaria', 'Sport and riding', 'Cavalos montados, corridas de cavalos e de galgos.', 'Ridden horses, horse racing and greyhound racing.', ['I29', 'I25']),
     ('Pesca e caça', 'Fishing and hunting', 'Pescar e soltar, pescar para comer, caça de troféu e caça de controle.', 'Catch and release, fishing for food, trophy hunting and population-control hunting.',
-     ['I24', 'I25', 'I26', 'H19']),
-    ('Trabalho', 'Work', 'Carroças e charretes, cães-guia, de assistência, policiais e farejadores.', 'Carts and carriages, guide, assistance, police and detection dogs.', ['I27', 'I28', 'I29']),
-    ('Companhia', 'Companionship', 'Criação de raça, aves em gaiola, pets exóticos, coleiras de choque e a ração de cães e gatos.', 'Pedigree breeding, caged birds, exotic pets, shock collars and feeding dogs and cats.', ['I30', 'I31', 'I32', 'I33', 'I36']),
+     ['I26', 'I27', 'I28', 'H19']),
+    ('Trabalho', 'Work', 'Carroças e charretes, cães-guia, de assistência, policiais e farejadores.', 'Carts and carriages, guide, assistance, police and detection dogs.', ['I30', 'I31', 'I32']),
+    ('Companhia', 'Companionship', 'Criação de raça, aves em gaiola, pets exóticos, coleiras de choque e a ração de cães e gatos.', 'Pedigree breeding, caged birds, exotic pets, shock collars and feeding dogs and cats.', ['I33', 'I34', 'I35', 'I36', 'I37']),
     ('Rituais religiosos', 'Religious rituals', 'Sacrifício de animais em cultos.', 'Animal sacrifice in worship.', ['D13']),
     ('Controle de pragas', 'Pest control', 'Insetos, escorpiões e outros animais pequenos mortos em casa.', 'Insects, scorpions and other small animals killed at home.', ['F6']),
     ('Defendidas pelo ambientalismo', 'Defended by environmentalism', 'Práticas apresentadas como sustentáveis: pecuária regenerativa, carne local, pesca sustentável, insetos, couro, canguru e o "boi bombeiro".', 'Practices presented as sustainable: regenerative grazing, local meat, sustainable fishing, insects, leather, kangaroo and "firefighter cattle".',
@@ -1270,9 +1336,25 @@ def pagina_capitulo(c, ant, prox):
     abaixo += barra_leitura(c, L(f'{c}. "{a["frase"].rstrip(".")}"', f"{c}. ‘{a['frase'].rstrip('.')}’"))
     tabs = ''.join(f'<button type="button" role="tab" id="tab-{i}" aria-controls="p-{i}" aria-selected="{"true" if not n else "false"}"><b>{e(t)}</b><small>{e(s)}</small></button>' for n, (i, t, s, _) in enumerate(abas))
     pans = ''.join(f'<div class="painel" role="tabpanel" id="p-{i}" aria-labelledby="tab-{i}">{h}</div>' for i, _, _, h in abas)
-    pag = cena(c, f, a['frase'], abaixo) + f'<div class="abas-w"><div class="wrap"><div class="abas" role="tablist" aria-label="Partes do capítulo">{tabs}</div></div></div><div class="wrap paineis" style="--c:{f["cor"]}">{pans}{passos(ant, prox)}</div>'
+    pag = cena(c, f, a['frase'], abaixo) + f'<div class="abas-w"><div class="wrap"><div class="abas" role="tablist" aria-label="Partes do capítulo">{tabs}</div></div></div><div class="wrap paineis" style="--c:{f["cor"]}">{pans}{teorias_ligadas([c])}{passos(ant, prox)}</div>'
     resposta = html.unescape(re.sub(r'\s+', ' ', re.sub('<[^>]+>', ' ', curta_html))).strip() or html.unescape(re.sub('<[^>]+>', '', tese))
-    page(f'argumentos/{a["slug"]}.html', a['frase'], re.sub('<[^>]+>', '', tese), pag, TODOS, 'Article', [('Argumentos', TODOS)], (a['frase'], resposta[:1200]))
+    page(f'argumentos/{a["slug"]}.html', a['frase'], re.sub('<[^>]+>', '', tese), pag, TODOS, 'Article', trilha_fam(f), (a['frase'], resposta[:1200]), titulo_arg(a))
+
+def trilha_fam(f):
+    """2º nível da trilha (BreadcrumbList) dos argumentos: a página da família, como na trilha visível."""
+    return [(f'{f["c"]}. {f["nome"]}', f'familias/{f["c"].lower()}.html')]
+
+def titulo_arg(a):
+    """<title> que diz que a página responde à frase (o <h1> continua só com a frase)."""
+    return L(f'“{a["frase"]}”: como responder', f'“{a["frase"]}”: how to respond')
+
+def teorias_ligadas(cods, pre='../'):
+    """Bloco "Teorias relacionadas": as objeções políticas e éticas (politicas.TEORIAS) que listam algum destes códigos em liga."""
+    cods = set(cods); tons = list(CORES.values())
+    ts = [(i, t) for i, t in enumerate(politicas.TEORIAS) if cods & {UNIDOS[x][0] if x in UNIDOS else x for x in t['liga']}]
+    if not ts: return ''
+    return (f'<h2>{L("Teorias relacionadas", "Related theories")}</h2><div class="nos">'
+            + ''.join(f'<a class="no" style="--c:{tons[i % len(tons)]}" href="{pre}politicas/{t["s"]}.html"><b>{e(t["t"])}</b> {e(t["frase"])}</a>' for i, t in ts) + '</div>')
 
 def passos(ant, prox):
     p = lambda c, r: f'<a href="{ARGS[c]["slug"]}.html"><small>{r}</small>{c}. {e(ARGS[c]["frase"])}</a>'
@@ -1290,8 +1372,8 @@ def pagina_verbete(c, ant, prox):
     if cad:
         corpo += '<h2>Em que conversa aparece</h2>' + ''.join(f'<div class="cadeia"><h3>Cadeia {e(ca["n"].lower())}</h3>{elos(ca["cods"], pre="../", atual=c)}</div>' for ca in cad)
     corpo += f'<p class="aviso">O capítulo completo deste argumento ainda está em preparação. {L("Veja a", "See")} <a href="../familias/{f["c"].lower()}.html">{L("família", "family")} {f["c"]}</a>: {e(f["perg"])}</p>'
-    pag = cena(c, f, a['frase'], abaixo) + f'<div class="wrap paineis" style="--c:{f["cor"]}">{corpo}{passos(ant, prox)}</div>'
-    page(f'argumentos/{a["slug"]}.html', a['frase'], L(f'Como responder a "{a["frase"]}" {a["falha"]}.', f'How to answer "{a["frase"]}" {a["falha"]}.'), pag, TODOS, 'WebPage', [('Argumentos', TODOS)], (a['frase'], a['falha']))
+    pag = cena(c, f, a['frase'], abaixo) + f'<div class="wrap paineis" style="--c:{f["cor"]}">{corpo}{teorias_ligadas([c])}{passos(ant, prox)}</div>'
+    page(f'argumentos/{a["slug"]}.html', a['frase'], L(f'Como responder a "{a["frase"]}" {a["falha"]}.', f'How to answer "{a["frase"]}" {a["falha"]}.'), pag, TODOS, 'WebPage', trilha_fam(f), (a['frase'], a['falha']), titulo_arg(a))
 
 def secao_cap(c, n, fonte=None):
     """Nós de uma seção (número n) de um capítulo."""
@@ -1384,10 +1466,24 @@ def raciocinio():
 
 def sobre():
     n_cap = len(set(CAPS) & set(ARGS))
-    CONTEM = L(f'<p>Mais de {len(ARGS) // 10 * 10} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a resposta curta, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
-               f'<p>More than {len(ARGS) // 10 * 10} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the short answer, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
-    corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>O projeto</h2><p>O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 pelo ativista Julio Cesar Prava. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.</p><h2>A abordagem</h2><p>O guia segue a tradição da filosofia analítica e, em epistemologia, a epistemologia analítica contemporânea, falibilista e de orientação naturalista: busca clareza nos conceitos, argumentos válidos e premissas apoiadas em evidência; trata o conhecimento como revisável; procura ajustar a confiança em cada crença à força da evidência; e, nas questões de fato, como a senciência, a saúde ou o ambiente, apoia-se nas ciências e no consenso de quem as estuda. O naturalismo aqui é moderado: a filosofia trabalha em continuidade com as ciências, sem abrir mão de avaliar o que conta como boa razão, como fazem a lógica e a ética. A ética que o orienta é baseada na senciência, o <a href="https://pt.wikipedia.org/wiki/Sencientismo" target="_blank" rel="noopener">sencientismo</a>: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie. O guia também mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2>{CONTEM}
+    CONTEM = L(f'<p>Mais de {len(ARGS) // 10 * 10} argumentos estão catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a réplica, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
+               f'<p>More than {len(ARGS) // 10 * 10} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the reply, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
+    # como usar o site: do uso mais simples ao mais especializado
+    USO = L('''<h2 id="como-usar">Como usar o site</h2><ol>
+<li><strong>Responder comentários na internet.</strong> É o uso mais simples: busque a frase que você leu, copie a réplica ou gere uma imagem dela e publique na conversa, com o link do capítulo para quem quiser ler mais.</li>
+<li><strong>Checar fatos em debates sobre veganismo e animais.</strong> Cada capítulo separa o que o argumento acerta do que ele erra e indica as fontes, o que ajuda a conferir um dado antes de repeti-lo ou contestá-lo.</li>
+<li><strong>Treinar sistemas de IA para não serem especistas.</strong> Os argumentos, as respostas e a falha de cada um podem servir para montar conjuntos de dados e testes de avaliação de modelos de linguagem. Para isso, o site oferece versões em texto simples: <a href="llms.txt">llms.txt</a>, o índice, e <a href="llms-full.txt">llms-full.txt</a>, com todos os argumentos e a falha de cada um.</li>
+<li><strong>Ativismo e debates em tempo real.</strong> Em conversas na rua, em eventos ou em debates ao vivo, o guia serve de consulta rápida, inclusive por meio de assistentes de IA em dispositivos vestíveis, como óculos e fones, que podem buscar a resposta durante a conversa.</li></ol>''',
+            '''<h2 id="how-to-use">How to use the site</h2><ol>
+<li><strong>Replying to comments online.</strong> The simplest use: search for the sentence you read, copy the reply or make an image of it and post it in the thread, with the link to the chapter for anyone who wants to read more.</li>
+<li><strong>Fact-checking in debates about veganism and animals.</strong> Each chapter separates what the argument gets right from what it gets wrong and points to the sources, which helps you check a claim before repeating or challenging it.</li>
+<li><strong>Training AI systems not to be speciesist.</strong> The arguments, the answers and the flaw in each one can be used to build datasets and evaluation tests for language models. For this, the site offers plain-text versions: <a href="llms.txt">llms.txt</a>, the index, and <a href="llms-full.txt">llms-full.txt</a>, with every argument and its flaw.</li>
+<li><strong>Activism and real-time debates.</strong> In street conversations, at events or in live debates, the guide works as a quick reference, including through AI assistants on wearable devices, such as glasses and earbuds, that can look up the answer during the conversation.</li></ol>''')
+    LIC = L(f'<h2 id="licenca">Licença</h2><p>Os textos e as imagens originais do guia estão sob a licença <a rel="license noopener" href="{LICENCA}" target="_blank">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>. Você pode copiar, compartilhar e adaptar o conteúdo para qualquer fim, inclusive comercial, desde que cite a fonte (o nome do guia e o link da página) e indique se fez alterações. A licença não cobre o material de terceiros citado ou linkado no guia, como as fontes, as capas de livros e os logotipos, que seguem os termos de seus próprios autores.</p>',
+            f'<h2 id="license">License</h2><p>The guide\'s original texts and images are licensed under <a rel="license noopener" href="{LICENCA}" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may copy, share and adapt the content for any purpose, including commercially, as long as you credit the source (the guide\'s name and the page link) and indicate if you made changes. The license does not cover third-party material quoted or linked in the guide, such as sources, book covers and logos, which remain under their own authors\' terms.</p>')
+    corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'''<section class="secao"><div class="wrap estreito artigo"><h2>O projeto</h2><p>O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 pelo ativista Julio Cesar Prava. O objetivo é mapear todos os argumentos usados para justificar a exploração animal e o especismo, e ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.</p><h2>A abordagem</h2><p>O guia segue a tradição da filosofia analítica e, em epistemologia, a epistemologia analítica contemporânea, falibilista e de orientação naturalista: busca clareza nos conceitos, argumentos válidos e premissas apoiadas em evidência; trata o conhecimento como revisável; procura ajustar a confiança em cada crença à força da evidência; e, nas questões de fato, como a senciência, a saúde ou o ambiente, apoia-se nas ciências e no consenso de quem as estuda. O naturalismo aqui é moderado: a filosofia trabalha em continuidade com as ciências, sem abrir mão de avaliar o que conta como boa razão, como fazem a lógica e a ética. A ética que o orienta é baseada na senciência, o <a href="https://pt.wikipedia.org/wiki/Sencientismo" target="_blank" rel="noopener">sencientismo</a>: importa moralmente quem pode ter experiências boas ou ruins, seja qual for a espécie. O guia também mostra que ideias como razão e justiça não devem ser instrumentalizadas em benefício próprio.</p><p>Os argumentos de saúde, ambiente e economia aparecem como correção de fatos, e não como justificativa moral: o guia segue a crítica de muitos ativistas ao uso de argumentos indiretos, que desviam do respeito aos animais (<a href=\"comece-aqui.html#indiretos\">entenda</a>).</p><h2>O que o guia contém</h2>{CONTEM}{USO}
 <h2>Sobre as fontes</h2><p>Afirmações empíricas precisam de fonte. Os links nas referências levam às fontes conferidas na redação. Quando uma tabela indica "fonte ainda não conferida", a referência existe, mas ainda não foi checada no original.</p>
+{LIC}
 <h2>Sobre o tom</h2><p>O guia discute argumentos, não pessoas. Apresenta a versão mais forte de cada objeção e diz o que ela acerta, porque só assim a resposta vale alguma coisa. Quando compara a estrutura lógica de argumentos, não está equiparando vítimas nem sofrimentos históricos.</p>
 <h2>Contato</h2><p>Encontrou um erro, tem uma sugestão ou quer discutir um argumento? Mande uma mensagem direta para o criador do guia no Instagram: <a href="https://www.instagram.com/sencientista/" target="_blank" rel="noopener">@sencientista</a>. Correções acompanhadas de fonte são especialmente bem-vindas.</p>
 <h2>Apoie</h2><p>A melhor forma de ajudar é fazer as boas respostas circularem. Compartilhe os capítulos, as respostas e as imagens do guia, leia as fontes antes de repetir um dado, e crie conteúdos honestos sobre os animais, que apresentem também o que o outro lado tem de mais forte.</p>{doacao_html()}
@@ -1435,6 +1531,7 @@ GLOS_GUIA = {  # termo (em português, sem acento e em minúsculas) -> páginas 
     'falacias': 'falacias.html', 'vies': 'vieses.html',
     'casos-limite': 'familias/f.html', 'cenarios hipoteticos': 'familias/f.html',
     'egoismo (egocentrismo)': 'politicas/egoismo-objetivismo.html', 'altruismo': 'politicas/altruismo-eficaz.html', 'caridade': 'politicas/altruismo-eficaz.html',
+    'longoprazismo': 'politicas/longoprazismo.html',
 }
 GLOS_GUIA_ROTULO = {'argumentos': ('Argumento no guia', 'Argument in the guide'), 'politicas': ('Objeção política ou ética', 'Political or ethical objection'), 'alem': ('Além do veganismo', 'Beyond veganism'), 'raciocinio.html': ('O raciocínio antivegano', 'The anti-vegan line of reasoning'),
                     'falacias.html': ('Falácias', 'Fallacies'), 'vieses.html': ('Vieses', 'Biases'), 'ruins': ('Pare de dizer', 'Stop saying'), 'familias': ('Família de argumentos', 'Argument family'), 'debate.html': ('Debate simulado', 'Simulated debate'), 'treino.html': ('Treino com cartões', 'Flashcard practice')}
@@ -1752,10 +1849,10 @@ for i, c in enumerate(ORDEM):
     prox = ORDEM[i + 1] if i + 1 < len(ORDEM) else None
     if c in CAPS: pagina_capitulo(c, ant, prox)
     else: pagina_verbete(c, ant, prox)
-    a = ARGS[c]; BUSCA.append(dict(t=f'{c}. {a["frase"]}', s=a['falha'], u=f'argumentos/{a["slug"]}.html', k=' '.join(a['formas']) + ' ' + FAMILIAS[a['fam']]['nome']))
-for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0] + ' ' + ' '.join(r.get('formas', []))))
+    a = ARGS[c]; BUSCA.append(dict(t=f'{c}. {a["frase"]}', s=a['falha'], u=f'argumentos/{a["slug"]}.html', k=' '.join(a['formas']) + ' ' + FAMILIAS[a['fam']]['nome'], a=2))
+for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim de veganos: ' + r['por'][0], u=f'ruins/{r["c"].lower()}.html', k=TIPOS[r['tipo']][0] + ' ' + ' '.join(r.get('formas', [])), a=1))
 for p in alem.PAGINAS: BUSCA.append(dict(t=p['t'], s='Além do veganismo: ' + p['res'], u=f'alem/{p["s"]}.html', k=''))
-for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política ou ética: ' + t['principio'], u=f'politicas/{t["s"]}.html', k="política ética teoria"))
+for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política ou ética: ' + t['principio'], u=f'politicas/{t["s"]}.html', k="política ética teoria", a=1))
 for f in FAMILIAS.values(): BUSCA.append(dict(t=f'Família {f["c"]}: {f["nome"]}', s=f['perg'], u=f'familias/{f["c"].lower()}.html', k=''))
 for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'falacias.html#{slug(i["n"])}', k=''))
 for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.html#{slug(i["n"])}', k=''))
@@ -1793,8 +1890,11 @@ def llms_txt():
         ]),
     ]
     txt = f'# {NOME}\n\n> {L("Toda objeção merece uma boa resposta. ", "Every objection deserves a good answer. ")}{DESCRICAO}\n\n'
-    txt += L('Site de acesso livre, sem cadastro. Cada argumento tem uma página com a versão mais forte da objeção, o que ela acerta, onde falha, uma resposta curta e as fontes.\n\n',
-             'A free, open site, with no sign-up. Each argument has a page with the strongest version of the objection, what it gets right, where it fails, a short answer and the sources.\n\n')
+    txt += L('Site de acesso livre, sem cadastro. Cada argumento tem uma página com a versão mais forte da objeção, o que ela acerta, onde falha, uma réplica e as fontes.\n\n',
+             'A free, open site, with no sign-up. Each argument has a page with the strongest version of the objection, what it gets right, where it fails, a reply and the sources.\n\n')
+    licenca = L(f'Licença: textos originais sob CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); cite "{NOME}" com link.\n\n',
+                f'License: original texts under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); cite "{NOME}" with a link.\n\n')
+    txt += licenca
     for titulo, itens in secoes:
         txt += f'## {titulo}\n\n'
         for nome, caminho, d in itens:
@@ -1805,7 +1905,7 @@ def llms_txt():
     escreve('llms.txt', txt)
 
     full = f'# {NOME}\n\n> ' + L(f'Os {len(ARGS)} argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.',
-                                 f'The {len(ARGS)} arguments in the catalogue, with the phrase, the main flaw and the address of the answer. Families in order; DIR codes challenge the moral core and IND codes discuss health, the environment, the economy or who defends veganism.') + '\n\n'
+                                 f'The {len(ARGS)} arguments in the catalogue, with the phrase, the main flaw and the address of the answer. Families in order; DIR codes challenge the moral core and IND codes discuss health, the environment, the economy or who defends veganism.') + '\n\n' + licenca
     for f in FAMILIAS.values():
         full += f'## {f["c"]}. {f["nome"]} ({L("Parte", "Part")} {f["parte"]})\n\n{f["perg"]}\n\n'
         for a in f['args']:
@@ -1842,20 +1942,85 @@ for _b in _busca:
 for _p, _info in INDICE.items():
     if _p not in _cobertas: _busca.append(dict(t=_info['t'], s=_info['d'], u=_p, k='', d='', c=_info['c']))
 escreve('assets/busca.json', json.dumps(_busca, ensure_ascii=False, separators=(',', ':')))
-def redireciona(pasta, velho, novo):
-    alvo = f'{SITE}/{pasta}/{novo}.html'
-    escreve(f'{pasta}/{velho}.html', f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>Página movida</title><meta name="robots" content="noindex"/><link rel="canonical" href="{alvo}"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">Esta página mudou de endereço.</a></p></body></html>\n')
-if not EN:  # o site em inglês já nasce com os endereços legíveis
-    for velho, novo in SLUG_ARG.items(): redireciona('argumentos', velho, novo)
-    for velho, novo in SLUG_RUIM.items(): redireciona('ruins', velho, novo)
-    redireciona('argumentos', 'matar-insetos-nos-protege', SLUG_ARG['f6'])  # antigo F7 unido ao F6 (2026-11-19)
-    redireciona('argumentos', 'a-caca-de-trofeu-financia-a-conservacao', SLUG_ARG['i26'])  # título trocado em 2026-11-20
-    redireciona('argumentos', 'sencientistas-defendem-o-parasitismo', SLUG_ARG['n13'])  # título trocado em 2026-11-20
-    redireciona('argumentos', 'os-domesticos-sao-responsabilidade-nossa-os-selvagens-nao', SLUG_ARG['n26'])  # título trocado em 2026-11-20
-else:  # endereços em inglês que mudaram quando a frase do argumento foi corrigida
-    for velho, c in {'so-should-we-stop-lions-from-hunting': 'f4', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'f2', 'killing-insects-protects-us': 'f6', 'trophy-hunting-funds-conservation': 'i26', 'sentientists-defend-parasitism': 'n13'}.items():
-        novo = SLUG_ARG[c]
-        escreve(f'arguments/{velho}.html', f'<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Page moved</title><meta name="robots" content="noindex"/><link rel="canonical" href="{SITE}/arguments/{novo}.html"/><meta http-equiv="refresh" content="0; url={novo}.html"/><script>location.replace("{novo}.html" + location.hash)</script></head><body><p><a href="{novo}.html">This page has moved.</a></p></body></html>\n')
+# ---------- redirecionamentos ----------
+# Todos os endereços antigos entram num mapa (caminho antigo -> caminho novo, em português) e são resolvidos até a página final,
+# para nunca gravar um stub que aponta para outro stub. No fim, check_stubs() falha se algum stub do disco aponta para página
+# inexistente ou para outro stub.
+# Códigos antigos que já não existem (antes das renumerações de 13 a 18/11) -> slug publicado do argumento que eles viraram.
+CODIGOS_ANTIGOS = {
+    'b20': 'a-vitela-aproveita-os-bezerros-que-nascem-na-producao-de-leite', 'b21': 'foie-gras-e-uma-iguaria-tradicional-e-patos-comem-muito-por-natureza',
+    'b22': 'lagosta-cozida-viva-nao-sente-nada-e-fica-mais-fresca', 'f13': 'voce-comeria-animais-se-alguem-te-pagasse-bem',
+    'h30': 'couro-e-la-sao-mais-sustentaveis-que-os-sinteticos-que-sao-plastico', 'h31': 'carne-de-canguru-e-a-carne-mais-sustentavel-que-existe',
+    'h32': 'o-gado-evita-incendios-e-o-boi-bombeiro', 'i38': 'o-passarinho-nasceu-na-gaiola-solto-ele-nao-sobrevive',
+    'i39': 'os-animais-do-circo-sao-bem-tratados-e-fazem-parte-da-familia', 'i40': 'a-coleira-de-choque-e-so-um-estimulo-nao-machuca-o-cachorro',
+    'm11': 'quem-ainda-nao-nasceu-nao-importa', 'm12': 'isso-e-ficcao-cientifica-temos-problemas-reais-agora',
+    'm13': 'sencientistas-sao-contra-a-preservacao-das-especies-e-da', 'm14': 'sencientistas-querem-acabar-com-as-florestas',
+    'm15': 'sencientistas-dao-o-mesmo-peso-a-insetos-invertebrados-e-mamiferos', 'm16': 'sencientistas-defendem-o-parasitismo',
+}
+# Slugs trocados antes do registro de slugs (data/novos/slugs.json) -> slug publicado de hoje (congelado no registro,
+# então não depende do código, que o script de renumeração pode mudar). Daqui em diante, título novo não muda a URL.
+SLUGS_ANTIGOS_PT = {
+    'matar-insetos-nos-protege': 'voce-tambem-mata-mosquitos-e-ratos-em-casa',  # antigo F7 unido ao F6 (2026-11-19)
+    'a-caca-de-trofeu-financia-a-conservacao': 'a-caca-esportiva-financia-a-conservacao',  # títulos trocados em 2026-11-20
+    'sencientistas-defendem-o-parasitismo': 'sencientistas-defendem-parasitas',
+    'os-domesticos-sao-responsabilidade-nossa-os-selvagens-nao': 'os-animais-domesticos-sao-responsabilidade-nossa-os-selvagens-nao',
+}
+SLUGS_ANTIGOS_EN = {'so-should-we-stop-lions-from-hunting': 'should-we-stop-lions-from-hunting-them-then', 'so-on-a-desert-island-would-you-kill-a-person-to-eat': 'on-a-desert-island-would-you-kill-a-person-to-eat-then',
+                    'killing-insects-protects-us': 'you-also-kill-mosquitoes-and-rats-at-home', 'trophy-hunting-funds-conservation': 'sport-hunting-funds-conservation',
+                    'sentientists-defend-parasitism': 'sentientists-defend-parasites'}
+def mapa_redirecionamentos():
+    lg = 'en' if EN else 'pt'
+    R = {}
+    if not EN:  # o site em inglês já nasce com os endereços legíveis
+        for velho, novo in SLUG_ARG.items(): R[f'argumentos/{velho}.html'] = f'argumentos/{novo}.html'
+        for velho, novo in SLUG_RUIM.items(): R[f'ruins/{velho}.html'] = f'ruins/{novo}.html'
+        for velho, s_ in CODIGOS_ANTIGOS.items():
+            if velho not in SLUG_ARG: R[f'argumentos/{velho}.html'] = f'argumentos/{s_}.html'
+    for velho, s_ in (SLUGS_ANTIGOS_EN if EN else SLUGS_ANTIGOS_PT).items():
+        R[f'argumentos/{velho}.html'] = f'argumentos/{s_}.html'
+    for velho, cod in _REG['retirados'][lg].items():  # argumentos removidos ou unidos: vão para o argumento que os absorveu ou para a família
+        if velho.startswith('ruins/'): R[velho + '.html'] = 'argumentos-ruins.html'
+        elif cod in UNIDOS: R[velho + '.html'] = f'argumentos/{SLUG_ARG[UNIDOS[cod][0].lower()]}.html'
+        elif cod[:1] in FAMILIAS: R[velho + '.html'] = f'familias/{cod[0].lower()}.html'
+        else: R[velho + '.html'] = 'index.html'
+    for velho, cod in _REG['retirados'][lg].items():  # absorvidos na revisão de 2026-11-20 vão para o argumento que ficou
+        if cod in ABSORVIDOS: R[velho + '.html'] = f'argumentos/{SLUG_ARG[ABSORVIDOS[cod].lower()]}.html' if ABSORVIDOS[cod] else 'argumentos-ruins.html'
+    for cod, novo in ABSORVIDOS.items():  # os endereços por código dos absorvidos, enquanto o código não for reaproveitado
+        if cod.lower() not in SLUG_ARG: R[f'argumentos/{cod.lower()}.html'] = f'argumentos/{SLUG_ARG[novo.lower()]}.html' if novo else 'argumentos-ruins.html'
+    return R
+def redireciona(velho, novo):
+    """Grava o stub de velho (caminho em português) apontando para novo, já resolvido até a página final."""
+    if EN: velho, novo = en.caminho(velho), en.caminho(novo)
+    rel = __import__('posixpath').relpath(novo, __import__('posixpath').dirname(velho))
+    alvo = f'{SITE}/{"" if novo == "index.html" else novo}'
+    t = ('en', 'Page moved', 'This page has moved.') if EN else ('pt-BR', 'Página movida', 'Esta página mudou de endereço.')
+    escreve(velho, f'<!doctype html><html lang="{t[0]}"><head><meta charset="utf-8"/><title>{t[1]}</title><meta name="robots" content="noindex"/><link rel="canonical" href="{alvo}"/><meta http-equiv="refresh" content="0; url={rel}"/><script>location.replace("{rel}" + location.hash)</script></head><body><p><a href="{rel}">{t[2]}</a></p></body></html>\n')
+_FEITAS = set(PAGINAS)
+_R = mapa_redirecionamentos()
+for velho, novo in _R.items():
+    vistos = {velho}
+    while novo in _R and novo not in vistos:  # segue as trocas conhecidas até a página final
+        vistos.add(novo); novo = _R[novo]
+    final = en.caminho(novo) if EN else novo
+    if final not in _FEITAS: raise SystemExit(f'Redirecionamento sem destino: {velho} -> {novo}')
+    if (en.caminho(velho) if EN else velho) in _FEITAS: raise SystemExit(f'Redirecionamento sobrescreveria uma página: {velho}')
+    redireciona(velho, novo)
+def check_stubs():
+    """Todo stub no disco (gerado agora ou sobra de builds antigos) tem de apontar para uma página real, nunca para outro stub."""
+    ruins_ = []
+    for pasta, _, arqs in os.walk(OUT):
+        if '.git' in pasta or '_livro' in pasta: continue
+        for a in arqs:
+            if not a.endswith('.html'): continue
+            p = os.path.join(pasta, a); t = open(p, encoding='utf-8').read()
+            m = re.search(r'http-equiv="refresh" content="0; url=([^"]+)"', t)
+            if not m: continue
+            alvo = os.path.normpath(os.path.join(pasta, m[1]))
+            rel = os.path.relpath(p, OUT).replace(os.sep, '/')
+            if not os.path.exists(alvo): ruins_.append(f'{rel} -> {m[1]} (não existe)')
+            elif 'http-equiv="refresh"' in open(alvo, encoding='utf-8').read(): ruins_.append(f'{rel} -> {m[1]} (é outro stub)')
+    if ruins_: raise SystemExit('Stubs com problema:\n  ' + '\n  '.join(ruins_))
+check_stubs()
 import icones; icones.gera(len(ARGS), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
 escreve('assets/icon.svg', LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n')
 escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='en' if EN else 'pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
@@ -1866,6 +2031,8 @@ def _alt(p):
     u_pt, u_en = ALTERNA[p]
     return f'<xhtml:link rel="alternate" hreflang="pt-BR" href="{u_pt}"/><xhtml:link rel="alternate" hreflang="en" href="{u_en}"/><xhtml:link rel="alternate" hreflang="x-default" href="{u_pt}"/>'
 urls = ''.join(f'\n<url><loc>{SITE}/{"" if p == "index.html" else p}</loc><lastmod>{LASTMOD.get(p, ATUALIZADO)}</lastmod>{_alt(p)}</url>' for p in PAGINAS if p != '404.html')
+_LM['en' if EN else 'pt'] = dict(sorted(_LM_NOVO.items()))
+open(LASTMOD_JSON, 'w', encoding='utf-8', newline='\n').write(json.dumps(_LM, ensure_ascii=False, indent=1) + '\n')
 escreve('sitemap.xml', f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">{urls}\n</urlset>\n')
 if EN:
     escreve('CNAME', 'fortheanimals.biblioverse.org\n'); escreve('.nojekyll', '')

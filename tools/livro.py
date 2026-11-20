@@ -43,9 +43,9 @@ def fontes_estaticas():
             faces.append(f"@font-face{{font-family:'{fam}';src:url('{pathlib.Path(dest).as_uri()}');font-weight:{w};font-style:{estilo}}}")
     return '\n'.join(faces)
 
-N10 = len(B.ARGS) // 10 * 10
+N15 = len(B.ARGS) // 10 * 10
 TITULO = 'Guia de Argumentação Pelos Animais'
-SUB = f'Respostas a mais de {N10} argumentos contra o veganismo e o antiespecismo'
+SUB = f'Respostas a mais de {N15} argumentos contra o veganismo e o antiespecismo'
 SITE = B.SITE_PT.replace('https://', '')
 ANO = B.ATUALIZADO[:4]
 
@@ -287,7 +287,7 @@ def gera():
     logo = re.sub(r'width="\d+" height="\d+"', 'width="100%" height="100%"', B.LOGO)
     capa = (f'<div class="logo">{logo}</div><h1>Guia de<br/>Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{e(SUB)}</p>'
             f'<p class="autor">{e(T.AUTOR)}</p>')
-    contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=N10))}'
+    contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=N15))}'
               f'<div class="pe"><a href="{B.SITE_PT}">{e(SITE)}</a></div>')
     corpo = f'<section class="pag capa">{capa}</section>{L.html()}<section class="pag contra">{contra}</section>'
     return f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><title>{e(TITULO)}</title><style>{CSS.replace('{FACES}', fontes_estaticas())}</style></head><body>{corpo}</body></html>', len(L.pags)

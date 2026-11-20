@@ -981,7 +981,7 @@
 
 **Altruísmo eficaz** — movimento que busca maximizar o impacto positivo das ações e recursos, incluindo a causa animal como uma causa importante. *Seus critérios de escala, negligência e tratabilidade costumam favorecer a causa animal.*
 
-**Longoprazismo** — corrente filosófica que prioriza o bem-estar de seres (humanos e não-humanos) em escalas de tempo muito longas.
+**Longoprazismo** — posição filosófica segundo a qual influenciar positivamente o futuro de longo prazo é uma das prioridades morais centrais do nosso tempo, porque o futuro pode durar muito e conter um número imenso de seres. *Formulado no altruísmo eficaz por filósofos como William MacAskill, Toby Ord e Nick Bostrom, na prática se concentra sobretudo no futuro da humanidade, em especial na redução dos riscos de extinção. Defensores dos animais argumentam que a mesma lógica pede incluir todos os seres sencientes do futuro, a maioria dos quais provavelmente não será humana, e chamam a atenção para os riscos-s. Veja Altruísmo eficaz, Riscos-s e Riscos-x.*
 
 **Populações futuras não-humanas** — extensão da preocupação moral a gerações futuras de animais, no cruzamento entre ética animal e longoprazismo.
 

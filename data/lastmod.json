@@ -1,0 +1,3510 @@
+{
+ "pt": {
+  "alem-do-veganismo.html": {
+   "h": "ca0c75e6c86be781",
+   "d": "2026-11-20"
+  },
+  "alem/animais-selvagens.html": {
+   "h": "5e9a87e4715237f4",
+   "d": "2026-11-20"
+  },
+  "alem/antiespecismo.html": {
+   "h": "84697acf1d8065e9",
+   "d": "2026-11-20"
+  },
+  "alem/argumentos-diretos.html": {
+   "h": "726f43f2dae2ed66",
+   "d": "2026-11-20"
+  },
+  "alem/correntes-do-veganismo.html": {
+   "h": "7921331cebf57a06",
+   "d": "2026-11-20"
+  },
+  "alem/definicao-de-veganismo.html": {
+   "h": "ecce9f1e07475cbc",
+   "d": "2026-11-20"
+  },
+  "alem/estado-da-arte.html": {
+   "h": "c744aae527ff5675",
+   "d": "2026-11-20"
+  },
+  "alem/extraterrestres.html": {
+   "h": "bed34a5c5fe30305",
+   "d": "2026-11-20"
+  },
+  "alem/fundamentos.html": {
+   "h": "96857d69a606a52f",
+   "d": "2026-11-20"
+  },
+  "alem/ia-e-robos.html": {
+   "h": "33bf09b4f4d45495",
+   "d": "2026-11-20"
+  },
+  "alem/matar-ou-fazer-sofrer.html": {
+   "h": "d1ebde7a3ff7aec5",
+   "d": "2026-11-20"
+  },
+  "alem/minimo-comum.html": {
+   "h": "e0ff45ba10a92748",
+   "d": "2026-11-20"
+  },
+  "alem/quando-a-logica-nao-basta.html": {
+   "h": "34f5a8e114e8bcce",
+   "d": "2026-11-20"
+  },
+  "argumentos-ruins.html": {
+   "h": "25c71223ce475c1e",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-caca-controla-populacoes.html": {
+   "h": "b24b6f89da51bbf3",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-caca-esportiva-financia-a-conservacao.html": {
+   "h": "b629131e801658fb",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-carroca-e-o-sustento-do-carroceiro-e-o-cavalo-e-bem-cuidado.html": {
+   "h": "25bbf266edfb705f",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-ciencia-mostra-que-os-testes-funcionam-entao-sao-eticos.html": {
+   "h": "8d226d62190ebf7d",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-coleira-de-choque-e-so-um-estimulo-nao-machuca-o-cachorro.html": {
+   "h": "3dea7b233f80686f",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-colheita-mata-animais-veganos-tambem-matam.html": {
+   "h": "f0d6c5f523914d6c",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-legislacao-garante-o-bem-estar.html": {
+   "h": "139f2511bb4def63",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-maioria-dos-veganos-desiste.html": {
+   "h": "5e311281fdbdb5d9",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-medicina-tradicional-usa-partes-de-animais-ha-milenios.html": {
+   "h": "d59efb402d4efed3",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-monocultura-vegetal-destroi-tanto-quanto-a-pecuaria-industrial.html": {
+   "h": "ff2799226c4143cb",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-moral-e-relativa.html": {
+   "h": "484d2da6b94af7d1",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-moral-existe-para-nos-proteger-uns-dos-outros.html": {
+   "h": "3189ea2a91e031cc",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-natureza-e-justa-cada-animal-tem-armas-para-escapar.html": {
+   "h": "8c00537bb67e72be",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-oms-exagera-carne-vermelha-nao-faz-mal.html": {
+   "h": "30f844827b3fb681",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-pecuaria-polui-pouco-o-problema-sao-os-combustiveis-fosseis.html": {
+   "h": "4ff3af09fe42c414",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-soja-dos-veganos-desmata-a-amazonia.html": {
+   "h": "7e88cd56a8b736fe",
+   "d": "2026-11-20"
+  },
+  "argumentos/a-vitela-aproveita-os-bezerros-que-nascem-na-producao-de-leite.html": {
+   "h": "28ecbc4e5fe6c32c",
+   "d": "2026-11-20"
+  },
+  "argumentos/abacate-e-amendoa-gastam-muita-agua.html": {
+   "h": "8568eab78fd081d9",
+   "d": "2026-11-20"
+  },
+  "argumentos/abelhas-produzem-mel-em-excesso.html": {
+   "h": "cd7b54a7b56f98de",
+   "d": "2026-11-20"
+  },
+  "argumentos/ajudar-animais-selvagens-nao-e-veganismo-e-outra-pauta.html": {
+   "h": "f3831383f9504a3d",
+   "d": "2026-11-20"
+  },
+  "argumentos/ajudar-os-mais-fracos-estraga-a-selecao-natural.html": {
+   "h": "01dad9aa95c211b2",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-de-criacao-existem-para-isso.html": {
+   "h": "99efc1a1abdbbfa8",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-em-filmes-publicidade-e-videos-sao-atores-treinados-e-bem.html": {
+   "h": "b493e6d49a9ee47e",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-nao-sao-pessoas.html": {
+   "h": "0e835fec63282539",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-nao-sao-racionais.html": {
+   "h": "e0d3f5c519b82e1a",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-nao-tem-alma.html": {
+   "h": "1a0a3f96114e7591",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-nao-tem-consciencia-nem-sentem-dor-como-nos.html": {
+   "h": "ef42bc0eba806316",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-nao-tem-linguagem.html": {
+   "h": "f90d0607ef9520ad",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-sao-propriedade.html": {
+   "h": "8daa13d97a480245",
+   "d": "2026-11-20"
+  },
+  "argumentos/animais-soltos-caipiras-sao-felizes.html": {
+   "h": "0efa727e9bfd9792",
+   "d": "2026-11-20"
+  },
+  "argumentos/animal-estressado-da-carne-ruim-entao-o-produtor-cuida-bem.html": {
+   "h": "5e0e8f7208a2735e",
+   "d": "2026-11-20"
+  },
+  "argumentos/aquarios-e-golfinarios-sao-inofensivos.html": {
+   "h": "c2c175826509ed52",
+   "d": "2026-11-20"
+  },
+  "argumentos/as-ias-dizem-que-nao-ser-vegano-nao-e-errado.html": {
+   "h": "3d2771968f01d136",
+   "d": "2026-11-20"
+  },
+  "argumentos/ativistas-veganos-sao-radicais-e-extremistas.html": {
+   "h": "87bda7208799b79e",
+   "d": "2026-11-20"
+  },
+  "argumentos/atletas-precisam-de-carne.html": {
+   "h": "146971f1212ed1a3",
+   "d": "2026-11-20"
+  },
+  "argumentos/bebes-humanos-tem-o-potencial-de-ser-racionais.html": {
+   "h": "0e0006bc45652ac9",
+   "d": "2026-11-20"
+  },
+  "argumentos/bilhoes-de-pessoas-dependem-do-peixe-para-ter-proteina.html": {
+   "h": "d1f33b9c0b893d9d",
+   "d": "2026-11-20"
+  },
+  "argumentos/caes-guia-e-de-assistencia-sao-bem-cuidados-e-fazem-um-trabalho.html": {
+   "h": "ea8e22cb192ffc8a",
+   "d": "2026-11-20"
+  },
+  "argumentos/caes-policiais-e-farejadores-sao-bem-cuidados-e-salvam-vidas.html": {
+   "h": "e542976d7c20cfc5",
+   "d": "2026-11-20"
+  },
+  "argumentos/carne-de-canguru-e-a-carne-mais-sustentavel-que-existe.html": {
+   "h": "9bc79aba00a5eb96",
+   "d": "2026-11-20"
+  },
+  "argumentos/carne-e-coisa-de-macho.html": {
+   "h": "eaebd101d41117cb",
+   "d": "2026-11-20"
+  },
+  "argumentos/carne-e-gostosa.html": {
+   "h": "f1666d18744c2489",
+   "d": "2026-11-20"
+  },
+  "argumentos/carne-local-e-organica-e-sustentavel.html": {
+   "h": "7b50b1cbcdf99084",
+   "d": "2026-11-20"
+  },
+  "argumentos/casaco-de-pele-e-natural-e-vem-de-fazendas-regulamentadas.html": {
+   "h": "d3c12be1b49e1fbe",
+   "d": "2026-11-20"
+  },
+  "argumentos/cavalos-de-corrida-e-caes-de-esporte-vivem-melhor-que-muita-gente.html": {
+   "h": "8ba66810c8512ba5",
+   "d": "2026-11-20"
+  },
+  "argumentos/cavalos-gostam-de-trabalhar-e-ser-montados.html": {
+   "h": "e68968a20a23c8bc",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-animais-e-necessario-para-sobreviver.html": {
+   "h": "48d47c8df0a2a46b",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-animais-nao-e-crueldade-e-para-se-nutrir.html": {
+   "h": "17f3c474fb06538c",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-carne-nao-e-ideologia-veganismo-e.html": {
+   "h": "6c169359ae11bd04",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-carne-nos-fez-evoluir.html": {
+   "h": "69578706c5e58340",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-fora-viajar-e-festas-ficam-inviaveis.html": {
+   "h": "c4523cdee1e7057f",
+   "d": "2026-11-20"
+  },
+  "argumentos/comer-insetos-e-a-proteina-sustentavel-do-futuro.html": {
+   "h": "fa2153e1b4e5e3a4",
+   "d": "2026-11-20"
+  },
+  "argumentos/comida-vegana-e-sem-graca.html": {
+   "h": "7a200dd87b133e6d",
+   "d": "2026-11-20"
+  },
+  "argumentos/comida-vegana-importada-polui-no-transporte.html": {
+   "h": "f3ffda66f3a8560e",
+   "d": "2026-11-20"
+  },
+  "argumentos/comparar-pecuaria-com-escravidao-ou-holocausto-e-ofensivo.html": {
+   "h": "abba8edb4b06ff25",
+   "d": "2026-11-20"
+  },
+  "argumentos/comprar-cachorro-ou-gato-de-raca-nao-faz-mal-a-ninguem.html": {
+   "h": "1280e227685c6484",
+   "d": "2026-11-20"
+  },
+  "argumentos/concordo-com-os-veganos-o-veganismo-e-um-movimento-importante.html": {
+   "h": "3046e5d5ccff8e57",
+   "d": "2026-11-20"
+  },
+  "argumentos/conheco-alguem-que-adoeceu-sendo-vegano.html": {
+   "h": "389006567023dfb7",
+   "d": "2026-11-20"
+  },
+  "argumentos/cosmeticos-testados-em-animais-sao-mais-seguros.html": {
+   "h": "a7f06a7cb24b4cd4",
+   "d": "2026-11-20"
+  },
+  "argumentos/couro-e-la-sao-mais-sustentaveis-que-os-sinteticos-que-sao-plastico.html": {
+   "h": "1f4f863093f50c17",
+   "d": "2026-11-20"
+  },
+  "argumentos/criancas-e-gestantes-nao-podem-ser-veganas.html": {
+   "h": "c2d0392f93580cd5",
+   "d": "2026-11-20"
+  },
+  "argumentos/criar-filhos-veganos-e-impor-uma-ideologia.html": {
+   "h": "f5fcdded1f937318",
+   "d": "2026-11-20"
+  },
+  "argumentos/dar-comida-vegana-para-cachorro-e-gato-e-maus-tratos.html": {
+   "h": "feb4edd300e870bd",
+   "d": "2026-11-20"
+  },
+  "argumentos/defender-os-animais-e-apelo-emocional-nao-argumento.html": {
+   "h": "4872f0d9cb1ebe6b",
+   "d": "2026-11-20"
+  },
+  "argumentos/defender-os-animais-e-coisa-de-utilitarista.html": {
+   "h": "278a1171958e3e14",
+   "d": "2026-11-20"
+  },
+  "argumentos/defender-os-animais-e-moralismo-de-classe-media.html": {
+   "h": "1b20d126d86898b0",
+   "d": "2026-11-20"
+  },
+  "argumentos/defensores-dos-animais-querem-acabar-com-os-pets.html": {
+   "h": "de2bcba4faea55e9",
+   "d": "2026-11-20"
+  },
+  "argumentos/deixei-de-ser-vegano-porque-comecei-a-me-sentir-mal.html": {
+   "h": "7dedd4869968f86c",
+   "d": "2026-11-20"
+  },
+  "argumentos/deixei-de-ser-vegano-porque-estou-em-outro-momento-da-vida.html": {
+   "h": "b4ac760c2d326020",
+   "d": "2026-11-20"
+  },
+  "argumentos/deus-nos-deu-dominio-sobre-os-animais.html": {
+   "h": "35e1cb1caed7c629",
+   "d": "2026-11-20"
+  },
+  "argumentos/dieta-carnivora-paleo-ou-keto-e-a-mais-saudavel.html": {
+   "h": "ad802c3c51b9e60f",
+   "d": "2026-11-20"
+  },
+  "argumentos/direitos-sao-invencao-humana-so-valem-para-humanos.html": {
+   "h": "e26c950602f8a616",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-a-carne-que-vai-para-o-lixo.html": {
+   "h": "08989fa805edaae1",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-a-lei-do-mais-forte.html": {
+   "h": "485ff43ca20acb7b",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-cultural-criticar-e-etnocentrismo.html": {
+   "h": "ce8eca89c57638aa",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-dificil-nao-tenho-tempo.html": {
+   "h": "ce11a61b449cd266",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-impossivel-resolver-o-sofrimento-na-natureza-e-grande-e-complexo.html": {
+   "h": "dda84a3b9331492f",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-legal-a-lei-permite.html": {
+   "h": "da8f73c30bd95f14",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-minha-escolha-pessoal-nao-imponha-sua-moral.html": {
+   "h": "8303a99938b85ea0",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-natural-comer-carne.html": {
+   "h": "031c4395f559f67d",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-natural-priorizar-os-nossos.html": {
+   "h": "3cf182528a2fa106",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-numa-ilha-deserta-voce-comeria-um-animal.html": {
+   "h": "f53fc27a6bf977a1",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-o-ciclo-da-vida.html": {
+   "h": "df6b6e8431ba16c8",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-os-insetos-que-voce-mata-ao-dirigir.html": {
+   "h": "308816102a3895f3",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-os-ovos-da-minha-galinha-resgatada.html": {
+   "h": "a6657b5e838986db",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-se-descobrirem-que-as-plantas-sentem.html": {
+   "h": "903a945b11548078",
+   "d": "2026-11-20"
+  },
+  "argumentos/e-uma-troca-justa-a-gente-cuida-e-alimenta-e-eles-dao-a-carne.html": {
+   "h": "95d16af8e620af1b",
+   "d": "2026-11-20"
+  },
+  "argumentos/ele-come-carne-mas-e-uma-pessoa-boa.html": {
+   "h": "650173f260decffe",
+   "d": "2026-11-20"
+  },
+  "argumentos/entao-deveriamos-impedir-leoes-de-cacar.html": {
+   "h": "30de26d835ae032a",
+   "d": "2026-11-20"
+  },
+  "argumentos/entao-numa-ilha-deserta-voce-mataria-uma-pessoa-para-comer.html": {
+   "h": "a3b1e0993679af4a",
+   "d": "2026-11-20"
+  },
+  "argumentos/especie-e-biologia-raca-e-construcao-social.html": {
+   "h": "cf3c0c5a0d844cc8",
+   "d": "2026-11-20"
+  },
+  "argumentos/esses-videos-sao-excecoes-ou-manipulados.html": {
+   "h": "c08ac1614fd6de6c",
+   "d": "2026-11-20"
+  },
+  "argumentos/estamos-no-topo-da-cadeia-alimentar.html": {
+   "h": "5a58aa28c7257ca8",
+   "d": "2026-11-20"
+  },
+  "argumentos/estudantes-de-medicina-e-veterinaria-precisam-praticar-em-animais.html": {
+   "h": "5e0ff7da24fcbcf0",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-amo-os-animais-mas.html": {
+   "h": "94a501bb71b41840",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-como-pouca-carne-ja-e-suficiente.html": {
+   "h": "742dc65a2925f8ef",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-era-vegano-e-comecei-a-ficar-muito-radical-bitolado.html": {
+   "h": "6e4bb504992fad32",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-era-vegano-pela-saude-e-mudei-de-ideia.html": {
+   "h": "2ac3ef9b99e58367",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-honro-os-animais-que-como.html": {
+   "h": "4dedf16aeb34b6cf",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-ja-fui-vegano-sei-do-que-estou-falando.html": {
+   "h": "bcdce5fa423ed331",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-nao-mato-so-como.html": {
+   "h": "8df12aa52668bfc9",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-odeio-veganos.html": {
+   "h": "dae99b50f34a52a3",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-respeito-os-animais-mas-os-humanos-vem-primeiro.html": {
+   "h": "311d539da2be201b",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-so-uso-produtos-cruelty-free.html": {
+   "h": "e95895974a46be5b",
+   "d": "2026-11-20"
+  },
+  "argumentos/eu-vivo-disso-e-o-sustento-da-minha-familia.html": {
+   "h": "0f4f4f5628d9ce93",
+   "d": "2026-11-20"
+  },
+  "argumentos/existe-abate-humanitario.html": {
+   "h": "7003cda644b2d6c7",
+   "d": "2026-11-20"
+  },
+  "argumentos/existem-diferentes-graus-de-consciencia-os-animais-menos-conscientes.html": {
+   "h": "3a590989c386fac3",
+   "d": "2026-11-20"
+  },
+  "argumentos/faltara-ferro-zinco-e-outros-micronutrientes.html": {
+   "h": "8d9f50c9daa0cd6c",
+   "d": "2026-11-20"
+  },
+  "argumentos/festa-so-com-comida-vegana-exclui-quem-come-carne.html": {
+   "h": "5f024d2d8993b40e",
+   "d": "2026-11-20"
+  },
+  "argumentos/foie-gras-e-uma-iguaria-tradicional-e-patos-comem-muito-por-natureza.html": {
+   "h": "04b5c7227e831746",
+   "d": "2026-11-20"
+  },
+  "argumentos/frugivorismo-nao-e-saudavel-entao-o-veganismo-tambem-nao-e.html": {
+   "h": "eadfd7f88b17776c",
+   "d": "2026-11-20"
+  },
+  "argumentos/grandes-pensadores-comiam-carne.html": {
+   "h": "5b21d20790787de1",
+   "d": "2026-11-20"
+  },
+  "argumentos/ha-problemas-humanos-mais-importantes.html": {
+   "h": "490ff511929199cf",
+   "d": "2026-11-20"
+  },
+  "argumentos/hitler-era-vegetariano.html": {
+   "h": "9f8721f4aaff6f75",
+   "d": "2026-11-20"
+  },
+  "argumentos/humanos-sao-superiores-entao-podemos-usar-os-inferiores.html": {
+   "h": "2efa5149a57e0936",
+   "d": "2026-11-20"
+  },
+  "argumentos/humanos-sofrem-mais-que-os-animais.html": {
+   "h": "c3040bfcebbcc58d",
+   "d": "2026-11-20"
+  },
+  "argumentos/humanos-tem-valor-intrinseco-animais-tem-valor-instrumental.html": {
+   "h": "0dc5249b02cb4d30",
+   "d": "2026-11-20"
+  },
+  "argumentos/igualar-animais-a-humanos-com-deficiencia-vai-rebaixar-os-humanos.html": {
+   "h": "bb4b011a3aa2d777",
+   "d": "2026-11-20"
+  },
+  "argumentos/isso-e-ficcao-cientifica-temos-problemas-reais-agora.html": {
+   "h": "1303b0939b62289a",
+   "d": "2026-11-20"
+  },
+  "argumentos/jesus-comeu-peixe.html": {
+   "h": "4ed0332b3e9ab939",
+   "d": "2026-11-20"
+  },
+  "argumentos/lagosta-cozida-viva-nao-sente-nada-e-fica-mais-fresca.html": {
+   "h": "b4b8b3a5aa1ccdb9",
+   "d": "2026-11-20"
+  },
+  "argumentos/leite-e-necessario-para-os-ossos.html": {
+   "h": "779d2209421cf37e",
+   "d": "2026-11-20"
+  },
+  "argumentos/leite-e-ovos-nao-matam-ninguem.html": {
+   "h": "05f06cbbe3583402",
+   "d": "2026-11-20"
+  },
+  "argumentos/leoes-comem-outros-animais.html": {
+   "h": "d97cfef86953716f",
+   "d": "2026-11-20"
+  },
+  "argumentos/maquinas-nunca-vao-sentir-robos-e-ias-nao-precisam-de-direitos.html": {
+   "h": "366641a1bae1917b",
+   "d": "2026-11-20"
+  },
+  "argumentos/matar-sem-dor-nao-e-dano.html": {
+   "h": "06dcb951a86ef872",
+   "d": "2026-11-20"
+  },
+  "argumentos/meu-corpo-nao-se-adapta.html": {
+   "h": "b4698a6aa1c0f2f8",
+   "d": "2026-11-20"
+  },
+  "argumentos/meu-medico-mandou-comer-carne.html": {
+   "h": "00c3fa6f4f4fb9d4",
+   "d": "2026-11-20"
+  },
+  "argumentos/meus-avos-comiam-carne-e-viveram-ate-90.html": {
+   "h": "55647fcb776d1098",
+   "d": "2026-11-20"
+  },
+  "argumentos/mexer-na-natureza-e-errado-podemos-piorar-tudo.html": {
+   "h": "571c049f24c6e88b",
+   "d": "2026-11-20"
+  },
+  "argumentos/minha-comida-caga-na-sua.html": {
+   "h": "433af49974123db9",
+   "d": "2026-11-20"
+  },
+  "argumentos/minha-religiao-aprova-o-consumo-de-animais.html": {
+   "h": "e2a747046d4df62c",
+   "d": "2026-11-20"
+  },
+  "argumentos/na-pesca-esportiva-o-peixe-e-solto.html": {
+   "h": "d2bd1625dc43b1f4",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-existe-consumo-etico-no-capitalismo.html": {
+   "h": "e8c1f1456b993e77",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-fomos-nos-que-causamos-entao-nao-temos-obrigacao-de-ajudar.html": {
+   "h": "a101dea5139d5f62",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-ha-como-tracar-estrategias-de-longo-prazo-pois-nao-podemos-prever.html": {
+   "h": "0900547654ad4645",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-quero-desonrar-meus-pais-e-meus-ancestrais.html": {
+   "h": "d8f41ef460245297",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-quero-me-sentir-excluido-comer-junto-e-fazer-parte.html": {
+   "h": "db63886d06d4072c",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-quero-ser-rotulado-o-rotulo-traz-cobranca.html": {
+   "h": "c2604696a31a9067",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-quero-ver-esses-videos.html": {
+   "h": "51ab70a540cabb91",
+   "d": "2026-11-20"
+  },
+  "argumentos/nao-se-pode-comparar-a-vida-humana-com-a-de-um-animal.html": {
+   "h": "b5e573894798fa75",
+   "d": "2026-11-20"
+  },
+  "argumentos/natureza-equilibrada-e-natureza-boa-para-os-bichos.html": {
+   "h": "4702a79fc784f8d5",
+   "d": "2026-11-20"
+  },
+  "argumentos/nem-os-filosofos-concordam.html": {
+   "h": "99060c0753bdc716",
+   "d": "2026-11-20"
+  },
+  "argumentos/ninguem-e-perfeito-faco-o-que-posso.html": {
+   "h": "c929c8b5021c516a",
+   "d": "2026-11-20"
+  },
+  "argumentos/numa-democracia-so-vale-mudar-pela-via-legal.html": {
+   "h": "149ecbb28095ee38",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-agro-sustenta-o-pib-do-pais.html": {
+   "h": "31f3c542f4e281eb",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-animal-de-rodeio-e-um-atleta-bem-tratado-e-so-pula-por-alguns.html": {
+   "h": "f605a8e1c2f7731d",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-animal-ja-esta-morto.html": {
+   "h": "a209d35b0eb19c78",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-carmim-e-um-corante-natural-melhor-que-os-artificiais.html": {
+   "h": "ec6d059203e8d270",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-churrasco-une-a-familia.html": {
+   "h": "4752d7b592ca9e1a",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-couro-e-so-subproduto-da-carne.html": {
+   "h": "01cc88c3ea65676b",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-estado-nao-pode-proibir-o-que-eu-como.html": {
+   "h": "cf56dd97231caedd",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-futuro-com-certeza-sera-melhor-nao-precisamos-nos-preocupar-tanto.html": {
+   "h": "7771320014232fdf",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-gado-evita-incendios-e-o-boi-bombeiro.html": {
+   "h": "1a6f84ff83921d1b",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-gado-pasta-onde-nao-da-para-plantar.html": {
+   "h": "24e1f548200ccac5",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-metano-do-boi-e-biogenico-nao-conta.html": {
+   "h": "bfd1fd3abb06606f",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-normal-da-especie-humana-e-ser-racional.html": {
+   "h": "29d077aff9f208db",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-passarinho-nasceu-na-gaiola-solto-ele-nao-sobrevive.html": {
+   "h": "6c71d779cbf6648b",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-problema-e-a-industria-nao-o-consumo.html": {
+   "h": "b1c9d17fa3cd5268",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-problema-e-o-sofrimento-nao-o-uso.html": {
+   "h": "b1c54671593895e1",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-que-fazer-com-os-animais-se-todos-virarem-veganos.html": {
+   "h": "9ac7081bd914fa84",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-que-importa-e-a-especie-nao-o-individuo.html": {
+   "h": "f7a7978caa4137bb",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-que-importa-e-como-a-comida-e-cultivada-e-nao-se-ela-e-de-origem.html": {
+   "h": "b9e1d0a8c0361fff",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-sacrificio-de-animais-em-rituais-religiosos-e-liberdade-de-culto.html": {
+   "h": "2376b288bbae1fa5",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-touro-de-lide-vive-livre-no-campo-e-morre-lutando.html": {
+   "h": "39f5b1ac5bb24573",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-transporte-de-animais-vivos-e-regulamentado-e-segue-normas-para.html": {
+   "h": "e6f3a33103828a1f",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-veganismo-nao-e-100-livre-de-crueldade.html": {
+   "h": "fc3e5117ee9e85a7",
+   "d": "2026-11-20"
+  },
+  "argumentos/o-veganismo-virou-um-grande-negocio.html": {
+   "h": "9df909111bb95948",
+   "d": "2026-11-20"
+  },
+  "argumentos/olha-o-que-voce-esta-perdendo.html": {
+   "h": "3fe9c9c2f8f27249",
+   "d": "2026-11-20"
+  },
+  "argumentos/onde-tracar-a-linha-insetos-bacterias.html": {
+   "h": "466a0ab10951afac",
+   "d": "2026-11-20"
+  },
+  "argumentos/orgaos-de-porco-vao-salvar-milhares-de-vidas.html": {
+   "h": "cc45e435a2c26259",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-animais-do-circo-sao-bem-tratados-e-fazem-parte-da-familia.html": {
+   "h": "b2b5d3b42ab04723",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-animais-domesticos-sao-responsabilidade-nossa-os-selvagens-nao.html": {
+   "h": "f358afc76c798bad",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-animais-nao-ligam-ate-gostam-e-de-certa-forma-consentem.html": {
+   "h": "10393cbc9deb17c4",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-animais-selvagens-vivem-livres-e-felizes.html": {
+   "h": "69dde924313a2001",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-documentarios-veganos-sao-manipulados.html": {
+   "h": "0c1844073a623673",
+   "d": "2026-11-20"
+  },
+  "argumentos/os-veganos-sao-chatos-e-autoritarios-nao-quero-fazer-parte-desse-grupo.html": {
+   "h": "64f9738dade2ead3",
+   "d": "2026-11-20"
+  },
+  "argumentos/ostras-e-mexilhoes-nao-sentem.html": {
+   "h": "8cd7efdb02752e9d",
+   "d": "2026-11-20"
+  },
+  "argumentos/ovelhas-precisam-ser-tosquiadas.html": {
+   "h": "ed70a9eb17811eb2",
+   "d": "2026-11-20"
+  },
+  "argumentos/pecuaria-regenerativa-sequestra-carbono.html": {
+   "h": "5e58d17ff459cb92",
+   "d": "2026-11-20"
+  },
+  "argumentos/pecuaristas-e-frigorificos-perderiam-empregos.html": {
+   "h": "0b16014b87743953",
+   "d": "2026-11-20"
+  },
+  "argumentos/peixes-e-invertebrados-nao-sentem-dor.html": {
+   "h": "bf020090cba80296",
+   "d": "2026-11-20"
+  },
+  "argumentos/pesca-sustentavel-e-aquicultura-resolvem.html": {
+   "h": "64cc40583b20f819",
+   "d": "2026-11-20"
+  },
+  "argumentos/pescadores-e-vaqueiros-perderiam-sua-identidade.html": {
+   "h": "3fafd3ff8cb09eca",
+   "d": "2026-11-20"
+  },
+  "argumentos/pesco-o-que-como-e-mais-honesto-que-comprar-no-mercado.html": {
+   "h": "7a3ef95d6302206d",
+   "d": "2026-11-20"
+  },
+  "argumentos/plantas-tambem-sentem.html": {
+   "h": "b634a1509c3b12f4",
+   "d": "2026-11-20"
+  },
+  "argumentos/plantas-tem-antinutrientes.html": {
+   "h": "e92e1a86fd3ec062",
+   "d": "2026-11-20"
+  },
+  "argumentos/pobres-e-periferias-nao-tem-acesso.html": {
+   "h": "c0f08433c5799964",
+   "d": "2026-11-20"
+  },
+  "argumentos/por-que-eu-deveria-ser-etico-se-nao-me-traz-vantagem.html": {
+   "h": "936ca78d5d9521ed",
+   "d": "2026-11-20"
+  },
+  "argumentos/povos-indigenas-e-tradicionais-comem-animais.html": {
+   "h": "ea1618f35c90d899",
+   "d": "2026-11-20"
+  },
+  "argumentos/precisamos-de-proteina-animal.html": {
+   "h": "6864c05a307cc6de",
+   "d": "2026-11-20"
+  },
+  "argumentos/proteina-vegetal-e-incompleta.html": {
+   "h": "3bd9dc926d2665dc",
+   "d": "2026-11-20"
+  },
+  "argumentos/quem-ainda-nao-nasceu-nao-importa.html": {
+   "h": "7ff9122157c3cb73",
+   "d": "2026-11-20"
+  },
+  "argumentos/quem-nao-tem-deveres-nao-tem-direitos.html": {
+   "h": "0b9220d3bf6e2450",
+   "d": "2026-11-20"
+  },
+  "argumentos/quem-somos-nos-para-interferir-na-natureza.html": {
+   "h": "32bba92cb7b6b74a",
+   "d": "2026-11-20"
+  },
+  "argumentos/rodeio-vaquejada-tourada-e-circo-sao-cultura.html": {
+   "h": "d2ee148b77570053",
+   "d": "2026-11-20"
+  },
+  "argumentos/safaris-e-passeios-com-animais-sao-turismo-inofensivo.html": {
+   "h": "279e816ccd813f5c",
+   "d": "2026-11-20"
+  },
+  "argumentos/salvar-um-animal-selvagem-so-prolonga-a-agonia.html": {
+   "h": "4a9f46d393a07676",
+   "d": "2026-11-20"
+  },
+  "argumentos/santuarios-de-vida-selvagem-protegem-os-animais.html": {
+   "h": "5a99186a76bb6959",
+   "d": "2026-11-20"
+  },
+  "argumentos/sao-so-animais.html": {
+   "h": "a7ba0812f8156f52",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-a-carne-for-sustentavel-nao-ha-problema.html": {
+   "h": "9c5383a5da2dfb38",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-nao-comermos-os-animais-vao-dominar-o-planeta.html": {
+   "h": "2b2a4a1a60e61295",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-precisa-suplementar-b12-nao-e-natural.html": {
+   "h": "f4d28b0dc03aeacc",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-todo-mundo-virar-vegano-vai-ter-que-desmatar-para-plantar.html": {
+   "h": "86689c0f2d4ffc8a",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-um-cao-e-uma-crianca-se-afogassem-quem-voce-salvaria.html": {
+   "h": "f115d3d552a132ab",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-veganos-comem-imitacao-de-carne-querem-carne.html": {
+   "h": "babebb89fb204c34",
+   "d": "2026-11-20"
+  },
+  "argumentos/se-voce-toma-remedio-nao-pode-ser-contra-testes.html": {
+   "h": "e87f505e2e54802f",
+   "d": "2026-11-20"
+  },
+  "argumentos/seda-e-plumas-sao-naturais-e-nao-fazem-mal-aos-animais.html": {
+   "h": "9d48fea16ed36c0d",
+   "d": "2026-11-20"
+  },
+  "argumentos/sei-que-e-errado-mas-nao-vou-mudar.html": {
+   "h": "8aacfce60974f70d",
+   "d": "2026-11-20"
+  },
+  "argumentos/sem-a-criacao-esses-animais-nem-existiriam.html": {
+   "h": "1b32dfac5f0dfccd",
+   "d": "2026-11-20"
+  },
+  "argumentos/sem-esterco-a-agricultura-nao-funciona.html": {
+   "h": "87705532a0a0bd94",
+   "d": "2026-11-20"
+  },
+  "argumentos/sem-os-zoologicos-varias-especies-ja-estariam-extintas.html": {
+   "h": "bc54423d8ce9c6c7",
+   "d": "2026-11-20"
+  },
+  "argumentos/sempre-fizemos-isso.html": {
+   "h": "87427085a4cb50c2",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-dao-o-mesmo-peso-a-insetos-invertebrados-e-mamiferos.html": {
+   "h": "093daceb72fef5fb",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-defendem-controle-populacional-e-antinatalismo-para-os.html": {
+   "h": "a515da9dd46153c3",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-defendem-parasitas.html": {
+   "h": "ca921685544047fc",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-querem-acabar-com-as-florestas.html": {
+   "h": "0f5c0e252f55eeb4",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-querem-acabar-com-os-predadores.html": {
+   "h": "d7f8774d774f284f",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-sao-ainda-mais-malucos-que-os-veganos.html": {
+   "h": "20a15773593ff4f0",
+   "d": "2026-11-20"
+  },
+  "argumentos/sencientistas-sao-contra-a-preservacao-das-especies-e-da.html": {
+   "h": "fc1d50fe62f3cb5f",
+   "d": "2026-11-20"
+  },
+  "argumentos/ser-vegano-e-admiravel-mas-vai-alem-da-obrigacao.html": {
+   "h": "77a7b91df669bba8",
+   "d": "2026-11-20"
+  },
+  "argumentos/ser-vegano-e-dificil-para-quem-viaja-muito.html": {
+   "h": "2681017cb8f2f10c",
+   "d": "2026-11-20"
+  },
+  "argumentos/ser-vegano-me-limitava-comer-na-casa-dos-meus-familiares.html": {
+   "h": "85b0b451792e169d",
+   "d": "2026-11-20"
+  },
+  "argumentos/ser-vegano-nao-basta-quem-se-importa-de-verdade-so-come-de-horta-ou.html": {
+   "h": "a248bbabe524c6d7",
+   "d": "2026-11-20"
+  },
+  "argumentos/ser-vegano-nao-faz-voce-mais-evoluido-espiritualmente.html": {
+   "h": "0ab90573e9f89eb8",
+   "d": "2026-11-20"
+  },
+  "argumentos/so-peixe-da-omega-3.html": {
+   "h": "906ac4270b92e0b0",
+   "d": "2026-11-20"
+  },
+  "argumentos/sofrimento-e-morte-fazem-parte-da-natureza.html": {
+   "h": "49599f84568dac07",
+   "d": "2026-11-20"
+  },
+  "argumentos/soja-da-hormonio-feminino-e-cancer.html": {
+   "h": "f0b74cf360e56f93",
+   "d": "2026-11-20"
+  },
+  "argumentos/somos-animais-e-fazemos-parte-do-ecossistema-ninguem-vive-sem-impacto.html": {
+   "h": "bbf78ffe864cab6e",
+   "d": "2026-11-20"
+  },
+  "argumentos/sou-pescetariano-troquei-a-carne-por-peixe-e-poupo-os-animais.html": {
+   "h": "57100b0111cbcc86",
+   "d": "2026-11-20"
+  },
+  "argumentos/sou-vegetariano-pelos-animais-ja-faco-a-minha-parte.html": {
+   "h": "94baabaafe38739b",
+   "d": "2026-11-20"
+  },
+  "argumentos/taxar-a-carne-ou-cortar-subsidios-prejudica-os-mais-pobres.html": {
+   "h": "d3513b9e5007ad19",
+   "d": "2026-11-20"
+  },
+  "argumentos/te-admiro-mas-nao-consigo.html": {
+   "h": "4ea52fbe070b0469",
+   "d": "2026-11-20"
+  },
+  "argumentos/tem-gente-morrendo-na-guerra-e-voces-se-preocupam-com-animais.html": {
+   "h": "c2dcc9f5b698a0b1",
+   "d": "2026-11-20"
+  },
+  "argumentos/tem-vegano-machista-racista-e-transfobico.html": {
+   "h": "bf5076c8f14d634e",
+   "d": "2026-11-20"
+  },
+  "argumentos/temos-caninos-somos-onivoros.html": {
+   "h": "a227a99493fb64ec",
+   "d": "2026-11-20"
+  },
+  "argumentos/temos-que-nos-preocupar-com-os-humanos-do-futuro-nao-com-os-animais.html": {
+   "h": "08ddea399d3a3f4a",
+   "d": "2026-11-20"
+  },
+  "argumentos/temos-vontade-natural-de-carne.html": {
+   "h": "e4b761229ea89042",
+   "d": "2026-11-20"
+  },
+  "argumentos/ter-pet-tambem-e-exploracao-e-seu-gato-come-carne.html": {
+   "h": "5768fd1bb1b79cf4",
+   "d": "2026-11-20"
+  },
+  "argumentos/teriamos-que-largar-tudo-para-ajudar-os-animais-selvagens.html": {
+   "h": "997f7f7f9a426dfe",
+   "d": "2026-11-20"
+  },
+  "argumentos/testes-em-animais-salvaram-milhoes-de-vidas.html": {
+   "h": "0c593cb48af6485e",
+   "d": "2026-11-20"
+  },
+  "argumentos/tiveram-uma-vida-boa-e-uma-morte-rapida.html": {
+   "h": "d35b07c417e409f3",
+   "d": "2026-11-20"
+  },
+  "argumentos/todo-mundo-come.html": {
+   "h": "d232f33d2f65e53a",
+   "d": "2026-11-20"
+  },
+  "argumentos/tratar-bem-os-animais-e-questao-de-compaixao-nao-de-justica.html": {
+   "h": "eaa105b19b95f4c5",
+   "d": "2026-11-20"
+  },
+  "argumentos/troquei-a-carne-vermelha-por-frango-que-e-mais-saudavel.html": {
+   "h": "b697cbc214df4c07",
+   "d": "2026-11-20"
+  },
+  "argumentos/tudo-com-moderacao.html": {
+   "h": "4aed1d9eb0f087ce",
+   "d": "2026-11-20"
+  },
+  "argumentos/ultraprocessados-veganos-sao-piores-que-carne.html": {
+   "h": "30c1b59a62f4951c",
+   "d": "2026-11-20"
+  },
+  "argumentos/um-individuo-nao-faz-diferenca.html": {
+   "h": "3440a3329dc0f0f1",
+   "d": "2026-11-20"
+  },
+  "argumentos/usar-remedios-e-genetica-para-acabar-com-o-sofrimento-e-brincar-de.html": {
+   "h": "8da9ce1cccd5720b",
+   "d": "2026-11-20"
+  },
+  "argumentos/vacas-precisam-ser-ordenhadas.html": {
+   "h": "b2e5c0d3a36e369a",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-caro.html": {
+   "h": "93d42705243d5005",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-ideologia-politica-ou-agenda-globalista.html": {
+   "h": "c3390af3feee6433",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-opiniao-nao-ciencia.html": {
+   "h": "cc3a601ccce80562",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-puritanismo-moral.html": {
+   "h": "62cf91a5c6fdd62c",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-seita-religiao.html": {
+   "h": "9cfafb657c6b4f9c",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-so-uma-dieta-da-moda.html": {
+   "h": "c512b59a8657c2bc",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-e-transtorno-alimentar-disfarcado.html": {
+   "h": "d295ee563a3983f5",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganismo-radical-afasta-as-pessoas.html": {
+   "h": "32754a091ef191ed",
+   "d": "2026-11-20"
+  },
+  "argumentos/vegano-e-tudo-hippie.html": {
+   "h": "1b7398a97422edaa",
+   "d": "2026-11-20"
+  },
+  "argumentos/vegano-que-compra-de-empresa-com-trabalho-escravo-nao-e-vegano-de.html": {
+   "h": "14e2d1b5fbfbb050",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-acham-que-so-eles-defendem-os-animais-de-verdade.html": {
+   "h": "d671ad09cfd9ca2e",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-antropomorfizam-os-animais.html": {
+   "h": "d26c4f7c7fd6d387",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-apoiam-pseudociencias.html": {
+   "h": "972d8cb1c1cfc3a8",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-defendem-os-animais-mas-sao-a-favor-do-aborto.html": {
+   "h": "4a19ea713a6ad811",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-deveriam-lutar-por-leis-nao-por-dietas.html": {
+   "h": "607366e5fef816d3",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-nao-deveriam-assistir-a-filmes-nem-jogar-jogos-violentos.html": {
+   "h": "264d3e2d6a82d52e",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-nao-deveriam-entrar-na-politica-porque-a-politica-e-suja.html": {
+   "h": "b1b3ffe5d9b4d7d8",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-nao-deveriam-usar-inteligencia-artificial.html": {
+   "h": "b02f6eda2ed03a83",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-chatos-e-se-acham-superiores.html": {
+   "h": "982bd2bc3c96cd36",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-contra-a-religiao.html": {
+   "h": "2d94aa33d78f86c3",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-contra-o-agronegocio.html": {
+   "h": "3ddddbf66e4ea8dc",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-fracos-palidos-e-deprimidos.html": {
+   "h": "3e0581c99e4f1eb5",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-malucos-tem-problemas-mentais.html": {
+   "h": "6d507e37a10f0b8f",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-sao-racistas-porque-criticam-as-religioes-de-matriz-africana.html": {
+   "h": "0f5cdd79815bdaf9",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-se-importam-mais-com-animais-que-com-humanos.html": {
+   "h": "36a56aa5cb448590",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-tambem-sao-especistas.html": {
+   "h": "252586b13a3dced6",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-tratam-vegetarianos-como-inimigos.html": {
+   "h": "29a408031c89f6d9",
+   "d": "2026-11-20"
+  },
+  "argumentos/veganos-vao-ser-sempre-minoria.html": {
+   "h": "510600e11e33e843",
+   "d": "2026-11-20"
+  },
+  "argumentos/virou-uma-obsessao-eu-vivia-com-culpa.html": {
+   "h": "f3fd87b6b5df307a",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-comeria-animais-se-alguem-te-pagasse-bem.html": {
+   "h": "4dfed2959d734c18",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-comeria-um-animal-que-morreu-de-causas-naturais.html": {
+   "h": "f36fc5d4fcca7c23",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-nao-vive-na-fazenda-para-saber-a-verdade.html": {
+   "h": "7c778b246394c826",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-tambem-mata-mosquitos-e-ratos-em-casa.html": {
+   "h": "546311aeb31cba1b",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-tambem-nao-sente-empatia-por-todos-os-animais-do-mundo.html": {
+   "h": "c47d41794858daa6",
+   "d": "2026-11-20"
+  },
+  "argumentos/voce-usa-celular-logo-e-hipocrita.html": {
+   "h": "1c9f34f91e1bc227",
+   "d": "2026-11-20"
+  },
+  "argumentos/vou-comer-o-dobro-para-compensar-voce.html": {
+   "h": "21fd7baa2e155312",
+   "d": "2026-11-20"
+  },
+  "argumentos/vou-esperar-a-carne-cultivada.html": {
+   "h": "af172714c9176629",
+   "d": "2026-11-20"
+  },
+  "argumentos/vou-pagar-pelos-meus-erros-na-proxima-vida.html": {
+   "h": "d3b6aee2b0fdc5d6",
+   "d": "2026-11-20"
+  },
+  "argumentos/zoologicos-conservam-especies-e-educam.html": {
+   "h": "79fd372d99b24b0b",
+   "d": "2026-11-20"
+  },
+  "argumentos/zootecnistas-cuidam-bem-dos-animais.html": {
+   "h": "06cee47c2795c17c",
+   "d": "2026-11-20"
+  },
+  "biblioteca.html": {
+   "h": "4d82ea87857dd1f4",
+   "d": "2026-11-20"
+  },
+  "comece-aqui.html": {
+   "h": "505e8fc60f668508",
+   "d": "2026-11-20"
+  },
+  "debate.html": {
+   "h": "b9bb0e4185a40782",
+   "d": "2026-11-20"
+  },
+  "exploracao.html": {
+   "h": "c27ce60fa7167f05",
+   "d": "2026-11-20"
+  },
+  "falacias.html": {
+   "h": "b8e37efd867df83d",
+   "d": "2026-11-20"
+  },
+  "familias.html": {
+   "h": "fb8aa32799e46955",
+   "d": "2026-11-20"
+  },
+  "familias/a.html": {
+   "h": "0289008964cf97c3",
+   "d": "2026-11-20"
+  },
+  "familias/b.html": {
+   "h": "da3db3109100f66e",
+   "d": "2026-11-20"
+  },
+  "familias/c.html": {
+   "h": "84939f6a31d11b44",
+   "d": "2026-11-20"
+  },
+  "familias/d.html": {
+   "h": "1d8db6c2a5741d37",
+   "d": "2026-11-20"
+  },
+  "familias/e.html": {
+   "h": "447aba6ef1712836",
+   "d": "2026-11-20"
+  },
+  "familias/f.html": {
+   "h": "b7d510a181a74a7e",
+   "d": "2026-11-20"
+  },
+  "familias/g.html": {
+   "h": "ccf4258b6ac283c3",
+   "d": "2026-11-20"
+  },
+  "familias/h.html": {
+   "h": "6ddc73e7dd19d040",
+   "d": "2026-11-20"
+  },
+  "familias/i.html": {
+   "h": "435e13f35901fdd3",
+   "d": "2026-11-20"
+  },
+  "familias/j.html": {
+   "h": "42a2fc18ebcf81f4",
+   "d": "2026-11-20"
+  },
+  "familias/k.html": {
+   "h": "d51e16db10c11976",
+   "d": "2026-11-20"
+  },
+  "familias/l.html": {
+   "h": "46ad36479180132a",
+   "d": "2026-11-20"
+  },
+  "familias/m.html": {
+   "h": "a6610f46171bf26e",
+   "d": "2026-11-20"
+  },
+  "familias/n.html": {
+   "h": "5ebc4c57631b6f15",
+   "d": "2026-11-20"
+  },
+  "glossario.html": {
+   "h": "fbac257c12718ce6",
+   "d": "2026-11-20"
+  },
+  "index.html": {
+   "h": "f960d83f2dd5d9df",
+   "d": "2026-11-20"
+  },
+  "mapa.html": {
+   "h": "e7998a0b92d68e70",
+   "d": "2026-11-20"
+  },
+  "objecoes-politicas.html": {
+   "h": "a2e5f24d2fde10af",
+   "d": "2026-11-20"
+  },
+  "politicas/altruismo-eficaz.html": {
+   "h": "11786d6ba47d909c",
+   "d": "2026-11-20"
+  },
+  "politicas/ambientalismo.html": {
+   "h": "f72a6f00a03914e8",
+   "d": "2026-11-20"
+  },
+  "politicas/anarquismo.html": {
+   "h": "b4122344ab93b360",
+   "d": "2026-11-20"
+  },
+  "politicas/antidiscriminacao.html": {
+   "h": "198c9cb92d01349e",
+   "d": "2026-11-20"
+  },
+  "politicas/capacidades.html": {
+   "h": "2d9b05551b1039a7",
+   "d": "2026-11-20"
+  },
+  "politicas/comunitarismo.html": {
+   "h": "ae89df3af7d77312",
+   "d": "2026-11-20"
+  },
+  "politicas/conservadorismo.html": {
+   "h": "665ccc8cceb29099",
+   "d": "2026-11-20"
+  },
+  "politicas/contratualismo.html": {
+   "h": "39e9eaa24a4b8f2b",
+   "d": "2026-11-20"
+  },
+  "politicas/cuidado.html": {
+   "h": "7b3d1815a11eb7c7",
+   "d": "2026-11-20"
+  },
+  "politicas/deontologia.html": {
+   "h": "b699876ebc636cdf",
+   "d": "2026-11-20"
+  },
+  "politicas/egoismo-objetivismo.html": {
+   "h": "f5af93534e999bb6",
+   "d": "2026-11-20"
+  },
+  "politicas/esquerda-multiculturalismo.html": {
+   "h": "72c9a6b62df0aefb",
+   "d": "2026-11-20"
+  },
+  "politicas/estoicismo.html": {
+   "h": "09e23c0145c14d64",
+   "d": "2026-11-20"
+  },
+  "politicas/etica-do-discurso.html": {
+   "h": "d99d5c1d44fcd51c",
+   "d": "2026-11-20"
+  },
+  "politicas/feminismo.html": {
+   "h": "daf60d4bf061b939",
+   "d": "2026-11-20"
+  },
+  "politicas/humanismo.html": {
+   "h": "de60316d1139ffe6",
+   "d": "2026-11-20"
+  },
+  "politicas/igualitarismo.html": {
+   "h": "33330304e4da1b33",
+   "d": "2026-11-20"
+  },
+  "politicas/lei-natural.html": {
+   "h": "8a71ffbd2d2ac2a1",
+   "d": "2026-11-20"
+  },
+  "politicas/liberalismo.html": {
+   "h": "d03c2a4e3d422206",
+   "d": "2026-11-20"
+  },
+  "politicas/libertarianismo.html": {
+   "h": "b28ad5bf163ee1ef",
+   "d": "2026-11-20"
+  },
+  "politicas/longoprazismo.html": {
+   "h": "21156e75ec1c0ca5",
+   "d": "2026-11-20"
+  },
+  "politicas/marxismo.html": {
+   "h": "9af9fcfd9e1c5d8c",
+   "d": "2026-11-20"
+  },
+  "politicas/pacifismo.html": {
+   "h": "f68575ae39cdae5b",
+   "d": "2026-11-20"
+  },
+  "politicas/pragmatismo.html": {
+   "h": "f9b3bd04e2378084",
+   "d": "2026-11-20"
+  },
+  "politicas/relativismo.html": {
+   "h": "05b77c704fa051c1",
+   "d": "2026-11-20"
+  },
+  "politicas/religiao.html": {
+   "h": "090b36f19d3cee0e",
+   "d": "2026-11-20"
+  },
+  "politicas/utilitarismo.html": {
+   "h": "96537f0f0afbb415",
+   "d": "2026-11-20"
+  },
+  "politicas/virtudes.html": {
+   "h": "a798eb2da98c5623",
+   "d": "2026-11-20"
+  },
+  "raciocinio.html": {
+   "h": "1a7f6111a0ba5bd1",
+   "d": "2026-11-20"
+  },
+  "ruins/a-anemia-atinge-sobretudo-quem-come-carne.html": {
+   "h": "f9fad0644319531b",
+   "d": "2026-11-20"
+  },
+  "ruins/a-ciencia-prova-que-o-veganismo-e-o-certo.html": {
+   "h": "c1c4f95f56710717",
+   "d": "2026-11-20"
+  },
+  "ruins/a-gorila-koko-conversava-em-lingua-de-sinais.html": {
+   "h": "c148257ab56e5c9f",
+   "d": "2026-11-20"
+  },
+  "ruins/a-pecuaria-causa-51-das-emissoes-de-gases-de-efeito-estufa-do-mundo.html": {
+   "h": "0b62f8dbe02108b5",
+   "d": "2026-11-20"
+  },
+  "ruins/a-pecuaria-polui-mais-do-que-todos-os-carros-avioes-e-navios-juntos.html": {
+   "h": "4d5b66abf213ab04",
+   "d": "2026-11-20"
+  },
+  "ruins/ajudar-animais-selvagens-nao-e-veganismo-e-outra-pauta.html": {
+   "h": "622d3061278fd28f",
+   "d": "2026-11-20"
+  },
+  "ruins/alimento-que-pode-conter-tracos-de-leite-nao-e-vegano.html": {
+   "h": "7ecbdfc573525c65",
+   "d": "2026-11-20"
+  },
+  "ruins/as-superbacterias-vem-dos-antibioticos-dados-aos-animais.html": {
+   "h": "c5e136bd36d565cc",
+   "d": "2026-11-20"
+  },
+  "ruins/brocolis-e-espinafre-tem-mais-proteina-que-carne.html": {
+   "h": "f325346ecd07ffb8",
+   "d": "2026-11-20"
+  },
+  "ruins/cada-vegano-salva-200-animais-por-ano.html": {
+   "h": "d94349961a7313f5",
+   "d": "2026-11-20"
+  },
+  "ruins/carne-cultivada-nao-e-vegana-pois-e-de-origem-animal.html": {
+   "h": "b5c218a5d2da1aa0",
+   "d": "2026-11-20"
+  },
+  "ruins/carne-mais-cara-e-ruim-para-o-povo.html": {
+   "h": "cf6188dd9f2a0b13",
+   "d": "2026-11-20"
+  },
+  "ruins/carne-sem-tempero-nao-tem-gosto-de-nada-todo-o-sabor-vem-do-tempero.html": {
+   "h": "1a90a1a70523fa1e",
+   "d": "2026-11-20"
+  },
+  "ruins/comparar-com-escravidao-afasta-as-pessoas.html": {
+   "h": "041f3c760b710fd3",
+   "d": "2026-11-20"
+  },
+  "ruins/destruir-propriedade-nao-e-violencia.html": {
+   "h": "b230d6bc74304de9",
+   "d": "2026-11-20"
+  },
+  "ruins/deus-nao-fez-os-animais-para-os-humanos.html": {
+   "h": "d9c3393f96e7777e",
+   "d": "2026-11-20"
+  },
+  "ruins/devemos-amar-os-animais.html": {
+   "h": "c545ccddafd3223c",
+   "d": "2026-11-20"
+  },
+  "ruins/dizer-que-e-antiespecista-ou-sencientista-dilui-o-veganismo-nao.html": {
+   "h": "934aae28dc4149cd",
+   "d": "2026-11-20"
+  },
+  "ruins/essa-lei-parcial-e-injusta-com-os-outros-animais.html": {
+   "h": "c9fd7ff44c6357bb",
+   "d": "2026-11-20"
+  },
+  "ruins/esta-provado-que-a-carne-nao-teve-nenhum-papel-na-evolucao-humana.html": {
+   "h": "d3a2c33f7c21787d",
+   "d": "2026-11-20"
+  },
+  "ruins/esta-provado-que-veganos-sao-mais-empaticos.html": {
+   "h": "ed0293304b32b8fe",
+   "d": "2026-11-20"
+  },
+  "ruins/falar-de-animais-selvagens-afasta-as-pessoas-do-veganismo.html": {
+   "h": "8e596d0785c7c2b5",
+   "d": "2026-11-20"
+  },
+  "ruins/gatos-nao-podem-ser-veganos.html": {
+   "h": "6ff3b9d90a371366",
+   "d": "2026-11-20"
+  },
+  "ruins/gorilas-touros-e-cavalos-ficam-fortes-comendo-so-plantas.html": {
+   "h": "f5e61b8e1501168d",
+   "d": "2026-11-20"
+  },
+  "ruins/grandes-genios-como-einstein-e-da-vinci-eram-veganos.html": {
+   "h": "f9ed1c4bba68efdc",
+   "d": "2026-11-20"
+  },
+  "ruins/hitler-nem-era-vegetariano-de-verdade.html": {
+   "h": "444fc37c31c89112",
+   "d": "2026-11-20"
+  },
+  "ruins/jesus-era-vegetariano.html": {
+   "h": "c899372d72234f88",
+   "d": "2026-11-20"
+  },
+  "ruins/medico-nao-entende-nada-de-nutricao.html": {
+   "h": "0ea9124360cc1804",
+   "d": "2026-11-20"
+  },
+  "ruins/meu-parceiro-nao-e-vegano-mas-aceitamos-nossas-diferencas.html": {
+   "h": "b370b0d067467765",
+   "d": "2026-11-20"
+  },
+  "ruins/na-india-quase-todo-mundo-e-vegano.html": {
+   "h": "1424899429ace797",
+   "d": "2026-11-20"
+  },
+  "ruins/nao-e-sua-mae-nao-e-seu-leite.html": {
+   "h": "12672ee3fe3addb7",
+   "d": "2026-11-20"
+  },
+  "ruins/nao-existe-ex-vegano.html": {
+   "h": "05879f3b2e1a0ed2",
+   "d": "2026-11-20"
+  },
+  "ruins/nao-mostre-as-imagens-e-chocante-demais.html": {
+   "h": "bea38b16d2aab0db",
+   "d": "2026-11-20"
+  },
+  "ruins/nao-veganos-sao-nossos-inimigos-e-odia-los-e-normal.html": {
+   "h": "2740322e6c54ac2f",
+   "d": "2026-11-20"
+  },
+  "ruins/nenhum-animal-adulto-bebe-leite.html": {
+   "h": "4f2a74626f64afb6",
+   "d": "2026-11-20"
+  },
+  "ruins/numa-ilha-deserta-eu-morreria-de-fome-antes-de-comer-um-animal.html": {
+   "h": "d44b4718d15bbd3a",
+   "d": "2026-11-20"
+  },
+  "ruins/numa-sala-com-um-coelho-e-uma-maca-a-crianca-come-a-maca-e-brinca-com.html": {
+   "h": "4c87f654fa18e5e6",
+   "d": "2026-11-20"
+  },
+  "ruins/o-ser-humano-e-biologicamente-herbivoro.html": {
+   "h": "8ede698299192b01",
+   "d": "2026-11-20"
+  },
+  "ruins/o-veganismo-nao-deve-se-aliar-a-outras-causas-como-o-feminismo-o.html": {
+   "h": "68c2b7aa604fd6d1",
+   "d": "2026-11-20"
+  },
+  "ruins/o-veganismo-resolveria-a-fome-no-mundo.html": {
+   "h": "886637433877c37b",
+   "d": "2026-11-20"
+  },
+  "ruins/os-animais-tem-direito-a-vida-e-ponto.html": {
+   "h": "f9f9d0799e2ca8b5",
+   "d": "2026-11-20"
+  },
+  "ruins/os-humanos-vem-primeiro.html": {
+   "h": "812e7431448f70c3",
+   "d": "2026-11-20"
+  },
+  "ruins/ostras-e-mexilhoes-sentem-dor-como-qualquer-outro-animal.html": {
+   "h": "e6f8f103d196d894",
+   "d": "2026-11-20"
+  },
+  "ruins/ovo-e-menstruacao-de-galinha.html": {
+   "h": "372afea4922e04e3",
+   "d": "2026-11-20"
+  },
+  "ruins/porcos-sao-mais-inteligentes-que-uma-crianca-de-tres-anos.html": {
+   "h": "cbbc3cd7697d18dc",
+   "d": "2026-11-20"
+  },
+  "ruins/precisamos-confrontar-os-nao-veganos-ja-que-eles-e-que-sao-os.html": {
+   "h": "611d56cb3aed3cec",
+   "d": "2026-11-20"
+  },
+  "ruins/precisamos-dar-direitos-aos-animais.html": {
+   "h": "e772628b6cfbf753",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-come-carne-come-mais-soja-do-que-o-vegano.html": {
+   "h": "b0c937028a9c54b3",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-come-carne-e-psicopata.html": {
+   "h": "faa47dc05a5f4665",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-compra-produtos-de-grandes-empresas-nao-e-vegano.html": {
+   "h": "d9c6173c40103edc",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-defende-mudancas-passo-a-passo-nao-e-vegano-de-verdade.html": {
+   "h": "0128f2d32b54ad53",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-e-a-favor-do-capitalismo-nao-e-vegano-de-verdade.html": {
+   "h": "05b93cdc8dbc4d1f",
+   "d": "2026-11-20"
+  },
+  "ruins/quem-nao-aceita-mudar-pouco-a-pouco-nao-entende-como-o-mundo-funciona.html": {
+   "h": "26b2edda8d67203c",
+   "d": "2026-11-20"
+  },
+  "ruins/se-os-humanos-desaparecessem-o-planeta-e-os-animais-ficariam-melhores.html": {
+   "h": "bad811f0a6787c9b",
+   "d": "2026-11-20"
+  },
+  "ruins/se-voce-ama-uns-por-que-come-outros.html": {
+   "h": "fbad848c76cc9129",
+   "d": "2026-11-20"
+  },
+  "ruins/ser-vegano-e-muito-caro.html": {
+   "h": "43a66edc12f5dc33",
+   "d": "2026-11-20"
+  },
+  "ruins/ser-vegano-evita-pandemias.html": {
+   "h": "4d1ffb925fe8ec7b",
+   "d": "2026-11-20"
+  },
+  "ruins/ser-vegano-exige-ser-anticapitalista.html": {
+   "h": "ac7b42a939d40fe3",
+   "d": "2026-11-20"
+  },
+  "ruins/ser-vegano-vai-te-deixar-mais-saudavel.html": {
+   "h": "d71c43c2a7a7afa6",
+   "d": "2026-11-20"
+  },
+  "ruins/sou-vegano-mas-nao-acho-que-todo-mundo-deveria-ser.html": {
+   "h": "12da46275ad7bc78",
+   "d": "2026-11-20"
+  },
+  "ruins/sou-vegano-mas-nao-tenho-nada-contra-quem-come-carne.html": {
+   "h": "ff645d5b9978c262",
+   "d": "2026-11-20"
+  },
+  "ruins/sou-vegano-mas-provo-comida-quando-visito-meus-familiares.html": {
+   "h": "252d8966b1473bcf",
+   "d": "2026-11-20"
+  },
+  "ruins/sou-vegano-por-compaixao-a-todos-os-seres-vivos.html": {
+   "h": "35486738e5c203fa",
+   "d": "2026-11-20"
+  },
+  "ruins/testes-em-animais-nao-servem-para-nada-90-dos-remedios-falham.html": {
+   "h": "3dde98836e78b528",
+   "d": "2026-11-20"
+  },
+  "ruins/toda-a-b12-da-carne-vem-de-suplemento.html": {
+   "h": "877a66d72a14ba87",
+   "d": "2026-11-20"
+  },
+  "ruins/todas-as-entidades-de-nutricao-do-mundo-aprovam-a-dieta-vegana-para.html": {
+   "h": "fc14f99db43a6d23",
+   "d": "2026-11-20"
+  },
+  "ruins/todo-vegano-precisa-ser-amigavel-com-os-nao-veganos-ou-nao.html": {
+   "h": "9568ac288aa95310",
+   "d": "2026-11-20"
+  },
+  "ruins/todos-os-animais-sao-mortos-conscientes-sem-atordoamento.html": {
+   "h": "aa0315d5a9422480",
+   "d": "2026-11-20"
+  },
+  "ruins/usar-forca-para-proteger-animais-e-sempre-errado.html": {
+   "h": "b9087b7129d3d9c0",
+   "d": "2026-11-20"
+  },
+  "ruins/veganismo-e-ambientalismo-sem-luta-de-classes-e-jardinagem.html": {
+   "h": "fffa9a0491c598c3",
+   "d": "2026-11-20"
+  },
+  "ruins/veganismo-e-so-pelos-animais-o-resto-nao-importa.html": {
+   "h": "45c2e58252882de5",
+   "d": "2026-11-20"
+  },
+  "ruins/vegano-bom-so-come-natural-organico-e-saudavel.html": {
+   "h": "a5e227ff2fd480ab",
+   "d": "2026-11-20"
+  },
+  "ruins/veganos-deveriam-focar-so-em-ativismo-direto-conversando-pessoa-por.html": {
+   "h": "0f9606ae716840cf",
+   "d": "2026-11-20"
+  },
+  "ruins/veganos-deveriam-focar-so-em-ativismo-institucional-mudando-leis.html": {
+   "h": "6e7f71dc322584f5",
+   "d": "2026-11-20"
+  },
+  "ruins/veganos-deveriam-focar-so-em-pessoas-poderosas-e-influentes.html": {
+   "h": "2a2cf8e953085b1a",
+   "d": "2026-11-20"
+  },
+  "ruins/veganos-nao-precisam-suplementar-b12.html": {
+   "h": "8635d90d14c64378",
+   "d": "2026-11-20"
+  },
+  "ruins/veganos-sao-mais-sexies-e-melhores-de-cama.html": {
+   "h": "ad2ecdc4aebbdd03",
+   "d": "2026-11-20"
+  },
+  "ruins/vire-vegano-pelo-planeta.html": {
+   "h": "26de8b146789c3c6",
+   "d": "2026-11-20"
+  },
+  "sobre.html": {
+   "h": "8469a5a700402deb",
+   "d": "2026-11-20"
+  },
+  "treino.html": {
+   "h": "decd4edc75b54f27",
+   "d": "2026-11-20"
+  },
+  "vieses.html": {
+   "h": "4c31343427a34fde",
+   "d": "2026-11-20"
+  }
+ },
+ "en": {
+  "about.html": {
+   "h": "2328908a226cf637",
+   "d": "2026-11-20"
+  },
+  "arguments/a-balanced-nature-is-good-for-animals.html": {
+   "h": "2ded6d680f0c49d2",
+   "d": "2026-11-20"
+  },
+  "arguments/a-carnivore-paleo-or-keto-diet-is-healthiest.html": {
+   "h": "14a8199b83d315be",
+   "d": "2026-11-20"
+  },
+  "arguments/a-fur-coat-is-natural-and-comes-from-regulated-farms.html": {
+   "h": "4aa3173d74be64dc",
+   "d": "2026-11-20"
+  },
+  "arguments/a-lobster-boiled-alive-feels-nothing-and-tastes-fresher.html": {
+   "h": "70d7dc6a4f53566c",
+   "d": "2026-11-20"
+  },
+  "arguments/a-party-with-only-vegan-food-excludes-people-who-eat-meat.html": {
+   "h": "70aa08fa0cf6af91",
+   "d": "2026-11-20"
+  },
+  "arguments/a-rodeo-animal-is-a-well-treated-athlete-and-only-bucks-for-a-few.html": {
+   "h": "ddb54519b0b2c2dc",
+   "d": "2026-11-20"
+  },
+  "arguments/a-shock-collar-is-just-a-stimulus-it-doesnt-hurt-the-dog.html": {
+   "h": "c617d4233b88d9b6",
+   "d": "2026-11-20"
+  },
+  "arguments/a-vegan-who-buys-from-companies-using-slave-labor-isnt-really-vegan.html": {
+   "h": "368103d811b5237b",
+   "d": "2026-11-20"
+  },
+  "arguments/agriculture-cant-work-without-manure.html": {
+   "h": "b631c41cd8007390",
+   "d": "2026-11-20"
+  },
+  "arguments/agriculture-is-the-backbone-of-the-economy.html": {
+   "h": "fc1e9b3a38a24c59",
+   "d": "2026-11-20"
+  },
+  "arguments/ais-say-that-not-being-vegan-isnt-wrong.html": {
+   "h": "763bb53ad4ca58d9",
+   "d": "2026-11-20"
+  },
+  "arguments/animal-advocates-want-to-get-rid-of-pets.html": {
+   "h": "8835778af06a7a65",
+   "d": "2026-11-20"
+  },
+  "arguments/animal-sacrifice-in-religious-rituals-is-freedom-of-worship.html": {
+   "h": "663ba2c1f9717a0a",
+   "d": "2026-11-20"
+  },
+  "arguments/animal-scientists-take-good-care-of-the-animals.html": {
+   "h": "1bf668fede7ccf60",
+   "d": "2026-11-20"
+  },
+  "arguments/animal-testing-has-saved-millions-of-lives.html": {
+   "h": "3cd415c2e90b952f",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-are-property.html": {
+   "h": "5690319402ec4d24",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-arent-conscious-and-dont-feel-pain-like-we-do.html": {
+   "h": "e4446336569f87b8",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-arent-persons.html": {
+   "h": "a1d10e35dec8a5af",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-arent-rational.html": {
+   "h": "1b631c726c5be87b",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-dont-have-language.html": {
+   "h": "ee31817c57faad0f",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-dont-have-souls.html": {
+   "h": "35c99bd11028d903",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-dont-mind-they-even-like-it-and-in-a-way-they-consent.html": {
+   "h": "ded8e8c346b82877",
+   "d": "2026-11-20"
+  },
+  "arguments/animals-in-films-ads-and-videos-are-trained-well-cared-for-actors.html": {
+   "h": "c9a194c7250bcd59",
+   "d": "2026-11-20"
+  },
+  "arguments/aquariums-and-dolphin-parks-are-harmless.html": {
+   "h": "e66e9268f0a54d14",
+   "d": "2026-11-20"
+  },
+  "arguments/athletes-need-meat.html": {
+   "h": "a11be5d10c4f0f50",
+   "d": "2026-11-20"
+  },
+  "arguments/avocados-and-almonds-use-a-lot-of-water.html": {
+   "h": "2b9cb9d75e7bec17",
+   "d": "2026-11-20"
+  },
+  "arguments/barbecues-bring-the-family-together.html": {
+   "h": "873bd54da8072067",
+   "d": "2026-11-20"
+  },
+  "arguments/bees-make-extra-honey.html": {
+   "h": "a6351a63a648f12e",
+   "d": "2026-11-20"
+  },
+  "arguments/being-vegan-doesnt-make-you-more-spiritually-evolved.html": {
+   "h": "c1662be37161cf72",
+   "d": "2026-11-20"
+  },
+  "arguments/being-vegan-is-admirable-but-it-goes-beyond-duty.html": {
+   "h": "1e5e8f20e9de81cb",
+   "d": "2026-11-20"
+  },
+  "arguments/being-vegan-is-hard-if-you-travel-a-lot.html": {
+   "h": "e2355dec92f074bd",
+   "d": "2026-11-20"
+  },
+  "arguments/being-vegan-isnt-enough-if-you-really-cared-youd-only-eat-from.html": {
+   "h": "00b950a96b6aea1c",
+   "d": "2026-11-20"
+  },
+  "arguments/being-vegan-limited-me-when-eating-at-my-relatives-homes.html": {
+   "h": "8dd9f0d8efadc001",
+   "d": "2026-11-20"
+  },
+  "arguments/billions-of-people-depend-on-fish-for-protein.html": {
+   "h": "e9b5fff6681a9d88",
+   "d": "2026-11-20"
+  },
+  "arguments/buying-a-pedigree-dog-or-cat-doesnt-hurt-anyone.html": {
+   "h": "3191e154d8f41df2",
+   "d": "2026-11-20"
+  },
+  "arguments/carmine-is-a-natural-dye-better-than-artificial-ones.html": {
+   "h": "b63970ccab884b41",
+   "d": "2026-11-20"
+  },
+  "arguments/cattle-graze-where-crops-cant-grow.html": {
+   "h": "d8df33cb1cd381c7",
+   "d": "2026-11-20"
+  },
+  "arguments/cattle-prevent-wildfires-theyre-firefighter-cattle.html": {
+   "h": "73736dfb45b07eb8",
+   "d": "2026-11-20"
+  },
+  "arguments/children-and-pregnant-women-cant-be-vegan.html": {
+   "h": "fe4699d808867d8c",
+   "d": "2026-11-20"
+  },
+  "arguments/circus-animals-are-well-treated-and-part-of-the-family.html": {
+   "h": "3014e42be3d868f9",
+   "d": "2026-11-20"
+  },
+  "arguments/comparing-animal-farming-to-slavery-or-the-holocaust-is-offensive.html": {
+   "h": "67f6794877d74831",
+   "d": "2026-11-20"
+  },
+  "arguments/cosmetics-tested-on-animals-are-safer.html": {
+   "h": "693799fef861b413",
+   "d": "2026-11-20"
+  },
+  "arguments/cow-methane-is-biogenic-it-doesnt-count.html": {
+   "h": "486d06b002b23618",
+   "d": "2026-11-20"
+  },
+  "arguments/cows-need-to-be-milked.html": {
+   "h": "40945f8e7484877b",
+   "d": "2026-11-20"
+  },
+  "arguments/defending-animals-is-an-emotional-appeal-not-an-argument.html": {
+   "h": "1b7972951e5d9ef7",
+   "d": "2026-11-20"
+  },
+  "arguments/defending-animals-is-just-utilitarianism.html": {
+   "h": "5f674487475ff770",
+   "d": "2026-11-20"
+  },
+  "arguments/defending-animals-is-middle-class-moralism.html": {
+   "h": "fca25bd6faaf8b48",
+   "d": "2026-11-20"
+  },
+  "arguments/domestic-animals-are-our-responsibility-wild-ones-are-not.html": {
+   "h": "276d77c4fbb643e3",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-animals-is-necessary-to-survive.html": {
+   "h": "2e274f95961fd1bc",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-animals-isnt-cruelty-its-for-nourishment.html": {
+   "h": "d2fb45f1e02801e8",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-insects-is-the-sustainable-protein-of-the-future.html": {
+   "h": "fe2ced0027af8ccf",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-meat-isnt-an-ideology-veganism-is.html": {
+   "h": "8a6e58f3f219faee",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-meat-made-us-evolve.html": {
+   "h": "b102138f500f7bfe",
+   "d": "2026-11-20"
+  },
+  "arguments/eating-out-traveling-and-parties-become-impossible.html": {
+   "h": "d08fe790a5d0fb26",
+   "d": "2026-11-20"
+  },
+  "arguments/equating-animals-with-disabled-humans-will-degrade-humans.html": {
+   "h": "38e5da5ab1c90bbf",
+   "d": "2026-11-20"
+  },
+  "arguments/even-philosophers-dont-agree.html": {
+   "h": "da159297b20432a5",
+   "d": "2026-11-20"
+  },
+  "arguments/everybody-eats-meat.html": {
+   "h": "0c49b3710c34874b",
+   "d": "2026-11-20"
+  },
+  "arguments/everything-in-moderation.html": {
+   "h": "c6d4a7a7edc84ab6",
+   "d": "2026-11-20"
+  },
+  "arguments/farm-animals-exist-for-this.html": {
+   "h": "4a51d7d3f0b05375",
+   "d": "2026-11-20"
+  },
+  "arguments/farmers-and-slaughterhouse-workers-would-lose-their-jobs.html": {
+   "h": "32711d59cad3a582",
+   "d": "2026-11-20"
+  },
+  "arguments/feeding-a-dog-or-cat-vegan-food-is-animal-abuse.html": {
+   "h": "581d2469259d7f1e",
+   "d": "2026-11-20"
+  },
+  "arguments/fish-and-invertebrates-dont-feel-pain.html": {
+   "h": "b1d55e505e8c22b3",
+   "d": "2026-11-20"
+  },
+  "arguments/fishers-and-ranchers-would-lose-their-identity.html": {
+   "h": "84f564fff99e38bc",
+   "d": "2026-11-20"
+  },
+  "arguments/foie-gras-is-a-traditional-delicacy-and-ducks-naturally-eat-a-lot.html": {
+   "h": "f53ced25ac83b140",
+   "d": "2026-11-20"
+  },
+  "arguments/free-range-animals-are-happy.html": {
+   "h": "50c0c7faa183c793",
+   "d": "2026-11-20"
+  },
+  "arguments/fruitarianism-isnt-healthy-so-veganism-isnt-either.html": {
+   "h": "e3b296b24e2de850",
+   "d": "2026-11-20"
+  },
+  "arguments/god-gave-us-dominion-over-animals.html": {
+   "h": "1d705e8a16d95409",
+   "d": "2026-11-20"
+  },
+  "arguments/great-thinkers-ate-meat.html": {
+   "h": "7999ae9b28520f51",
+   "d": "2026-11-20"
+  },
+  "arguments/guide-and-assistance-dogs-are-well-cared-for-and-do-important-work.html": {
+   "h": "eb07295c349ee639",
+   "d": "2026-11-20"
+  },
+  "arguments/harvests-kill-animals-vegans-kill-too.html": {
+   "h": "d90b9dc71f8aa17d",
+   "d": "2026-11-20"
+  },
+  "arguments/having-a-pet-is-exploitation-too-and-your-cat-eats-meat.html": {
+   "h": "c4b046f865ba1baa",
+   "d": "2026-11-20"
+  },
+  "arguments/he-eats-meat-but-hes-a-good-person.html": {
+   "h": "c82bc8190560b542",
+   "d": "2026-11-20"
+  },
+  "arguments/helping-the-weak-ruins-natural-selection.html": {
+   "h": "552d64a7105f5c7e",
+   "d": "2026-11-20"
+  },
+  "arguments/helping-wild-animals-isnt-veganism-its-a-different-cause.html": {
+   "h": "c32a0eb1b890e6fe",
+   "d": "2026-11-20"
+  },
+  "arguments/hitler-was-a-vegetarian.html": {
+   "h": "e4c977a81fe89a10",
+   "d": "2026-11-20"
+  },
+  "arguments/horses-like-working-and-being-ridden.html": {
+   "h": "0c0c5f21bf67759c",
+   "d": "2026-11-20"
+  },
+  "arguments/human-babies-have-the-potential-to-be-rational.html": {
+   "h": "611c2afea700a384",
+   "d": "2026-11-20"
+  },
+  "arguments/human-life-cant-be-compared-with-an-animals-life.html": {
+   "h": "908284795943600c",
+   "d": "2026-11-20"
+  },
+  "arguments/humans-are-superior-so-we-can-use-the-inferior.html": {
+   "h": "dc654547d207ef63",
+   "d": "2026-11-20"
+  },
+  "arguments/humans-have-intrinsic-value-animals-have-instrumental-value.html": {
+   "h": "550788c75458dfd1",
+   "d": "2026-11-20"
+  },
+  "arguments/humans-suffer-more-than-animals.html": {
+   "h": "ec2e89132cc4faf4",
+   "d": "2026-11-20"
+  },
+  "arguments/hunting-controls-populations.html": {
+   "h": "05b991a9fa133edd",
+   "d": "2026-11-20"
+  },
+  "arguments/i-admire-you-but-i-cant-do-it.html": {
+   "h": "556f816b8ff05454",
+   "d": "2026-11-20"
+  },
+  "arguments/i-agree-with-vegans-veganism-is-an-important-movement.html": {
+   "h": "aeff4f6c2788a848",
+   "d": "2026-11-20"
+  },
+  "arguments/i-dont-kill-i-just-eat.html": {
+   "h": "c579574caba16dfa",
+   "d": "2026-11-20"
+  },
+  "arguments/i-dont-want-to-be-labeled-the-label-brings-pressure.html": {
+   "h": "b0c2d849dea6d65d",
+   "d": "2026-11-20"
+  },
+  "arguments/i-dont-want-to-dishonor-my-parents-and-my-ancestors.html": {
+   "h": "a157a2d25f2c87a7",
+   "d": "2026-11-20"
+  },
+  "arguments/i-dont-want-to-feel-left-out-eating-together-is-how-you-belong.html": {
+   "h": "c8cdcebb0568de04",
+   "d": "2026-11-20"
+  },
+  "arguments/i-dont-want-to-see-those-videos.html": {
+   "h": "6dba2d00215b6ae8",
+   "d": "2026-11-20"
+  },
+  "arguments/i-eat-little-meat-thats-enough.html": {
+   "h": "cfbf5826d2137cc6",
+   "d": "2026-11-20"
+  },
+  "arguments/i-fish-what-i-eat-its-more-honest-than-buying-at-the-store.html": {
+   "h": "4bb6bf35488556ee",
+   "d": "2026-11-20"
+  },
+  "arguments/i-hate-vegans.html": {
+   "h": "5c8ab0de5a0a831a",
+   "d": "2026-11-20"
+  },
+  "arguments/i-honor-the-animals-i-eat.html": {
+   "h": "87953ee08aeef0d7",
+   "d": "2026-11-20"
+  },
+  "arguments/i-know-its-wrong-but-i-wont-change.html": {
+   "h": "0ad8d4c269e170a5",
+   "d": "2026-11-20"
+  },
+  "arguments/i-know-someone-who-got-sick-being-vegan.html": {
+   "h": "72e69f732477ef06",
+   "d": "2026-11-20"
+  },
+  "arguments/i-love-animals-but.html": {
+   "h": "f75ff1b2dbe77b04",
+   "d": "2026-11-20"
+  },
+  "arguments/i-only-use-cruelty-free-products.html": {
+   "h": "03d4844f83867917",
+   "d": "2026-11-20"
+  },
+  "arguments/i-respect-animals-but-humans-come-first.html": {
+   "h": "dd8343c25f6134ae",
+   "d": "2026-11-20"
+  },
+  "arguments/i-stopped-being-vegan-because-i-started-feeling-unwell.html": {
+   "h": "9ad95767e70de566",
+   "d": "2026-11-20"
+  },
+  "arguments/i-stopped-being-vegan-because-im-at-a-different-stage-of-life.html": {
+   "h": "ce00be200af44982",
+   "d": "2026-11-20"
+  },
+  "arguments/i-swapped-red-meat-for-chicken-which-is-healthier.html": {
+   "h": "a420cabdb021aaf0",
+   "d": "2026-11-20"
+  },
+  "arguments/i-used-to-be-vegan-i-know-what-im-talking-about.html": {
+   "h": "991e49b7a621586a",
+   "d": "2026-11-20"
+  },
+  "arguments/i-was-vegan-and-started-getting-too-radical-too-rigid.html": {
+   "h": "257068c6af446686",
+   "d": "2026-11-20"
+  },
+  "arguments/i-was-vegan-for-my-health-and-i-changed-my-mind.html": {
+   "h": "509e9f6b33a42bfb",
+   "d": "2026-11-20"
+  },
+  "arguments/if-a-dog-and-a-child-were-drowning-which-would-you-save.html": {
+   "h": "782cf6f8a2867e73",
+   "d": "2026-11-20"
+  },
+  "arguments/if-everyone-goes-vegan-well-have-to-clear-forests-to-grow-crops.html": {
+   "h": "82e9107b98c54804",
+   "d": "2026-11-20"
+  },
+  "arguments/if-meat-is-sustainable-theres-no-problem.html": {
+   "h": "e0482adc96b262ea",
+   "d": "2026-11-20"
+  },
+  "arguments/if-vegans-eat-fake-meat-they-want-meat.html": {
+   "h": "425edf63768d05f5",
+   "d": "2026-11-20"
+  },
+  "arguments/if-we-dont-eat-them-animals-will-take-over-the-planet.html": {
+   "h": "8dc38c0d2bbfc2ed",
+   "d": "2026-11-20"
+  },
+  "arguments/if-you-need-b12-supplements-it-isnt-natural.html": {
+   "h": "78c6302a1f9464aa",
+   "d": "2026-11-20"
+  },
+  "arguments/if-you-take-medicine-you-cant-oppose-testing.html": {
+   "h": "ae36a33ab3816c91",
+   "d": "2026-11-20"
+  },
+  "arguments/ill-eat-double-to-make-up-for-you.html": {
+   "h": "a8f4ab0ab42e5594",
+   "d": "2026-11-20"
+  },
+  "arguments/ill-pay-for-my-mistakes-in-my-next-life.html": {
+   "h": "bd9109ecdd85f3ca",
+   "d": "2026-11-20"
+  },
+  "arguments/ill-wait-for-cultivated-meat.html": {
+   "h": "70f49725166a7b18",
+   "d": "2026-11-20"
+  },
+  "arguments/im-pescatarian-i-swapped-meat-for-fish-and-spare-the-animals.html": {
+   "h": "ca160b7b3581659c",
+   "d": "2026-11-20"
+  },
+  "arguments/im-vegetarian-for-the-animals-i-already-do-my-part.html": {
+   "h": "fd676903a9595ad9",
+   "d": "2026-11-20"
+  },
+  "arguments/imported-vegan-food-pollutes-in-transport.html": {
+   "h": "79bb416d4b81292a",
+   "d": "2026-11-20"
+  },
+  "arguments/in-a-democracy-only-legal-means-of-change-are-legitimate.html": {
+   "h": "c57052544a6ea1d0",
+   "d": "2026-11-20"
+  },
+  "arguments/in-sport-fishing-the-fish-is-released.html": {
+   "h": "435a8f1dda56ce5d",
+   "d": "2026-11-20"
+  },
+  "arguments/indigenous-and-traditional-peoples-eat-animals.html": {
+   "h": "82ba4a521759cd62",
+   "d": "2026-11-20"
+  },
+  "arguments/it-became-an-obsession-i-lived-with-guilt.html": {
+   "h": "f44f0dbeb01fa464",
+   "d": "2026-11-20"
+  },
+  "arguments/its-a-fair-trade-we-care-for-them-and-feed-them-and-they-give-us-meat.html": {
+   "h": "9fe98de5cb91f92e",
+   "d": "2026-11-20"
+  },
+  "arguments/its-cultural-criticizing-it-is-ethnocentric.html": {
+   "h": "7a35e9f4d3ff0521",
+   "d": "2026-11-20"
+  },
+  "arguments/its-hard-i-dont-have-time.html": {
+   "h": "fca48b52699be5b2",
+   "d": "2026-11-20"
+  },
+  "arguments/its-impossible-to-solve-suffering-in-nature-its-too-big-and-complex.html": {
+   "h": "f07bbe99aa02fc4e",
+   "d": "2026-11-20"
+  },
+  "arguments/its-legal-the-law-allows-it.html": {
+   "h": "c51dda7fbab85486",
+   "d": "2026-11-20"
+  },
+  "arguments/its-my-personal-choice-dont-impose-your-morals.html": {
+   "h": "6c233ae162ef8f4d",
+   "d": "2026-11-20"
+  },
+  "arguments/its-natural-to-eat-meat.html": {
+   "h": "aa09c6b09e4b825c",
+   "d": "2026-11-20"
+  },
+  "arguments/its-natural-to-put-our-own-first.html": {
+   "h": "992589f978cd2ffa",
+   "d": "2026-11-20"
+  },
+  "arguments/its-normal-for-humans-to-be-rational.html": {
+   "h": "8a2754a5d6f54afc",
+   "d": "2026-11-20"
+  },
+  "arguments/its-the-circle-of-life.html": {
+   "h": "f995d0548c9b06a5",
+   "d": "2026-11-20"
+  },
+  "arguments/jesus-ate-fish.html": {
+   "h": "aab481fb7d253646",
+   "d": "2026-11-20"
+  },
+  "arguments/kangaroo-meat-is-the-most-sustainable-meat-there-is.html": {
+   "h": "811b1b935d5f4c8c",
+   "d": "2026-11-20"
+  },
+  "arguments/killing-without-pain-isnt-harm.html": {
+   "h": "da28f656a05b9e78",
+   "d": "2026-11-20"
+  },
+  "arguments/leather-and-wool-are-more-sustainable-than-synthetics-which-are.html": {
+   "h": "a69c90cb473901c9",
+   "d": "2026-11-20"
+  },
+  "arguments/leather-is-just-a-byproduct-of-meat.html": {
+   "h": "53f1e5f3b2168945",
+   "d": "2026-11-20"
+  },
+  "arguments/lions-eat-other-animals.html": {
+   "h": "03ae4a03b940b57f",
+   "d": "2026-11-20"
+  },
+  "arguments/live-animal-transport-is-regulated-and-follows-standards-to-ensure.html": {
+   "h": "e83a9ad9b0edecf4",
+   "d": "2026-11-20"
+  },
+  "arguments/livestock-pollutes-little-the-problem-is-fossil-fuels.html": {
+   "h": "a71f76fbb010003b",
+   "d": "2026-11-20"
+  },
+  "arguments/local-organic-meat-is-sustainable.html": {
+   "h": "80bf608744fdcc0b",
+   "d": "2026-11-20"
+  },
+  "arguments/look-what-youre-missing.html": {
+   "h": "cc5d0fdea5597498",
+   "d": "2026-11-20"
+  },
+  "arguments/machines-will-never-feel-robots-and-ais-need-no-rights.html": {
+   "h": "26414b43c639542f",
+   "d": "2026-11-20"
+  },
+  "arguments/meat-is-for-real-men.html": {
+   "h": "21103213dd8f6aca",
+   "d": "2026-11-20"
+  },
+  "arguments/meat-tastes-good.html": {
+   "h": "cacc5ef0e88cb404",
+   "d": "2026-11-20"
+  },
+  "arguments/meddling-with-nature-is-wrong-we-could-make-everything-worse.html": {
+   "h": "c987bffcb833c25e",
+   "d": "2026-11-20"
+  },
+  "arguments/medical-and-veterinary-students-need-to-practice-on-animals.html": {
+   "h": "76d4da0a5c41df39",
+   "d": "2026-11-20"
+  },
+  "arguments/might-makes-right.html": {
+   "h": "15b55fad3b90f9b5",
+   "d": "2026-11-20"
+  },
+  "arguments/milk-and-eggs-dont-kill-anyone.html": {
+   "h": "0fb33cc7f4a6e299",
+   "d": "2026-11-20"
+  },
+  "arguments/milk-is-necessary-for-your-bones.html": {
+   "h": "cdae739c7861b835",
+   "d": "2026-11-20"
+  },
+  "arguments/morality-exists-to-protect-us-from-each-other.html": {
+   "h": "4a9498f3d37d133b",
+   "d": "2026-11-20"
+  },
+  "arguments/morality-is-relative.html": {
+   "h": "92743c1685d6066f",
+   "d": "2026-11-20"
+  },
+  "arguments/most-vegans-give-up.html": {
+   "h": "4aa5171973115cc3",
+   "d": "2026-11-20"
+  },
+  "arguments/my-body-cant-adapt.html": {
+   "h": "df2ebe5b1fcc019c",
+   "d": "2026-11-20"
+  },
+  "arguments/my-doctor-told-me-to-eat-meat.html": {
+   "h": "803ef4429b07d7f0",
+   "d": "2026-11-20"
+  },
+  "arguments/my-food-beats-yours.html": {
+   "h": "b96f191e0ebc68de",
+   "d": "2026-11-20"
+  },
+  "arguments/my-grandparents-ate-meat-and-lived-to-90.html": {
+   "h": "ff398dd56e8348ee",
+   "d": "2026-11-20"
+  },
+  "arguments/my-religion-approves-of-eating-animals.html": {
+   "h": "25f5ef28acff1efa",
+   "d": "2026-11-20"
+  },
+  "arguments/nature-is-fair-every-animal-has-weapons-to-escape.html": {
+   "h": "d2b29614f422cdf2",
+   "d": "2026-11-20"
+  },
+  "arguments/no-duties-no-rights.html": {
+   "h": "7d6de14c9f4c007a",
+   "d": "2026-11-20"
+  },
+  "arguments/nobodys-perfect-i-do-what-i-can.html": {
+   "h": "9013cf90701eb338",
+   "d": "2026-11-20"
+  },
+  "arguments/on-a-desert-island-would-you-eat-an-animal.html": {
+   "h": "a6847d13bf516c78",
+   "d": "2026-11-20"
+  },
+  "arguments/on-a-desert-island-would-you-kill-a-person-to-eat-then.html": {
+   "h": "7a87b58e9740d5ba",
+   "d": "2026-11-20"
+  },
+  "arguments/one-person-doesnt-make-a-difference.html": {
+   "h": "c2a07ef06d78a6e7",
+   "d": "2026-11-20"
+  },
+  "arguments/only-fish-provides-omega-3.html": {
+   "h": "136a1bb120eeb299",
+   "d": "2026-11-20"
+  },
+  "arguments/oysters-and-mussels-dont-feel.html": {
+   "h": "cb5831d959c6a896",
+   "d": "2026-11-20"
+  },
+  "arguments/people-are-dying-in-a-war-and-youre-worried-about-animals.html": {
+   "h": "947047b5a20d5aff",
+   "d": "2026-11-20"
+  },
+  "arguments/pig-organs-will-save-thousands-of-lives.html": {
+   "h": "ec2016a8df90f04f",
+   "d": "2026-11-20"
+  },
+  "arguments/plant-monoculture-destroys-as-much-as-industrial-animal-farming.html": {
+   "h": "b22a6f02c6878a6c",
+   "d": "2026-11-20"
+  },
+  "arguments/plant-protein-is-incomplete.html": {
+   "h": "00a68da590a5371e",
+   "d": "2026-11-20"
+  },
+  "arguments/plants-feel-too.html": {
+   "h": "0dc8d8f858fa6750",
+   "d": "2026-11-20"
+  },
+  "arguments/plants-have-antinutrients.html": {
+   "h": "91c0dc104b4eef8a",
+   "d": "2026-11-20"
+  },
+  "arguments/police-and-detection-dogs-are-well-cared-for-and-save-lives.html": {
+   "h": "3fa47f2795996de7",
+   "d": "2026-11-20"
+  },
+  "arguments/poor-people-have-no-access.html": {
+   "h": "657d13d43ca9eb24",
+   "d": "2026-11-20"
+  },
+  "arguments/racehorses-and-sporting-dogs-live-better-than-many-people.html": {
+   "h": "6475971411c3ef65",
+   "d": "2026-11-20"
+  },
+  "arguments/radical-veganism-pushes-people-away.html": {
+   "h": "c7068184d998cb2a",
+   "d": "2026-11-20"
+  },
+  "arguments/raising-vegan-children-is-imposing-an-ideology.html": {
+   "h": "94c78bf6fcba5e42",
+   "d": "2026-11-20"
+  },
+  "arguments/regenerative-grazing-sequesters-carbon.html": {
+   "h": "381af524f451558d",
+   "d": "2026-11-20"
+  },
+  "arguments/rights-are-a-human-invention-only-for-humans.html": {
+   "h": "20b524dba51f6ae1",
+   "d": "2026-11-20"
+  },
+  "arguments/rodeos-bullfights-and-circuses-are-culture.html": {
+   "h": "864b5647232a6b88",
+   "d": "2026-11-20"
+  },
+  "arguments/safaris-and-animal-tours-are-harmless-tourism.html": {
+   "h": "5a2b3e3158b48047",
+   "d": "2026-11-20"
+  },
+  "arguments/saving-a-wild-animal-only-prolongs-its-agony.html": {
+   "h": "cc259b50da25afa4",
+   "d": "2026-11-20"
+  },
+  "arguments/science-shows-animal-testing-works-so-its-ethical.html": {
+   "h": "de6b2241b0738599",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-are-against-preserving-species-and-biodiversity.html": {
+   "h": "32ec5b94076b8ff7",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-are-even-crazier-than-vegans.html": {
+   "h": "c11626f9afff8b18",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-defend-parasites.html": {
+   "h": "ab4e52d1fdaa0739",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-give-the-same-weight-to-insects-invertebrates-and-mammals.html": {
+   "h": "43eeb1840399d952",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-support-population-control-and-antinatalism-for-wild.html": {
+   "h": "57aa56add5c6dc86",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-want-to-get-rid-of-forests.html": {
+   "h": "df4dc39bd892165b",
+   "d": "2026-11-20"
+  },
+  "arguments/sentientists-want-to-get-rid-of-predators.html": {
+   "h": "041cef40c4cffe8a",
+   "d": "2026-11-20"
+  },
+  "arguments/sheep-need-to-be-shorn.html": {
+   "h": "8722bbf7e226d68f",
+   "d": "2026-11-20"
+  },
+  "arguments/should-we-stop-lions-from-hunting-them-then.html": {
+   "h": "71e28e65398562ea",
+   "d": "2026-11-20"
+  },
+  "arguments/silk-and-down-are-natural-and-dont-harm-animals.html": {
+   "h": "ba3beee7ffe5e8fc",
+   "d": "2026-11-20"
+  },
+  "arguments/soy-causes-female-hormones-and-cancer.html": {
+   "h": "6b0b278e6bb2f89a",
+   "d": "2026-11-20"
+  },
+  "arguments/species-is-biology-race-is-a-social-construct.html": {
+   "h": "8fcd923d880f8ffe",
+   "d": "2026-11-20"
+  },
+  "arguments/sport-hunting-funds-conservation.html": {
+   "h": "5b720d8abceefecb",
+   "d": "2026-11-20"
+  },
+  "arguments/stressed-animals-make-bad-meat-so-farmers-take-good-care-of-them.html": {
+   "h": "78410da789408bff",
+   "d": "2026-11-20"
+  },
+  "arguments/suffering-and-death-are-part-of-nature.html": {
+   "h": "ebe22b7c1061f881",
+   "d": "2026-11-20"
+  },
+  "arguments/sustainable-fishing-and-aquaculture-solve-it.html": {
+   "h": "12983e3badcba315",
+   "d": "2026-11-20"
+  },
+  "arguments/taxing-meat-or-cutting-subsidies-hurts-the-poor.html": {
+   "h": "c8572a20bab76cc5",
+   "d": "2026-11-20"
+  },
+  "arguments/thats-science-fiction-we-have-real-problems-now.html": {
+   "h": "7620c46276be6cc4",
+   "d": "2026-11-20"
+  },
+  "arguments/the-animal-is-already-dead.html": {
+   "h": "df0cc3c30f0e7387",
+   "d": "2026-11-20"
+  },
+  "arguments/the-bird-was-born-in-a-cage-it-wouldnt-survive-if-released.html": {
+   "h": "94d051903bfed2cf",
+   "d": "2026-11-20"
+  },
+  "arguments/the-cart-is-the-carters-livelihood-and-the-horse-is-well-cared-for.html": {
+   "h": "a246a8300d281cab",
+   "d": "2026-11-20"
+  },
+  "arguments/the-fighting-bull-lives-free-in-the-field-and-dies-fighting.html": {
+   "h": "fac857de6bbb4f2d",
+   "d": "2026-11-20"
+  },
+  "arguments/the-future-will-certainly-be-better-so-theres-no-need-to-worry-so-much.html": {
+   "h": "0a014b6e3a6f7dbc",
+   "d": "2026-11-20"
+  },
+  "arguments/the-law-guarantees-animal-welfare.html": {
+   "h": "2561718e6babc7b3",
+   "d": "2026-11-20"
+  },
+  "arguments/the-problem-is-suffering-not-use.html": {
+   "h": "4bca5a814b374b5e",
+   "d": "2026-11-20"
+  },
+  "arguments/the-problem-is-the-industry-not-consumers.html": {
+   "h": "58b5a8cd494ea764",
+   "d": "2026-11-20"
+  },
+  "arguments/the-state-cant-ban-what-i-eat.html": {
+   "h": "45a4e125e538736e",
+   "d": "2026-11-20"
+  },
+  "arguments/the-who-exaggerates-red-meat-isnt-bad-for-you.html": {
+   "h": "e214234d1b89be6d",
+   "d": "2026-11-20"
+  },
+  "arguments/there-are-different-degrees-of-consciousness-so-less-conscious.html": {
+   "h": "f530a0da79e51639",
+   "d": "2026-11-20"
+  },
+  "arguments/there-are-more-important-human-problems.html": {
+   "h": "33f03ef305b23e21",
+   "d": "2026-11-20"
+  },
+  "arguments/there-are-sexist-racist-and-transphobic-vegans.html": {
+   "h": "57bf9ff3b176e711",
+   "d": "2026-11-20"
+  },
+  "arguments/there-is-humane-slaughter.html": {
+   "h": "6331667a8298b3dd",
+   "d": "2026-11-20"
+  },
+  "arguments/there-is-no-ethical-consumption-under-capitalism.html": {
+   "h": "d40e35794d1cad97",
+   "d": "2026-11-20"
+  },
+  "arguments/theres-no-way-to-plan-for-the-long-term-since-we-cant-predict-a.html": {
+   "h": "03214e083d88ffe1",
+   "d": "2026-11-20"
+  },
+  "arguments/they-had-a-good-life-and-a-quick-death.html": {
+   "h": "5a190d40cee46c11",
+   "d": "2026-11-20"
+  },
+  "arguments/theyre-just-animals.html": {
+   "h": "a0b2cd3989b10bb8",
+   "d": "2026-11-20"
+  },
+  "arguments/this-is-my-living-it-feeds-my-family.html": {
+   "h": "3007707513b6ee2e",
+   "d": "2026-11-20"
+  },
+  "arguments/those-not-yet-born-dont-matter.html": {
+   "h": "99f891df5323c330",
+   "d": "2026-11-20"
+  },
+  "arguments/those-videos-are-exceptions-or-staged.html": {
+   "h": "735fe48f637f8879",
+   "d": "2026-11-20"
+  },
+  "arguments/traditional-medicine-has-used-animal-parts-for-millennia.html": {
+   "h": "e196fe83a5fc661d",
+   "d": "2026-11-20"
+  },
+  "arguments/treating-animals-well-is-a-matter-of-compassion-not-justice.html": {
+   "h": "8dc6dbc666699815",
+   "d": "2026-11-20"
+  },
+  "arguments/ultra-processed-vegan-foods-are-worse-than-meat.html": {
+   "h": "95636704f875ad0b",
+   "d": "2026-11-20"
+  },
+  "arguments/using-medicine-and-genetics-to-end-suffering-is-playing-god.html": {
+   "h": "3e8b7c51d5857c80",
+   "d": "2026-11-20"
+  },
+  "arguments/veal-makes-use-of-the-calves-born-in-dairy-farming.html": {
+   "h": "7bf1c9338df90d8e",
+   "d": "2026-11-20"
+  },
+  "arguments/vegan-activists-are-radicals-and-extremists.html": {
+   "h": "e7bdee9629e48f92",
+   "d": "2026-11-20"
+  },
+  "arguments/vegan-documentaries-are-manipulated.html": {
+   "h": "31dcb307033f5d7b",
+   "d": "2026-11-20"
+  },
+  "arguments/vegan-food-is-bland.html": {
+   "h": "76c6189c1c77288f",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-has-become-big-business.html": {
+   "h": "1324f69877f75bbc",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-a-cult-a-religion.html": {
+   "h": "f08eede14297e54d",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-a-political-ideology-or-a-globalist-agenda.html": {
+   "h": "5c83bc8aab19ab89",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-an-eating-disorder-in-disguise.html": {
+   "h": "6ac183bc37193ad7",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-expensive.html": {
+   "h": "b9925ee10e2baa99",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-just-a-fad-diet.html": {
+   "h": "177f21a4f58130e1",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-moral-puritanism.html": {
+   "h": "32d9626a86aab7aa",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-is-opinion-not-science.html": {
+   "h": "76175de12b3fa19a",
+   "d": "2026-11-20"
+  },
+  "arguments/veganism-isnt-100-cruelty-free.html": {
+   "h": "9b44fab7bdf52756",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-anthropomorphize-animals.html": {
+   "h": "32082ece2e13b2fb",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-against-farmers.html": {
+   "h": "b2073405a4550499",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-against-religion.html": {
+   "h": "ded462750b6a432d",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-all-hippies.html": {
+   "h": "d0f788450fa2615d",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-annoying-and-bossy-i-dont-want-to-be-part-of-that-group.html": {
+   "h": "e2fcf1172ec6fef5",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-annoying-and-think-they-are-better.html": {
+   "h": "e8be813ad54597ac",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-crazy-they-have-mental-problems.html": {
+   "h": "e7824327ce8a2692",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-racist-because-they-criticize-afro-brazilian-religions.html": {
+   "h": "9d69b93e48eb6aa4",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-speciesists-too.html": {
+   "h": "471e5d52c695c350",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-are-weak-pale-and-depressed.html": {
+   "h": "6c1202f971b2ec25",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-care-more-about-animals-than-people.html": {
+   "h": "f7358cd21fc66cc2",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-defend-animals-but-they-support-abortion.html": {
+   "h": "75bab3cfb28a64f2",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-should-fight-for-laws-not-diets.html": {
+   "h": "ddf8a0f396c24dfa",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-shouldnt-get-into-politics-because-politics-is-dirty.html": {
+   "h": "9bb9cbebca8dfa3d",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-shouldnt-use-artificial-intelligence.html": {
+   "h": "79c5de9f7c6c0c1b",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-shouldnt-watch-violent-films-or-play-violent-games.html": {
+   "h": "c520e9f83181a0d0",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-soy-is-destroying-the-amazon.html": {
+   "h": "4a7e0918586e15eb",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-support-pseudoscience.html": {
+   "h": "22d711d988c5b7bb",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-think-theyre-the-only-ones-who-really-defend-animals.html": {
+   "h": "b1120b8f30515c08",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-treat-vegetarians-as-enemies.html": {
+   "h": "82b8ed493eace025",
+   "d": "2026-11-20"
+  },
+  "arguments/vegans-will-always-be-a-minority.html": {
+   "h": "b62ffd19321bd35f",
+   "d": "2026-11-20"
+  },
+  "arguments/we-are-animals-and-part-of-the-ecosystem-no-one-lives-without-impact.html": {
+   "h": "23c2d82c0ac5a959",
+   "d": "2026-11-20"
+  },
+  "arguments/we-didnt-cause-it-so-we-have-no-duty-to-help.html": {
+   "h": "bb36c4372f3e7e20",
+   "d": "2026-11-20"
+  },
+  "arguments/we-have-canine-teeth-we-are-omnivores.html": {
+   "h": "57cfc91ae9dfa112",
+   "d": "2026-11-20"
+  },
+  "arguments/we-have-to-worry-about-future-humans-not-about-animals.html": {
+   "h": "2ce2e4ae4a6028a9",
+   "d": "2026-11-20"
+  },
+  "arguments/we-naturally-crave-meat.html": {
+   "h": "ef5fa5885975f405",
+   "d": "2026-11-20"
+  },
+  "arguments/we-need-animal-protein.html": {
+   "h": "0b1f14a5df0e79a1",
+   "d": "2026-11-20"
+  },
+  "arguments/wed-have-to-drop-everything-to-help-wild-animals.html": {
+   "h": "0aa1fce6521fe6ab",
+   "d": "2026-11-20"
+  },
+  "arguments/were-at-the-top-of-the-food-chain.html": {
+   "h": "8f7843ff0711744f",
+   "d": "2026-11-20"
+  },
+  "arguments/weve-always-done-it.html": {
+   "h": "a0688fda9ba35b94",
+   "d": "2026-11-20"
+  },
+  "arguments/what-about-meat-that-gets-thrown-away.html": {
+   "h": "eb734e1a6452df6a",
+   "d": "2026-11-20"
+  },
+  "arguments/what-about-the-eggs-from-my-rescued-hen.html": {
+   "h": "34dedf82162297ee",
+   "d": "2026-11-20"
+  },
+  "arguments/what-about-the-insects-you-kill-while-driving.html": {
+   "h": "b7bad47c10cf4a7f",
+   "d": "2026-11-20"
+  },
+  "arguments/what-if-they-discover-that-plants-feel.html": {
+   "h": "f2e157769ee67597",
+   "d": "2026-11-20"
+  },
+  "arguments/what-matters-is-how-food-is-grown-not-whether-it-comes-from-animals.html": {
+   "h": "22f9c5165a38ce52",
+   "d": "2026-11-20"
+  },
+  "arguments/what-matters-is-the-species-not-the-individual.html": {
+   "h": "f668e0e983b5bdb0",
+   "d": "2026-11-20"
+  },
+  "arguments/what-would-we-do-with-the-animals-if-everyone-went-vegan.html": {
+   "h": "751c3fbbfe3cd215",
+   "d": "2026-11-20"
+  },
+  "arguments/where-do-you-draw-the-line-insects-bacteria.html": {
+   "h": "c97cccc2b75e2cc7",
+   "d": "2026-11-20"
+  },
+  "arguments/who-are-we-to-interfere-with-nature.html": {
+   "h": "4e5b1d0fac0a36ce",
+   "d": "2026-11-20"
+  },
+  "arguments/why-should-i-be-ethical-if-it-doesnt-benefit-me.html": {
+   "h": "8aafe65025cc808a",
+   "d": "2026-11-20"
+  },
+  "arguments/wild-animals-live-free-and-happy.html": {
+   "h": "766207528651e5b1",
+   "d": "2026-11-20"
+  },
+  "arguments/wildlife-sanctuaries-protect-animals.html": {
+   "h": "d7f3afeb52ff17de",
+   "d": "2026-11-20"
+  },
+  "arguments/without-farming-these-animals-wouldnt-even-exist.html": {
+   "h": "5d3f806b3fce3b91",
+   "d": "2026-11-20"
+  },
+  "arguments/without-zoos-several-species-would-already-be-extinct.html": {
+   "h": "0bf97f93c69006ee",
+   "d": "2026-11-20"
+  },
+  "arguments/would-you-eat-an-animal-that-died-of-natural-causes.html": {
+   "h": "48132941f3dd4f8a",
+   "d": "2026-11-20"
+  },
+  "arguments/would-you-eat-animals-if-someone-paid-you-well.html": {
+   "h": "d7031835fa105baa",
+   "d": "2026-11-20"
+  },
+  "arguments/you-also-kill-mosquitoes-and-rats-at-home.html": {
+   "h": "c844b8d3f0b72698",
+   "d": "2026-11-20"
+  },
+  "arguments/you-dont-feel-empathy-for-every-animal-in-the-world-either.html": {
+   "h": "5bd3cb5c1c559176",
+   "d": "2026-11-20"
+  },
+  "arguments/you-dont-live-on-a-farm-so-you-dont-know-the-truth.html": {
+   "h": "e0400860ab7eea7c",
+   "d": "2026-11-20"
+  },
+  "arguments/you-use-a-phone-so-youre-a-hypocrite.html": {
+   "h": "17aea7641883349e",
+   "d": "2026-11-20"
+  },
+  "arguments/youll-lack-iron-zinc-and-other-micronutrients.html": {
+   "h": "cc89057c5212808f",
+   "d": "2026-11-20"
+  },
+  "arguments/zoos-conserve-species-and-educate.html": {
+   "h": "f0ae54a935bb68cd",
+   "d": "2026-11-20"
+  },
+  "beyond-veganism.html": {
+   "h": "7bc32e338b491cab",
+   "d": "2026-11-20"
+  },
+  "beyond/ai-and-robots.html": {
+   "h": "88857c46d587ea7c",
+   "d": "2026-11-20"
+  },
+  "beyond/antispeciesism.html": {
+   "h": "3bfe4d4d7aa6f4f7",
+   "d": "2026-11-20"
+  },
+  "beyond/common-minimum.html": {
+   "h": "97b6a4a96a534858",
+   "d": "2026-11-20"
+  },
+  "beyond/currents-of-veganism.html": {
+   "h": "10e48da1072a7205",
+   "d": "2026-11-20"
+  },
+  "beyond/defining-veganism.html": {
+   "h": "b679e3c62de3c4f6",
+   "d": "2026-11-20"
+  },
+  "beyond/direct-arguments.html": {
+   "h": "f8760aed3e90b796",
+   "d": "2026-11-20"
+  },
+  "beyond/extraterrestrials.html": {
+   "h": "e91d876ebfa2abdd",
+   "d": "2026-11-20"
+  },
+  "beyond/foundations.html": {
+   "h": "913415ddaa82b38a",
+   "d": "2026-11-20"
+  },
+  "beyond/killing-or-causing-suffering.html": {
+   "h": "6c0eed0918d64c30",
+   "d": "2026-11-20"
+  },
+  "beyond/state-of-the-art.html": {
+   "h": "91acc410c434c897",
+   "d": "2026-11-20"
+  },
+  "beyond/when-logic-isnt-enough.html": {
+   "h": "03575673de28643a",
+   "d": "2026-11-20"
+  },
+  "beyond/wild-animals.html": {
+   "h": "08dc3284bb1710cb",
+   "d": "2026-11-20"
+  },
+  "biases.html": {
+   "h": "612fb72592bbb0f5",
+   "d": "2026-11-20"
+  },
+  "debate.html": {
+   "h": "a2bf04d6bb0aae40",
+   "d": "2026-11-20"
+  },
+  "exploitation.html": {
+   "h": "f19c7eae427ea66a",
+   "d": "2026-11-20"
+  },
+  "fallacies.html": {
+   "h": "0a0be81d6a4e0303",
+   "d": "2026-11-20"
+  },
+  "families.html": {
+   "h": "a2525d75dd0a8520",
+   "d": "2026-11-20"
+  },
+  "families/a.html": {
+   "h": "63b5667b3aef8f6f",
+   "d": "2026-11-20"
+  },
+  "families/b.html": {
+   "h": "e39536a8d1883589",
+   "d": "2026-11-20"
+  },
+  "families/c.html": {
+   "h": "65e6d97bb2b1a3a9",
+   "d": "2026-11-20"
+  },
+  "families/d.html": {
+   "h": "3e2b061abea96e26",
+   "d": "2026-11-20"
+  },
+  "families/e.html": {
+   "h": "15f55f7a70feafee",
+   "d": "2026-11-20"
+  },
+  "families/f.html": {
+   "h": "a473d9410a622812",
+   "d": "2026-11-20"
+  },
+  "families/g.html": {
+   "h": "53ab622c43610b8a",
+   "d": "2026-11-20"
+  },
+  "families/h.html": {
+   "h": "32ad9e69abcc2597",
+   "d": "2026-11-20"
+  },
+  "families/i.html": {
+   "h": "feeafbfcd2e78dac",
+   "d": "2026-11-20"
+  },
+  "families/j.html": {
+   "h": "2b37455ae54bc797",
+   "d": "2026-11-20"
+  },
+  "families/k.html": {
+   "h": "26fbcaa82771669b",
+   "d": "2026-11-20"
+  },
+  "families/l.html": {
+   "h": "ebc8907f4b59a555",
+   "d": "2026-11-20"
+  },
+  "families/m.html": {
+   "h": "fe7b2953c2bc95f5",
+   "d": "2026-11-20"
+  },
+  "families/n.html": {
+   "h": "8364b6669e510175",
+   "d": "2026-11-20"
+  },
+  "glossary.html": {
+   "h": "f357761d3e98f5dd",
+   "d": "2026-11-20"
+  },
+  "index.html": {
+   "h": "e32fabb7075a7552",
+   "d": "2026-11-20"
+  },
+  "library.html": {
+   "h": "5966715e24e4f4e6",
+   "d": "2026-11-20"
+  },
+  "map.html": {
+   "h": "07432042aaea2186",
+   "d": "2026-11-20"
+  },
+  "political-objections.html": {
+   "h": "990a78ad1f3910c2",
+   "d": "2026-11-20"
+  },
+  "political/anarchism.html": {
+   "h": "87c4e1f4bb0c2d21",
+   "d": "2026-11-20"
+  },
+  "political/anti-discrimination.html": {
+   "h": "4cba92e784547ead",
+   "d": "2026-11-20"
+  },
+  "political/capabilities-approach.html": {
+   "h": "2e5cb9f8c2e68836",
+   "d": "2026-11-20"
+  },
+  "political/care-ethics.html": {
+   "h": "c0b238f3625de29e",
+   "d": "2026-11-20"
+  },
+  "political/communitarianism.html": {
+   "h": "cffd4e247152ff49",
+   "d": "2026-11-20"
+  },
+  "political/conservatism.html": {
+   "h": "28d7c8e7b9816960",
+   "d": "2026-11-20"
+  },
+  "political/contractualism.html": {
+   "h": "f62790264fbf0751",
+   "d": "2026-11-20"
+  },
+  "political/deontology.html": {
+   "h": "b08e033a5dc98d99",
+   "d": "2026-11-20"
+  },
+  "political/discourse-ethics.html": {
+   "h": "374d9db1e339be58",
+   "d": "2026-11-20"
+  },
+  "political/effective-altruism.html": {
+   "h": "6f5c209a9ac81f59",
+   "d": "2026-11-20"
+  },
+  "political/egalitarianism.html": {
+   "h": "6bab1ad6eec499b9",
+   "d": "2026-11-20"
+  },
+  "political/egoism-objectivism.html": {
+   "h": "8610e7b0ff6ca308",
+   "d": "2026-11-20"
+  },
+  "political/environmentalism.html": {
+   "h": "135f9b3bf2fbde3b",
+   "d": "2026-11-20"
+  },
+  "political/feminism.html": {
+   "h": "9b47cc3804c2fdc2",
+   "d": "2026-11-20"
+  },
+  "political/humanism.html": {
+   "h": "4de4339d9b6d35d7",
+   "d": "2026-11-20"
+  },
+  "political/liberalism.html": {
+   "h": "8128725490c7d765",
+   "d": "2026-11-20"
+  },
+  "political/libertarianism.html": {
+   "h": "a829946ecf2ff54b",
+   "d": "2026-11-20"
+  },
+  "political/longtermism.html": {
+   "h": "b502dd023637f12d",
+   "d": "2026-11-20"
+  },
+  "political/marxism.html": {
+   "h": "6d17b3621ef9e500",
+   "d": "2026-11-20"
+  },
+  "political/natural-law.html": {
+   "h": "4ecebeec7f246bed",
+   "d": "2026-11-20"
+  },
+  "political/pacifism.html": {
+   "h": "7001d3e72a0a50c3",
+   "d": "2026-11-20"
+  },
+  "political/pragmatism.html": {
+   "h": "498d11cdd6c2d134",
+   "d": "2026-11-20"
+  },
+  "political/progressive-left-and-multiculturalism.html": {
+   "h": "a2a7a389c8ad3a8d",
+   "d": "2026-11-20"
+  },
+  "political/relativism.html": {
+   "h": "5730cfbfc7323c7d",
+   "d": "2026-11-20"
+  },
+  "political/religious-ethics.html": {
+   "h": "ec9f5cf6426a52db",
+   "d": "2026-11-20"
+  },
+  "political/stoicism.html": {
+   "h": "d9ea0399140d149f",
+   "d": "2026-11-20"
+  },
+  "political/utilitarianism.html": {
+   "h": "cdb1063b9aaf8b2a",
+   "d": "2026-11-20"
+  },
+  "political/virtue-ethics.html": {
+   "h": "dc160b65cd45d139",
+   "d": "2026-11-20"
+  },
+  "practice.html": {
+   "h": "5a4efb497e541a16",
+   "d": "2026-11-20"
+  },
+  "reasoning.html": {
+   "h": "ca14d9635789970b",
+   "d": "2026-11-20"
+  },
+  "start-here.html": {
+   "h": "dbab5ee2c83199ed",
+   "d": "2026-11-20"
+  },
+  "stop-saying.html": {
+   "h": "f59145ca8c8b9207",
+   "d": "2026-11-20"
+  },
+  "stop-saying/a-good-vegan-only-eats-natural-organic-healthy-food.html": {
+   "h": "f547d7ac6dbaf89a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/all-animals-are-slaughtered-fully-conscious-without-stunning.html": {
+   "h": "74221e539748f9c2",
+   "d": "2026-11-20"
+  },
+  "stop-saying/all-the-b12-in-meat-comes-from-supplements.html": {
+   "h": "c51f33b37d8ac661",
+   "d": "2026-11-20"
+  },
+  "stop-saying/anemia-mostly-affects-meat-eaters.html": {
+   "h": "4845842f6acbb3ee",
+   "d": "2026-11-20"
+  },
+  "stop-saying/animal-testing-is-useless-90-of-drugs-fail.html": {
+   "h": "591a53c6d415e9a5",
+   "d": "2026-11-20"
+  },
+  "stop-saying/animals-have-a-right-to-life-period.html": {
+   "h": "9ce16bdc1f544b89",
+   "d": "2026-11-20"
+  },
+  "stop-saying/anyone-who-buys-products-from-big-companies-isnt-vegan.html": {
+   "h": "e74612641f45c4b2",
+   "d": "2026-11-20"
+  },
+  "stop-saying/anyone-who-supports-capitalism-isnt-really-vegan.html": {
+   "h": "cec85b11bb552f97",
+   "d": "2026-11-20"
+  },
+  "stop-saying/anyone-who-supports-step-by-step-change-isnt-really-vegan.html": {
+   "h": "79a8725ecd64e2de",
+   "d": "2026-11-20"
+  },
+  "stop-saying/anyone-who-wont-accept-gradual-change-doesnt-understand-how-the-world.html": {
+   "h": "8092429b5d9f05d2",
+   "d": "2026-11-20"
+  },
+  "stop-saying/being-vegan-is-very-expensive.html": {
+   "h": "a22a7ca882f6bb8b",
+   "d": "2026-11-20"
+  },
+  "stop-saying/being-vegan-requires-being-anti-capitalist.html": {
+   "h": "3c1f8b5e90aec020",
+   "d": "2026-11-20"
+  },
+  "stop-saying/broccoli-and-spinach-have-more-protein-than-meat.html": {
+   "h": "4cdbc3fd2608fa2e",
+   "d": "2026-11-20"
+  },
+  "stop-saying/calling-yourself-antispeciesist-or-sentientist-dilutes-veganism-we.html": {
+   "h": "f896cbb66079c298",
+   "d": "2026-11-20"
+  },
+  "stop-saying/cats-cant-be-vegan.html": {
+   "h": "bcbb617866c00de7",
+   "d": "2026-11-20"
+  },
+  "stop-saying/comparing-it-to-slavery-pushes-people-away.html": {
+   "h": "e7aff803de2f3572",
+   "d": "2026-11-20"
+  },
+  "stop-saying/cultivated-meat-isnt-vegan-because-it-comes-from-animals.html": {
+   "h": "e7db6e584d2185dc",
+   "d": "2026-11-20"
+  },
+  "stop-saying/destroying-property-isnt-violence.html": {
+   "h": "70765b85c125459a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/doctors-dont-know-anything-about-nutrition.html": {
+   "h": "eab0a080cdbfe637",
+   "d": "2026-11-20"
+  },
+  "stop-saying/dont-show-the-footage-its-too-shocking.html": {
+   "h": "e5e7f643ec57a1a2",
+   "d": "2026-11-20"
+  },
+  "stop-saying/each-vegan-saves-200-animals-a-year.html": {
+   "h": "0034142b4f418071",
+   "d": "2026-11-20"
+  },
+  "stop-saying/eggs-are-chicken-periods.html": {
+   "h": "6844dd74d915411c",
+   "d": "2026-11-20"
+  },
+  "stop-saying/every-nutrition-body-in-the-world-approves-vegan-diets-for-everyone.html": {
+   "h": "3fb547b7e7117711",
+   "d": "2026-11-20"
+  },
+  "stop-saying/every-vegan-has-to-be-friendly-with-non-vegans-or-we-wont-convince.html": {
+   "h": "dbdafe0fc080dff4",
+   "d": "2026-11-20"
+  },
+  "stop-saying/food-that-may-contain-traces-of-milk-isnt-vegan.html": {
+   "h": "5686b457f9cfdca0",
+   "d": "2026-11-20"
+  },
+  "stop-saying/go-vegan-for-the-planet.html": {
+   "h": "d4cd32301e7b7994",
+   "d": "2026-11-20"
+  },
+  "stop-saying/god-didnt-make-animals-for-humans.html": {
+   "h": "61b0d65795ad648f",
+   "d": "2026-11-20"
+  },
+  "stop-saying/going-vegan-prevents-pandemics.html": {
+   "h": "bb66e57361f0c80a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/going-vegan-will-make-you-healthier.html": {
+   "h": "36e2c0b846ba2f44",
+   "d": "2026-11-20"
+  },
+  "stop-saying/gorillas-bulls-and-horses-get-strong-eating-only-plants.html": {
+   "h": "42b8da95a9fb477f",
+   "d": "2026-11-20"
+  },
+  "stop-saying/great-geniuses-like-einstein-and-da-vinci-were-vegan.html": {
+   "h": "18783f011fc29ab6",
+   "d": "2026-11-20"
+  },
+  "stop-saying/helping-wild-animals-isnt-veganism-its-a-different-cause.html": {
+   "h": "e1a8adb14d6201ab",
+   "d": "2026-11-20"
+  },
+  "stop-saying/hitler-wasnt-even-really-a-vegetarian.html": {
+   "h": "ef9175813b87a5d6",
+   "d": "2026-11-20"
+  },
+  "stop-saying/humans-are-biologically-herbivores.html": {
+   "h": "ac07a7fcd3daffba",
+   "d": "2026-11-20"
+  },
+  "stop-saying/humans-come-first.html": {
+   "h": "9cf80fcc936c078e",
+   "d": "2026-11-20"
+  },
+  "stop-saying/if-humans-disappeared-the-planet-and-the-animals-would-be-better-off.html": {
+   "h": "9c5844d1d865d15b",
+   "d": "2026-11-20"
+  },
+  "stop-saying/if-you-love-some-animals-why-do-you-eat-others.html": {
+   "h": "30b9c92e27cb57ac",
+   "d": "2026-11-20"
+  },
+  "stop-saying/im-vegan-but-i-dont-think-everyone-should-be.html": {
+   "h": "4fab5a281744b37e",
+   "d": "2026-11-20"
+  },
+  "stop-saying/im-vegan-but-i-have-nothing-against-people-who-eat-meat.html": {
+   "h": "945ce6d989ad550f",
+   "d": "2026-11-20"
+  },
+  "stop-saying/im-vegan-but-i-taste-the-food-when-i-visit-my-family.html": {
+   "h": "ee45c812184349e3",
+   "d": "2026-11-20"
+  },
+  "stop-saying/im-vegan-out-of-compassion-for-all-living-beings.html": {
+   "h": "510c5dcb9c2e9393",
+   "d": "2026-11-20"
+  },
+  "stop-saying/in-a-room-with-a-rabbit-and-an-apple-a-child-eats-the-apple-and-plays.html": {
+   "h": "4cd77906371ed482",
+   "d": "2026-11-20"
+  },
+  "stop-saying/in-india-almost-everyone-is-vegan.html": {
+   "h": "20a748ada1529c99",
+   "d": "2026-11-20"
+  },
+  "stop-saying/its-proven-that-meat-played-no-role-in-human-evolution.html": {
+   "h": "7c57d80c9c323037",
+   "d": "2026-11-20"
+  },
+  "stop-saying/its-proven-that-vegans-are-more-empathetic.html": {
+   "h": "a5b531ec37a82528",
+   "d": "2026-11-20"
+  },
+  "stop-saying/jesus-was-a-vegetarian.html": {
+   "h": "ad94a5d0c1284059",
+   "d": "2026-11-20"
+  },
+  "stop-saying/koko-the-gorilla-held-conversations-in-sign-language.html": {
+   "h": "a1452faf3a20a53d",
+   "d": "2026-11-20"
+  },
+  "stop-saying/livestock-causes-51-of-the-worlds-greenhouse-gas-emissions.html": {
+   "h": "2e2845391f96cc69",
+   "d": "2026-11-20"
+  },
+  "stop-saying/livestock-pollutes-more-than-all-cars-planes-and-ships-combined.html": {
+   "h": "2efde12df1ea8a4d",
+   "d": "2026-11-20"
+  },
+  "stop-saying/meat-eaters-are-psychopaths.html": {
+   "h": "24773d5c11374696",
+   "d": "2026-11-20"
+  },
+  "stop-saying/meat-eaters-eat-more-soy-than-vegans.html": {
+   "h": "b975dbe887a28160",
+   "d": "2026-11-20"
+  },
+  "stop-saying/more-expensive-meat-is-bad-for-ordinary-people.html": {
+   "h": "cb175bb35ec29f5b",
+   "d": "2026-11-20"
+  },
+  "stop-saying/my-partner-isnt-vegan-but-we-accept-our-differences.html": {
+   "h": "117cba09c89c05f9",
+   "d": "2026-11-20"
+  },
+  "stop-saying/no-adult-animal-drinks-milk.html": {
+   "h": "1d17ecd5ebb9b405",
+   "d": "2026-11-20"
+  },
+  "stop-saying/non-vegans-are-our-enemies-and-hating-them-is-normal.html": {
+   "h": "4e0538c30ebb5498",
+   "d": "2026-11-20"
+  },
+  "stop-saying/not-your-mom-not-your-milk.html": {
+   "h": "fcfcb33e6393eb28",
+   "d": "2026-11-20"
+  },
+  "stop-saying/on-a-desert-island-id-starve-before-eating-an-animal.html": {
+   "h": "1b5bb572e394c330",
+   "d": "2026-11-20"
+  },
+  "stop-saying/oysters-and-mussels-feel-pain-like-any-other-animal.html": {
+   "h": "232dfde88f76f252",
+   "d": "2026-11-20"
+  },
+  "stop-saying/pigs-are-smarter-than-a-three-year-old-child.html": {
+   "h": "cd6648d188dd8393",
+   "d": "2026-11-20"
+  },
+  "stop-saying/science-proves-veganism-is-right.html": {
+   "h": "b7e4c2f82953b303",
+   "d": "2026-11-20"
+  },
+  "stop-saying/superbugs-come-from-the-antibiotics-given-to-animals.html": {
+   "h": "87e1b67c33fe0766",
+   "d": "2026-11-20"
+  },
+  "stop-saying/talking-about-wild-animals-pushes-people-away-from-veganism.html": {
+   "h": "a28626a6cf49daf4",
+   "d": "2026-11-20"
+  },
+  "stop-saying/theres-no-such-thing-as-an-ex-vegan.html": {
+   "h": "7e9d5ae92d884a6b",
+   "d": "2026-11-20"
+  },
+  "stop-saying/this-partial-law-is-unfair-to-the-other-animals.html": {
+   "h": "dd2ab93a26cde14a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/unseasoned-meat-tastes-of-nothing-all-the-flavor-comes-from-seasoning.html": {
+   "h": "f21d635618516a53",
+   "d": "2026-11-20"
+  },
+  "stop-saying/using-force-to-protect-animals-is-always-wrong.html": {
+   "h": "81b49070503ef37a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/veganism-and-environmentalism-without-class-struggle-is-just-gardening.html": {
+   "h": "86bbbd80b9e28d50",
+   "d": "2026-11-20"
+  },
+  "stop-saying/veganism-is-only-about-animals-nothing-else-matters.html": {
+   "h": "18a4e8c8058f8dc4",
+   "d": "2026-11-20"
+  },
+  "stop-saying/veganism-shouldnt-ally-itself-with-other-causes-such-as-feminism.html": {
+   "h": "4be0b784a8243e04",
+   "d": "2026-11-20"
+  },
+  "stop-saying/veganism-would-end-world-hunger.html": {
+   "h": "5ac3acba5e52dc16",
+   "d": "2026-11-20"
+  },
+  "stop-saying/vegans-are-sexier-and-better-in-bed.html": {
+   "h": "b63ca58560d8517a",
+   "d": "2026-11-20"
+  },
+  "stop-saying/vegans-dont-need-to-supplement-b12.html": {
+   "h": "61dd0979f33ea44c",
+   "d": "2026-11-20"
+  },
+  "stop-saying/vegans-should-focus-only-on-direct-activism-talking-to-people-one-by.html": {
+   "h": "e78232fdd7f8d723",
+   "d": "2026-11-20"
+  },
+  "stop-saying/vegans-should-focus-only-on-institutional-activism-changing-laws.html": {
+   "h": "897497ef9f273ab6",
+   "d": "2026-11-20"
+  },
+  "stop-saying/vegans-should-focus-only-on-powerful-and-influential-people.html": {
+   "h": "4f4b6fcf5d0937cb",
+   "d": "2026-11-20"
+  },
+  "stop-saying/we-have-to-confront-non-vegans-since-theyre-the-extremists.html": {
+   "h": "e2337fc2aaa74509",
+   "d": "2026-11-20"
+  },
+  "stop-saying/we-need-to-give-animals-rights.html": {
+   "h": "f1da04b5204f5182",
+   "d": "2026-11-20"
+  },
+  "stop-saying/we-should-love-animals.html": {
+   "h": "660915ea534a93aa",
+   "d": "2026-11-20"
+  }
+ }
+}
