@@ -647,6 +647,35 @@ LONGOPRAZISMO = dict(s='longoprazismo', t='Longoprazismo', frase='O que importa 
 _i = next(i for i, t in enumerate(TEORIAS) if t['s'] == 'altruismo-eficaz') + 1
 TEORIAS.insert(_i, LONGOPRAZISMO)
 
+# Acrescentada em 2026-11-21: interseccionalidade, logo depois de Antirracismo e anticapacitismo.
+INTERSECCIONALIDADE = dict(s='interseccionalidade', t='Interseccionalidade', frase='Interseccionalidade é sobre opressões humanas; os animais são outra pauta.',
+  principio='As formas de discriminação não agem isoladas: raça, gênero, classe, deficiência e outras se cruzam e produzem experiências de opressão que não se explicam por uma delas só. O termo foi proposto pela jurista Kimberlé Crenshaw em 1989, a partir da situação das mulheres negras nos tribunais dos Estados Unidos, e tem raízes no feminismo negro, como na declaração do Combahee River Collective (1977) e na ideia de matriz de dominação de Patricia Hill Collins.',
+  quebra=['Se o que une essas lutas é a recusa de dar menos peso aos interesses de alguém por um traço que não muda o quanto ele pode ser prejudicado, a espécie é mais um desses traços. Uma interseccionalidade que exclui os animais aplica a mesma lógica de hierarquia que diz combater, só que na fronteira da espécie (A8, A11).',
+          'Os cruzamentos também passam pelos animais. Trabalhadores de frigoríficos, com frequência pobres e migrantes, enfrentam algumas das condições mais perigosas da indústria; a reprodução forçada das fêmeas é central na pecuária, o que autoras feministas analisam; e grupos humanos já foram comparados a animais para justificar sua exploração, o que mostra que racismo e especismo se apoiaram um no outro. Autoras como Aph Ko, Syl Ko, A. Breeze Harper e Carol J. Adams discutem esses cruzamentos.',
+          'O princípio também vale dentro do movimento: veganos precisam combater o racismo, o machismo, o capacitismo e outras discriminações, para não se contradizerem. Todas as pessoas são seres sencientes, e discriminá-las por um traço biológico é o mesmo erro que o especismo comete com a espécie (L19).'],
+  replica='A versão mais séria diz que levar os animais para a interseccionalidade dilui a pauta, desvia a atenção de grupos humanos ainda oprimidos e repete comparações que já serviram para desumanizar pessoas.',
+  resposta='O cuidado com comparações é justo, e a defesa dos animais se sustenta sem analogias (L22). Mas incluir os animais não tira nada de ninguém: consideração moral não é um recurso que acaba, e o mesmo princípio que protege as pessoas discriminadas protege quem sente em qualquer espécie. Movimentos podem ter focos diferentes sem que um negue o outro.',
+  mais=[('Hierarquias e exigências desiguais', [
+      'Entre veganos, a interseccionalidade às vezes aparece só como cobrança: exige-se de quem defende os animais que debata cada pauta humana antes de falar deles, e não se exige o mesmo de quem não é vegano, nem de outros movimentos em relação aos animais. Isso inverte a interseccionalidade, que pede reconhecer todas as opressões, e não condicionar uma luta à aprovação das outras. Frases como "Veganismo que não debate racismo é gastronomia de playboy" e "Ser vegano exige ser anticapitalista", em Pare de dizer isso, mostram esse padrão, e o catálogo responde a cobranças parecidas (L13, L11).',
+      'Essas cobranças carregam uma hierarquia especista: movimentos feministas e antirracistas raramente são cobrados por deixar os animais de fora, enquanto veganos são cobrados por qualquer pauta humana que não mencionem. Uma interseccionalidade coerente pediria atenção a todas as vítimas, humanas e não humanas, sem exigir isso só de um lado. As páginas Feminismo e Antirracismo e anticapacitismo tratam de cada movimento, e a página Especismo entre veganos, em Além do veganismo, reúne outros exemplos.']),
+    ('Comunicação e acusações', [
+      'O tema gera muitas falhas de comunicação. Comparações entre a exploração animal e a escravidão ou o Holocausto podem ser recebidas como ofensa, sobretudo vindas de quem não sofre essas opressões (L22). Por outro lado, acusações de racismo ou de elitismo contra quem defende os animais às vezes trocam o argumento por um rótulo (L23), e acusações de especismo contra militantes de outras pautas podem soar como desprezo pela luta deles.',
+      'Por isso vale tomar cuidado: falar de ideias e de estruturas, e não de pessoas; ouvir quem vive cada opressão antes de comparar; não usar o sofrimento de um grupo como instrumento para outro; e reconhecer que pautas diferentes podem ter focos diferentes. A pergunta útil é se uma aliança ou uma crítica ajuda as vítimas, e não quem vence a discussão.'])],
+  nomes=[('Kimberlé Crenshaw', 'jurista norte-americana; propôs o termo interseccionalidade em 1989'),
+         ('Patricia Hill Collins', 'socióloga norte-americana; desenvolveu a ideia de matriz de dominação em Black Feminist Thought (1990)'),
+         ('Aph Ko e Syl Ko', 'escritoras norte-americanas; em Aphro-ism (2017), discutem racismo e especismo a partir do pensamento negro'),
+         ('A. Breeze Harper', 'pesquisadora norte-americana; organizou Sistah Vegan (2010), com textos de mulheres negras veganas'),
+         ('Carol J. Adams', 'escritora norte-americana; em The Sexual Politics of Meat (1990), liga a opressão das mulheres à dos animais'),
+         ('Lori Gruen', 'filósofa norte-americana; em Entangled Empathy (2015), defende uma empatia que inclui os animais nas lutas por justiça')],
+  liga=['L22', 'L19', 'L23', 'L13', 'A11', 'A8'],
+  fontes=[('Demarginalizing the Intersection of Race and Sex', 'https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/'), ('Interseccionalidade (Wikipédia)', 'https://pt.wikipedia.org/wiki/Interseccionalidade'),
+          ('Aphro-ism: Essays on Pop Culture, Feminism, and Black Veganism from Two Sisters', None), ('Sistah Vegan: Black Female Vegans Speak on Food, Identity, Health, and Society', None),
+          ('The Sexual Politics of Meat', None), ('Entangled Empathy: An Alternative Ethic for Our Relationships with Animals', None)],
+  curta='A interseccionalidade mostra que as discriminações se cruzam. Se o que as une é dar menos peso a alguém por um traço que não muda o quanto ele pode sofrer, a espécie é mais um desses traços, e os animais entram no princípio. E vale nos dois sentidos: veganos também precisam combater as discriminações entre pessoas, sem que isso seja cobrado só de quem defende os animais.',
+  pergunta='Se a interseccionalidade é contra toda hierarquia baseada em traços que não mudam a capacidade de sofrer, por que ela pararia na espécie?')
+_i = next(i for i, t in enumerate(TEORIAS) if t['s'] == 'antidiscriminacao') + 1
+TEORIAS.insert(_i, INTERSECCIONALIDADE)
+
 # Acrescentado em 2026-11-20, a partir de Luciano Carlos Cunha, Razões para ajudar: o sofrimento dos animais selvagens e suas
 # implicações éticas (Appris, 2022): o que cada teoria diz sobre ajudar os animais selvagens. Cada entrada vira uma seção nova
 # de "mais", e o livro entra nas fontes. As posições contestadas de Cunha aparecem como debate, com quem discorda.

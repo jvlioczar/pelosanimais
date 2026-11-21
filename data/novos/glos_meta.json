@@ -16390,5 +16390,53 @@
   ],
   "ex": "\"Os planos de terraformação de Marte costumam discutir o clima e a água, e quase nunca quem viveria e sofreria lá.\"",
   "ex_en": "\"Plans to terraform Mars usually discuss climate and water, and hardly ever who would live and suffer there.\""
+ },
+ "Não interferência (regra de)": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Regra de não interferência",
+   "Dever de não interferência"
+  ],
+  "sin_en": [
+   "Rule of noninterference",
+   "Hands-off policy"
+  ],
+  "ant": [
+   "Intervenção em prol dos animais selvagens"
+  ],
+  "ant_en": [
+   "Intervention on behalf of wild animals"
+  ],
+  "veja": [
+   "Biocentrismo",
+   "Natureza idílica",
+   "Sofrimento dos animais selvagens",
+   "Predação"
+  ],
+  "ex": "\"Pela regra de não interferência, o filhote preso na rede de pesca deveria ser solto, mas o filhote doente na mata deveria ser deixado como está.\"",
+  "ex_en": "\"By the rule of noninterference, the young animal caught in a fishing net should be freed, but the sick young animal in the forest should be left as it is.\""
+ },
+ "Conflitos de interesses": {
+  "tipo": "substantivo masculino plural",
+  "tipo_en": "noun",
+  "sin": [
+   "Conflito de interesses",
+   "Conflitos interespecíficos"
+  ],
+  "sin_en": [
+   "Conflict of interests",
+   "Interspecific conflicts"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Igual consideração",
+   "Especismo",
+   "Legítima defesa",
+   "Predação"
+  ],
+  "ex": "\"Comer um bife não é um conflito de interesses real: de um lado está o paladar, do outro, a vida inteira de um animal.\"",
+  "ex_en": "\"Eating a steak is not a real conflict of interests: on one side is taste, on the other, an animal's whole life.\""
  }
 }

@@ -289,7 +289,8 @@
   "N5": "ajudar-os-mais-fracos-estraga-a-selecao-natural",
   "N4": "a-natureza-e-justa-cada-animal-tem-armas-para-escapar",
   "N7": "os-animais-domesticos-sao-responsabilidade-nossa-os-selvagens-nao",
-  "B19": "comer-animais-nao-e-crueldade-e-para-se-nutrir"
+  "B19": "comer-animais-nao-e-crueldade-e-para-se-nutrir",
+  "N27": "trazer-de-volta-especies-extintas-e-reparar-o-que-destruimos"
  },
  "en": {
   "A1": "animals-arent-conscious-and-dont-feel-pain-like-we-do",
@@ -581,7 +582,8 @@
   "N5": "helping-the-weak-ruins-natural-selection",
   "N4": "nature-is-fair-every-animal-has-weapons-to-escape",
   "N7": "domestic-animals-are-our-responsibility-wild-ones-are-not",
-  "B19": "eating-animals-isnt-cruelty-its-for-nourishment"
+  "B19": "eating-animals-isnt-cruelty-its-for-nourishment",
+  "N27": "bringing-back-extinct-species-makes-up-for-what-we-destroyed"
  },
  "pt_ruins": {
   "V1": "ser-vegano-vai-te-deixar-mais-saudavel",
@@ -751,12 +753,12 @@
   "pt": {
    "argumentos/os-animais-nao-sabem-que-vao-morrer-entao-nao-tem-problema-mata-los": "A99",
    "argumentos/um-mundo-vegano-e-utopico": "J99",
-   "argumentos/falar-de-animais-selvagens-afasta-as-pessoas-do-veganismo": "N27"
+   "argumentos/falar-de-animais-selvagens-afasta-as-pessoas-do-veganismo": "N98"
   },
   "en": {
    "argumentos/animals-dont-know-theyre-going-to-die-so-killing-them-is-fine": "A99",
    "argumentos/a-vegan-world-is-utopian": "J99",
-   "argumentos/talking-about-wild-animals-pushes-people-away-from-veganism": "N27"
+   "argumentos/talking-about-wild-animals-pushes-people-away-from-veganism": "N98"
   }
  },
  "codigos_pt": {
