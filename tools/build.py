@@ -1526,7 +1526,7 @@ def pagina_biblioteca():
                   f'<div class="bib-corpo"><p class="bib-meta">{e(meta)}</p><p class="bib-foco">{e(biblioteca.FOCOS[b["foco"]])}</p><p>{e(b["d"])}</p>'
                   + (f'<a class="btn peq" href="{e(b["u"])}" {EXT}>{e(b["ul"])} ↗</a>' if b['u'] else '<span class="selo">Link em breve</span>') + '</div></article>')
     chips = ''.join(f'<button class="chip" type="button" data-g="foco" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{e(t)}</button>' for v, t in [('', 'Todos')] + list(biblioteca.FOCOS.items()))
-    chips += ''.join(f'<button class="chip" type="button" data-g="lingua" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{t}</button>' for v, t in (('', 'Qualquer idioma'), ('PT', 'Em português'), ('EN', 'Em inglês')))
+    chips += ''.join(f'<button class="chip" type="button" data-g="lingua" data-v="{v}" aria-pressed="{"true" if not v else "false"}">{t}</button>' for v, t in (('', 'Qualquer idioma'), ('PT', 'Em português'), ('EN', 'Em inglês'), ('ES', 'Em espanhol')))
     sites = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in sorted(biblioteca.SITES, key=lambda x: x[0].casefold()))
     orgs = ''.join(f'<a class="bib-site" href="{e(u)}" {EXT}><b>{e(n)}</b><span>{e(d)}</span></a>' for n, d, u in sorted(biblioteca.ORGS, key=lambda x: x[0].casefold()))
     corpo = cabeca('<a href="./">Início</a>', 'Biblioteca', 'Livros para aprender a argumentar pelos animais: respostas às objeções mais comuns, os fundamentos éticos e a psicologia que sustenta o hábito de comer animais.') + f'''<section class="secao"><div class="wrap">

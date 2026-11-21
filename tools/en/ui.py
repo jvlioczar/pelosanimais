@@ -247,6 +247,7 @@ UI = [
  ('>Qualquer idioma</button>', '>Any language</button>'),
  ('>Em português</button>', '>In Portuguese</button>'),
  ('>Em inglês</button>', '>In English</button>'),
+ ('>Em espanhol</button>', '>In Spanish</button>'),
  ('Sites e projetos', 'Websites and projects'),
  ('Organizações', 'Organizations'),
  ('A lista partiu da seleção da ', 'The list started from the selection by '),
