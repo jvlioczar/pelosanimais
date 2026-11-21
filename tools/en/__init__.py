@@ -10,7 +10,7 @@ are the evidence itself."""
 import os, re, shutil
 
 from .catalogo import ARGS, FAMILIAS, FALACIAS, VIESES, CADEIAS, CADEIAS_LONGAS
-from .ruins import RUINS, TIPOS
+from .ruins import RUINS, TIPOS, RESUMO_CARD_EN
 from .motivos import MOTIVOS
 from .paginas import POLITICAS, POL_CURTAS, POL_INTRO, POL_ESPECTRO, ALEM, LIVROS, FOCOS, SITES, SITES_URL, TEXTOS, ARVORE
 from .debate import PESSOAS, OP
@@ -162,6 +162,8 @@ def aplica(g):
         r['frase_pt'] = r['frase']
         for campo in ('frase', 'por', 'lugar', 'nota', 'fontes', 'formas'):
             if campo in t: r[campo] = t[campo]
+        r.pop('resumo', None)
+        if r['frase_pt'] in RESUMO_CARD_EN: r['resumo'] = RESUMO_CARD_EN[r['frase_pt']]
         r['lugar'] = r['lugar'].replace('{V12}', cod_pt.get('Ser vegano exige ser anticapitalista.', ''))
     pol = g['politicas']
     pol.INTRO = POL_INTRO or pol.INTRO

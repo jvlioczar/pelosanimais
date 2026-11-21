@@ -1043,7 +1043,16 @@ def inicio():
     page('index.html', NOME, L(f'Toda objeção merece ser levada a sério. {len(ARGS)} argumentos contra o veganismo e o antiespecismo, na versão mais forte, com o que acertam e onde falham.', f'Every objection deserves to be taken seriously. {len(ARGS)} arguments against veganism and antispeciesism, in their strongest form: what they get right and where they fail.'), corpo)
 
 def cartao_ruim(r, pre=''):
-    return f'<a class="cartao" style="--c:#b8460f" href="{pre}ruins/{r["c"].lower()}.html"><span class="cod">{r["c"]} · {e(TIPOS[r["tipo"]][0])}</span><h3>"{e(r["frase"])}"</h3><p class="falha">{e(r["por"][0])}</p></a>'
+    return f'<a class="cartao" style="--c:#b8460f" href="{pre}ruins/{r["c"].lower()}.html"><span class="cod">{r["c"]} · {e(TIPOS[r["tipo"]][0])}</span><h3>"{e(r["frase"])}"</h3><p class="falha">{e(texto_card_ruim(r))}</p></a>'
+
+def texto_card_ruim(r, minimo=70):
+    """Texto curto do card: o resumo escrito à mão ou o primeiro período de "por" (os dois primeiros, se o primeiro for curto demais).
+    A explicação completa fica na página de cada item."""
+    if r.get('resumo'): return r['resumo']
+    fr = re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ"“])', r['por'][0].replace('*', ''))
+    out, k = fr[0], 1
+    while len(out) < minimo and k < len(fr): out += ' ' + fr[k]; k += 1
+    return out
 
 def cartao_alem(p, pre=''):
     return f'<a class="cartao" href="{pre}alem/{p["s"]}.html"><span class="selo{" ok" if p["selo"] != "Possibilidade" else ""}">{e(p["selo"])}</span><h3>{e(p["t"])}</h3><p>{e(p["res"])}</p></a>'
