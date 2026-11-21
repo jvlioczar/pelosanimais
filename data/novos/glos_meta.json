@@ -14034,21 +14034,19 @@
   "tipo": "substantivo masculino",
   "tipo_en": "noun",
   "sin": [
-   "Chauvinismo de substrato"
+   "Preconceito de substrato"
   ],
   "sin_en": [
-   "Substrate chauvinism"
+   "Substrate bias"
   ],
   "ant": [],
   "ant_en": [],
   "veja": [
-   "Carbonismo",
    "Especismo",
-   "Senciência em robôs",
-   "Senciência em IA e sistemas digitais"
+   "Sub-rotinas de sofrimento"
   ],
-  "ex": "“Dizer que um sistema não pode sentir só porque é feito de silício, e não de carbono, seria substratismo, e não uma conclusão baseada em evidências.”",
-  "ex_en": "“Saying that a system cannot feel just because it is made of silicon rather than carbon would be substratism, not a conclusion based on evidence.”"
+  "ex": "\"Dizer que uma IA nunca poderia importar só porque é feita de silício é substratismo.\"",
+  "ex_en": "\"Saying an AI could never matter just because it is made of silicon is substratism.\""
  },
  "Subsídios": {
   "tipo": "substantivo masculino",
@@ -16490,5 +16488,52 @@
   ],
   "ex": "\"Se um sistema de IA usar sinais de punição muito complexos para aprender, pode haver ali sub-rotinas de sofrimento que ninguém está monitorando.\"",
   "ex_en": "\"If an AI system uses very complex punishment signals to learn, there may be suffering subroutines in it that no one is monitoring.\""
+ },
+ "Covering (atenuação de identidade)": {
+  "tipo": "substantivo masculino (termo em inglês)",
+  "tipo_en": "noun",
+  "sin": [
+   "Encobrimento de identidade",
+   "Atenuação de identidade"
+  ],
+  "sin_en": [
+   "Identity covering"
+  ],
+  "ant": [
+   "Uncovering"
+  ],
+  "ant_en": [
+   "Uncovering"
+  ],
+  "veja": [
+   "Ativismo"
+  ],
+  "ex": "\"No trabalho, ela diz que não está com fome para não explicar que é vegana: é um caso de covering.\"",
+  "ex_en": "\"At work, she says she isn't hungry so she doesn't have to explain that she's vegan: it's a case of covering.\""
+ },
+ "Chamar para conversar (calling in)": {
+  "tipo": "expressão (termo em inglês)",
+  "tipo_en": "noun",
+  "sin": [
+   "Calling in",
+   "Conversa em particular"
+  ],
+  "sin_en": [
+   "Calling-in"
+  ],
+  "ant": [
+   "Calling out",
+   "Exposição pública"
+  ],
+  "ant_en": [
+   "Calling out",
+   "Public call-out"
+  ],
+  "veja": [
+   "Covering (atenuação de identidade)",
+   "Ativismo"
+  ],
+  "ex": "\"Antes de publicar a crítica, ela chamou o colega para conversar e explicou por que a frase dele ofendia.\"",
+  "ex_en": "\"Before posting the criticism, she called her colleague in and explained why his remark was hurtful.\""
  }
 }
