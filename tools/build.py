@@ -1116,12 +1116,18 @@ def espectro():
         return f'<h3 style="margin:22px 0 10px">{e(lado)}</h3><div class="tabela"><table><tr><th scope="col">{L("Valor", "Value")}</th><th scope="col">{L("Por que leva a considerar os animais", "Why it leads to considering animals")}</th></tr>{linhas}</table></div>'
     return f'<div class="estreito" style="margin-top:40px"><h2>{e(E_["titulo"])}</h2><p>{e(E_["intro"])}</p>' + ''.join(tabela(l, i) for l, i in E_['lados']) + f'<p style="margin-top:18px">{e(E_["fecho"])}</p></div>'
 
+def resumo_card(texto, limite=210):
+    """Nos cards de Objeções políticas, princípios longos aparecem só com o primeiro período, para os cards terem tamanho parecido.
+    O texto inteiro continua na página da teoria."""
+    if len(texto) <= limite: return texto
+    return re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ])', texto, maxsplit=1)[0]
+
 def paginas_politicas():
     """Objeções vindas de teorias éticas e políticas (dados em tools/politicas.py)."""
     tons = list(CORES.values())
     def nos(cods, pre='../'):
         return ''.join(f'<a class="no" style="--c:{FAMILIAS[c[0]]["cor"]}" href="{pre}argumentos/{c.lower()}.html"><b>{c}</b> {e(ARGS[c]["frase"])}</a>' for c in dict.fromkeys(UNIDOS[x][0] if x in UNIDOS else x for x in cods))
-    cards = ''.join(f'<a class="cartao" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3><p class="falha">{e(t["principio"])}</p></a>' for i, t in enumerate(politicas.TEORIAS))
+    cards = ''.join(f'<a class="cartao" style="--c:{tons[i % len(tons)]}" href="politicas/{t["s"]}.html"><span class="cod">{e(t["t"])}</span><h3>"{e(t["frase"])}"</h3><p class="falha">{e(resumo_card(t["principio"]))}</p></a>' for i, t in enumerate(politicas.TEORIAS))
     corpo = cabeca('<a href="./">Início</a>', 'Objeções políticas e éticas', 'O que cada teoria ética ou política costuma dizer para deixar os animais de fora, por que essa exclusão contradiz o próprio princípio da teoria e por que os animais devem ser incluídos.') + f'''<section class="secao"><div class="wrap">
 <p class="estreito" style="margin:0 0 26px">{e(politicas.INTRO)}</p>
 <h2 class="so-leitor">{L("As teorias", "The theories")}</h2><div class="grade">{cards}</div>
