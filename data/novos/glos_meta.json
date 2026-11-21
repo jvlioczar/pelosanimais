@@ -16570,5 +16570,151 @@
   ],
   "ex": "\"Se um formigueiro inteiro com vidas apenas boas valesse mais que um elefante com vida muito boa, chegaríamos à conclusão rebugnante.\"",
   "ex_en": "\"If a whole anthill of barely good lives were worth more than an elephant with a very good life, we would reach the rebugnant conclusion.\""
+ },
+ "Ética ambiental": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Filosofia ambiental"
+  ],
+  "sin_en": [
+   "Environmental philosophy"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Ecocentrismo",
+   "Biocentrismo",
+   "Antropocentrismo",
+   "Ambientalismo (moral)"
+  ],
+  "ex": "\"Na ética ambiental, a pergunta costuma ser o que preserva o ecossistema, e não o que acontece com cada animal.\"",
+  "ex_en": "\"In environmental ethics, the question is usually what preserves the ecosystem, not what happens to each animal.\""
+ },
+ "Fascismo ambiental": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Ecofascismo (no sentido de Regan)"
+  ],
+  "sin_en": [
+   "Environmental fascism (Regan's sense)"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Ecocentrismo",
+   "Ética ambiental"
+  ],
+  "ex": "\"Matar um animal só porque a espécie dele ameaça o equilíbrio do ecossistema é o que Regan chamou de fascismo ambiental.\"",
+  "ex_en": "\"Killing an animal only because their species threatens the balance of the ecosystem is what Regan called environmental fascism.\""
+ },
+ "Princípio da precaução": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Precaução"
+  ],
+  "sin_en": [
+   "Precaution"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Senciência",
+   "Sencientismo"
+  ],
+  "ex": "\"Se não sabemos se o caranguejo sente dor, o princípio da precaução pede que não o cozinhemos vivo.\"",
+  "ex_en": "\"If we don't know whether a crab feels pain, the precautionary principle asks us not to boil them alive.\""
+ },
+ "Desextinção": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Ressurreição de espécies"
+  ],
+  "sin_en": [
+   "Resurrection biology"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Extinção",
+   "Engenharia genética"
+  ],
+  "ex": "\"A desextinção do mamute traria de volta um elefante modificado, e não o mamute.\"",
+  "ex_en": "\"De-extinction of the mammoth would bring back a modified elephant, not the mammoth.\""
+ },
+ "Renaturalização (rewilding)": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Rewilding",
+   "Reselvagização"
+  ],
+  "sin_en": [
+   "Renaturalization"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Sofrimento dos animais selvagens",
+   "Extinção"
+  ],
+  "ex": "\"A renaturalização devolveu lobos ao parque, e com eles voltaram também a caça e a fome.\"",
+  "ex_en": "\"Rewilding brought wolves back to the park, and with them came hunting and hunger.\""
+ },
+ "Impulso genético (gene drive)": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Gene drive",
+   "Condução genética"
+  ],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Engenharia genética",
+   "Técnica do inseto estéril"
+  ],
+  "ex": "\"Um impulso genético poderia tornar estéreis as fêmeas de uma espécie de mosquito em poucos anos.\"",
+  "ex_en": "\"A gene drive could make the females of a mosquito species sterile within a few years.\""
+ },
+ "Valor inerente": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Valor inerente (Regan)"
+  ],
+  "sin_en": [
+   "Inherent worth"
+  ],
+  "ant": [
+   "Valor instrumental"
+  ],
+  "ant_en": [
+   "Instrumental value"
+  ],
+  "veja": [
+   "Valor intrínseco",
+   "Direitos animais"
+  ],
+  "ex": "\"Para Regan, a vaca tem valor inerente: ela não existe para ser útil a ninguém.\"",
+  "ex_en": "\"For Regan, the cow has inherent value: she doesn't exist to be useful to anyone.\""
+ },
+ "Feminismo negro": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Interseccionalidade",
+   "Ecofeminismo"
+  ],
+  "ex": "\"Foi o feminismo negro que mostrou que uma mulher negra pode sofrer uma discriminação que nem o feminismo branco nem o antirracismo masculino enxergavam.\"",
+  "ex_en": "\"It was Black feminism that showed that a Black woman can suffer a discrimination neither white feminism nor male-led antiracism saw.\""
  }
 }

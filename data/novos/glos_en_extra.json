@@ -1772,5 +1772,61 @@
   "def": "A version, for insects and other small animals, of Derek Parfit's \"repugnant conclusion\": on the view that adds up well-being, a world with vast numbers of small animals with barely good lives could be better than a world with few large animals with very good lives.",
   "com": "The name, a pun on \"bug\", was used by the philosopher Jeff Sebo in Saving Animals, Saving Ourselves (2022). Sebo neither endorses nor rejects it: he notes that every theory of population ethics has strange implications and that biases such as scope insensitivity make it hard to take insects seriously. The debate shows that deciding what kind of world to build for animals requires weighing quantity and quality of life, not just species. See the argument \"Sentientists give the same weight to insects, invertebrates and mammals\".",
   "links": []
+ },
+ {
+  "pt": "Ética ambiental",
+  "termo": "Environmental ethics",
+  "def": "The branch of ethics that discusses moral obligations toward the environment: ecosystems, species, living beings and natural resources. It became an academic discipline in the 1970s, and the journal Environmental Ethics was launched in 1979.",
+  "com": "Its main currents use as their criterion being alive (biocentrism), being an ecosystem or a species (ecocentrism) or being human (environmental anthropocentrism). That is why it conflicts with animal ethics, centered on sentient individuals, when protecting an ecosystem requires killing animals or letting them suffer, as in managing invasive species or in hunting. Daniel Dorado (2015) and Catia Faria and Eze Paez (2019) argue that the criteria of the two are incompatible; Dale Jamieson and J. Baird Callicott sought bridges between them. See the Environmentalism view.",
+  "links": []
+ },
+ {
+  "pt": "Fascismo ambiental",
+  "termo": "Environmental fascism",
+  "def": "Tom Regan's expression, in The Case for Animal Rights (1983), for the idea that the individual may be sacrificed for the good of the whole, the biotic community.",
+  "com": "Regan aimed it at Aldo Leopold's land ethic, as read by J. Baird Callicott. Callicott later replied that the land ethic adds to our obligations to humans without replacing them; critics such as Daniel Dorado (2015) note that this subordinates it to human interests. See Ecocentrism and the Environmentalism view.",
+  "links": []
+ },
+ {
+  "pt": "Princípio da precaução",
+  "termo": "Precautionary principle",
+  "def": "A decision rule according to which, when there is a risk of serious or irreversible harm, lack of scientific certainty is no reason to avoid protective measures. It appears, for example, in the Rio Declaration on Environment and Development (1992).",
+  "com": "In the debate about animals, it is used both ways. When there is reasonable doubt about an animal's sentience, as with fish, crustaceans or insects, precaution asks us to treat them as someone who may feel, the reasoning of the philosopher Jonathan Birch and of the report that led the United Kingdom to recognize decapods and cephalopods as sentient (2021). It is also invoked against interventions in nature or against changes in diet; in those cases, it is worth asking whether the risk was weighed on both sides, including the harm already certain to animals.",
+  "links": []
+ },
+ {
+  "pt": "Desextinção",
+  "termo": "De-extinction",
+  "def": "The attempt to recreate extinct species, or animals resembling them, through cloning, gene editing or selective breeding.",
+  "com": "In 2025, the company Colossal Biosciences announced wolves gene-edited to resemble the dire wolf, extinct for thousands of years; the result is a new animal resembling the extinct one, not the species brought back. From a sentientist point of view, the question is how the animals created live: the procedures use surrogate mothers and usually involve many losses, and animals released into the wild would face hunger, predation and disease. See argument N27.",
+  "links": []
+ },
+ {
+  "pt": "Renaturalização (rewilding)",
+  "termo": "Rewilding",
+  "def": "Restoring areas so that they return to a more natural state, often by reintroducing species, such as large herbivores and predators, with little human management afterwards.",
+  "com": "It is advocated by conservation and climate policy. Authors who study wild animal suffering, such as Oscar Horta and Brian Tomasik, question expanding natural areas without considering how the animals in them live, since, in most species, almost all young die early. The point is disputed and depends on the balance of welfare in nature, which is uncertain. See argument N16 and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Impulso genético (gene drive)",
+  "termo": "Gene drive",
+  "def": "A genetic engineering technique that makes a gene spread through a wild population much faster than through ordinary inheritance, within a few generations.",
+  "com": "It is being researched to reduce populations of malaria-carrying mosquitoes. The philosopher David Pearce proposes using it, in the long run, to reduce suffering in nature; its ecological risks and the difficulty of reversing its effects make it one of the most contested proposals in the debate. See argument N10 and Sterile insect technique.",
+  "links": []
+ },
+ {
+  "pt": "Valor inerente",
+  "termo": "Inherent value",
+  "def": "In Tom Regan's theory of animal rights, the value every \"subject-of-a-life\" has in themselves, equal among all and independent of their usefulness to others.",
+  "com": "For Regan, in The Case for Animal Rights (1983), those with inherent value cannot be treated as mere resources, and this applies to humans and to many animals. Paul W. Taylor uses a similar expression (inherent worth) for every living being, in Respect for Nature (1986), which shows that the term changes meaning with the theory. Not to be confused with intrinsic value, which in many theories is the value of states, such as pleasure, rather than of individuals. See Animal rights.",
+  "links": []
+ },
+ {
+  "pt": "Feminismo negro",
+  "termo": "Black feminism",
+  "def": "A current of feminism formulated by Black women, showing how racism, sexism and class combine in their lives.",
+  "com": "The Combahee River Collective (1977) was a landmark, and it was in this field that the legal scholar Kimberlé Crenshaw coined the term intersectionality (1989). Authors such as bell hooks, Angela Davis and, in Brazil, Lélia Gonzalez and Sueli Carneiro developed this tradition. Black vegan activists, such as Aph Ko and Syl Ko, in Aphro-ism (2017), discuss the relationship between racism and the way we treat animals. See Intersectionality and the view of the same name.",
+  "links": []
  }
 ]

@@ -431,6 +431,9 @@ for _velho, _novo in ABSORVIDOS.items():
     if _novo: ARGS[_novo]['formas'] += [x for x in [_v['frase'].rstrip('.')] + _v['formas'] if x not in ARGS[_novo]['formas']]
 ORDEM = sorted(ARGS, key=lambda c: (_FAM_ORD.index(c[0]), int(c[1:])))
 ARGS = {c: ARGS[c] for c in ORDEM}
+# Contagem arredondada para os textos de divulgação (título, descrição, imagem de compartilhamento): "mais de 290". O contador dos filtros continua exato.
+MAIS_N = (len(ARGS) - 1) // 10 * 10
+MAIS_PT, MAIS_EN = f'mais de {MAIS_N}', f'more than {MAIS_N}'
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
 
 # Endereços legíveis: cada argumento e cada argumento ruim tem a URL da própria frase (melhor no Google).
@@ -560,6 +563,10 @@ def _codigo_b12(s, m):
     antes, depois = s[max(0, m.start() - 14):m.start()], s[m.end():m.end() + 14]
     return (depois[:2] in (' "', ' “', ' ‘') or re.search(r'(que é|which is) $', antes) is not None
             or re.search(r'[A-N]\d{1,2}(, | e | and )$', antes) is not None or re.match(r'(, | e | and )[A-N]\d{1,2}(?!\d)', depois) is not None)
+
+def liga_pag(s, pre='../'):
+    """[[texto|caminho]] vira um link para outra página do site (caminho a partir da raiz)."""
+    return re.sub(r'\[\[([^|\]]+)\|([^\]]+)\]\]', lambda m: f'<a href="{pre}{m[2]}">{m[1]}</a>', s)
 
 def liga(s, ctx):
     def f(m):
@@ -881,7 +888,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
     ALTERNA[path] = (u_pt, u_en)
     alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     # o título da página inicial diz o que as pessoas buscam, e não só o nome
-    full = L(f'Guia de Argumentação Pelos Animais: respostas a {len(ARGS)} argumentos contra o veganismo e antiespecismo', f'For the Animals: answers to {len(ARGS)} arguments against veganism and antispeciesism') if home else f'{titulo_seo or title} | {NOME}'
+    full = L(f'Guia de Argumentação Pelos Animais: respostas a {MAIS_PT} argumentos contra o veganismo e antiespecismo', f'For the Animals: answers to {MAIS_EN} arguments against veganism and antispeciesism') if home else f'{titulo_seo or title} | {NOME}'
     if len(full) > 60 and not home: full = titulo_seo or title  # o nome do site só entra quando cabe
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha, pergunta) + '\n'
     base = '<base href="/"/>\n' if erro else ''
@@ -1028,7 +1035,7 @@ def inicio():
 <div class="busca-h"><label class="so-leitor" for="hq">O que te disseram?</label><input id="hq" type="search" placeholder="O que te disseram? Ex.: de onde você tira proteína" autocomplete="off"/><div id="hres" class="hres" hidden></div></div>
 <div class="comuns-w"><p class="comuns-t">Os mais ouvidos</p><div class="comuns">{comuns}</div></div>
 <div class="cena-h">{PORCO}<div class="nota" id="nota"><p class="nota-ti">Alguém disse:</p><p class="nota-f"><s id="n-f">"{e(ini["frase"])}"</s></p><p class="nota-r" id="n-r">{e(ini["falha"])}</p><p class="nota-a"><a id="n-l" href="argumentos/{ini["slug"]}.html">Ver a resposta completa →</a><button id="n-o" type="button" class="btn peq alt">Outra objeção ↻</button></p></div>{GALINHA}</div>
-<a class="rolar" href="#argumentos">{L(f"Role para ver os {len(ARGS)} argumentos ↓", f"Scroll to see all {len(ARGS)} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
+<a class="rolar" href="#argumentos">{L(f"Role para ver mais de {MAIS_N} argumentos ↓", f"Scroll to see more than {MAIS_N} arguments ↓")}</a></div><script type="application/json" id="n-dados">{ex_json}</script></section>
 <section class="bloco-cor lilas" id="argumentos"><div class="wrap"><div class="sec-cab centro-t"><h2>Todos os argumentos</h2><p>Um caderno com 14 divisórias. Toque em uma frase para ver a falha principal sem sair da página.</p></div>
 <div class="barra-f"><div class="filtros"><input id="fq" type="search" placeholder="Filtrar: leão, churrasco, B12" aria-label="Filtrar argumentos"/>{chips('parte', [('', 'Todos'), ('DIR', 'Diretos'), ('IND', 'Indiretos')])}{chips('st', [('', 'Tudo'), ('cap', 'Capítulos completos')]) if len(set(CAPS) & set(ARGS)) < len(ARGS) else ''}<span id="contagem" aria-live="polite">{len(ARGS)} {L("argumentos", "arguments")}</span></div><nav class="guias" aria-label="Ir para a família">{guias}</nav></div>
 <div class="caderno"><div id="catalogo">{folhas}</div></div></div></section>
@@ -1040,7 +1047,7 @@ def inicio():
 <section class="bloco-cor laranja" id="ruins"><div class="wrap"><div class="sec-cab centro-t"><h2>Pare de dizer isso, ou diga melhor</h2><p>A exigência vale para os dois lados. Estes argumentos circulam entre veganos e não resistem a exame como são ditos. Toque em um para ver como dizer melhor. Corrigir faz parte do processo, mas sem perder o foco: <a href="argumentos-ruins.html#corrigir-sem-perder-o-foco">por quê</a>.</p></div><div class="lista-riscada">{ruins}</div></div></section>
 <section class="bloco-cor amarelo" id="alem"><div class="wrap alem-in"><div>{circulo()}</div><div><div class="sec-cab"><h2>Além do veganismo</h2><p>O critério da senciência não termina no prato. Clique em um círculo ou escolha um tema.</p></div><div class="lista-alem">{alemc}</div></div></div></section>
 <section class="fecho"><div class="wrap"><h2>Pronto para a próxima conversa?</h2><p>Leia a objeção, pense no que diria e compare com a resposta.</p><a class="btn" href="debate.html">Simular um debate</a> <a class="btn alt" href="treino.html">Treinar respostas</a></div></section>'''
-    page('index.html', NOME, L(f'Toda objeção merece ser levada a sério. {len(ARGS)} argumentos contra o veganismo e o antiespecismo, na versão mais forte, com o que acertam e onde falham.', f'Every objection deserves to be taken seriously. {len(ARGS)} arguments against veganism and antispeciesism, in their strongest form: what they get right and where they fail.'), corpo)
+    page('index.html', NOME, L(f'Toda objeção merece ser levada a sério. Mais de {MAIS_N} argumentos contra o veganismo e o antiespecismo, na versão mais forte, com o que acertam e onde falham.', f'Every objection deserves to be taken seriously. More than {MAIS_N} arguments against veganism and antispeciesism, in their strongest form: what they get right and where they fail.'), corpo)
 
 def cartao_ruim(r, pre=''):
     return f'<a class="cartao" style="--c:#b8460f" href="{pre}ruins/{r["c"].lower()}.html"><span class="cod">{r["c"]} · {e(TIPOS[r["tipo"]][0])}</span><h3>"{e(r["frase"])}"</h3><p class="falha">{e(texto_card_ruim(r))}</p></a>'
@@ -1153,9 +1160,9 @@ def paginas_politicas():
         pp = lambda x, r: f'<a href="{x["s"]}.html"><small>{r}</small>{e(x["t"])}</a>'
         art = (f'<h2>Réplica</h2><div class="bloco curta" id="curta-txt"><p>{e(t["curta"])}</p></div><p><button class="copiar" type="button" data-alvo="curta-txt">Copiar resposta</button></p>'
                f'<div class="retorno"><span>Devolva com uma pergunta</span><p>{e(t["pergunta"])}</p></div>'
-               '<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga(e(x), {"pre": "../"})}</li>' for x in t['quebra']) + '</ul>'
+               '<h2>Por que excluir os animais contradiz o princípio</h2><ul class="pol-q">' + ''.join(f'<li>{liga_pag(liga(e(x), {"pre": "../"}))}</li>' for x in t['quebra']) + '</ul>'
                f'<div class="troca"><div class="nao"><p class="ti">A melhor tréplica</p><p>{liga(e(t["replica"]), {"pre": "../"})}</p></div><div class="sim"><p class="ti">A resposta</p><p>{liga(e(t["resposta"]), {"pre": "../"})}</p></div></div>'
-               + ''.join(f'<h2>{e(ti)}</h2>' + ''.join(f'<p>{liga(e(x), {"pre": "../"})}</p>' for x in ps) for ti, ps in t.get('mais', []))
+               + ''.join(f'<h2>{e(ti)}</h2>' + ''.join(f'<p>{liga_pag(liga(e(x), {"pre": "../"}))}</p>' for x in ps) for ti, ps in t.get('mais', []))
                + (f'<h2>{L("Quem defende os animais a partir desta teoria", "Who defends animals from within this theory")}</h2><p>{L("Autores, ativistas e grupos que partem desta teoria e mostram por que ela precisa incluir os animais e os demais seres sencientes.", "Authors, activists and groups who start from this theory and show why it has to include animals and other sentient beings.")}</p><ul class="pol-q">' + ''.join(f'<li><strong>{e(n)}:</strong> {e(d)}</li>' for n, d in t['nomes']) + '</ul>' if t.get('nomes') else '') +
                f'<h2>Veja também</h2><div class="nos">{nos(t["liga"])}</div>' + lista_fontes(t['fontes']) +
                '<nav class="pass" aria-label="Outras teorias">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próxima') if prox else '') + '</nav>')
@@ -1485,8 +1492,8 @@ def raciocinio():
 
 def sobre():
     n_cap = len(set(CAPS) & set(ARGS))
-    CONTEM = L(f'<p>São {len(ARGS)} argumentos catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a réplica, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
-               f'<p>{len(ARGS)} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the reply, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
+    CONTEM = L(f'<p>São mais de {MAIS_N} argumentos catalogados, cada um com suas formas comuns e sua falha principal, e {"todos têm" if n_cap >= len(ARGS) else f"{n_cap} têm"} capítulo completo: a réplica, a desmontagem passo a passo, os erros e vieses, os testes de coerência e as conexões com os outros argumentos. O guia também traz {len(RUINS)} argumentos ruins que veganos deveriam abandonar e uma seção sobre o que vai além do veganismo.</p>',
+               f'<p>More than {MAIS_N} arguments are catalogued, each with its common wordings and its main flaw, and {"every one has" if n_cap >= len(ARGS) else f"{n_cap} have"} a full chapter: the reply, the step-by-step rebuttal, the errors and biases, the consistency tests and the connections to other arguments. The guide also includes {len(RUINS)} weak arguments vegans should drop and a section on what goes beyond veganism.</p>')
     # como usar o site: do uso mais simples ao mais especializado
     USO = L('''<h2 id="como-usar">Como usar o site</h2><ol>
 <li><strong>Responder comentários na internet.</strong> É o uso mais simples: busque a frase que você leu, copie a réplica ou gere uma imagem dela e publique na conversa, com o link do capítulo para quem quiser ler mais.</li>
@@ -1891,7 +1898,7 @@ def llms_txt():
             (L('Sobre o guia', 'About the guide'), 'sobre.html', L('o que é o projeto, como as fontes são tratadas e qual é o tom', 'what the project is, how sources are handled and what tone it takes')),
         ]),
         (L('Argumentos', 'Arguments'), [
-            (L('Todos os argumentos', 'All arguments'), L('#argumentos', '#arguments'), L(f'os {len(ARGS)} argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um', f'the {len(ARGS)} arguments used against veganism and antispeciesism, each with its main flaw')),
+            (L('Todos os argumentos', 'All arguments'), L('#argumentos', '#arguments'), L(f'mais de {MAIS_N} argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um', f'more than {MAIS_N} arguments used against veganism and antispeciesism, each with its main flaw')),
             (L('As famílias', 'The families'), 'familias.html', L('os argumentos agrupados pela pergunta de fundo e pelo erro dominante', 'the arguments grouped by their underlying question and dominant error')),
             (L('Tipos de exploração', 'Types of exploitation'), 'exploracao.html', L('os argumentos reunidos por prática: alimentação, vestuário, pesquisa, entretenimento, esporte, pesca e caça, trabalho e companhia', 'the arguments grouped by practice: food, clothing, research, entertainment, sport, fishing and hunting, work and companionship')),
             (L('O raciocínio antivegano', 'The anti-vegan line of reasoning'), 'raciocinio.html', L('para onde a conversa vai depois que cada objeção é respondida', 'where the conversation goes after each objection is answered')),
@@ -1928,8 +1935,8 @@ def llms_txt():
     txt += L(f'Versão em inglês: {SITE_EN}/\n', f'Portuguese version: {SITE_PT}/\n')
     escreve('llms.txt', txt)
 
-    full = f'# {NOME}\n\n> ' + L(f'Os {len(ARGS)} argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.',
-                                 f'The {len(ARGS)} arguments in the catalogue, with the phrase, the main flaw and the address of the answer. Families in order; DIR codes challenge the moral core and IND codes discuss health, the environment, the economy or who defends veganism.') + '\n\n' + licenca
+    full = f'# {NOME}\n\n> ' + L(f'Os mais de {MAIS_N} argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.',
+                                 f'The more than {MAIS_N} arguments in the catalogue, with the phrase, the main flaw and the address of the answer. Families in order; DIR codes challenge the moral core and IND codes discuss health, the environment, the economy or who defends veganism.') + '\n\n' + licenca
     for f in FAMILIAS.values():
         full += f'## {f["c"]}. {f["nome"]} ({L("Parte", "Part")} {f["parte"]})\n\n{f["perg"]}\n\n'
         for a in f['args']:
@@ -2048,7 +2055,7 @@ def check_stubs():
             elif 'http-equiv="refresh"' in open(alvo, encoding='utf-8').read(): ruins_.append(f'{rel} -> {m[1]} (é outro stub)')
     if ruins_: raise SystemExit('Stubs com problema:\n  ' + '\n  '.join(ruins_))
 check_stubs()
-import icones; icones.gera(len(ARGS), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
+import icones; icones.gera(L(f'mais de {MAIS_N}', f'more than {MAIS_N}'), os.path.join(OUT, 'assets'), 'en' if EN else 'pt')
 escreve('assets/icon.svg', LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n')
 escreve('manifest.webmanifest', json.dumps(dict(name=NOME, short_name=CURTO, start_url='/', display='standalone', background_color='#fcfaf5', theme_color='#0a3703', lang='en' if EN else 'pt-BR', icons=[dict(src='assets/icon.svg', sizes='any', type='image/svg+xml'), dict(src='assets/icon-192.png', sizes='192x192', type='image/png'), dict(src='assets/icon-512.png', sizes='512x512', type='image/png', purpose='any maskable')]), ensure_ascii=False, indent=1))
 escreve('robots.txt', f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
