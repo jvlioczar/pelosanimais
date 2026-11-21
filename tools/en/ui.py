@@ -48,7 +48,7 @@ UI = [
  ('"name": "Argumentos"', '"name": "Arguments"'),
  # ---------- home ----------
  ('Para pensar com cuidado sobre os argumentos contra o veganismo:', 'For thinking carefully about the arguments against veganism:'),
- ('Toda objeção merece <mark>ser levada a sério</mark>.', 'Every objection deserves <mark>to be taken seriously</mark>.'),
+ ('Até que ponto as objeções <mark>se sustentam</mark>?', 'How well do the objections <mark>hold up</mark>?'),
  ('O que te disseram? Ex.: de onde você tira proteína', 'What did they tell you? E.g. where do you get your protein'),
  ('O que te disseram?', 'What did they tell you?'),
  ('Os mais ouvidos', 'Most often heard'),

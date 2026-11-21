@@ -1709,5 +1709,26 @@
   "def": "Situations in which satisfying one being's interests frustrates another's, as between humans and animals, when a use benefits some and harms others, or among animals themselves, as in predation and competition for food and territory.",
   "com": "Many alleged conflicts are not real ones: the interest in a flavor or in keeping a custom is not on the same level as an animal's interest in not suffering and staying alive, and there are alternatives that serve both. In real conflicts, such as self-defense or predation, equal consideration asks that similar interests carry similar weight, without deciding by species; speciesism settles every conflict in the human's favor in advance. The philosopher Oscar Horta, in \"Animal Ethics and Interest Conflicts\" (2005), discusses how ethical theories handle these cases, and Paul Taylor proposed priority principles, such as self-defense and minimum wrong. See Equal consideration, Speciesism and Self-defense.",
   "links": []
+ },
+ {
+  "pt": "Ética focada no sofrimento",
+  "termo": "Suffering-focused ethics",
+  "def": "A family of ethical views that give priority to reducing suffering, especially extreme suffering, over increasing happiness.",
+  "com": "It includes negative utilitarianism but isn't limited to it, and it can also be held by non-consequentialists. Authors such as Brian Tomasik, Magnus Vinding, in Suffering-Focused Ethics (2020), and the Center for Reducing Suffering work along these lines. Critics say it undervalues good experiences and can lead to radical conclusions, such as preferring that no beings exist; its defenders reply that the priority need not be absolute. See Negative utilitarianism and S-risks.",
+  "links": []
+ },
+ {
+  "pt": "Imperativo hedonista",
+  "termo": "Hedonistic imperative",
+  "def": "The proposal by the philosopher David Pearce, in The Hedonistic Imperative (1995), to use biotechnology to abolish the suffering of all sentient beings, replacing it with gradients of well-being.",
+  "com": "Pearce extends the proposal to wild animals, with the \"reprogramming\" of predators and fertility control, in what he calls compassionate biology. It is a long-term and contested view, because of ecological risks, uncertainty and the objection that it would be \"playing God\" (the argument \"Using medicine and genetics to end suffering is playing God\"). Even those who reject the means can accept the goal of reducing involuntary suffering. See Welfare biology and Wild animal suffering.",
+  "links": []
+ },
+ {
+  "pt": "Sub-rotinas de sofrimento",
+  "termo": "Suffering subroutines",
+  "def": "The researcher Brian Tomasik's term for computational processes that could have negative experiences inside complex artificial systems, without anyone noticing.",
+  "com": "It is a speculative hypothesis, tied to the debate on artificial sentience and to s-risks. It shows why the sentience criterion doesn't depend on what a being is made of, and why it is worth researching before creating systems that might feel. See the argument \"Machines will never feel; robots and AIs need no rights\" and S-risks.",
+  "links": []
  }
 ]

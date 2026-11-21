@@ -16438,5 +16438,57 @@
   ],
   "ex": "\"Comer um bife não é um conflito de interesses real: de um lado está o paladar, do outro, a vida inteira de um animal.\"",
   "ex_en": "\"Eating a steak is not a real conflict of interests: on one side is taste, on the other, an animal's whole life.\""
+ },
+ "Ética focada no sofrimento": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "Ética centrada no sofrimento"
+  ],
+  "sin_en": [
+   "Suffering-focused views"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Utilitarismo negativo",
+   "Riscos-s",
+   "Sofrimento"
+  ],
+  "ex": "\"Pela ética focada no sofrimento, evitar uma agonia intensa pesa mais do que proporcionar um prazer do mesmo tamanho.\"",
+  "ex_en": "\"On suffering-focused ethics, preventing intense agony weighs more than providing a pleasure of the same size.\""
+ },
+ "Imperativo hedonista": {
+  "tipo": "substantivo masculino",
+  "tipo_en": "noun",
+  "sin": [
+   "Abolicionismo do sofrimento"
+  ],
+  "sin_en": [
+   "Abolitionist project"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Biologia do bem-estar",
+   "Sofrimento dos animais selvagens",
+   "Biologia sintética"
+  ],
+  "ex": "\"O imperativo hedonista propõe que, no futuro, nenhum ser senciente precise passar por dor involuntária.\"",
+  "ex_en": "\"The hedonistic imperative proposes that, in the future, no sentient being need go through involuntary pain.\""
+ },
+ "Sub-rotinas de sofrimento": {
+  "tipo": "substantivo feminino plural",
+  "tipo_en": "noun",
+  "sin": [],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Riscos-s",
+   "Sofrimento"
+  ],
+  "ex": "\"Se um sistema de IA usar sinais de punição muito complexos para aprender, pode haver ali sub-rotinas de sofrimento que ninguém está monitorando.\"",
+  "ex_en": "\"If an AI system uses very complex punishment signals to learn, there may be suffering subroutines in it that no one is monitoring.\""
  }
 }

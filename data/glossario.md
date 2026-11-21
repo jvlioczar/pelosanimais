@@ -237,6 +237,8 @@
 
 **Utilitarismo negativo** — variante do utilitarismo cuja meta é minimizar o total agregado de sofrimento, sustentando que nenhuma quantidade de bem-estar positivo pode compensá-lo. *Essa variante tende a atribuir prioridade moral mais forte à eliminação do sofrimento animal do que à promoção de experiências positivas, o que a aproxima de posições mais urgentes dentro do movimento de libertação animal.*
 
+**Ética focada no sofrimento** — família de visões éticas que dão prioridade a reduzir o sofrimento, especialmente o extremo, sobre aumentar a felicidade. *Inclui o utilitarismo negativo, mas não se limita a ele, e pode ser defendida também por quem não é consequencialista. Autores como Brian Tomasik, Magnus Vinding, em Suffering-Focused Ethics (2020), e o Center for Reducing Suffering trabalham nessa linha. Críticos dizem que ela subestima o valor das experiências boas e pode levar a conclusões radicais, como preferir que não existam seres; seus defensores respondem que a prioridade não precisa ser absoluta. Veja Utilitarismo negativo e Riscos-s.*
+
 ---
 
 ## 5. Correntes da Ética Animal
@@ -985,6 +987,8 @@
 
 **Biologia sintética** — área da biotecnologia que projeta ou redesenha organismos, seja alterando o genoma de seres que já existem (de cima para baixo), seja montando organismos novos a partir de componentes inertes (de baixo para cima). *Oscar Horta e Mat Rozas (2024) apontam que ela pode criar animais feitos sob medida para a exploração, inclusive modificados para sentir menos dor e assim ser usados de outras formas que os prejudicam, e que o sofrimento de organismos sencientes novos poderia passar despercebido, por serem muito diferentes dos animais que conhecemos. Veja o argumento "Isso é ficção científica, temos problemas reais agora".*
 
+**Imperativo hedonista** — proposta do filósofo David Pearce, em The Hedonistic Imperative (1995), de usar a biotecnologia para abolir o sofrimento de todos os seres sencientes, substituindo-o por gradientes de bem-estar. *Pearce estende a proposta aos animais selvagens, com a "reprogramação" de predadores e o controle de fertilidade, no que chama de biologia compassiva. É uma visão de longo prazo e contestada, pelos riscos ecológicos, pela incerteza e pela objeção de que seria "brincar de Deus" (argumento "Usar remédios e genética para acabar com o sofrimento é brincar de Deus"). Mesmo quem rejeita os meios pode aceitar o objetivo de reduzir o sofrimento involuntário. Veja Biologia do bem-estar e Sofrimento dos animais selvagens.*
+
 **Longoprazismo** — posição filosófica segundo a qual influenciar positivamente o futuro de longo prazo é uma das prioridades morais centrais do nosso tempo, porque o futuro pode durar muito e conter um número imenso de seres. *Formulado no altruísmo eficaz por filósofos como William MacAskill, Toby Ord e Nick Bostrom, na prática se concentra sobretudo no futuro da humanidade, em especial na redução dos riscos de extinção. Defensores dos animais argumentam que a mesma lógica pede incluir todos os seres sencientes do futuro, a maioria dos quais provavelmente não será humana, e chamam a atenção para os riscos-s. Veja Altruísmo eficaz, Riscos-s e Riscos-x.*
 
 **Panspermia dirigida** — envio intencional de micro-organismos ou de outro material biológico a outros planetas para semear vida, ideia discutida por Francis Crick e Leslie Orgel em 1973. *Se a vida levada assim evoluísse como na Terra, com animais que têm muitos filhotes e quase todos morrem cedo, o sofrimento dos animais selvagens poderia se repetir em escala muito maior; por isso o filósofo Gary O'Brien (2022) argumenta que essas missões provavelmente teriam valor negativo. Veja o argumento "Temos que nos preocupar com os humanos do futuro, não com os animais".*
@@ -994,6 +998,8 @@
 **Riscos-s** — riscos de sofrimento em escala astronômica ("s-risks"), conceito ligado à preocupação com sofrimento futuro massivo, inclusive de animais.
 
 **Riscos-x** — riscos existenciais, capazes de extinguir a vida humana e a vida senciente ou seu potencial futuro.
+
+**Sub-rotinas de sofrimento** — termo do pesquisador Brian Tomasik para processos computacionais que poderiam ter experiências negativas dentro de sistemas artificiais complexos, sem que ninguém perceba. *É uma hipótese especulativa, ligada ao debate sobre senciência artificial e aos riscos-s. Ela mostra por que o critério da senciência não depende do material de que um ser é feito, e por que vale pesquisar antes de criar sistemas que talvez sintam. Veja o argumento "Máquinas nunca vão sentir, robôs e IAs não precisam de direitos" e Riscos-s.*
 
 **Terraformação** — transformação planejada de outro planeta, como Marte, para que tenha condições parecidas com as da Terra e possa abrigar ecossistemas. *Do ponto de vista dos animais, levar ecossistemas para outros planetas significaria levar também a dinâmica que produz o sofrimento dos animais selvagens, como observam Luciano Carlos Cunha (2022) e Oscar Horta e Mat Rozas (2024). Veja o argumento "Isso é ficção científica, temos problemas reais agora".*
 
