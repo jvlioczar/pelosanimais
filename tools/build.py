@@ -20,6 +20,9 @@ EN = 'en' in sys.argv[1:]
 OUT = os.path.join(os.path.dirname(ROOT), 'fortheanimals') if EN else ROOT
 SITE_PT, SITE_EN = 'https://pelosanimais.biblioverse.org', 'https://fortheanimals.biblioverse.org'
 SITE = SITE_EN if EN else SITE_PT
+# Cloudflare Web Analytics: pelosanimais e fortheanimals usam o token do hub (biblioverse.org), filtrável por host no painel. Troque aqui se o site ganhar um token próprio.
+CF_TOKEN = '34663afb7d4a4f139902be577854d0fd'
+CF_BEACON = "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"" + CF_TOKEN + "\"}'></script><!-- End Cloudflare Web Analytics -->"
 EN_NO_AR = True  # vira True quando fortheanimals.biblioverse.org estiver publicado: só então o site em português mostra o botão EN e o hreflang
 BILINGUE = EN or EN_NO_AR
 NOME = en.NOME if EN else 'Guia de Argumentação Pelos Animais'
@@ -124,7 +127,7 @@ IND_TEXTO = ('<p>Os argumentos <strong>indiretos</strong> não discutem se é ce
     '<p>Quando saúde, proteína ou ambiente são usados para justificar comer animais, o raciocínio costuma falhar em dois planos. No dos fatos, porque as premissas muitas vezes são falsas: '
     'uma alimentação vegetal bem planejada supre as necessidades e causa menos dano ambiental. No moral, porque dá um salto do que <em>é</em> para o que <em>deve ser</em>, '
     'a passagem que os filósofos chamam de falácia do é-deve: mesmo que comer animais trouxesse algum benefício, isso não mostraria que é justo fazê-los sofrer e morrer para obtê-lo. '
-    'Mostrar os fatos é sempre necessário; parar neles, nunca é suficiente.</p>')
+    'Mostrar os fatos é sempre necessário; parar neles, nunca é suficiente. Veja também a diferença entre <a href="comece-aqui.html#respostas">argumentos e respostas diretos e indiretos</a>.</p>')
 DESCRICAO = 'Um guia para pessoas que querem conversar melhor e pensar com mais clareza sobre os animais, o veganismo e a ética animal. Ele cataloga de forma sistemática todas as ideias usadas para explorar, causar danos ou matar seres sencientes, ou para evitar ajudá-los, e leva a sério, explicando a fundo os questionamentos e vieses de quem se opõe ao antiespecismo.'
 e = lambda s: html.escape(str(s), quote=True)
 def L(pt, en):
@@ -435,6 +438,16 @@ ARGS = {c: ARGS[c] for c in ORDEM}
 # Contagem arredondada para os textos de divulgação (título, descrição, imagem de compartilhamento): "mais de 290". O contador dos filtros continua exato.
 MAIS_N = (len(ARGS) - 1) // 10 * 10
 MAIS_PT, MAIS_EN = f'mais de {MAIS_N}', f'more than {MAIS_N}'
+# Parte de cada argumento (2026-11-22). A família dá o padrão; estes são as exceções.
+# Direto: alguma premissa trata do bem ou do mal dos animais, ou de se é justo prejudicá-los (tradição e natureza incluídas).
+# Indireto: as premissas tratam de outra coisa: saúde, ambiente, economia, praticidade, eficácia ou quem defende os animais.
+PARTE_DIR = ['I7', 'I9', 'I10', 'I11', 'I12', 'I14', 'I17', 'I18', 'I19', 'I20', 'I21', 'I22', 'I23', 'I24', 'I25', 'I26', 'I27', 'I29', 'I30', 'I31', 'I32', 'I33', 'I34', 'I36', 'I37', 'H2', 'H3', 'J8', 'J10', 'J11', 'J23', 'K3']
+PARTE_IND = {'C12': 'H', 'D4': 'G', 'D15': 'L', 'E10': 'J', 'E14': 'J', 'F11': 'K', 'N12': 'K', 'N13': 'J', 'N26': 'J'}  # argumento -> família cujo tema e exemplo valem para o aviso de argumento indireto
+for _c in list(PARTE_DIR) + list(PARTE_IND): assert _c in ARGS, _c
+for _c, _a in ARGS.items():
+    _a['parte'] = 'DIR' if _c in PARTE_DIR else 'IND' if _c in PARTE_IND else FAMILIAS[_a['fam']]['parte']
+for _f in FAMILIAS.values():
+    _f['mista'] = len({x['parte'] for x in _f['args'] if x['c'] in ARGS}) > 1
 for f in FAMILIAS.values(): f['args'].sort(key=lambda d: int(d['c'][1:]))
 
 # Endereços legíveis: cada argumento e cada argumento ruim tem a URL da própria frase (melhor no Google).
@@ -945,6 +958,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
 </div></footer>
 <script src="{pre}assets/app.js?v={VER_JS}" defer></script>
 <script src="{pre}assets/trecho.js?v={VER_TR}" defer></script>
+{CF_BEACON}
 </body></html>
 '''
     doc = en.traduz_html(doc, nova_url) if EN else nova_url(doc)  # em inglês, a tabela de interface vem antes de converter os links
@@ -987,7 +1001,7 @@ def lig(c, pre=''): return f'<a href="{pre}argumentos/{c.lower()}.html">{c}</a>'
 def status(c): return '<span class="selo ok">Capítulo completo</span>' if c in CAPS else '<span class="selo">Verbete</span>'
 def cartao(a, pre=''):
     f = FAMILIAS[a['fam']]
-    return f'<a class="cartao" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if a["c"] in CAPS else "ver"}" href="{pre}argumentos/{a["slug"]}.html"><span class="cod">{a["c"]}</span><h3>{e(a["frase"])}</h3><p class="falha">{e(a["falha"])}</p>{status(a["c"])}</a>'
+    return f'<a class="cartao" style="--c:{f["cor"]}" data-parte="{a["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if a["c"] in CAPS else "ver"}" href="{pre}argumentos/{a["slug"]}.html"><span class="cod">{a["c"]}</span><h3>{e(a["frase"])}</h3><p class="falha">{e(a["falha"])}</p>{status(a["c"])}</a>'
 def pontos(f, pre=''):
     bol = ''.join(f'<i{" class=ok" if a["c"] in CAPS else ""}></i>' for a in f['args'])
     return f'<a class="linha-f" style="--c:{f["cor"]}" href="{pre}familias/{f["c"].lower()}.html" aria-label="{e(f["nome"])}: {f["n"]} {L("argumentos", "arguments")}" title="{e(f["nome"])}"><span>{f["c"]}</span><span class="pontos">{bol}</span></a>'
@@ -1004,7 +1018,7 @@ def item_arg(a):
     ok = a['c'] in CAPS
     formas = ''.join(f'<li>"{e(x)}"</li>' for x in a['formas'])
     bot = 'Abrir o capítulo completo' if ok else 'Abrir o verbete'
-    return f'<details class="item" style="--c:{f["cor"]}" data-parte="{f["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if ok else "ver"}" data-u="argumentos/{a["slug"]}.html"><summary><span class="cod">{a["c"]}</span><b>{e(a["frase"])}</b></summary><div class="abre"><p class="falha-i"><strong>Falha principal:</strong> {e(a["falha"])}</p><ul class="formas">{formas}</ul><a class="btn peq" href="argumentos/{a["slug"]}.html">{bot} →</a></div></details>'
+    return f'<details class="item" style="--c:{f["cor"]}" data-parte="{a["parte"]}" data-fam="{a["fam"]}" data-st="{"cap" if ok else "ver"}" data-u="argumentos/{a["slug"]}.html"><summary><span class="cod">{a["c"]}</span><b>{e(a["frase"])}</b></summary><div class="abre"><p class="falha-i"><strong>Falha principal:</strong> {e(a["falha"])}</p><ul class="formas">{formas}</ul><a class="btn peq" href="argumentos/{a["slug"]}.html">{bot} →</a></div></details>'
 
 def circulo(pre=''):
     aneis = [(250, 'Extraterrestres', 'alem/extraterrestres.html', '#e6f4fd', True), (205, 'IA e robôs', 'alem/ia-e-robos.html', '#bfe0f7', True), (160, 'Animais selvagens', 'alem/animais-selvagens.html', '#d8eebd', False), (115, 'Animais explorados', 'argumentos/a8.html', '#ffeb5b', False)]
@@ -1193,7 +1207,7 @@ def pagina_debate():
     page('debate.html', 'Debate simulado', L('Jogo para treinar uma conversa com quem não é vegano: escolha a melhor resposta para cada argumento e veja como você se saiu no debate.', "A game to practice a conversation with someone who isn't vegan: pick the best answer to each argument and see how you did in the debate."), corpo, 'debate.html')
 
 def treino():
-    cartas = [dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html', p=FAMILIAS[a['fam']]['parte'], cor=FAMILIAS[a['fam']]['cor'], fam=a['fam']) for a in ARGS.values()]
+    cartas = [dict(c=a['c'], f=a['frase'], r=a['falha'], u=f'argumentos/{a["slug"]}.html', p=a['parte'], cor=FAMILIAS[a['fam']]['cor'], fam=a['fam']) for a in ARGS.values()]
     cad = [dict(n=c['n'], cods=c['cods']) for c in CADEIAS]
     ops = ''.join(f'<option value="fam:{f["c"]}">{L("Família", "Family")} {f["c"]}: {e(f["nome"])}</option>' for f in FAMILIAS.values())
     opc = ''.join(f'<option value="cad:{i}">{L("Conversa", "Conversation")}: {e(c["n"])}</option>' for i, c in enumerate(CADEIAS))
@@ -1258,7 +1272,7 @@ def comece():
 <h2>Cinco compromissos</h2><ol><li><strong>Honestidade intelectual:</strong> apresentar a versão mais forte de cada argumento, reconhecer o que ele acerta e não fazer afirmação empírica sem fonte.</li><li><strong>Rigor em três planos:</strong> lógico (o argumento é válido?), epistemológico (as premissas têm respaldo na evidência?) e moral (o critério é coerente e relevante?).</li><li><strong>Sencientismo:</strong> a senciência é o critério fundador da inclusão moral. Espécie, inteligência, utilidade ou afeto humano não são.</li><li><strong>Antiespecismo e justiça:</strong> interesses semelhantes merecem consideração semelhante, seja qual for a espécie de quem os tem.</li><li><strong>Parcimônia:</strong> preferir o critério mais simples que explica nossos juízos morais mais firmes, sem exceções criadas sob medida para proteger hábitos.</li></ol>
 <p>Derrubar espantalhos enfraqueceria o guia e faria dele aquilo que critica. Por isso a versão mais forte de cada argumento vem antes da resposta.</p>
 <h2>Como usar</h2><ul><li><strong>Para debater:</strong> localize a objeção pelo <a href="index.html#argumentos">código ou pela busca</a> e siga o <a href="mapa.html">mapa de conexões</a> para antecipar a próxima. A letra indica a família e o número, a posição dentro dela.</li><li><strong>Para reconhecer:</strong> o bloco "Como pode aparecer" mostra as outras formas em que o argumento costuma ser dito ou escrito.</li><li><strong>Para ensinar:</strong> use a resposta para crianças e a curta. As camadas técnicas ficam para quem quer se aprofundar. Um exercício para a turma: listar atos claramente errados, claramente permitidos e duvidosos, perguntar o que torna errados os da primeira lista e só então perguntar se seria permitido tratar humanos como tratamos os animais na fazenda, no laboratório ou na indústria de peles (proposto por Nathan Nobis em <em>Animals &amp; Ethics 101</em>, p. 13–14).</li><li><strong>Para debater com quem parte de uma teoria política:</strong> as <a href="objecoes-politicas.html">objeções políticas</a> mostram, teoria por teoria, por que excluir os animais contradiz o princípio de cada uma.</li><li><strong>Para pesquisar:</strong> os índices de <a href="falacias.html">falácias</a> e <a href="vieses.html">vieses</a> permitem atravessar o catálogo por tipo de erro.</li></ul>
-<h2>Argumentos diretos e indiretos</h2><p>Os argumentos <strong>diretos (DIR)</strong> contestam o núcleo moral: se os animais sentem, se o indivíduo animal conta e se usar ou matar esse indivíduo é errado. Os <strong>indiretos (IND)</strong> não enfrentam essa questão: alegam que a exploração é necessária, que o veganismo é inviável, prejudicial ou ineficaz, ou que quem o defende não merece crédito.</p><p>Mesmo que um argumento indireto fosse verdadeiro, ele justificaria apenas exceções, nunca a exploração em geral. Por isso a Parte DIR vem primeiro.</p><h3 id="indiretos">Por que os argumentos indiretos não bastam</h3>{IND_TEXTO}
+<h2>Argumentos diretos e indiretos</h2><p>Um argumento é <strong>direto (DIR)</strong> quando alguma de suas premissas trata do bem ou do mal dos animais, ou de se é justo prejudicá-los: se eles sentem, se o indivíduo conta, se usá-lo ou matá-lo é errado. Também é direto quando invoca a tradição, a natureza ou a liberdade para justificar o dano. É <strong>indireto (IND)</strong> quando as premissas tratam de outra coisa: alegam que a exploração é necessária para a saúde, que o veganismo é inviável, caro, ruim para o ambiente ou ineficaz, ou que quem o defende não merece crédito. A classificação vale para cada argumento, e algumas famílias reúnem os dois tipos.</p><p>Mesmo que um argumento indireto fosse verdadeiro, ele justificaria apenas exceções, nunca a exploração em geral. Por isso a Parte DIR vem primeiro.</p><h3 id="indiretos">Por que os argumentos indiretos não bastam</h3>{IND_TEXTO}<h3 id="respostas">Argumentos e respostas: os dois podem ser diretos ou indiretos</h3><p>Direto e indireto descrevem o que um argumento afirma, e não como se responde a ele. A resposta também pode ser direta, quando trata do que acontece com os animais e de se isso é justo, ou indireta, quando fala de saúde, ambiente, economia ou praticidade. Isso dá quatro situações:</p><ul><li><strong>Argumento direto, resposta direta.</strong> É o caminho principal. A "sempre fizemos isso" se responde que a tradição não torna justo um dano, como mostra a história de tantas práticas abandonadas (<a href="argumentos/d1.html">D1</a>).</li><li><strong>Argumento direto, resposta indireta.</strong> É trocar de assunto. Responder a "é natural comer carne" com "carne vermelha faz mal" deixa a objeção de pé e sugere que, se a carne fosse saudável, comer animais seria aceitável.</li><li><strong>Argumento indireto, resposta indireta.</strong> Serve para corrigir os fatos: a "precisamos de proteína animal" se responde que uma alimentação vegetal bem planejada supre as necessidades (<a href="argumentos/g2.html">G2</a>). É útil, mas não basta.</li><li><strong>Argumento indireto, resposta direta.</strong> Completa a anterior: mesmo que houvesse um benefício, ele não mostraria que é justo fazer alguém sofrer e morrer para obtê-lo. Por isso cada capítulo de argumento indireto termina devolvendo a conversa à questão moral.</li></ul><p>As respostas indiretas, usadas como defesa do veganismo, são recusadas por muitos ativistas e filósofos dos direitos animais, porque deixam de lado o respeito aos próprios animais e podem levar a conclusões opostas, como a carne "sustentável" ou a criação de insetos. O guia as usa só para corrigir fatos, e sempre ao lado de uma resposta direta. A página <a href="argumentos-ruins.html">Pare de dizer isso</a> reúne exemplos de respostas indiretas que costumam sair pela culatra, como "vire vegano pelo planeta".</p>
 <h2 id="analisar">Como analisar um argumento</h2><p>Antes de responder, reconstrua o argumento: escreva as premissas e a conclusão de modo que a conclusão se siga delas. Três regras ajudam:</p><ol><li><strong>Fixe a quantidade.</strong> A frase fala de todos, de alguns ou de quais? Se "animais não sentem dor" vale para todos, basta um contraexemplo para derrubá-la; se vale só para alguns, não diz nada sobre os outros.</li><li><strong>Esclareça as palavras ambíguas.</strong> "Natural", "necessário", "pessoa" e "direito" costumam mudar de sentido no meio da conversa. Fixe um sentido e mantenha-o até o fim (é o <a href="falacias.html">equívoco</a>).</li><li><strong>Escreva a premissa oculta.</strong> A frase do dia a dia quase sempre deixa de fora o princípio que leva à conclusão. Escrevê-lo mostra onde está a discordância, e o bloco "Extrapolações" de cada capítulo testa esse princípio. Para praticar, use o modo "Encontre a premissa oculta" em <a href="treino.html">Treinar respostas</a>.</li></ol>
 <h3>Condição necessária e condição suficiente</h3><p>Uma condição é <strong>suficiente</strong> quando basta: se X, então Y. É <strong>necessária</strong> quando sem ela não há Y: só se X, então Y. Quem defende os animais costuma propor uma condição suficiente para alguém contar moralmente, como ser senciente. Quem defende o uso costuma propor condições necessárias exigentes, como razão, linguagem ou deveres, e então precisa explicar os humanos que não as têm, como bebês e pessoas com deficiência cognitiva profunda (ver <a href="argumentos/a15.html">A15</a> e <a href="argumentos/a18.html">A18</a>). Uma condição suficiente não precisa ser a única: dizer que a senciência basta não nega que outras coisas também contem.</p>
 <h3>Permitido, obrigatório, proibido e além do dever</h3><p>"Certo" é uma palavra ambígua. Uma ação é <strong>permitida</strong> quando não é errada; <strong>obrigatória</strong> quando deixar de fazê-la é errado; <strong>proibida</strong> quando fazê-la é errado; e <strong>supererrogatória</strong> quando é boa e admirável, mas vai além do dever. Vale perguntar de qual se trata: "não é errado comer carne" diz que é permitido; "admiro quem é vegano, mas não é para todo mundo" trata o veganismo como algo além do dever. O guia sustenta que deixar de financiar um dano evitável é um dever, e não um gesto heroico (ver <a href="argumentos/e10.html">E10</a> e <a href="argumentos/e14.html">E14</a>).</p>
@@ -1313,7 +1327,8 @@ def familias():
     page('familias.html', 'As 14 famílias', L('As catorze famílias de argumentos contra o veganismo e o antiespecismo, de senciência e status moral a animais selvagens, o futuro e os motivos de ex-veganos, com a pergunta de fundo de cada uma.', 'The fourteen families of arguments against veganism and antispeciesism, from sentience and moral status to wild animals, the future and ex-vegans\' reasons, with the underlying question of each.'), corpo, 'familias.html', 'CollectionPage')
     for c, f in FAMILIAS.items():
         extra = f'<p class="tese" style="--c:{f["cor"]}"><strong>Pergunta de fundo:</strong> {e(f["perg"])}<br/><strong>Erro dominante:</strong> {e(f["erro"])}</p>'
-        if f['parte'] == 'IND': extra += aviso_ind(c, 'Família de argumentos indiretos')
+        if f['mista']: extra += '<p class="nota-mista">Esta família reúne argumentos diretos e indiretos. Cada capítulo indica de que tipo é o argumento.</p>'
+        elif f['parte'] == 'IND': extra += aviso_ind(c, 'Família de argumentos indiretos')
         corpo = cabeca('<a href="../">Início</a> / <a href="../familias.html">Famílias</a>', f'{c}. {e(f["nome"])}', L(f'{f["n"]} argumentos da Parte {f["parte"]}.', f'{f["n"]} arguments in Part {f["parte"]}.'), extra) + f'<section class="secao"><div class="wrap"><h2 class="so-leitor">{L("Argumentos desta família", "Arguments in this family")}</h2><div class="grade">{"".join(cartao(a, "../") for a in f["args"])}</div></div></section>'
         page(f'familias/{c.lower()}.html', f'Família {c}: {f["nome"]}', L(f'{f["n"]} argumentos sobre {f["nome"].lower()}. {f["perg"]} Erro dominante: {f["erro"]}.', f'{f["n"]} arguments about {f["nome"].lower()}. {f["perg"]} Dominant error: {f["erro"]}.'), corpo, 'familias.html', 'CollectionPage', [('Famílias', 'familias.html')])
 
@@ -1359,7 +1374,7 @@ def pagina_capitulo(c, ant, prox):
     a = ARGS[c]; f = FAMILIAS[a['fam']]
     tese, notas, abas, curta_html = capitulo(c)
     abaixo = f'<div class="tese-c" data-frase><span>A resposta em uma frase</span><p>{tese}</p></div>' + ''.join(f'<p class="notas">{n}</p>' for n in notas)
-    if f['parte'] == 'IND': abaixo = aviso_ind(f['c'], 'Antes de responder: argumento indireto') + abaixo
+    if a['parte'] == 'IND': abaixo = aviso_ind(PARTE_IND.get(c, f['c']), 'Antes de responder: argumento indireto') + abaixo
     abaixo += barra_leitura(c, L(f'{c}. "{a["frase"].rstrip(".")}"', f"{c}. ‘{a['frase'].rstrip('.')}’"))
     tabs = ''.join(f'<button type="button" role="tab" id="tab-{i}" aria-controls="p-{i}" aria-selected="{"true" if not n else "false"}"><b>{e(t)}</b><small>{e(s)}</small></button>' for n, (i, t, s, _) in enumerate(abas))
     pans = ''.join(f'<div class="painel" role="tabpanel" id="p-{i}" aria-labelledby="tab-{i}">{h}</div>' for i, _, _, h in abas)
@@ -1393,7 +1408,7 @@ def pagina_verbete(c, ant, prox):
     cad = [ca for ca in CADEIAS if c in ca['cods']]
     abaixo = f'<div class="tese-c"><span>A falha principal</span><p>{e(a["falha"])}</p></div>'
     corpo = '<h2>Como pode aparecer</h2><div class="baloes">' + ''.join(f'<figure class="balao"><blockquote>"{e(x)}"</blockquote></figure>' for x in a['formas']) + '</div>'
-    if f['parte'] == 'IND': corpo += '<div class="retorno"><span>Devolva à questão moral</span><p>Mesmo se fosse verdadeiro, este argumento indireto justificaria no máximo exceções. Os interesses dos animais contam?</p></div>'
+    if a['parte'] == 'IND': corpo += '<div class="retorno"><span>Devolva à questão moral</span><p>Mesmo se fosse verdadeiro, este argumento indireto justificaria no máximo exceções. Os interesses dos animais contam?</p></div>'
     if fal or vie:
         corpo += '<h2>Erros e vieses ligados</h2><div class="grade-v">' + ''.join(f'<a class="cartao vies" href="../{p}.html#{slug(x["n"])}"><span class="cod">{r}</span><h3>{e(x["n"])}</h3><p>{e(x["d"])}</p></a>' for ls, p, r in ((fal, 'falacias', 'Falácia'), (vie, 'vieses', 'Viés')) for x in ls) + '</div>'
     if cad:
@@ -1939,9 +1954,9 @@ def llms_txt():
     full = f'# {NOME}\n\n> ' + L(f'Os mais de {MAIS_N} argumentos do catálogo, com a frase, a falha principal e o endereço da resposta. Famílias em ordem; códigos DIR contestam o núcleo moral e códigos IND discutem saúde, ambiente, economia ou quem defende o veganismo.',
                                  f'The more than {MAIS_N} arguments in the catalogue, with the phrase, the main flaw and the address of the answer. Families in order; DIR codes challenge the moral core and IND codes discuss health, the environment, the economy or who defends veganism.') + '\n\n' + licenca
     for f in FAMILIAS.values():
-        full += f'## {f["c"]}. {f["nome"]} ({L("Parte", "Part")} {f["parte"]})\n\n{f["perg"]}\n\n'
+        full += f'## {f["c"]}. {f["nome"]} ({L("Parte mista", "Mixed part") if f["mista"] else L("Parte", "Part") + " " + f["parte"]})\n\n{f["perg"]}\n\n'
         for a in f['args']:
-            full += f'- [{a["c"]}. {a["frase"]}]({u("argumentos/" + a["slug"] + ".html")}): {a["falha"]}\n'
+            full += f'- [{a["c"]}. {a["frase"]}]({u("argumentos/" + a["slug"] + ".html")}) ({a["parte"]}): {a["falha"]}\n'
         full += '\n'
     full += L('## Pare de dizer isso\n\n', '## Stop saying this\n\n')
     for r in RUINS:

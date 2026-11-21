@@ -275,12 +275,13 @@ def gera():
         for f in fams:
             L.impar()
             dir_ = f['parte'] == 'DIR'
-            parte = ('Parte DIR · argumentos diretos: discutem se é certo usar os animais.' if dir_ else
+            parte = ('Família mista · argumentos diretos e indiretos: cada um traz a sua indicação.' if f.get('mista') else
+                     'Parte DIR · argumentos diretos: discutem se é certo usar os animais.' if dir_ else
                      'Parte IND · argumentos indiretos: discutem saúde, ambiente, economia ou quem defende os animais. Corrija os fatos e volte à pergunta moral.')
             num[f'fam-{f["c"]}'] = L.add(f'<p class="letra">{f["c"]}</p><h2>{e(f["nome"])}</h2><p class="perg">{e(f["perg"])}</p>'
                                          f'<p class="parte">{e(parte)}<b>{len(por_fam[f["c"]])} argumentos</b></p>', 'fam', f'--bg:{f["cor"]}', ancora=f'fam-{f["c"]}')
             for c in por_fam[f['c']]:
-                a = B.ARGS[c]
+                a = B.ARGS[c]; dir_ = a['parte'] == 'DIR'
                 ps, ret = essencial(c)
                 url = f'{B.SITE_PT}/argumentos/{a["slug"]}.html'
                 corpo = (f'<div class="falha"><p class="ti">A falha principal</p><p class="txt">{e(tipo(a["falha"]))}</p></div>'
