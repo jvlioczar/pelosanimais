@@ -873,6 +873,8 @@
 
 **Ativismo institucional** — atuação via políticas públicas, lobby, litígio estratégico.
 
+**Denominador comum** — aquilo em que pessoas ou crenças diferentes já concordam, e que pode servir de ponto de partida para uma conversa ou uma ação conjunta. Também chamado de mínimo comum, ponto de convergência ou terreno comum. *Não é o mesmo que meio-termo. No meio-termo, cada lado abre mão de uma parte do que defende para chegar a um acordo; no denominador comum, procura-se a parte que os dois já aceitam, sem que ninguém precise ceder. Quase ninguém defende o sofrimento desnecessário, e esse acordo é um denominador comum entre veganos e quem come carne. Partir dele não é abrir mão da conclusão: é mostrar que ela começa em algo que a outra pessoa já aceita. Um meio-termo, como reduzir o consumo, pode ser um passo, mas não responde à pergunta sobre o que devemos aos animais. Veja a página O mínimo comum, em Além do veganismo, e Reducetarianismo.*
+
 **Boicote e consumo consciente** — estratégia de pressão econômica via escolhas de consumo.
 
 **Damacenos** ⚠️ — não foi possível confirmar com segurança o significado deste termo no contexto do ativismo animal; pode ser um nome próprio, apelido de grupo específico ou erro de digitação. Recomendo revisar a fonte antes de publicar.

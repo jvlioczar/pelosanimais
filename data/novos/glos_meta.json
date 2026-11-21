@@ -16716,5 +16716,31 @@
   ],
   "ex": "\"Foi o feminismo negro que mostrou que uma mulher negra pode sofrer uma discriminação que nem o feminismo branco nem o antirracismo masculino enxergavam.\"",
   "ex_en": "\"It was Black feminism that showed that a Black woman can suffer a discrimination neither white feminism nor male-led antiracism saw.\""
+ },
+ "Denominador comum": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Mínimo comum",
+   "Ponto de convergência",
+   "Terreno comum"
+  ],
+  "sin_en": [
+   "Common minimum",
+   "Point of convergence",
+   "Lowest common denominator"
+  ],
+  "ant": [
+   "Polarização"
+  ],
+  "ant_en": [
+   "Polarization"
+  ],
+  "veja": [
+   "Reducetarianismo",
+   "Ativismo"
+  ],
+  "ex": "\"Os dois discordavam sobre comer carne, mas tinham um denominador comum: nenhum aceitava ver um cachorro sofrer à toa.\"",
+  "ex_en": "\"The two disagreed about eating meat, but they had common ground: neither accepted seeing a dog suffer for nothing.\""
  }
 }
