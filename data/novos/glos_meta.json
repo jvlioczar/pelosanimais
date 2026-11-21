@@ -13220,24 +13220,23 @@
   "ex_en": "“At the sanctuary, cows rescued from slaughterhouses live on wide pastures, where they receive names and individual care until the end of their lives.”"
  },
  "Saúde Única (One Health)": {
-  "tipo": "locução substantiva",
-  "tipo_en": "noun phrase",
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
   "sin": [
-   "Saúde unificada"
+   "One Health",
+   "Saúde única"
   ],
   "sin_en": [
-   "Unified health"
+   "One Health approach"
   ],
   "ant": [],
   "ant_en": [],
   "veja": [
    "Zoonose",
-   "Pandemia",
-   "Resistência antimicrobiana",
-   "Superbactéria"
+   "Altruísmo eficaz"
   ],
-  "ex": "“A abordagem de Saúde Única reúne médicos, veterinários e ecólogos para entender como doenças passam entre pessoas, animais e ambiente.”",
-  "ex_en": "“The One Health approach brings together doctors, veterinarians and ecologists to understand how diseases move among people, animals and the environment.”"
+  "ex": "\"Pela Saúde Única, combater a gripe aviária exige cuidar ao mesmo tempo das aves, das pessoas e do ambiente.\"",
+  "ex_en": "\"Under One Health, fighting avian flu requires caring for birds, people and the environment at the same time.\""
  },
  "Sebo animal": {
   "tipo": "locução substantiva",
@@ -16555,5 +16554,20 @@
   ],
   "ex": "\"Quando ela contou que tinha virado vegana, o colega disse que era só sinalização de virtude, sem discutir nada sobre os animais.\"",
   "ex_en": "\"When she said she had gone vegan, her colleague said it was just virtue signalling, without discussing anything about the animals.\""
+ },
+ "Conclusão rebugnante": {
+  "tipo": "expressão",
+  "tipo_en": "noun",
+  "sin": [
+   "Conclusão repugnante para insetos"
+  ],
+  "sin_en": [],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Utilitarismo"
+  ],
+  "ex": "\"Se um formigueiro inteiro com vidas apenas boas valesse mais que um elefante com vida muito boa, chegaríamos à conclusão rebugnante.\"",
+  "ex_en": "\"If a whole anthill of barely good lives were worth more than an elephant with a very good life, we would reach the rebugnant conclusion.\""
  }
 }
