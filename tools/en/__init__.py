@@ -62,13 +62,17 @@ def falta(tipo, chave):
     FALTAM.setdefault(tipo, []).append(chave)
 
 # ---------- paths ----------
-PASTAS = {'argumentos': 'arguments', 'ruins': 'stop-saying', 'familias': 'families', 'politicas': 'political', 'alem': 'beyond'}
+PASTAS = {'argumentos': 'arguments', 'ruins': 'stop-saying', 'familias': 'families', 'politicas': 'political', 'alem': 'beyond', 'falacias': 'fallacies', 'vieses': 'biases'}
 PAGS = {'comece-aqui': 'start-here', 'argumentos-ruins': 'stop-saying', 'alem-do-veganismo': 'beyond-veganism',
         'objecoes-politicas': 'political-objections', 'raciocinio': 'reasoning', 'mapa': 'map', 'falacias': 'fallacies',
         'vieses': 'biases', 'biblioteca': 'library', 'sobre': 'about', 'glossario': 'glossary', 'treino': 'practice', 'familias': 'families', 'debate': 'debate', 'exploracao': 'exploitation'}
-SUB = {'politicas': {k: v['s'] for k, v in POLITICAS.items()}, 'alem': {k: v['s'] for k, v in ALEM.items()}}
+def _slug(t):
+    import unicodedata
+    return re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', t.lower()).encode('ascii', 'ignore').decode()).strip('-')
+SUB = {'politicas': {k: v['s'] for k, v in POLITICAS.items()}, 'alem': {k: v['s'] for k, v in ALEM.items()},
+       'falacias': {_slug(k): _slug(v[0]) for k, v in FALACIAS.items()}, 'vieses': {_slug(k): _slug(v[0]) for k, v in VIESES.items()}}
 
-_PASTA_RE = re.compile(r'(?<![\w-])(argumentos|ruins|familias|politicas|alem)/([\w-]+)\.html')
+_PASTA_RE = re.compile(r'(?<![\w-])(argumentos|ruins|familias|politicas|alem|falacias|vieses)/([\w-]+)\.html')
 _PAG_RE = re.compile(r'(?<![\w/-])((?:\.\./)*)(' + '|'.join(sorted(PAGS, key=len, reverse=True)) + r')\.html')
 _PAG_RAIZ_RE = re.compile(r'(?<=biblioverse\.org/)(' + '|'.join(sorted(PAGS, key=len, reverse=True)) + r')\.html')
 

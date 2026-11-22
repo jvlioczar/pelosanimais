@@ -1376,11 +1376,112 @@ def familias():
         corpo = cabeca('<a href="../">Início</a> / <a href="../familias.html">Famílias</a>', f'{c}. {e(f["nome"])}', L(f'{f["n"]} argumentos da Parte {f["parte"]}.', f'{f["n"]} arguments in Part {f["parte"]}.'), extra) + f'<section class="secao"><div class="wrap"><h2 class="so-leitor">{L("Argumentos desta família", "Arguments in this family")}</h2><div class="grade">{"".join(cartao(a, "../") for a in f["args"])}</div></div></section>'
         page(f'familias/{c.lower()}.html', f'Família {c}: {f["nome"]}', L(f'{f["n"]} argumentos sobre {f["nome"].lower()}. {f["perg"]} Erro dominante: {f["erro"]}.', f'{f["n"]} arguments about {f["nome"].lower()}. {f["perg"]} Dominant error: {f["erro"]}.'), corpo, 'familias.html', 'CollectionPage', [('Famílias', 'familias.html')])
 
+def _nome_erro(t):
+    return re.sub(r'\s+', ' ', unicodedata.normalize('NFKD', html.unescape(t).lower()).encode('ascii', 'ignore').decode()).strip()
+import unicodedata
+_LINHAS_CACHE = {}
+def linha_erro(c, sec, nome):
+    """Como a falácia (seção 7) ou o viés (seção 9) aparece no capítulo c, na língua do build; None se o capítulo não o cita."""
+    pasta = os.path.join(ROOT, 'data', 'en', 'capitulos_md') if EN else os.path.join(ROOT, 'data', 'capitulos_md')
+    chave_ = (c, sec)
+    if chave_ not in _LINHAS_CACHE:
+        arq = os.path.join(pasta, f'{c}.md'); linhas = []
+        if os.path.exists(arq):
+            t = open(arq, encoding='utf-8').read().replace('\r\n', '\n'); i = t.find(f'\n## {sec}.')
+            if i >= 0:
+                j = t.find('\n## ', i + 5)
+                for l in t[i:j].split('\n'):
+                    if l.startswith('|') and not l.startswith('| ---'): linhas.append([x.strip() for x in l.strip('|').split('|')])
+        _LINHAS_CACHE[chave_] = linhas[1:]
+    idx = 1 if sec == 7 else 0
+    alvo = _nome_erro(nome); base = _nome_erro(re.sub(r'\(.*?\)', '', nome))
+    for r in _LINHAS_CACHE[chave_]:
+        if len(r) <= idx + 1: continue
+        cel = _nome_erro(r[idx])
+        if cel == alvo or cel == base or (len(base) > 6 and (base in cel or cel in alvo)):
+            return re.sub(r'\s*\(\[[^\]]*\]\([^)]*\)\)', '', r[idx + 1]).strip()
+    return None
+
+def _md_inline(t):
+    """Markdown simples de uma célula de tabela: [texto](url), **negrito** e *itálico*."""
+    t = e(t)
+    t = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', lambda m: f'<a href="{m[2]}">{m[1]}</a>', t)
+    t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
+    return re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<em>\1</em>', t)
+
+def _area(c):
+    if c[0] == 'N':
+        k = int(c[1:])
+        return 2 if 21 <= k <= 26 else 1
+    return 0
+
+def liga_erros(pag):
+    """Nos capítulos, o nome de cada falácia (seção 7) e de cada viés (seção 9) leva à página dele."""
+    for lista, pasta, rot in ((FALACIAS, 'falacias', L('Sobre esta falácia', 'About this fallacy')), (VIESES, 'vieses', L('Sobre este viés', 'About this bias'))):
+        for i in lista:
+            u = f'../{pasta}/{slug(i["pt"])}.html'
+            nome = re.escape(e(i['n']))
+            if pasta == 'falacias':
+                pag = re.sub(r'(<summary>' + nome + r'</summary><div>)(.*?)(</div></details>)', lambda m: m[1] + m[2] + f' <a class="mais-erro" href="{u}">{rot} →</a>' + m[3], pag)
+            else:
+                pag = pag.replace(f'<div class="cartao vies"><h3>{e(i["n"])}</h3>', f'<div class="cartao vies"><h3><a href="{u}">{e(i["n"])}</a></h3>')
+    return pag
+
+def paginas_erros():
+    """Uma página para cada falácia e cada viés: o que é, com uma analogia; onde aparece contra a defesa dos animais,
+    separado por área; e quando quem defende os animais comete o mesmo erro (itens de Pare de dizer isso)."""
+    areas = (L('Na exploração e no consumo de animais', 'In the exploitation and use of animals'),
+             L('Na ajuda aos animais selvagens', 'In helping wild animals'),
+             L('No longo prazo e nas novas mentes', 'In the long term and with new minds'))
+    tags = {}
+    for r in RUINS:
+        for n in ERROS_T.RUINS_ERROS.get(r.get('frase_pt', r['frase']), []): tags.setdefault(n, []).append(r)
+    for lista, pasta, idx_sec, textos, rotulo, rot_plural in ((FALACIAS, 'falacias', 7, ERROS_T.FAL, L('Falácia', 'Fallacy'), L('Falácias', 'Fallacies')),
+                                                             (VIESES, 'vieses', 9, ERROS_T.VIE, L('Viés', 'Bias'), L('Vieses', 'Biases'))):
+        for k, i in enumerate(lista):
+            ex_pt, an_pt, ex_en, an_en = textos[i['pt']]
+            explic, analog = (ex_en, an_en) if EN else (ex_pt, an_pt)
+            grupos = {0: [], 1: [], 2: []}
+            for c in i['cods']:
+                if c not in ARGS: continue
+                lin = linha_erro(c, idx_sec, i['n'])
+                txt = _md_inline(lin) if lin else e(ARGS[c]['falha'])
+                grupos[_area(c)].append(f'<li><a href="../argumentos/{c.lower()}.html"><strong>{c}</strong> {e(ARGS[c]["frase"])}</a>: {txt}</li>')
+            n_ex = sum(len(v) for v in grupos.values())
+            corpo = f'<h2>{L("O que é", "What it is")}</h2><p>{e(explic)}</p><p class="analogia"><strong>{L("Uma analogia", "An analogy")}:</strong> {e(analog)}</p>'
+            corpo += f'<h2>{L("Como aparece contra a defesa dos animais", "How it shows up against the case for animals")}</h2>'
+            if n_ex:
+                corpo += '<p>' + L(f'No catálogo, {"este erro aparece em" if pasta == "falacias" else "este viés sustenta"} {n_ex} {"argumento" if n_ex == 1 else "argumentos"}. Cada um leva à resposta completa.',
+                                   f'In the catalogue, {"this error appears in" if pasta == "falacias" else "this bias supports"} {n_ex} {"argument" if n_ex == 1 else "arguments"}. Each links to the full answer.') + '</p>'
+                for a_, itens in grupos.items():
+                    if itens: corpo += f'<h3>{areas[a_]}</h3><ul class="lista-erro">' + ''.join(itens) + '</ul>'
+            rs = tags.get(i['pt'], [])
+            corpo += f'<h2>{L("Quando quem defende os animais comete o mesmo erro", "When animal advocates make the same mistake")}</h2>'
+            if rs:
+                corpo += '<p>' + L('Para ser honesto: defensores dos animais também caem nisso. Estes itens de Pare de dizer isso mostram como, e o que dizer no lugar.',
+                                   'To be honest: animal advocates fall into it too. These items from Stop saying this show how, and what to say instead.') + '</p><ul class="lista-erro">'
+                corpo += ''.join(f'<li><a href="../ruins/{SLUG_RUIM[r["c"].lower()]}.html"><strong>{r["c"]}</strong> {e(r["frase"].rstrip("."))}</a>: {e(texto_card_ruim(r))}</li>' for r in rs) + '</ul>'
+            else:
+                corpo += '<p>' + L('O catálogo de <a href="../argumentos-ruins.html">Pare de dizer isso</a> ainda não registra um exemplo deste erro entre quem defende os animais. Isso não quer dizer que ele não aconteça: o cuidado vale para os dois lados.',
+                                   'The <a href="../argumentos-ruins.html">Stop saying this</a> catalogue does not yet record an example of this error among animal advocates. That does not mean it does not happen: the same care applies to both sides.') + '</p>'
+            ant, prox = (lista[k - 1] if k else None), (lista[k + 1] if k + 1 < len(lista) else None)
+            pp = lambda x, t: f'<a href="../{pasta}/{slug(x["pt"])}.html"><small>{t}</small>{e(x["n"])}</a>'
+            corpo += '<nav class="pass" aria-label="' + rot_plural + '">' + (pp(ant, L('Anterior', 'Previous')) if ant else '') + (pp(prox, L('Próxima', 'Next') if pasta == 'falacias' else L('Próximo', 'Next')) if prox else '') + '</nav>'
+            corpo += f'<p class="fino"><a href="../{pasta}.html#{slug(i["n"])}">{L("Ver todas", "See all")}: {rot_plural.lower()}</a></p>'
+            trilha = f'<a href="../">{L("Início", "Home")}</a> / <a href="../{pasta}.html">{rot_plural}</a>'
+            pag = cabeca(trilha, e(i['n']), e(i['d'])) + f'<section class="secao"><div class="wrap estreito texto-erro">{corpo}</div></section>'
+            desc = L(f'{rotulo} "{i["n"]}": o que é, uma analogia, como aparece contra o veganismo e o antiespecismo e quando defensores dos animais caem no mesmo erro.',
+                     f'{rotulo} "{i["n"]}": what it is, an analogy, how it shows up against veganism and antispeciesism, and when animal advocates make the same mistake.')
+            if len(desc) > 170: desc = desc[:167].rsplit(' ', 1)[0] + '…'
+            page(f'{pasta}/{slug(i["pt"])}.html', i['n'], desc, pag, f'{pasta}.html', 'Article', [(rot_plural, f'{pasta}.html')],
+                 titulo_seo=L(f'{i["n"]}: {rotulo.lower()} no debate sobre os animais', f'{i["n"]}: a {rotulo.lower()} in the debate about animals'))
+
 def indice_erro(path, titulo, cab, lede, itens, col):
     cards = ''
     for i in itens:
         cods = ''.join(f'<a href="argumentos/{c.lower()}.html" title="{e(ARGS[c]["frase"])}">{c}</a>' for c in i['cods'])
-        cards += f'<div class="cartao erro" id="{slug(i["n"])}"><h3>{e(i["n"])}</h3><p>{e(i["d"])}</p><div class="elos soltos">{cods or e(i["aparece"])}</div></div>'
+        pasta = 'falacias' if path.startswith('falacias') else 'vieses'
+        cards += f'<div class="cartao erro" id="{slug(i["n"])}"><h3><a href="{pasta}/{slug(i["pt"])}.html">{e(i["n"])}</a></h3><p>{e(i["d"])}</p><div class="elos soltos">{cods or e(i["aparece"])}</div></div>'
     corpo = cabeca('<a href="./">Início</a>', titulo, lede) + f'<section class="secao"><div class="wrap"><div class="filtros"><input class="f-simples" type="search" placeholder="{L("Filtrar", "Filter")} {titulo.lower()}" aria-label="{L("Filtrar", "Filter")} {titulo.lower()}"/></div><h2 class="so-leitor">{titulo}</h2><div class="grade f-alvo">{cards}</div></div></section>'
     page(path, titulo, lede, corpo, path, 'CollectionPage')
 
@@ -1424,6 +1525,7 @@ def pagina_capitulo(c, ant, prox):
     pans = ''.join(f'<div class="painel" role="tabpanel" id="p-{i}" aria-labelledby="tab-{i}">{h}</div>' for i, _, _, h in abas)
     pag = cena(c, f, a['frase'], abaixo) + f'<div class="abas-w"><div class="wrap"><div class="abas" role="tablist" aria-label="Partes do capítulo">{tabs}</div></div></div><div class="wrap paineis" style="--c:{f["cor"]}">{pans}{teorias_ligadas([c])}{passos(ant, prox)}</div>'
     resposta = html.unescape(re.sub(r'\s+', ' ', re.sub('<[^>]+>', ' ', curta_html))).strip() or html.unescape(re.sub('<[^>]+>', '', tese))
+    pag = liga_erros(pag)
     page(f'argumentos/{a["slug"]}.html', a['frase'], re.sub('<[^>]+>', '', tese), pag, TODOS, 'Article', trilha_fam(f), (a['frase'], resposta[:1200]), titulo_arg(a))
 
 def trilha_fam(f):
@@ -1936,6 +2038,11 @@ def completa_vieses():
         cods = [c for c in ORDEM if c in onde(n, *apelidos)]
         if cods: VIESES.append(dict(n=n, d=d, aparece='', cods=cods))
 completa_vieses()
+# Cada falácia e viés guarda o nome em português ('pt'), que identifica os textos da sua página (tools/erros_textos.py).
+import erros_textos as ERROS_T
+for _f in FALACIAS + VIESES:
+    _f['pt'] = _f['n']
+    _f['cods'] = [c for c in _f['cods'] if c not in ERROS_T.REMOVER.get(_f['n'], [])]
 if EN: en.aplica(globals())
 # Frases dos argumentos sem ponto final, para a lista ficar uniforme (reticências, ? e ! continuam)
 for _a in ARGS.values(): _a['frase'] = re.sub(r'(?<!\.)\.$', '', _a['frase'].strip())
@@ -1944,6 +2051,7 @@ for _a in ARGS.values(): _a['frase'] = re.sub(r'(?<!\.)\.$', '', _a['frase'].str
 inicio(); comece(); familias(); tipos_exploracao(); mapa(); raciocinio(); sobre(); nao_achou(); pagina_biblioteca(); pagina_glossario(); paginas_ruins(); paginas_alem(); paginas_politicas(); pagina_debate(); treino()
 indice_erro('falacias.html', L('Falácias', 'Fallacies'), 'Falácia', L(f'{len(FALACIAS)} erros de lógica que explicam boa parte do catálogo. Clique em um código para ver como a falácia aparece no argumento.', f'{len(FALACIAS)} logical errors that explain much of the catalogue. Click a code to see how the fallacy shows up in the argument.'), FALACIAS, 'Em uma frase')
 indice_erro('vieses.html', L('Vieses', 'Biases'), 'Viés', L(f'{len(VIESES)} mecanismos psicológicos que tornam esses argumentos convincentes, mesmo quando não se sustentam.', f'{len(VIESES)} psychological mechanisms that make these arguments convincing, even when they do not hold up.'), VIESES, 'Mecanismo')
+paginas_erros()
 for i, c in enumerate(ORDEM):
     ant = ORDEM[i - 1] if i else None
     prox = ORDEM[i + 1] if i + 1 < len(ORDEM) else None
@@ -1954,8 +2062,8 @@ for r in RUINS: BUSCA.append(dict(t=f'{r["c"]}. {r["frase"]}', s='Argumento ruim
 for p in alem.PAGINAS: BUSCA.append(dict(t=p['t'], s='Além do veganismo: ' + p['res'], u=f'alem/{p["s"]}.html', k=''))
 for t in politicas.TEORIAS: BUSCA.append(dict(t=f'{t["t"]}: {t["frase"]}', s='Objeção política ou ética: ' + t['principio'], u=f'politicas/{t["s"]}.html', k="política ética teoria", a=1))
 for f in FAMILIAS.values(): BUSCA.append(dict(t=f'Família {f["c"]}: {f["nome"]}', s=f['perg'], u=f'familias/{f["c"].lower()}.html', k=''))
-for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'falacias.html#{slug(i["n"])}', k=''))
-for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses.html#{slug(i["n"])}', k=''))
+for i in FALACIAS: BUSCA.append(dict(t=i['n'], s='Falácia: ' + i['d'], u=f'falacias/{slug(i["pt"])}.html', k=''))
+for i in VIESES: BUSCA.append(dict(t=i['n'], s='Viés: ' + i['d'], u=f'vieses/{slug(i["pt"])}.html', k=''))
 
 def llms_txt():
     """llms.txt e llms-full.txt: índice do site para assistentes de IA (llmstxt.org).
