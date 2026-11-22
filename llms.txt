@@ -22,8 +22,8 @@ Licença: textos originais sob CC BY 4.0 (https://creativecommons.org/licenses/b
 
 ## Erros e vocabulário
 
-- [Falácias](https://pelosanimais.biblioverse.org/falacias.html): os erros de lógica que explicam boa parte do catálogo
-- [Vieses](https://pelosanimais.biblioverse.org/vieses.html): os mecanismos psicológicos que tornam esses argumentos convincentes
+- [Falácias](https://pelosanimais.biblioverse.org/falacias.html): os erros de lógica que explicam boa parte do catálogo, cada um com página própria: o que é, uma analogia e onde aparece
+- [Vieses](https://pelosanimais.biblioverse.org/vieses.html): os mecanismos psicológicos que tornam esses argumentos convincentes, cada um com página própria
 - [Glossário](https://pelosanimais.biblioverse.org/glossario.html): os termos da ética animal, do veganismo e do debate sobre a exploração dos animais
 
 ## Para o próprio movimento

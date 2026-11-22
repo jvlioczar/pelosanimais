@@ -1474,7 +1474,7 @@ def paginas_erros():
                      f'{rotulo} "{i["n"]}": what it is, an analogy, how it shows up against veganism and antispeciesism, and when animal advocates make the same mistake.')
             if len(desc) > 170: desc = desc[:167].rsplit(' ', 1)[0] + '…'
             page(f'{pasta}/{slug(i["pt"])}.html', i['n'], desc, pag, f'{pasta}.html', 'Article', [(rot_plural, f'{pasta}.html')],
-                 titulo_seo=L(f'{i["n"]}: {rotulo.lower()} no debate sobre os animais', f'{i["n"]}: a {rotulo.lower()} in the debate about animals'))
+                 titulo_seo=(lambda t: t if len(t) <= 70 else L(f'{i["n"]}: {rotulo.lower()}', f'{i["n"]}: a {rotulo.lower()}'))(L(f'{i["n"]}: {rotulo.lower()} no debate sobre os animais', f'{i["n"]}: a {rotulo.lower()} in the debate about animals')))
 
 def indice_erro(path, titulo, cab, lede, itens, col):
     cards = ''
@@ -2083,8 +2083,8 @@ def llms_txt():
             (L('Objeções políticas e éticas', 'Political and ethical objections'), 'objecoes-politicas.html', L('o que cada teoria ética ou política diz para excluir os animais, e por que isso contradiz o próprio princípio', 'what each ethical or political theory says to exclude animals, and why that contradicts its own principle')),
         ]),
         (L('Erros e vocabulário', 'Errors and vocabulary'), [
-            (L('Falácias', 'Fallacies'), 'falacias.html', L('os erros de lógica que explicam boa parte do catálogo', 'the logical errors that explain much of the catalogue')),
-            (L('Vieses', 'Biases'), 'vieses.html', L('os mecanismos psicológicos que tornam esses argumentos convincentes', 'the psychological mechanisms that make these arguments convincing')),
+            (L('Falácias', 'Fallacies'), 'falacias.html', L('os erros de lógica que explicam boa parte do catálogo, cada um com página própria: o que é, uma analogia e onde aparece', 'the logical errors that explain much of the catalogue, each with its own page: what it is, an analogy and where it appears')),
+            (L('Vieses', 'Biases'), 'vieses.html', L('os mecanismos psicológicos que tornam esses argumentos convincentes, cada um com página própria', 'the psychological mechanisms that make these arguments convincing, each with its own page')),
             (L('Glossário', 'Glossary'), 'glossario.html', L('os termos da ética animal, do veganismo e do debate sobre a exploração dos animais', 'the terms of animal ethics, veganism and the debate on animal exploitation')),
         ]),
         (L('Para o próprio movimento', 'For the movement itself'), [
@@ -2119,6 +2119,9 @@ def llms_txt():
         for a in f['args']:
             full += f'- [{a["c"]}. {a["frase"]}]({u("argumentos/" + a["slug"] + ".html")}) ({a["parte"]}): {a["falha"]}\n'
         full += '\n'
+    # Uma página por falácia e por viés: o que é, uma analogia, os argumentos em que aparece e os deslizes de quem defende os animais
+    for lista, pasta, tit in ((FALACIAS, 'falacias', L('## Falácias', '## Fallacies')), (VIESES, 'vieses', L('## Vieses', '## Biases'))):
+        full += tit + '\n\n' + ''.join(f'- [{x["n"]}]({u(pasta + "/" + slug(x["pt"]) + ".html")}): {x["d"]}\n' for x in lista) + '\n'
     full += L('## Pare de dizer isso\n\n', '## Stop saying this\n\n')
     for r in RUINS:
         full += f'- [{r["c"]}. {r["frase"]}]({u("ruins/" + SLUG_RUIM[r["c"].lower()] + ".html")}): {r["por"][0]}\n'

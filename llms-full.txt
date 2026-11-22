@@ -365,6 +365,116 @@ Devemos ajudar, e não só deixar de prejudicar?
 - [N26. Isso é ficção científica, temos problemas reais agora](https://pelosanimais.biblioverse.org/argumentos/isso-e-ficcao-cientifica-temos-problemas-reais-agora.html) (IND): Um risco incerto mas imenso pode merecer atenção, e muito do que reduz sofrimento futuro, como ampliar o círculo moral, também ajuda agora
 - [N27. Trazer de volta espécies extintas é reparar o que destruímos](https://pelosanimais.biblioverse.org/argumentos/trazer-de-volta-especies-extintas-e-reparar-o-que-destruimos.html) (DIR): Uma espécie não sente: a desextinção conta a espécie e deixa de fora os animais criados, os usados no processo e as presas, sem garantir uma vida boa a nenhum deles
 
+## Falácias
+
+- [Apelo à natureza](https://pelosanimais.biblioverse.org/falacias/apelo-a-natureza.html): "É natural, logo é bom"
+- [Lei de Hume (do é ao deve)](https://pelosanimais.biblioverse.org/falacias/lei-de-hume-do-e-ao-deve.html): Tirar uma norma de um fato
+- [Apelo à tradição](https://pelosanimais.biblioverse.org/falacias/apelo-a-tradicao.html): "Sempre foi assim"
+- [Apelo à multidão e à normalidade](https://pelosanimais.biblioverse.org/falacias/apelo-a-multidao-e-a-normalidade.html): "Todo mundo faz"
+- [Apelo à autoridade](https://pelosanimais.biblioverse.org/falacias/apelo-a-autoridade.html): "Fulano disse ou fazia"
+- [Critério arbitrário (especismo)](https://pelosanimais.biblioverse.org/falacias/criterio-arbitrario-especismo.html): Traço irrelevante escolhido como fronteira moral
+- [Definição persuasiva](https://pelosanimais.biblioverse.org/falacias/definicao-persuasiva.html): Definir o termo para vencer a discussão
+- [Petição de princípio](https://pelosanimais.biblioverse.org/falacias/peticao-de-principio.html): A conclusão está escondida na premissa
+- [Falácia do contínuo](https://pelosanimais.biblioverse.org/falacias/falacia-do-continuo.html): Sem linha exata, não há diferença
+- [Generalização do acidente](https://pelosanimais.biblioverse.org/falacias/generalizacao-do-acidente.html): Exceção usada como regra
+- [Falsa dicotomia](https://pelosanimais.biblioverse.org/falacias/falsa-dicotomia.html): Ou isso ou aquilo, sem terceira via
+- [Falácia do nirvana](https://pelosanimais.biblioverse.org/falacias/falacia-do-nirvana.html): Se não é perfeito, não vale
+- [Tu quoque](https://pelosanimais.biblioverse.org/falacias/tu-quoque.html): "Você também faz"
+- [Ad hominem e envenenamento do poço](https://pelosanimais.biblioverse.org/falacias/ad-hominem-e-envenenamento-do-poco.html): Atacar a pessoa
+- [Culpa por associação](https://pelosanimais.biblioverse.org/falacias/culpa-por-associacao.html): Ligar a ideia a algo odiado
+- [Falácia da prioridade](https://pelosanimais.biblioverse.org/falacias/falacia-da-prioridade.html): "Há coisas mais importantes"
+- [Evidência anedótica](https://pelosanimais.biblioverse.org/falacias/evidencia-anedotica.html): Um caso contra os dados
+- [Cherry picking](https://pelosanimais.biblioverse.org/falacias/cherry-picking.html): Selecionar só os dados favoráveis
+- [Falso meio-termo](https://pelosanimais.biblioverse.org/falacias/falso-meio-termo.html): A verdade está sempre no meio
+- [Mudança de questão (red herring)](https://pelosanimais.biblioverse.org/falacias/mudanca-de-questao-red-herring.html): Trocar "é errado?" por outra pergunta
+- [Espantalho](https://pelosanimais.biblioverse.org/falacias/espantalho.html): Distorcer a posição do outro para refutá-la com facilidade
+- [Apelo ao ridículo](https://pelosanimais.biblioverse.org/falacias/apelo-ao-ridiculo.html): Zombar da ideia em vez de responder a ela
+- [Apelo à ignorância](https://pelosanimais.biblioverse.org/falacias/apelo-a-ignorancia.html): "Ninguém provou que não, então é verdade"
+- [Falsa causa (post hoc)](https://pelosanimais.biblioverse.org/falacias/falsa-causa-post-hoc.html): "Aconteceu depois, então foi por causa disso"
+- [Ladeira escorregadia](https://pelosanimais.biblioverse.org/falacias/ladeira-escorregadia.html): "Se aceitar isso, vai acabar em algo extremo"
+- [Apelo à legalidade](https://pelosanimais.biblioverse.org/falacias/apelo-a-legalidade.html): "É permitido por lei, então é certo"
+- [Bulverismo](https://pelosanimais.biblioverse.org/falacias/bulverismo.html): Explicar o motivo de alguém pensar algo em vez de mostrar onde ele erra
+- [Falácia da falácia](https://pelosanimais.biblioverse.org/falacias/falacia-da-falacia.html): "Esse argumento é ruim, então a conclusão é falsa"
+- [Equívoco](https://pelosanimais.biblioverse.org/falacias/equivoco.html): Usar a mesma palavra em dois sentidos diferentes
+- [Generalização precipitada](https://pelosanimais.biblioverse.org/falacias/generalizacao-precipitada.html): Tirar uma regra sobre todos a partir de poucos casos
+- [Apelo ao medo](https://pelosanimais.biblioverse.org/falacias/apelo-ao-medo.html): Assustar com consequências exageradas no lugar de dar evidências
+- [Eufemismo](https://pelosanimais.biblioverse.org/falacias/eufemismo.html): Trocar o nome para que o dano pareça menor
+- [Negação do antecedente](https://pelosanimais.biblioverse.org/falacias/negacao-do-antecedente.html): "Se A, então B; não A; logo, não B". Ex.: "se a pessoa estuda medicina, está na universidade; ela não estuda medicina; logo, não está na universidade". Pode estar em outro curso
+- [Afirmação do consequente](https://pelosanimais.biblioverse.org/falacias/afirmacao-do-consequente.html): "Se A, então B; B; logo, A". Ex.: "se choveu, a rua está molhada; a rua está molhada; logo, choveu". Alguém pode ter lavado a calçada
+
+## Vieses
+
+- [Dissonância cognitiva (paradoxo da carne)](https://pelosanimais.biblioverse.org/vieses/dissonancia-cognitiva-paradoxo-da-carne.html): Amar animais e comê-los gera tensão, resolvida negando mente aos animais comidos (Bastian et al., 2012)
+- [Raciocínio motivado](https://pelosanimais.biblioverse.org/vieses/raciocinio-motivado.html): Buscar razões para a conclusão que já se deseja
+- [Viés de confirmação](https://pelosanimais.biblioverse.org/vieses/vies-de-confirmacao.html): Aceitar só o que confirma a crença prévia
+- [Viés do status quo](https://pelosanimais.biblioverse.org/vieses/vies-do-status-quo.html): Preferir o estado atual por ser atual
+- [Justificação do sistema](https://pelosanimais.biblioverse.org/vieses/justificacao-do-sistema.html): Legitimar a ordem vigente para reduzir desconforto
+- [Ignorância deliberada](https://pelosanimais.biblioverse.org/vieses/ignorancia-deliberada.html): Evitar informação que geraria obrigação
+- [Categorização funcional](https://pelosanimais.biblioverse.org/vieses/categorizacao-funcional.html): Animais "de comida" recebem menos mente que animais "de companhia"
+- [Viés de grupo (ingroup)](https://pelosanimais.biblioverse.org/vieses/vies-de-grupo-ingroup.html): Valorizar os "nossos" e desvalorizar os de fora
+- [Insensibilidade à escala](https://pelosanimais.biblioverse.org/vieses/insensibilidade-a-escala.html): Bilhões de vítimas não pesam mais que uma
+- [Difusão de responsabilidade](https://pelosanimais.biblioverse.org/vieses/difusao-de-responsabilidade.html): Culpa distribuída parece culpa nenhuma
+- [Reatância psicológica](https://pelosanimais.biblioverse.org/vieses/reatancia-psicologica.html): Reação contra a percepção de liberdade ameaçada
+- [Cognição protetora da identidade](https://pelosanimais.biblioverse.org/vieses/cognicao-protetora-da-identidade.html): Rejeitar ideias que ameaçam o grupo ou a identidade
+- [Heurística do afeto](https://pelosanimais.biblioverse.org/vieses/heuristica-do-afeto.html): "Gosto, logo é bom"
+- [Licença moral](https://pelosanimais.biblioverse.org/vieses/licenca-moral.html): Um bom ato autoriza um ruim
+- [Viés de otimismo e excepcionalismo](https://pelosanimais.biblioverse.org/vieses/vies-de-otimismo-e-excepcionalismo.html): "Minha carne é diferente"
+- [Viés de sobrevivência](https://pelosanimais.biblioverse.org/vieses/vies-de-sobrevivencia.html): Só vemos quem deu certo
+- [Racionalização pelos 4Ns](https://pelosanimais.biblioverse.org/vieses/racionalizacao-pelos-4ns.html): Justificar o consumo de animais dizendo que é natural, normal, necessário e gostoso (Piazza e colegas, 2015).
+- [Busca de hipocrisia](https://pelosanimais.biblioverse.org/vieses/busca-de-hipocrisia.html): Procurar uma incoerência em quem defende uma ideia para não precisar examinar a ideia.
+- [Negação de mente](https://pelosanimais.biblioverse.org/vieses/negacao-de-mente.html): Atribuir menos mente e menos capacidade de sofrer aos animais que comemos.
+- [Depreciação de quem faz o bem](https://pelosanimais.biblioverse.org/vieses/depreciacao-de-quem-faz-o-bem.html): Diminuir quem age por razões morais, porque sua conduta é sentida como uma acusação.
+- [Desvalorização reativa](https://pelosanimais.biblioverse.org/vieses/desvalorizacao-reativa.html): Rejeitar uma proposta porque veio do lado adversário.
+- [Efeito do mensageiro](https://pelosanimais.biblioverse.org/vieses/efeito-do-mensageiro.html): Avaliar a mensagem por quem a diz, e não pelo que diz.
+- [Efeito manada e conformidade social](https://pelosanimais.biblioverse.org/vieses/efeito-manada-e-conformidade-social.html): Adotar um hábito ou uma ideia porque muita gente em volta adota.
+- [Ignorância pluralista](https://pelosanimais.biblioverse.org/vieses/ignorancia-pluralista.html): Muitos discordam em privado, mas acham que todos os outros concordam.
+- [Efeito do padrão](https://pelosanimais.biblioverse.org/vieses/efeito-do-padrao.html): Ficar com a opção que já vem pronta, como o prato com carne.
+- [Efeito da verdade ilusória e da mera exposição](https://pelosanimais.biblioverse.org/vieses/efeito-da-verdade-ilusoria-e-da-mera-exposicao.html): O que se ouve muitas vezes parece verdadeiro, e o que é familiar parece melhor.
+- [Viés de omissão e viés do perpetrador](https://pelosanimais.biblioverse.org/vieses/vies-de-omissao-e-vies-do-perpetrador.html): Julgar menos grave o dano que não causamos com as próprias mãos, ou que resulta de deixar de agir.
+- [Viés de intenção](https://pelosanimais.biblioverse.org/vieses/vies-de-intencao.html): Reagir com mais força a um dano quando alguém o causou de propósito do que a um dano igual que vem de causas sem culpado.
+- [Viés teleológico e detecção de agente](https://pelosanimais.biblioverse.org/vieses/vies-teleologico-e-deteccao-de-agente.html): Ver propósito e intenção na natureza: os animais "existiriam para" algo.
+- [Desaparecimento da compaixão](https://pelosanimais.biblioverse.org/vieses/desaparecimento-da-compaixao.html): Quanto mais vítimas, menos se sente por cada uma; uma vítima identificável comove mais que milhões.
+- [Aversão à perda e efeito dotação](https://pelosanimais.biblioverse.org/vieses/aversao-a-perda-e-efeito-dotacao.html): Perder o que se tem pesa mais do que ganhar algo equivalente.
+- [Custo irrecuperável e justificação do esforço](https://pelosanimais.biblioverse.org/vieses/custo-irrecuperavel-e-justificacao-do-esforco.html): Continuar porque já se investiu muito, e não porque vale a pena.
+- [Retrospecção rosada](https://pelosanimais.biblioverse.org/vieses/retrospeccao-rosada.html): Lembrar o passado como melhor do que foi.
+- [Excesso de confiança (Dunning-Kruger)](https://pelosanimais.biblioverse.org/vieses/excesso-de-confianca-dunning-kruger.html): Quem sabe pouco sobre um tema tende a superestimar o que sabe.
+- [Realismo ingênuo e ponto cego do viés](https://pelosanimais.biblioverse.org/vieses/realismo-ingenuo-e-ponto-cego-do-vies.html): Achar que vemos o mundo como ele é e que só os outros são enviesados.
+- [Pensamento antropocêntrico](https://pelosanimais.biblioverse.org/vieses/pensamento-antropocentrico.html): Usar o humano como medida de tudo, inclusive do que conta como sentir.
+- [Viés do natural](https://pelosanimais.biblioverse.org/vieses/vies-do-natural.html): O que parece natural é avaliado como melhor e mais seguro.
+- [Viés de disponibilidade](https://pelosanimais.biblioverse.org/vieses/vies-de-disponibilidade.html): Julgar pela lembrança mais fácil, como o caso de um conhecido, e não pelos dados.
+- [Viés de autoridade](https://pelosanimais.biblioverse.org/vieses/vies-de-autoridade.html): Aceitar uma afirmação pelo prestígio de quem a faz.
+- [Viés do presente](https://pelosanimais.biblioverse.org/vieses/vies-do-presente.html): Dar peso demais ao agora e de menos às consequências futuras.
+- [Efeito halo](https://pelosanimais.biblioverse.org/vieses/efeito-halo.html): Uma qualidade boa, como "local" ou "orgânico", contamina o julgamento de todo o resto.
+- [Orientação à dominância social](https://pelosanimais.biblioverse.org/vieses/orientacao-a-dominancia-social.html): Preferir hierarquias entre grupos, inclusive entre espécies.
+- [Essencialismo psicológico](https://pelosanimais.biblioverse.org/vieses/essencialismo-psicologico.html): Achar que cada tipo de ser tem uma essência fixa que define seu lugar.
+- [Masculinidade e carne](https://pelosanimais.biblioverse.org/vieses/masculinidade-e-carne.html): Associar comer carne à virilidade, o que torna a mudança uma ameaça à identidade.
+- [Estereótipo](https://pelosanimais.biblioverse.org/vieses/estereotipo.html): Julgar alguém por uma imagem simplificada do grupo a que pertence.
+- [Dissociação e eufemismo](https://pelosanimais.biblioverse.org/vieses/dissociacao-e-eufemismo.html): Separar o animal da comida, inclusive pelas palavras usadas.
+- [Falso consenso](https://pelosanimais.biblioverse.org/vieses/falso-consenso.html): Superestimar quantas pessoas pensam como nós.
+- [Neofobia alimentar](https://pelosanimais.biblioverse.org/vieses/neofobia-alimentar.html): Desconfiar de alimentos desconhecidos.
+- [Efeito nocebo](https://pelosanimais.biblioverse.org/vieses/efeito-nocebo.html): A expectativa de que algo fará mal produz sintomas reais.
+- [Viés de saliência](https://pelosanimais.biblioverse.org/vieses/vies-de-saliencia.html): Dar peso ao que chama atenção, como a distância percorrida, e não ao que mais pesa.
+- [Viés do meio-termo](https://pelosanimais.biblioverse.org/vieses/vies-do-meio-termo.html): Achar que a posição do meio é sempre a mais sensata.
+- [Lacuna de empatia](https://pelosanimais.biblioverse.org/vieses/lacuna-de-empatia.html): Sentir menos empatia por um animal quanto mais distante ele é de nós na evolução.
+- [Tamanhismo](https://pelosanimais.biblioverse.org/vieses/tamanhismo.html): Dar menos importância a um animal por ele ser pequeno.
+- [Inteligentismo](https://pelosanimais.biblioverse.org/vieses/inteligentismo.html): Dar menos importância a um animal por ele ser considerado pouco inteligente.
+- [Substratismo](https://pelosanimais.biblioverse.org/vieses/substratismo.html): Dar menos importância a um ser por causa do material de que ele é feito, como no caso de seres não orgânicos.
+- [Viés de proporção](https://pelosanimais.biblioverse.org/vieses/vies-de-proporcao.html): Julgar uma ajuda pela fração do problema que ela resolve, e não pelo número de indivíduos ajudados.
+- [Hipótese do mundo justo](https://pelosanimais.biblioverse.org/vieses/hipotese-do-mundo-justo.html): Acreditar que o mundo é justo e que, por isso, quem sofre recebe o que lhe cabe.
+- [Negligência da probabilidade](https://pelosanimais.biblioverse.org/vieses/negligencia-da-probabilidade.html): Decidir sob incerteza sem pesar a probabilidade, tratando um risco como certo ou como inexistente.
+- [Efeito de ambiguidade](https://pelosanimais.biblioverse.org/vieses/efeito-de-ambiguidade.html): Evitar opções cuja chance de dar certo é desconhecida, mesmo quando podem ser as melhores.
+- [Viés de avaliabilidade](https://pelosanimais.biblioverse.org/vieses/vies-de-avaliabilidade.html): Dar mais peso ao que é fácil de medir do que ao que mais importa.
+- [Negligência da duração](https://pelosanimais.biblioverse.org/vieses/negligencia-da-duracao.html): Avaliar uma experiência pelos momentos marcantes e pelo fim, sem contar quanto tempo ela durou.
+- [Viés pró-inovação](https://pelosanimais.biblioverse.org/vieses/vies-pro-inovacao.html): Superestimar o que uma inovação vai resolver e não ver seus limites.
+- [Digitalização de crenças](https://pelosanimais.biblioverse.org/vieses/digitalizacao-de-crencas.html): Tratar uma probabilidade como se fosse zero ou um, em vez de levar a incerteza em conta.
+- [Perseverança da crença](https://pelosanimais.biblioverse.org/vieses/perseveranca-da-crenca.html): Manter uma crença mesmo depois de conhecer evidências contra ela.
+- [Efeito de influência contínua](https://pelosanimais.biblioverse.org/vieses/efeito-de-influencia-continua.html): Uma informação já corrigida continua a influenciar o que a pessoa pensa.
+- [Viés de soma zero](https://pelosanimais.biblioverse.org/vieses/vies-de-soma-zero.html): Ver uma situação como disputa em que o ganho de um é a perda de outro, mesmo quando não é.
+- [Cascata de disponibilidade](https://pelosanimais.biblioverse.org/vieses/cascata-de-disponibilidade.html): Uma ideia ganha crédito por ser muito repetida em público, e quanto mais crédito ganha, mais é repetida.
+- [Correlação ilusória](https://pelosanimais.biblioverse.org/vieses/correlacao-ilusoria.html): Ver ligação entre duas coisas que só aconteceram juntas.
+- [Efeito de enquadramento](https://pelosanimais.biblioverse.org/vieses/efeito-de-enquadramento.html): A mesma informação leva a julgamentos diferentes conforme o modo como é apresentada.
+- [Ilusão de profundidade explicativa](https://pelosanimais.biblioverse.org/vieses/ilusao-de-profundidade-explicativa.html): Achar que se entende como algo funciona bem melhor do que de fato se entende.
+
 ## Pare de dizer isso
 
 - [V1. Ser vegano vai te deixar mais saudável.](https://pelosanimais.biblioverse.org/ruins/ser-vegano-vai-te-deixar-mais-saudavel.html): É impreciso: qualquer dieta mal planejada traz riscos.
