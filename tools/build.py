@@ -1540,11 +1540,14 @@ def sobre():
     T['contem'] = CONTEM; T['como-usar'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', USO); T['licenca'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', LIC); T['apoie'] += doacao_html()
     T['privacidade'] += '<p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p>' if not EN else ''
     T['autor'] = autor_html()
-    GRUPOS = [(L('O guia', 'The guide'), [('projeto', L('O projeto', 'The project')), ('autor', L('O autor', 'The author')), ('contem', L('O que o guia contém', 'What the guide contains')), ('como-usar', L('Como usar o site', 'How to use the site'))]),
+    GRUPOS = [(L('O guia', 'The guide'), [('projeto', L('O projeto', 'The project')), ('contem', L('O que o guia contém', 'What the guide contains')), ('como-usar', L('Como usar o site', 'How to use the site'))]),
               (L('Método', 'Method'), [('abordagem', L('A abordagem', 'The approach')), ('fontes', L('Sobre as fontes', 'About the sources')), ('tom', L('Sobre o tom', 'About the tone'))]),
+              (L('O autor', 'The author'), [('autor', L('O autor', 'The author'))]),
               (L('Uso e contato', 'Use and contact'), [('licenca', L('Licença', 'License')), ('apoie', L('Apoie', 'Support')), ('contato', L('Contato', 'Contact')), ('privacidade', L('Privacidade', 'Privacy'))])]
-    nav = ''.join(f'<li><span class="ti">{g}</span><ul>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, t in itens) + '</ul></li>' for g, itens in GRUPOS)
-    texto = ''.join(f'<h2 class="grupo-sobre">{g}</h2>' + ''.join(f'<h3 id="{i}">{t}</h3>{T[i]}' for i, t in itens) for g, itens in GRUPOS)
+    # Grupo de um só tópico com o mesmo nome (O autor): vira seção própria, sem subtítulo repetido.
+    unico = lambda g, itens: len(itens) == 1 and itens[0][1] == g
+    nav = ''.join((f'<li><a class="ti" href="#{itens[0][0]}">{g}</a></li>' if unico(g, itens) else f'<li><span class="ti">{g}</span><ul>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, t in itens) + '</ul></li>') for g, itens in GRUPOS)
+    texto = ''.join((f'<h2 class="grupo-sobre" id="{itens[0][0]}">{g}</h2>{T[itens[0][0]]}' if unico(g, itens) else f'<h2 class="grupo-sobre">{g}</h2>' + ''.join(f'<h3 id="{i}">{t}</h3>{T[i]}' for i, t in itens)) for g, itens in GRUPOS)
     corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'<div class="wrap lay"><nav class="indice" aria-label="{L("Nesta página", "On this page")}"><p class="ti">{L("Nesta página", "On this page")}</p><ul>{nav}</ul></nav><article class="artigo">{texto}</article></div>'
     page('sobre.html', 'Sobre o guia', L('O que é o guia de argumentação para defensores dos animais, o que já está pronto, como as fontes são tratadas e qual é o tom adotado.', 'What the argument guide for animal advocates is, what is ready, how sources are handled and what tone it takes.'), corpo, 'sobre.html')
 
