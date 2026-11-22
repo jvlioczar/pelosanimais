@@ -141,7 +141,7 @@ UI = [
  ('<h2>Veja também</h2>', '<h2>See also</h2>'),
  ('<h2>Fontes e leituras</h2>', '<h2>Sources and further reading</h2>'),
  # ---------- beyond veganism ----------
- ('O veganismo é uma consequência do antiespecismo e do sencientismo, não o limite deles.', 'Veganism is a consequence of antispeciesism and sentientism, not their limit.'),
+ ('O veganismo é uma parte do sencientismo, ao lado do antiespecismo, e não o limite dele.', 'Veganism is one part of sentientism, alongside antispeciesism, not its limit.'),
  ('<p class="ti">Nesta seção</p>', '<p class="ti">In this section</p>'),
  # ---------- political objections ----------
  ('O que cada teoria ética ou política costuma dizer para deixar os animais de fora, por que essa exclusão contradiz o próprio princípio da teoria e por que os animais devem ser incluídos.', 'What each ethical or political theory usually says to leave animals out, why that exclusion contradicts the theory\'s own principle, and why animals should be included.'),
