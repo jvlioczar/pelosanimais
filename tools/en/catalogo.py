@@ -2,7 +2,7 @@
 Fallacies, biases and chains are keyed by their Portuguese name, which build.py uses to match the chapters."""
 
 ARGS = {
- 'A15': ("Animals aren't rational.", ["They don't think", 'Animals act on instinct', 'Only humans are self-aware'], "Rationality isn't what makes suffering matter, and the criterion would exclude humans who lack it"),
+ 'A15': ("Animals aren't rational.", ["They don't think", 'Animals act on instinct', 'Only humans are self-aware', 'Can a dog write a symphony?'], "Rationality isn't what makes suffering matter, and the criterion would exclude humans who lack it"),
  'A9': ('Humans are superior, so we can use the inferior.', ["We're the dominant species", 'Man is the king of creation', "If they were superior, they'd eat us"], 'Superior abilities give no right to dominate'),
  'A16': ("Animals don't have language.", ["They can't talk", "If they suffered, they'd complain", "They can't say what they feel"], "An irrelevant criterion for pain; it excludes babies and non-verbal people"),
  'A17': ("Animals don't have souls.", ["Animals have no spirit", 'Only man was made in the image of God', "When they die, that's it"], 'An unfalsifiable premise used as a public criterion'),
