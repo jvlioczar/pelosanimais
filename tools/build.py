@@ -20,8 +20,9 @@ EN = 'en' in sys.argv[1:]
 OUT = os.path.join(os.path.dirname(ROOT), 'fortheanimals') if EN else ROOT
 SITE_PT, SITE_EN = 'https://pelosanimais.biblioverse.org', 'https://fortheanimals.biblioverse.org'
 SITE = SITE_EN if EN else SITE_PT
-# Cloudflare Web Analytics: pelosanimais e fortheanimals usam o token do hub (biblioverse.org), filtrável por host no painel. Troque aqui se o site ganhar um token próprio.
-CF_TOKEN = '34663afb7d4a4f139902be577854d0fd'
+# Cloudflare Web Analytics: um site (token) por hostname; troque aqui se mudar.
+CF_TOKEN_PT, CF_TOKEN_EN = '7f91cde327dd4e8c9c75942a2b8dd2a3', '9ba962e23212402faf716f9bf64b05ca'
+CF_TOKEN = CF_TOKEN_EN if EN else CF_TOKEN_PT
 CF_BEACON = "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"" + CF_TOKEN + "\"}'></script><!-- End Cloudflare Web Analytics -->"
 EN_NO_AR = True  # vira True quando fortheanimals.biblioverse.org estiver publicado: só então o site em português mostra o botão EN e o hreflang
 BILINGUE = EN or EN_NO_AR
@@ -902,7 +903,7 @@ def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta
     ALTERNA[path] = (u_pt, u_en)
     alterna = '' if not BILINGUE or path in PT_ONLY else f'<link rel="alternate" hreflang="pt-BR" href="{u_pt}"/>\n<link rel="alternate" hreflang="en" href="{u_en}"/>\n<link rel="alternate" hreflang="x-default" href="{u_pt}"/>\n'
     # o título da página inicial diz o que as pessoas buscam, e não só o nome
-    full = L(f'Guia de Argumentação Pelos Animais: respostas a {MAIS_PT} argumentos contra o veganismo e antiespecismo', f'For the Animals: answers to {MAIS_EN} arguments against veganism and antispeciesism') if home else f'{titulo_seo or title} | {NOME}'
+    full = L(f'Guia de Argumentação Pelos Animais: respostas a {MAIS_PT} objeções ao veganismo', f'For the Animals: answers to {MAIS_EN} objections to veganism') if home else f'{titulo_seo or title} | {NOME}'
     if len(full) > 60 and not home: full = titulo_seo or title  # o nome do site só entra quando cabe
     indexa = '<meta name="robots" content="noindex"/>\n' if erro else f'<link rel="canonical" href="{url}"/>\n' + alterna + dados(path, title, desc, url, tipo, trilha, pergunta) + '\n'
     base = '<base href="/"/>\n' if erro else ''

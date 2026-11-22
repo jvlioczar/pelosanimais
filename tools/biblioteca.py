@@ -37,7 +37,7 @@ LIVROS = [
     dict(t='Libertação animal já', st='Edição atualizada de Libertação Animal (em inglês, Animal Liberation Now)', a='Peter Singer', ano=2023, ed='WMF Martins Fontes, 2026 no Brasil', lingua='PT', foco='etica',
          d='Versão revista e atualizada do clássico de 1975, com dados recentes sobre a criação industrial, os testes em animais e as novas tecnologias.', u='https://www.martinsfontespaulista.com.br/libertacao-animal-ja-1206626/p', ul='Editora'),
     dict(t='Libertação Animal', st='', a='Peter Singer', ano=1975, ed='', lingua='PT', foco='etica',
-         d='O livro que popularizou o termo "especismo" e o princípio da igual consideração de interesses.', u='https://en.wikipedia.org/wiki/Animal_Liberation_(book)', ul='Sobre o livro'),
+         d='O livro que popularizou o termo "especismo" e o princípio da igual consideração de interesses.', u='https://en.wikipedia.org/wiki/Animal_Liberation_%28book%29', ul='Sobre o livro'),
     dict(t='Veganismo', st='As muitas razões para uma vida mais ética', a='Robson Fernando de Souza', ano=2017, ed='Publicação independente', lingua='PT', foco='rebater',
          d='Reúne em português os argumentos do movimento vegano, com as referências por trás de cada um.', u='https://openlibrary.org/works/OL29711903W', ul='Catálogo'),
 ]
