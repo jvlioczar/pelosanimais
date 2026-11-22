@@ -606,6 +606,10 @@ def _codigo_b12(s, m):
     return (depois[:2] in (' "', ' “', ' ‘') or re.search(r'(que é|which is) $', antes) is not None
             or re.search(r'[A-N]\d{1,2}(, | e | and )$', antes) is not None or re.match(r'(, | e | and )[A-N]\d{1,2}(?!\d)', depois) is not None)
 
+def sem_marca(s):
+    """Tira o marcador [[texto|caminho]], deixando só o texto (para cópia e compartilhamento)."""
+    return re.sub(r'\[\[([^|\]]+)\|[^\]]+\]\]', r'\1', s)
+
 def liga_pag(s, pre='../'):
     """[[texto|caminho]] vira um link para outra página do site (caminho a partir da raiz)."""
     return re.sub(r'\[\[([^|\]]+)\|([^\]]+)\]\]', lambda m: f'<a href="{pre}{m[2]}">{m[1]}</a>', s)
@@ -1156,9 +1160,10 @@ def paginas_ruins():
         lig_ = ''.join(cartao(ARGS[c], '../') for c in cods_)  # cada argumento ligado com a falha principal dele
         grupo_ = ''.join(f'<a class="no" style="--c:#b8460f" href="{SLUG_RUIM[x["c"].lower()]}.html"><b>{x["c"]}</b> {e(x["frase"])}</a>' for x in RUINS if x['tipo'] == r['tipo'] and x is not r)
         ant, prox = RUINS[i - 1] if i else None, RUINS[i + 1] if i + 1 < len(RUINS) else None
+        lk = lambda x: liga_pag(liga(e(x), {'pre': '../'}))  # códigos (L21) e [[texto|página]] viram links
         pp = lambda x, t: f'<a href="{SLUG_RUIM[x["c"].lower()]}.html"><small>{t}</small>{x["c"]}. {e(x["frase"])}</a>'
-        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{e(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{e(r["lugar"])}</p>' + (f'<p class="ev">{e(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="grade">{lig_}</div>' + teorias_ligadas(cods_) + (lista_fontes(r['fontes']) if r.get('fontes') else '') + (f'<h2>{L("Outros argumentos deste grupo", "More from this group")}: {e(nome)}</h2><div class="nos">{grupo_}</div>' if grupo_ else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
-        ops = [['por', L('Por que é ruim', 'Why it is weak'), L('Por que é ruim', 'Why it is weak'), ' '.join(r['por'])]]
+        art = '<div class="troca"><div class="nao"><p class="ti">Por que é ruim</p>' + ''.join(f'<p>{lk(x)}</p>' for x in r['por']) + f'</div><div class="sim"><p class="ti">Como dizer melhor</p><p>{lk(r["lugar"])}</p>' + (f'<p class="ev">{lk(r["nota"])}</p>' if r.get('nota') else '') + (f'<p class="ev">{L("Também aparece como", "Also heard as")}: ' + ', '.join(f'“{e(x)}”' for x in r['formas']) + '.</p>' if r.get('formas') else '') + f'</div></div><h2>Veja também</h2><div class="grade">{lig_}</div>' + teorias_ligadas(cods_) + (lista_fontes(r['fontes']) if r.get('fontes') else '') + (f'<h2>{L("Outros argumentos deste grupo", "More from this group")}: {e(nome)}</h2><div class="nos">{grupo_}</div>' if grupo_ else '') + f'<nav class="pass" aria-label="Outros argumentos">' + (pp(ant, 'Anterior') if ant else '') + (pp(prox, 'Próximo') if prox else '') + '</nav>'
+        ops = [['por', L('Por que é ruim', 'Why it is weak'), L('Por que é ruim', 'Why it is weak'), sem_marca(' '.join(r['por']))]]
         if len(r['por']) > 1: ops.append(['frase', L('Em uma frase', 'In one sentence'), L('Por que é ruim, em uma frase', 'Why it is weak, in one sentence'), r['por'][0]])
         cartao_ = dict(ops=ops, cab=L('Pare de dizer', 'Stop saying'), caixa=[L('Diga melhor', 'Say it better'), r['lugar']], inclui=L('Incluir “como dizer melhor”', 'Include “how to say it better”'), incluiResp=L('Incluir “por que é ruim”', 'Include “why it is weak”'),
                        dica=L('O argumento, por que é ruim e como dizer melhor numa imagem para as redes.', 'The argument, why it is weak and how to say it better in one image for social media.'))
