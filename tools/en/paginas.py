@@ -881,7 +881,7 @@ TEXTOS = {
     'That is why each chapter in Part IND answers on the argument\'s own ground, corrects the facts and brings the conversation back to the moral question.</p>'
     '<p>When health, protein or the environment are used to justify eating animals, the reasoning usually fails on two levels. On the level of facts, because the premises are often false: '
     'a well-planned plant-based diet meets our needs and causes less environmental harm. On the moral level, because it leaps from what <em>is</em> to what <em>ought to be</em>, '
-    'the move philosophers call the is-ought fallacy: even if eating animals brought some benefit, that would not show it is just to make them suffer and die to obtain it. '
+    'the move philosophers call the <a href="falacias.html#hume-s-law-from-is-to-ought">is-ought fallacy</a>: even if eating animals brought some benefit, that would not show it is just to make them suffer and die to obtain it. '
     'Showing the facts is always necessary; stopping there is never enough. See also the difference between <a href="comece-aqui.html#respostas">direct and indirect arguments and answers</a>.</p>'),
  'EQUILIBRIO': """<section class="equilibrio" id="corrigir-sem-perder-o-foco" aria-labelledby="eq-t"><h2 id="eq-t">Correcting without losing focus</h2>
 <p>Correcting our own arguments is part of any movement that takes the truth seriously. A bad argument from a vegan gets taken apart in the first conversation with someone well informed, and the whole cause takes the loss. That is why this page exists.</p>
