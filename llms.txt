@@ -9,7 +9,7 @@ Licença: textos originais sob CC BY 4.0 (https://creativecommons.org/licenses/b
 ## Como usar
 
 - [Comece aqui](https://pelosanimais.biblioverse.org/comece-aqui.html): o critério da senciência, os compromissos do guia e a diferença entre argumentos diretos e indiretos
-- [Sobre o guia](https://pelosanimais.biblioverse.org/sobre.html): o que é o projeto, como as fontes são tratadas e qual é o tom
+- [Sobre o guia](https://pelosanimais.biblioverse.org/sobre.html): o que é o projeto, o método, as fontes e o tom, quem é o autor e outros projetos: Ética, Política e Ciência Para Iniciantes, Questão de Ética e Guia de Alimentos Éticos
 
 ## Argumentos
 

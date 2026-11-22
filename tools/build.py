@@ -136,6 +136,24 @@ def L(pt, en):
     return en if EN else pt
 
 
+# Outros projetos citados no Sobre (nome, endereço, descrição) e no JSON-LD dele (relatedLink).
+PROJETOS_PT = [('Ética Para Iniciantes', 'https://eticaparainiciantes.biblioverse.org', 'guia de ética em três níveis: teorias, círculo moral, grandes dilemas e filósofos, sempre com fontes.'),
+    ('Política Para Iniciantes', 'https://politicaparainiciantes.biblioverse.org', 'guia de política em três níveis, com ferramentas interativas e dossiês dos partidos brasileiros.'),
+    ('Ciência Para Iniciantes', 'https://cienciaparainiciantes.biblioverse.org', 'guia de ciência em três níveis: método científico, evidência e como separar ciência de pseudociência.'),
+    ('Questão de Ética', 'https://questaodeetica.biblioverse.org', 'site-livro dos 12 volumes de Uma Jornada pela Ética Animal, de Luciano Carlos Cunha, com lições e testes. Também em inglês.'),
+    ('Guia de Alimentos Éticos', 'https://ethicalfood.biblioverse.org/pt/', 'diretório e mapa de empresas de proteína alternativa no mundo. Também em inglês.')]
+PROJETOS_EN = [('Ethics for Beginners', 'https://eticaparainiciantes.biblioverse.org', 'a three-level guide to ethics: theories, the moral circle, big dilemmas and philosophers, always with sources. In Portuguese.'),
+    ('Politics for Beginners', 'https://politicaparainiciantes.biblioverse.org', 'a three-level guide to politics, with interactive tools and dossiers on the Brazilian parties. In Portuguese.'),
+    ('Science for Beginners', 'https://cienciaparainiciantes.biblioverse.org', 'a three-level guide to science: the scientific method, evidence and how to tell science from pseudoscience. In Portuguese.'),
+    ('A Question of Ethics', 'https://questaodeetica.biblioverse.org/en/', 'the book-site of the 12 volumes of Uma Jornada pela Ética Animal, by Luciano Carlos Cunha, with lessons and quizzes.'),
+    ('Ethical Food Guide', 'https://ethicalfood.biblioverse.org', 'a directory and map of alternative-protein companies around the world.')]
+
+def projetos_html():
+    """Seção "Outros projetos" do Sobre (só no site). Nomes e descrições como no hub da BiblioVerse."""
+    pt, en = PROJETOS_PT, PROJETOS_EN
+    itens = en if EN else pt
+    return '<ul>' + ''.join(f'<li><a href="{u}" target="_blank" rel="noopener"><strong>{e(n)}</strong></a>. {e(d[0].upper() + d[1:])}</li>' for n, u, d in itens) + '</ul>'
+
 def autor_html():
     """Tópico "O autor" do Sobre: o mesmo texto do livro (tools/livro_textos.py), em PT ou EN."""
     import livro_textos
@@ -882,7 +900,17 @@ def dados(path, title, desc, url, tipo, trilha, pergunta=None):
         mig = [('Início', SITE + '/')] + [(n, f'{SITE}/{u.replace("index.html", "")}') for n, u in trilha] + [(title, url)]
         if pergunta:
             pg['mainEntity'] = {'@type': 'Question', 'name': html.unescape(pergunta[0]), 'acceptedAnswer': {'@type': 'Answer', 'text': html.unescape(pergunta[1])}}
+        if path in ('sobre.html', 'about.html'):
+            # O autor aparece nos dados estruturados só no Sobre, onde o nome dele já está no texto.
+            pg['about'] = {'@id': SITE + '/#site'}
+            pg['author'] = {'@id': SITE + '/#autor'}
+            pg['relatedLink'] = [u for _, u, _ in PROJETOS_EN] if EN else [u for _, u, _ in PROJETOS_PT]
         grafo = [site, pg, {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(mig)]}]
+    if path in ('sobre.html', 'about.html'):
+        grafo.append({'@type': 'Person', '@id': SITE + '/#autor', 'name': 'Julio Cesar Prava', 'url': SITE + '/sobre.html#autor',
+                      'jobTitle': L('Designer gráfico e ativista pelos animais', 'Graphic designer and animal advocate'),
+                      'sameAs': ['https://www.instagram.com/sencientista/'],
+                      'knowsAbout': L(['Ética animal', 'Veganismo', 'Sencientismo', 'Antiespecismo'], ['Animal ethics', 'Veganism', 'Sentientism', 'Antispeciesism'])})
     return '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@graph': grafo}, ensure_ascii=False).replace('</', '<\\/') + '</script>'
 
 def chave(path):
@@ -1540,16 +1568,21 @@ def sobre():
     T['contem'] = CONTEM; T['como-usar'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', USO); T['licenca'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', LIC); T['apoie'] += doacao_html()
     T['privacidade'] += '<p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p>' if not EN else ''
     T['autor'] = autor_html()
+    T['projetos'] = projetos_html()
     GRUPOS = [(L('O guia', 'The guide'), [('projeto', L('O projeto', 'The project')), ('contem', L('O que o guia contém', 'What the guide contains')), ('como-usar', L('Como usar o site', 'How to use the site'))]),
               (L('Método', 'Method'), [('abordagem', L('A abordagem', 'The approach')), ('fontes', L('Sobre as fontes', 'About the sources')), ('tom', L('Sobre o tom', 'About the tone'))]),
               (L('O autor', 'The author'), [('autor', L('O autor', 'The author'))]),
+              (L('Outros projetos', 'Other projects'), [('projetos', L('Outros projetos', 'Other projects'))]),
               (L('Uso e contato', 'Use and contact'), [('licenca', L('Licença', 'License')), ('apoie', L('Apoie', 'Support')), ('contato', L('Contato', 'Contact')), ('privacidade', L('Privacidade', 'Privacy'))])]
     # Grupo de um só tópico com o mesmo nome (O autor): vira seção própria, sem subtítulo repetido.
+    # Cada grupo tem um id no h2 e o título dele no índice é clicável. Grupo de um só tópico com o mesmo nome
+    # (O autor, Outros projetos) vira seção própria, sem subtítulo repetido.
     unico = lambda g, itens: len(itens) == 1 and itens[0][1] == g
-    nav = ''.join((f'<li><a class="ti" href="#{itens[0][0]}">{g}</a></li>' if unico(g, itens) else f'<li><span class="ti">{g}</span><ul>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, t in itens) + '</ul></li>') for g, itens in GRUPOS)
-    texto = ''.join((f'<h2 class="grupo-sobre" id="{itens[0][0]}">{g}</h2>{T[itens[0][0]]}' if unico(g, itens) else f'<h2 class="grupo-sobre">{g}</h2>' + ''.join(f'<h3 id="{i}">{t}</h3>{T[i]}' for i, t in itens)) for g, itens in GRUPOS)
+    gid = lambda g, itens: itens[0][0] if unico(g, itens) else 'grupo-' + itens[0][0]
+    nav = ''.join(f'<li><a class="ti" href="#{gid(g, itens)}">{g}</a>' + ('' if unico(g, itens) else '<ul>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, t in itens) + '</ul>') + '</li>' for g, itens in GRUPOS)
+    texto = ''.join(f'<h2 class="grupo-sobre" id="{gid(g, itens)}">{g}</h2>' + (T[itens[0][0]] if unico(g, itens) else ''.join(f'<h3 id="{i}">{t}</h3>{T[i]}' for i, t in itens)) for g, itens in GRUPOS)
     corpo = cabeca('<a href="./">Início</a>', 'Sobre o guia', e(DESCRICAO)) + f'<div class="wrap lay"><nav class="indice" aria-label="{L("Nesta página", "On this page")}"><p class="ti">{L("Nesta página", "On this page")}</p><ul>{nav}</ul></nav><article class="artigo">{texto}</article></div>'
-    page('sobre.html', 'Sobre o guia', L('O que é o guia de argumentação para defensores dos animais, o que já está pronto, como as fontes são tratadas e qual é o tom adotado.', 'What the argument guide for animal advocates is, what is ready, how sources are handled and what tone it takes.'), corpo, 'sobre.html')
+    page('sobre.html', 'Sobre o guia', L('O que é o guia, o que ele contém, o método, as fontes e o tom, quem é o autor e outros projetos dele sobre ética, política, ciência e proteínas alternativas.', 'What the guide is, what it contains, its method, sources and tone, who the author is and his other projects on ethics, politics, science and alternative proteins.'), corpo, 'sobre.html')
 
 def pagina_biblioteca():
     """Livros e sites para aprender a argumentar pelos animais, um card por livro (dados em tools/biblioteca.py)."""
@@ -1925,7 +1958,7 @@ def llms_txt():
     secoes = [
         (L('Como usar', 'How to use'), [
             (L('Comece aqui', 'Start here'), 'comece-aqui.html', L('o critério da senciência, os compromissos do guia e a diferença entre argumentos diretos e indiretos', 'the sentience criterion, the guide\'s commitments and the difference between direct and indirect arguments')),
-            (L('Sobre o guia', 'About the guide'), 'sobre.html', L('o que é o projeto, como as fontes são tratadas e qual é o tom', 'what the project is, how sources are handled and what tone it takes')),
+            (L('Sobre o guia', 'About the guide'), 'sobre.html', L('o que é o projeto, o método, as fontes e o tom, quem é o autor e outros projetos: Ética, Política e Ciência Para Iniciantes, Questão de Ética e Guia de Alimentos Éticos', 'what the project is, its method, sources and tone, who the author is and other projects: Ethics, Politics and Science for Beginners, A Question of Ethics and the Ethical Food Guide')),
         ]),
         (L('Argumentos', 'Arguments'), [
             (L('Todos os argumentos', 'All arguments'), L('#argumentos', '#arguments'), L(f'mais de {MAIS_N} argumentos usados contra o veganismo e o antiespecismo, com a falha principal de cada um', f'more than {MAIS_N} arguments used against veganism and antispeciesism, each with its main flaw')),
