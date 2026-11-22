@@ -45,7 +45,9 @@ def fontes_estaticas():
 
 N15 = len(B.ARGS) // 10 * 10
 TITULO = 'Guia de Argumentação Pelos Animais'
-SUB = f'Respostas a {len(B.ARGS)} argumentos contra o veganismo e o antiespecismo'  # número exato (antes "mais de", arredondado para baixo)
+SUB = 'Respostas a 290 argumentos contra o veganismo e o antiespecismo'  # igual ao subtítulo registrado na publicação
+# Capa e rosto: um "+DE" pequeno, com o + acima do DE, antes do 290, porque o catálogo já passou de 290.
+SUB_HTML = 'Respostas a <span class="maisde"><b>+</b>DE</span>290 argumentos contra o veganismo e o antiespecismo'
 SITE = B.SITE_PT.replace('https://', '')
 ANO = B.ATUALIZADO[:4]
 
@@ -116,6 +118,8 @@ h1,h2,h3{font-family:var(--serif);color:var(--tinta);margin:0;line-height:1.08;l
 .capa .selo{align-self:flex-start;background:var(--amarelo);color:var(--tinta);font:700 7.5pt var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:1.6mm 4mm;border-radius:99px}
 .capa{padding:15mm 15mm 14mm;align-items:center;text-align:center}
 .capa .sub{margin-left:auto!important;margin-right:auto!important}
+.maisde{display:inline-block;position:relative;font-size:.4em;font-weight:700;line-height:1;letter-spacing:.06em;vertical-align:baseline;margin:0 .3em 0 .1em}
+.maisde b{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);font-size:1.3em;line-height:1;margin-bottom:-.12em}
 .capa .logo{width:88mm;height:88mm;background:var(--amarelo);border-radius:18mm;padding:13mm;margin:0}
 .capa .logo svg{display:block}
 .capa h1{color:#fff;font-size:40pt;font-weight:700;margin:10mm 0 6mm;line-height:1.0;white-space:nowrap}
@@ -228,7 +232,7 @@ def gera():
         L = Livro()
         L.add(f'<h1>{e(TITULO)}</h1>', 'falso', num=False)
         L.branco()
-        L.add(f'<h1>Guia de Argumentação Pelos Animais</h1><p class="sub">{e(SUB)}</p>'
+        L.add(f'<h1>Guia de Argumentação Pelos Animais</h1><p class="sub">{SUB_HTML}</p>'
               f'<p class="autor">{e(T.AUTOR)}</p><p class="ed">{e(T.EDITORA) + " · " if T.EDITORA else ""}{ANO}</p>', 'rosto', num=False)
         ficha = f'<div class="ficha"><pre>{e(T.FICHA.strip())}</pre></div>' if T.FICHA.strip() else ''  # o livro não tem ficha catalográfica
         L.add(f'<p><strong>{e(TITULO)}</strong></p>'
@@ -311,7 +315,7 @@ def gera():
     L, num2 = monta(num)
     assert num == num2
     logo = re.sub(r'width="\d+" height="\d+"', 'width="100%" height="100%"', B.LOGO)
-    capa = (f'<div class="logo">{logo}</div><h1>Guia de<br/>Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{e(SUB)}</p>'
+    capa = (f'<div class="logo">{logo}</div><h1>Guia de<br/>Argumentação<br/><span>Pelos Animais</span></h1><p class="sub">{SUB_HTML}</p>'
             f'<p class="autor">{e(T.AUTOR)}</p>')
     contra = (f'<h2>Guia de Argumentação<br/><span>Pelos Animais</span></h2>{paragrafos(T.CONTRACAPA.format(n=len(B.ARGS)))}'
               f'<div class="pe"><a href="{B.SITE_PT}">{e(SITE)}</a></div>')

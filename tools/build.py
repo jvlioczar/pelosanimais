@@ -136,6 +136,15 @@ def L(pt, en):
     return en if EN else pt
 
 
+def autor_html():
+    """Tópico "O autor" do Sobre: o mesmo texto do livro (tools/livro_textos.py), em PT ou EN."""
+    import livro_textos
+    t = livro_textos.SOBRE_AUTOR_EN if EN else livro_textos.SOBRE_AUTOR
+    def p(b):
+        h = html.escape(b.strip(), quote=False)
+        return '<p>' + re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2" target="_blank" rel="noopener">\1</a>', h) + '</p>'
+    return ''.join(p(b) for b in t.strip().split('\n\n'))
+
 def doacao_html():
     """Chaves de doação da página Sobre. Ficam fora do código: nas variáveis de ambiente GUIA_PIX e GUIA_PAYID,
     ou no arquivo pessoal ~/.guia-doacoes (linhas GUIA_PIX=... e GUIA_PAYID=...), fora da pasta do site."""
@@ -1530,7 +1539,8 @@ def sobre():
     T['projeto'] = L('<p><strong>Toda objeção merece ser levada a sério e discutida honestamente.</strong></p>', '<p><strong>Every objection deserves to be taken seriously and discussed honestly.</strong></p>') + T['projeto']
     T['contem'] = CONTEM; T['como-usar'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', USO); T['licenca'] = re.sub(r'^<h2[^>]*>[^<]*</h2>', '', LIC); T['apoie'] += doacao_html()
     T['privacidade'] += '<p>Parte da <a href="https://biblioverse.org">BiblioVerse</a>.</p>' if not EN else ''
-    GRUPOS = [(L('O guia', 'The guide'), [('projeto', L('O projeto', 'The project')), ('contem', L('O que o guia contém', 'What the guide contains')), ('como-usar', L('Como usar o site', 'How to use the site'))]),
+    T['autor'] = autor_html()
+    GRUPOS = [(L('O guia', 'The guide'), [('projeto', L('O projeto', 'The project')), ('autor', L('O autor', 'The author')), ('contem', L('O que o guia contém', 'What the guide contains')), ('como-usar', L('Como usar o site', 'How to use the site'))]),
               (L('Método', 'Method'), [('abordagem', L('A abordagem', 'The approach')), ('fontes', L('Sobre as fontes', 'About the sources')), ('tom', L('Sobre o tom', 'About the tone'))]),
               (L('Uso e contato', 'Use and contact'), [('licenca', L('Licença', 'License')), ('apoie', L('Apoie', 'Support')), ('contato', L('Contato', 'Contact')), ('privacidade', L('Privacidade', 'Privacy'))])]
     nav = ''.join(f'<li><span class="ti">{g}</span><ul>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, t in itens) + '</ul></li>' for g, itens in GRUPOS)

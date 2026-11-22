@@ -11,7 +11,19 @@ AGRADECIMENTOS = '''Agradeço a todas as pessoas que pensam e trabalham para aju
 # Ficha catalográfica: deixe vazio para manter o quadro reservado; cole aqui o texto fornecido pela bibliotecária ou pelo bibliotecário.
 FICHA = ''
 
-SOBRE_AUTOR = """[Julio Cesar Prava](https://www.instagram.com/sencientista/) é designer gráfico e ativista pelos animais. Em 2017, fundou a [Vegpedia](https://vegpedia.com), para mapear o movimento vegano no Brasil e no mundo. Recentemente, lançou o Guia de Argumentação Pelos Animais."""
+SOBRE_AUTOR = """[Julio Cesar Prava](https://www.instagram.com/sencientista/) é brasileiro, mora na Austrália e é designer gráfico e ativista pelos animais. Deixou de comer carnes em 2009, quando se tornou ovolactovegetariano, e em 2017 tornou-se vegano. Em 2021, passou a se considerar sencientista.
+
+Em 2017, fundou a [Vegpedia](https://vegpedia.com), para mapear o movimento vegano no Brasil e no mundo. Em 2018, criou um hotsite em português para divulgar Dominion, documentário sobre a exploração animal, e em 2020 lançou a Veganismos, uma revista digital sobre veganismo. Participou, de forma esporádica, de ações de rua de grupos como o Anonymous for the Voiceless e a VEDDAS.
+
+Fez cursos de ética animal na [UFMG](https://ufmg.br) e na [UFU](https://ufu.br), em parceria com a [Animal Ethics](https://www.animal-ethics.org), e no [Center for Effective Vegan Advocacy](https://carnism.org/what-we-do/center-for-effective-vegan-advocacy/), além de um curso sobre proteínas alternativas no [GFI](https://gfi.org.br). É consequencialista e tem apreço pela divulgação científica e filosófica e por práticas baseadas em evidências. Preza pela honestidade intelectual e pela abertura intelectual e moral, para que possamos melhorar nosso pensamento e nossas escolhas, e se dedica ao ativismo na defesa dos seres sencientes. Em 2026, lançou o [Guia de Argumentação Pelos Animais](https://pelosanimais.biblioverse.org)."""
+
+# Versão em inglês, usada no Sobre do site em inglês (o livro é só em português).
+SOBRE_AUTOR_EN = """[Julio Cesar Prava](https://www.instagram.com/sencientista/) is Brazilian, lives in Australia and is a graphic designer and animal advocate. He stopped eating meat in 2009, when he became a lacto-ovo vegetarian, and became vegan in 2017. In 2021, he came to consider himself a sentientist.
+
+In 2017, he founded [Vegpedia](https://vegpedia.com), to map the vegan movement in Brazil and around the world. In 2018, he created a Portuguese-language website to promote Dominion, a documentary about animal exploitation, and in 2020 he launched Veganismos, a digital magazine about veganism. He has taken part, occasionally, in street outreach with groups such as Anonymous for the Voiceless and VEDDAS.
+
+He has taken courses in animal ethics at [UFMG](https://ufmg.br) and [UFU](https://ufu.br), in partnership with [Animal Ethics](https://www.animal-ethics.org), and at the [Center for Effective Vegan Advocacy](https://carnism.org/what-we-do/center-for-effective-vegan-advocacy/), as well as a course on alternative proteins at the [GFI](https://gfi.org.br). He is a consequentialist and appreciates science and philosophy communication and evidence-based practice. He values intellectual honesty and intellectual and moral openness, so that we can improve our thinking and our choices, and he is dedicated to activism in defense of sentient beings. In 2026, he launched the Guia de Argumentação Pelos Animais, published in English as [For the Animals](https://fortheanimals.biblioverse.org)."""
+
 
 SOBRE_PROJETO = """O Guia de Argumentação Pelos Animais foi lançado em novembro de 2026 para mapear os argumentos usados para justificar a exploração animal e o especismo, e para ajudar veganos e não veganos a melhorar o debate: conhecer a versão mais forte de cada objeção, onde ela falha, o que ela acerta e para onde a conversa costuma ir depois.
 
