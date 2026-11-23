@@ -928,11 +928,34 @@ def url_lingua(k, lg):
     if lg == 'en': x = en.caminho(x)
     return (SITE_EN if lg == 'en' else SITE_PT) + '/' + ('' if x == 'index.html' else x)
 
+SENC_PAG = 'alem/o-que-e-senciencia.html'
+_SENC_RE = re.compile(r'\b(sentience|sentient)\b' if EN else r'\b(senciência|sencientes?)\b', re.I)
+_SENC_FORA = {'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'summary', 'button', 'script', 'style', 'textarea', 'code', 'label', 'option', 'title', 'nav', 'svg'}
+
+def liga_senciencia(corpo, path, pre):
+    """A primeira menção a senciência no texto corrido da página leva à página que a define.
+    Só no texto entre tags (nunca em atributos), fora de links, títulos e controles; não na própria página nem no glossário."""
+    alvo = en.caminho(SENC_PAG) if EN else SENC_PAG
+    if path in (alvo, '404.html') or path.startswith(('glossario', 'glossary')) or alvo in corpo: return corpo
+    partes = re.split(r'(<[^>]+>)', corpo); fora = 0
+    for i, p in enumerate(partes):
+        if p.startswith('<'):
+            m = re.match(r'<(/?)([a-zA-Z0-9]+)', p)
+            if m and m[2].lower() in _SENC_FORA and not p.endswith('/>'): fora += -1 if m[1] else 1
+            fora = max(fora, 0); continue
+        if fora or not p.strip(): continue
+        m = _SENC_RE.search(p)
+        if m:
+            partes[i] = p[:m.start()] + f'<a href="{pre}{alvo}">{m[0]}</a>' + p[m.end():]
+            return ''.join(partes)
+    return corpo
+
 def page(path, title, desc, corpo, atual='', tipo='WebPage', trilha=(), pergunta=None, titulo_seo=None):
     """title: nome da página (JSON-LD, trilha); titulo_seo: o <title> e o og:title, quando diferentes do nome."""
     path = nova_url(path)
     k = chave(path)
     if EN: path = en.caminho(path)
+    corpo = liga_senciencia(corpo, path, '../' * path.count('/'))
     PAGINAS.append(path)
     erro = path == '404.html'
     home = path == 'index.html'
