@@ -1359,7 +1359,8 @@
    "Especismo antropocêntrico",
    "Biocentrismo",
    "Ecocentrismo",
-   "Senciocentrismo"
+   "Senciocentrismo",
+   "Antropocentrismo epistêmico"
   ],
   "ex": "\"Dizer que a floresta só vale pelo que dá aos humanos, e não pelos seres que vivem nela, é uma posição típica do antropocentrismo.\"",
   "ex_en": "\"Saying that a forest is only worth what it gives to humans, and not the beings who live in it, is a typical anthropocentric position.\""
@@ -1412,7 +1413,8 @@
    "Cânone de Morgan",
    "Emoções animais",
    "Etologia",
-   "Cognição animal"
+   "Cognição animal",
+   "Antropocentrismo epistêmico"
   ],
   "ex": "\"Dizer que o gato ficou envergonhado porque derrubou o vaso pode ser antropomorfismo, já que talvez ele só tenha reagido ao tom de voz do dono.\"",
   "ex_en": "\"Saying the cat was embarrassed because it knocked over the vase may be anthropomorphism, since it may merely have reacted to its owner's tone of voice.\""
@@ -1456,7 +1458,8 @@
    "Compaixão",
    "Indignação seletiva",
    "Alienação",
-   "Fadiga do ativismo"
+   "Fadiga do ativismo",
+   "Apatia moral"
   ],
   "ex": "\"Diante do vídeo de um matadouro, ele deu de ombros e mudou de assunto, e a amiga lamentou aquela apatia diante do sofrimento alheio.\"",
   "ex_en": "\"Faced with a video of a slaughterhouse, he shrugged and changed the subject, and his friend regretted that apathy in the face of others' suffering.\""
@@ -3077,7 +3080,8 @@
    "Carnista",
    "Especismo",
    "Dissonância cognitiva",
-   "Antivegano"
+   "Antivegano",
+   "Autoengano"
   ],
   "ex": "\"Para a psicóloga, o carnismo explica por que amamos cães e comemos porcos sem sentir contradição: a crença na normalidade de comer carne fica invisível.\"",
   "ex_en": "\"According to the psychologist, carnism explains why we love dogs and eat pigs without feeling any contradiction: the belief that eating meat is normal stays invisible.\""
@@ -5427,7 +5431,8 @@
    "Direito animal",
    "Direitos",
    "Valor intrínseco",
-   "Abolicionismo"
+   "Abolicionismo",
+   "Direitos negativos e positivos"
   ],
   "ex": "“Para quem defende os direitos animais, um porco não deve ser tratado como recurso, mesmo que a lei ainda o classifique como mercadoria.”",
   "ex_en": "“For those who defend animal rights, a pig should not be treated as a resource, even if the law still classifies it as a commodity.”"
@@ -5541,7 +5546,9 @@
    "Coerência moral",
    "Esquizofrenia moral",
    "Carnismo",
-   "Disneyficação"
+   "Disneyficação",
+   "Racionalização",
+   "Autoengano"
   ],
   "ex": "“Ela ama cachorros, mas continua comendo carne; quando percebe a contradição, sente a dissonância cognitiva e muda de assunto.”",
   "ex_en": "“She loves dogs but keeps eating meat; when she notices the contradiction, she feels cognitive dissonance and changes the subject.”"
@@ -7495,7 +7502,8 @@
    "Dissonância cognitiva",
    "Coerência moral",
    "Transição alimentar",
-   "Escolha"
+   "Escolha",
+   "Apatia moral"
   ],
   "ex": "“Ele sabe que o queijo envolve sofrimento e come mesmo assim: fraqueza de vontade, não falta de informação.”",
   "ex_en": "“He knows that cheese involves suffering and eats it anyway: weakness of will, not lack of information.”"
@@ -16856,7 +16864,8 @@
    "Autoconsciência",
    "Senciência",
    "Casos-limite",
-   "Sapiência"
+   "Sapiência",
+   "Inteligência"
   ],
   "ex": "“A falta de abstração não impede uma vaca de sentir a separação do bezerro.”",
   "ex_en": "“A lack of abstraction does not stop a cow from feeling separated from her calf.”"
@@ -16878,9 +16887,162 @@
    "Senciência",
    "Abstração",
    "Autoconsciência",
-   "Consciência reflexiva"
+   "Consciência reflexiva",
+   "Inteligência"
   ],
   "ex": "“Um polvo não precisa de sapiência para merecer consideração: basta que possa sentir.”",
   "ex_en": "“An octopus does not need sapience to deserve consideration: it is enough that it can feel.”"
+ },
+ "Inteligência": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "capacidade cognitiva"
+  ],
+  "sin_en": [
+   "cognitive ability"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Abstração",
+   "Sapiência",
+   "Senciência",
+   "Inteligentismo"
+  ],
+  "ex": "“Uma inteligência artificial pode jogar xadrez melhor que qualquer pessoa sem que isso mostre que ela sente alguma coisa.”",
+  "ex_en": "“An artificial intelligence can play chess better than anyone without that showing it feels anything.”"
+ },
+ "Apatia moral": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "indiferença moral"
+  ],
+  "sin_en": [
+   "moral indifference"
+  ],
+  "ant": [
+   "Engajamento moral"
+  ],
+  "ant_en": [
+   "Moral engagement"
+  ],
+  "veja": [
+   "Apatia",
+   "Fraqueza de vontade",
+   "Racionalização",
+   "Autoengano"
+  ],
+  "ex": "“Ele concorda que a pecuária industrial é injusta, mas diz que não é problema dele: é apatia moral, e não falta de informação.”",
+  "ex_en": "“He agrees that factory farming is unjust but says it is not his problem: that is moral apathy, not a lack of information.”"
+ },
+ "Racionalização": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "justificação a posteriori"
+  ],
+  "sin_en": [
+   "post hoc justification"
+  ],
+  "ant": [
+   "Raciocínio imparcial"
+  ],
+  "ant_en": [
+   "Impartial reasoning"
+  ],
+  "veja": [
+   "Dissonância cognitiva",
+   "Autoengano",
+   "Apatia moral",
+   "Carnismo"
+  ],
+  "ex": "“Dizer que o leão também come carne, depois de já ter decidido continuar comendo, é racionalização, e não argumento.”",
+  "ex_en": "“Saying that lions eat meat too, after already deciding to keep eating it, is rationalization, not argument.”"
+ },
+ "Autoafirmação": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "autoimagem",
+   "integridade do eu"
+  ],
+  "sin_en": [
+   "self-image",
+   "self-integrity"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Autoengano",
+   "Racionalização",
+   "Dissonância cognitiva"
+  ],
+  "ex": "“Antes de falar dos animais, ela lembrou ao amigo como ele é generoso com os outros; a autoafirmação o deixou mais disposto a ouvir.”",
+  "ex_en": "“Before talking about animals, she reminded her friend how generous he is with others; the self-affirmation made him more willing to listen.”"
+ },
+ "Autoengano": {
+  "tipo": "substantivo masculino",
+  "tipo_en": "noun",
+  "sin": [
+   "ignorância deliberada",
+   "cegueira voluntária"
+  ],
+  "sin_en": [
+   "wilful ignorance",
+   "wilful blindness"
+  ],
+  "ant": [
+   "Honestidade intelectual"
+  ],
+  "ant_en": [
+   "Intellectual honesty"
+  ],
+  "veja": [
+   "Racionalização",
+   "Dissonância cognitiva",
+   "Carnismo",
+   "Apatia moral"
+  ],
+  "ex": "“Ela prefere não ver os vídeos dos matadouros para continuar comendo em paz: é um caso de autoengano.”",
+  "ex_en": "“She prefers not to watch slaughterhouse videos so she can keep eating in peace: a case of self-deception.”"
+ },
+ "Antropocentrismo epistêmico": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "ponto de vista humano"
+  ],
+  "sin_en": [
+   "human standpoint"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Antropocentrismo",
+   "Antropomorfismo",
+   "Senciência"
+  ],
+  "ex": "“Julgar a dor de um caranguejo pela nossa é antropocentrismo epistêmico; concluir que ela não importa já é antropocentrismo moral.”",
+  "ex_en": "“Judging a crab’s pain by our own is epistemic anthropocentrism; concluding that it does not matter is moral anthropocentrism.”"
+ },
+ "Direitos negativos e positivos": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "direitos de abstenção e de prestação"
+  ],
+  "sin_en": [
+   "rights of noninterference and of assistance"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Direitos animais",
+   "Sofrimento dos animais selvagens"
+  ],
+  "ex": "“Não comer animais respeita um direito negativo; resgatar um animal ferido cumpre um dever positivo.”",
+  "ex_en": "“Not eating animals respects a negative right; rescuing an injured animal fulfils a positive duty.”"
  }
 }
