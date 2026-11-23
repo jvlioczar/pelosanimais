@@ -41,7 +41,7 @@ O guia segue a filosofia analítica, com conceitos claros e premissas apoiadas e
 
 CONTRACAPA = """Toda objeção merece ser levada a sério.
 
-Este livro reúne {n} argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma réplica para usar na hora e uma pergunta para manter a conversa aberta.
+Este livro reúne mais de 290 argumentos usados contra o veganismo e o antiespecismo, um por página: a frase como ela costuma ser dita, a falha principal, uma réplica para usar na hora e uma pergunta para manter a conversa aberta.
 
 Aqui as respostas são diretas e curtas, para usar numa conversa. Cada página leva ao capítulo completo no site, onde a objeção aparece na sua versão mais forte, com o que ela acerta, onde falha, a desmontagem passo a passo e as fontes."""
 
