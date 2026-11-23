@@ -4133,13 +4133,11 @@
   "tipo_en": "noun",
   "sin": [
    "percepção subjetiva",
-   "experiência consciente",
-   "consciência fenomenal"
+   "experiência consciente"
   ],
   "sin_en": [
    "subjective awareness",
-   "conscious experience",
-   "phenomenal consciousness"
+   "conscious experience"
   ],
   "ant": [
    "Inconsciência"
@@ -4150,7 +4148,9 @@
   "veja": [
    "Consciência animal",
    "Experiência subjetiva",
-   "Senciência"
+   "Senciência",
+   "Consciência fenomenal",
+   "Autoconsciência"
   ],
   "ex": "\"Debates sobre a consciência perguntam se existe algo que é ser um polvo, isto é, se há uma experiência subjetiva por trás do comportamento.\"",
   "ex_en": "\"Debates about consciousness ask whether there is something it is like to be an octopus, that is, whether there is subjective experience behind the behavior.\""
@@ -10437,7 +10437,9 @@
    "Dor",
    "Senciência",
    "Sistema nervoso",
-   "Experiência subjetiva"
+   "Experiência subjetiva",
+   "Consciência fenomenal",
+   "Autoconsciência"
   ],
   "ex": "\"A retirada reflexa da mão ao tocar o fogo é nocicepção, que começa antes mesmo de a pessoa sentir a dor.\"",
   "ex_en": "\"Pulling your hand back from fire is nociception, which starts even before you feel the pain.\""
@@ -13461,7 +13463,10 @@
    "Ser senciente",
    "Sencientismo",
    "Dor",
-   "Consciência animal"
+   "Consciência animal",
+   "Consciência fenomenal",
+   "Autoconsciência",
+   "Sapiência"
   ],
   "ex": "“Reconhecer a senciência de mamíferos, aves e polvos significa admitir que eles podem sofrer e que esse sofrimento precisa ser levado a sério.”",
   "ex_en": "“Recognising the sentience of mammals, birds and octopuses means admitting that they can suffer and that this suffering must be taken seriously.”"
@@ -16768,5 +16773,114 @@
   ],
   "ex": "\"Dizer que uma prática está certa só porque nenhuma lei a proíbe é legalismo: a pergunta moral continua de pé.\"",
   "ex_en": "\"Saying a practice is right because no local law bans it is legalism: the moral question still stands.\""
+ },
+ "Consciência fenomenal": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "consciência P",
+   "experiência consciente"
+  ],
+  "sin_en": [
+   "P-consciousness",
+   "conscious experience"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Consciência",
+   "Experiência subjetiva",
+   "Senciência",
+   "Autoconsciência"
+  ],
+  "ex": "“Um peixe não precisa se reconhecer no espelho para ter consciência fenomenal: basta que haja algo que é ser ele quando sente dor.”",
+  "ex_en": "“A fish does not need to recognize itself in a mirror to have phenomenal consciousness: it is enough that there is something it is like to be it when it feels pain.”"
+ },
+ "Autoconsciência": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "consciência de si",
+   "autopercepção"
+  ],
+  "sin_en": [
+   "self-consciousness",
+   "self-recognition"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Consciência fenomenal",
+   "Consciência reflexiva",
+   "Teste do espelho",
+   "Senciência"
+  ],
+  "ex": "“Dizer que um porco não sofre porque não tem autoconsciência confunde duas capacidades diferentes.”",
+  "ex_en": "“Saying a pig does not suffer because it lacks self-awareness confuses two different capacities.”"
+ },
+ "Consciência reflexiva": {
+  "tipo": "locução substantiva",
+  "tipo_en": "noun phrase",
+  "sin": [
+   "metacognição",
+   "consciência de ordem superior"
+  ],
+  "sin_en": [
+   "metacognition",
+   "higher-order consciousness"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Consciência fenomenal",
+   "Autoconsciência",
+   "Senciência"
+  ],
+  "ex": "“Uma galinha pode sentir medo sem ter consciência reflexiva, isto é, sem pensar ‘estou com medo’.”",
+  "ex_en": "“A hen can feel fear without reflective consciousness, that is, without thinking ‘I am afraid’.”"
+ },
+ "Abstração": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "pensamento abstrato",
+   "raciocínio abstrato"
+  ],
+  "sin_en": [
+   "abstract thought",
+   "abstract reasoning"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Autoconsciência",
+   "Senciência",
+   "Casos-limite",
+   "Sapiência"
+  ],
+  "ex": "“A falta de abstração não impede uma vaca de sentir a separação do bezerro.”",
+  "ex_en": "“A lack of abstraction does not stop a cow from feeling separated from her calf.”"
+ },
+ "Sapiência": {
+  "tipo": "substantivo feminino",
+  "tipo_en": "noun",
+  "sin": [
+   "sabedoria",
+   "inteligência elaborada"
+  ],
+  "sin_en": [
+   "wisdom",
+   "elaborate intelligence"
+  ],
+  "ant": [],
+  "ant_en": [],
+  "veja": [
+   "Senciência",
+   "Abstração",
+   "Autoconsciência",
+   "Consciência reflexiva"
+  ],
+  "ex": "“Um polvo não precisa de sapiência para merecer consideração: basta que possa sentir.”",
+  "ex_en": "“An octopus does not need sapience to deserve consideration: it is enough that it can feel.”"
  }
 }

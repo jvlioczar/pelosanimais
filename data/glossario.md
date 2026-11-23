@@ -36,7 +36,6 @@
 
 **Senciência** — capacidade de sentir, de ter experiências subjetivas positivas ou negativas, como dor, prazer e medo. *Para o sencientismo, é a senciência — e não a espécie, a inteligência ou a utilidade de um ser para outrem — o único critério moralmente relevante para determinar quem merece consideração.*
 
-**Princípio da precaução** — regra de decisão segundo a qual, diante do risco de um dano grave ou irreversível, a falta de certeza científica não justifica deixar de tomar medidas de proteção. Aparece, por exemplo, na Declaração do Rio sobre Meio Ambiente e Desenvolvimento (1992). *No debate sobre os animais, é usado nos dois sentidos. Quando há dúvida razoável sobre a senciência de um animal, como peixes, crustáceos ou insetos, a precaução pede tratá-lo como alguém que pode sentir, raciocínio do filósofo Jonathan Birch e do relatório que levou o Reino Unido a reconhecer decápodes e cefalópodes como sencientes (2021). Também é invocado contra intervenções na natureza ou contra mudanças de dieta; nesses casos, vale perguntar se o risco foi pesado dos dois lados, incluindo o dano já certo aos animais.*
 *Para entender mais:*
 - https://www.sentienceinstitute.org/blog/what-is-sentience
 - https://www.animal-ethics.org/o-que-e-senciencia
@@ -44,6 +43,8 @@
 - https://senciencia.org/2023/09/27/o-que-e-senciencia-e-por-que-ela-e-importante
 - https://senciencia.org/2023/09/27/quais-seres-sao-sencientes
 - https://philpapers.org/rec/CHASAM-11
+
+**Princípio da precaução** — regra de decisão segundo a qual, diante do risco de um dano grave ou irreversível, a falta de certeza científica não justifica deixar de tomar medidas de proteção. Aparece, por exemplo, na Declaração do Rio sobre Meio Ambiente e Desenvolvimento (1992). *No debate sobre os animais, é usado nos dois sentidos. Quando há dúvida razoável sobre a senciência de um animal, como peixes, crustáceos ou insetos, a precaução pede tratá-lo como alguém que pode sentir, raciocínio do filósofo Jonathan Birch e do relatório que levou o Reino Unido a reconhecer decápodes e cefalópodes como sencientes (2021). Também é invocado contra intervenções na natureza ou contra mudanças de dieta; nesses casos, vale perguntar se o risco foi pesado dos dois lados, incluindo o dano já certo aos animais.*
 
 **Senciência em IA e sistemas digitais** — debate sobre se sistemas artificiais poderiam desenvolver experiência subjetiva e, nesse caso, merecer consideração moral. *Uma perspectiva sencientista consistente exigiria estender consideração moral a esses sistemas assim que houvesse evidência suficiente de senciência, independentemente de sua origem biológica ou artificial.*
 

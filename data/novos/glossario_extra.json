@@ -1971,5 +1971,40 @@
   "def": "resposta ou hipótese criada só para salvar uma tese de uma objeção ou de um contraexemplo, sem nenhuma razão independente a seu favor.",
   "com": "A expressão latina quer dizer \"para isto\", e a crítica a hipóteses ad hoc é comum na filosofia da ciência, por exemplo em Karl Popper. Uma resposta não é ad hoc só por ter surgido depois da objeção: é ad hoc quando não teria nenhum apoio se a objeção não existisse e quando não explica mais nada além do caso que precisa salvar. Nathan Nobis, em *Animals & Ethics 101* (2016), aplica o teste às respostas ao argumento dos casos marginais: quem diz que só os racionais têm direitos precisa explicar os bebês e as pessoas com deficiência cognitiva profunda, e regras como \"conta quem pertence a uma espécie normalmente racional\" muitas vezes parecem feitas sob medida para incluir esses humanos e excluir os animais. É o que o compromisso de parcimônia deste guia pede que se evite. Veja Argumento dos casos marginais, Contraexemplo e Petição de princípio.",
   "links": []
+ },
+ {
+  "termo": "Consciência fenomenal",
+  "sec": 1,
+  "def": "o aspecto da consciência que consiste em ter experiências: haver algo que é ser aquele ser, do ponto de vista dele.",
+  "com": "A expressão foi popularizada pelo filósofo Ned Block (1995), que a distinguiu da consciência de acesso, a informação disponível para raciocinar e agir. É a forma mínima de consciência que a senciência pressupõe: para sentir dor, é preciso haver alguém que a sinta. Ela não exige autoconsciência, linguagem nem pensamento abstrato. Veja Consciência, Experiência subjetiva, Senciência e Autoconsciência.",
+  "links": []
+ },
+ {
+  "termo": "Autoconsciência",
+  "sec": 1,
+  "def": "capacidade de se perceber como um indivíduo distinto dos outros e do ambiente, com alguma noção de si.",
+  "com": "Costuma ser estudada com o teste do espelho, em que chimpanzés, golfinhos, alguns elefantes-asiáticos e pegas deram sinais de se reconhecer; o teste é criticado por favorecer animais que dependem muito da visão. A autoconsciência não é necessária para sentir: um bebê pequeno não se reconhece no espelho e sente dor. Exigi-la para reconhecer a senciência é trocar de critério. Veja Consciência fenomenal, Consciência reflexiva, Teste do espelho e Senciência.",
+  "links": []
+ },
+ {
+  "termo": "Consciência reflexiva",
+  "sec": 1,
+  "def": "capacidade de pensar sobre os próprios estados mentais, como saber que se está com dor ou avaliar a própria certeza; próxima do que se chama metacognição.",
+  "com": "Algumas teorias, chamadas de ordem superior, dizem que um estado só é consciente quando há outro estado mental sobre ele; levadas ao pé da letra, poderiam excluir muitos animais e até bebês, e por isso são contestadas nesse ponto. Há sinais de metacognição em macacos e golfinhos, mas sua ausência não mostra ausência de senciência: não é preciso refletir sobre a dor para que ela doa. Veja Consciência fenomenal, Autoconsciência e Senciência.",
+  "links": []
+ },
+ {
+  "termo": "Abstração",
+  "sec": 1,
+  "def": "capacidade de formar conceitos gerais e raciocinar sobre o que não está presente, como números, regras ou o futuro.",
+  "com": "É uma das capacidades mais citadas para separar os humanos dos outros animais, embora vários animais mostrem formas dela, como abelhas que aprendem os conceitos de \"igual\" e \"diferente\" (Giurfa e colegas, 2001). Mas pensar em abstrato não é condição para sofrer: a dor não depende de conceitos. Usar a abstração como critério de consideração moral deixaria de fora bebês e algumas pessoas com deficiência cognitiva, o problema dos casos-limite. Veja Autoconsciência, Senciência e Casos-limite.",
+  "links": []
+ },
+ {
+  "termo": "Sapiência",
+  "sec": 1,
+  "def": "capacidade de raciocinar, julgar e agir com sabedoria; costuma designar a inteligência elaborada típica dos humanos, como no nome Homo sapiens, do latim sapiens, \"sábio\".",
+  "com": "É frequentemente confundida com senciência, mas são coisas diferentes: senciente é quem sente, sapiente é quem pensa de forma elaborada. Um bebê, um peixe ou uma galinha podem ser sencientes sem serem sapientes, e não é a sapiência que torna alguém capaz de ser prejudicado. O movimento sentientista prefere falar em senciência justamente porque \"consciência\" às vezes é usada nesse sentido mais amplo. Veja Senciência, Abstração, Autoconsciência e Consciência reflexiva.",
+  "links": []
  }
 ]

@@ -1,60 +1,64 @@
 {
  "pt": {
   "alem-do-veganismo.html": {
-   "h": "6c12d50b1119f318",
-   "d": "2026-11-22"
+   "h": "2bbfbb19c085c802",
+   "d": "2026-11-23"
   },
   "alem/animais-selvagens.html": {
-   "h": "667268fe7dd8e736",
-   "d": "2026-11-21"
+   "h": "cc608f34f7556e3a",
+   "d": "2026-11-23"
   },
   "alem/antiespecismo.html": {
-   "h": "1b509c3d0ee9b926",
-   "d": "2026-11-22"
+   "h": "1f8f8974cfb85306",
+   "d": "2026-11-23"
   },
   "alem/argumentos-diretos.html": {
-   "h": "d362daecf129fb88",
-   "d": "2026-11-21"
+   "h": "fe798a8e76e3712e",
+   "d": "2026-11-23"
   },
   "alem/correntes-do-veganismo.html": {
-   "h": "7e8384e786c71de8",
-   "d": "2026-11-22"
+   "h": "ecc7ce4abd0f2294",
+   "d": "2026-11-23"
   },
   "alem/definicao-de-veganismo.html": {
-   "h": "6516d3d8ea78acbc",
-   "d": "2026-11-21"
+   "h": "b09d13122e3c8525",
+   "d": "2026-11-23"
   },
   "alem/especismo-entre-veganos.html": {
-   "h": "9efaad69990c5470",
-   "d": "2026-11-21"
+   "h": "818d55dbcf7ba20c",
+   "d": "2026-11-23"
   },
   "alem/estado-da-arte.html": {
-   "h": "bf9901e51fc9c3d2",
-   "d": "2026-11-21"
+   "h": "16bc4085d426bef0",
+   "d": "2026-11-23"
   },
   "alem/extraterrestres.html": {
-   "h": "059fa0c5863af918",
-   "d": "2026-11-21"
+   "h": "bcabd56321ab1a69",
+   "d": "2026-11-23"
   },
   "alem/fundamentos.html": {
-   "h": "7fb55fc2f2a3969f",
-   "d": "2026-11-21"
+   "h": "2d52e0cd58cdd577",
+   "d": "2026-11-23"
   },
   "alem/ia-e-robos.html": {
-   "h": "5e74849d83148b5c",
-   "d": "2026-11-21"
+   "h": "ef3ab0e6676c5cae",
+   "d": "2026-11-23"
   },
   "alem/matar-ou-fazer-sofrer.html": {
-   "h": "8fc35e4062b96042",
-   "d": "2026-11-21"
+   "h": "2ead2a7d62c138c8",
+   "d": "2026-11-23"
   },
   "alem/minimo-comum.html": {
-   "h": "5f86b6d9d534637d",
-   "d": "2026-11-21"
+   "h": "4a5b738a2cb8f5c2",
+   "d": "2026-11-23"
+  },
+  "alem/o-que-e-senciencia.html": {
+   "h": "5a830252b3812358",
+   "d": "2026-11-23"
   },
   "alem/quando-a-logica-nao-basta.html": {
-   "h": "5244912d44eaa03d",
-   "d": "2026-11-21"
+   "h": "34336fcee6f402a5",
+   "d": "2026-11-23"
   },
   "argumentos-ruins.html": {
    "h": "7879d461bf144ea3",
@@ -1441,11 +1445,11 @@
    "d": "2026-11-22"
   },
   "glossario.html": {
-   "h": "a5678aff7a04c651",
-   "d": "2026-11-22"
+   "h": "2be6ab456363ef28",
+   "d": "2026-11-23"
   },
   "index.html": {
-   "h": "9c794bad234dd5ec",
+   "h": "4bddbff035219fbd",
    "d": "2026-11-23"
   },
   "mapa.html": {
@@ -3359,60 +3363,64 @@
    "d": "2026-11-22"
   },
   "beyond-veganism.html": {
-   "h": "c678b41738d0ba02",
-   "d": "2026-11-22"
+   "h": "01b73241fd339023",
+   "d": "2026-11-23"
   },
   "beyond/ai-and-robots.html": {
-   "h": "fd5225f45dbb5c2d",
-   "d": "2026-11-21"
+   "h": "15cb5724721e67da",
+   "d": "2026-11-23"
   },
   "beyond/antispeciesism.html": {
-   "h": "83e2b5cb22da1aa4",
-   "d": "2026-11-22"
+   "h": "ede078a006672496",
+   "d": "2026-11-23"
   },
   "beyond/common-minimum.html": {
-   "h": "308bb5ee508c1afc",
-   "d": "2026-11-21"
+   "h": "d778168272385593",
+   "d": "2026-11-23"
   },
   "beyond/currents-of-veganism.html": {
-   "h": "440d4daa4b2bfb75",
-   "d": "2026-11-22"
+   "h": "6a6690efd87622c2",
+   "d": "2026-11-23"
   },
   "beyond/defining-veganism.html": {
-   "h": "f3294009f6322705",
-   "d": "2026-11-21"
+   "h": "21cfa97a87692882",
+   "d": "2026-11-23"
   },
   "beyond/direct-arguments.html": {
-   "h": "b959e29d1edf16fd",
-   "d": "2026-11-21"
+   "h": "c6840fdc600a70a6",
+   "d": "2026-11-23"
   },
   "beyond/extraterrestrials.html": {
-   "h": "764aee5ecd68b158",
-   "d": "2026-11-21"
+   "h": "365b33a53a2aa652",
+   "d": "2026-11-23"
   },
   "beyond/foundations.html": {
-   "h": "9f40b26b31b3f062",
-   "d": "2026-11-22"
+   "h": "0ca82559be43b322",
+   "d": "2026-11-23"
   },
   "beyond/killing-or-causing-suffering.html": {
-   "h": "77bc18f05f9ff1f2",
-   "d": "2026-11-21"
+   "h": "b4e84f451d9213a4",
+   "d": "2026-11-23"
   },
   "beyond/speciesism-among-vegans.html": {
-   "h": "bce4d36023565e84",
-   "d": "2026-11-21"
+   "h": "f024f81e2b61b4ef",
+   "d": "2026-11-23"
   },
   "beyond/state-of-the-art.html": {
-   "h": "432eafaaccfb7cbe",
-   "d": "2026-11-21"
+   "h": "5cfd6f38babed6a1",
+   "d": "2026-11-23"
+  },
+  "beyond/what-is-sentience.html": {
+   "h": "eeadf784d02e6281",
+   "d": "2026-11-23"
   },
   "beyond/when-logic-isnt-enough.html": {
-   "h": "9405e4d2e32f090e",
-   "d": "2026-11-21"
+   "h": "8e17d1b9e9839a3d",
+   "d": "2026-11-23"
   },
   "beyond/wild-animals.html": {
-   "h": "f0d111c5ba6cd953",
-   "d": "2026-11-21"
+   "h": "d3cad89a01a339c6",
+   "d": "2026-11-23"
   },
   "biases.html": {
    "h": "1fa8a6a17b66748f",
@@ -3907,11 +3915,11 @@
    "d": "2026-11-22"
   },
   "glossary.html": {
-   "h": "cc63edddbaba83b2",
-   "d": "2026-11-22"
+   "h": "9ce827a6adad4e41",
+   "d": "2026-11-23"
   },
   "index.html": {
-   "h": "11e3d97ec940e746",
+   "h": "7171fea600f6dd55",
    "d": "2026-11-23"
   },
   "library.html": {
