@@ -76,6 +76,7 @@ _PASTA_RE = re.compile(r'(?<![\w-])(argumentos|ruins|familias|politicas|alem|fal
 _PAG_RE = re.compile(r'(?<![\w/-])((?:\.\./)*)(' + '|'.join(sorted(PAGS, key=len, reverse=True)) + r')\.html')
 _PAG_RAIZ_RE = re.compile(r'(?<=biblioverse\.org/)(' + '|'.join(sorted(PAGS, key=len, reverse=True)) + r')\.html')
 
+SUB['alem']['definicao-de-veganismo'] = 'defining-veganism'  # endereço antigo, só para o redirecionamento (2026-11-24)
 _IRMAOS = {**SUB['politicas'], **SUB['alem']}
 _IRMAO_RE = re.compile(r'(?<=href=")(' + '|'.join(sorted(_IRMAOS, key=len, reverse=True)) + r')\.html')
 

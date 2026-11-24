@@ -2226,6 +2226,7 @@ def mapa_redirecionamentos():
         for velho, novo in SLUG_RUIM.items(): R[f'ruins/{velho}.html'] = f'ruins/{novo}.html'
         for velho, s_ in CODIGOS_ANTIGOS.items():
             if velho not in SLUG_ARG: R[f'argumentos/{velho}.html'] = f'argumentos/{s_}.html'
+    R['alem/definicao-de-veganismo.html'] = 'alem/o-que-e-veganismo.html'  # página renomeada em 2026-11-24
     for velho, s_ in (SLUGS_ANTIGOS_EN if EN else SLUGS_ANTIGOS_PT).items():
         R[f'argumentos/{velho}.html'] = f'argumentos/{s_}.html'
     for velho, cod in _REG['retirados'][lg].items():  # argumentos removidos ou unidos: vão para o argumento que os absorveu ou para a família
