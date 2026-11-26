@@ -2010,6 +2010,7 @@ VIESES_EXTRA = [
     ('Viés de omissão e viés do perpetrador', 'Julgar menos grave o dano que não causamos com as próprias mãos, ou que resulta de deixar de agir.', ['Viés de omissão', 'Viés do perpetrador']),
     ('Viés de intenção', 'Reagir com mais força a um dano quando alguém o causou de propósito do que a um dano igual que vem de causas sem culpado.', []),
     ('Viés teleológico e detecção de agente', 'Ver propósito e intenção na natureza: os animais "existiriam para" algo.', []),
+    ('Ameaça simbólica', 'Ver um grupo como ameaça aos valores, às normas e ao modo de vida da maioria, e não a bens ou à segurança.', []),
     ('Desaparecimento da compaixão', 'Quanto mais vítimas, menos se sente por cada uma; uma vítima identificável comove mais que milhões.', ['Vítima identificável']),
     ('Aversão à perda e efeito dotação', 'Perder o que se tem pesa mais do que ganhar algo equivalente.', ['Aversão à perda']),
     ('Custo irrecuperável e justificação do esforço', 'Continuar porque já se investiu muito, e não porque vale a pena.', []),

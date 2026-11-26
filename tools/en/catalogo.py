@@ -350,6 +350,7 @@ VIESES = {
  'Efeito da verdade ilusória e da mera exposição': ('Illusory truth and mere exposure effects', 'What you hear often seems true, and what is familiar seems better.'),
  'Viés de omissão e viés do perpetrador': ('Omission bias and perpetrator bias', "Judging as less serious the harm we don't cause with our own hands, or that results from not acting."),
  'Viés teleológico e detecção de agente': ('Teleological bias and agency detection', 'Seeing purpose and intention in nature: animals would "exist for" something.'),
+ 'Ameaça simbólica': ('Symbolic threat', 'Seeing a group as a threat to the majority’s values, norms and way of life, rather than to goods or safety.'),
  'Desaparecimento da compaixão': ('Collapse of compassion', 'The more victims, the less we feel for each; one identifiable victim moves us more than millions.'),
  'Aversão à perda e efeito dotação': ('Loss aversion and the endowment effect', 'Losing what you have weighs more than gaining something equivalent.'),
  'Custo irrecuperável e justificação do esforço': ('Sunk cost and effort justification', "Carrying on because you've invested a lot, not because it's worth it."),

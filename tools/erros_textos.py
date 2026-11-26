@@ -328,6 +328,11 @@ VIE = {
   'Achar que a chuva caiu "para" estragar o seu passeio.',
   'Seeing purpose and intention where there are only processes: thinking that things in nature "exist for" something, or that someone planned them.',
   'Feeling that the rain fell "to" ruin your outing.'),
+ 'Ameaça simbólica': (
+  'Perceber um grupo como ameaça aos valores, às crenças e ao modo de vida do próprio grupo, mesmo quando ele não ameaça nada material. Na teoria da ameaça intergrupal, de Walter e Cookie Stephan (2000), essa ameaça simbólica se distingue da ameaça realista, que diz respeito à segurança ou aos recursos. Os veganos não tiram nada de ninguém, mas destoam da norma de comer animais, e por isso costumam ser sentidos como ameaça a tradições e identidades.',
+  'Ver o vizinho que passou a ir de bicicleta ao trabalho como uma crítica ao seu carro, embora ele nunca tenha dito nada.',
+  'Perceiving a group as a threat to one’s own group’s values, beliefs and way of life, even when it threatens nothing material. In the intergroup threat theory of Walter and Cookie Stephan (2000), this symbolic threat is distinguished from realistic threat, which concerns safety or resources. Vegans take nothing from anyone, but they depart from the norm of eating animals, and so they are often felt as a threat to traditions and identities.',
+  'Taking the neighbour who started cycling to work as a criticism of your car, even though they never said a word.'),
  'Desaparecimento da compaixão': (
   'Quanto mais vítimas, menos se sente por cada uma. Uma vítima identificável comove mais do que milhões descritas por números.',
   'A foto de uma criança comove mais do que a notícia de que milhares passam fome.',
